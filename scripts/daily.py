@@ -42,6 +42,7 @@ STEPS = [
     ("build", ["build.py"], "join everything for the site"),
     ("tier", ["tier.py"], "judge benchmarks that have no verdict under the current standard"),
     ("publish", ["build.py"], "put the new verdicts on the site"),
+    ("report", ["report.py"], "write the day's report to reports/"),
 ]
 WEEKLY_ONLY = {"find_leaderboards"}
 # classify and tier exit with 2 when some records got no answer; the next run retries those.

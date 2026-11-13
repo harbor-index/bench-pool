@@ -59,6 +59,7 @@ python3 scripts/signals.py        # stars, citations, likes, with history      -
 python3 scripts/build.py          # join everything                            -> web/data/benchmarks.json
 python3 scripts/tier.py           # recommend / hold / too new / no            -> data/tiers.jsonl
 python3 scripts/build.py          # again, to put the tiers on the site
+python3 scripts/report.py         # the day's report                           -> reports/<date>.md
 python3 -m unittest discover -s tests
 ```
 

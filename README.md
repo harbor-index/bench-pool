@@ -36,6 +36,12 @@ Verdicts are made by a language model and have not been checked by a person.
 | Filter | How many records each step kept, and what was turned away and why |
 | A benchmark's page | The verdict, the evidence for it, and links |
 
+## Daily reports
+
+Each day's run also writes a short report to [reports/](reports/): what is new
+that day, which tier each new benchmark got and why, and anything that changed
+tier.
+
 ## More
 
 - [docs/tiering-standard.md](docs/tiering-standard.md): the rules behind Recommend / Hold / No
