@@ -25,6 +25,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.claude/
+archive/
+.workbuddy/
 
 # PyInstaller
 #   Usually these files are written by a python script from a template
@@ -218,3 +221,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# New collection outputs are runtime artifacts, not source.
+/data/runs/
+
+# Downloaded Radar files (about 200 MB), the Adapter List export, and files rebuilt from them.
+/data/raw/
+/data/candidates.json
+/data/leaderboards.json
+/data/adapter_list.json
+/data/*.log
+
+# macOS
+.DS_Store

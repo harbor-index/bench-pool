@@ -1,0 +1,1510 @@
+{
+ "_about": "Established benchmarks added to the pool by hand, so that work older than the first Radar snapshot is present. harbor_adapter is true when Harbor already has a merged adapter for it.",
+ "benchmarks": [
+  {
+   "name": "AIME",
+   "link": "",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-Lancer",
+   "link": "https://openai.com/index/swe-lancer/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "ARC-AGI-2",
+   "link": "https://arxiv.org/pdf/2505.11831",
+   "harbor_adapter": true
+  },
+  {
+   "name": "GPQA Diamond",
+   "link": "https://epoch.ai/benchmarks/gpqa-diamond",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Spider 2",
+   "link": "https://spider2-sql.github.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-Bench Pro",
+   "link": "https://scale.com/research/swe_bench_pro",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-smith",
+   "link": "https://github.com/SWE-bench/SWE-smith",
+   "harbor_adapter": true
+  },
+  {
+   "name": "GAIA",
+   "link": "https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/gaia",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-bench-verified",
+   "link": "https://www.swebench.com/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Aider Polyglot",
+   "link": "https://github.com/Aider-AI/aider/tree/main/benchmark",
+   "harbor_adapter": true
+  },
+  {
+   "name": "LiveCodeBench",
+   "link": "https://github.com/LiveCodeBench/LiveCodeBench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Tau-Bench",
+   "link": "https://github.com/sierra-research/tau-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Tau2-Bench",
+   "link": "https://github.com/sierra-research/tau2-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Tau3-Bench",
+   "link": "https://github.com/sierra-research/tau2-bench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "WideSearch",
+   "link": "https://arxiv.org/pdf/2508.07999",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Seal-0",
+   "link": "https://llm-stats.com/benchmarks/seal-0",
+   "harbor_adapter": true
+  },
+  {
+   "name": "OpenRCA",
+   "link": "https://github.com/microsoft/OpenRCA",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CritPt",
+   "link": "https://critpt.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SWE-Bench-Multilingual",
+   "link": "https://github.com/SWE-bench/SWE-bench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "GitGoodBench",
+   "link": "https://github.com/JetBrains-Research/git-good-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SWE-Perf",
+   "link": "https://github.com/SWE-Perf/SWE-Perf",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LiveCodeBench Pro",
+   "link": "https://livecodebenchpro.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Multi-SWE-bench",
+   "link": "https://multi-swe-bench.github.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "PaperBench",
+   "link": "https://openai.com/index/paperbench/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SWE-fficiency",
+   "link": "https://swefficiency.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "BrowseComp-Plus",
+   "link": "https://github.com/texttron/BrowseComp-Plus",
+   "harbor_adapter": false
+  },
+  {
+   "name": "OSWorld",
+   "link": "https://os-world.github.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "CVE-Bench",
+   "link": "https://github.com/uiuc-kang-lab/cve-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CL-Bench",
+   "link": "https://arxiv.org/abs/2602.03587",
+   "harbor_adapter": true
+  },
+  {
+   "name": "FrontierCO",
+   "link": "https://arxiv.org/pdf/2505.16952",
+   "harbor_adapter": false
+  },
+  {
+   "name": "FutureX",
+   "link": "https://arxiv.org/abs/2508.11987",
+   "harbor_adapter": false
+  },
+  {
+   "name": "APEX-Agents",
+   "link": "https://arxiv.org/pdf/2601.14242",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ARC-AGI-3",
+   "link": "https://arcprize.org/arc-agi/3",
+   "harbor_adapter": false
+  },
+  {
+   "name": "AlgoTune",
+   "link": "https://github.com/oripress/AlgoTune",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Berkeley Function Calling Leaderboard (BFCL)",
+   "link": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+   "harbor_adapter": true
+  },
+  {
+   "name": "BigCodeBench",
+   "link": "https://github.com/bigcode-project/bigcodebench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "CompileBench",
+   "link": "https://www.compilebench.com/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "FinanceAgent",
+   "link": "https://www.vals.ai/benchmarks/finance_agent",
+   "harbor_adapter": true
+  },
+  {
+   "name": "IneqMath",
+   "link": "https://ineqmath.github.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "LAB-Bench",
+   "link": "https://github.com/Future-House/LAB-Bench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "QCircuitBench",
+   "link": "https://arxiv.org/pdf/2410.07961v2",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Reasoning Gym",
+   "link": "https://github.com/open-thought/reasoning-gym",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SLDBench",
+   "link": "https://github.com/linhaowei1/SLD",
+   "harbor_adapter": true
+  },
+  {
+   "name": "MMMLU",
+   "link": "https://huggingface.co/datasets/openai/MMMLU",
+   "harbor_adapter": true
+  },
+  {
+   "name": "USACO",
+   "link": "https://github.com/princeton-nlp/USACO",
+   "harbor_adapter": true
+  },
+  {
+   "name": "LawBench",
+   "link": "https://github.com/open-compass/LawBench/tree/main",
+   "harbor_adapter": true
+  },
+  {
+   "name": "MedAgentBench",
+   "link": "https://arxiv.org/pdf/2501.14654",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SimpleQA",
+   "link": "https://github.com/openai/simple-evals",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Vending-Bench",
+   "link": "https://andonlabs.com/evals/vending-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "FrontierMath",
+   "link": "https://arxiv.org/pdf/2411.04872",
+   "harbor_adapter": false
+  },
+  {
+   "name": "MLGym-Bench",
+   "link": "https://github.com/facebookresearch/MLGym",
+   "harbor_adapter": true
+  },
+  {
+   "name": "ASTA-Bench",
+   "link": "https://github.com/allenai/asta-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CyberGym",
+   "link": "https://www.cybergym.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SpreadsheetBench",
+   "link": "https://spreadsheetbench.github.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "WebArena-Verified",
+   "link": "https://github.com/ServiceNow/webarena-verified",
+   "harbor_adapter": false
+  },
+  {
+   "name": "MCPMark",
+   "link": "https://arxiv.org/pdf/2509.24002",
+   "harbor_adapter": false
+  },
+  {
+   "name": "GAIA2",
+   "link": "https://arxiv.org/abs/2602.11964",
+   "harbor_adapter": true
+  },
+  {
+   "name": "DeepSynth",
+   "link": "https://openreview.net/pdf?id=0Dhpt9aY3n",
+   "harbor_adapter": true
+  },
+  {
+   "name": "ACE-Bench",
+   "link": "https://openreview.net/pdf?id=41xrZ3uGuI",
+   "harbor_adapter": true
+  },
+  {
+   "name": "DAComp",
+   "link": "https://arxiv.org/pdf/2512.04324",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SWE-Bench Mobile",
+   "link": "https://arxiv.org/abs/2602.09540",
+   "harbor_adapter": false
+  },
+  {
+   "name": "InnovatorBench",
+   "link": "https://arxiv.org/pdf/2510.27598",
+   "harbor_adapter": false
+  },
+  {
+   "name": "WebGen-Bench",
+   "link": "https://openreview.net/attachment?id=q2VpjD7k1V&name=pdf",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SRE Gym",
+   "link": "https://sregym.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Tool Decathlon",
+   "link": "https://arxiv.org/pdf/2510.25726",
+   "harbor_adapter": false
+  },
+  {
+   "name": "AppWorld",
+   "link": "https://github.com/stonybrooknlp/appworld/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "MLE-Bench",
+   "link": "https://github.com/openai/mle-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "The Agent Company",
+   "link": "https://github.com/TheAgentCompany/TheAgentCompany",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Humanity’s Last Exam",
+   "link": "https://agi.safe.ai/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "ResearchCodeBench",
+   "link": "https://openreview.net/attachment?id=3k70Vt0YFS&name=pdf",
+   "harbor_adapter": true
+  },
+  {
+   "name": "MCP Atlas",
+   "link": "https://scale.com/leaderboard/mcp_atlas",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ARC-AGI-1",
+   "link": "https://arcprize.org/arc-agi/1/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "RefAV",
+   "link": "https://github.com/CainanD/RefAV/tree/main",
+   "harbor_adapter": true
+  },
+  {
+   "name": "LegalBench",
+   "link": "https://github.com/HazyResearch/legalbench/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "PostTrainBench",
+   "link": "https://posttrainbench.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SciCode",
+   "link": "https://github.com/scicode-bench/SciCode",
+   "harbor_adapter": true
+  },
+  {
+   "name": "ControlEval",
+   "link": "https://github.com/ControlAgent/ControlAgent/tree/main/ControlEval",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ScienceAgentBench",
+   "link": "https://arxiv.org/pdf/2410.05080",
+   "harbor_adapter": true
+  },
+  {
+   "name": "EXP-Bench",
+   "link": "https://arxiv.org/pdf/2505.24785",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ImpossibleBench",
+   "link": "https://arxiv.org/pdf/2510.20270",
+   "harbor_adapter": false
+  },
+  {
+   "name": "FeatureBench",
+   "link": "https://arxiv.org/abs/2602.10975",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Android Bench",
+   "link": "https://android-developers.googleblog.com/2026/03/elevating-ai-assisted-androi.html",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CooperBench",
+   "link": "https://cooperbench.com/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "FrontierCS",
+   "link": "https://arxiv.org/abs/2512.15699",
+   "harbor_adapter": true
+  },
+  {
+   "name": "FeatBench",
+   "link": "https://arxiv.org/abs/2509.22237",
+   "harbor_adapter": true
+  },
+  {
+   "name": "BALROG",
+   "link": "https://balrogai.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "VimGolf-Gym",
+   "link": "https://github.com/james4ever0/vimgolf-gym",
+   "harbor_adapter": false
+  },
+  {
+   "name": "BIX-Bench",
+   "link": "https://github.com/Future-House/BixBench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "DS-1000",
+   "link": "https://ds1000-code-gen.github.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "HumanEvalFix",
+   "link": "https://github.com/bigcode-project/octopack?tab=readme-ov-file",
+   "harbor_adapter": true
+  },
+  {
+   "name": "MMAU",
+   "link": "https://github.com/Sakshi113/MMAU",
+   "harbor_adapter": true
+  },
+  {
+   "name": "QuixBugs",
+   "link": "https://github.com/jkoppel/QuixBugs",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SATBench",
+   "link": "https://github.com/Anjiang-Wei/SATBench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "DABstep",
+   "link": "https://huggingface.co/blog/dabstep",
+   "harbor_adapter": true
+  },
+  {
+   "name": "CRUST-Bench",
+   "link": "https://github.com/anirudhkhatry/CRUST-bench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "StrongReject",
+   "link": "https://github.com/dsbowen/strong_reject",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWT Bench",
+   "link": "https://swtbench.com/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "KUMO",
+   "link": "https://github.com/linhaowei1/kumo",
+   "harbor_adapter": true
+  },
+  {
+   "name": "BIRD-Bench",
+   "link": "https://bird-bench.github.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "DevEval",
+   "link": "https://github.com/open-compass/DevEval",
+   "harbor_adapter": true
+  },
+  {
+   "name": "EvoEval Difficult",
+   "link": "https://github.com/evo-eval/evoeval",
+   "harbor_adapter": true
+  },
+  {
+   "name": "CodePDE",
+   "link": "https://github.com/LithiumDA/CodePDE/tree/main",
+   "harbor_adapter": true
+  },
+  {
+   "name": "ReplicationBench",
+   "link": "https://github.com/Christine8888/replicationbench-release",
+   "harbor_adapter": true
+  },
+  {
+   "name": "PIXIU",
+   "link": "https://github.com/The-FinAI/PIXIU",
+   "harbor_adapter": true
+  },
+  {
+   "name": "AutoCodeBench",
+   "link": "https://autocodebench.github.io/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "RedCode",
+   "link": "https://github.com/ai-secure/redcode",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Automated LLM Speedrunning",
+   "link": "http://arxiv.org/abs/2506.22419",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CAVA",
+   "link": "https://talkarena.org/cava",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CRM Arena",
+   "link": "https://github.com/SalesforceAIResearch/CRMArena",
+   "harbor_adapter": true
+  },
+  {
+   "name": "RE-Bench",
+   "link": "https://github.com/METR/RE-Bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "MLR-Bench",
+   "link": "https://github.com/chchenhui/mlrbench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LiveTradeBench",
+   "link": "https://github.com/ulab-uiuc/live-trade-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "AA-LCR",
+   "link": "https://huggingface.co/datasets/ArtificialAnalysis/AA-LCR",
+   "harbor_adapter": true
+  },
+  {
+   "name": "CORE-Bench",
+   "link": "https://github.com/siegelz/core-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "GSO",
+   "link": "https://github.com/gso-bench/gso",
+   "harbor_adapter": true
+  },
+  {
+   "name": "Cybench",
+   "link": "https://github.com/andyzorigin/cybench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "JailBreak Bench",
+   "link": "https://github.com/thunxxx/MLLM-Jailbreak-evaluation-MMJ-Bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "TextArena",
+   "link": "https://github.com/LeonGuertler/TextArena",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-Bench Live",
+   "link": "https://github.com/microsoft/SWE-bench-Live",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ML-Dev-Bench",
+   "link": "https://github.com/ml-dev-bench/ml-dev-bench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-PolyBench",
+   "link": "https://github.com/amazon-science/SWE-PolyBench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CrossCodeEval",
+   "link": "https://crosscodeeval.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Commit0",
+   "link": "https://commit-0.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "RexBench",
+   "link": "https://rexbench.com/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "defects4j",
+   "link": "https://github.com/rjust/defects4j",
+   "harbor_adapter": false
+  },
+  {
+   "name": "BugsInPy",
+   "link": "https://github.com/soarsmu/BugsInPy",
+   "harbor_adapter": false
+  },
+  {
+   "name": "HumanEvalPack",
+   "link": "https://huggingface.co/datasets/bigcode/humanevalpack",
+   "harbor_adapter": false
+  },
+  {
+   "name": "MLAgentBench",
+   "link": "https://arxiv.org/abs/2310.03302",
+   "harbor_adapter": false
+  },
+  {
+   "name": "MMAU-Pro",
+   "link": "https://sonalkum.github.io/mmau-pro/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LLMSR-Bench",
+   "link": "https://arxiv.org/abs/2504.10415",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-rebench",
+   "link": "https://swe-rebench.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SWE-Gym",
+   "link": "https://huggingface.co/SWE-Gym",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-Fixer",
+   "link": "https://github.com/InternLM/SWE-Fixer",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ADE-bench",
+   "link": "https://www.getdbt.com/resources/webinars/analytics-data-engineer-bench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "SWE-Bench++",
+   "link": "https://github.com/TuringEnterprises/SWE-Bench-plus-plus",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SPIN-Bench",
+   "link": "https://spinbench.github.io",
+   "harbor_adapter": false
+  },
+  {
+   "name": "DevOpsGym",
+   "link": "https://github.com/ucsb-mlsec/DevOpsBench/tree/data_collection2",
+   "harbor_adapter": true
+  },
+  {
+   "name": "OMNI-Math",
+   "link": "https://github.com/KbsdJames/Omni-MATH",
+   "harbor_adapter": true
+  },
+  {
+   "name": "KramaBench",
+   "link": "https://github.com/mitdbg/Kramabench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "OfficeQA Bench",
+   "link": "https://github.com/databricks/officeqa/tree/main",
+   "harbor_adapter": false
+  },
+  {
+   "name": "NL2RepoBench",
+   "link": "https://github.com/multimodal-art-projection/NL2RepoBench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CUA-Bench",
+   "link": "https://cua.ai/docs/cuabench/guide/getting-started/introduction",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Core-Cognition Bench",
+   "link": "https://arxiv.org/pdf/2410.10855",
+   "harbor_adapter": false
+  },
+  {
+   "name": "BountyBench",
+   "link": "https://bountybench.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Skillsbench",
+   "link": "https://www.skillsbench.ai/",
+   "harbor_adapter": true
+  },
+  {
+   "name": "TRAIL",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "VeriBench",
+   "link": "https://openreview.net/forum?id=P7NUVF6wo4&noteId=FG8RTMXBLS",
+   "harbor_adapter": false
+  },
+  {
+   "name": "KernelBench",
+   "link": "https://arxiv.org/abs/2502.10517",
+   "harbor_adapter": false
+  },
+  {
+   "name": "BabyVision",
+   "link": "https://arxiv.org/html/2601.06521v1",
+   "harbor_adapter": false
+  },
+  {
+   "name": "GDPVal",
+   "link": "https://arxiv.org/abs/2510.04374",
+   "harbor_adapter": false
+  },
+  {
+   "name": "DA-Code",
+   "link": "https://github.com/yiyihum/da-code",
+   "harbor_adapter": true
+  },
+  {
+   "name": "ABC-bench",
+   "link": "https://github.com/OpenMOSS/ABC-Bench",
+   "harbor_adapter": true
+  },
+  {
+   "name": "GraphicDesignBench",
+   "link": "https://github.com/lica-world/GDB",
+   "harbor_adapter": true
+  },
+  {
+   "name": "locomo",
+   "link": "https://arxiv.org/abs/2402.17753",
+   "harbor_adapter": false
+  },
+  {
+   "name": "AMA-Bench",
+   "link": "https://ama-bench.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Unicode",
+   "link": "https://arxiv.org/pdf/2510.17868",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LongCLI-Bench",
+   "link": "https://github.com/finyorko/longcli-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "DeepResearch Bench",
+   "link": "https://github.com/Ayanami0730/deep_research_bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LiveDRBench",
+   "link": "https://github.com/microsoft/LiveDRBench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "macOSWorld",
+   "link": "https://github.com/showlab/macosworld",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CAIBench",
+   "link": "https://github.com/aliasrobotics/cai",
+   "harbor_adapter": false
+  },
+  {
+   "name": "AA-Omniscience",
+   "link": "https://artificialanalysis.ai/evaluations/omniscience",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Harveylab(Legal Agent Benchmark)",
+   "link": "https://github.com/harveyai/harvey-labs",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ProgramBench",
+   "link": "https://github.com/facebookresearch/programbench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "lica bench",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "cceval",
+   "link": "https://github.com/amazon-science/cceval",
+   "harbor_adapter": false
+  },
+  {
+   "name": "RepoZero",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "GDP.pdf",
+   "link": "https://surgehq.ai/leaderboards/gdp-pdf",
+   "harbor_adapter": false
+  },
+  {
+   "name": "HealthBench Professional",
+   "link": "https://openai.com/index/healthbench/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ExploitBench(CAP%)",
+   "link": "https://github.com/exploitbench/exploitbench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "AutomationBench",
+   "link": "https://github.com/zapier/AutomationBench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "BenchCAD",
+   "link": "https://github.com/BenchCAD/BenchCAD-main",
+   "harbor_adapter": false
+  },
+  {
+   "name": "V2.0 new adapters start from here",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "browsecomp",
+   "link": "https://openai.com/index/browsecomp/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "gdpval-aa",
+   "link": "https://artificialanalysis.ai/evaluations",
+   "harbor_adapter": false
+  },
+  {
+   "name": "deepsearchqa",
+   "link": "https://www.kaggle.com/benchmarks/google/dsqa/leaderboard",
+   "harbor_adapter": false
+  },
+  {
+   "name": "osworld-2",
+   "link": "https://osworld-v2.xlang.ai",
+   "harbor_adapter": false
+  },
+  {
+   "name": "agents-last-exam",
+   "link": "https://agents-last-exam.org",
+   "harbor_adapter": false
+  },
+  {
+   "name": "shade-arena",
+   "link": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
+   "harbor_adapter": false
+  },
+  {
+   "name": "exploitgym",
+   "link": "https://rdi.berkeley.edu/blog/exploitgym/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "screenspot-pro",
+   "link": "https://gui-agent.github.io/grounding-leaderboard",
+   "harbor_adapter": false
+  },
+  {
+   "name": "aa-briefcase",
+   "link": "https://artificialanalysis.ai/articles/aa-briefcase",
+   "harbor_adapter": false
+  },
+  {
+   "name": "swe-bench-multimodal",
+   "link": "https://www.swebench.com/multimodal",
+   "harbor_adapter": false
+  },
+  {
+   "name": "sec-bench-pro",
+   "link": "https://sec-bench.github.io",
+   "harbor_adapter": false
+  },
+  {
+   "name": "petri",
+   "link": "https://alignment.anthropic.com/2025/petri/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "cyscenariobench",
+   "link": "https://www.irregular.com/publications/cyscenariobench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "rsi-index",
+   "link": "https://www.vals.ai/benchmarks/rsi_index",
+   "harbor_adapter": false
+  },
+  {
+   "name": "big-finance-bench",
+   "link": "https://bigfinancebench.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "biglaw-bench",
+   "link": "https://www.harvey.ai/blog/introducing-biglaw-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "eebench",
+   "link": "https://www.eebench.org/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "aa-coding-agent-index",
+   "link": "https://artificialanalysis.ai/agents/coding-agents",
+   "harbor_adapter": false
+  },
+  {
+   "name": "finsearchcomp",
+   "link": "https://randomtutu.github.io/FinSearchComp/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "vibe-code-bench",
+   "link": "https://www.vals.ai/benchmarks/vibe-code",
+   "harbor_adapter": false
+  },
+  {
+   "name": "androidworld",
+   "link": "https://github.com/google-research/android_world",
+   "harbor_adapter": false
+  },
+  {
+   "name": "cadgenbench",
+   "link": "https://github.com/huggingface/cadgenbench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "claw-eval",
+   "link": "https://claw-eval.github.io",
+   "harbor_adapter": false
+  },
+  {
+   "name": "frontier-science-research",
+   "link": "https://openai.com/index/frontierscience/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "online-mind2web",
+   "link": "https://github.com/OSU-NLP-Group/Online-Mind2Web",
+   "harbor_adapter": false
+  },
+  {
+   "name": "wildclawbench",
+   "link": "https://internlm.github.io/WildClawBench/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "agentdojo",
+   "link": "https://agentdojo.spylab.ai",
+   "harbor_adapter": false
+  },
+  {
+   "name": "agentharm",
+   "link": "https://arxiv.org/abs/2410.09024",
+   "harbor_adapter": false
+  },
+  {
+   "name": "airs-bench",
+   "link": "https://github.com/facebookresearch/airs-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "cot-control",
+   "link": "https://openai.com/index/reasoning-models-chain-of-thought-controllability/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "cyber-range",
+   "link": "https://aliasrobotics.com/benchmarking.php",
+   "harbor_adapter": false
+  },
+  {
+   "name": "draco",
+   "link": "https://research.perplexity.ai/articles/evaluating-deep-research-performance-in-the-wild-with-the-draco-benchmark",
+   "harbor_adapter": false
+  },
+  {
+   "name": "frontiercyber",
+   "link": "https://www.irregular.com/research/frontiercyber",
+   "harbor_adapter": false
+  },
+  {
+   "name": "gdm-stealth",
+   "link": "https://arxiv.org/abs/2505.01420",
+   "harbor_adapter": false
+  },
+  {
+   "name": "shp2-protein-function",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "vulnlmp",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "code-arena",
+   "link": "https://arena.ai",
+   "harbor_adapter": false
+  },
+  {
+   "name": "apex-swe",
+   "link": "https://www.mercor.com/blog/introducing-apex-swe/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "sre-bench-re",
+   "link": "https://daplab.cs.columbia.edu/projects/?view=projects",
+   "harbor_adapter": false
+  },
+  {
+   "name": "cwe-bench-v1",
+   "link": "https://cwe-bench.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "design-arena-agentic-web-dev",
+   "link": "https://www.designarena.ai/about",
+   "harbor_adapter": false
+  },
+  {
+   "name": "expert-swe",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "gray-swan-ipi",
+   "link": "https://app.grayswan.ai/arena/about",
+   "harbor_adapter": false
+  },
+  {
+   "name": "vals-index",
+   "link": "https://www.vals.ai/benchmarks/vals_index",
+   "harbor_adapter": false
+  },
+  {
+   "name": "webdev-arena",
+   "link": "https://arena.ai/leaderboard/code",
+   "harbor_adapter": false
+  },
+  {
+   "name": "aleph-alpha-agentic-wiki-qa",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "aleph-alpha-honeypot",
+   "link": "",
+   "harbor_adapter": false
+  },
+  {
+   "name": "cadbench",
+   "link": "https://github.com/FreedomIntelligence/BlenderLLM",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ci-memories",
+   "link": "https://arxiv.org/abs/2511.14937",
+   "harbor_adapter": false
+  },
+  {
+   "name": "deepplanning",
+   "link": "https://qwenlm.github.io/Qwen-Agent/en/benchmarks/deepplanning/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "makemesay",
+   "link": "https://github.com/openai/evals",
+   "harbor_adapter": false
+  },
+  {
+   "name": "musique",
+   "link": "https://github.com/StonyBrookNLP/MuSiQue",
+   "harbor_adapter": false
+  },
+  {
+   "name": "partbench",
+   "link": "https://vipl-vsu.github.io/VisKnow",
+   "harbor_adapter": false
+  },
+  {
+   "name": "seccodebench",
+   "link": "https://alibaba.github.io/sec-code-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "securecodereview",
+   "link": "https://github.com/SIMIAO515/SecureReviewer",
+   "harbor_adapter": false
+  },
+  {
+   "name": "threedcodebench",
+   "link": "https://3dcodebench.com",
+   "harbor_adapter": false
+  },
+  {
+   "name": "vision2web",
+   "link": "https://vision2web-bench.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "vita-bench",
+   "link": "https://vitabench.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "workspacebench",
+   "link": "https://workspace-bench.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "agentic-misalignment",
+   "link": "https://www.anthropic.com/research/agentic-misalignment",
+   "harbor_adapter": false
+  },
+  {
+   "name": "alignment-faking",
+   "link": "https://www.anthropic.com/research/alignment-faking",
+   "harbor_adapter": false
+  },
+  {
+   "name": "biodesign-tools",
+   "link": "https://arxiv.org/abs/2606.12429",
+   "harbor_adapter": false
+  },
+  {
+   "name": "catastrophic-cyber-misuse",
+   "link": "https://cybercapabilities.org/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "control-arena",
+   "link": "https://control-arena.aisi.org.uk/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "firefox-147",
+   "link": "https://red.anthropic.com/2026/mythos-preview",
+   "harbor_adapter": false
+  },
+  {
+   "name": "gdm-situational-awareness",
+   "link": "https://arxiv.org/abs/2505.01420",
+   "harbor_adapter": false
+  },
+  {
+   "name": "grayswan-art",
+   "link": "https://app.grayswan.ai/arena/about",
+   "harbor_adapter": false
+  },
+  {
+   "name": "impossible-mle-bench",
+   "link": "https://github.com/safety-research/impossiblebench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "latchbio",
+   "link": "https://benchmarks.bio",
+   "harbor_adapter": false
+  },
+  {
+   "name": "metr-time-horizon",
+   "link": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks",
+   "harbor_adapter": false
+  },
+  {
+   "name": "reprobait",
+   "link": "https://securebio.substack.com/p/gpt-56-sol-pre-release-testing-report",
+   "harbor_adapter": false
+  },
+  {
+   "name": "save-bench",
+   "link": "https://safe-bench.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Jax Bench",
+   "link": "https://github.com/AI-Hypercomputer/accelerator-agents",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LEGO-Anything",
+   "link": "https://lego-anything.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "BlenderGym",
+   "link": "https://github.com/richard-guyunqi/BlenderGym-Open",
+   "harbor_adapter": false
+  },
+  {
+   "name": "OmegaUse-OfficeVal",
+   "link": "https://omegauseofficeval.github.io",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ITBench-AA",
+   "link": "https://artificialanalysis.ai/evaluations/itbench-aa",
+   "harbor_adapter": false
+  },
+  {
+   "name": "VIBench",
+   "link": "https://arxiv.org/abs/2404.18074",
+   "harbor_adapter": false
+  },
+  {
+   "name": "DiscoverPhysics",
+   "link": "https://sampsonml.github.io/DiscoverPhysicsLeaderboard/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Time Machine Bench",
+   "link": "https://github.com/tohoku-nlp/timemachine-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "NoCode-bench",
+   "link": "https://github.com/Doc2Feat-bench/Doc2Feat-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "AgentPersonaBench",
+   "link": "https://github.com/MatrAIx-ai/AgentPersonaBench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SpreadsheetBench2",
+   "link": "https://spreadsheetbench.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "AutomationBench-AA",
+   "link": "https://artificialanalysis.ai/evaluations/automationbench-aa",
+   "harbor_adapter": false
+  },
+  {
+   "name": "RSIGym",
+   "link": "https://rsi-index.ai/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "RSI-Inference Bench",
+   "link": "https://github.com/apple-aiml-research/ml-rsi-inference-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Chartography",
+   "link": "https://surgehq.ai/benchmarks/chartography",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ResearchRubrics",
+   "link": "https://github.com/scaleapi/researchrubrics",
+   "harbor_adapter": false
+  },
+  {
+   "name": "deepswe",
+   "link": "https://deepswe.datacurve.ai",
+   "harbor_adapter": false
+  },
+  {
+   "name": "frontier-swe",
+   "link": "https://www.frontierswe.com",
+   "harbor_adapter": false
+  },
+  {
+   "name": "swe-marathon",
+   "link": "https://swe-marathon.org",
+   "harbor_adapter": false
+  },
+  {
+   "name": "jobbench",
+   "link": "https://job-bench.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "swe-atlas",
+   "link": "https://labs.scale.com/leaderboard/sweatlas-qna",
+   "harbor_adapter": false
+  },
+  {
+   "name": "mls-bench",
+   "link": "https://mls-bench.com",
+   "harbor_adapter": false
+  },
+  {
+   "name": "wandr",
+   "link": "https://www.perplexity.ai/hub/blog/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+   "harbor_adapter": false
+  },
+  {
+   "name": "BIRD-Interact",
+   "link": "https://bird-interact.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ProcessBench",
+   "link": "https://github.com/QwenLM/ProcessBench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ProteinGym v1.3",
+   "link": "https://proteingym.org/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "FrontierOR",
+   "link": "https://www.frontieror.org/index.html",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CharXiv",
+   "link": "https://charxiv.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "olmOCR-Bench",
+   "link": "https://huggingface.co/datasets/allenai/olmOCR-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "PRBench Finance",
+   "link": "https://labs.scale.com/leaderboard/prbench-finance",
+   "harbor_adapter": false
+  },
+  {
+   "name": "PRBench Legal",
+   "link": "https://labs.scale.com/leaderboard/prbench-legal",
+   "harbor_adapter": false
+  },
+  {
+   "name": "OR-Bench",
+   "link": "https://github.com/justincui03/or-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "DeceptionBench",
+   "link": "https://github.com/Aries-iai/DeceptionBench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LifeSciBench",
+   "link": "https://openai.com/index/introducing-life-sci-bench/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SuperGPQA",
+   "link": "https://supergpqa.github.io/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Chess Puzzles v2",
+   "link": "https://epoch.ai/benchmarks/chess-puzzles",
+   "harbor_adapter": false
+  },
+  {
+   "name": "GeneBench-Pro",
+   "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.735386v4",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LongBench v2",
+   "link": "https://kola.xlore.cn/cke/longbench2.html",
+   "harbor_adapter": false
+  },
+  {
+   "name": "RewardBench 2",
+   "link": "https://github.com/allenai/reward-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "DeepRSI",
+   "link": "https://www.deeprsi.com/blog/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Human Behavior Bench",
+   "link": "https://www.runrehearsals.com/human-behavior-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "4DCodeBench",
+   "link": "https://4dcodebench.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "RSI Bench (Scale AI)",
+   "link": "https://github.com/scaleapi/rsi-benchmark",
+   "harbor_adapter": false
+  },
+  {
+   "name": "StableToolBench",
+   "link": "https://arxiv.org/abs/2403.07714",
+   "harbor_adapter": false
+  },
+  {
+   "name": "SOL-ExecBench",
+   "link": "https://github.com/NVIDIA/SOL-ExecBench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "robust-kbench",
+   "link": "https://github.com/SakanaAI/robust-kbench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "FlashInfer-Bench",
+   "link": "https://github.com/flashinfer-ai/flashinfer-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "MBABench 2.0",
+   "link": "https://github.com/namkoong-lab/MBABench-2.0",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Parametric CAD Bench v3 (gNucleus)",
+   "link": "https://cadbench.ai/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "RSI-Exam",
+   "link": "https://rsi-exam.ai/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "LibraryDesignBench",
+   "link": "https://ldbench.com/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "Enterprise-Bench",
+   "link": "https://hub.harborframework.com/datasets/Enterprise-Bench/l1-l2-bench",
+   "harbor_adapter": false
+  },
+  {
+   "name": "OTelBench",
+   "link": "https://quesma.com/benchmarks/otel/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "InferenceBench",
+   "link": "https://inferencebench.ai/",
+   "harbor_adapter": false
+  },
+  {
+   "name": "ReactBench",
+   "link": "https://www.reactbench.dev/blog",
+   "harbor_adapter": false
+  },
+  {
+   "name": "CodeClash",
+   "link": "https://codeclash.ai/",
+   "harbor_adapter": false
+  }
+ ]
+}

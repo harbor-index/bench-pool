@@ -1,0 +1,32 @@
+{
+ "_about": "Source benchmarks of the 80 tasks in github.com/harbor-index/harbor-index-1.0 (tasks/ directory, read 2026-11-12). Counts come from task directory name prefixes; the repository has no file that maps tasks to benchmarks. One task (build-word2vec-pipeline) has no prefix and is not counted here. Names are spelled as in the Adapter List so that they match the pool; the task prefixes are hle, spider2-dbt, swtbenchverified and tb (Terminal Bench 2 in the paper's Figure 5).",
+ "tasks": {
+  "AlgoTune": 5,
+  "ARC-AGI-2": 5,
+  "BixBench": 5,
+  "CodePDE": 1,
+  "CyberGym": 2,
+  "DA-Code": 1,
+  "FeatureBench": 4,
+  "GAIA": 3,
+  "GAIA2": 5,
+  "GPQA Diamond": 1,
+  "GSO": 7,
+  "Humanity's Last Exam": 8,
+  "LAB-Bench": 4,
+  "OmniMath": 2,
+  "QCircuitBench": 1,
+  "ReplicationBench": 1,
+  "SciCode": 3,
+  "SkillsBench": 2,
+  "SLDBench": 1,
+  "Spider 2": 2,
+  "SWE-bench Pro": 4,
+  "SWE-bench Verified": 5,
+  "SWE-smith": 1,
+  "SWT Bench": 1,
+  "Terminal-Bench 2.0": 3,
+  "USACO": 1,
+  "WideSearch": 1
+ }
+}

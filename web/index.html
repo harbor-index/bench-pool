@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BENCH-POOL</title>
+<meta name="description" content="Where agentic benchmark development stands now.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23038f99' stroke-width='2'%3E%3Cpath d='M3 4v16h18V4'/%3E%3Cpath d='M6.5 11c1.4-1.6 2.7-1.6 4.1 0s2.7 1.6 4.1 0 2.7-1.6 4.1 0M6.5 16c1.4-1.6 2.7-1.6 4.1 0s2.7 1.6 4.1 0 2.7-1.6 4.1 0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Set the theme before first paint.
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("bench-pool-theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.dataset.theme = t;
+  })();
+</script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#/list" aria-label="bench-pool home">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <path class="logo-box" d="M3 4v16h18V4"/>
+      <path class="logo-wave" d="M6.5 11c1.4-1.6 2.7-1.6 4.1 0s2.7 1.6 4.1 0 2.7-1.6 4.1 0M6.5 16c1.4-1.6 2.7-1.6 4.1 0s2.7 1.6 4.1 0 2.7-1.6 4.1 0"/>
+    </svg>
+    <span>bench-<b>pool</b></span>
+  </a>
+  <nav class="top-nav" aria-label="Views">
+    <a href="#/list" data-nav="list">Board</a>
+    <a href="#/new" data-nav="new">New</a>
+    <a href="#/filter" data-nav="filter">Filter</a>
+    <a href="#/about" data-nav="about">Data</a>
+  </nav>
+  <div class="theme" role="group" aria-label="Theme">
+    <button type="button" data-theme-set="light" aria-label="Light theme" title="Light">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+    </button>
+    <button type="button" data-theme-set="dark" aria-label="Dark theme" title="Dark">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="app"><p class="loading">LOADING POOL…</p></main>
+
+<footer class="foot">
+  <p>
+    Data from <a href="https://benchmark-radar.org/" target="_blank" rel="noopener">Benchmark Radar</a>
+    (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>).
+  </p>
+</footer>
+
+<div id="tip" class="tip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
