@@ -98,10 +98,11 @@ Reply with one JSON array and nothing else, one object per benchmark:
 - "best_score.percent" is the best result on the main metric as a percentage of the maximum (higher is better); null if it cannot be put that way.
 - "risks": up to three things someone bringing this benchmark into Harbor would have to settle first, drawn from the checks (tasks not released, unvalidated judge, live websites, no evidence that tasks are solvable, top models near the ceiling, reward hacking not addressed). [] only if every check came back clean.
 - Apply the bars for "strong" in sections 3.1 to 3.5 exactly. They will be re-applied to your checks by a script.
+- TEXT.linked_page, when present, is the benchmark's own page (a dataset card or project page), given because no paper or repository is linked. Judge from it as you would from a README; what it does not say is not_stated.
 - TEXT.paper is the whole paper (or says so if it was cut). Read all of it before deciding: task design, construction, verifier and results are usually described after the abstract.
 - Weak or missing Attention never blocks a benchmark.
 - If FACTS.new is true the benchmark is under 15 days old with no leaderboard: Difficult and Attention are expected to be no_evidence, and that must not hold it back. Judge it on Real, Diverse, Valuable and Solid.
-- "quote" must be copied exactly from the benchmark's TEXT (paper, abstract, README or file list), at most 40 words. Omit it when the verdict is no_evidence. For "difficult" and "attention" you may instead rest on FACTS and omit the quote.
+- "quote" must be copied exactly from the benchmark's TEXT (paper, abstract, README, file list or linked page), at most 40 words. Omit it when the verdict is no_evidence. For "difficult" and "attention" you may instead rest on FACTS and omit the quote.
 - If the TEXT does not say, the verdict is no_evidence, not weak.
 - "mode" in FACTS is agentic, modified or non. Apply T2 or T3 accordingly.
 
@@ -282,6 +283,57 @@ def arxiv_of(item: dict) -> str | None:
     return None
 
 
+AGGREGATORS = ("llm-stats.com", "artificialanalysis.ai", "zeroeval.com", "evaleval/benchmark-saturation")
+PAGE_LIMIT = 20_000
+PAGE_MIN = 600           # less text than this is a shell page (script-rendered), not something to read
+
+
+def page_address(url: str) -> str | None:
+    """Where to read a linked page as text, or None for links this function is not for."""
+    if any(a in url for a in AGGREGATORS) or "arxiv.org" in url or "10.48550/arxiv" in url.lower() or "github.com" in url:
+        return None
+    m = re.search(r"huggingface\.co/(datasets|spaces)/([\w.-]+/[\w.-]+)", url)
+    if m:
+        return f"https://huggingface.co/{m.group(1)}/{m.group(2)}/raw/main/README.md"
+    return url if url.startswith("http") else None
+
+
+def other_page(item: dict) -> dict | None:
+    """The first linked page besides the paper and the repository that has real text:
+    a Hugging Face dataset card, a DOI landing page, a project page. Cached on disk.
+    Returns {"url", "text"} or None."""
+    import hashlib
+    import urllib.error
+    import urllib.request
+    tried = 0
+    for link in item["links"]:
+        if link["kind"] == "leaderboard":
+            continue
+        address = page_address(link["url"])
+        if not address or tried >= 3:
+            continue
+        tried += 1
+        path = PAGES / ("page_" + hashlib.sha1(address.encode()).hexdigest()[:16] + ".json")
+        if path.exists():
+            got = json.loads(path.read_text())
+        else:
+            got = {"url": link["url"], "text": "", "fetched": dt.date.today().isoformat()}
+            headers = {"User-Agent": "Mozilla/5.0 (bench-pool; reads each page once)"}
+            if "huggingface.co" in address and os.environ.get("HF_TOKEN"):
+                headers["Authorization"] = "Bearer " + os.environ["HF_TOKEN"]
+            try:
+                with urllib.request.urlopen(urllib.request.Request(address, headers=headers), timeout=40) as resp:
+                    body = resp.read(3_000_000).decode("utf-8", "replace")
+                got["text"] = clean_readme(body, PAGE_LIMIT) if address.endswith(".md") else html_to_text(body)[:PAGE_LIMIT]
+            except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+                pass
+            PAGES.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(got, ensure_ascii=False))
+        if len(got["text"]) >= PAGE_MIN:
+            return got
+    return None
+
+
 def clean_readme(text: str, limit: int = README_LIMIT) -> str:
     text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)
     text = re.sub(r"!\[[^\]]*\]\([^)]*\)|<img[^>]*>|<a [^>]*>|</a>|</?(p|div|h\d|br|picture|source|table|tr|td|th|details|summary)[^>]*>", " ", text)
@@ -290,10 +342,14 @@ def clean_readme(text: str, limit: int = README_LIMIT) -> str:
     return re.sub(r"\n\s*\n+", "\n", text).strip()[:limit]
 
 
-def packet(item: dict, summary: str, pages: dict | None, paper: dict | None, today: dt.date) -> tuple[dict, dict]:
+def packet(item: dict, summary: str, pages: dict | None, paper: dict | None, today: dt.date,
+           page: dict | None = None) -> tuple[dict, dict]:
     """(what the judge is given, a record of how much that was)."""
     text = {}
-    read = {"paper": None, "paper_chars": 0, "paper_cut": False, "readme_chars": 0, "files": 0}
+    read = {"paper": None, "paper_chars": 0, "paper_cut": False, "readme_chars": 0, "files": 0, "page": None, "page_chars": 0}
+    if page:
+        text["linked_page"] = page["text"]
+        read.update(page=page["url"], page_chars=len(page["text"]))
     if paper and paper.get("text"):
         body = paper["text"]
         read.update(paper=paper["via"], paper_chars=len(body), paper_cut=len(body) > PAPER_LIMIT)
@@ -477,7 +533,8 @@ def check(row: dict, pack: dict, item: dict) -> dict:
         if rule not in BLOCKING:
             tier, rule = "hold", "T4"
             notes.append("no blocking rule named")
-        elif rule == "B1" and not (pack["TEXT"].get("readme") or pack["TEXT"].get("repository_files") or pack["TEXT"].get("paper")):
+        elif rule == "B1" and not (pack["TEXT"].get("readme") or pack["TEXT"].get("repository_files") or pack["TEXT"].get("paper")
+                                   or pack["TEXT"].get("linked_page")):
             # With only an abstract there is nothing that could show the data is missing.
             tier, rule = "hold", "T4"
             notes.append("B1 needs the paper or a repository page to have been read; only the abstract was available")
@@ -507,7 +564,11 @@ def unread_verdict(item: dict) -> tuple[str, str, str]:
     """For a benchmark with no paper and no repository: B3 if a leaderboard shows it saturated, else T0."""
     if item.get("best") is not None and item["basis"] in ("own", "aggregator") and item["best"] >= SATURATED:
         return "no", "B3", f"Best score on a leaderboard is {item['best']:g}% ({item['basis']}), at or above the 90% bar; nothing else could be read."
-    return "hold", "T0", "No paper and no repository could be found to read; a one-line description is not enough to judge on."
+    looked = item.get("source_search")
+    if looked:
+        return "hold", "T0", (f"No paper or repository is linked. A search of {looked['searched']} for \"{looked['query']}\" on {looked['date']} "
+                              f"found no paper that introduces it" + (f" ({looked['why']})" if looked.get("why") else "") + ". Nothing to judge on yet.")
+    return "hold", "T0", "No paper, repository or readable page is linked, and it has not been searched for yet. Nothing to judge on yet."
 
 
 def latest(version: str) -> dict[str, dict]:
@@ -572,17 +633,28 @@ def main() -> int:
     todo = pilot_set(items) if args.pilot else items
     if args.only:
         todo = [i for i in items if i["name"].lower() == args.only.lower()]
+    def due(item: dict) -> bool:
+        old = done.get(item["key"])
+        if old is None:
+            return True
+        if old["rule"] != "T0":
+            return False
+        # Held for want of anything to read: judge it once a search has found its paper,
+        # and restate the reason once a search has been made.
+        return bool(arxiv_of(item) or repo_of(item) or other_page(item)) or \
+            (bool(item.get("source_search")) and "A search of" not in old["reason"])
+
     if args.redo_model:
         todo = [i for i in items if done.get(i["key"], {}).get("model") == args.redo_model]
     elif not args.redo:
-        todo = [i for i in todo if i["key"] not in done]
+        todo = [i for i in todo if due(i)]
     if args.limit:
         todo = todo[: args.limit]
 
     stamp = {"date": today.isoformat(), "standard": version}
     if not (args.all or args.only or args.pilot or args.redo_model):
         todo = [i for i in todo if not i.get("covered")]
-    unreadable = [i for i in todo if not arxiv_of(i) and not repo_of(i)]
+    unreadable = [i for i in todo if not arxiv_of(i) and not repo_of(i) and not other_page(i)]
     with OUT.open("a") as fh:
         for item in unreadable:
             tier, rule, reason = unread_verdict(item)
@@ -610,9 +682,12 @@ def main() -> int:
             repo, axv = repo_of(item), arxiv_of(item)
             pages = repo_pages(repo, token) if repo else None
             paper = paper_text(axv) if axv else None
-            packs[item["key"]], reads[item["key"]] = packet(item, summaries.get(item["id"], ""), pages, paper, today)
+            # A dataset card or project page is read when there is neither a paper nor a repository.
+            page = other_page(item) if not (paper and paper.get("text")) and not (pages and pages.get("readme")) else None
+            packs[item["key"]], reads[item["key"]] = packet(item, summaries.get(item["id"], ""), pages, paper, today, page)
             pages_read[item["key"]] = ([f"https://arxiv.org/abs/{axv}"] if paper and paper.get("text") else []) + \
-                ([f"https://github.com/{repo}"] if pages and (pages.get("readme") or pages.get("files")) else [])
+                ([f"https://github.com/{repo}"] if pages and (pages.get("readme") or pages.get("files")) else []) + \
+                ([page["url"]] if page else [])
         rows: list[dict] = []
         for attempt in (1, 2):
             try:
@@ -627,9 +702,9 @@ def main() -> int:
             if key in by_key:
                 verdict = check(row, packs[key], by_key[key])
                 read = reads[key]
-                if verdict["tier"] == "recommend" and not read["paper_chars"] and not read["readme_chars"]:
+                if verdict["tier"] == "recommend" and not read["paper_chars"] and not read["readme_chars"] and not read["page_chars"]:
                     verdict.update(tier="hold", rule="T4")
-                    verdict["notes"].append("recommend needs the whole paper or the README to have been read")
+                    verdict["notes"].append("recommend needs the paper, the README or the benchmark's own page to have been read")
                 good.append({"key": key, **stamp, "model": args.model, **verdict, "pages": pages_read[key], "read": read})
         with lock:
             with OUT.open("a") as fh:

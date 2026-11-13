@@ -118,6 +118,19 @@ leaderboard. The first full run searched about 1,070 benchmarks and made about
 300 model calls. Useful flags: `--limit 20`, `--only NAME`, `--report`,
 `--redo unchecked`.
 
+A benchmark with no paper and no repository is still read if it links a page
+of its own: a Hugging Face dataset card, a DOI landing page or a project page
+(`other_page()` in `tier.py`).
+
+`find_sources.py` handles the ones with no such page either (mostly entries
+that came from leaderboards). It searches arXiv for the name, a model picks the
+paper that introduces the benchmark or says none does, and the match is kept
+only if the name is in that paper's title or abstract. A found paper is then
+read and judged like any other. When nothing is found the benchmark stays on
+Hold, and its page says what was searched and when. The daily run works through
+the backlog a batch at a time, and does the same for the search for each
+benchmark's own leaderboard.
+
 ## How a record gets in
 
 1. **Candidates** (`candidates.py`), from three places:

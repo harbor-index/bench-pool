@@ -46,7 +46,7 @@
   const RULE = {
     B1: "No task data is public", B2: "Cannot run in a container with a programmatic verifier", B3: "Saturated: 90% or more on a leaderboard",
     B4: "Superseded by a successor", B5: "Not a benchmark on closer reading", B6: "Evaluates trained policies, not a model or agent",
-    T0: "Nothing to read: no paper and no repository found", T2: "Agentic; Real and Solid strong, plus Difficult or Attention; nothing weak",
+    T0: "Nothing to read yet: no paper, repository or page found", T2: "Agentic; Real and Solid strong, plus Difficult or Attention; nothing weak",
     T3: "Non-agentic, but hard, unsaturated and widely noticed", T4: "Held for a person to settle",
   };
   const tierOf = (it) => (it.tier ? it.tier.tier : "none");
@@ -429,7 +429,8 @@
     if (r.paper_chars) parts.push(`<b>the whole paper</b> (${words(Math.min(r.paper_chars, 160000))}, ${esc(r.paper)}${r.paper_cut ? `; <b class="cut">cut for length</b>, ${words(r.paper_chars)} in all` : ""})`);
     if (r.readme_chars) parts.push(`the README (${words(r.readme_chars)})`);
     if (r.files) parts.push(`${r.files} top-level file names`);
-    if (!parts.length) return "Read: nothing. No paper and no repository could be found.";
+    if (r.page_chars) parts.push(`the benchmark's own page (${words(r.page_chars)}, <a href="${esc(safeUrl(r.page))}" target="_blank" rel="noopener">${esc(r.page.replace(/^https?:\/\//, "").slice(0, 60))}</a>)`);
+    if (!parts.length) return "Read: nothing. No paper, repository or readable page could be found.";
     return "Read: " + parts.join(", ") + (r.paper_chars ? "." : ". <b class=\"cut\">No paper was read</b>: none is linked.");
   }
 

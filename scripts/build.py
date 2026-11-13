@@ -40,6 +40,7 @@ DROPPED = ROOT / "web" / "data" / "dropped.json"
 SATURATED_ABOVE = 90.0
 SEARCH = DATA / "leaderboard_search.jsonl"
 HI1 = DATA / "harbor_index_v1.json"
+SOURCE_SEARCH = DATA / "source_search.json"
 SIGNALS = DATA / "signals.jsonl"
 TIERS = DATA / "tiers.jsonl"
 # Tier changes are shown from this day on. Earlier verdicts were drafts of the standard; they
@@ -176,6 +177,7 @@ def main() -> None:
     hi1_seen = set()
 
     signals = load_signals()
+    source_search = json.loads(SOURCE_SEARCH.read_text()) if SOURCE_SEARCH.exists() else {}
     tiers = load_tiers()
     import re
     version = re.search(r"^Version (\S+)", STANDARD.read_text(), re.M).group(1) if STANDARD.exists() else "none"
@@ -264,6 +266,12 @@ def main() -> None:
         if infra == "unknown" and "code" in kinds:
             infra = "repo"  # a code repository is linked; contents not checked
 
+        # A paper found by searching for the benchmark's name (scripts/find_sources.py).
+        looked = source_search.get(key)
+        if looked and looked.get("arxiv"):
+            links.setdefault(f"https://arxiv.org/abs/{looked['arxiv']}", "paper")
+        if looked and looked.get("repo"):
+            links.setdefault(f"https://github.com/{looked['repo']}", "code")
         adapter = next((m["adapter"] for m in members if m["origin"] == "adapter_list"), None)
         if key in hi1:
             hi1_seen.add(key)
@@ -275,6 +283,7 @@ def main() -> None:
         items.append({
             "id": lead["id"], "key": key, "name": bench["name"],
             "tier": tier, "tier_trail": tier_trail, "covered": covered,
+            "source_search": looked and {k: looked.get(k) for k in ("date", "searched", "query", "arxiv", "title", "why")},
             "title": lead["title"],
             "mode": lab["mode"], "adapter": adapter, "hi1": hi1.get(key),
             "diff": differences(adapter, lab["mode"], best, basis),
@@ -347,6 +356,8 @@ def main() -> None:
             "standard": version,
             "run": max((i["tier"]["date"] for i in items if i["tier"]), default=None),
             "judged": sum(i["tier"] is not None for i in open_items),
+            "searched_for_source": sum(i["source_search"] is not None for i in open_items),
+            "source_found": sum(bool(i["source_search"] and i["source_search"]["arxiv"]) for i in open_items),
             "by_agent": sum(bool(i["tier"] and i["tier"]["model"]) for i in open_items),
             "by_rule": sum(bool(i["tier"] and not i["tier"]["model"]) for i in open_items),
             "candidates": len(open_items),

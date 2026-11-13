@@ -225,6 +225,14 @@ def main() -> int:
     seen = last_tried()
     benchmarks = pool.load()[3]
     found = discover(benchmarks)
+    # Papers found by name search (scripts/find_sources.py) count as the benchmark's own.
+    searched = ROOT / "data" / "source_search.json"
+    if searched.exists():
+        for key, record in json.loads(searched.read_text()).items():
+            if record.get("arxiv") or record.get("repo"):
+                entry = found.setdefault(key, {})
+                entry.setdefault("arxiv", record.get("arxiv"))
+                entry["repo"] = entry.get("repo") or record.get("repo")
     print(f"project pages read for missing links: {sum(bool(v.get('from')) for v in found.values())} of {len(found)} gave a repository or paper", flush=True)
     usable = {"repo": bool(gh_token), "arxiv": True, "hf": True}
     source_of = {"repo": "github", "arxiv": "s2", "hf": "hf"}

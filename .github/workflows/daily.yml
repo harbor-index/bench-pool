@@ -86,7 +86,7 @@ jobs:
           git config user.name "bench-pool daily"
           git config user.email "actions@users.noreply.github.com"
           git add data/labels.jsonl data/tiers.jsonl data/signals.jsonl data/leaderboard_search.jsonl \
-                  data/discovered_links.json web/data reports
+                  data/discovered_links.json data/source_search.json web/data reports
           git diff --cached --quiet || git commit -m "Daily run $(date -u +%F)"
           # Someone may have pushed while the pipeline ran; the run only touches data files.
           git pull --rebase origin "${GITHUB_REF_NAME}"

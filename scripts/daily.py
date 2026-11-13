@@ -2,7 +2,6 @@
 """Run the whole pipeline once, in order. Meant to be started once a day.
 
     python3 scripts/daily.py              # the daily run
-    python3 scripts/daily.py --weekly     # also search for each benchmark's own leaderboard
     python3 scripts/daily.py --dry-run    # print the steps, run nothing
     python3 scripts/daily.py --from signals
     python3 scripts/daily.py --days 1 --tier-limit 10   # a small trial: one snapshot, ten verdicts
@@ -37,14 +36,16 @@ STEPS = [
     ("leaderboards", ["leaderboards.py"], "top score per benchmark from the crawls"),
     ("candidates", ["candidates.py"], "rules, leaderboards, Adapter List, merge duplicates"),
     ("classify", ["classify.py"], "benchmark gate, mode and class for new candidates"),
-    ("find_leaderboards", ["find_leaderboards.py"], "each benchmark's own leaderboard (weekly)"),
     ("signals", ["signals.py"], "stars, citations, likes"),
     ("build", ["build.py"], "join everything for the site"),
+    ("find_sources", ["find_sources.py", "--limit", "120"], "search for the paper of benchmarks that have nothing to read"),
+    ("find_leaderboards", ["find_leaderboards.py", "--limit", "200"], "search for each benchmark's own leaderboard"),
+    ("rebuild", ["build.py"], "add what the searches found"),
     ("tier", ["tier.py"], "judge benchmarks that have no verdict under the current standard"),
     ("publish", ["build.py"], "put the new verdicts on the site"),
     ("report", ["report.py"], "write the day's report to reports/"),
 ]
-WEEKLY_ONLY = {"find_leaderboards"}
+WEEKLY_ONLY: set[str] = set()      # every step runs daily; the two searches work through their backlog 200 at a time
 # classify and tier exit with 2 when some records got no answer; the next run retries those.
 SOFT_FAIL = {"classify": {2}, "tier": {2}}
 
@@ -59,7 +60,7 @@ def summary() -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--weekly", action="store_true", help="also run the own-leaderboard search")
+    parser.add_argument("--weekly", action="store_true", help="kept for old callers; every step now runs daily")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--days", type=int, help="only fetch the last N days of Radar snapshots (default: all)")
     parser.add_argument("--tier-limit", type=int, help="judge at most N benchmarks in this run")

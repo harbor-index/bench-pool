@@ -1,0 +1,235 @@
+{
+"aabriefcase": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "aa-briefcase",
+"query": "aa-briefcase",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"aime2024": {
+"arxiv": null,
+"considered": [
+"AIM 2024 Sparse Neural Rendering Challenge: Dataset and Benchmark",
+"AIM 2024 Sparse Neural Rendering Challenge: Methods and Results",
+"AIM 2024 Challenge on Video Saliency Prediction: Methods and Results",
+"AIM 2024 Challenge on UHD Blind Photo Quality Assessment",
+"AIM 2024 Challenge on Compressed Video Quality Assessment: Methods and Results",
+"AIM 2024 Challenge on Efficient Video Super-Resolution for AV1 Compressed Content"
+],
+"date": "2026-11-13",
+"name": "AIME 2024",
+"query": "AIME 2024",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All papers concern AIM 2024 challenges, not the AIME 2024 mathematics exam."
+},
+"automationbenchaa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "AutomationBench-AA",
+"query": "AutomationBench-AA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"browsecomp": {
+"arxiv": "2504.12516",
+"considered": [
+"UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp",
+"BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+"MM-BrowseComp: A Comprehensive Benchmark for Multimodal Browsing Agents",
+"Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus",
+"K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts",
+"BrowseComp-$V^3$: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents"
+],
+"date": "2026-11-13",
+"name": "browsecomp",
+"published": "2025-04-16",
+"query": "browsecomp",
+"repo": "openai/simple-evals",
+"searched": "arXiv",
+"title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+"why": "Introduces BrowseComp benchmark for browsing agents with hard-to-find entangled information."
+},
+"charxivr": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "CharXiv-R",
+"query": "CharXiv-R",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"ifbench": {
+"arxiv": null,
+"considered": [
+"MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding",
+"Video-IFBench: Evaluating Instruction Following of Multimodal LLMs in Video Understanding Scenarios"
+],
+"date": "2026-11-13",
+"name": "IFBench",
+"query": "IFBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Both papers introduce differently named variants (MTAC-IFBench, Video-IFBench), not the IFBench benchmark itself."
+},
+"livecodebench6": {
+"arxiv": null,
+"considered": [
+"Breaking Training Bottlenecks: Effective and Stable Reinforcement Learning for Coding Models",
+"CodeGrad: Integrating Multi-Step Verification with Gradient-Based LLM Refinement",
+"LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering",
+"LLMs Know When They Know, but Do Not Act on It: A Metacognitive Harness for Test-time Scaling",
+"Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+"Test-Time Self-Play: Scaling without a Verifier"
+],
+"date": "2026-11-13",
+"name": "LiveCodeBench v6",
+"query": "LiveCodeBench v6",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces LiveCodeBench v6; one only uses a subset of it."
+},
+"math": {
+"arxiv": null,
+"considered": [
+"Real and Complex Analysis: Solutions to Problems in Amer. Math. Monthly, Math. Magazine, College Math. J., Elemente der ",
+"Math-Selfie",
+"Art Speaks Maths, Maths Speaks Art",
+"Is math useful?",
+"Card Dealing Math"
+],
+"date": "2026-11-13",
+"name": "MATH",
+"query": "MATH",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the listed papers introduces the MATH benchmark; all are unrelated mathematics writings."
+},
+"mathvista": {
+"arxiv": "2310.02255",
+"considered": [
+"MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+],
+"date": "2026-11-13",
+"name": "MathVista",
+"published": "2023-10-03",
+"query": "MathVista",
+"repo": null,
+"searched": "arXiv",
+"title": "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+"why": "Introduces MathVista benchmark evaluating mathematical reasoning in visual contexts."
+},
+"mmmu": {
+"arxiv": "2311.16502",
+"considered": [
+"MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark",
+"Uni-MMMU: A Massive Multi-discipline Multimodal Unified Benchmark",
+"Video-MMMU: Evaluating Knowledge Acquisition from Multi-Discipline Professional Videos",
+"MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI"
+],
+"date": "2026-11-13",
+"name": "MMMU",
+"published": "2023-11-27",
+"query": "MMMU",
+"repo": null,
+"searched": "arXiv",
+"title": "MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI",
+"why": "Introduces MMMU benchmark for college-level multimodal questions across six disciplines."
+},
+"mmmupro": {
+"arxiv": "2409.02813",
+"considered": [
+"MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark"
+],
+"date": "2026-11-13",
+"name": "MMMU-Pro",
+"published": "2024-09-04",
+"query": "MMMU-Pro",
+"repo": null,
+"searched": "arXiv",
+"title": "MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark",
+"why": "Introduces MMMU-Pro benchmark with vision-only input and harder multimodal questions."
+},
+"supergpqa": {
+"arxiv": "2502.14739",
+"considered": [
+"SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines"
+],
+"date": "2026-11-13",
+"name": "SuperGPQA",
+"published": "2025-02-20",
+"query": "SuperGPQA",
+"repo": null,
+"searched": "arXiv",
+"title": "SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines",
+"why": "Introduces SuperGPQA benchmark evaluating graduate-level knowledge across 285 disciplines."
+},
+"tau2benchtelecom": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "τ²-Bench Telecom",
+"query": "τ²-Bench Telecom",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"tau2telecom": {
+"arxiv": null,
+"considered": [
+"MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use",
+"Beyond Prompts: Measuring and Optimizing LLM Tool-Agent Harnesses"
+],
+"date": "2026-11-13",
+"name": "Tau2 Telecom",
+"query": "Tau2 Telecom",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Neither paper introduces the Tau2 Telecom benchmark; both concern tool-agent RL/harness optimization."
+},
+"tau3banking": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "Tau3 Banking",
+"query": "Tau3 Banking",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"toolathlon": {
+"arxiv": "2510.25726",
+"considered": [
+"The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution",
+"Cross-Benchmark Generalization in Long-Horizon Agents",
+"EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+"AgentPerturb: Evaluating LLM Agent Robustness under Controlled Interaction Perturbations",
+"ComplexConstraints and Beyond: Expert Rubrics for RLVR",
+"daVinci-Agency: Unlocking Long-Horizon Agency Data-Efficiently"
+],
+"date": "2026-11-13",
+"name": "Toolathlon",
+"published": "2025-10-29",
+"query": "Toolathlon",
+"repo": null,
+"searched": "arXiv",
+"title": "The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution",
+"why": "Introduces Tool Decathlon, dubbed Toolathlon, a benchmark for diverse long-horizon agent tasks."
+}
+}

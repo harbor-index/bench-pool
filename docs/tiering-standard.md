@@ -27,6 +27,8 @@ For each benchmark:
   text), not only the abstract, without the reference list;
 - its repository README in full and its top-level file list, when it has a
   repository.
+- when it has neither a paper nor a repository, its own page: a Hugging Face
+  dataset card, a DOI landing page or a project page.
 
 The agent does not browse. `scripts/tier.py` fetches these and hands them over
 as text, and records for every verdict how much was read. A verdict needs the
