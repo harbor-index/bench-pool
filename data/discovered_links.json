@@ -124,6 +124,9 @@
 "agentdoxx": {
 "from": null
 },
+"agentenvbenchmarks": {
+"from": null
+},
 "agentevalbench": {
 "from": null
 },
@@ -266,6 +269,9 @@
 "agentrobustbench": {
 "from": null
 },
+"agentscripteval": {
+"from": null
+},
 "agentselect": {
 "from": null
 },
@@ -402,6 +408,9 @@
 "analogdesignbench": {
 "from": null
 },
+"analoglayoutworld": {
+"from": null
+},
 "anchor": {
 "from": null
 },
@@ -428,6 +437,9 @@
 "from": null
 },
 "anonvul": {
+"from": null
+},
+"answerladder": {
 "from": null
 },
 "antiskillbench": {
@@ -497,6 +509,9 @@
 "arcc": {
 "from": null
 },
+"arebench": {
+"from": null
+},
 "arenabench": {
 "from": null
 },
@@ -515,6 +530,9 @@
 "argusbench": {
 "from": null
 },
+"ariadnebench": {
+"from": null
+},
 "arkitscenes": {
 "from": null
 },
@@ -522,6 +540,9 @@
 "from": null
 },
 "arxivmath": {
+"from": null
+},
+"ask2decide": {
 "from": null
 },
 "aspire": {
@@ -540,6 +561,9 @@
 "from": null
 },
 "astroagentbench": {
+"from": null
+},
+"astromembench": {
 "from": null
 },
 "asyncodebench": {
@@ -782,6 +806,9 @@
 "biolpbench": {
 "from": null
 },
+"bioxarenapro": {
+"from": null
+},
 "birdbench": {
 "from": "https://bird-bench.github.io/",
 "repo": "wmyaccept/bird-bench"
@@ -869,6 +896,12 @@
 "businessarena": {
 "from": null
 },
+"buysideflow": {
+"from": null
+},
+"bypassgym": {
+"from": null
+},
 "cabra": {
 "from": null
 },
@@ -915,6 +948,9 @@
 "from": null
 },
 "carryoverbench": {
+"from": null
+},
+"castworld": {
 "from": null
 },
 "catastrophiccybermisuse": {
@@ -1121,6 +1157,9 @@
 "codeforces": {
 "from": null
 },
+"codegraphrepair": {
+"from": null
+},
 "codepde": {
 "from": null
 },
@@ -1200,6 +1239,9 @@
 "repo": "UKGovernmentBEIS/control-arena"
 },
 "controleval": {
+"from": null
+},
+"controlharbor": {
 "from": null
 },
 "cooperbench": {
@@ -1326,6 +1368,9 @@
 "crustbench": {
 "from": null
 },
+"cryptomisuserepair": {
+"from": null
+},
 "cryptotradingbacktesttolive": {
 "from": null
 },
@@ -1383,6 +1428,9 @@
 "from": null
 },
 "cybench": {
+"from": null
+},
+"cyberbingym": {
 "from": null
 },
 "cyberclear": {
@@ -1450,6 +1498,9 @@
 "ddbench": {
 "from": null
 },
+"decarena": {
+"from": null
+},
 "deceptionbench": {
 "from": null
 },
@@ -1491,6 +1542,9 @@
 "from": null
 },
 "deliverbench": {
+"from": null
+},
+"deputybench": {
 "from": null
 },
 "design2code": {
@@ -1840,6 +1894,9 @@
 "expbench": {
 "from": null
 },
+"expertcrowdswe": {
+"from": null
+},
 "expertswe": {
 "from": null
 },
@@ -1855,6 +1912,9 @@
 "repo": "sunblaze-ucb/exploitgym"
 },
 "exploitresistance": {
+"from": null
+},
+"extfoambench": {
 "from": null
 },
 "extractbench": {
@@ -1928,6 +1988,9 @@
 "from": null
 },
 "financialauditbench": {
+"from": null
+},
+"fincosmos": {
 "from": null
 },
 "fincuabuildbench": {
@@ -2637,6 +2700,9 @@
 "id:r-c256e884ba": {
 "from": null
 },
+"id:r-ceca6a0415": {
+"from": null
+},
 "id:r-d42b91ef93": {
 "from": null
 },
@@ -2762,6 +2828,9 @@
 "interpretercommunicativesuccess": {
 "from": null
 },
+"invalidbugreports": {
+"from": null
+},
 "investlogicbench": {
 "from": null
 },
@@ -2807,6 +2876,9 @@
 "repo": "Job-Bench/job-bench-eval"
 },
 "joibenchtask": {
+"from": null
+},
+"journeyman": {
 "from": null
 },
 "jrdbavr": {
@@ -3011,6 +3083,9 @@
 "liveeventsllmbenchmarks": {
 "from": null
 },
+"livegeo": {
+"from": null
+},
 "livemacroeval": {
 "from": null
 },
@@ -3102,6 +3177,9 @@
 "from": null
 },
 "longrcabench": {
+"from": null
+},
+"longrunagi": {
 "from": null
 },
 "longtextbench": {
@@ -3427,6 +3505,9 @@
 "minerva": {
 "from": null
 },
+"miniagentruntimebench": {
+"from": null
+},
 "miroeval": {
 "from": null
 },
@@ -3452,6 +3533,9 @@
 "from": null
 },
 "mlgymbench": {
+"from": null
+},
+"mlirbench": {
 "from": null
 },
 "mlopsbench": {
@@ -3577,6 +3661,9 @@
 "mnistpro": {
 "from": null
 },
+"mobilegym": {
+"from": null
+},
 "mobilejudgebench": {
 "from": null
 },
@@ -3611,6 +3698,9 @@
 "from": null
 },
 "motionbench": {
+"from": null
+},
+"motiongraphicsbench": {
 "from": null
 },
 "mrcr": {
@@ -3746,6 +3836,9 @@
 "from": null
 },
 "nexus": {
+"from": null
+},
+"nibench": {
 "from": null
 },
 "nihmultineedle": {
@@ -3928,6 +4021,9 @@
 "openrca": {
 "from": null
 },
+"openrebench": {
+"from": null
+},
 "openrewrite": {
 "from": null
 },
@@ -3967,6 +4063,9 @@
 "from": null
 },
 "osworldrealtime": {
+"from": null
+},
+"osworldtasks": {
 "from": null
 },
 "osworldverified": {
@@ -4241,6 +4340,9 @@
 "pricebench": {
 "from": null
 },
+"principalbench2": {
+"from": null
+},
 "principia": {
 "from": "https://principiabench.github.io/",
 "repo": "PrincipiaBench/Principia"
@@ -4281,6 +4383,9 @@
 "promptshieldhome": {
 "from": null
 },
+"prooforclaim": {
+"from": null
+},
 "propermem": {
 "from": null
 },
@@ -4318,6 +4423,9 @@
 "from": null
 },
 "pwsdecisions": {
+"from": null
+},
+"pyrite": {
 "from": null
 },
 "q2dweb": {
@@ -4386,6 +4494,9 @@
 "rdbench": {
 "from": null
 },
+"reabench": {
+"from": null
+},
 "reactbench": {
 "from": "https://www.reactbench.dev/blog",
 "repo": "millionco/reactbench"
@@ -4407,6 +4518,9 @@
 "from": null
 },
 "realkiefcc": {
+"from": null
+},
+"realtimespeechlatency": {
 "from": null
 },
 "realworldcodingagentbenchmarks": {
@@ -4575,6 +4689,9 @@
 "robostress": {
 "from": null
 },
+"roboswe": {
+"from": null
+},
 "robustkbench": {
 "from": null
 },
@@ -4613,6 +4730,9 @@
 "repo": "karpathy/nanoGPT"
 },
 "rsiinferencebench": {
+"from": null
+},
+"rsipdebench": {
 "from": null
 },
 "rssynagent": {
@@ -4673,6 +4793,9 @@
 "from": null
 },
 "scenemembenchmark": {
+"from": null
+},
+"schemadrift": {
 "from": null
 },
 "schemagui": {
@@ -4849,6 +4972,12 @@
 "simplewikisearch": {
 "from": null
 },
+"simuleandes": {
+"from": null
+},
+"singularitybench": {
+"from": null
+},
 "siris": {
 "from": null
 },
@@ -4902,6 +5031,9 @@
 "smallowagentbench": {
 "from": null
 },
+"smartportcertified": {
+"from": null
+},
 "smartsalesbench": {
 "from": null
 },
@@ -4921,6 +5053,9 @@
 "from": null
 },
 "solexecbench": {
+"from": null
+},
+"sourdine": {
 "from": null
 },
 "sparkbench": {
@@ -5225,6 +5360,9 @@
 "from": "https://swtbench.com/",
 "repo": "logic-star-ai/swt-bench"
 },
+"synthcorp": {
+"from": null
+},
 "system1arena": {
 "from": null
 },
@@ -5410,6 +5548,9 @@
 "tooltracebench": {
 "from": null
 },
+"toolturns": {
+"from": null
+},
 "torrent": {
 "from": null
 },
@@ -5474,6 +5615,9 @@
 "from": null
 },
 "tvbench": {
+"from": null
+},
+"twine": {
 "from": null
 },
 "tydiqa": {
@@ -5621,6 +5765,9 @@
 "vibenchmark": {
 "from": null
 },
+"vibeprevisbench": {
+"from": null
+},
 "vibepro": {
 "from": null
 },
@@ -5700,6 +5847,9 @@
 "from": null
 },
 "vistahop": {
+"from": null
+},
+"visualcipherbench": {
 "from": null
 },
 "visualcommissionbench": {
@@ -5837,6 +5987,9 @@
 "from": null
 },
 "wmt24": {
+"from": null
+},
+"wordinferbench": {
 "from": null
 },
 "wordstoworld": {

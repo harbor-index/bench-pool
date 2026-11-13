@@ -1936,3 +1936,53 @@
 {"key": "omnicapbench", "date": "2026-11-12", "tried": ["github"], "github": {"repo": "Tencent-Hunyuan/OmniCapBench", "stars": 10, "forks": 0, "created": "2026-10-12", "pushed": "2026-10-22", "archived": false}}
 {"key": "omnivbench", "date": "2026-11-12", "tried": ["github"], "github": {"repo": "wxliii/OmniVBench", "stars": 43, "forks": 0, "created": "2026-09-03", "pushed": "2026-11-05", "archived": false}}
 {"key": "principia", "date": "2026-11-12", "tried": ["github"], "github": {"repo": "PrincipiaBench/Principia", "stars": 0, "forks": 0, "created": "2026-09-28", "pushed": "2026-10-19", "archived": false}}
+{"key": "scrapebench", "date": "2026-11-13", "tried": ["github"], "github": {"repo": "imperialite/scrapebench", "stars": 0, "forks": 0, "created": "2026-04-28", "pushed": "2026-11-03", "archived": false}}
+{"key": "geonatureagent", "date": "2026-11-13", "tried": ["github", "hf"], "github": {"repo": "gabrielireland/GeoNatureAgent_Benchmark", "stars": 3, "forks": 1, "created": "2026-04-29", "pushed": "2026-11-13", "archived": false}, "hf": {"dataset": "gabrielireland/GeoNatureAgent_Benchmark", "likes": 0, "downloads": 24, "gated": false, "private": false}}
+{"key": "cyberbingym", "date": "2026-11-13", "tried": ["github"], "github": {"repo": "sunblaze-ucb/cyberbingym", "stars": 2, "forks": 1, "created": "2026-11-11", "pushed": "2026-11-11", "archived": false}}
+{"key": "nibench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "soarena", "date": "2026-11-13", "tried": ["github", "s2"], "github": {"repo": "holdrain/SO-Arena", "stars": 24, "forks": 0, "created": "2026-11-08", "pushed": "2026-11-13", "archived": false}}
+{"key": "wordinferbench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "toolturns", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "arebench", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.14364"}}
+{"key": "openrebench", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.13925"}}
+{"key": "bypassgym", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.13684"}}
+{"key": "gtavbench", "date": "2026-11-13", "tried": ["github", "s2"], "github": {"repo": "ljbro/GTAGym", "stars": 12, "forks": 0, "created": "2026-11-07", "pushed": "2026-11-12", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.13028"}}
+{"key": "buysideflow", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-07", "venue": null, "arxiv": "2611.12966"}}
+{"key": "invalidbugreports", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 2, "influential": 0, "published": "2026-05-17", "venue": "arXiv.org", "arxiv": "2605.17561"}}
+{"key": "pyrite", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.14511"}}
+{"key": "id:arxiv-2611-14309", "date": "2026-11-13", "tried": ["github", "s2"], "github": {"repo": "mmdm-benchmark/mmdm", "stars": 10, "forks": 0, "created": "2026-10-13", "pushed": "2026-11-11", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.14309"}}
+{"key": "bioxarenapro", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.13994"}}
+{"key": "realtimespeechlatency", "date": "2026-11-13", "tried": ["hf"], "hf": {"dataset": "samjohnson11/voxtral-vs-elevenlabs-benchmark", "likes": 0, "downloads": 12, "gated": false, "private": false}}
+{"key": "livegeo", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "analoglayoutworld", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "visualcipherbench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "singularitybench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "astromembench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "reabench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "agentenvbenchmarks", "date": "2026-11-13", "tried": ["github"], "github": {"repo": "earakely-scale/agentenv-benchmarks", "stars": 0, "forks": 0, "created": "2026-11-12", "pushed": "2026-11-13", "archived": false}}
+{"key": "twine", "date": "2026-11-13", "tried": ["hf"], "hf": {"dataset": "twill-iclr2027/twine-benchmark", "likes": 0, "downloads": 185, "gated": false, "private": false}}
+{"key": "controlharbor", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "worlddraft", "date": "2026-11-13", "tried": ["github", "s2"], "github": {"repo": "KevinHuge/WorldDraft", "stars": 9, "forks": 1, "created": "2026-11-11", "pushed": "2026-11-13", "archived": false}}
+{"key": "deputybench", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.13355"}}
+{"key": "expertcrowdswe", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.13246"}}
+{"key": "agentscripteval", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.13183"}}
+{"key": "ask2decide", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.13015"}}
+{"key": "mecheval", "date": "2026-11-13", "tried": ["github", "s2"], "github": {"repo": "third-intelligence/WARC", "stars": 3, "forks": 0, "created": "2026-10-30", "pushed": "2026-11-10", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.12324"}}
+{"key": "simuleandes", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-07", "venue": null, "arxiv": "2611.10602"}}
+{"key": "motiongraphicsbench", "date": "2026-11-13", "tried": ["hf", "s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-07", "venue": null, "arxiv": "2611.10592"}}
+{"key": "earthrecord", "date": "2026-11-13", "tried": ["github", "s2"], "github": {"repo": "ranranrannervous/EarthRecord", "stars": 3, "forks": 0, "created": "2026-11-06", "pushed": "2026-11-11", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-06", "venue": null, "arxiv": "2611.12934"}}
+{"key": "longtailswe", "date": "2026-11-13", "tried": ["github", "s2"], "github": {"repo": "SWE-rebench/LongTail-SWE", "stars": 3, "forks": 0, "created": "2026-10-14", "pushed": "2026-11-10", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-06", "venue": null, "arxiv": "2611.10304"}}
+{"key": "roboswe", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "vibeprevisbench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "decarena", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "castworld", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "rsipdebench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "mlirbench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "synthcorp", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "extfoambench", "date": "2026-11-13", "tried": ["s2"]}
+{"key": "ivgbench", "date": "2026-11-13", "tried": ["github", "s2"], "github": {"repo": "SalesforceAIResearch/Interactive-Visual-Gym", "stars": 8, "forks": 0, "created": "2026-10-20", "pushed": "2026-11-06", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-05", "venue": null, "arxiv": "2611.08286"}}
+{"key": "fincosmos", "date": "2026-11-13", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-05", "venue": null, "arxiv": "2611.07464"}}
+{"key": "longrunagi", "date": "2026-11-13", "tried": ["github"], "github": {"repo": "aidless/longrun-agi", "stars": 0, "forks": 0, "created": "2026-10-29", "pushed": "2026-11-13", "archived": false}}
+{"key": "miniagentruntimebench", "date": "2026-11-13", "tried": ["github"], "github": {"repo": "aidless/mini-agent-runtime-bench", "stars": 0, "forks": 0, "created": "2026-10-21", "pushed": "2026-11-13", "archived": false}}
+{"key": "osworldtasks", "date": "2026-11-13", "tried": ["github"], "github": {"repo": "elanthus/OSWorldTasks", "stars": 1, "forks": 0, "created": "2026-08-08", "pushed": "2026-11-13", "archived": false}}
+{"key": "mobilegym", "date": "2026-11-13", "tried": ["github"], "github": {"repo": "Purewhiter/mobilegym", "stars": 864, "forks": 144, "created": "2026-05-14", "pushed": "2026-11-13", "archived": false}}
