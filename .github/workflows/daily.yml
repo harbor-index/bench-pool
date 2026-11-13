@@ -88,6 +88,8 @@ jobs:
           git add data/labels.jsonl data/tiers.jsonl data/signals.jsonl data/leaderboard_search.jsonl \
                   data/discovered_links.json web/data
           git diff --cached --quiet || git commit -m "Daily run $(date -u +%F)"
+          # Someone may have pushed while the pipeline ran; the run only touches data files.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
 
       - uses: actions/upload-pages-artifact@v3
