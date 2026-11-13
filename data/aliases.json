@@ -1,0 +1,6 @@
+{
+ "_about": "Spellings of the same benchmark that the rules in scripts/pool.py cannot catch. Left: the variant. Right: the spelling to keep. Add a pair only after checking that both names point at the same benchmark; versions and variants (OSWorld vs OSWorld 2.0, GDPval vs GDPval-AA) do not belong here.",
+ "same_benchmark": {
+  "MM-BrowserComp": "MM-BrowseComp"
+ }
+}

@@ -1,0 +1,100 @@
+# Runs the whole pipeline once a day, saves what it learned back to the
+# repository, and publishes web/ to GitHub Pages.
+#
+# Secrets needed (Settings > Secrets and variables > Actions):
+#   OPENAI_BASE_URL, OPENAI_API_KEY, OPENAI_MODEL   the language-model endpoint
+#   OPENAI_MAX_TOKENS                               optional, for models that reason at length
+#   HF_TOKEN                                        optional, Hugging Face read token
+#   S2_API_KEY                                      optional, Semantic Scholar
+# GitHub's own token is used for reading repository stars.
+#
+# Pages must be set to "GitHub Actions" under Settings > Pages.
+# scripts/setup_github.sh sets the secrets from .env and switches Pages on.
+name: daily
+
+on:
+  schedule:
+    - cron: "30 6 * * *"        # 06:30 UTC, after Radar's snapshot for the day
+  workflow_dispatch:
+    inputs:
+      weekly:
+        description: "Also search for each benchmark's own leaderboard"
+        type: boolean
+        default: false
+      tier_limit:
+        description: "Judge at most this many benchmarks (empty = no limit)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: PDF reader for papers without an HTML version
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      # Radar snapshots and fetched papers are large and never change once written.
+      - uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: raw-${{ github.run_id }}
+          restore-keys: raw-
+
+      - name: Tests
+        run: python3 -m unittest discover -s tests
+
+      - name: Pipeline
+        env:
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          OPENAI_MAX_TOKENS: ${{ secrets.OPENAI_MAX_TOKENS }}
+          OPENAI_THINKING: ${{ secrets.OPENAI_THINKING }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+        run: |
+          args=""
+          if [ "${{ github.event.schedule }}" != "" ] && [ "$(date -u +%u)" = "1" ]; then args="$args --weekly"; fi
+          if [ "${{ inputs.weekly }}" = "true" ]; then args="$args --weekly"; fi
+          if [ -n "${{ inputs.tier_limit }}" ]; then args="$args --tier-limit ${{ inputs.tier_limit }}"; fi
+          python3 scripts/daily.py $args
+
+      # What the run learned: labels, verdicts, signals, leaderboards, and the site's data.
+      - name: Save state
+        if: success()
+        run: |
+          git config user.name "bench-pool daily"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/labels.jsonl data/tiers.jsonl data/signals.jsonl data/leaderboard_search.jsonl \
+                  data/discovered_links.json web/data
+          git diff --cached --quiet || git commit -m "Daily run $(date -u +%F)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        if: success()
+        with:
+          path: web
+
+      - id: deploy
+        if: success()
+        uses: actions/deploy-pages@v4

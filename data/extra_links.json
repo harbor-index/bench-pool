@@ -1,0 +1,4 @@
+{
+ "_about": "Start links for scripts/find_leaderboards.py, for benchmarks where Radar gives no paper, repository or project link (mostly the ones that come from the aggregator crawls). Key: the benchmark's name as shown on the site. Value: addresses of its own project page, repository or leaderboard. The search still has to find and quote the score on the page.",
+ "links": {}
+}
