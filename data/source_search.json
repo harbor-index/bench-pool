@@ -10,6 +10,19 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"ai2d": {
+"arxiv": null,
+"considered": [
+"AI2D-RST: A multimodal corpus of 1000 primary school science diagrams"
+],
+"date": "2026-11-13",
+"name": "AI2D",
+"query": "AI2D",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "This paper extends/annotates the existing AI2D dataset; it does not introduce the AI2D benchmark itself."
+},
 "aime2024": {
 "arxiv": null,
 "considered": [
@@ -28,6 +41,140 @@
 "title": null,
 "why": "All papers concern AIM 2024 challenges, not the AIME 2024 mathematics exam."
 },
+"aime2025": {
+"arxiv": null,
+"considered": [
+"AIM 2025 Challenge on Real-World RAW Image Denoising",
+"AIM 2025 Rip Current Segmentation (RipSeg) Challenge Report",
+"AIM 2025 Challenge on High FPS Motion Deblurring: Methods and Results",
+"Efficient Perceptual Image Super Resolution: AIM 2025 Study and Benchmark",
+"AIM 2025 challenge on Inverse Tone Mapping Report: Methods and Results",
+"Efficient Real-World Deblurring using Single Images: AIM 2025 Challenge Report"
+],
+"date": "2026-11-13",
+"name": "AIME 2025",
+"query": "AIME 2025",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces the AIME 2025 math benchmark; all are AIM image-processing challenges."
+},
+"aime2026": {
+"arxiv": null,
+"considered": [
+"From Many to Meaningful: Feature-Guided Zero-Shot Chronic Kidney Disease Screening Using Large Language Models",
+"RSI-Env: An Open-Ended Environment for Recursive Self-Improvement of Agents",
+"Interpretable Humans, Alien LLMs: Expert Analysis of Latent Structures in Assessment Responses",
+"JustFit: Just-in-Time State Management for Local LLM Serving",
+"How Much Is Left Matters: False Positives and False Negatives in Partial-Prompt Contamination Tests",
+"Can Zero-Shot LLMs Predict Child Malnutrition? A Fairness and Temporal Robustness Study"
+],
+"date": "2026-11-13",
+"name": "AIME 2026",
+"query": "AIME 2026",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "AIME 2026 is a competition problem set; no listed paper introduces it, one only uses it as contamination test data."
+},
+"airbench2024": {
+"arxiv": "2407.17436",
+"considered": [
+"AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies"
+],
+"date": "2026-11-13",
+"name": "AIR-Bench 2024",
+"published": "2024-07-11",
+"query": "AIR-Bench 2024",
+"repo": null,
+"searched": "arXiv",
+"title": "AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies",
+"why": "Introduces AIR-Bench 2024, regulation-aligned safety benchmark matching the entry."
+},
+"amc202223": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "AMC_2022_23",
+"query": "AMC_2022_23",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"androidworldsr": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "AndroidWorld_SR",
+"query": "AndroidWorld_SR",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"arcc": {
+"arxiv": null,
+"considered": [
+"On Robustness and Reliability of Benchmark-Based Evaluation of LLMs",
+"Punching Above Their Weight: Classification-Head Fine-Tuning of Tiny Language Models (TLMs) for Verifiable Multiple-Choi",
+"dVoting: Fast Voting for dLLMs",
+"TODO: Enhancing LLM Alignment with Ternary Preferences",
+"BrainTransformers: SNN-LLM",
+"QVAC Genesis III: A Large-Scale, High-Quality Open Synthetic STEM Corpus for Efficient Language Model Pre-Training"
+],
+"date": "2026-11-13",
+"name": "ARC-C",
+"query": "ARC-C",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All papers merely use ARC-C as a benchmark; none introduces it."
+},
+"arenahard": {
+"arxiv": "2406.11939",
+"considered": [
+"From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline",
+"Behind Aggregate Scores: What Systematically Varying Arena-Hard's LLM Judge Reveals"
+],
+"date": "2026-11-13",
+"name": "Arena Hard",
+"published": "2024-06-17",
+"query": "Arena Hard",
+"repo": null,
+"searched": "arXiv",
+"title": "From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline",
+"why": "Introduces Arena-Hard benchmark and BenchBuilder pipeline for LLM judge evaluation."
+},
+"arenahard2": {
+"arxiv": null,
+"considered": [
+"Outcome Accuracy is Not Enough: Aligning the Reasoning Process of Reward Models",
+"RLBFF: Binary Flexible Feedback to bridge between Human Feedback & Verifiable Rewards"
+],
+"date": "2026-11-13",
+"name": "Arena-Hard v2",
+"query": "Arena-Hard v2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Neither paper introduces a benchmark named Arena-Hard v2."
+},
+"arenahardarenahardauto01": {
+"arxiv": "2406.11939",
+"considered": [
+"From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline",
+"Behind Aggregate Scores: What Systematically Varying Arena-Hard's LLM Judge Reveals"
+],
+"date": "2026-11-13",
+"name": "Arena-Hard (Arena-Hard-Auto-v0.1)",
+"published": "2024-06-17",
+"query": "Arena-Hard",
+"repo": null,
+"searched": "arXiv",
+"title": "From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline",
+"why": "Introduces Arena-Hard benchmark via BenchBuilder pipeline for automatic LLM evaluation."
+},
 "automationbenchaa": {
 "arxiv": null,
 "considered": [],
@@ -38,6 +185,151 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"bbh": {
+"arxiv": null,
+"considered": [
+"High-Spin BBH Subpopulation from AGN Accretion",
+"H.E.S.S. follow-up of BBH merger events",
+"Top-Yukawa contributions to bbH production at the LHC",
+"Investigating the effect of in-plane spin directions for Precessing BBH systems",
+"Improved inspiral-merger-ringdown model for BBHs on elliptical orbits"
+],
+"date": "2026-11-13",
+"name": "BBH",
+"query": "BBH",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All listed papers concern physics, not the BIG-Bench Hard reasoning benchmark."
+},
+"belebele": {
+"arxiv": "2308.16884",
+"considered": [
+"2M-BELEBELE: Highly Multilingual Speech and American Sign Language Comprehension Dataset",
+"The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants"
+],
+"date": "2026-11-13",
+"name": "Belebele",
+"published": "2023-08-31",
+"query": "Belebele",
+"repo": null,
+"searched": "arXiv",
+"title": "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants",
+"why": "Introduces Belebele, a parallel multiple-choice reading comprehension dataset in 122 language variants."
+},
+"bfcl": {
+"arxiv": null,
+"considered": [
+"Asking Earns Nothing: Scoring the Decision to Act in BFCL Multi-Turn"
+],
+"date": "2026-11-13",
+"name": "BFCL",
+"query": "BFCL",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper analyzes/scoring of BFCL multi-turn; does not introduce the BFCL benchmark."
+},
+"bfcl3": {
+"arxiv": null,
+"considered": [
+"Prefix Executability: Evaluating Tool-Using Agents Beyond Final Success",
+"DaMo: Data Mixing Optimizer in Fine-tuning Multimodal LLMs for Mobile Phone Agents",
+"MAVEN: Improving Generalization in Agentic Tool Calling",
+"ShiQ: Bringing back Bellman to LLMs",
+"SkillX: Automatically Constructing Skill Knowledge Bases for Agents",
+"RefCon: Iterative Refinement and Contrastive Memory Extraction for Context-Evolving Agent"
+],
+"date": "2026-11-13",
+"name": "BFCL-v3",
+"query": "BFCL-v3",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All papers only use BFCL-v3 as an existing benchmark; none introduces it."
+},
+"bfcl4": {
+"arxiv": null,
+"considered": [
+"Benchmarking the Benchmarks: A Validity Audit of Tool-Calling Evaluation",
+"Task- and Session-Level Model Routing: A Common-Interface Hybrid Evaluation of Four Open-Source Routers Across Four Benc",
+"Cross-Benchmark Generalization in Long-Horizon Agents",
+"Toollery: Scaling LLM Agents to Thousands of Skills and Tools",
+"The Bitter Lesson of Tool Calling",
+"What a Random Draw from the MCP Registry Contains, and What Tool-Use Benchmarks Contain Instead"
+],
+"date": "2026-11-13",
+"name": "BFCL-V4",
+"query": "BFCL-V4",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All papers use or audit BFCL v4; none introduces the benchmark."
+},
+"bigbenchextrahard": {
+"arxiv": "2502.19187",
+"considered": [
+"BIG-Bench Extra Hard"
+],
+"date": "2026-11-13",
+"name": "BIG-Bench Extra Hard",
+"published": "2025-02-26",
+"query": "BIG-Bench Extra Hard",
+"repo": "google-deepmind/bbeh",
+"searched": "arXiv",
+"title": "BIG-Bench Extra Hard",
+"why": "Introduces BIG-Bench Extra Hard, a benchmark of hard reasoning tasks."
+},
+"bigbenchhard": {
+"arxiv": "2210.09261",
+"considered": [
+"Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+"Correlating and Predicting Human Evaluations of Language Models from Natural Language Processing Benchmarks",
+"How predictable is language model benchmark performance?",
+"LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+"How Reliable is Language Model Micro-Benchmarking?",
+"Efficient multi-prompt evaluation of LLMs"
+],
+"date": "2026-11-13",
+"name": "BIG-Bench Hard",
+"published": "2022-10-17",
+"query": "BIG-Bench Hard",
+"repo": null,
+"searched": "arXiv",
+"title": "Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+"why": "Introduces BIG-Bench Hard, the suite of 23 challenging BIG-Bench tasks."
+},
+"birdsqldev": {
+"arxiv": null,
+"considered": [
+"Measure Learning at Steady State: A BIRD-SQL Formula 1 Case Study"
+],
+"date": "2026-11-13",
+"name": "Bird-SQL (dev)",
+"query": "Bird-SQL",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper only uses BIRD-SQL questions in a case study; it does not introduce the benchmark."
+},
+"blink": {
+"arxiv": null,
+"considered": [
+"To Blink or Not to Blink? A New Criterion to Quantify Luminescence Blinking",
+"Blink-to-code: real-time Morse code communication via eye blink detection and classification",
+"Blinking Molecule Tracking",
+"A Proximity Measure using Blink Model",
+"A Simple Model of Attentional Blink",
+"Don't Blink: Evidence Collapse during Multimodal Reasoning"
+],
+"date": "2026-11-13",
+"name": "BLINK",
+"query": "BLINK",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the papers introduces the BLINK multimodal benchmark; they concern blinking or unrelated topics."
 },
 "browsecomp": {
 "arxiv": "2504.12516",
@@ -58,12 +350,535 @@
 "title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
 "why": "Introduces BrowseComp benchmark for browsing agents with hard-to-find entangled information."
 },
+"browsecompzh": {
+"arxiv": "2504.19314",
+"considered": [
+"BrowseComp-ZH: Benchmarking Web Browsing Ability of Large Language Models in Chinese"
+],
+"date": "2026-11-13",
+"name": "BrowseComp-zh",
+"published": "2025-04-27",
+"query": "BrowseComp-zh",
+"repo": "PALIN2018/BrowseComp-ZH",
+"searched": "arXiv",
+"title": "BrowseComp-ZH: Benchmarking Web Browsing Ability of Large Language Models in Chinese",
+"why": "Introduces BrowseComp-ZH, a Chinese web-browsing benchmark matching the entry's description."
+},
+"ccocr": {
+"arxiv": "2412.02210",
+"considered": [
+"CC-OCR V2: Fine-Grained Attribution of LMM Failures in Real-World Visual Document Understanding",
+"CC-OCR: A Comprehensive and Challenging OCR Benchmark for Evaluating Large Multimodal Models in Literacy"
+],
+"date": "2026-11-13",
+"name": "CC-OCR",
+"published": "2024-12-03",
+"query": "CC-OCR",
+"repo": null,
+"searched": "arXiv",
+"title": "CC-OCR: A Comprehensive and Challenging OCR Benchmark for Evaluating Large Multimodal Models in Literacy",
+"why": "Introduces CC-OCR benchmark; V2 is later extension."
+},
+"charadessta": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "CharadesSTA",
+"query": "CharadesSTA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"chartqa": {
+"arxiv": "2203.10244",
+"considered": [
+"MSG-Chart: Multimodal Scene Graph for ChartQA",
+"ChartQA-X: Generating Explanations for Visual Chart Reasoning",
+"ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning"
+],
+"date": "2026-11-13",
+"name": "ChartQA",
+"published": "2022-03-19",
+"query": "ChartQA",
+"repo": null,
+"searched": "arXiv",
+"title": "ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning",
+"why": "Introduces ChartQA, a large-scale benchmark for chart question answering with visual and logical reasoning."
+},
+"charxivd": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "CharXiv-D",
+"query": "CharXiv-D",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "charxivr": {
 "arxiv": null,
 "considered": [],
 "date": "2026-11-13",
 "name": "CharXiv-R",
 "query": "CharXiv-R",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"claweval": {
+"arxiv": "2604.06132",
+"considered": [
+"Claw-Eval: Towards Trustworthy Evaluation of Autonomous Agents",
+"Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows"
+],
+"date": "2026-11-13",
+"name": "claw-eval",
+"published": "2026-04-07",
+"query": "claw-eval",
+"repo": null,
+"searched": "arXiv",
+"title": "Claw-Eval: Towards Trustworthy Evaluation of Autonomous Agents",
+"why": "Introduces Claw-Eval with 300 tasks and trajectory-aware auditing, matching the catalogue entry."
+},
+"cmmlu": {
+"arxiv": "2306.09212",
+"considered": [
+"CMMLU: Measuring massive multitask language understanding in Chinese"
+],
+"date": "2026-11-13",
+"name": "CMMLU",
+"published": "2023-06-15",
+"query": "CMMLU",
+"repo": null,
+"searched": "arXiv",
+"title": "CMMLU: Measuring massive multitask language understanding in Chinese",
+"why": "Introduces CMMLU, Chinese multitask benchmark covering many subjects."
+},
+"codeforces": {
+"arxiv": null,
+"considered": [
+"COFO: COdeFOrces dataset for Program Classification, Recognition and Tagging",
+"Code Generation with Small Language Models: A Codeforces-Based Study",
+"When Elo Lies: Hidden Biases in Codeforces-Based Evaluation of Large Language Models",
+"Codehacks: A Dataset of Adversarial Tests for Competitive Programming Problems Obtained from Codeforces"
+],
+"date": "2026-11-13",
+"name": "CodeForces",
+"query": "CodeForces",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces a benchmark named CodeForces; Codeforces is a platform, not these papers' dataset."
+},
+"collie": {
+"arxiv": "2307.08689",
+"considered": [
+"Collie: Finding Performance Anomalies in RDMA Subsystems",
+"COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+"CoLLIE: Continual Learning of Language Grounding from Language-Image Embeddings",
+"COLLIE: Guiding Skill Discovery in Semantically Coherent Latent Space",
+"CoLLiE: Collaborative Training of Large Language Models in an Efficient Way",
+"Sulfur and REE zoning in apatite: The example of the Colli Albani magmatic system"
+],
+"date": "2026-11-13",
+"name": "COLLIE",
+"published": "2023-07-17",
+"query": "COLLIE",
+"repo": null,
+"searched": "arXiv",
+"title": "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+"why": "Introduces COLLIE, a grammar-based framework for constrained compositional text generation benchmark tasks."
+},
+"complexfuncbench": {
+"arxiv": "2501.10132",
+"considered": [
+"ComplexFuncBench: Exploring Multi-Step and Constrained Function Calling under Long-Context Scenario"
+],
+"date": "2026-11-13",
+"name": "ComplexFuncBench",
+"published": "2025-01-17",
+"query": "ComplexFuncBench",
+"repo": "THUDM/ComplexFuncBench",
+"searched": "arXiv",
+"title": "ComplexFuncBench: Exploring Multi-Step and Constrained Function Calling under Long-Context Scenario",
+"why": "Paper introduces ComplexFuncBench benchmark for multi-step constrained function calling with long-context parameters."
+},
+"countbench": {
+"arxiv": "2302.12066",
+"considered": [
+"VisionReasoner: Unified Reasoning-Integrated Visual Perception via Reinforcement Learning",
+"Visual Para-Thinker: Divide-and-Conquer Reasoning for Visual Comprehension",
+"Teaching CLIP to Count to Ten"
+],
+"date": "2026-11-13",
+"name": "CountBench",
+"published": "2023-02-23",
+"query": "CountBench",
+"repo": null,
+"searched": "arXiv",
+"title": "Teaching CLIP to Count to Ten",
+"why": "Introduces CountBench, a counting benchmark for vision-language models."
+},
+"creativewriting3": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "Creative Writing v3",
+"query": "Creative Writing v3",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"csimpleqa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "CSimpleQA",
+"query": "CSimpleQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"deepsearchqa": {
+"arxiv": "2601.20975",
+"considered": [
+"DeepSearchQA: Bridging the Comprehensiveness Gap for Deep Research Agents"
+],
+"date": "2026-11-13",
+"name": "deepsearchqa",
+"published": "2026-01-28",
+"query": "deepsearchqa",
+"repo": null,
+"searched": "arXiv",
+"title": "DeepSearchQA: Bridging the Comprehensiveness Gap for Deep Research Agents",
+"why": "Introduces DeepSearchQA, a 900-prompt benchmark for exhaustive multi-step answer lists."
+},
+"docvqa": {
+"arxiv": "2007.00398",
+"considered": [
+"Hierarchical multimodal transformers for Multi-Page DocVQA",
+"DocVQA: A Dataset for VQA on Document Images",
+"DocMIA: Document-Level Membership Inference Attacks against DocVQA Models"
+],
+"date": "2026-11-13",
+"name": "DocVQA",
+"published": "2020-07-01",
+"query": "DocVQA",
+"repo": null,
+"searched": "arXiv",
+"title": "DocVQA: A Dataset for VQA on Document Images",
+"why": "Presents the DocVQA dataset and benchmark for question answering on document images."
+},
+"docvqatest": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "DocVQAtest",
+"query": "DocVQAtest",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"dynamath": {
+"arxiv": "2411.00836",
+"considered": [
+"DynaMath: A Dynamic Visual Benchmark for Evaluating Mathematical Reasoning Robustness of Vision Language Models"
+],
+"date": "2026-11-13",
+"name": "DynaMath",
+"published": "2024-10-29",
+"query": "DynaMath",
+"repo": null,
+"searched": "arXiv",
+"title": "DynaMath: A Dynamic Visual Benchmark for Evaluating Mathematical Reasoning Robustness of Vision Language Models",
+"why": "The paper introduces DynaMath, a dynamic visual benchmark for evaluating VLM mathematical reasoning robustness."
+},
+"eclektic": {
+"arxiv": "2502.21228",
+"considered": [
+"ECLeKTic: a Novel Challenge Set for Evaluation of Cross-Lingual Knowledge Transfer"
+],
+"date": "2026-11-13",
+"name": "ECLeKTic",
+"published": "2025-02-28",
+"query": "ECLeKTic",
+"repo": null,
+"searched": "arXiv",
+"title": "ECLeKTic: a Novel Challenge Set for Evaluation of Cross-Lingual Knowledge Transfer",
+"why": "Introduces ECLeKTic, a multilingual closed-book QA dataset for cross-lingual knowledge transfer."
+},
+"egoschema": {
+"arxiv": "2308.09126",
+"considered": [
+"HCQA @ Ego4D EgoSchema Challenge 2024",
+"HCQA-1.5 @ Ego4D EgoSchema Challenge 2025",
+"EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding"
+],
+"date": "2026-11-13",
+"name": "EgoSchema",
+"published": "2023-08-17",
+"query": "EgoSchema",
+"repo": null,
+"searched": "arXiv",
+"title": "EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding",
+"why": "Introduces EgoSchema benchmark: long-form egocentric video QA with 3-minute clips and multiple-choice questions."
+},
+"embspatialbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "EmbSpatialBench",
+"query": "EmbSpatialBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"erqa": {
+"arxiv": null,
+"considered": [
+"ERQA-Plus: A Diagnostic Benchmark for Reasoning in Embodied AI",
+"ERQA: Edge-Restoration Quality Assessment for Video Super-Resolution"
+],
+"date": "2026-11-13",
+"name": "ERQA",
+"query": "ERQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "ERQA-Plus is a different/extended benchmark; the other ERQA is unrelated video quality assessment."
+},
+"factsgrounding": {
+"arxiv": "2501.03200",
+"considered": [
+"The FACTS Grounding Leaderboard: Benchmarking LLMs' Ability to Ground Responses to Long-Form Input",
+"Revisiting Challenges in Data-to-Text Generation with Fact Grounding",
+"Diagnosing the Fact-Grounding Gap in Multi-Hop Question Answering",
+"BACGUARD: Fact-Grounded Runtime Mitigation of Broken Access Control",
+"PURPOSE: Poisoning Conflict Resolution in RAG via Proxy-Fact-Grounded Updates",
+"INDIBATOR: Diverse and Fact-Grounded Individuality for Multi-Agent Debate in Molecular Discovery"
+],
+"date": "2026-11-13",
+"name": "FACTS Grounding",
+"published": "2025-01-06",
+"query": "FACTS Grounding",
+"repo": null,
+"searched": "arXiv",
+"title": "The FACTS Grounding Leaderboard: Benchmarking LLMs' Ability to Ground Responses to Long-Form Input",
+"why": "Introduces FACTS Grounding leaderboard and benchmark for long-document grounded responses."
+},
+"financeagent2": {
+"arxiv": null,
+"considered": [
+"IPO Finance Agent: Benchmark of LLM Financial Analysts Beyond Finance Agent v2, with Automated Rubric Generation, on the"
+],
+"date": "2026-11-13",
+"name": "Finance Agent v2",
+"query": "Finance Agent v2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper only mentions Finance Agent v2 as existing Vals AI benchmark; introduces a different IPO benchmark."
+},
+"fleurs": {
+"arxiv": "2205.12446",
+"considered": [
+"FLEURS-Kobani: Extending the FLEURS Dataset for Northern Kurdish",
+"FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech",
+"Fleurs-SLU: A Massively Multilingual Benchmark for Spoken Language Understanding",
+"CS-FLEURS: A Massively Multilingual and Code-Switched Speech Dataset",
+"FLEURS-R: A Restored Multilingual Speech Corpus for Generation Tasks",
+"FLEURS-ASL: Including American Sign Language in Massively Multilingual Multitask Evaluation"
+],
+"date": "2026-11-13",
+"name": "FLEURS",
+"published": "2022-05-25",
+"query": "FLEURS",
+"repo": null,
+"searched": "arXiv",
+"title": "FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech",
+"why": "It explicitly introduces the FLEURS speech benchmark and its baseline tasks."
+},
+"frontiercode11": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "FrontierCode 1.1",
+"query": "FrontierCode 1.1",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"globalmmlu": {
+"arxiv": "2412.03304",
+"considered": [
+"Global MMLU: Understanding and Addressing Cultural and Linguistic Biases in Multilingual Evaluation"
+],
+"date": "2026-11-13",
+"name": "Global-MMLU",
+"published": "2024-12-04",
+"query": "Global-MMLU",
+"repo": null,
+"searched": "arXiv",
+"title": "Global MMLU: Understanding and Addressing Cultural and Linguistic Biases in Multilingual Evaluation",
+"why": "Introduces Global-MMLU, a culturally and linguistically inclusive multilingual benchmark."
+},
+"globalmmlulite": {
+"arxiv": null,
+"considered": [
+"Bias in the Ear of the Listener: Assessing Sensitivity in Audio Language Models Across Linguistic, Demographic, and Posi",
+"BYOL: Bring Your Own Language Into LLMs"
+],
+"date": "2026-11-13",
+"name": "Global-MMLU-Lite",
+"query": "Global-MMLU-Lite",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "First paper uses Global MMLU Lite as a base for BiasInEar, not introducing it."
+},
+"globalpiqa": {
+"arxiv": "2510.24081",
+"considered": [
+"Sinhala Physical Common Sense Reasoning Dataset for Global PIQA",
+"Global PIQA: Evaluating Commonsense Reasoning Across 100+ Languages and Cultures"
+],
+"date": "2026-11-13",
+"name": "Global PIQA",
+"published": "2025-10-28",
+"query": "Global PIQA",
+"repo": null,
+"searched": "arXiv",
+"title": "Global PIQA: Evaluating Commonsense Reasoning Across 100+ Languages and Cultures",
+"why": "It presents Global PIQA, a participatory commonsense reasoning benchmark across 100+ languages."
+},
+"graphwalksparents128k": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "Graphwalks parents <128k",
+"query": "Graphwalks parents  128k",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"gsm8kindic": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "GSM8k-Indic",
+"query": "GSM8k-Indic",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"hallusionbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "Hallusion Bench",
+"query": "Hallusion Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"healthbench": {
+"arxiv": "2505.08775",
+"considered": [
+"HealthBench-Psych: A Mental Health Subset of OpenAI's HealthBench",
+"Decomposing Physician Disagreement in HealthBench",
+"HealthBench: Evaluating Large Language Models Towards Improved Human Health",
+"MDIA: A Multi-Agent Diagnostic Intelligence Pipeline on HealthBench Professional",
+"Rethinking Evidence Hierarchies in Medical Language Benchmarks: A Critical Evaluation of HealthBench",
+"HealthBench Professional: Evaluating Large Language Models on Real Clinician Chats"
+],
+"date": "2026-11-13",
+"name": "HealthBench",
+"published": "2025-05-13",
+"query": "HealthBench",
+"repo": null,
+"searched": "arXiv",
+"title": "HealthBench: Evaluating Large Language Models Towards Improved Human Health",
+"why": "It presents HealthBench: 5,000 multi-turn health conversations with physician-created rubrics."
+},
+"healthbenchprofessional": {
+"arxiv": "2604.27470",
+"considered": [
+"MDIA: A Multi-Agent Diagnostic Intelligence Pipeline on HealthBench Professional",
+"HealthBench Professional: Evaluating Large Language Models on Real Clinician Chats"
+],
+"date": "2026-11-13",
+"name": "HealthBench Professional",
+"published": "2026-04-30",
+"query": "HealthBench Professional",
+"repo": null,
+"searched": "arXiv",
+"title": "HealthBench Professional: Evaluating Large Language Models on Real Clinician Chats",
+"why": "It introduces HealthBench Professional as an open benchmark."
+},
+"hiddenmath": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "HiddenMath",
+"query": "HiddenMath",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"hmmt2025": {
+"arxiv": null,
+"considered": [
+"Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+"Divide-and-Conquer CoT: RL for Reducing Latency via Parallel Reasoning",
+"Self-Supervised On-Policy Distillation for Reasoning Language Models",
+"When Are Experts Misrouted? Counterfactual Routing Analysis in Mixture-of-Experts Language Models",
+"Squeeze Evolve: Unified Multi-Model Orchestration for Verifier-Free Evolution",
+"Lightning Weave: Improving the Accuracy-Efficiency Frontier of Reasoning Models through Capability Composition"
+],
+"date": "2026-11-13",
+"name": "HMMT 2025",
+"query": "HMMT 2025",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of these papers introduces the HMMT 2025 competition benchmark; they only train reasoning models."
+},
+"hmmt25": {
+"arxiv": null,
+"considered": [
+"Chronos: Learning Temporal Dynamics of Reasoning Chains for Test-Time Scaling",
+"Native Multilingual Chain-of-Thought Reasoning in Low-Resource Southeast Asian Languages",
+"Inference Time Optimization with Confidence Dynamics",
+"QuestA: Expanding Reasoning Capacity in LLMs via Question Augmentation",
+"Thinking Traps in Long Chain-of-Thought: A Measurable Study and Trap-Aware Adaptive Restart",
+"Skill-Conditioned Gated Self-Distillation for LLM Reasoning"
+],
+"date": "2026-11-13",
+"name": "HMMT25",
+"query": "HMMT25",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of these papers introduces the HMMT25 benchmark; they only use or mention math benchmarks."
+},
+"hmmtfeb26": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "HMMT Feb 26",
+"query": "HMMT Feb 26",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -83,6 +898,120 @@
 "title": null,
 "why": "Both papers introduce differently named variants (MTAC-IFBench, Video-IFBench), not the IFBench benchmark itself."
 },
+"imoanswerbench": {
+"arxiv": "2511.01846",
+"considered": [
+"Towards Robust Mathematical Reasoning",
+"TRACES: Tagging Reasoning Steps for Adaptive Cost-Efficient Early-Stopping",
+"BoundaryEvo: Data-Model Co-Evolution at the Capability Boundary for Long-Chain Reasoning Distillation"
+],
+"date": "2026-11-13",
+"name": "IMO-AnswerBench",
+"published": "2025-11-03",
+"query": "IMO-AnswerBench",
+"repo": null,
+"searched": "arXiv",
+"title": "Towards Robust Mathematical Reasoning",
+"why": "Introduces IMO-Bench suite, including IMO-AnswerBench, as a benchmark for Olympiad short answers."
+},
+"include": {
+"arxiv": "2411.19799",
+"considered": [
+"INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
+"Should College Dropout Prediction Models Include Protected Attributes?",
+"EPPS16 - First nuclear PDFs to include LHC data",
+"Modifying the HF procedure to include screening effects",
+"Augmenting the Gauge-Gravity Correspondence to include Hadron Polarizabilities"
+],
+"date": "2026-11-13",
+"name": "Include",
+"published": "2024-11-29",
+"query": "Include",
+"repo": null,
+"searched": "arXiv",
+"title": "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
+"why": "Introduces INCLUDE, a multilingual regional-knowledge evaluation suite benchmark."
+},
+"infovqa": {
+"arxiv": null,
+"considered": [
+"SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding",
+"TextMonkey: An OCR-Free Large Multimodal Model for Understanding Document",
+"Text-Guided Semantic Image Encoder",
+"Why Keep Your Doubts to Yourself? Trading Visual Uncertainties in Multi-Agent Bandit Systems",
+"CogAgent: A Visual Language Model for GUI Agents",
+"DocFormerv2: Local Features for Document Understanding"
+],
+"date": "2026-11-13",
+"name": "InfoVQA",
+"query": "InfoVQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces InfoVQA; listed papers only mention or use it as an evaluation benchmark."
+},
+"infovqatest": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "InfoVQAtest",
+"query": "InfoVQAtest",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"itbenchaa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "ITBench-AA",
+"query": "ITBench-AA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"legalagent": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "Legal Agent Benchmark",
+"query": "Legal Agent Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"livebench20241125": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "LiveBench 20241125",
+"query": "LiveBench 20241125",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"livecodebench5": {
+"arxiv": null,
+"considered": [
+"Stateful Reasoning via Insight Replay",
+"X-Coder: Advancing Competitive Programming with Synthetic Tasks, Solutions, and Tests",
+"UP-MOPD: Update Projection in Multi-Teacher On-Policy Distillation",
+"Lightning OPD 2.0: Mitigating Style Bias in Cross-Teacher On-Policy Distillation for Large Reasoning Models",
+"Lightning Weave: Improving the Accuracy-Efficiency Frontier of Reasoning Models through Capability Composition",
+"Klear-Reasoner: Advancing Reasoning Capability via Gradient-Preserving Clipping Policy Optimization"
+],
+"date": "2026-11-13",
+"name": "LiveCodeBench v5",
+"query": "LiveCodeBench v5",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the listed papers introduces LiveCodeBench v5; they only concern reasoning or code training."
+},
 "livecodebench6": {
 "arxiv": null,
 "considered": [
@@ -101,6 +1030,35 @@
 "title": null,
 "why": "No listed paper introduces LiveCodeBench v6; one only uses a subset of it."
 },
+"longbench2": {
+"arxiv": null,
+"considered": [
+"LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks"
+],
+"date": "2026-11-13",
+"error": "endpoint answered 400: {\"error\":{\"message\":\"Your account (2131343381) does not have a valid AgentPlan subscription, or your subscription has expired. Please vis",
+"name": "LongBench v2",
+"query": "LongBench v2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": ""
+},
+"lvbench": {
+"arxiv": "2406.08035",
+"considered": [
+"LVBench: An Extreme Long Video Understanding Benchmark",
+"LvBench: A Benchmark for Long-form Video Understanding with Versatile Multi-modal Question Answering"
+],
+"date": "2026-11-13",
+"name": "LVBench",
+"published": "2024-06-12",
+"query": "LVBench",
+"repo": null,
+"searched": "arXiv",
+"title": "LVBench: An Extreme Long Video Understanding Benchmark",
+"why": "Introduces LVBench, an extreme long video understanding benchmark with videos up to about two hours."
+},
 "math": {
 "arxiv": null,
 "considered": [
@@ -118,6 +1076,57 @@
 "title": null,
 "why": "None of the listed papers introduces the MATH benchmark; all are unrelated mathematics writings."
 },
+"math500": {
+"arxiv": null,
+"considered": [
+"Max It or Miss It: Benchmarking LLM On Solving Extremal Problems",
+"Benchmark-Based Comparative Assessment of Publicly Benchmarked Indian Foundation Models: A Capability and Evaluation-Mat",
+"TTT-Bench: A Benchmark for Evaluating Reasoning Ability with Simple and Novel Tic-Tac-Toe-style Games",
+"An Interpretable and Scalable Framework for Evaluating Large Language Models",
+"UrduBench: An Urdu Reasoning Benchmark using Contextually Ensembled Translations with Human-in-the-Loop",
+"Conditional Evaluation of Language Models with Cheap Auxiliary Signals"
+],
+"date": "2026-11-13",
+"name": "MATH-500",
+"query": "MATH-500",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces MATH-500; they only potentially use or discuss benchmarks."
+},
+"matharenaapex": {
+"arxiv": null,
+"considered": [
+"STAR-PólyaMath: Multi-Agent Reasoning under Persistent Meta-Strategic Supervision",
+"Empirical-MCTS: Continuous Agent Evolution via Dual-Experience Monte Carlo Tree Search",
+"Pessimistic Verification for Open Ended Math Questions"
+],
+"date": "2026-11-13",
+"name": "MathArena Apex",
+"query": "MathArena Apex",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the papers introduces the MathArena Apex benchmark; they describe unrelated methods."
+},
+"mathvision": {
+"arxiv": null,
+"considered": [
+"Math-Vision Diagrams: A Comprehensive Benchmark for Evaluating LLM Mathematical Diagram Generation Capabilities",
+"VL-Rethinker: Incentivizing Self-Reflection of Vision-Language Models with Reinforcement Learning",
+"TED: Training-Free Experience Distillation for Multimodal Reasoning",
+"NeSyGeo: A Neuro-Symbolic Framework for Multimodal Geometric Reasoning Data Generation",
+"VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation",
+"GeoGPT4V: Towards Geometric Multi-modal Large Language Models with Geometric Image Generation"
+],
+"date": "2026-11-13",
+"name": "MathVision",
+"query": "MathVision",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the listed papers introduces the MathVision benchmark; they only mention or use it."
+},
 "mathvista": {
 "arxiv": "2310.02255",
 "considered": [
@@ -131,6 +1140,157 @@
 "searched": "arXiv",
 "title": "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
 "why": "Introduces MathVista benchmark evaluating mathematical reasoning in visual contexts."
+},
+"maxife": {
+"arxiv": "2506.01776",
+"considered": [
+"MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation"
+],
+"date": "2026-11-13",
+"name": "MAXIFE",
+"published": "2025-06-02",
+"query": "MAXIFE",
+"repo": null,
+"searched": "arXiv",
+"title": "MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation",
+"why": "Introduces MaXIFE, a multilingual and cross-lingual instruction-following benchmark matching the entry."
+},
+"medxpertqa": {
+"arxiv": "2501.18362",
+"considered": [
+"MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding"
+],
+"date": "2026-11-13",
+"name": "MedXpertQA",
+"published": "2025-01-30",
+"query": "MedXpertQA",
+"repo": "TsinghuaC3I/MedXpertQA",
+"searched": "arXiv",
+"title": "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding",
+"why": "Introduces MedXpertQA benchmark for expert-level medical reasoning, text and multimodal."
+},
+"mgsm": {
+"arxiv": null,
+"considered": [
+"MGSM-Pro: A Simple Strategy for Robust Multilingual Mathematical Reasoning Evaluation"
+],
+"date": "2026-11-13",
+"name": "MGSM",
+"query": "MGSM",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "MGSM-Pro extends MGSM; it does not introduce the MGSM benchmark."
+},
+"mlvu": {
+"arxiv": "2406.04264",
+"considered": [
+"MLVU: Benchmarking Multi-task Long Video Understanding"
+],
+"date": "2026-11-13",
+"name": "MLVU",
+"published": "2024-06-06",
+"query": "MLVU",
+"repo": null,
+"searched": "arXiv",
+"title": "MLVU: Benchmarking Multi-task Long Video Understanding",
+"why": "Paper introduces MLVU benchmark: multi-task long video understanding, videos up to hours."
+},
+"mmbench": {
+"arxiv": "2307.06281",
+"considered": [
+"Creation-MMBench: Assessing Context-Aware Creative Intelligence in MLLM",
+"MMBench-Live: A Continuously Evolving Benchmark for Multimodal Models",
+"MMBench: Is Your Multi-modal Model an All-around Player?",
+"MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents",
+"ViLLA-MMBench: A Unified Benchmark Suite for LLM-Augmented Multimodal Movie Recommendation",
+"INS-MMBench: A Comprehensive Benchmark for Evaluating LVLMs' Performance in Insurance"
+],
+"date": "2026-11-13",
+"name": "MMBench",
+"published": "2023-07-12",
+"query": "MMBench",
+"repo": "open-compass/VLMEvalKit",
+"searched": "arXiv",
+"title": "MMBench: Is Your Multi-modal Model an All-around Player?",
+"why": "Introduces MMBench, a bilingual multimodal benchmark for evaluating vision-language models."
+},
+"mmbench11": {
+"arxiv": null,
+"considered": [
+"ET-Prune: Evidence-Aware Dynamic Budgeting for Visual Token Pruning in Text-Rich MLLMs"
+],
+"date": "2026-11-13",
+"name": "MMBench-V1.1",
+"query": "MMBench-V1.1",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper uses MMBench-V1.1 only; it introduces ET-Prune, not this benchmark."
+},
+"mmlupro": {
+"arxiv": "2406.01574",
+"considered": [
+"MMLU-Pro+: Evaluating Higher-Order Reasoning and Shortcut Learning in LLMs",
+"MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+"Turkish MMLU Pro: Traceable Option Augmentation and Its Validity Limits in Turkish Multiple-Choice Evaluation"
+],
+"date": "2026-11-13",
+"name": "MMLU-Pro",
+"published": "2024-06-03",
+"query": "MMLU-Pro",
+"repo": null,
+"searched": "arXiv",
+"title": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+"why": "Introduces MMLU-Pro with reasoning-focused questions and ten options across domains."
+},
+"mmluprox": {
+"arxiv": "2503.10497",
+"considered": [
+"MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation"
+],
+"date": "2026-11-13",
+"name": "MMLU-ProX",
+"published": "2025-03-13",
+"query": "MMLU-ProX",
+"repo": null,
+"searched": "arXiv",
+"title": "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+"why": "Paper explicitly introduces MMLU-ProX, a 29-language multilingual benchmark built on MMLU-Pro."
+},
+"mmluredux": {
+"arxiv": "2406.04127",
+"considered": [
+"DialectalArabicMMLU: Benchmarking Dialectal Capabilities in Arabic and Multilingual Language Models",
+"Auditing MCQA Benchmarks through Probability Landscapes",
+"Specialized Decision Models vs. General-Purpose LLMs: Benchmarking Jev Across Knowledge, Reasoning, and Multilingual Tas",
+"Are We Done with MMLU?",
+"The Non-Determinism of Small LLMs: Evidence of Low Answer Consistency in Repetition Trials of Standard Multiple-Choice B",
+"CoMAT: Chain of Mathematically Annotated Thought Improves Mathematical Reasoning"
+],
+"date": "2026-11-13",
+"name": "MMLU-Redux",
+"published": "2024-06-06",
+"query": "MMLU-Redux",
+"repo": null,
+"searched": "arXiv",
+"title": "Are We Done with MMLU?",
+"why": "Introduces MMLU-Redux, a 5,700-question manually re-annotated subset of MMLU."
+},
+"mmmtbench": {
+"arxiv": "2410.07073",
+"considered": [
+"Pixtral 12B",
+"OmniScience: A Large-scale Multi-modal Dataset for Scientific Image Understanding"
+],
+"date": "2026-11-13",
+"name": "MM-MT-Bench",
+"published": "2024-10-09",
+"query": "MM-MT-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": "Pixtral 12B",
+"why": "Pixtral 12B introduces MM-MT-Bench for multi-turn multimodal instruction following judged by an LLM."
 },
 "mmmu": {
 "arxiv": "2311.16502",
@@ -163,6 +1323,336 @@
 "title": "MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark",
 "why": "Introduces MMMU-Pro benchmark with vision-only input and harder multimodal questions."
 },
+"mmmuval": {
+"arxiv": "2311.16502",
+"considered": [
+"MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark",
+"Uni-MMMU: A Massive Multi-discipline Multimodal Unified Benchmark",
+"Video-MMMU: Evaluating Knowledge Acquisition from Multi-Discipline Professional Videos",
+"MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI"
+],
+"date": "2026-11-13",
+"name": "MMMU (val)",
+"published": "2023-11-27",
+"query": "MMMU",
+"repo": null,
+"searched": "arXiv",
+"title": "MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI",
+"why": "Introduces the MMMU benchmark, whose validation split is MMMU (val)."
+},
+"mmstar": {
+"arxiv": "2403.20330",
+"considered": [
+"Are We on the Right Way for Evaluating Large Vision-Language Models?",
+"Auditing VLM Benchmarks from Existing Evaluation Runs",
+"UPME: An Unsupervised Peer Review Framework for Multimodal Large Language Model Evaluation",
+"WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+"MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+"Mitigating Easy Option Bias in Multiple-Choice Question Answering"
+],
+"date": "2026-11-13",
+"name": "MMStar",
+"published": "2024-03-29",
+"query": "MMStar",
+"repo": null,
+"searched": "arXiv",
+"title": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+"why": "Introduces MMStar benchmark of vision-indispensable multimodal questions, addressing visual redundancy and leakage."
+},
+"mrcr": {
+"arxiv": null,
+"considered": [
+"A new search for distant radio galaxies in the Southern hemisphere -- III. Optical spectroscopy and analysis of the MRCR"
+],
+"date": "2026-11-13",
+"name": "MRCR",
+"query": "MRCR",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Astronomy paper on radio galaxies; unrelated to AI benchmark MRCR."
+},
+"mtbench": {
+"arxiv": "2306.05685",
+"considered": [
+"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+"MT-Bench-101: A Fine-Grained Benchmark for Evaluating Large Language Models in Multi-Turn Dialogues"
+],
+"date": "2026-11-13",
+"name": "MT-Bench",
+"published": "2023-06-09",
+"query": "MT-Bench",
+"repo": "lm-sys/FastChat",
+"searched": "arXiv",
+"title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+"why": "Introduces MT-Bench, a multi-turn question set judged by LLMs."
+},
+"muirbench": {
+"arxiv": "2406.09411",
+"considered": [
+"MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+],
+"date": "2026-11-13",
+"name": "MuirBench",
+"published": "2024-06-13",
+"query": "MuirBench",
+"repo": null,
+"searched": "arXiv",
+"title": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+"why": "Introduces MuirBench, a multi-image multimodal LLM benchmark with multiple-choice questions."
+},
+"multichallenge": {
+"arxiv": null,
+"considered": [
+"A Broadcast Authenticated Encryption with Keyword Search in the Standard Model: Tightly Secure in Multi-User, Multi-Chal"
+],
+"date": "2026-11-13",
+"name": "Multi-Challenge",
+"query": "Multi-Challenge",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Cryptography paper about multi-challenge encryption settings, not a conversational benchmark."
+},
+"multiif": {
+"arxiv": null,
+"considered": [
+"MMMModal -- Multi-Images Multi-Audio Multi-turn Multi-Modal",
+"Multi-Scan Multi-Sensor Multi-Object State Estimation",
+"Multi-typed Objects Multi-view Multi-instance Multi-label Learning",
+"Multi-Observables and Multi-Instruments",
+"Multi-Instance Multi-Label Learning",
+"Multi-Topic Multi-Document Summarizer"
+],
+"date": "2026-11-13",
+"name": "Multi-IF",
+"query": "Multi-IF",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the listed papers introduces the Multi-IF benchmark; all are unrelated name matches."
+},
+"mvbench": {
+"arxiv": "2311.17005",
+"considered": [
+"MVBench: A Comprehensive Multi-modal Video Understanding Benchmark"
+],
+"date": "2026-11-13",
+"name": "MVBench",
+"published": "2023-11-28",
+"query": "MVBench",
+"repo": "OpenGVLab/Ask-Anything",
+"searched": "arXiv",
+"title": "MVBench: A Comprehensive Multi-modal Video Understanding Benchmark",
+"why": "Introduces MVBench, a multi-modal video benchmark covering 20 temporal video tasks."
+},
+"natural2code": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "Natural2Code",
+"query": "Natural2Code",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"nl2repo": {
+"arxiv": "2512.12730",
+"considered": [
+"NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents"
+],
+"date": "2026-11-13",
+"name": "NL2Repo",
+"published": "2025-12-14",
+"query": "NL2Repo",
+"repo": null,
+"searched": "arXiv",
+"title": "NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents",
+"why": "Introduces NL2Repo Bench, evaluating coding agents on long-horizon repository generation from natural language."
+},
+"ocrbench": {
+"arxiv": "2305.07895",
+"considered": [
+"OCRBench: On the Hidden Mystery of OCR in Large Multimodal Models",
+"OCRBench v2: An Improved Benchmark for Evaluating Large Multimodal Models on Visual Text Localization and Reasoning"
+],
+"date": "2026-11-13",
+"name": "OCRBench",
+"published": "2023-05-13",
+"query": "OCRBench",
+"repo": "Yuliang-Liu/MultimodalOCR",
+"searched": "arXiv",
+"title": "OCRBench: On the Hidden Mystery of OCR in Large Multimodal Models",
+"why": "Introduces OCRBench, a comprehensive benchmark evaluating OCR in large multimodal models."
+},
+"ocrbench2": {
+"arxiv": "2501.00321",
+"considered": [
+"OCRBench v2: An Improved Benchmark for Evaluating Large Multimodal Models on Visual Text Localization and Reasoning"
+],
+"date": "2026-11-13",
+"name": "OCRBench_V2",
+"published": "2024-12-31",
+"query": "OCRBench_V2",
+"repo": null,
+"searched": "arXiv",
+"title": "OCRBench v2: An Improved Benchmark for Evaluating Large Multimodal Models on Visual Text Localization and Reasoning",
+"why": "Introduces OCRBench v2, matching OCRBench_V2, as a benchmark for text localization and reasoning."
+},
+"odinw": {
+"arxiv": "2303.05499",
+"considered": [
+"Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection",
+"DitHub: A Modular Framework for Incremental Open-Vocabulary Object Detection",
+"Real-time Transformer-based Open-Vocabulary Detection with Efficient Fusion Head",
+"Adaptive Masking Enhances Visual Grounding",
+"Exploration of visual prompt in Grounded pre-trained open-set detection",
+"Hierarchical Open-vocabulary Universal Image Segmentation"
+],
+"date": "2026-11-13",
+"name": "ODinW",
+"published": "2023-03-09",
+"query": "ODinW",
+"repo": "IDEA-Research/GroundingDINO",
+"searched": "arXiv",
+"title": "Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection",
+"why": "Grounding DINO paper introduces the ODinW open-set object detection benchmark."
+},
+"officeqapro": {
+"arxiv": "2603.08655",
+"considered": [
+"OfficeQA Pro: An Enterprise Benchmark for End-to-End Grounded Reasoning"
+],
+"date": "2026-11-13",
+"name": "OfficeQA Pro",
+"published": "2026-03-09",
+"query": "OfficeQA Pro",
+"repo": null,
+"searched": "arXiv",
+"title": "OfficeQA Pro: An Enterprise Benchmark for End-to-End Grounded Reasoning",
+"why": "Introduces OfficeQA Pro, an enterprise benchmark for grounded multi-document reasoning."
+},
+"ojbench": {
+"arxiv": "2506.16395",
+"considered": [
+"OJBench: A Competition Level Code Benchmark For Large Language Models"
+],
+"date": "2026-11-13",
+"name": "OJBench",
+"published": "2025-06-19",
+"query": "OJBench",
+"repo": null,
+"searched": "arXiv",
+"title": "OJBench: A Competition Level Code Benchmark For Large Language Models",
+"why": "Introduces OJBench, a competitive-level code benchmark with NOI and ICPC programming problems."
+},
+"omnidocbench15": {
+"arxiv": null,
+"considered": [
+"PrismAlign: Prior-Steered Multi-View VLM Alignment for Hallucination-Robust Table OCR"
+],
+"date": "2026-11-13",
+"name": "OmniDocBench 1.5",
+"query": "OmniDocBench 1.5",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper only evaluates on OmniDocBench 1.5; it does not introduce the benchmark."
+},
+"osworldverified": {
+"arxiv": null,
+"considered": [
+"MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
+"Neuro-Symbolic Computer Use: Learning Reusable Policies for Reliable and Efficient Execution",
+"From Off-Policy to On-Policy: Enhancing GUI Agents via Bi-level Expert-to-Policy Assimilation",
+"Agentic Reward Modeling: Verifying GUI Agent via Progressive Trajectory-Grounded Interaction",
+"OpenComputer: Verifiable Software Worlds for Computer-Use Agents",
+"Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution"
+],
+"date": "2026-11-13",
+"name": "OSWorld-Verified",
+"query": "OSWorld-Verified",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces OSWorld-Verified; they only use or mention it."
+},
+"polymath": {
+"arxiv": "2410.14702",
+"considered": [
+"PolyMath: Evaluating Mathematical Reasoning in Multilingual Contexts",
+"Polymath: A Challenging Multi-modal Mathematical Reasoning Benchmark",
+"The \"bounded gaps between primes\" Polymath project - a retrospective",
+"Polymath: A Self-Optimizing Agent with Dynamic Hierarchical Workflow",
+"Polymath's combinatorial proof of the density Hales-Jewett theorem",
+"Toward a Comparative Cognitive History: Archimedes and D. H. J. Polymath"
+],
+"date": "2026-11-13",
+"name": "PolyMATH",
+"published": "2024-10-06",
+"query": "PolyMATH",
+"repo": null,
+"searched": "arXiv",
+"title": "Polymath: A Challenging Multi-modal Mathematical Reasoning Benchmark",
+"why": "Introduces PolyMATH, a multi-modal benchmark for visual mathematical reasoning with images."
+},
+"realworldqa": {
+"arxiv": null,
+"considered": [
+"HinTel-AlignBench: A Framework and Benchmark for Hindi-Telugu with English-Aligned Samples",
+"Reasoning Multimodal Large Language Model: Data Contamination and Dynamic Evaluation",
+"Mitigating Easy Option Bias in Multiple-Choice Question Answering",
+"Robust-R1: Degradation-Aware Reasoning for Robust Visual Understanding",
+"MoDA: Modulation Adapter for Fine-Grained Visual Grounding in Instructional MLLMs",
+"ViCToR: Improving Visual Comprehension via Token Reconstruction for Pretraining LMMs"
+],
+"date": "2026-11-13",
+"name": "RealWorldQA",
+"query": "RealWorldQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces RealWorldQA; one paper only mentions it as an existing benchmark."
+},
+"refspatialbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "RefSpatialBench",
+"query": "RefSpatialBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"screenspot": {
+"arxiv": null,
+"considered": [
+"ScreenSpot-Pro: GUI Grounding for Professional High-Resolution Computer Use"
+],
+"date": "2026-11-13",
+"name": "ScreenSpot",
+"query": "ScreenSpot",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Only ScreenSpot-Pro, a distinct high-resolution benchmark, not the original ScreenSpot."
+},
+"simplevqa": {
+"arxiv": "2502.13059",
+"considered": [
+"SimpleVQA: Multimodal Factuality Evaluation for Multimodal Large Language Models"
+],
+"date": "2026-11-13",
+"name": "SimpleVQA",
+"published": "2025-02-18",
+"query": "SimpleVQA",
+"repo": null,
+"searched": "arXiv",
+"title": "SimpleVQA: Multimodal Factuality Evaluation for Multimodal Large Language Models",
+"why": "Introduces SimpleVQA benchmark for multimodal factuality short-question answering."
+},
 "supergpqa": {
 "arxiv": "2502.14739",
 "considered": [
@@ -177,6 +1667,33 @@
 "title": "SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines",
 "why": "Introduces SuperGPQA benchmark evaluating graduate-level knowledge across 285 disciplines."
 },
+"swelancericdiamondsubset": {
+"arxiv": "2502.12115",
+"considered": [
+"SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?"
+],
+"date": "2026-11-13",
+"name": "SWE-Lancer (IC-Diamond subset)",
+"published": "2025-02-17",
+"query": "SWE-Lancer",
+"repo": "openai/SWELancer-Benchmark",
+"searched": "arXiv",
+"title": "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?",
+"why": "Introduces SWE-Lancer benchmark with freelance tasks and managerial proposal-selection tasks matching entry."
+},
+"tau2airline": {
+"arxiv": null,
+"considered": [
+"MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use"
+],
+"date": "2026-11-13",
+"name": "Tau2 Airline",
+"query": "Tau2 Airline",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "MUA-RL uses/mentions tau-style benchmarks but does not introduce Tau2 Airline."
+},
 "tau2benchtelecom": {
 "arxiv": null,
 "considered": [],
@@ -187,6 +1704,20 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"tau2retail": {
+"arxiv": null,
+"considered": [
+"MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use",
+"Beyond Prompts: Measuring and Optimizing LLM Tool-Agent Harnesses"
+],
+"date": "2026-11-13",
+"name": "Tau2 Retail",
+"query": "Tau2 Retail",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces the Tau2 Retail benchmark; both likely use or discuss tool-agent evaluation."
 },
 "tau2telecom": {
 "arxiv": null,
@@ -213,6 +1744,89 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"taubenchairline": {
+"arxiv": null,
+"considered": [
+"Log analysis is necessary for credible evaluation of AI agents",
+"Multi-Turn Reinforcement Learning for Tool-Calling Agents with Iterative Reward Calibration"
+],
+"date": "2026-11-13",
+"name": "TAU-bench Airline",
+"query": "TAU-bench Airline",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Neither paper introduces TAU-bench Airline; it is a sub-domain of τ-bench, not introduced here."
+},
+"taubenchretail": {
+"arxiv": null,
+"considered": [
+"Knowing When to Intervene: Causal Evaluation of AI Agents",
+"Interface-Induced Trajectory Censoring",
+"Insuring Every Action: An Authority Frontier Framework for Runtime Actuarial Control of Autonomous AI Agents",
+"Outcome Monitors: Recovery Affordances for Silent Tool Failures",
+"Cache-Aware Prompt Compression:A Two-Tier Cost Model for LLM API Caching",
+"Not All Skills Help: Measuring and Repairing Agent Knowledge"
+],
+"date": "2026-11-13",
+"name": "TAU-bench Retail",
+"query": "TAU-bench Retail",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces TAU-bench; 2608.19303 only uses tau-bench retail."
+},
+"terminalbench": {
+"arxiv": "2601.11868",
+"considered": [
+"Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+"Hack-Verifiable Terminal Bench: Evaluating Reward Hacking in Terminal Tasks",
+"Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+"Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+"Terminal-Bench-LILT: Multilingual Agentic Coding Benchmark Grounded in Language, Region, and Culture",
+"Long-Horizon-Terminal-Bench 2.0: Automating Diverse Task Construction and Measuring Sustained Agent Progress"
+],
+"date": "2026-11-13",
+"name": "Terminal-Bench",
+"published": "2026-01-17",
+"query": "Terminal-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+"why": "Introduces Terminal-Bench 2.0, a benchmark of realistic terminal tasks."
+},
+"textvqa": {
+"arxiv": null,
+"considered": [
+"Structured Multimodal Attentions for TextVQA",
+"Spatially Aware Multimodal Transformers for TextVQA",
+"Simple is not Easy: A Simple Strong Baseline for TextVQA and TextCaps",
+"VTAgent: Agentic Keyframe Anchoring for Evidence-Aware Video TextVQA",
+"Gather and Trace: Rethinking Video TextVQA from an Instance-oriented Perspective",
+"Iterative Answer Prediction with Pointer-Augmented Multimodal Transformers for TextVQA"
+],
+"date": "2026-11-13",
+"name": "TextVQA",
+"query": "TextVQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of these papers introduces the TextVQA benchmark; they only use or model it."
+},
+"theoremqa": {
+"arxiv": "2305.12524",
+"considered": [
+"TheoremQA: A Theorem-driven Question Answering dataset"
+],
+"date": "2026-11-13",
+"name": "TheoremQA",
+"published": "2023-05-21",
+"query": "TheoremQA",
+"repo": "wenhuchen/TheoremQA",
+"searched": "arXiv",
+"title": "TheoremQA: A Theorem-driven Question Answering dataset",
+"why": "Introduces TheoremQA, a theorem-driven QA dataset for applying theorems to science problems."
+},
 "toolathlon": {
 "arxiv": "2510.25726",
 "considered": [
@@ -231,5 +1845,161 @@
 "searched": "arXiv",
 "title": "The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution",
 "why": "Introduces Tool Decathlon, dubbed Toolathlon, a benchmark for diverse long-horizon agent tasks."
+},
+"v": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "V*",
+"query": "V",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "the name is too short to search for"
+},
+"vibeeval": {
+"arxiv": "2405.02287",
+"considered": [
+"Vibe-Eval: A hard evaluation suite for measuring progress of multimodal language models"
+],
+"date": "2026-11-13",
+"name": "Vibe-Eval",
+"published": "2024-05-03",
+"query": "Vibe-Eval",
+"repo": "reka-ai/reka-vibe-eval",
+"searched": "arXiv",
+"title": "Vibe-Eval: A hard evaluation suite for measuring progress of multimodal language models",
+"why": "Introduces Vibe-Eval benchmark of 269 visual understanding prompts for multimodal models."
+},
+"videomme": {
+"arxiv": "2405.21075",
+"considered": [
+"Video-MME-Logical: A Controlled Diagnostic Benchmark for Video Temporal-Logical Reasoning",
+"Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding",
+"Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+"Chains That See, Answers That Don't: A Multi-Aspect Evaluation Recipe for Forced Chain-of-Thought on Video-MME"
+],
+"date": "2026-11-13",
+"name": "Video-MME",
+"published": "2024-05-31",
+"query": "Video-MME",
+"repo": null,
+"searched": "arXiv",
+"title": "Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+"why": "Introduces Video-MME, the comprehensive multimodal video analysis benchmark."
+},
+"videommewosub": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "VideoMME w/o sub.",
+"query": "VideoMME w o sub.",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"videommewsub": {
+"arxiv": null,
+"considered": [
+"VideoChat-A1: Thinking with Long Videos by Chain-of-Shot Reasoning"
+],
+"date": "2026-11-13",
+"name": "VideoMME w sub.",
+"query": "VideoMME w sub.",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper does not introduce VideoMME with subtitles; it is a video understanding method."
+},
+"videommmu": {
+"arxiv": null,
+"considered": [
+"Video-R1: Reinforcing Video Reasoning in MLLMs",
+"DELTAVID: Enhancing Fine-Grained Spatiotemporal Perception with Cross-Video Differences",
+"STRIVE: Structured Spatiotemporal Exploration for Reinforcement Learning in Video Question Answering",
+"VisionCoach: Reinforcing Grounded Video Reasoning via Visual-Perception Prompting",
+"CyberV: Cybernetics for Test-time Scaling in Video Understanding",
+"DEEPO: Dual-Entropy Enhanced Policy Optimization for Hallucination in MLLMs"
+],
+"date": "2026-11-13",
+"name": "VideoMMMU",
+"query": "VideoMMMU",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the listed papers introduces a benchmark named VideoMMMU."
+},
+"wildbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-13",
+"name": "Wild Bench",
+"query": "Wild Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"wmt24": {
+"arxiv": "2502.12404",
+"considered": [
+"WMT24++: Expanding the Language Coverage of WMT24 to 55 Languages & Dialects",
+"Preliminary WMT24 Ranking of General MT Systems and LLMs",
+"WMT24 Test Suite: Gender Resolution in Speaker-Listener Dialogue Roles",
+"NLIP_Lab-IITH Low-Resource MT System for WMT24 Indic MT Shared Task",
+"IKUN for WMT24 General MT Task: LLMs Are here for Multilingual Machine Translation",
+"Expanding the WMT24++ Benchmark with Rumantsch Grischun, Sursilvan, Sutsilvan, Surmiran, Puter, and Vallader"
+],
+"date": "2026-11-13",
+"name": "WMT24++",
+"published": "2025-02-18",
+"query": "WMT24++",
+"repo": null,
+"searched": "arXiv",
+"title": "WMT24++: Expanding the Language Coverage of WMT24 to 55 Languages & Dialects",
+"why": "Introduces WMT24++ dataset extending WMT24 to 55 languages and dialects."
+},
+"writingbench": {
+"arxiv": "2503.05244",
+"considered": [
+"WritingBench: A Comprehensive Benchmark for Generative Writing"
+],
+"date": "2026-11-13",
+"name": "WritingBench",
+"published": "2025-03-07",
+"query": "WritingBench",
+"repo": null,
+"searched": "arXiv",
+"title": "WritingBench: A Comprehensive Benchmark for Generative Writing",
+"why": "Introduces WritingBench, a benchmark with six core writing domains scored via LLM-generated criteria."
+},
+"zebralogic": {
+"arxiv": "2502.01100",
+"considered": [
+"ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning"
+],
+"date": "2026-11-13",
+"name": "ZebraLogic",
+"published": "2025-02-03",
+"query": "ZebraLogic",
+"repo": null,
+"searched": "arXiv",
+"title": "ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning",
+"why": "Introduces ZebraLogic, a benchmark of logic grid puzzles with controllable complexity."
+},
+"zerobench": {
+"arxiv": "2502.09696",
+"considered": [
+"ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models"
+],
+"date": "2026-11-13",
+"name": "ZEROBench",
+"published": "2025-02-13",
+"query": "ZEROBench",
+"repo": null,
+"searched": "arXiv",
+"title": "ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models",
+"why": "Introduces ZeroBench, an impossible visual reasoning benchmark for LMMs."
 }
 }
