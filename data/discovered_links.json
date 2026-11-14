@@ -609,6 +609,9 @@
 "autodojo": {
 "from": null
 },
+"autoflow6universal": {
+"from": null
+},
 "autologi": {
 "from": null
 },
@@ -1710,6 +1713,9 @@
 "ecommerceaidataanalystagent": {
 "from": null
 },
+"ecotoxfred": {
+"from": null
+},
 "educlawbench": {
 "from": null
 },
@@ -2679,10 +2685,16 @@
 "id:r-6d394ad2d3": {
 "from": null
 },
+"id:r-6f22c8e62d": {
+"from": null
+},
 "id:r-6f5d238304": {
 "from": null
 },
 "id:r-82dda4693b": {
+"from": null
+},
+"id:r-83e226a0b5": {
 "from": null
 },
 "id:r-ac96df6b9c": {
@@ -2707,6 +2719,9 @@
 "from": null
 },
 "id:r-ea6f2509ae": {
+"from": null
+},
+"id:r-f0751a1a1a": {
 "from": null
 },
 "id:r-f416ec9f29": {
@@ -2817,6 +2832,9 @@
 "from": null
 },
 "instrumentalchoices": {
+"from": null
+},
+"intentaware": {
 "from": null
 },
 "intentdelta": {
@@ -3126,6 +3144,9 @@
 "from": null
 },
 "llmsrbench": {
+"from": null
+},
+"llmtradingagent": {
 "from": null
 },
 "locabench256k": {
@@ -4374,6 +4395,9 @@
 "programdistill": {
 "from": null
 },
+"programselectbench": {
+"from": null
+},
 "projectevalplus": {
 "from": null
 },
@@ -4544,6 +4568,9 @@
 "recoverbench": {
 "from": null
 },
+"recreateanything": {
+"from": null
+},
 "recreationbench": {
 "from": null
 },
@@ -4575,6 +4602,9 @@
 "from": null
 },
 "regretbench": {
+"from": null
+},
+"reinforcedconcreteframedesign": {
 "from": null
 },
 "reliagentbench": {
@@ -4736,6 +4766,9 @@
 "from": null
 },
 "rssynagent": {
+"from": null
+},
+"rtabench": {
 "from": null
 },
 "rtsafe": {
