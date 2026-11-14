@@ -10,6 +10,20 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"agieval": {
+"arxiv": "2304.06364",
+"considered": [
+"AGIEval: A Human-Centric Benchmark for Evaluating Foundation Models"
+],
+"date": "2026-11-14",
+"name": "AGIEval",
+"published": "2023-04-13",
+"query": "AGIEval",
+"repo": "ruixiangcui/AGIEval",
+"searched": "arXiv",
+"title": "AGIEval: A Human-Centric Benchmark for Evaluating Foundation Models",
+"why": "Introduces AGIEval, a human-centric benchmark of standardized exams."
+},
 "ai2d": {
 "arxiv": null,
 "considered": [
@@ -22,6 +36,19 @@
 "searched": "arXiv",
 "title": null,
 "why": "This paper extends/annotates the existing AI2D dataset; it does not introduce the AI2D benchmark itself."
+},
+"aider": {
+"arxiv": null,
+"considered": [
+"D{é}composition et analyse de trac{é}s EMG pour aider au diagnostic des maladies neuromusculaires"
+],
+"date": "2026-11-14",
+"name": "Aider",
+"query": "Aider",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper uses French word 'aider' in EMG analysis, not the Aider coding benchmark."
 },
 "aime2024": {
 "arxiv": null,
@@ -91,6 +118,50 @@
 "title": "AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies",
 "why": "Introduces AIR-Bench 2024, regulation-aligned safety benchmark matching the entry."
 },
+"aitzem": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "AITZ_EM",
+"query": "AITZ_EM",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"alignbench": {
+"arxiv": "2311.18743",
+"considered": [
+"AlignBench: Benchmarking Chinese Alignment of Large Language Models",
+"HinTel-AlignBench: A Framework and Benchmark for Hindi-Telugu with English-Aligned Samples"
+],
+"date": "2026-11-14",
+"name": "AlignBench",
+"published": "2023-11-30",
+"query": "AlignBench",
+"repo": "THUDM/AlignBench",
+"searched": "arXiv",
+"title": "AlignBench: Benchmarking Chinese Alignment of Large Language Models",
+"why": "Introduces AlignBench, a Chinese LLM alignment benchmark with multi-dimensional judging."
+},
+"alpacaeval2": {
+"arxiv": null,
+"considered": [
+"Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+"tinyBenchmarks: evaluating LLMs with fewer examples",
+"Constructing Domain-Specific Evaluation Sets for LLM-as-a-judge",
+"MMoA: An AI-Agent framework with recurrence for Memoried Mixure-of-Agent",
+"This Is Your Doge, If It Please You: Exploring Deception and Robustness in Mixture of LLMs",
+"Attention-MoA: Enhancing Mixture-of-Agents via Inter-Agent Semantic Attention and Deep Residual Synthesis"
+],
+"date": "2026-11-14",
+"name": "AlpacaEval 2.0",
+"query": "AlpacaEval 2.0",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Listed papers only use or mention AlpacaEval 2.0; none introduces it."
+},
 "amc202223": {
 "arxiv": null,
 "considered": [],
@@ -112,6 +183,76 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"anli": {
+"arxiv": null,
+"considered": [
+"All-Clear Flare Prediction Using Interval-based Time Series Classifiers",
+"UNICORN on RAINBOW: A Universal Commonsense Reasoning Model on a New Multitask Benchmark",
+"Adversarially Constructed Evaluation Sets Are More Challenging, but May Not Be Fair",
+"Towards Hybrid Embedded Feature Selection and Classification Approach with Slim-TSF",
+"ANLIzing the Adversarial Natural Language Inference Dataset",
+"Enhancing SLM via ChatGPT and Dataset Augmentation"
+],
+"date": "2026-11-14",
+"error": "endpoint answered 400: {\"error\":{\"message\":\"Your account (2131343381) does not have a valid AgentPlan subscription, or your subscription has expired. Please vis",
+"name": "ANLI",
+"query": "ANLI",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": ""
+},
+"apibank": {
+"arxiv": "2304.08244",
+"considered": [
+"API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs"
+],
+"date": "2026-11-14",
+"name": "API-Bank",
+"published": "2023-04-14",
+"query": "API-Bank",
+"repo": null,
+"searched": "arXiv",
+"title": "API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs",
+"why": "Introduces API-Bank benchmark for tool-augmented LLMs covering planning, retrieval, API calls."
+},
+"arcagi": {
+"arxiv": null,
+"considered": [
+"ARC-AGI Without Pretraining",
+"ARC-AGI-2 Technical Report",
+"Neural Cellular Automata for ARC-AGI",
+"Multi-Perspective Transformers in ARC-AGI-2 Challenge",
+"Kepler: Auditable World Models for ARC-AGI-3",
+"Towards Efficient Neurally-Guided Program Induction for ARC-AGI"
+],
+"date": "2026-11-14",
+"name": "ARC-AGI",
+"query": "ARC-AGI",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All listed papers use or extend ARC-AGI; none introduces the original benchmark."
+},
+"arcagi3": {
+"arxiv": "2603.24621",
+"considered": [
+"Kepler: Auditable World Models for ARC-AGI-3",
+"ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence",
+"Graph-Based Exploration for ARC-AGI-3 Interactive Reasoning Tasks",
+"Tycho: Active Abstraction with Programmatic World Models for ARC-AGI-3",
+"Executable World Models for ARC-AGI-3 in the Era of Coding Agents",
+"How Humans Learn Unfamiliar Worlds: A Think-Aloud Dataset on ARC-AGI-3"
+],
+"date": "2026-11-14",
+"name": "ARC-AGI-3",
+"published": "2026-03-24",
+"query": "ARC-AGI-3",
+"repo": null,
+"searched": "arXiv",
+"title": "ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence",
+"why": "Paper explicitly introduces ARC-AGI-3 interactive benchmark; others use it."
 },
 "arcc": {
 "arxiv": null,
@@ -175,6 +316,35 @@
 "title": "From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline",
 "why": "Introduces Arena-Hard benchmark via BenchBuilder pipeline for automatic LLM evaluation."
 },
+"artifactsbench": {
+"arxiv": null,
+"considered": [
+"Artifact-Bench: Evaluating MLLMs on Detecting and Assessing the Artifacts of AI-Generated Videos"
+],
+"date": "2026-11-14",
+"name": "Artifacts Bench",
+"query": "Artifacts Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Artifact-Bench evaluates MLLMs on AI-generated video artifacts, not front-end code generation."
+},
+"attaq": {
+"arxiv": "2311.04124",
+"considered": [
+"Lost in Translation? A Comparative Study on the Cross-Lingual Transfer of Composite Harms",
+"Unveiling Safety Vulnerabilities of Large Language Models",
+"Large Language Models can be Strong Self-Detoxifiers"
+],
+"date": "2026-11-14",
+"name": "AttaQ",
+"published": "2023-11-07",
+"query": "AttaQ",
+"repo": null,
+"searched": "arXiv",
+"title": "Unveiling Safety Vulnerabilities of Large Language Models",
+"why": "Introduces AttaQ, a dataset of adversarial questions designed to provoke harmful model responses."
+},
 "automationbenchaa": {
 "arxiv": null,
 "considered": [],
@@ -231,6 +401,17 @@
 "title": null,
 "why": "Paper analyzes/scoring of BFCL multi-turn; does not introduce the BFCL benchmark."
 },
+"bfcl2": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "BFCL v2",
+"query": "BFCL v2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "bfcl3": {
 "arxiv": null,
 "considered": [
@@ -267,6 +448,22 @@
 "title": null,
 "why": "All papers use or audit BFCL v4; none introduces the benchmark."
 },
+"bigbench": {
+"arxiv": null,
+"considered": [
+"BIG-Bench Extra Hard",
+"Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+"How Predictable Are Large Language Model Capabilities? A Case Study on BIG-bench",
+"Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs"
+],
+"date": "2026-11-14",
+"name": "BIG-Bench",
+"query": "BIG-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Listed papers use, extend, or introduce related/different benchmarks; none introduces BIG-Bench."
+},
 "bigbenchextrahard": {
 "arxiv": "2502.19187",
 "considered": [
@@ -300,6 +497,25 @@
 "title": "Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
 "why": "Introduces BIG-Bench Hard, the suite of 23 challenging BIG-Bench tasks."
 },
+"bigbenchhardbbh": {
+"arxiv": "2210.09261",
+"considered": [
+"Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+"Correlating and Predicting Human Evaluations of Language Models from Natural Language Processing Benchmarks",
+"LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+"How predictable is language model benchmark performance?",
+"How Reliable is Language Model Micro-Benchmarking?",
+"Efficient multi-prompt evaluation of LLMs"
+],
+"date": "2026-11-14",
+"name": "Big Bench Hard (BBH)",
+"published": "2022-10-17",
+"query": "Big Bench Hard",
+"repo": null,
+"searched": "arXiv",
+"title": "Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+"why": "Introduces BIG-Bench Hard (BBH) as a suite of 23 challenging BIG-Bench tasks."
+},
 "birdsqldev": {
 "arxiv": null,
 "considered": [
@@ -331,6 +547,21 @@
 "title": null,
 "why": "None of the papers introduces the BLINK multimodal benchmark; they concern blinking or unrelated topics."
 },
+"boolq": {
+"arxiv": "1905.10044",
+"considered": [
+"BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions",
+"Is Length Really A Liability? An Evaluation of Multi-turn LLM Conversations using BoolQ"
+],
+"date": "2026-11-14",
+"name": "BoolQ",
+"published": "2019-05-24",
+"query": "BoolQ",
+"repo": null,
+"searched": "arXiv",
+"title": "BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions",
+"why": "Introduces BoolQ, a naturally occurring yes/no reading comprehension dataset."
+},
 "browsecomp": {
 "arxiv": "2504.12516",
 "considered": [
@@ -349,6 +580,17 @@
 "searched": "arXiv",
 "title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
 "why": "Introduces BrowseComp benchmark for browsing agents with hard-to-find entangled information."
+},
+"browsecomplongcontext128k": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "BrowseComp Long Context 128k",
+"query": "BrowseComp Long Context 128k",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "browsecompzh": {
 "arxiv": "2504.19314",
@@ -378,6 +620,21 @@
 "searched": "arXiv",
 "title": "CC-OCR: A Comprehensive and Challenging OCR Benchmark for Evaluating Large Multimodal Models in Literacy",
 "why": "Introduces CC-OCR benchmark; V2 is later extension."
+},
+"ceval": {
+"arxiv": "2305.08322",
+"considered": [
+"c-Eval: A Unified Metric to Evaluate Feature-based Explanations via Perturbation",
+"C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models"
+],
+"date": "2026-11-14",
+"name": "C-Eval",
+"published": "2023-05-15",
+"query": "C-Eval",
+"repo": null,
+"searched": "arXiv",
+"title": "C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models",
+"why": "Introduces C-Eval, a Chinese 52-discipline multi-level evaluation suite."
 },
 "charadessta": {
 "arxiv": null,
@@ -443,6 +700,17 @@
 "title": "Claw-Eval: Towards Trustworthy Evaluation of Autonomous Agents",
 "why": "Introduces Claw-Eval with 300 tasks and trajectory-aware auditing, matching the catalogue entry."
 },
+"cluewsc": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "CLUEWSC",
+"query": "CLUEWSC",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "cmmlu": {
 "arxiv": "2306.09212",
 "considered": [
@@ -456,6 +724,17 @@
 "searched": "arXiv",
 "title": "CMMLU: Measuring massive multitask language understanding in Chinese",
 "why": "Introduces CMMLU, Chinese multitask benchmark covering many subjects."
+},
+"cnmo2024": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "CNMO 2024",
+"query": "CNMO 2024",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "codeforces": {
 "arxiv": null,
@@ -492,6 +771,24 @@
 "title": "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
 "why": "Introduces COLLIE, a grammar-based framework for constrained compositional text generation benchmark tasks."
 },
+"commonsenseqa": {
+"arxiv": "1811.00937",
+"considered": [
+"Solution of DeBERTaV3 on CommonsenseQA",
+"LOGICAL-COMMONSENSEQA: A Benchmark for Logical Commonsense Reasoning",
+"CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge",
+"Human Parity on CommonsenseQA: Augmenting Self-Attention with External Attention",
+"CommonsenseQA 2.0: Exposing the Limits of AI through Gamification"
+],
+"date": "2026-11-14",
+"name": "CommonSenseQA",
+"published": "2018-11-02",
+"query": "CommonSenseQA",
+"repo": null,
+"searched": "arXiv",
+"title": "CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge",
+"why": "Introduces CommonsenseQA, a multiple-choice commonsense QA dataset"
+},
 "complexfuncbench": {
 "arxiv": "2501.10132",
 "considered": [
@@ -505,6 +802,17 @@
 "searched": "arXiv",
 "title": "ComplexFuncBench: Exploring Multi-Step and Constrained Function Calling under Long-Context Scenario",
 "why": "Paper introduces ComplexFuncBench benchmark for multi-step constrained function calling with long-context parameters."
+},
+"corpusqa1m": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "CorpusQA 1M",
+"query": "CorpusQA 1M",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "countbench": {
 "arxiv": "2302.12066",
@@ -521,6 +829,41 @@
 "searched": "arXiv",
 "title": "Teaching CLIP to Count to Ten",
 "why": "Introduces CountBench, a counting benchmark for vision-language models."
+},
+"covost2": {
+"arxiv": null,
+"considered": [
+"ComSL: A Composite Speech-Language Model for End-to-End Speech-to-Text Translation",
+"CTC-GMM: CTC guided modality matching for fast and accurate streaming speech translation",
+"SPRI: SVD-Partitioned Residual Initialization for Data-Constrained MoE Upcycling",
+"CRESiST: Self-Enhancing Explorative Policy Learning for Simultaneous Speech Translation"
+],
+"date": "2026-11-14",
+"name": "CoVoST2",
+"query": "CoVoST2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of these papers introduces the CoVoST2 benchmark."
+},
+"crag": {
+"arxiv": "2406.04744",
+"considered": [
+"CRAG -- Comprehensive RAG Benchmark",
+"Clustered Retrieved Augmented Generation (CRAG)",
+"CRAG: Can 3D Generative Models Help 3D Assembly?",
+"CRAG-MM: Multi-modal Multi-turn Comprehensive RAG Benchmark",
+"Revisiting the Solution of Meta KDD Cup 2024: CRAG",
+"CRAG-MM-Diagnostics: Enabling Stage-Wise Analysis of Knowledge-Intensive VQA"
+],
+"date": "2026-11-14",
+"name": "CRAG",
+"published": "2024-06-07",
+"query": "CRAG",
+"repo": "facebookresearch/CRAG",
+"searched": "arXiv",
+"title": "CRAG -- Comprehensive RAG Benchmark",
+"why": "Introduces Comprehensive RAG Benchmark with factual QA pairs and mock web/KG APIs."
 },
 "creativewriting3": {
 "arxiv": null,
@@ -543,6 +886,19 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"cybersecurityctfs": {
+"arxiv": null,
+"considered": [
+"Evaluating Context Segmentation in Locally Deployable SLMs for Cybersecurity CTF Tasks"
+],
+"date": "2026-11-14",
+"name": "Cybersecurity CTFs",
+"query": "Cybersecurity CTFs",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper proposes context segmentation method; uses existing CTF tasks, introduces no named benchmark."
 },
 "deepsearchqa": {
 "arxiv": "2601.20975",
@@ -584,6 +940,24 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"drop": {
+"arxiv": null,
+"considered": [
+"Collinear Drop",
+"Soft Drop",
+"Drop Trampoline",
+"Jet energy drop",
+"Drop Impact Printing",
+"Soft-Drop Thrust"
+],
+"date": "2026-11-14",
+"name": "DROP",
+"query": "DROP",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces the DROP reading comprehension benchmark; all papers concern physics jet or drop phenomena."
 },
 "dynamath": {
 "arxiv": "2411.00836",
@@ -654,6 +1028,39 @@
 "title": null,
 "why": "ERQA-Plus is a different/extended benchmark; the other ERQA is unrelated video quality assessment."
 },
+"evalplus": {
+"arxiv": "2305.01210",
+"considered": [
+"Are Arabic Benchmarks Reliable? QIMMA's Quality-First Approach to LLM Evaluation",
+"Is Your Code Generated by ChatGPT Really Correct? Rigorous Evaluation of Large Language Models for Code Generation",
+"Low-Cost Language Models: Survey and Performance Evaluation on Python Code Generation",
+"Beyond Code Generation: Assessing Code LLM Maturity with Postconditions",
+"OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement",
+"CoDA: Coding LM via Diffusion Adaptation"
+],
+"date": "2026-11-14",
+"name": "EvalPlus",
+"published": "2023-05-02",
+"query": "EvalPlus",
+"repo": "evalplus/evalplus",
+"searched": "arXiv",
+"title": "Is Your Code Generated by ChatGPT Really Correct? Rigorous Evaluation of Large Language Models for Code Generation",
+"why": "Proposes EvalPlus, a code synthesis evaluation framework using expanded tests."
+},
+"exploitbench": {
+"arxiv": "2605.14153",
+"considered": [
+"ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents"
+],
+"date": "2026-11-14",
+"name": "ExploitBench",
+"published": "2026-05-13",
+"query": "ExploitBench",
+"repo": null,
+"searched": "arXiv",
+"title": "ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents",
+"why": "Introduces ExploitBench, a capability-graded benchmark for LLM cybersecurity agents."
+},
 "factsgrounding": {
 "arxiv": "2501.03200",
 "considered": [
@@ -673,6 +1080,17 @@
 "title": "The FACTS Grounding Leaderboard: Benchmarking LLMs' Ability to Ground Responses to Long-Form Input",
 "why": "Introduces FACTS Grounding leaderboard and benchmark for long-document grounded responses."
 },
+"figqa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "FigQA",
+"query": "FigQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "financeagent2": {
 "arxiv": null,
 "considered": [
@@ -685,6 +1103,22 @@
 "searched": "arXiv",
 "title": null,
 "why": "Paper only mentions Finance Agent v2 as existing Vals AI benchmark; introduces a different IPO benchmark."
+},
+"finqa": {
+"arxiv": "2109.00122",
+"considered": [
+"FinQA: A Dataset of Numerical Reasoning over Financial Data",
+"A Robustly Optimized Long Text to Math Models for Numerical Reasoning On FinQA",
+"A Numerical Reasoning Question Answering System with Fine-grained Retriever and the Ensemble of Multiple Generators for "
+],
+"date": "2026-11-14",
+"name": "FinQA",
+"published": "2021-09-01",
+"query": "FinQA",
+"repo": "czyssrs/FinQA",
+"searched": "arXiv",
+"title": "FinQA: A Dataset of Numerical Reasoning over Financial Data",
+"why": "Introduces FinQA dataset for numerical reasoning over financial reports"
 },
 "fleurs": {
 "arxiv": "2205.12446",
@@ -705,6 +1139,31 @@
 "title": "FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech",
 "why": "It explicitly introduces the FLEURS speech benchmark and its baseline tasks."
 },
+"flores101": {
+"arxiv": "2106.03193",
+"considered": [
+"The FLORES-101 Evaluation Benchmark for Low-Resource and Multilingual Machine Translation"
+],
+"date": "2026-11-14",
+"name": "Flores-101",
+"published": "2021-06-06",
+"query": "Flores-101",
+"repo": null,
+"searched": "arXiv",
+"title": "The FLORES-101 Evaluation Benchmark for Low-Resource and Multilingual Machine Translation",
+"why": "Introduces the FLORES-101 evaluation benchmark for multilingual machine translation."
+},
+"frontiercode": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "FrontierCode",
+"query": "FrontierCode",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "frontiercode11": {
 "arxiv": null,
 "considered": [],
@@ -715,6 +1174,67 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"frontierscienceolympiad": {
+"arxiv": null,
+"considered": [
+"Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent"
+],
+"date": "2026-11-14",
+"name": "FrontierScience Olympiad",
+"query": "FrontierScience Olympiad",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper introduces Agents-A1 model, not the FrontierScience Olympiad benchmark."
+},
+"frontierscienceresearch": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "frontier-science-research",
+"query": "frontier-science-research",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"gdpvalaa": {
+"arxiv": null,
+"considered": [
+"WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training"
+],
+"date": "2026-11-14",
+"name": "gdpval-aa",
+"query": "gdpval-aa",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "WorkFactory introduces a task-construction framework, not a benchmark named gdpval-aa."
+},
+"gdpvalmm": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "GDPval-MM",
+"query": "GDPval-MM",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"genebenchpro": {
+"arxiv": null,
+"considered": [
+"Are We Measuring Scientific Intelligence? Rethinking the Evaluation of AI Scientists"
+],
+"date": "2026-11-14",
+"name": "GeneBench-Pro",
+"query": "GeneBench-Pro",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "The paper evaluates AI scientists but does not introduce a GeneBench-Pro benchmark."
 },
 "globalmmlu": {
 "arxiv": "2412.03304",
@@ -759,6 +1279,70 @@
 "title": "Global PIQA: Evaluating Commonsense Reasoning Across 100+ Languages and Cultures",
 "why": "It presents Global PIQA, a participatory commonsense reasoning benchmark across 100+ languages."
 },
+"glue": {
+"arxiv": null,
+"considered": [
+"The Mystery of Superconductivity: Glue or No Glue?",
+"Towards a Theory of Glue",
+"Superposition as a logical glue",
+"Glueing silting objects",
+"The Glue Content of the Pion"
+],
+"date": "2026-11-14",
+"name": "GLUE",
+"query": "GLUE",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces the GLUE natural language understanding benchmark; all papers use 'glue' in unrelated senses."
+},
+"gorillabenchmarkapibench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "Gorilla Benchmark API Bench",
+"query": "Gorilla Benchmark API Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"gpqa": {
+"arxiv": "2311.12022",
+"considered": [
+"GPQA: A Graduate-Level Google-Proof Q&A Benchmark"
+],
+"date": "2026-11-14",
+"name": "GPQA",
+"published": "2023-11-20",
+"query": "GPQA",
+"repo": null,
+"searched": "arXiv",
+"title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+"why": "Introduces GPQA, a graduate-level Google-proof science Q&A benchmark."
+},
+"graphwalks": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "GraphWalks",
+"query": "GraphWalks",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"graphwalksbfs1m": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "Graphwalks BFS 1M",
+"query": "Graphwalks BFS 1M",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "graphwalksparents128k": {
 "arxiv": null,
 "considered": [],
@@ -769,6 +1353,23 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"gsm8k": {
+"arxiv": null,
+"considered": [
+"TinyGSM: achieving >80% on GSM8k with small language models",
+"MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation",
+"Achieving >97% on GSM8K: Deeply Understanding the Problems Makes LLMs Better Solvers for Math Word Problems",
+"Prompt Dominance and Asymmetric Verifier Costs: Empirical Ablations of GRPO at 1B Scale on GSM8K",
+"GSM8K-V: Can Vision Language Models Solve Grade School Math Word Problems in Visual Contexts"
+],
+"date": "2026-11-14",
+"name": "GSM8k",
+"query": "GSM8k",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All listed papers use, extend, or transform GSM8K; none introduces the original benchmark."
 },
 "gsm8kindic": {
 "arxiv": null,
@@ -791,6 +1392,21 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"headqa": {
+"arxiv": "1906.04701",
+"considered": [
+"HEAD-QA: A Healthcare Dataset for Complex Reasoning",
+"HEAD-QA v2: Expanding a Healthcare Benchmark for Reasoning"
+],
+"date": "2026-11-14",
+"name": "HEAD-QA",
+"published": "2019-06-11",
+"query": "HEAD-QA",
+"repo": null,
+"searched": "arXiv",
+"title": "HEAD-QA: A Healthcare Dataset for Complex Reasoning",
+"why": "Introduces HEAD-QA as a healthcare multiple-choice complex reasoning benchmark."
 },
 "healthbench": {
 "arxiv": "2505.08775",
@@ -825,6 +1441,21 @@
 "searched": "arXiv",
 "title": "HealthBench Professional: Evaluating Large Language Models on Real Clinician Chats",
 "why": "It introduces HealthBench Professional as an open benchmark."
+},
+"hellaswag": {
+"arxiv": "1905.07830",
+"considered": [
+"HellaSwag: Can a Machine Really Finish Your Sentence?",
+"HellaSwag-Pro: A Large-Scale Bilingual Benchmark for Evaluating the Robustness of LLMs in Commonsense Reasoning"
+],
+"date": "2026-11-14",
+"name": "HellaSwag",
+"published": "2019-05-19",
+"query": "HellaSwag",
+"repo": null,
+"searched": "arXiv",
+"title": "HellaSwag: Can a Machine Really Finish Your Sentence?",
+"why": "Introduces HellaSwag as a new challenge dataset for commonsense sentence completion."
 },
 "hiddenmath": {
 "arxiv": null,
@@ -884,6 +1515,39 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"humaneval": {
+"arxiv": null,
+"considered": [
+"HumanEval on Latest GPT Models -- 2024",
+"Addressing Data Leakage in HumanEval Using Combinatorial Test Design",
+"Reactor Mk.1 performances: MMLU, HumanEval and BBH test results",
+"Qiskit HumanEval: An Evaluation Benchmark For Quantum Code Generative Models",
+"NaturalCodeBench: Examining Coding Performance Mismatch on HumanEval and Natural User Prompts",
+"HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-lingual Natural Language Generalization"
+],
+"date": "2026-11-14",
+"name": "HumanEval+",
+"query": "HumanEval+",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces HumanEval+; they use or extend HumanEval or propose different benchmarks."
+},
+"hypersim": {
+"arxiv": "2011.02523",
+"considered": [
+"Hypersim: A Photorealistic Synthetic Dataset for Holistic Indoor Scene Understanding",
+"HyperSim: A Holistic Sim-To-Real Framework For Robust Robotic Manipulation"
+],
+"date": "2026-11-14",
+"name": "Hypersim",
+"published": "2020-11-04",
+"query": "Hypersim",
+"repo": null,
+"searched": "arXiv",
+"title": "Hypersim: A Photorealistic Synthetic Dataset for Holistic Indoor Scene Understanding",
+"why": "Introduces Hypersim, a photorealistic synthetic indoor scene dataset for scene understanding."
+},
 "ifbench": {
 "arxiv": null,
 "considered": [
@@ -897,6 +1561,24 @@
 "searched": "arXiv",
 "title": null,
 "why": "Both papers introduce differently named variants (MTAC-IFBench, Video-IFBench), not the IFBench benchmark itself."
+},
+"ifeval": {
+"arxiv": null,
+"considered": [
+"M-IFEval: Multilingual Instruction-Following Evaluation",
+"DuplexSpeechBench-IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents",
+"Inverse IFEval: Can LLMs Unlearn Stubborn Training Conventions to Follow Real Instructions?",
+"IFEval-Audio: Benchmarking Instruction-Following Capability in Audio-based Large Language Models",
+"Speech-IFEval: Evaluating Instruction-Following and Quantifying Catastrophic Forgetting in Speech-Aware Language Models",
+"MM-IFEval-Pro: A Multilingual and Attack-Resistant Benchmark for Instruction-Following in Vision-Language Models"
+],
+"date": "2026-11-14",
+"name": "IFEval",
+"query": "IFEval",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All papers introduce variants like M-IFEval or IFEval-Audio, not the original IFEval benchmark."
 },
 "imoanswerbench": {
 "arxiv": "2511.01846",
@@ -972,6 +1654,22 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"lambada": {
+"arxiv": "1606.06031",
+"considered": [
+"LAMBADA: Backward Chaining for Automated Reasoning in Natural Language",
+"Lambada: Interactive Data Analytics on Cold Data using Serverless Cloud Infrastructure",
+"The LAMBADA dataset: Word prediction requiring a broad discourse context"
+],
+"date": "2026-11-14",
+"name": "LAMBADA",
+"published": "2016-06-20",
+"query": "LAMBADA",
+"repo": null,
+"searched": "arXiv",
+"title": "The LAMBADA dataset: Word prediction requiring a broad discourse context",
+"why": "Introduces LAMBADA dataset for final-word prediction requiring broad discourse context."
+},
 "legalagent": {
 "arxiv": null,
 "considered": [],
@@ -982,6 +1680,31 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"lifescibench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "LifeSciBench",
+"query": "LifeSciBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"lingoqa": {
+"arxiv": "2312.14115",
+"considered": [
+"LingoQA: Visual Question Answering for Autonomous Driving"
+],
+"date": "2026-11-14",
+"name": "LingoQA",
+"published": "2023-12-21",
+"query": "LingoQA",
+"repo": null,
+"searched": "arXiv",
+"title": "LingoQA: Visual Question Answering for Autonomous Driving",
+"why": "Introduces LingoQA dataset and benchmark for driving visual question answering."
 },
 "livebench20241125": {
 "arxiv": null,
@@ -1030,19 +1753,47 @@
 "title": null,
 "why": "No listed paper introduces LiveCodeBench v6; one only uses a subset of it."
 },
+"livecodebenchpro": {
+"arxiv": "2506.11928",
+"considered": [
+"LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive Programming?"
+],
+"date": "2026-11-14",
+"name": "LiveCodeBench Pro",
+"published": "2025-06-13",
+"query": "LiveCodeBench Pro",
+"repo": null,
+"searched": "arXiv",
+"title": "LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive Programming?",
+"why": "Introduces LiveCodeBench Pro benchmark for competitive programming evaluation."
+},
 "longbench2": {
-"arxiv": null,
+"arxiv": "2412.15204",
 "considered": [
 "LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks"
 ],
-"date": "2026-11-13",
-"error": "endpoint answered 400: {\"error\":{\"message\":\"Your account (2131343381) does not have a valid AgentPlan subscription, or your subscription has expired. Please vis",
+"date": "2026-11-14",
 "name": "LongBench v2",
+"published": "2024-12-19",
 "query": "LongBench v2",
 "repo": null,
 "searched": "arXiv",
-"title": null,
-"why": ""
+"title": "LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks",
+"why": "Introduces LongBench v2, long-context multiple-choice benchmark."
+},
+"longvideobench": {
+"arxiv": "2407.15754",
+"considered": [
+"LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+],
+"date": "2026-11-14",
+"name": "LongVideoBench",
+"published": "2024-07-22",
+"query": "LongVideoBench",
+"repo": null,
+"searched": "arXiv",
+"title": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+"why": "Introduces LongVideoBench, a long-context video-language QA benchmark with hour-long videos and subtitles."
 },
 "lvbench": {
 "arxiv": "2406.08035",
@@ -1109,6 +1860,23 @@
 "title": null,
 "why": "None of the papers introduces the MathArena Apex benchmark; they describe unrelated methods."
 },
+"mathmath500": {
+"arxiv": null,
+"considered": [
+"Real and Complex Analysis: Solutions to Problems in Amer. Math. Monthly, Math. Magazine, College Math. J., Elemente der ",
+"Math-Selfie",
+"Art Speaks Maths, Maths Speaks Art",
+"Is math useful?",
+"Card Dealing Math"
+],
+"date": "2026-11-14",
+"name": "Math (math 500)",
+"query": "Math",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of these papers introduces the Math-500 benchmark; they are unrelated math papers."
+},
 "mathvision": {
 "arxiv": null,
 "considered": [
@@ -1155,6 +1923,19 @@
 "title": "MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation",
 "why": "Introduces MaXIFE, a multilingual and cross-lingual instruction-following benchmark matching the entry."
 },
+"mbpp": {
+"arxiv": null,
+"considered": [
+"HumanEval Pro and MBPP Pro: Evaluating Large Language Models on Self-invoking Code Generation"
+],
+"date": "2026-11-14",
+"name": "MBPP+",
+"query": "MBPP+",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper introduces MBPP Pro, not MBPP+; different benchmark."
+},
 "medxpertqa": {
 "arxiv": "2501.18362",
 "considered": [
@@ -1181,6 +1962,33 @@
 "searched": "arXiv",
 "title": null,
 "why": "MGSM-Pro extends MGSM; it does not introduce the MGSM benchmark."
+},
+"mgsmmultilingualgradeschoolmathmgsm": {
+"arxiv": "2210.03057",
+"considered": [
+"Language Models are Multilingual Chain-of-Thought Reasoners",
+"What Really Counts? Examining Step and Token Level Attribution in Multilingual CoT Reasoning",
+"Language Imbalance Driven Rewarding for Multilingual Self-improving"
+],
+"date": "2026-11-14",
+"name": "MGSM (Multilingual Grade School Math (MGSM) benchmark)",
+"published": "2022-10-06",
+"query": "MGSM   benchmark",
+"repo": "google-research/url-nlp",
+"searched": "arXiv",
+"title": "Language Models are Multilingual Chain-of-Thought Reasoners",
+"why": "Introduces the Multilingual Grade School Math (MGSM) benchmark."
+},
+"mlsbenchlite": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "MLS-Bench Lite",
+"query": "MLS-Bench Lite",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "mlvu": {
 "arxiv": "2406.04264",
@@ -1227,6 +2035,68 @@
 "searched": "arXiv",
 "title": null,
 "why": "Paper uses MMBench-V1.1 only; it introduces ET-Prune, not this benchmark."
+},
+"mmbenchvideo": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "MMBench-Video",
+"query": "MMBench-Video",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"mme": {
+"arxiv": null,
+"considered": [
+"MME for Mating Correspondences",
+"Latency Evaluation of a Virtualized MME",
+"MME-Industry: A Cross-Industry Multimodal Evaluation Benchmark",
+"MME-Reasoning: A Comprehensive Benchmark for Logical Reasoning in MLLMs",
+"HumanVideo-MME: Benchmarking MLLMs for Human-Centric Video Understanding",
+"On Non Asymptotic Expansion of the MME in the Case of Poisson Observations"
+],
+"date": "2026-11-14",
+"name": "MME",
+"query": "MME",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces the original MME image perception/cognition benchmark; listed papers are different MME variants or unrelated."
+},
+"mmlongbenchdoc": {
+"arxiv": "2407.01523",
+"considered": [
+"MMLongBench-Doc-V2: A Corrected-Annotation, Semantics-Aware Revision of MMLongBench-Doc",
+"MMLongBench-Doc: Benchmarking Long-context Document Understanding with Visualizations"
+],
+"date": "2026-11-14",
+"name": "MMLongBench-Doc",
+"published": "2024-07-01",
+"query": "MMLongBench-Doc",
+"repo": null,
+"searched": "arXiv",
+"title": "MMLongBench-Doc: Benchmarking Long-context Document Understanding with Visualizations",
+"why": "Introduces MMLongBench-Doc long-context multimodal document benchmark."
+},
+"mmlu": {
+"arxiv": null,
+"considered": [
+"Are We Done with MMLU?",
+"Changing Answer Order Can Decrease MMLU Accuracy",
+"Spanish and LLM Benchmarks: is MMLU Lost in Translation?",
+"Mobile-MMLU: A Mobile Intelligence Language Understanding Benchmark",
+"Video-MMLU: A Massive Multi-Discipline Lecture Understanding Benchmark",
+"Reactor Mk.1 performances: MMLU, HumanEval and BBH test results"
+],
+"date": "2026-11-14",
+"name": "MMLU",
+"query": "MMLU",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces MMLU; they analyze, use, translate, or derive variants of it."
 },
 "mmlupro": {
 "arxiv": "2406.01574",
@@ -1276,6 +2146,17 @@
 "searched": "arXiv",
 "title": "Are We Done with MMLU?",
 "why": "Introduces MMLU-Redux, a 5,700-question manually re-annotated subset of MMLU."
+},
+"mmmind2web": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "MM-Mind2Web",
+"query": "MM-Mind2Web",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "mmmtbench": {
 "arxiv": "2410.07073",
@@ -1359,6 +2240,57 @@
 "title": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
 "why": "Introduces MMStar benchmark of vision-indispensable multimodal questions, addressing visual redundancy and leakage."
 },
+"mmtbench": {
+"arxiv": "2404.16006",
+"considered": [
+"MMTS-BENCH: A Comprehensive Benchmark for Time Series Understanding and Reasoning",
+"MMT-Bench: A Comprehensive Multimodal Benchmark for Evaluating Large Vision-Language Models Towards Multitask AGI"
+],
+"date": "2026-11-14",
+"name": "MMT-Bench",
+"published": "2024-04-24",
+"query": "MMT-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": "MMT-Bench: A Comprehensive Multimodal Benchmark for Evaluating Large Vision-Language Models Towards Multitask AGI",
+"why": "Introduces MMT-Bench, multi-choice visual benchmark across multimodal scenarios."
+},
+"mmvu": {
+"arxiv": "2501.12380",
+"considered": [
+"MMVU: Measuring Expert-Level Multi-Discipline Video Understanding"
+],
+"date": "2026-11-14",
+"name": "MMVU",
+"published": "2025-01-21",
+"query": "MMVU",
+"repo": null,
+"searched": "arXiv",
+"title": "MMVU: Measuring Expert-Level Multi-Discipline Video Understanding",
+"why": "Introduces MMVU expert-level multi-discipline video understanding benchmark."
+},
+"mobileworld": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "MobileWorld",
+"query": "MobileWorld",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"motionbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "MotionBench",
+"query": "MotionBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "mrcr": {
 "arxiv": null,
 "considered": [
@@ -1371,6 +2303,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "Astronomy paper on radio galaxies; unrelated to AI benchmark MRCR."
+},
+"mrcr2": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "MRCR v2",
+"query": "MRCR v2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "mtbench": {
 "arxiv": "2306.05685",
@@ -1432,6 +2375,80 @@
 "title": null,
 "why": "None of the listed papers introduces the Multi-IF benchmark; all are unrelated name matches."
 },
+"multilingualmassivemultitasklanguageunderstandingmmmlu": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "Multilingual Massive Multitask Language Understanding (MMMLU)",
+"query": "Multilingual Massive Multitask Language Understanding",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"multilingualmgsmcot": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "Multilingual MGSM (CoT)",
+"query": "Multilingual MGSM",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"multilingualmmlu": {
+"arxiv": null,
+"considered": [
+"Inspect India Evals: An Open Benchmarking Framework for Evaluating Large Language Models in the Indian Linguistic and Cu"
+],
+"date": "2026-11-14",
+"name": "Multilingual MMLU",
+"query": "Multilingual MMLU",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper only includes a 16-Indian-language Multilingual MMLU, not the 29-language benchmark."
+},
+"multiple": {
+"arxiv": "2208.08227",
+"considered": [
+"MultiPL-E: A Scalable and Extensible Approach to Benchmarking Neural Code Generation",
+"Perceive Your Users in Depth: Learning Universal User Representations from Multiple E-commerce Tasks",
+"Mitigating the Winner's Curse While Controlling Multiplicity: e-Process Methods for Anytime-Valid Inference in Dose-Rang",
+"Projective monomial curves associated to numerical semigroups with multiplicity $e$, width $e-1$, and embedding dimensio"
+],
+"date": "2026-11-14",
+"name": "MultiPL-E",
+"published": "2022-08-17",
+"query": "MultiPL-E",
+"repo": null,
+"searched": "arXiv",
+"title": "MultiPL-E: A Scalable and Extensible Approach to Benchmarking Neural Code Generation",
+"why": "Introduces MultiPL-E, translating unit test-driven code generation benchmarks to many languages."
+},
+"multiplehumaneval": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "Multipl-E HumanEval",
+"query": "Multipl-E HumanEval",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"multiplembpp": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "Multipl-E MBPP",
+"query": "Multipl-E MBPP",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "mvbench": {
 "arxiv": "2311.17005",
 "considered": [
@@ -1456,6 +2473,39 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"naturalquestions": {
+"arxiv": null,
+"considered": [
+"Ensembling Strategies for Answering Natural Questions",
+"MeeQA: Natural Questions in Meeting Transcripts",
+"Generating Natural Questions About an Image",
+"A BERT Baseline for the Natural Questions",
+"Event Extraction by Answering (Almost) Natural Questions",
+"Generating Natural Questions from Images for Multimodal Assistants"
+],
+"date": "2026-11-14",
+"name": "Natural Questions",
+"query": "Natural Questions",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces the Natural Questions benchmark; listed papers only use, baseline, or have similar names."
+},
+"nexus": {
+"arxiv": null,
+"considered": [
+"Nexus of the Cosmic Web",
+"NEXUS: Quick Release Notes",
+"Nexus networks in carbon honeycombs"
+],
+"date": "2026-11-14",
+"name": "Nexus",
+"query": "Nexus",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All papers concern astronomy, cosmology or materials; none introduces a cybersecurity tool-calling benchmark."
 },
 "nl2repo": {
 "arxiv": "2512.12730",
@@ -1560,6 +2610,35 @@
 "title": null,
 "why": "Paper only evaluates on OmniDocBench 1.5; it does not introduce the benchmark."
 },
+"omniscience": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "OmniScience",
+"query": "OmniScience",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"openbookqa": {
+"arxiv": null,
+"considered": [
+"UrduBench: An Urdu Reasoning Benchmark using Contextually Ensembled Translations with Human-in-the-Loop",
+"Quantization Effects on Bangla Language Understanding in Large Language Models: A Systematic Evaluation",
+"GrapeQA: GRaph Augmentation and Pruning to Enhance Question-Answering",
+"ActKnow: Active External Knowledge Infusion Learning for Question Answering in Low Data Regime",
+"In Case You Missed It: ARC 'Challenge' Is Not That Challenging",
+"LMExplainer: Grounding Knowledge and Explaining Language Models"
+],
+"date": "2026-11-14",
+"name": "OpenBookQA",
+"query": "OpenBookQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces OpenBookQA; papers only mention or use variants of it."
+},
 "osworldverified": {
 "arxiv": null,
 "considered": [
@@ -1577,6 +2656,45 @@
 "searched": "arXiv",
 "title": null,
 "why": "No listed paper introduces OSWorld-Verified; they only use or mention it."
+},
+"paperbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "PaperBench",
+"query": "PaperBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"piqa": {
+"arxiv": "1911.11641",
+"considered": [
+"Sinhala Physical Common Sense Reasoning Dataset for Global PIQA",
+"Ko-PIQA: A Korean Physical Commonsense Reasoning Dataset with Cultural Context",
+"PIQA: Reasoning about Physical Commonsense in Natural Language",
+"Global PIQA: Evaluating Commonsense Reasoning Across 100+ Languages and Cultures"
+],
+"date": "2026-11-14",
+"name": "PIQA",
+"published": "2019-11-26",
+"query": "PIQA",
+"repo": null,
+"searched": "arXiv",
+"title": "PIQA: Reasoning about Physical Commonsense in Natural Language",
+"why": "Introduces the PIQA benchmark dataset for physical commonsense reasoning."
+},
+"pmcvqa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "PMC-VQA",
+"query": "PMC-VQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "polymath": {
 "arxiv": "2410.14702",
@@ -1596,6 +2714,114 @@
 "searched": "arXiv",
 "title": "Polymath: A Challenging Multi-modal Mathematical Reasoning Benchmark",
 "why": "Introduces PolyMATH, a multi-modal benchmark for visual mathematical reasoning with images."
+},
+"pope": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "POPE",
+"query": "POPE",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"popqa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "PopQA",
+"query": "PopQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"posttrainbenchlite": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "PostTrainBench Lite",
+"query": "PostTrainBench Lite",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"quac": {
+"arxiv": "1808.07036",
+"considered": [
+"QuAC : Question Answering in Context",
+"A Qualitative Comparison of CoQA, SQuAD 2.0 and QuAC",
+"QuACS: Variational Quantum Algorithm for Coalition Structure Generation in Induced Subgraph Games",
+"QUAC-TRNG: High-Throughput True Random Number Generation Using Quadruple Row Activation in Commodity DRAM Chips"
+],
+"date": "2026-11-14",
+"name": "QuAC",
+"published": "2018-08-21",
+"query": "QuAC",
+"repo": null,
+"searched": "arXiv",
+"title": "QuAC : Question Answering in Context",
+"why": "Introduces QuAC, a dataset for context-dependent information-seeking QA dialogs."
+},
+"quality": {
+"arxiv": null,
+"considered": [
+"Qualities of Quality: A Tertiary Review of Software Quality Measurement Research",
+"Managing Quality Requirements Using Activity-Based Quality Models",
+"PyTorch Image Quality: Metrics for Image Quality Assessment",
+"Quality-Aware Decoding: Unifying Quality Estimation and Decoding",
+"Efficient Quality-Diversity Optimization through Diverse Quality Species",
+"Perceptual Quality Loss or Loss of Perceptual Quality?"
+],
+"date": "2026-11-14",
+"name": "QuALITY",
+"query": "QuALITY",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces the QuALITY long-context QA benchmark; all cover unrelated quality topics."
+},
+"qvhighlights": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "QVHighlights",
+"query": "QVHighlights",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"race": {
+"arxiv": null,
+"considered": [
+"Sort Race",
+"Pointer Race Freedom",
+"Pizza Race Problem",
+"Racing to Ruin",
+"Provable GPU Data-Races in Static Race Detection",
+"Learn-to-Race: A Multimodal Control Environment for Autonomous Racing"
+],
+"date": "2026-11-14",
+"name": "RACE",
+"query": "RACE",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of these papers introduces the RACE reading comprehension benchmark; they concern unrelated race topics."
+},
+"realkiefcc": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "RealKIE-FCC",
+"query": "RealKIE-FCC",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "realworldqa": {
 "arxiv": null,
@@ -1626,6 +2852,43 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"rewardbench": {
+"arxiv": "2403.13787",
+"considered": [
+"RewardBench 2: Advancing Reward Model Evaluation",
+"Explainable AI-Generated Image Detection RewardBench",
+"Long-form RewardBench: Evaluating Reward Models for Long-form Generation",
+"RewardBench: Evaluating Reward Models for Language Modeling",
+"M-RewardBench: Evaluating Reward Models in Multilingual Settings",
+"DeepResearch RewardBench: Evaluating Reward Models for Deep Research Report"
+],
+"date": "2026-11-14",
+"name": "RewardBench",
+"published": "2024-03-20",
+"query": "RewardBench",
+"repo": null,
+"searched": "arXiv",
+"title": "RewardBench: Evaluating Reward Models for Language Modeling",
+"why": "Introduces RewardBench, a benchmark dataset for evaluating reward models on prompt-chosen-rejected trios."
+},
+"ruler": {
+"arxiv": null,
+"considered": [
+"Ruler Wrapping",
+"Ruler Rolling",
+"Quantum Data Ruler",
+"Cosmic Rulers",
+"On Disjoint Golomb Rulers",
+"On the ubiquity of the ruler sequence"
+],
+"date": "2026-11-14",
+"name": "RULER",
+"query": "RULER",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of these papers introduce the long-context LLM benchmark RULER; all are unrelated uses of 'ruler'."
+},
 "screenspot": {
 "arxiv": null,
 "considered": [
@@ -1638,6 +2901,20 @@
 "searched": "arXiv",
 "title": null,
 "why": "Only ScreenSpot-Pro, a distinct high-resolution benchmark, not the original ScreenSpot."
+},
+"sib200": {
+"arxiv": "2309.07445",
+"considered": [
+"SIB-200: A Simple, Inclusive, and Big Evaluation Dataset for Topic Classification in 200+ Languages and Dialects"
+],
+"date": "2026-11-14",
+"name": "SIB-200",
+"published": "2023-09-14",
+"query": "SIB-200",
+"repo": "dadelani/sib-200",
+"searched": "arXiv",
+"title": "SIB-200: A Simple, Inclusive, and Big Evaluation Dataset for Topic Classification in 200+ Languages and Dialects",
+"why": "Introduces SIB-200 topic classification benchmark in 200+ languages"
 },
 "simplevqa": {
 "arxiv": "2502.13059",
@@ -1652,6 +2929,96 @@
 "searched": "arXiv",
 "title": "SimpleVQA: Multimodal Factuality Evaluation for Multimodal Large Language Models",
 "why": "Introduces SimpleVQA benchmark for multimodal factuality short-question answering."
+},
+"slakevqa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "SlakeVQA",
+"query": "SlakeVQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"socialiqa": {
+"arxiv": "1904.09728",
+"considered": [
+"SocialIQA: Commonsense Reasoning about Social Interactions",
+"Can Lessons From Human Teams Be Applied to Multi-Agent Systems? The Role of Structure, Diversity, and Interaction Dynami",
+"UFO: Unified Fact Obtaining for Commonsense Question Answering",
+"When Does Adaptive Halting Win? Selection Rules Matter in Looped Language Models"
+],
+"date": "2026-11-14",
+"name": "Social IQa",
+"published": "2019-04-22",
+"query": "Social IQa",
+"repo": null,
+"searched": "arXiv",
+"title": "SocialIQA: Commonsense Reasoning about Social Interactions",
+"why": "It introduces Social IQa, a 38k multiple-choice benchmark on social situations."
+},
+"spreadsheetbench1": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "SpreadSheetBench-v1",
+"query": "SpreadSheetBench-v1",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"squad2": {
+"arxiv": null,
+"considered": [
+"Taxonomy-based CheckList for Large Language Model Evaluation",
+"Weakly Supervised Distillation of Hallucination Signals into Transformer Representations",
+"Detecting Token-Level Hallucinations Using Variance Signals: A Reference-Free Approach",
+"SRAS: A Lightweight Reinforcement Learning-based Document Selector for Edge-Native RAG Pipelines",
+"Investigating Entity Knowledge in BERT with Simple Neural End-To-End Entity Linking",
+"Delta -- Contrastive Decoding Mitigates Text Hallucinations in Large Language Models"
+],
+"date": "2026-11-14",
+"name": "SQuaD v2",
+"query": "SQuaD v2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces SQuAD v2; they only use or mention the existing dataset."
+},
+"squality": {
+"arxiv": "2205.11465",
+"considered": [
+"SQuALITY: Building a Long-Document Summarization Dataset the Hard Way"
+],
+"date": "2026-11-14",
+"name": "SQuALITY",
+"published": "2022-05-23",
+"query": "SQuALITY",
+"repo": null,
+"searched": "arXiv",
+"title": "SQuALITY: Building a Long-Document Summarization Dataset the Hard Way",
+"why": "Introduces SQuALITY long-document summarization dataset with story overview and question-focused summaries."
+},
+"superglue": {
+"arxiv": "1905.00537",
+"considered": [
+"Slovene SuperGLUE Benchmark: Translation and Evaluation",
+"SuperGlue: Learning Feature Matching with Graph Neural Networks",
+"Unreasonable Effectiveness of Rule-Based Heuristics in Solving Russian SuperGLUE Tasks",
+"SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems",
+"Russian SuperGLUE 1.1: Revising the Lessons not Learned by Russian NLP models",
+"Two-Stage Copy-Move Forgery Detection with Self Deep Matching and Proposal SuperGlue"
+],
+"date": "2026-11-14",
+"name": "SuperGLUE",
+"published": "2019-05-02",
+"query": "SuperGLUE",
+"repo": null,
+"searched": "arXiv",
+"title": "SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems",
+"why": "Introduces SuperGLUE, a new harder language understanding benchmark with tasks and leaderboard."
 },
 "supergpqa": {
 "arxiv": "2502.14739",
@@ -1680,6 +3047,20 @@
 "searched": "arXiv",
 "title": "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?",
 "why": "Introduces SWE-Lancer benchmark with freelance tasks and managerial proposal-selection tasks matching entry."
+},
+"swemarathon": {
+"arxiv": "2606.07682",
+"considered": [
+"SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?"
+],
+"date": "2026-11-14",
+"name": "swe-marathon",
+"published": "2026-06-05",
+"query": "swe-marathon",
+"repo": null,
+"searched": "arXiv",
+"title": "SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?",
+"why": "Introduces SWE-Marathon benchmark with long-horizon tasks and verification suites."
 },
 "tau2airline": {
 "arxiv": null,
@@ -1795,6 +3176,17 @@
 "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
 "why": "Introduces Terminal-Bench 2.0, a benchmark of realistic terminal tasks."
 },
+"terminalbench3": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "Terminal-Bench 3.0",
+"query": "Terminal-Bench 3.0",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "textvqa": {
 "arxiv": null,
 "considered": [
@@ -1827,6 +3219,20 @@
 "title": "TheoremQA: A Theorem-driven Question Answering dataset",
 "why": "Introduces TheoremQA, a theorem-driven QA dataset for applying theorems to science problems."
 },
+"tirbench": {
+"arxiv": "2511.01833",
+"considered": [
+"TIR-Bench: A Comprehensive Benchmark for Agentic Thinking-with-Images Reasoning"
+],
+"date": "2026-11-14",
+"name": "TIR-Bench",
+"published": "2025-11-03",
+"query": "TIR-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": "TIR-Bench: A Comprehensive Benchmark for Agentic Thinking-with-Images Reasoning",
+"why": "Introduces TIR-Bench, a benchmark for agentic thinking-with-images tool reasoning."
+},
 "toolathlon": {
 "arxiv": "2510.25726",
 "considered": [
@@ -1846,6 +3252,101 @@
 "title": "The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution",
 "why": "Introduces Tool Decathlon, dubbed Toolathlon, a benchmark for diverse long-horizon agent tasks."
 },
+"triviaqa": {
+"arxiv": "1705.03551",
+"considered": [
+"TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension"
+],
+"date": "2026-11-14",
+"name": "TriviaQA",
+"published": "2017-05-09",
+"query": "TriviaQA",
+"repo": null,
+"searched": "arXiv",
+"title": "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+"why": "Introduces TriviaQA reading comprehension dataset with question-answer-evidence triples"
+},
+"truthfulqa": {
+"arxiv": "2109.07958",
+"considered": [
+"TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+"SymLoc: Symbolic Localization of Hallucination across HaluEval and TruthfulQA",
+"Investigating Symbolic Triggers of Hallucination in Gemma Models Across HaluEval and TruthfulQA",
+"Entropy and Attention Dynamics in Small Language Models: A Trace-Level Structural Analysis on the TruthfulQA Benchmark"
+],
+"date": "2026-11-14",
+"name": "TruthfulQA",
+"published": "2021-09-08",
+"query": "TruthfulQA",
+"repo": null,
+"searched": "arXiv",
+"title": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+"why": "Introduces the TruthfulQA benchmark for measuring truthful answers to questions."
+},
+"tvbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "TVBench",
+"query": "TVBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"tydiqa": {
+"arxiv": null,
+"considered": [
+"Scaling Instruction-Finetuned Language Models",
+"FewshotQA: A simple framework for few-shot learning of question answering tasks using pre-trained text-to-text models",
+"A Measure for Transparent Comparison of Linguistic Diversity in Multilingual NLP Data Sets",
+"Pre-trained Transformer-Based Approach for Arabic Question Answering : A Comparative Study",
+"Query-based Submodular Data Selection for Efficient Instruction Tuning",
+"QLESS: A Quantized Approach for Data Valuation and Selection in Large Language Model Fine-Tuning"
+],
+"date": "2026-11-14",
+"name": "TydiQA",
+"query": "TydiQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "All listed papers only use or mention TyDiQA; none introduces the benchmark."
+},
+"usamo2026": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "USAMO 2026",
+"query": "USAMO 2026",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"usamo25": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "USAMO25",
+"query": "USAMO25",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"usmlemedqa": {
+"arxiv": null,
+"considered": [
+"AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset"
+],
+"date": "2026-11-14",
+"name": "USMLE / MedQA",
+"query": "USMLE   MedQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "AfriMed-QA is a different African medical QA benchmark, not USMLE/MedQA."
+},
 "v": {
 "arxiv": null,
 "considered": [],
@@ -1856,6 +3357,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "the name is too short to search for"
+},
+"vendingbench2": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "Vending-Bench 2",
+"query": "Vending-Bench 2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "vibeeval": {
 "arxiv": "2405.02287",
@@ -1870,6 +3382,17 @@
 "searched": "arXiv",
 "title": "Vibe-Eval: A hard evaluation suite for measuring progress of multimodal language models",
 "why": "Introduces Vibe-Eval benchmark of 269 visual understanding prompts for multimodal models."
+},
+"videoholmes": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "VideoHolmes",
+"query": "VideoHolmes",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "videomme": {
 "arxiv": "2405.21075",
@@ -1930,6 +3453,77 @@
 "title": null,
 "why": "None of the listed papers introduces a benchmark named VideoMMMU."
 },
+"visfactor": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "VisFactor",
+"query": "VisFactor",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"visulogic": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "VisuLogic",
+"query": "VisuLogic",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"vlmsareblind": {
+"arxiv": null,
+"considered": [
+"PyVision: Agentic Vision with Dynamic Tooling"
+],
+"date": "2026-11-14",
+"name": "VLMsAreBlind",
+"query": "VLMsAreBlind",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "PyVision is an agentic vision framework, not the VLMsAreBlind benchmark."
+},
+"vqav2": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "VQAv2",
+"query": "VQAv2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"vqav2val": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-14",
+"name": "VQAv2 (val)",
+"query": "VQAv2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"webbench": {
+"arxiv": "2505.07473",
+"considered": [
+"Web-Bench: A LLM Code Benchmark Based on Web Standards and Frameworks"
+],
+"date": "2026-11-14",
+"name": "Web Bench",
+"published": "2025-05-12",
+"query": "Web Bench",
+"repo": null,
+"searched": "arXiv",
+"title": "Web-Bench: A LLM Code Benchmark Based on Web Standards and Frameworks",
+"why": "Introduces Web-Bench, a web-development code benchmark matching the entry."
+},
 "wildbench": {
 "arxiv": null,
 "considered": [],
@@ -1940,6 +3534,36 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"winogrande": {
+"arxiv": "1907.10641",
+"considered": [
+"TTTTTackling WinoGrande Schemas",
+"WinoGrande: An Adversarial Winograd Schema Challenge at Scale",
+"WinoWhat: A Parallel Corpus of Paraphrased WinoGrande Sentences with Common Sense Categorization",
+"Estonian WinoGrande Dataset: Comparative Analysis of LLM Performance on Human and Machine Translation"
+],
+"date": "2026-11-14",
+"name": "Winogrande",
+"published": "2019-07-24",
+"query": "Winogrande",
+"repo": null,
+"searched": "arXiv",
+"title": "WinoGrande: An Adversarial Winograd Schema Challenge at Scale",
+"why": "Introduces WinoGrande, an adversarial Winograd Schema benchmark at scale."
+},
+"wmt23": {
+"arxiv": null,
+"considered": [
+"UvA-MT's Participation in the WMT23 General Translation Shared Task"
+],
+"date": "2026-11-14",
+"name": "WMT23",
+"query": "WMT23",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper describes a submission to WMT23, not introducing the benchmark."
 },
 "wmt24": {
 "arxiv": "2502.12404",
@@ -1960,6 +3584,20 @@
 "title": "WMT24++: Expanding the Language Coverage of WMT24 to 55 Languages & Dialects",
 "why": "Introduces WMT24++ dataset extending WMT24 to 55 languages and dialects."
 },
+"worldvqa": {
+"arxiv": "2602.02537",
+"considered": [
+"WorldVQA: Measuring Atomic World Knowledge in Multimodal Large Language Models"
+],
+"date": "2026-11-14",
+"name": "WorldVQA",
+"published": "2026-01-28",
+"query": "WorldVQA",
+"repo": null,
+"searched": "arXiv",
+"title": "WorldVQA: Measuring Atomic World Knowledge in Multimodal Large Language Models",
+"why": "Paper explicitly introduces WorldVQA benchmark measuring atomic visual world knowledge in MLLMs."
+},
 "writingbench": {
 "arxiv": "2503.05244",
 "considered": [
@@ -1973,6 +3611,34 @@
 "searched": "arXiv",
 "title": "WritingBench: A Comprehensive Benchmark for Generative Writing",
 "why": "Introduces WritingBench, a benchmark with six core writing domains scored via LLM-generated criteria."
+},
+"xdailybench": {
+"arxiv": "2609.07784",
+"considered": [
+"xDailyBench: Benchmarking LLMs on Professional Consultation for Real-Life Problems"
+],
+"date": "2026-11-14",
+"name": "xDailyBench",
+"published": "2026-09-07",
+"query": "xDailyBench",
+"repo": null,
+"searched": "arXiv",
+"title": "xDailyBench: Benchmarking LLMs on Professional Consultation for Real-Life Problems",
+"why": "Introduces xDailyBench, a benchmark including white-collar work tasks; exact name match."
+},
+"xstest": {
+"arxiv": "2308.01263",
+"considered": [
+"XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models"
+],
+"date": "2026-11-14",
+"name": "XSTest",
+"published": "2023-08-02",
+"query": "XSTest",
+"repo": null,
+"searched": "arXiv",
+"title": "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+"why": "Introduces XSTest, a test suite for exaggerated safety behaviors in LLMs."
 },
 "zebralogic": {
 "arxiv": "2502.01100",
