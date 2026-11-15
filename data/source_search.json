@@ -10,6 +10,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"activitynet": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ActivityNet",
+"query": "ActivityNet",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "advancedif": {
 "arxiv": null,
 "considered": [],
@@ -27,6 +38,94 @@
 "date": "2026-11-14",
 "name": "AetherCode",
 "query": "AetherCode",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"agentfirewallbenchmark": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "agent-firewall-benchmark",
+"query": "agent-firewall-benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"agentguardrailsadversarial": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Agent Guardrails Adversarial Benchmark",
+"query": "Agent Guardrails Adversarial Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"agenticaiinuniversityadministration": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Agentic AI in University Administration",
+"query": "Agentic AI in University Administration",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"agentloc": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "agentloc",
+"query": "agentloc",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"agentoperationrecovery": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Agent Operation Recovery Benchmark",
+"query": "Agent Operation Recovery Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"agentshieldmultiturnagentattack": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AgentShield Multi-Turn Agent Attack Benchmark",
+"query": "AgentShield Multi-Turn Agent Attack Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"agenttoolpolicy": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Agent Tool-Policy Benchmark",
+"query": "Agent Tool-Policy Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"agentuncertaintywire": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Agent Uncertainty Wire",
+"query": "Agent Uncertainty Wire",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -58,6 +157,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "This paper extends/annotates the existing AI2D dataset; it does not introduce the AI2D benchmark itself."
+},
+"ai2reasoningchallengearc": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AI2 Reasoning Challenge (ARC)",
+"query": "AI2 Reasoning Challenge",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "aider": {
 "arxiv": null,
@@ -125,6 +235,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "AIME 2026 is a competition problem set; no listed paper introduces it, one only uses it as contamination test data."
+},
+"airbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AIR-Bench",
+"query": "AIR-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "airbench2024": {
 "arxiv": "2407.17436",
@@ -195,6 +316,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"amobench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AMO Bench",
+"query": "AMO Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "androidworldsr": {
 "arxiv": null,
 "considered": [],
@@ -224,6 +356,28 @@
 "title": null,
 "why": "No listed paper introduces ANLI; they analyze or augment the existing Adversarial NLI dataset."
 },
+"anonagentbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AnonAgentBench",
+"query": "AnonAgentBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"answerladder": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Answer Ladder",
+"query": "Answer Ladder",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "apibank": {
 "arxiv": "2304.08244",
 "considered": [
@@ -237,6 +391,17 @@
 "searched": "arXiv",
 "title": "API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs",
 "why": "Introduces API-Bank benchmark for tool-augmented LLMs covering planning, retrieval, API calls."
+},
+"arc": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Arc",
+"query": "Arc",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "arcagi": {
 "arxiv": null,
@@ -337,6 +502,39 @@
 "title": "From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline",
 "why": "Introduces Arena-Hard benchmark via BenchBuilder pipeline for automatic LLM evaluation."
 },
+"argusbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Argus-Bench",
+"query": "Argus-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"ariadnebench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AriadneBench",
+"query": "AriadneBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"arkitscenes": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ARKitScenes",
+"query": "ARKitScenes",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "artifactsbench": {
 "arxiv": null,
 "considered": [
@@ -361,6 +559,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"atmmemorytrap": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ATM-MEMORYTRAP",
+"query": "ATM-MEMORYTRAP",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "attaq": {
 "arxiv": "2311.04124",
 "considered": [
@@ -376,6 +585,17 @@
 "searched": "arXiv",
 "title": "Unveiling Safety Vulnerabilities of Large Language Models",
 "why": "Introduces AttaQ, a dataset of adversarial questions designed to provoke harmful model responses."
+},
+"autoflow6universal": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AutoFlow V6 Universal Benchmark",
+"query": "AutoFlow V6 Universal Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "autologi": {
 "arxiv": null,
@@ -399,6 +619,28 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"axionlimitbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AxionLimitBench",
+"query": "AxionLimitBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"bankertoolbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "BankerToolBench",
+"query": "BankerToolBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "bbh": {
 "arxiv": null,
 "considered": [
@@ -415,6 +657,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "All listed papers concern physics, not the BIG-Bench Hard reasoning benchmark."
+},
+"beamprocurement": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Beam Procurement Benchmark",
+"query": "Beam Procurement Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "belebele": {
 "arxiv": "2308.16884",
@@ -518,6 +771,17 @@
 "title": null,
 "why": "Listed papers use, extend, or introduce related/different benchmarks; none introduces BIG-Bench."
 },
+"bigbenchaudio": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Big Bench Audio",
+"query": "Big Bench Audio",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "bigbenchextrahard": {
 "arxiv": "2502.19187",
 "considered": [
@@ -569,6 +833,43 @@
 "searched": "arXiv",
 "title": "Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
 "why": "Introduces BIG-Bench Hard (BBH) as a suite of 23 challenging BIG-Bench tasks."
+},
+"bigcodebenchfull": {
+"arxiv": null,
+"considered": [
+"GraphAlignCoder: Aligning Program and Proof Graphs for Code Generation"
+],
+"date": "2026-11-15",
+"name": "BigCodeBench-Full",
+"query": "BigCodeBench-Full",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper does not introduce or present BigCodeBench-Full; it is about code generation alignment."
+},
+"biobasicsbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "BioBasicsBench",
+"query": "BioBasicsBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"biolpbench": {
+"arxiv": null,
+"considered": [
+"Monte Carlo Expected Threat (MOCET) Scoring"
+],
+"date": "2026-11-15",
+"name": "BioLP-Bench",
+"query": "BioLP-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "It only mentions BioLP-bench as an existing metric; it introduces MOCET, not BioLP-Bench."
 },
 "birdsqldev": {
 "arxiv": null,
@@ -646,6 +947,23 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"browsecompvl": {
+"arxiv": "2508.05748",
+"considered": [
+"Struct-Searcher: Agentic Structural Thinking Advances Multimodal Deep Information Seeking",
+"WebWatcher: Breaking New Frontier of Vision-Language Deep Research Agent",
+"EviRover: Reinforcing Agentic Perception Beyond a Glance",
+"Information-Gain Calibrated On-Policy Distillation for Deep Search Agents"
+],
+"date": "2026-11-15",
+"name": "BrowseComp-VL",
+"published": "2025-08-07",
+"query": "BrowseComp-VL",
+"repo": null,
+"searched": "arXiv",
+"title": "WebWatcher: Breaking New Frontier of Vision-Language Deep Research Agent",
+"why": "Introduces WebWatcher and the BrowseComp-VL multimodal deep-research benchmark."
+},
 "browsecompzh": {
 "arxiv": "2504.19314",
 "considered": [
@@ -659,6 +977,50 @@
 "searched": "arXiv",
 "title": "BrowseComp-ZH: Benchmarking Web Browsing Ability of Large Language Models in Chinese",
 "why": "Introduces BrowseComp-ZH, a Chinese web-browsing benchmark matching the entry's description."
+},
+"cbnsl": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "CBNSL",
+"query": "CBNSL",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"ccbench2backend": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "CC-Bench-V2 Backend",
+"query": "CC-Bench-V2 Backend",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"ccbench2frontend": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "CC-Bench-V2 Frontend",
+"query": "CC-Bench-V2 Frontend",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"ccbench2repoexploration": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "CC-Bench-V2 Repo Exploration",
+"query": "CC-Bench-V2 Repo Exploration",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "ccocr": {
 "arxiv": "2412.02210",
@@ -700,6 +1062,20 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"chartmuseum": {
+"arxiv": "2505.13444",
+"considered": [
+"ChartMuseum: Testing Visual Reasoning Capabilities of Large Vision-Language Models"
+],
+"date": "2026-11-15",
+"name": "ChartMuseum",
+"published": "2025-05-19",
+"query": "ChartMuseum",
+"repo": null,
+"searched": "arXiv",
+"title": "ChartMuseum: Testing Visual Reasoning Capabilities of Large Vision-Language Models",
+"why": "Introduces ChartMuseum, a new Chart QA benchmark for visual reasoning in LVLMs"
 },
 "chartqa": {
 "arxiv": "2203.10244",
@@ -750,6 +1126,28 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"chexpertcxr": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "CheXpert CXR",
+"query": "CheXpert CXR",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"cimqa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "CIM-QA",
+"query": "CIM-QA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "claweval": {
 "arxiv": "2604.06132",
 "considered": [
@@ -764,6 +1162,19 @@
 "searched": "arXiv",
 "title": "Claw-Eval: Towards Trustworthy Evaluation of Autonomous Agents",
 "why": "Introduces Claw-Eval with 300 tasks and trajectory-aware auditing, matching the catalogue entry."
+},
+"cloningscenarios": {
+"arxiv": null,
+"considered": [
+"LLMs Outperform Experts on Challenging Biology Benchmarks"
+],
+"date": "2026-11-15",
+"name": "CloningScenarios",
+"query": "CloningScenarios",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper evaluates existing biology benchmarks; it does not introduce CloningScenarios."
 },
 "cluewsc": {
 "arxiv": null,
@@ -789,6 +1200,21 @@
 "searched": "arXiv",
 "title": "CMMLU: Measuring massive multitask language understanding in Chinese",
 "why": "Introduces CMMLU, Chinese multitask benchmark covering many subjects."
+},
+"cmtbenchmark": {
+"arxiv": "2510.05228",
+"considered": [
+"CULTURE-CMT: Benchmarking Contextualized Social Media Translation",
+"CMT-Benchmark: A Benchmark for Condensed Matter Theory Built by Expert Researchers"
+],
+"date": "2026-11-15",
+"name": "CMT-Benchmark",
+"published": "2025-10-06",
+"query": "CMT-Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": "CMT-Benchmark: A Benchmark for Condensed Matter Theory Built by Expert Researchers",
+"why": "Introduces CMT-Benchmark, expert-level condensed matter theory problems, matching entry description."
 },
 "cnmo2024": {
 "arxiv": null,
@@ -816,6 +1242,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "None introduces a benchmark named CodeForces; Codeforces is a platform, not these papers' dataset."
+},
+"codegraphrepair": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Code Graph Repair",
+"query": "Code Graph Repair",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "collie": {
 "arxiv": "2307.08689",
@@ -879,6 +1316,20 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"corpusqa": {
+"arxiv": "2601.14952",
+"considered": [
+"CorpusQA: A 10 Million Token Benchmark for Corpus-Level Analysis and Reasoning"
+],
+"date": "2026-11-15",
+"name": "CorpusQA",
+"published": "2026-01-21",
+"query": "CorpusQA",
+"repo": null,
+"searched": "arXiv",
+"title": "CorpusQA: A 10 Million Token Benchmark for Corpus-Level Analysis and Reasoning",
+"why": "Introduces CorpusQA, a 10-million-token corpus-level analysis and reasoning benchmark."
+},
 "corpusqa1m": {
 "arxiv": null,
 "considered": [],
@@ -906,6 +1357,31 @@
 "title": "Teaching CLIP to Count to Ten",
 "why": "Introduces CountBench, a counting benchmark for vision-language models."
 },
+"counterpartycheck": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Counterparty Check Benchmark",
+"query": "Counterparty Check Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"countqa": {
+"arxiv": "2508.06585",
+"considered": [
+"CountQA: How Well Do MLLMs Count in the Wild?"
+],
+"date": "2026-11-15",
+"name": "CountQA",
+"published": "2025-08-08",
+"query": "CountQA",
+"repo": null,
+"searched": "arXiv",
+"title": "CountQA: How Well Do MLLMs Count in the Wild?",
+"why": "Paper introduces CountQA benchmark for object counting in real-world images."
+},
 "covost2": {
 "arxiv": null,
 "considered": [
@@ -921,6 +1397,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "None of these papers introduces the CoVoST2 benchmark."
+},
+"covost2enzh": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "CoVoST2 en-zh",
+"query": "CoVoST2 en-zh",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "crag": {
 "arxiv": "2406.04744",
@@ -974,6 +1461,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"cryptomisuserepair": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Crypto-Misuse Repair Benchmark",
+"query": "Crypto-Misuse Repair Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "csimpleqa": {
 "arxiv": null,
 "considered": [],
@@ -984,6 +1482,19 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"cyberseceval4": {
+"arxiv": null,
+"considered": [
+"CyberSOCEval: Benchmarking LLMs Capabilities for Malware Analysis and Threat Intelligence Reasoning"
+],
+"date": "2026-11-15",
+"name": "CyberSecEval 4",
+"query": "CyberSecEval 4",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Only result is CyberSOCEval, a different benchmark; no paper introduces CyberSecEval 4."
 },
 "cybersecurityctfs": {
 "arxiv": null,
@@ -997,6 +1508,35 @@
 "searched": "arXiv",
 "title": null,
 "why": "Paper proposes context segmentation method; uses existing CTF tasks, introduces no named benchmark."
+},
+"dailyomni": {
+"arxiv": null,
+"considered": [
+"AVRT: Audio-Visual Reasoning Transfer through Single-Modality Teachers",
+"OmniFocus: Query-Guided Modality-Balanced Token Compression for Omni-Modal Large Language Models",
+"TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions",
+"video-SALMONN 2: Caption-Enhanced Audio-Visual Large Language Models",
+"TAC: Timestamped Audio Captioning"
+],
+"date": "2026-11-15",
+"error": "endpoint answered 400: {\"error\":{\"message\":\"Your account (2131343381) does not have a valid AgentPlan subscription, or your subscription has expired. Please vis",
+"name": "DailyOmni",
+"query": "DailyOmni",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": ""
+},
+"deepresearchadversarial": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Deep Research Adversarial Benchmark",
+"query": "Deep Research Adversarial Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "deepsearchqa": {
 "arxiv": "2601.20975",
@@ -1053,6 +1593,20 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"draco": {
+"arxiv": null,
+"considered": [
+"Decaying dark matter in Draco",
+"Geometry of the Draco C1 Symbiotic Binary"
+],
+"date": "2026-11-15",
+"name": "draco",
+"query": "draco",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Both papers concern astronomy (Draco galaxy/system), not a deep research agent benchmark."
+},
 "drop": {
 "arxiv": null,
 "considered": [
@@ -1070,6 +1624,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "None introduces the DROP reading comprehension benchmark; all papers concern physics jet or drop phenomena."
+},
+"dsarenacode": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "DS-Arena-Code",
+"query": "DS-Arena-Code",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "dude": {
 "arxiv": "2305.08455",
@@ -1118,6 +1683,17 @@
 "title": "ECLeKTic: a Novel Challenge Set for Evaluation of Cross-Lingual Knowledge Transfer",
 "why": "Introduces ECLeKTic, a multilingual closed-book QA dataset for cross-lingual knowledge transfer."
 },
+"ecotoxfred": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "EcoToxFred",
+"query": "EcoToxFred",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "egoschema": {
 "arxiv": "2308.09126",
 "considered": [
@@ -1162,6 +1738,17 @@
 "title": null,
 "why": "No listed paper introduces an EMMA benchmark for multimodal math, physics, chemistry, or coding."
 },
+"emobenchm": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "EmoBench-M",
+"query": "EmoBench-M",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "eqbench": {
 "arxiv": "2312.06281",
 "considered": [
@@ -1177,6 +1764,17 @@
 "title": "EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models",
 "why": "Introduces EQ-Bench, an emotional intelligence benchmark for LLMs, matching the catalogue name."
 },
+"erp28strategicsourcingrlenvironment": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ERP28 Strategic Sourcing RL Environment",
+"query": "ERP28 Strategic Sourcing RL Environment",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "erqa": {
 "arxiv": null,
 "considered": [
@@ -1190,6 +1788,20 @@
 "searched": "arXiv",
 "title": null,
 "why": "ERQA-Plus is a different/extended benchmark; the other ERQA is unrelated video quality assessment."
+},
+"evalitallm": {
+"arxiv": "2502.02289",
+"considered": [
+"Evalita-LLM: Benchmarking Large Language Models on Italian"
+],
+"date": "2026-11-15",
+"name": "Evalita-LLM",
+"published": "2025-02-04",
+"query": "Evalita-LLM",
+"repo": null,
+"searched": "arXiv",
+"title": "Evalita-LLM: Benchmarking Large Language Models on Italian",
+"why": "Introduces Evalita-LLM, an Italian LLM benchmark with multiple-choice and generative tasks under multiple prompts."
 },
 "evalplus": {
 "arxiv": "2305.01210",
@@ -1243,6 +1855,17 @@
 "title": "The FACTS Grounding Leaderboard: Benchmarking LLMs' Ability to Ground Responses to Long-Form Input",
 "why": "Introduces FACTS Grounding leaderboard and benchmark for long-document grounded responses."
 },
+"fcgbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "FCG-Bench",
+"query": "FCG-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "figqa": {
 "arxiv": null,
 "considered": [],
@@ -1293,6 +1916,17 @@
 "searched": "arXiv",
 "title": "FinQA: A Dataset of Numerical Reasoning over Financial Data",
 "why": "Introduces FinQA dataset for numerical reasoning over financial reports"
+},
+"flamevlmcode": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Flame-VLM-Code",
+"query": "Flame-VLM-Code",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "flenqa": {
 "arxiv": null,
@@ -1355,6 +1989,39 @@
 "title": null,
 "why": "All listed papers concern mathematical frames, not the FRAMES retrieval benchmark."
 },
+"frenchmmlu": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "French MMLU",
+"query": "French MMLU",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"freshswepy": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "FreshSWE-Py",
+"query": "FreshSWE-Py",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"frontierbench01": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Frontier-Bench v0.1",
+"query": "Frontier-Bench v0.1",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "frontiercode": {
 "arxiv": null,
 "considered": [],
@@ -1376,6 +2043,22 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"frontierscience": {
+"arxiv": null,
+"considered": [
+"Frontier science in a quantum experiment: AEgIS at CERN",
+"SEEK: Skill Extraction with Evolving Knowledge against Frontier Science Agents",
+"Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks",
+"Enabling Intensity and Energy Frontier Science with a Muon Accelerator Facility in the U.S.: A White Paper Submitted to "
+],
+"date": "2026-11-15",
+"name": "Frontier Science",
+"query": "Frontier Science",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces a benchmark named Frontier Science; candidates use or mention frontier science evaluations."
 },
 "frontierscienceolympiad": {
 "arxiv": null,
@@ -1400,6 +2083,20 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"ftcircuitbench": {
+"arxiv": "2601.03185",
+"considered": [
+"FTCircuitBench: A Benchmark Suite for Fault-Tolerant Quantum Compilation and Architecture"
+],
+"date": "2026-11-15",
+"name": "FTCircuitBench",
+"published": "2026-01-06",
+"query": "FTCircuitBench",
+"repo": null,
+"searched": "arXiv",
+"title": "FTCircuitBench: A Benchmark Suite for Fault-Tolerant Quantum Compilation and Architecture",
+"why": "Paper introduces FTCircuitBench, a benchmark suite for fault-tolerant quantum compilation."
 },
 "functionalmath": {
 "arxiv": null,
@@ -1462,6 +2159,28 @@
 "searched": "arXiv",
 "title": null,
 "why": "The paper evaluates AI scientists but does not introduce a GeneBench-Pro benchmark."
+},
+"giantstepstempo": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "GiantSteps Tempo",
+"query": "GiantSteps Tempo",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"gkb1000": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "GKB-1000",
+"query": "GKB-1000",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "globalmmlu": {
 "arxiv": "2412.03304",
@@ -1628,6 +2347,17 @@
 "title": null,
 "why": "All listed papers use, extend, or transform GSM8K; none introduces the original benchmark."
 },
+"gsm8kchat": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "GSM8K Chat",
+"query": "GSM8K Chat",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "gsm8kcot": {
 "arxiv": null,
 "considered": [
@@ -1717,6 +2447,28 @@
 "title": "HealthBench Professional: Evaluating Large Language Models on Real Clinician Chats",
 "why": "It introduces HealthBench Professional as an open benchmark."
 },
+"healthcareactionauthorization": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Healthcare Action Authorization Benchmark",
+"query": "Healthcare Action Authorization Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"healthjevlongitudinal": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "HealthJev Longitudinal Benchmark",
+"query": "HealthJev Longitudinal Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "hellaswag": {
 "arxiv": "1905.07830",
 "considered": [
@@ -1742,6 +2494,20 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"hipho": {
+"arxiv": "2509.07894",
+"considered": [
+"HiPhO: How Far Are (M)LLMs from Humans in the Latest High School Physics Olympiad Benchmark?"
+],
+"date": "2026-11-15",
+"name": "HiPhO",
+"published": "2025-09-09",
+"query": "HiPhO",
+"repo": "SciYu/HiPhO",
+"searched": "arXiv",
+"title": "HiPhO: How Far Are (M)LLMs from Humans in the Latest High School Physics Olympiad Benchmark?",
+"why": "Introduces HiPhO benchmark for high school physics olympiad problems."
 },
 "hmmt2025": {
 "arxiv": null,
@@ -1819,6 +2585,24 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"humanevalplus": {
+"arxiv": null,
+"considered": [
+"Uncovering Weaknesses in Neural Code Generation",
+"Demystifying Errors in LLM Reasoning Traces: An Empirical Study of Code Execution Simulation",
+"Multi-Programming Language Ensemble for Code Generation in Large Language Model",
+"AMR-Evol: Adaptive Modular Response Evolution Elicits Better Knowledge Distillation for Large Language Models in Code Ge",
+"Dynamic Scaling of Unit Tests for Code Reward Modeling",
+"ReflexiCoder: Teaching Large Language Models to Self-Reflect on Generated Code and Self-Correct It via Reinforcement Lea"
+],
+"date": "2026-11-15",
+"name": "HumanEval Plus",
+"query": "HumanEval Plus",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the listed papers introduces the HumanEval Plus benchmark; they only use or reference HumanEval-related datasets."
+},
 "hypersim": {
 "arxiv": "2011.02523",
 "considered": [
@@ -1833,6 +2617,125 @@
 "searched": "arXiv",
 "title": "Hypersim: A Photorealistic Synthetic Dataset for Holistic Indoor Scene Understanding",
 "why": "Introduces Hypersim, a photorealistic synthetic indoor scene dataset for scene understanding."
+},
+"id:r-171fd3225b": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "APIB",
+"query": "APIB",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"id:r-3526786399": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "CARB",
+"query": "CARB",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"id:r-43742d5c25": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ACPB",
+"query": "ACPB",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"id:r-50f7d1c1de": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "FAAB",
+"query": "FAAB",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"id:r-6661c6d687": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ARAM",
+"query": "ARAM",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"id:r-936b15e1aa": {
+"arxiv": null,
+"considered": [
+"Probing the Electronic Structure of Graphene Near and Far from the Fermi Level via Planar Tunneling Spectroscopy"
+],
+"date": "2026-11-15",
+"name": "SPDO",
+"query": "SPDO",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper is about graphene density of states, not a driving-video benchmark named SPDO."
+},
+"id:r-ceca6a0415": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ADGB",
+"query": "ADGB",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"id:r-d42b91ef93": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "BWOR",
+"query": "BWOR",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"id:r-daaf7eaf43": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "AMIB",
+"query": "AMIB",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"id:r-f416ec9f29": {
+"arxiv": null,
+"considered": [
+"Ordnung muss sein",
+"On the number of MUSs crossing a position",
+"Backplay: \"Man muss immer umkehren\"",
+"MUSS: Multilevel Subset Selection for Relevance and Diversity",
+"MUSS: Multilingual Unsupervised Sentence Simplification by Mining Paraphrases",
+"MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation"
+],
+"date": "2026-11-15",
+"name": "MuSS",
+"query": "MuSS",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the papers introduce a video-generation benchmark named MuSS."
 },
 "if": {
 "arxiv": null,
@@ -1877,6 +2780,21 @@
 "title": null,
 "why": "All papers introduce variants like M-IFEval or IFEval-Audio, not the original IFEval benchmark."
 },
+"imagemining": {
+"arxiv": null,
+"considered": [
+"ICDAR 2026 Competition on Information Extraction from Atomic Layer Deposition/Etching (ALD/E) Scientific Figures",
+"A Pathway to General-Purpose Scientific AI: Multimodal Comprehension of Scientific Images",
+"TeleOCR: Navigating Document Parsing Across Digital and Camera-Captured Documents"
+],
+"date": "2026-11-15",
+"name": "ImageMining",
+"query": "ImageMining",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Papers introduce Sci-ImageMiner and ALD/E-ImageMiner, not a benchmark named ImageMining."
+},
 "imoanswerbench": {
 "arxiv": "2511.01846",
 "considered": [
@@ -1892,6 +2810,17 @@
 "searched": "arXiv",
 "title": "Towards Robust Mathematical Reasoning",
 "why": "Introduces IMO-Bench suite, including IMO-AnswerBench, as a benchmark for Olympiad short answers."
+},
+"imoproofadv": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "IMOProof-Adv",
+"query": "IMOProof-Adv",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "include": {
 "arxiv": "2411.19799",
@@ -1910,6 +2839,39 @@
 "searched": "arXiv",
 "title": "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
 "why": "Introduces INCLUDE, a multilingual regional-knowledge evaluation suite benchmark."
+},
+"infinitebenchenmc": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "InfiniteBench/En.MC",
+"query": "InfiniteBench En.MC",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"infinitebenchenqa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "InfiniteBench/En.QA",
+"query": "InfiniteBench En.QA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"infographicsqa": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "InfographicsQA",
+"query": "InfographicsQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "infovqa": {
 "arxiv": null,
@@ -1940,12 +2902,56 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"instructhumaneval": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Instruct HumanEval",
+"query": "Instruct HumanEval",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "itbenchaa": {
 "arxiv": null,
 "considered": [],
 "date": "2026-11-13",
 "name": "ITBench-AA",
 "query": "ITBench-AA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"journeyman": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Journeyman",
+"query": "Journeyman",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"kernelbenchhard": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "KernelBench Hard",
+"query": "KernelBench Hard",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"kernelbenchl3": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Kernel Bench L3",
+"query": "Kernel Bench L3",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -2014,6 +3020,22 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"livecodebench0109": {
+"arxiv": "2403.07974",
+"considered": [
+"Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages",
+"LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+"LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive Programming?"
+],
+"date": "2026-11-15",
+"name": "LiveCodeBench(01-09)",
+"published": "2024-03-12",
+"query": "LiveCodeBench",
+"repo": null,
+"searched": "arXiv",
+"title": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+"why": "Introduces LiveCodeBench with contest problems, code generation, repair, and prediction; 01-09 is its date split."
+},
 "livecodebench5": {
 "arxiv": null,
 "considered": [
@@ -2031,6 +3053,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "None of the listed papers introduces LiveCodeBench v5; they only concern reasoning or code training."
+},
+"livecodebench52412252": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "LiveCodeBench v5 24.12-25.2",
+"query": "LiveCodeBench v5 24.12-25.2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "livecodebench6": {
 "arxiv": null,
@@ -2092,6 +3125,48 @@
 "title": "LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale",
 "why": "Introduces LiveSports-3K benchmark for live sports video commentary."
 },
+"livesqlbench": {
+"arxiv": null,
+"considered": [
+"Finding the Right Tables and Columns: A Benchmark and Corpus-Adaptive Embeddings for SQL Schema Retrieval",
+"Benchmarking Hybrid Deep Research Across Database Querying and Web Search",
+"DSABench: Benchmarking Source Discovery, Coordination, and Execution for Multi-Database Agents",
+"HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments",
+"Neurosymbolics for Data Engineering: Achieving Long Context Token Reduction Without Finetuning"
+],
+"date": "2026-11-15",
+"name": "LiveSQLBench",
+"query": "LiveSQLBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None introduces LiveSQLBench; papers only use or reference it as an existing benchmark."
+},
+"llmtradingagent": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "LLM Trading Agent Benchmark",
+"query": "LLM Trading Agent Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"locabench256k": {
+"arxiv": "2602.07962",
+"considered": [
+"LOCA-bench: Benchmarking Language Agents Under Controllable and Extreme Context Growth"
+],
+"date": "2026-11-15",
+"name": "LOCA-Bench (256k)",
+"published": "2026-02-08",
+"query": "LOCA-Bench",
+"repo": "hkust-nlp/LOCA-bench",
+"searched": "arXiv",
+"title": "LOCA-bench: Benchmarking Language Agents Under Controllable and Extreme Context Growth",
+"why": "Introduces LOCA-bench, the long-context agent benchmark; 256k is its context setting."
+},
 "longbench2": {
 "arxiv": "2412.15204",
 "considered": [
@@ -2120,6 +3195,45 @@
 "title": "LongCodeBench: Evaluating Coding LLMs at 1M Context Windows",
 "why": "Introduces LongCodeBench (LCB), testing code comprehension/repair with long contexts."
 },
+"longfact": {
+"arxiv": "2403.18802",
+"considered": [
+"Long-form factuality in large language models",
+"Dr Genre: Reinforcement Learning from Decoupled LLM Feedback for Generic Text Rewriting",
+"Integrative Decoding: Improve Factuality via Implicit Self-consistency",
+"ArbGraph: Conflict-Aware Evidence Arbitration for Reliable Long-Form Retrieval-Augmented Generation"
+],
+"date": "2026-11-15",
+"name": "LongFact",
+"published": "2024-03-27",
+"query": "LongFact",
+"repo": "google-deepmind/long-form-factuality",
+"searched": "arXiv",
+"title": "Long-form factuality in large language models",
+"why": "Introduces LongFact prompt set and SAFE for claim-level long-form factuality evaluation"
+},
+"longfactconcepts": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "LongFact Concepts",
+"query": "LongFact Concepts",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"longfactobjects": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "LongFact Objects",
+"query": "LongFact Objects",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "longvideobench": {
 "arxiv": "2407.15754",
 "considered": [
@@ -2133,6 +3247,24 @@
 "searched": "arXiv",
 "title": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
 "why": "Introduces LongVideoBench, a long-context video-language QA benchmark with hour-long videos and subtitles."
+},
+"lsat": {
+"arxiv": null,
+"considered": [
+"Conversion of LSAT behavioral specifications to automata",
+"AI Achieves a Perfect LSAT Score",
+"Epitaxial Growth and Electrical Properties of VO2 on LSAT (111) substrate",
+"AR-LSAT: Investigating Analytical Reasoning of Text",
+"From LSAT: The Progress and Challenges of Complex Reasoning",
+"Lost in the Logic: An Evaluation of Large Language Models' Reasoning Capabilities on LSAT Logic Games"
+],
+"date": "2026-11-15",
+"name": "LSAT",
+"query": "LSAT",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No paper introduces an AI benchmark named LSAT; AR-LSAT is a different benchmark."
 },
 "lvbench": {
 "arxiv": "2406.08035",
@@ -2148,6 +3280,17 @@
 "searched": "arXiv",
 "title": "LVBench: An Extreme Long Video Understanding Benchmark",
 "why": "Introduces LVBench, an extreme long video understanding benchmark with videos up to about two hours."
+},
+"mapdc41causalablation": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "MAPD-C-41 Causal Ablation Benchmark",
+"query": "MAPD-C-41 Causal Ablation Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "mask": {
 "arxiv": null,
@@ -2491,6 +3634,39 @@
 "searched": "arXiv",
 "title": null,
 "why": "Only MELD-ST uses the existing MELD dataset; none introduces the MELD benchmark."
+},
+"memoryselfevolution": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Memory × Self-Evolution",
+"query": "Memory   Self-Evolution",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"memorytrace": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "MemoryTrace",
+"query": "MemoryTrace",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"metswe": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "MetSWE",
+"query": "MetSWE",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "mgsm": {
 "arxiv": null,
@@ -3580,6 +4756,17 @@
 "title": null,
 "why": "No listed paper introduces OVOBench; they propose streaming video models or methods."
 },
+"owaspasiagenticsecurity": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "OWASP ASI Agentic Security Benchmark",
+"query": "OWASP ASI Agentic Security Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "paperbench": {
 "arxiv": null,
 "considered": [],
@@ -3787,6 +4974,17 @@
 "title": "PresentBench: A Fine-Grained Rubric-Based Benchmark for Slide Generation",
 "why": "Introduces PresentBench, a rubric-based benchmark for slide generation from source materials."
 },
+"principalbench2": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "PrincipalBench v2",
+"query": "PrincipalBench v2",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "profbench": {
 "arxiv": null,
 "considered": [],
@@ -3798,12 +4996,71 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"projectevalplus": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ProjectEvalPlus",
+"query": "ProjectEvalPlus",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"prooforclaim": {
+"arxiv": null,
+"considered": [
+"MABPD: Multi-Agent Bias Probing & Detection via Structured Argument Debate",
+"Theoretical Analysis of Byte-Pair Encoding",
+"Accelerating Continuous Normalizing Flow with Trajectory Polynomial Regularization"
+],
+"date": "2026-11-15",
+"name": "Proof or Claim",
+"query": "Proof or Claim",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "None of the listed papers introduce or present a benchmark named Proof or Claim."
+},
 "protocolqa": {
 "arxiv": null,
 "considered": [],
 "date": "2026-11-14",
 "name": "ProtocolQA",
 "query": "ProtocolQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"provenanceflow": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "ProvenanceFlow",
+"query": "ProvenanceFlow",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"purposeshift": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "PurposeShift",
+"query": "PurposeShift",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"pwsdecisions": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "PWS-Decisions",
+"query": "PWS-Decisions",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -3928,6 +5185,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"realtimespeechlatency": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Realtime Speech Latency Benchmark",
+"query": "Realtime Speech Latency Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "realworldqa": {
 "arxiv": null,
 "considered": [
@@ -3974,6 +5242,17 @@
 "date": "2026-11-13",
 "name": "RefSpatialBench",
 "query": "RefSpatialBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"reinforcedconcreteframedesign": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Reinforced Concrete Frame Design",
+"query": "Reinforced Concrete Frame Design",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -4057,6 +5336,28 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"rssynagent": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "RS-SynAgent",
+"query": "RS-SynAgent",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"rtabench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "rta-bench",
+"query": "rta-bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "ruler": {
 "arxiv": null,
 "considered": [
@@ -4081,6 +5382,28 @@
 "date": "2026-11-14",
 "name": "SAT Math",
 "query": "SAT Math",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"schemadrift": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Schema Drift Benchmark",
+"query": "Schema Drift Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"scholarlytexttosparql": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Scholarly Text-to-SPARQL Benchmark",
+"query": "Scholarly Text-to-SPARQL Benchmark",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -4146,6 +5469,17 @@
 "title": "SIB-200: A Simple, Inclusive, and Big Evaluation Dataset for Topic Classification in 200+ Languages and Dialects",
 "why": "Introduces SIB-200 topic classification benchmark in 200+ languages"
 },
+"silentbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "silentbench",
+"query": "silentbench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "simpleqaverified": {
 "arxiv": "2509.07968",
 "considered": [
@@ -4174,12 +5508,34 @@
 "title": "SimpleVQA: Multimodal Factuality Evaluation for Multimodal Large Language Models",
 "why": "Introduces SimpleVQA benchmark for multimodal factuality short-question answering."
 },
+"skillwarebench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Skillware-Bench",
+"query": "Skillware-Bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "slakevqa": {
 "arxiv": null,
 "considered": [],
 "date": "2026-11-14",
 "name": "SlakeVQA",
 "query": "SlakeVQA",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"smartportcertified": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Smart-Port Certified Benchmark",
+"query": "Smart-Port Certified Benchmark",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -4201,6 +5557,17 @@
 "searched": "arXiv",
 "title": "SocialIQA: Commonsense Reasoning about Social Interactions",
 "why": "It introduces Social IQa, a 38k multiple-choice benchmark on social situations."
+},
+"sourdine": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Sourdine",
+"query": "Sourdine",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "spider": {
 "arxiv": null,
@@ -4317,6 +5684,17 @@
 "searched": "arXiv",
 "title": "SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines",
 "why": "Introduces SuperGPQA benchmark evaluating graduate-level knowledge across 285 disciplines."
+},
+"supportagentadversarial": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Support Agent Adversarial Benchmark",
+"query": "Support Agent Adversarial Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "sweatlastestwriting": {
 "arxiv": null,
@@ -4649,6 +6027,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"twine": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "TWINE",
+"query": "TWINE",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "tydiqa": {
 "arxiv": null,
 "considered": [
@@ -4666,6 +6055,20 @@
 "searched": "arXiv",
 "title": null,
 "why": "All listed papers only use or mention TyDiQA; none introduces the benchmark."
+},
+"uavvisloc": {
+"arxiv": "2405.11936",
+"considered": [
+"UAV-VisLoc: A Large-scale Dataset for UAV Visual Localization"
+],
+"date": "2026-11-15",
+"name": "UAV-VisLoc",
+"published": "2024-05-20",
+"query": "UAV-VisLoc",
+"repo": null,
+"searched": "arXiv",
+"title": "UAV-VisLoc: A Large-scale Dataset for UAV Visual Localization",
+"why": "Paper introduces UAV-VisLoc, the large-scale dataset for UAV visual localization."
 },
 "uniformbarexam": {
 "arxiv": null,
@@ -4874,6 +6277,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"visualinputtokencompression": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Visual Input Token Compression Benchmark",
+"query": "Visual Input Token Compression Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "visualwebbench": {
 "arxiv": "2404.05955",
 "considered": [
@@ -4933,6 +6347,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "PyVision is an agentic vision framework, not the VLMsAreBlind benchmark."
+},
+"voiceagentadversarial": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-15",
+"name": "Voice Agent Adversarial Benchmark",
+"query": "Voice Agent Adversarial Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "vqarad": {
 "arxiv": null,
