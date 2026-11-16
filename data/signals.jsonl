@@ -2134,3 +2134,17 @@
 {"key": "mapdc41causalablation", "date": "2026-11-15", "tried": ["hf"], "hf": {"dataset": "negoformer/MAPD-C-41-Causal-Ablation-Benchmark", "likes": 0, "downloads": 77, "gated": false, "private": false}}
 {"key": "id:r-936b15e1aa", "date": "2026-11-15", "tried": ["hf"], "hf": {"dataset": "spdo-benchmark/spdo-eval", "likes": 0, "downloads": 124, "gated": true, "private": false}}
 {"key": "agentshieldmultiturnagentattack", "date": "2026-11-15", "tried": ["hf"], "hf": {"dataset": "Anmol2507/agentshield-attack-benchmark", "likes": 0, "downloads": 0, "gated": false, "private": false}}
+{"key": "locabench256k", "date": "2026-11-16", "tried": ["github"], "github": {"repo": "hkust-nlp/LOCA-bench", "stars": 67, "forks": 12, "created": "2026-02-01", "pushed": "2026-04-29", "archived": false}}
+{"key": "longfact", "date": "2026-11-16", "tried": ["github"], "github": {"repo": "google-deepmind/long-form-factuality", "stars": 698, "forks": 89, "created": "2024-03-25", "pushed": "2026-06-18", "archived": false}}
+{"key": "hipho", "date": "2026-11-16", "tried": ["github"], "github": {"repo": "SciYu/HiPhO", "stars": 26, "forks": 1, "created": "2025-09-09", "pushed": "2025-12-19", "archived": false}}
+{"key": "vibeprevisbench", "date": "2026-11-16", "tried": ["github"], "github": {"repo": "vibeprevisbench/vibeprevisbench", "stars": 11, "forks": 0, "created": "2026-11-02", "pushed": "2026-11-16", "archived": false}}
+{"key": "sentinel3", "date": "2026-11-16", "tried": ["hf"], "hf": {"dataset": "Rishi-123/sentinel-v3-benchmark", "likes": 0, "downloads": 22, "gated": false, "private": false}}
+{"key": "squadstackconversationalllm", "date": "2026-11-16", "tried": ["hf"], "hf": {"dataset": "Squadstack/conversational-llm-benchmark", "likes": 0, "downloads": 28, "gated": true, "private": false}}
+{"key": "parallax", "date": "2026-11-16", "tried": ["github"], "github": {"repo": "agent-labs-dev/parallax", "stars": 0, "forks": 0, "created": "2026-11-13", "pushed": "2026-11-16", "archived": false}}
+{"key": "underwateriqa", "date": "2026-11-16", "tried": ["github", "hf"], "github": {"repo": "TrustUIQA/TrustUIQA", "stars": 0, "forks": 0, "created": "2026-10-17", "pushed": "2026-11-16", "archived": false}, "hf": {"dataset": "TrustUIQA/TrustUIQA", "likes": 0, "downloads": 3599, "gated": false, "private": false}}
+{"key": "100scenarioagent", "date": "2026-11-16", "tried": ["github"], "github": {"repo": "Davedave001/agent-evaluation-lab", "stars": 0, "forks": 0, "created": "2026-11-12", "pushed": "2026-11-16", "archived": false}}
+{"key": "lilavati", "date": "2026-11-16", "tried": ["github"], "github": {"repo": "revendrat/lilavati", "stars": 1, "forks": 0, "created": "2026-11-12", "pushed": "2026-11-16", "archived": false}}
+{"key": "chatbaseagent", "date": "2026-11-16", "tried": ["github"], "github": {"repo": "Chatbase-co/agent-benchmark", "stars": 0, "forks": 0, "created": "2026-11-16", "pushed": "2026-11-16", "archived": false}}
+{"key": "plantagentbenchcore3k", "date": "2026-11-16", "tried": ["hf"], "hf": {"dataset": "benchmarkanon/PlantAgentBench-Core3K", "likes": 0, "downloads": 18, "gated": false, "private": false}}
+{"key": "enterprisemcpaiagentfunctioncallingpolicybenchmark1", "date": "2026-11-16", "tried": ["hf"], "hf": {"dataset": "Offlin33er/mcp-agent-tool-policy-benchmark-v1-sample", "likes": 0, "downloads": 0, "gated": false, "private": false}}
+{"key": "id:r-0f9f62695d", "date": "2026-11-16", "tried": ["hf"], "hf": {"dataset": "HYUKI5/nvidia__cvdp-benchmark-dataset", "likes": 0, "downloads": 0, "gated": false, "private": false}}

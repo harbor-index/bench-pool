@@ -1,4 +1,7 @@
 {
+"100scenarioagent": {
+"from": null
+},
 "2dfetbench": {
 "from": null
 },
@@ -199,6 +202,9 @@
 "agenticmisalignment": {
 "from": "https://www.anthropic.com/research/agentic-misalignment",
 "repo": "anthropic-experimental/agentic-misalignment"
+},
+"agenticpay": {
+"from": null
 },
 "agenticragfp": {
 "from": null
@@ -552,6 +558,9 @@
 "from": null
 },
 "arxivmath": {
+"from": null
+},
+"ascendgym": {
 "from": null
 },
 "ask2decide": {
@@ -1055,6 +1064,9 @@
 "charxivr": {
 "from": null
 },
+"chatbaseagent": {
+"from": null
+},
 "checkoutconsent": {
 "from": null
 },
@@ -1402,6 +1414,9 @@
 "from": null
 },
 "ctebench": {
+"from": null
+},
+"ctfdojo": {
 "from": null
 },
 "cuabench": {
@@ -1819,6 +1834,9 @@
 "enterprisebench": {
 "from": "https://hub.harborframework.com/datasets/Enterprise-Bench/l1-l2-bench",
 "repo": "devrev/enterprise-bench"
+},
+"enterprisemcpaiagentfunctioncallingpolicybenchmark1": {
+"from": null
 },
 "enterpriseoperationsexception": {
 "from": null
@@ -2254,6 +2272,9 @@
 "gdpvalmm": {
 "from": null
 },
+"gemsger": {
+"from": null
+},
 "genebench": {
 "from": null
 },
@@ -2679,7 +2700,13 @@
 "id:arxiv-2611-02132": {
 "from": null
 },
+"id:arxiv-2611-18338": {
+"from": null
+},
 "id:r-0d426f76fc": {
+"from": null
+},
+"id:r-0f9f62695d": {
 "from": null
 },
 "id:r-1432003e78": {
@@ -3093,6 +3120,9 @@
 "from": null
 },
 "lifeval": {
+"from": null
+},
+"lilavati": {
 "from": null
 },
 "lingoqa": {
@@ -4177,6 +4207,9 @@
 "paraguibench": {
 "from": null
 },
+"parallax": {
+"from": null
+},
 "parametriccadbench3": {
 "from": null
 },
@@ -4311,6 +4344,9 @@
 "planbench": {
 "from": null
 },
+"plantagentbenchcore3k": {
+"from": null
+},
 "planviz": {
 "from": null
 },
@@ -4417,6 +4453,9 @@
 "repo": "PrincipiaBench/Principia"
 },
 "privacypeek": {
+"from": null
+},
+"privacypr": {
 "from": null
 },
 "proactbench": {
@@ -4995,6 +5034,9 @@
 "semverbench": {
 "from": null
 },
+"sentinel3": {
+"from": null
+},
 "sentinelflow": {
 "from": null
 },
@@ -5182,6 +5224,9 @@
 "repo": "RUCKBReasoning/SpreadsheetBench"
 },
 "squad2": {
+"from": null
+},
+"squadstackconversationalllm": {
 "from": null
 },
 "squality": {
@@ -6004,6 +6049,9 @@
 "webagentattack": {
 "from": null
 },
+"webarenapro": {
+"from": null
+},
 "webarenaverified": {
 "from": null
 },
@@ -6041,6 +6089,9 @@
 "from": null
 },
 "weclawarena": {
+"from": null
+},
+"weightbench": {
 "from": null
 },
 "wemath": {
