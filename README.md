@@ -10,7 +10,8 @@ It is updated automatically once a day.
 ## What it does
 
 Every day it reads the new records from
-[Benchmark Radar](https://benchmark-radar.org/), keeps the ones that are
+[Benchmark Radar](https://benchmark-radar.org/) and from its own searches of
+arXiv, Hugging Face, GitHub, lab blogs and Harbor Hub, keeps the ones that are
 benchmarks, reads each benchmark's paper and repository, and sorts it into one
 of three tiers:
 
@@ -25,16 +26,25 @@ short list of things to settle before bringing the benchmark into Harbor.
 Benchmarks that Harbor Index v1 already uses, or that already have a Harbor
 adapter, are marked as covered and kept for reference.
 
-Verdicts are made by a language model and have not been checked by a person.
-
 ## What is on the site
 
 | Page | Shows |
 |---|---|
-| Board | Every benchmark, with its tier, type, best known score, stars and citations |
-| New | What arrived this week and in the weeks before |
-| Filter | How many records each step kept, and what was turned away and why |
-| A benchmark's page | The verdict, the evidence for it, and links |
+| Overview | This week's new benchmarks, tier changes, what is ready to adapt, and the field at a glance |
+| Board | Every benchmark with filters, a list, and its verdict, evidence and adapter readiness side by side |
+| Ranking | Popular and recommended benchmarks ordered by real headroom: how far the best score is from what is reachable, and whether that gap is the models' or the benchmark's |
+| New | What was first seen (or published) this week and in the weeks before |
+| Screening | How many records each step kept, what was turned away and why |
+| About | Where each field comes from |
+
+Panels can be dragged, resized and hidden. Benchmarks can be starred, noted,
+compared side by side and exported as CSV or JSON; a filtered view has a link
+of its own.
+
+For scripts: `data/benchmarks.json` has everything; `data/v1/latest.json`,
+`data/v1/changes/` and `data/v1/benchmarks/<id>.json` give the build id, what
+changed since the last build, and an adapter brief per recommended benchmark.
+Ids such as `bp-000123` are permanent. See [docs/pipeline.md](docs/pipeline.md).
 
 ## Daily reports
 

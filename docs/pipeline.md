@@ -50,6 +50,9 @@ Python 3.10+, standard library only. Run from the repository root:
 
 ```sh
 python3 scripts/fetch.py          # new Radar snapshots + leaderboard crawls  -> data/raw/
+python3 scripts/sources.py        # our own searches: arXiv, HF, GitHub, blogs -> data/raw/sources/, data/sources/
+python3 scripts/harbor_status.py  # Harbor registry + Harbor Hub datasets      -> data/harbor_status.json
+python3 scripts/epoch.py          # Epoch AI dated scores and ceilings          -> data/epoch.json
 python3 scripts/leaderboards.py   # top score per benchmark                    -> data/leaderboards.json
 python3 scripts/adapter_list.py   # the team's Adapter List (.xlsx export)     -> data/adapter_list.json
 python3 scripts/candidates.py     # rules, leaderboards, Adapter List, merge   -> data/candidates.json
@@ -58,6 +61,9 @@ python3 scripts/find_leaderboards.py  # each benchmark's own leaderboard      ->
 python3 scripts/signals.py        # stars, citations, likes, with history      -> data/signals.jsonl
 python3 scripts/build.py          # join everything                            -> web/data/benchmarks.json
 python3 scripts/tier.py           # recommend / hold / too new / no            -> data/tiers.jsonl
+python3 scripts/readiness.py      # adapter readiness, from the release itself -> data/readiness.jsonl
+python3 scripts/tier.py --rescore # re-apply score bars (no model call)        -> data/tiers.jsonl
+python3 scripts/headroom.py       # ranking: is the gap to 100% real?          -> data/headroom.jsonl
 python3 scripts/build.py          # again, to put the tiers on the site
 python3 scripts/report.py         # the day's report                           -> reports/<date>.md
 python3 -m unittest discover -s tests
@@ -69,6 +75,82 @@ the Google Sheet "Adapter List" (File > Download > .xlsx). The export and
 writes `data/established_benchmarks.json` (names, links, descriptions and
 adapter status only), which is committed and is what a run without the sheet
 uses, so this step is only needed when the sheet changes.
+
+`sources.py` writes records in Radar's shape, so the rest of the pipeline
+treats them like Radar records. arXiv and Hugging Face Daily Papers can be
+fetched again for any date and live under `data/raw/sources/` (cached, every
+missing day since 2026-10-18 is fetched again); GitHub, blog and Hugging Face
+dataset searches only answer for a current window, so only their new items are
+written, under `data/sources/`, which is committed. OpenReview is not searched:
+its API answers anonymous clients with a verification challenge. Over its first
+30 days `sources.py` found 113 benchmarks that Radar did not have (arXiv 90,
+GitHub 11, HF Daily Papers 11, HF Datasets 1, blogs 0), next to Radar's 517.
+
+## Ranking
+
+The Ranking page orders benchmarks by real headroom: popular ones (tracked by
+Epoch AI, Artificial Analysis or Benchmark Saturation, reported by at least 10
+models on LLM Stats, or used in Harbor Index v1) and every recommended new
+candidate.
+
+- **Best score** is one record shared by the Board, the tiers and the Ranking
+  (`build.best_comparable`): the highest percentage on the benchmark's own
+  leaderboard or any aggregator. A table listing a single system is one report,
+  not a leaderboard, and a paper's own figure counts only while the benchmark
+  is under a year old. When it changes, `tier.py --rescore` re-applies the
+  difficulty and saturation bars without a model call.
+- **Ceiling** is 100% unless Epoch AI estimates less, or the evidence states a
+  share of tasks that cannot earn credit (wrong answers, unsolvable tasks). A
+  human baseline is shown for reference and is never a ceiling; neither are
+  "uncertain" items, weak tests or grader disagreement. An estimate that some
+  system has already beaten is dropped, with a note.
+- **Real or not**: `headroom.py` asks a model, from the benchmark's facts, its
+  scores, Epoch's record history and up to eight arXiv papers named after it or
+  auditing it, whether the gap is models failing valid tasks (real), largely
+  the benchmark's fault (suspect), or not shown either way (not verified).
+  "Nothing reported against it" is not evidence. Quotes not found in that text
+  are dropped, and "real" needs evidence about the tasks themselves.
+- Groups: real, not verified, suspect, saturated (within 10 points of the
+  ceiling) and no score. Pace is how many points the record rose per month over
+  the last year, from Epoch's dated results.
+
+## Harbor status, families and adapter readiness
+
+`harbor_status.py` reads Harbor's `registry.json` and every dataset page on
+Harbor Hub. `build.py` marks each benchmark: in Harbor Index v1, has a merged
+adapter, on Harbor (registry or Hub, same name), or "family in Harbor" when
+another version or subset is (family = the name without versions, years and
+subset words such as Verified, Lite, Diamond). Hub datasets also enter the pool
+as candidates, so Harbor-native benchmarks no paper feed carries are screened
+too.
+
+`readiness.py` reads the release of every recommended benchmark not yet in
+Harbor (GitHub repository and file tree, Hugging Face dataset card, Zenodo
+record and the software it links to) and records: pinned release, code and data
+licences, task count, manifest and a pilot task, the verifier's entry point and
+what earns full credit, solvability evidence on a ladder (none, gold answers
+only, reference solution shipped, reference reported to pass, reference passes
+and no-op fails), runtime needs (services, GPU, live APIs, credentials, per-task
+exceptions) and the questions to settle first. Every line quotes the release; a
+file path is marked "inspected" when it exists in the repository tree. A
+release that shows gold answers only lowers Solid at the next rescore.
+
+## Data for scripts
+
+Next to the site (`web/data/`, published with it):
+
+| File | What |
+|---|---|
+| `benchmarks.json` | Everything the site shows. `meta.build_id` names the build; `meta.redirects` maps old ids to permanent ones. |
+| `v1/latest.json` | The current build id, time, previous build, counts and file paths. |
+| `v1/changes/<build>.json` | Events since the previous build: discovered, removed, merged, renamed, tier / band / score / Harbor / readiness changed. |
+| `v1/changes/index.json` | The last 90 builds. |
+| `v1/benchmarks/<pid>.json` | Adapter readiness record, recommendation, Harbor status and best score, for each recommended benchmark not yet in Harbor. |
+
+Permanent ids look like `bp-000123` (`data/ids.json`, committed): a benchmark
+keeps its id when its name or lead record changes, and when two benchmarks
+merge the older id stays and the other redirects. The daily report and the site
+print the same build id.
 
 `signals.py` reads `GITHUB_TOKEN`, `HF_TOKEN` and `S2_API_KEY` from the
 environment or from a `.env` file in the repository root (git-ignored). Without
@@ -174,7 +256,7 @@ bar, a leaderboard lists them, or the Adapter List adds them.
 | Title, date, authors, links, attention counts, fine tags | Radar, unchanged |
 | Aggregator leaderboard score (`agg`) | Radar's crawls of LLM Stats (2026-08-17), Artificial Analysis (2026-08-25), Benchmark Saturation (2026-11-04). Matched by benchmark name. No protocol is stated; many rows are vendor self-reported |
 | Own leaderboard score (`own`): top score, system, metric, address, date found | `find_leaderboards.py`. Model-read from the benchmark's own pages; kept only if the quoted row is on the page and contains the number and the system's name |
-| Gate, mode, class, sub-class, multimodal tag, realism line, value line | Model-read from title and abstract. Not checked by a person |
+| Gate, mode, class, sub-class, multimodal tag, realism line, value line | Model-read from title and abstract |
 | Stars, forks, citations, likes, downloads (`metrics`, `sig`) | `signals.py`: GitHub, Semantic Scholar and Hugging Face, fetched with a date and kept as history. Where nothing was fetched, Radar's count is shown and marked as not refreshed |
 | Adapter List row (`adapter`) and `diff` | The sheet's own Mode, Saturated, Include, Priority and Status, shown next to this pool's answers. Where mode or saturation bucket disagree, the benchmark is marked "≠ list". The sheet is never used as the answer |
 | `hi1` | Number of Harbor Index v1 tasks drawn from this benchmark (`data/harbor_index_v1.json`, read from task directory names) |
@@ -214,6 +296,6 @@ data/      labels.jsonl, leaderboard_search.jsonl, signals.jsonl, aliases.json,
            extra_links.json, harbor_index_v1.json (kept);
            raw/, adapter_list.json and rebuilt files are git-ignored
 tests/     rules for names, scores, gate output and Adapter List differences
-web/       index.html, style.css, app.js, data/benchmarks.json
+web/       index.html, style.css, js/ (core, panels, item, flow, views), vendor/gridstack (MIT), data/benchmarks.json
 NOTICE.md  credits and licences (Radar CC BY-NC-SA 4.0; design reference)
 ```

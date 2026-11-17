@@ -74,6 +74,20 @@ def release_dates() -> dict[str, str]:
     return dates
 
 
+def llm_stats_pct(score: float | None, scale: float | None) -> float | None:
+    """A percentage only on a 0-1 or 0-100 scale, and only if the score fits it.
+    LLM Stats sometimes stores a 0-1 score against a maximum of 100 (SimpleVQA's 0.8 is 80%), and
+    10-point ratings against 100 (MT-Bench's 9.0). A top score of at most 1 on a 100 scale is read as a
+    fraction; one between 1 and 10 is not trusted as a percentage."""
+    if score is None or scale not in (1.0, 100.0) or not 0 <= score <= scale:
+        return None
+    if scale == 100.0 and score <= 1:
+        return round(score * 100, 1)
+    if scale == 100.0 and score <= 10:
+        return None
+    return round(score * 100 / scale, 1)
+
+
 def top_rows(score_rows: list[dict]) -> dict[str, dict]:
     best: dict[str, dict] = {}
     count: dict[str, int] = {}
@@ -112,7 +126,7 @@ def main() -> None:
             score, scale = number(top["benchmark_score"]), number(top.get("benchmark_max_score"))
             entry.update({
                 # A percentage only on a 0-1 or 0-100 scale, and only if the score fits it.
-                "pct": round(score * 100 / scale, 1) if scale in (1.0, 100.0) and 0 <= score <= scale else None,
+                "pct": llm_stats_pct(score, scale),
                 "raw": score, "scale": scale if scale and score <= scale else None, "model": top["model_name"],
                 "org": top.get("organization_name") or None,
                 "self_reported": top.get("self_reported") == "True", "models": top["_models"],
@@ -166,6 +180,26 @@ def main() -> None:
                 "self_reported": None, "models": top["_models"],
             })
         entries.append(entry)
+
+    # Epoch AI Benchmarking Hub (CC BY 4.0), refreshed daily by scripts/epoch.py. Epoch runs many
+    # of these itself. "as_of" is the day the best score was set, since some files stop at older models.
+    epoch = ROOT / "data" / "epoch.json"
+    if epoch.exists():
+        for b in json.loads(epoch.read_text())["benchmarks"]:
+            entry = {
+                "key": norm_name(b["name"]), "name": b["name"], "source": "Epoch AI", "source_id": b["file"] or b["name"],
+                "url": (b.get("page") or {}).get("url") or "https://epoch.ai/benchmarks",
+                "as_of": (b["top"] or {}).get("date") or b["released"] or "",
+                "description": (b.get("page") or {}).get("description") or "",
+                "links": (b.get("page") or {}).get("links") or [],
+                "categories": [], "multimodal": False, "released": b["released"],
+                "candidate": True,     # Epoch only tracks benchmarks that are widely used
+            }
+            if b["top"]:
+                entry.update({"pct": round(b["top"]["score"] * 100, 1), "raw": b["top"]["score"], "scale": 1.0,
+                              "model": b["top"]["model"], "org": b["top"]["org"], "self_reported": False,
+                              "models": b["models"]})
+            entries.append(entry)
 
     OUT.write_text(json.dumps(entries, ensure_ascii=False, indent=1))
     scored = [e for e in entries if e.get("raw") is not None]

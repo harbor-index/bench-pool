@@ -26,6 +26,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SNAPSHOTS = ROOT / "data" / "raw" / "snapshots"
+SOURCES = [ROOT / "data" / "sources", ROOT / "data" / "raw" / "sources"]   # our own connectors (scripts/sources.py)
 LEADERBOARDS = ROOT / "data" / "leaderboards.json"
 ADAPTER_LIST = ROOT / "data" / "adapter_list.json"                 # full export, git-ignored
 ESTABLISHED = ROOT / "data" / "established_benchmarks.json"       # the committed part of it
@@ -57,6 +58,7 @@ SOURCE_RANK = {  # which record supplies the title and summary
     "arXiv": 0, "Hugging Face Papers": 1, "XBsleepy": 2, "Semantic Scholar": 3, "OpenAlex": 4,
     "DataCite": 5, "Crossref": 6, "First-party feed": 7, "GitHub": 8, "GitHub Organization": 8,
     "GitHub Release": 9, "Hugging Face": 9, "Kaggle Dataset": 10, "Zenodo": 10,
+    "arXiv API": 0, "HF Daily Papers": 1, "GitHub search": 8, "HF Datasets": 9,   # scripts/sources.py
 }
 
 
@@ -116,6 +118,8 @@ def main() -> None:
     files = sorted(SNAPSHOTS.glob("*.json"))
     if not files:
         raise SystemExit("no snapshots; run scripts/fetch.py first")
+    # Our own connectors write the same record shape, one file per connector and day.
+    files += sorted(f for d in SOURCES for f in d.glob("*/*.json"))
 
     seen = Counter()
     groups = Groups()
@@ -211,10 +215,38 @@ def main() -> None:
             "published": min((e["released"] for e in entries if e["released"]), default=None),
             "first_seen": None, "last_seen": None,
             "sources": sorted({e["source"] for e in entries}),
-            "links": [{"url": e["url"], "kind": "leaderboard"} for e in entries],
+            "links": [{"url": e["url"], "kind": "leaderboard"} for e in entries]
+                     + [{"url": u, "kind": link_kind(u)} for e in entries for u in e.get("links") or []],
             "authors": [], "author_count": 0, "organizations": [], "metrics": {},
             "radar_categories": [], "radar_tags": sorted({c for e in entries for c in e["categories"]}),
             "radar_score": 0, "updated": False, "origin": "leaderboard",
+        })
+
+    # Datasets published on Harbor Hub (scripts/harbor_status.py): Harbor-native benchmarks, which no
+    # paper feed may carry. Training sets are left out by name; the gate decides about the rest.
+    hub_path = ROOT / "data" / "harbor_status.json"
+    hub = json.loads(hub_path.read_text()) if hub_path.exists() else {}
+    not_eval = re.compile(r"(?:^|[-_/])(?:train|training|sft|rl|dpo|hello[-_]world|sample|demo|smoke|debug)(?:[-_/]|$|\d)", re.I)
+    # A Hub dataset that is another version or subset of something already here (Terminal-Bench 2.1
+    # subsets, adapters of known benchmarks) only shows as Harbor status on that benchmark.
+    from build import family_key
+    known = {family_key(c["title"]) for c in candidates}
+    known |= {family_key(b["name"]) for b in (json.loads(ESTABLISHED.read_text())["benchmarks"] if ESTABLISHED.exists() else [])}
+    for slug, info in (hub.get("hub_info") or {}).items():
+        if not_eval.search(slug) or not info.get("description"):
+            continue
+        name0 = slug.split("/", 1)[1].replace("-", " ").replace("_", " ")
+        if family_key(name0) in known or family_key(info["description"].split(":")[0][:60]) in known:
+            continue
+        name = slug.split("/", 1)[1].replace("-", " ").replace("_", " ")
+        candidates.append({
+            "id": "hub-" + norm_title(slug), "title": name, "summary": info["description"] +
+            (f" Published on Harbor Hub as {slug}" + (f", {info['tasks']} tasks" if info.get("tasks") else "") + "."),
+            "published": None, "first_seen": None, "last_seen": None, "sources": ["Harbor Hub"],
+            "links": [{"url": f"https://hub.harborframework.com/datasets/{slug}", "kind": "data"}]
+                     + [{"url": u, "kind": link_kind(u)} for u in info.get("links") or []],
+            "authors": [], "author_count": 0, "organizations": [slug.split("/")[0]], "metrics": {},
+            "radar_categories": [], "radar_tags": [], "radar_score": 0, "updated": False, "origin": "harbor_hub",
         })
 
     # Mature benchmarks from the team's Adapter List (scripts/adapter_list.py).

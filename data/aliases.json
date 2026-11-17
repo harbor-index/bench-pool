@@ -1,6 +1,22 @@
 {
  "_about": "Spellings of the same benchmark that the rules in scripts/pool.py cannot catch. Left: the variant. Right: the spelling to keep. Add a pair only after checking that both names point at the same benchmark; versions and variants (OSWorld vs OSWorld 2.0, GDPval vs GDPval-AA) do not belong here.",
  "same_benchmark": {
-  "MM-BrowserComp": "MM-BrowseComp"
+  "MM-BrowserComp": "MM-BrowseComp",
+  "HLE": "Humanity’s Last Exam",
+  "t2-bench": "Tau2-Bench",
+  "ARC AI2": "AI2 Reasoning Challenge (ARC)",
+  "GSO-Bench": "GSO",
+  "METR Time Horizons": "metr-time-horizon",
+  "APEX-Agents-AA": "APEX-Agents",
+  "Harvey LAB-AA": "Harveylab(Legal Agent Benchmark)",
+  "AA-Omniscience Accuracy": "AA-Omniscience",
+  "OCRBench-V2 (en)": "OCRBench_V2",
+  "MRCR v2 (8-needle)": "MRCR v2",
+  "MathVista-Mini": "MathVista",
+  "Aider-Polyglot Edit": "Aider Polyglot",
+  "FrontierMath-Tiers-1-3-v2-Private": "FrontierMath",
+  "Tool Decathlon": "Toolathlon",
+  "Big Bench Hard (BBH)": "BIG-Bench Hard",
+  "ANT-A Benchmark": "ANT-A"
  }
 }

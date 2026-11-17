@@ -82,7 +82,7 @@ to `not_stated` by the script.
 |---|---|---|
 | `data_released` | yes, partial, no, not_stated | The tasks themselves are public. |
 | `provenance` | real_artifacts, expert_written, generated, mixed, not_stated | Where tasks come from. Generated = LLM-synthesised, templated or procedural. |
-| `human_review` | yes, no, not_stated | People checked the tasks. |
+| `human_review` | yes, no, not_stated | People checked the tasks. An automatic check (a script that runs the reference) is not human review. |
 | `domain_expertise` | yes, no, not_stated | Solving a task needs professional or specialist knowledge (finance, law, medicine, a science, security, systems engineering), not only general skill. |
 | `verifier` | executable, exact_match, llm_judge, human, mixed, not_stated | How an answer is scored. |
 | `judge_validated` | yes, no, not_applicable, not_stated | For a model judge: agreement with people is reported with a number. |
@@ -101,6 +101,13 @@ result); people solving the tasks or a human baseline; each task validated by
 its authors as solvable; or an analysis of failed runs showing the failures
 are real and not caused by the environment or the verifier. A paper that says
 none of this is `not_stated`.
+
+Gold answers or reference outputs that exist only to score against do not
+count by themselves: they show what the answer is, not that an agent can reach
+it through the environment. (Clarified 2026-11-17 after an outside review; the
+version stays 0.6 because no rule changed. Where scripts/readiness.py finds
+that a recommended benchmark's release has gold answers only, `tier.py
+--rescore` lowers Solid and checks the recommendation again.)
 
 The judge also lists up to three **adoption risks**: things someone bringing
 this benchmark into Harbor would have to settle first (tasks not released, a

@@ -31,7 +31,7 @@ from leaderboards import norm_name
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 ALIASES = DATA / "aliases.json"
-ORIGIN_ORDER = ["snapshot", "adapter_list", "leaderboard"]
+ORIGIN_ORDER = ["snapshot", "adapter_list", "leaderboard", "harbor_hub"]
 LEAD_ORDER = ["arXiv", "Hugging Face Papers", "XBsleepy", "Semantic Scholar", "OpenAlex", "DataCite", "Crossref"]
 
 
@@ -90,12 +90,17 @@ def load() -> tuple[dict, dict[str, dict], dict[str, dict], list[dict]]:
                 key = "id:" + cid
         groups.setdefault(key, []).append(cid)
 
+    # The spelling to keep, from data/aliases.json, is also the name shown when a member uses it.
+    keep = set(json.loads(ALIASES.read_text()).get("same_benchmark", {}).values()) if ALIASES.exists() else set()
     benchmarks = []
     for key, ids in groups.items():
         members = sorted((candidates[i] for i in ids), key=lead_rank)
         lead = members[0]
         member_labels = [labels[m["id"]] for m in members]
-        name = lead["title"] if lead["origin"] != "snapshot" else member_labels[0]["name"]
+        # Hub datasets are named by their address (terminal-bench-science); the gate's name reads better.
+        name = lead["title"] if lead["origin"] not in ("snapshot", "harbor_hub") else member_labels[0]["name"]
+        spelled = [m["title"] if m["origin"] != "snapshot" else l["name"] for m, l in zip(members, member_labels)]
+        name = next((n for n in spelled if n in keep), name)
         benchmarks.append({"key": key, "name": name, "members": members, "labels": member_labels})
     return bundle, candidates, labels, benchmarks
 

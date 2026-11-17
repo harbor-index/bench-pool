@@ -421,8 +421,9 @@ def apply_bars(dims: dict, checks: dict, notes: list[str], known_best: float | N
     size = checks["size"]
     cap("diverse", (size["tasks"] or 0) >= 100 and max(size["categories"] or 0, size["sources"] or 0) >= 5,
         "fewer than 100 tasks, or fewer than 5 categories and 5 sources")
-    # The pool's own leaderboard score counts when the text quotes none.
-    best = checks["best_score"]["percent"] if checks["best_score"]["percent"] is not None else known_best
+    # The pool's best comparable score (build.best_comparable: leaderboards, or a young paper) wins over a
+    # figure quoted in the paper, which is often older; the quoted figure counts only when the pool has none.
+    best = known_best if known_best is not None else checks["best_score"]["percent"]
     cap("difficult", best is not None and best <= HARD_AT_MOST, f"no best score at or below {HARD_AT_MOST:g}% was quoted")
     if best is not None and best >= EASY_FROM and dims["difficult"]["verdict"] in ("strong", "ok"):
         dims["difficult"]["verdict"] = "weak"
@@ -461,6 +462,67 @@ def supports_recommend(dims: dict, item: dict, new: bool) -> tuple[bool, str, st
     if not new and not (is_("difficult", "strong") or is_("attention", "strong")):
         return False, "T2", "recommend needs strong Difficult or strong Attention as well (waived only for new benchmarks)"
     return True, "T2", ""
+
+
+def rescore(version: str, today: dt.date) -> int:
+    """Re-apply the score bars when a benchmark's best comparable score has changed, with no model call.
+
+    A benchmark now at 90% or more on a leaderboard becomes No (saturated). Otherwise Difficult is capped
+    again with the new score, and a Recommend its dimensions no longer carry becomes Hold. Scores can only
+    lower a verdict here; raising one needs the model to read the benchmark again.
+    """
+    items = {i["key"]: i for i in json.loads(POOL.read_text())["items"]}
+    latest: dict[str, dict] = {}
+    for line in OUT.read_text().splitlines():
+        if line.strip():
+            row = json.loads(line)
+            if row.get("standard") == version:
+                latest[row["key"]] = row
+    ready = {}
+    rpath = ROOT / "data" / "readiness.jsonl"
+    if rpath.exists():
+        for line in rpath.read_text().splitlines():
+            if line.strip():
+                r = json.loads(line)
+                ready[r["key"]] = r
+    moved = Counter()
+    with OUT.open("a") as fh:
+        for key, old in latest.items():
+            item = items.get(key)
+            if not item or item.get("covered") or old["tier"] == "no" or not old.get("checks"):
+                continue
+            best = item.get("best")
+            seen = old.get("score_seen", (old["checks"].get("best_score") or {}).get("percent"))
+            rd = ready.get(key)
+            gold_only = bool(rd and rd["oracle"].get("level") == "offline_answers" and rd["oracle"].get("quote"))
+            if best == seen and not (gold_only and old["tier"] == "recommend" and old["dimensions"].get("solid", {}).get("verdict") == "strong"):
+                continue
+            new = dict(old, date=today.isoformat(), rescored_from=old["date"], score_seen=best,
+                       notes=list(old.get("notes") or []), dimensions=json.loads(json.dumps(old["dimensions"])))
+            sc = item.get("score") or {}
+            where = f"{sc.get('source') or item.get('basis')}" + (f", {sc['as_of']}" if sc.get("as_of") else "")
+            on_board = best is not None and item.get("basis") in ("own", "aggregator")
+            if on_board and best >= SATURATED:
+                new.update(tier="no", rule="B3", reason=f"The best comparable score is now {best:g}% ({where}), at or above the 90% bar.")
+            else:
+                apply_bars(new["dimensions"], old["checks"], new["notes"], best)
+                if gold_only and new["dimensions"].get("solid", {}).get("verdict") == "strong":
+                    new["dimensions"]["solid"] = {"verdict": "ok"}
+                    new["notes"].append("solid: strong lowered to ok, the release shows gold answers only, nothing shows a solution passes")
+                if old["tier"] == "recommend":
+                    ok, rule, why = supports_recommend(new["dimensions"], item, is_new(item, today))
+                    if not ok:
+                        new.update(tier="hold", rule="T4", reason=f"With the best comparable score now "
+                                   f"{'unknown' if best is None else f'{best:g}% ({where})'}, {why}.")
+                        new["notes"].append(f"rescored: {why}")
+                    else:
+                        new["rule"] = rule
+            if new["tier"] == old["tier"] and new["dimensions"] == old["dimensions"]:
+                continue                 # nothing moved; the next run checks again at no cost
+            moved[(old["tier"], new["tier"])] += 1
+            fh.write(json.dumps(new, ensure_ascii=False) + "\n")
+    print("rescored:", {f"{a}->{b}": n for (a, b), n in sorted(moved.items())})
+    return 0
 
 
 def rerule(version: str, today: dt.date) -> int:
@@ -556,7 +618,7 @@ def check(row: dict, pack: dict, item: dict) -> dict:
         "dimensions": dims, "checks": checks, "risks": risks, "coverage": coverage,
         "harbor_fit": {"container": fit.get("container") if fit.get("container") in ("yes", "no") else "unclear",
                        "blocker": (str(fit["blocker"])[:120] if fit.get("blocker") else None)},
-        "notes": notes,
+        "notes": notes, "score_seen": item.get("best"),
     }
 
 
@@ -603,6 +665,9 @@ def main() -> int:
     parser.add_argument("--limit", type=int)
     parser.add_argument("--only", help="one benchmark, by name")
     parser.add_argument("--pilot", action="store_true")
+    parser.add_argument("--refresh-old", type=int, default=0, metavar="N",
+                        help="also judge again up to N benchmarks whose verdict is from an older standard (popular and agentic first)")
+    parser.add_argument("--rescore", action="store_true", help="re-apply the score bars where the best comparable score changed (no model call)")
     parser.add_argument("--redo", action="store_true", help="judge again even if already judged under this standard")
     parser.add_argument("--report", action="store_true")
     parser.add_argument("--rerule", action="store_true",
@@ -625,6 +690,8 @@ def main() -> int:
 
     if args.rerule:
         return rerule(version, today)
+    if args.rescore:
+        return rescore(version, today)
     if args.report:
         print(f"standard {version}: {len(done)} of {len(items)} judged", dict(Counter(r["tier"] for r in done.values())))
         print("rules:", dict(Counter(r["rule"] for r in done.values())))
@@ -648,6 +715,13 @@ def main() -> int:
         todo = [i for i in items if done.get(i["key"], {}).get("model") == args.redo_model]
     elif not args.redo:
         todo = [i for i in todo if due(i)]
+    if args.refresh_old:
+        old = [i for i in items if i["key"] in done and done[i["key"]].get("standard") != version
+               and done[i["key"]].get("rule") != "T0" and not i.get("covered") and i not in todo]
+        old.sort(key=lambda i: (not i.get("rank"), i.get("mode") != "agentic",
+                                -(((i.get("metrics") or {}).get("stars") or 0) + 5 * ((i.get("metrics") or {}).get("citations") or 0))))
+        todo += old[: args.refresh_old]
+        print(f"refreshing {min(len(old), args.refresh_old)} of {len(old)} verdicts from older standards")
     if args.limit:
         todo = todo[: args.limit]
 

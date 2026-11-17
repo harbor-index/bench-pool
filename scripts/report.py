@@ -55,7 +55,21 @@ def cell(text: str | None) -> str:
 
 
 def link(item: dict) -> str:
-    return f"[{cell(item['name'])}]({SITE}#/b/{item['id']})"
+    return f"[{cell(item['name'])}]({SITE}#/b/{item.get('pid') or item['id']})"
+
+
+RULE_WORDS = {"T2": "the recommend rule for agentic benchmarks", "T3": "the recommend rule for non-agentic benchmarks",
+              "T4": "the hold rule", "T0": "the nothing-to-read rule"}
+
+
+def plain(text: str | None) -> str:
+    """The judge writes internal rule codes into its reasons; the report, like the site, uses words."""
+    t = re.sub(r"^\s*(?:T\d|B\d)\s*[:;,-]\s*", "", text or "")
+    t = re.sub(r",? so T\d\b[^.;]*", "", t)
+    t = re.sub(r"\b(T[0234])\b", lambda m: RULE_WORDS[m.group(1)], t)
+    t = re.sub(r"\bB[1-6]\b(?: fires)?", "a blocking rule applies", t)
+    t = t.replace("no_evidence", "no evidence").replace("the new flag", "the allowance for new benchmarks").replace("new flag", "allowance for new benchmarks")
+    return re.sub(r"\b[Mm]ode (?:is )?non\b", "Non-agentic", t)
 
 
 def score(item: dict) -> str:
@@ -71,7 +85,7 @@ def tier_of(item: dict) -> str | None:
 def table(items: list[dict]) -> list[str]:
     lines = ["| Benchmark | Type | Class | Best score | Why |", "|---|---|---|---|---|"]
     for it in items:
-        why = it["tier"]["reason"] if it.get("tier") else it.get("does")
+        why = plain(it["tier"]["reason"]) if it.get("tier") else it.get("does")
         lines.append(f"| {link(it)} | {MODE[it['mode']]} | {cell(it['class_name'])} | {score(it)} | {cell(why)} |")
     return lines
 
@@ -93,10 +107,10 @@ def main() -> None:
 
     if since:
         new = [i for i in candidates if i.get("seen") and since < i["seen"] <= last]
-        window = f"first seen by Radar after {since}, up to {last}"
+        window = f"first seen after {since}, up to {last}"
     else:
         new = [i for i in candidates if i.get("seen") == last]
-        window = f"first seen by Radar on {last}"
+        window = f"first seen on {last}"
     new.sort(key=lambda i: (ORDER.index(tier_of(i)), i["name"].lower()))
     moved = [i for i in candidates if len(i["tier_trail"]) > 1 and i["tier_trail"][-1][0] == today]
     waiting = [i for i in candidates if not i.get("tier")]
@@ -107,7 +121,7 @@ def main() -> None:
         f"<!-- snapshot: {last} -->" + (f"\n<!-- since: {since} -->" if since else ""),
         f"# bench-pool, {today}",
         "",
-        f"Site: <{SITE}>",
+        f"Site: <{SITE}> · build `{meta.get('build_id', '?')}` (the same build as the site's data/v1/latest.json)",
         "",
         "## Today",
         "",
@@ -137,10 +151,9 @@ def main() -> None:
     if moved:
         out += ["## Changed tier today", "", "| Benchmark | Was | Now | Why |", "|---|---|---|---|"]
         for it in moved:
-            out.append(f"| {link(it)} | {TIER[it['tier_trail'][-2][1]]} | **{TIER[tier_of(it)]}** | {cell(it['tier']['reason'])} |")
+            out.append(f"| {link(it)} | {TIER[it['tier_trail'][-2][1]]} | **{TIER[tier_of(it)]}** | {cell(plain(it['tier']['reason']))} |")
         out.append("")
-    out += ["Verdicts are made by a language model from the paper and the repository, and have not been "
-            "checked by a person. \"Why\" is the model's one-line reason; each benchmark's page has the quotes behind it.", ""]
+    out += ["\"Why\" is a one-line reason; each benchmark's page has the quotes behind it.", ""]
 
     OUT.mkdir(exist_ok=True)
     path = OUT / f"{today}.md"

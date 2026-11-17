@@ -20,18 +20,27 @@ Analysis, and [Benchmark Saturation](https://github.com/evaleval/benchmark-satur
 (MIT, Copyright (c) 2026 Benchmark Saturation contributors). Paper titles and
 abstract quotes remain under their authors' terms.
 
-## Design: Terminal-Bench-Science
+## Data: Epoch AI
 
-The look follows <https://www.terminal-bench-science.ai/> (monospace type, large
-uppercase title, icon filter row, view toggle, inline score bars, teal accent).
+The ranking uses the Epoch AI Benchmarking Hub (<https://epoch.ai/benchmarks>):
+dated scores, score ceilings and successors, downloaded from
+`https://epoch.ai/data/benchmark_data.zip`. Epoch AI's data is licensed
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); credit Epoch AI.
 
-The repository `harbor-framework/terminal-bench-science` is Apache-2.0 (checked
-2026-11-11 through the GitHub API). Apache-2.0 would allow reuse with
-attribution, but it does not grant use of the project's name or logo. Nothing
-was copied: no code, styles, icons or images. All files under `web/` were
-written for bench-pool, which has its own name and mark.
+## Design
+
+The site's design draws on Apple's Human Interface Guidelines, stripe.com and the AutoReview
+explorer (harbor-index/autoreview). Only ideas and colour values were taken from them; no code,
+styles, icons or images were copied.
+All files under `web/` except `web/vendor/` were written for bench-pool.
+
+## Code: GridStack
+
+`web/vendor/gridstack-all.js` and `gridstack.min.css` are GridStack 10.3.1
+(<https://gridstackjs.com>), MIT licence, Copyright (c) 2019-2023 Alain Dumesny; the licence is in
+`web/vendor/GRIDSTACK-LICENSE`. It makes the panels draggable and resizable.
 
 ## Font
 
-Google Sans Code, loaded from Google Fonts (SIL Open Font License 1.1). The
-page falls back to the system monospace font when offline.
+Inter, loaded from Google Fonts (SIL Open Font License 1.1). The page falls back to the system font
+when offline.

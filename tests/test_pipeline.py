@@ -300,3 +300,99 @@ class Bars(unittest.TestCase):
     def test_only_a_0_5_recommend_is_judged_again_under_0_6(self):
         self.assertTrue(tier.current({"standard": "0.5", "model": "m", "tier": "hold"}, "0.6"))
         self.assertFalse(tier.current({"standard": "0.5", "model": "m", "tier": "recommend"}, "0.6"))
+
+
+class OwnSources(unittest.TestCase):
+    """scripts/sources.py tags records the way Radar does, and drops what can never pass."""
+
+    def setUp(self):
+        import sources
+        self.s = sources
+
+    def test_benchmark_and_agent_words(self):
+        self.assertEqual(self.s.tag("SWE-Clar: Can Coding Agents Clarify Requirements?", ""), ["agentic"])
+        self.assertEqual(self.s.tag("Compact-Bench: what compaction costs coding agents", ""), ["benchmark", "agentic"])
+        self.assertEqual(self.s.tag("A study of proofs", "We introduce MathX, a benchmark of 500 proofs."), ["benchmark"])
+        self.assertEqual(self.s.tag("Scaling proof supervision", "We train a model."), [])
+
+    def test_agent_word_in_abstract_counts_only_for_benchmarks(self):
+        self.assertEqual(self.s.tag("Better retrieval", "LLM agents use it."), [])
+        self.assertEqual(self.s.tag("RetrievalBench", "LLM agents use it."), ["benchmark", "agentic"])
+
+    def test_untagged_records_need_traction(self):
+        rec = self.s.record("HF Daily Papers", "Scaling proof supervision", "https://x", "We train a model.")
+        self.assertFalse(self.s.can_pass(rec))
+        rec["metrics"] = {"upvotes": 50}
+        self.assertTrue(self.s.can_pass(rec))
+
+
+class Ranking(unittest.TestCase):
+    """build.ranking: best score, ceiling and band for a popular benchmark."""
+
+    def test_llm_stats_scales(self):
+        from leaderboards import llm_stats_pct
+        self.assertEqual(llm_stats_pct(0.8, 100.0), 80.0)       # a fraction stored against 100
+        self.assertIsNone(llm_stats_pct(9.0, 100.0))            # a 10-point rating stored against 100
+        self.assertEqual(llm_stats_pct(64.5, 100.0), 64.5)
+        self.assertEqual(llm_stats_pct(0.645, 1.0), 64.5)
+
+    def test_bands(self):
+        from build import ranking
+        sc = {"pct": 60.0, "kind": "aggregator", "model": "m", "source": "Epoch AI", "as_of": "2026-11-01"}
+        self.assertIsNone(ranking("k", [], sc, None, None))
+        self.assertEqual(ranking("k", ["Epoch AI"], sc, None, None)["band"], "unverified")
+        self.assertEqual(ranking("k", ["Epoch AI"], sc, None, {"verdict": "suspect"})["band"], "suspect")
+        r = ranking("k", ["Epoch AI"], sc, {"ceiling": 0.65, "velocity": 2.0}, {"verdict": "real"})
+        self.assertEqual((r["ceiling"], r["band"]), (65.0, "saturated"))     # within 10 points of Epoch's ceiling
+        self.assertEqual(ranking("k", ["x"], None, None, None)["band"], "noscore")
+
+    def test_beaten_ceiling_is_dropped(self):
+        from build import ranking
+        sc = {"pct": 74.2, "kind": "aggregator", "source": "x", "as_of": "2026-11-01"}
+        r = ranking("k", ["x"], sc, None, {"verdict": "suspect", "ceiling": 72.4, "ceiling_quote": "689 uncertain"})
+        self.assertEqual(r["ceiling"], 100.0)
+        self.assertIn("already been beaten", r["ceiling_note"])
+
+    def test_best_comparable(self):
+        from build import best_comparable
+        one = [{"pct": 41.8, "source": "LLM Stats", "models": 1, "as_of": "2026-08-17"}]
+        many = one + [{"pct": 91.7, "source": "AA", "models": 343, "as_of": "2026-08-25"}]
+        self.assertEqual(best_comparable(None, many, None, "2024-01-01")[0], 91.7)
+        self.assertIsNone(best_comparable(None, one, None, "2024-01-01")[0])          # one old system is no leaderboard
+        self.assertIsNone(best_comparable(None, [], {"pct": 15.0}, "2023-11-21")[0])  # an old paper figure does not count
+
+    def test_family_key(self):
+        from build import family_key
+        self.assertEqual(family_key("Terminal-Bench 2.1"), family_key("Terminal-Bench 2.0"))
+        self.assertEqual(family_key("AIME 2025"), family_key("AIME 2024"))
+        self.assertNotEqual(family_key("SWE-bench Pro"), family_key("SWE-bench Verified"))
+        self.assertNotEqual(family_key("SWE-Test"), family_key("SWE-bench"))
+
+
+class PermanentIds(unittest.TestCase):
+    """feed.assign_ids: ids survive key changes, and a merge keeps the older id."""
+
+    def setUp(self):
+        import tempfile
+        import feed
+        self.feed = feed
+        self.tmp = Path(tempfile.mkdtemp()) / "ids.json"
+        self.old, feed.IDS = feed.IDS, self.tmp
+
+    def tearDown(self):
+        self.feed.IDS = self.old
+
+    def item(self, key, records, name=None):
+        return {"key": key, "id": records[0], "_records": records, "name": name or key, "seen": "2026-11-01"}
+
+    def test_stable_and_merged(self):
+        a, b = self.item("alpha", ["r-1"]), self.item("beta", ["r-2"])
+        self.feed.assign_ids([a, b])
+        pa, pb = a["pid"], b["pid"]
+        renamed = self.item("alpha2", ["r-1", "r-3"])            # new key, but a record we saw before
+        self.feed.assign_ids([renamed, self.item("beta", ["r-2"])])
+        self.assertEqual(renamed["pid"], pa)
+        merged = self.item("alpha2", ["r-1", "r-2"])              # alpha and beta are now one benchmark
+        redirects = self.feed.assign_ids([merged])
+        self.assertEqual(merged["pid"], min(pa, pb))
+        self.assertEqual(redirects[max(pa, pb)], min(pa, pb))

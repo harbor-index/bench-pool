@@ -203,7 +203,7 @@ def clean(row: dict, candidate: dict, model: str) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--effort", default=EFFORT, choices=("low", "medium", "high"))
-    parser.add_argument("--redo", choices=("adapter", "benchmarks"),
+    parser.add_argument("--redo", choices=("adapter", "benchmarks", "thin"),
                         help="ask again for records whose label was not made by --model")
     parser.add_argument("--batch", type=int, default=20)
     parser.add_argument("--workers", type=int, default=6)
@@ -218,6 +218,11 @@ def main() -> int:
         stale = lambda c: c["id"] in done and done[c["id"]].get("model") != args.model
         if args.redo == "adapter":
             todo += [c for c in candidates if c["origin"] == "adapter_list" and stale(c)]
+        elif args.redo == "thin":
+            # Leaderboard rows turned away only because they had no description, now that one exists.
+            thin = re.compile(r"no description|too thin|cannot identify", re.I)
+            todo += [c for c in candidates if c["origin"] == "leaderboard" and c["id"] in done and not done[c["id"]]["bench"]
+                     and thin.search(done[c["id"]].get("why") or "") and len(c.get("summary") or "") > 30]
         else:
             todo += [c for c in candidates if stale(c) and done[c["id"]]["bench"]]
     if args.limit:

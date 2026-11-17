@@ -33,6 +33,9 @@ POOL = ROOT / "web" / "data" / "benchmarks.json"
 # (name, script and arguments, what it does)
 STEPS = [
     ("fetch", ["fetch.py"], "new Radar snapshots and leaderboard crawls"),
+    ("sources", ["sources.py"], "our own sources: arXiv, Hugging Face, GitHub, lab blogs"),
+    ("harbor_status", ["harbor_status.py"], "what Harbor already has: registry and Harbor Hub datasets"),
+    ("epoch", ["epoch.py"], "Epoch AI's dated scores and ceilings for popular benchmarks"),
     ("leaderboards", ["leaderboards.py"], "top score per benchmark from the crawls"),
     ("candidates", ["candidates.py"], "rules, leaderboards, Adapter List, merge duplicates"),
     ("classify", ["classify.py"], "benchmark gate, mode and class for new candidates"),
@@ -41,7 +44,13 @@ STEPS = [
     ("find_sources", ["find_sources.py", "--limit", "120"], "search for the paper of benchmarks that have nothing to read"),
     ("find_leaderboards", ["find_leaderboards.py", "--limit", "200"], "search for each benchmark's own leaderboard"),
     ("rebuild", ["build.py"], "add what the searches found"),
-    ("tier", ["tier.py"], "judge benchmarks that have no verdict under the current standard"),
+    # At most 160 judgements a run (a few minutes each), so a backlog never pushes the run past the
+    # workflow's time limit; 60 of them re-judge verdicts from an older standard.
+    ("tier", ["tier.py", "--refresh-old", "60", "--limit", "160"], "judge new benchmarks (and 60 older verdicts), at most 160 a run"),
+    ("tiered", ["build.py"], "put today's verdicts in the pool before the steps that read it"),
+    ("readiness", ["readiness.py"], "adapter readiness for recommended benchmarks not yet in Harbor (reads the release)"),
+    ("rescore", ["tier.py", "--rescore"], "re-apply score bars where the best comparable score changed"),
+    ("headroom", ["headroom.py"], "ranking: is each popular benchmark's gap to 100% real (monthly per benchmark)"),
     ("publish", ["build.py"], "put the new verdicts on the site"),
     ("report", ["report.py"], "write the day's report to reports/"),
 ]

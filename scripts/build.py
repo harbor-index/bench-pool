@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -43,6 +44,11 @@ HI1 = DATA / "harbor_index_v1.json"
 SOURCE_SEARCH = DATA / "source_search.json"
 SIGNALS = DATA / "signals.jsonl"
 TIERS = DATA / "tiers.jsonl"
+EPOCH = DATA / "epoch.json"
+HEADROOM = DATA / "headroom.jsonl"
+READINESS = DATA / "readiness.jsonl"
+POPULAR_MODELS = 10       # LLM Stats: at least this many models report a score (mostly from model cards)
+HEADROOM_SATURATED = 10   # within this many points of the ceiling counts as saturated
 # Tier changes are shown from this day on. Earlier verdicts were drafts of the standard; they
 # stay in data/tiers.jsonl but are not changes a reader should see.
 HISTORY_FROM = "2026-11-14"
@@ -156,6 +162,139 @@ def differences(adapter: dict | None, mode: str, best: float | None, basis: str 
     return out
 
 
+FAMILY_DROP = re.compile(r"\([^)]*\)|\b(?:v?\d+(?:[.\-]\d+)*[a-z]?|verified|lite|mini|hard|easy|full|val|subset|split|"
+                         r"diamond|private|public|sample|cpu only|leaderboard|benchmark|bench)\b", re.I)
+
+
+def family_key(name: str) -> str:
+    """Name with versions, years, splits and subset words removed: Terminal-Bench 2.1 -> terminal,
+    SWE-bench Verified -> swe, AIME 2025 -> aime. Different benchmarks keep different keys
+    (SWE-bench Pro -> swe pro, LiveCodeBench Pro -> livecode pro)."""
+    s = re.sub(r"(?i)bench", " bench ", name.replace("’", "'"))
+    s = FAMILY_DROP.sub(" ", s)
+    return pool.canon_key(re.sub(r"\s+", " ", s).strip() or name)
+
+
+def harbor_match(items: list[dict]) -> None:
+    """Mark what Harbor already has (scripts/harbor_status.py): exact name, or the same family."""
+    path = DATA / "harbor_status.json"
+    hs = json.loads(path.read_text()) if path.exists() else {"registry": [], "hub": []}
+    exact: dict[str, list[str]] = {}
+    fam: dict[str, list[str]] = {}
+    for r in hs["registry"]:
+        label = f"registry: {r['name']}" + (f" {r['version']}" if r.get("version") else "")
+        exact.setdefault(pool.canon_key(r["name"].replace("-", " ").replace("_", " ")), []).append(label)
+        fam.setdefault(family_key(r["name"].replace("-", " ").replace("_", " ")), []).append(label)
+    for slug in hs["hub"]:
+        name = re.sub(r"(\d)-(\d)", r"\1.\2", slug.split("/", 1)[1]).replace("-", " ").replace("_", " ")
+        label = f"hub: {slug}"
+        exact.setdefault(pool.canon_key(name), []).append(label)
+        fam.setdefault(family_key(name), []).append(label)
+    families: dict[str, list[dict]] = {}
+    for it in items:
+        it["fkey"] = family_key(it["name"])
+        families.setdefault(it["fkey"], []).append(it)
+    for it in items:
+        members = [m for m in families[it["fkey"]] if m is not it]
+        here = exact.get(it["key"], [])
+        in_harbor = sorted({f"pool: {m['name']} ({'Harbor Index v1' if m['covered'] == 'v1' else 'adapter'})" for m in members if m["covered"]}
+                           | set(fam.get(it["fkey"], [])) - set(here))
+        it["harbor"] = {
+            "status": it["covered"] or ("hub" if any(h.startswith("hub:") for h in here) else "registry" if here else None),
+            "here": here[:6], "family": in_harbor[:8],
+        }
+        it["family"] = [{"id": m["id"], "name": m["name"], "covered": m["covered"]} for m in members][:12]
+        del it["fkey"]
+
+
+def best_comparable(own: dict | None, rows: list[dict], paper: dict | None, published: str | None):
+    """The one best score the Board, the tiers and the Ranking all use.
+
+    The highest percentage from the benchmark's own leaderboard or any aggregator (LLM Stats, Artificial
+    Analysis, Benchmark Saturation, Epoch AI). A table that lists a single system is not a leaderboard and
+    only counts when nothing else exists. The paper's own figure counts only while the benchmark is under a
+    year old: later systems have usually beaten it.
+    """
+    cands = []
+    if own and own.get("pct") is not None:
+        cands.append({"pct": own["pct"], "kind": "own", "source": "own leaderboard", "model": own.get("model"),
+                      "as_of": own.get("found"), "url": own.get("url"), "systems": own.get("entries")})
+    for r in rows:
+        if r.get("pct") is not None:
+            cands.append({"pct": r["pct"], "kind": "aggregator", "source": r["source"], "model": r.get("model"),
+                          "org": r.get("org"), "as_of": r.get("as_of"), "url": r.get("url"), "systems": r.get("models"),
+                          "self_reported": r.get("self_reported"), "raw": r.get("raw"), "scale": r.get("scale"),
+                          "models": r.get("models")})
+    multi = [c for c in cands if c["kind"] == "own" or (c.get("systems") or 0) != 1]
+    young = published and published >= (dt.date.today() - dt.timedelta(days=365)).isoformat()
+    if multi:
+        top = max(multi, key=lambda c: (c["pct"], c.get("as_of") or ""))
+        return top["pct"], top["kind"], top
+    # A table with one system is one report, like a paper's figure: it only counts while recent.
+    singles = [c for c in cands if c.get("as_of") and c["as_of"] >= (dt.date.today() - dt.timedelta(days=365)).isoformat()]
+    if singles and young:
+        top = dict(max(singles, key=lambda c: c["pct"]), single=True)
+        return top["pct"], top["kind"], top
+    if paper and paper.get("pct") is not None and young:
+        return paper["pct"], "paper", {"pct": paper["pct"], "kind": "paper", "source": "paper", "model": paper.get("model"),
+                                       "as_of": published, "systems": None}
+    return None, None, None
+
+
+def ranking(key: str, why: list[str], score: dict | None, ep: dict | None, judged: dict | None) -> dict | None:
+    """Where a popular benchmark stands: best score, the reachable ceiling, and whether the gap is real.
+
+    band  saturated  within HEADROOM_SATURATED points of the ceiling
+          real       a gap, and the evidence says models fail valid tasks
+          suspect    a gap, but much of it looks like broken tasks, environment or grading
+          unverified a gap, but no evidence either way yet (or not judged yet by scripts/headroom.py)
+          noscore    no percentage score anywhere
+    """
+    if not why:
+        return None
+    sota = score
+    # Ceiling: the best score a perfect agent could reach. Only two things lower it: Epoch AI's estimate, and
+    # a stated share of tasks that cannot earn credit (wrong reference answers, unsolvable tasks). A human
+    # baseline is not a ceiling, and an estimate that some system has already beaten is dropped.
+    ceiling, basis, quote, note = 100.0, "nominal maximum: no evidence that any task cannot earn credit", None, None
+    options = []
+    if ep and ep.get("ceiling") not in (None, 1.0):
+        options.append((round(ep["ceiling"] * 100, 1), "Epoch AI's estimate of the reachable score", None))
+    if judged and judged.get("ceiling") is not None and judged.get("ceiling_quote"):
+        options.append((judged["ceiling"], judged.get("ceiling_basis") or "a stated share of broken tasks", judged["ceiling_quote"]))
+    seen_max = max([sota["pct"] if sota else 0] + [h["score"] * 100 for h in ((ep or {}).get("history") or [])])
+    for value, why_, q in sorted(options):
+        if value + 0.05 < seen_max:
+            note = f"An estimate of {value:g}% ({why_}) has already been beaten ({seen_max:.1f}%), so it is not used."
+            continue
+        ceiling, basis, quote = value, why_, q
+        break
+    out = {
+        "why": why, "sota": sota, "ceiling": ceiling, "ceiling_basis": basis, "ceiling_quote": quote, "ceiling_note": note,
+        "human": (judged or {}).get("human_baseline"),
+        "headroom": round(ceiling - sota["pct"], 1) if sota else None,
+        "velocity": ep.get("velocity") if ep else None,
+        "history": (ep.get("history") or [])[-24:] if ep else [],
+        "epoch_models": ep.get("models") if ep else None,
+        "superseded_by": ep.get("superseded_by") if ep else None,
+        "judged": bool(judged),
+    }
+    if judged:
+        out.update({k: judged.get(k) for k in ("verdict", "cause", "summary", "evidence", "audits", "date", "model")})
+    if sota is None:
+        band = "noscore"
+    elif out["headroom"] <= HEADROOM_SATURATED:
+        band = "saturated"
+    elif judged and judged.get("verdict") in ("real", "suspect"):
+        band = judged["verdict"]
+    else:
+        band = "unverified"
+    out["band"] = band
+    if out["velocity"] and out["velocity"] > 0 and out["headroom"] and out["headroom"] > HEADROOM_SATURATED:
+        out["months_left"] = round((out["headroom"] - HEADROOM_SATURATED) / out["velocity"], 1)
+    return out
+
+
 def main() -> None:
     bundle, candidates, labels, benchmarks = pool.load()
 
@@ -163,6 +302,33 @@ def main() -> None:
     for entry in json.loads((DATA / "leaderboards.json").read_text()):
         if entry.get("raw") is not None:
             boards.setdefault(pool.canon_key(entry["name"]), []).append(entry)
+
+    # Popular: tracked by Epoch AI, Artificial Analysis or Benchmark Saturation, or reported by
+    # many models on LLM Stats. Rows without a score count too (Epoch lists some it has not run).
+    popular: dict[str, list[str]] = {}
+    for entry in json.loads((DATA / "leaderboards.json").read_text()):
+        src, n = entry["source"], entry.get("models") or 0
+        if src in ("Epoch AI", "Artificial Analysis", "Benchmark Saturation") or (src == "LLM Stats" and n >= POPULAR_MODELS):
+            why = f"{src}" + (f", {n} models" if n else "")
+            popular.setdefault(pool.canon_key(entry["name"]), []).append(why)
+    epoch = {}
+    if EPOCH.exists():
+        ep = json.loads(EPOCH.read_text())
+        epoch = {pool.canon_key(b["name"]): b for b in ep["benchmarks"]}
+        epoch_as_of = ep["as_of"]
+    headroom = {}
+    if HEADROOM.exists():
+        for line in HEADROOM.read_text().splitlines():
+            if line.strip():
+                row = json.loads(line)
+                headroom[row["key"]] = row      # a later line wins
+
+    readiness = {}
+    if READINESS.exists():
+        for line in READINESS.read_text().splitlines():
+            if line.strip():
+                row = json.loads(line)
+                readiness[row["key"]] = row
 
     searched: dict[str, dict] = {}
     if SEARCH.exists():
@@ -208,9 +374,10 @@ def main() -> None:
             dates, date_basis = [sig["created"]], "repository created"
         seen = sorted(m["first_seen"] for m in members if m["first_seen"])
 
-        # Aggregator leaderboard: the crawl row with a percentage, newest crawl first.
+        # Aggregator leaderboard: the highest percentage any aggregator shows (some stop at older
+        # models, so the newest crawl is not always the best score), then the newest.
         agg = None
-        rows = sorted(boards.get(key, []), key=lambda e: (e.get("pct") is not None, e["as_of"]), reverse=True)
+        rows = sorted(boards.get(key, []), key=lambda e: (e.get("pct") is not None, e.get("pct") or 0, e["as_of"]), reverse=True)
         if rows:
             top = rows[0]
             agg = {k: top.get(k) for k in ("pct", "raw", "scale", "model", "org", "source", "url", "as_of",
@@ -235,11 +402,10 @@ def main() -> None:
 
         paper = next(({"pct": l["best"], "model": l["best_model"], "metric": l["best_metric"], "quote": l["best_quote"]}
                       for l in member_labels if l.get("best") is not None), None)
-        best, basis = None, None
-        for kind, score in (("own", own), ("aggregator", agg), ("paper", paper)):
-            if score and score["pct"] is not None:
-                best, basis = score["pct"], kind
-                break
+        best, basis, score = best_comparable(own, boards.get(key, []), paper, dates[0] if dates else None)
+        if score and score["kind"] == "aggregator":
+            agg = {k: score.get(k) for k in ("pct", "raw", "scale", "model", "org", "source", "url", "as_of",
+                                              "self_reported", "models")}
 
         # One word for the leaderboard column.
         if own and agg:
@@ -279,9 +445,13 @@ def main() -> None:
 
         tier, tier_trail = tier_view(tiers.get(key, []), version)
         covered = covered_by(hi1.get(key), adapter)
+        why_popular = popular.get(key, []) + (["Harbor Index v1"] if hi1.get(key) else [])
+        if not why_popular and tier and tier.get("tier") == "recommend" and not covered:
+            why_popular = ["Recommended new candidate"]      # so the Ranking also covers the recommendations
+        rank = ranking(key, why_popular, score, epoch.get(key), headroom.get(key))
 
         items.append({
-            "id": lead["id"], "key": key, "name": bench["name"],
+            "id": lead["id"], "key": key, "name": bench["name"], "_records": [m["id"] for m in members],
             "tier": tier, "tier_trail": tier_trail, "covered": covered,
             "source_search": looked and {k: looked.get(k) for k in ("date", "searched", "query", "arxiv", "title", "why")},
             "title": lead["title"],
@@ -305,10 +475,13 @@ def main() -> None:
                 "infra": infra,
             },
             "lb": lb, "lb_hint": any(l.get("lb") == "yes" for l in member_labels),
-            "agg": agg, "own": own, "paper": paper, "search": search, "best": best, "basis": basis,
+            "agg": agg, "own": own, "paper": paper, "search": search, "best": best, "basis": basis, "score": score,
             "sat": (best > SATURATED_ABOVE) if best is not None else None,
+            "rank": rank,
+            "readiness": {k: v for k, v in readiness[key].items() if k not in ("key", "name")} if key in readiness else None,
         })
 
+    harbor_match(items)
     import tier as tiering
     today = dt.date.today()
     for item in items:
@@ -317,7 +490,14 @@ def main() -> None:
     items.sort(key=lambda i: (i["date"] or "0000", i["name"].lower()), reverse=True)
     first_day, last_day, n_days = bundle["snapshots"]
     counts = bundle["counts"]
+    ranked = [i for i in items if i["rank"]]
+    ranking_meta = {
+        "popular": len(ranked), "epoch_as_of": epoch_as_of if epoch else None,
+        "bands": {b: sum(1 for i in ranked if i["rank"]["band"] == b) for b in ("real", "suspect", "unverified", "saturated", "noscore")},
+        "judged": sum(1 for i in ranked if i["rank"].get("judged")),
+    }
     meta = {
+        "ranking": ranking_meta,
         "generated": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "snapshots": {"first": first_day, "last": last_day, "days": n_days},
         "funnel": {
@@ -396,6 +576,15 @@ def main() -> None:
         "classes": [{"id": cid, "name": name, "subs": subs} for cid, (name, subs) in CLASSES.items()],
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    import feed
+    redirects = feed.assign_ids(items)
+    for it in items:
+        del it["_records"]
+        for f in it.get("family") or []:
+            f["pid"] = next((x["pid"] for x in items if x["id"] == f["id"]), None)
+    build = feed.write_feed(items, meta)
+    meta["build_id"] = build["build_id"]
+    meta["redirects"] = {k: v for k, v in redirects.items() if k != v}
     OUT.write_text(json.dumps({"meta": meta, "items": items}, ensure_ascii=False, separators=(",", ":")))
 
     # What the gate turned away, with its one-line reason, for the Filter page.
