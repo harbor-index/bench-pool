@@ -101,6 +101,9 @@
 "agentbenchmark": {
 "from": null
 },
+"agentbenchmarkbatteries": {
+"from": null
+},
 "agentbenchmarktasks": {
 "from": null
 },
@@ -944,6 +947,9 @@
 "cadworld": {
 "from": null
 },
+"caebench": {
+"from": null
+},
 "caibench": {
 "from": null
 },
@@ -1583,6 +1589,9 @@
 "designarenaagenticwebdev": {
 "from": null
 },
+"detourbench": {
+"from": null
+},
 "deveval": {
 "from": null
 },
@@ -1740,6 +1749,9 @@
 "ecommerceaidataanalystagent": {
 "from": null
 },
+"econsafebench": {
+"from": null
+},
 "ecotoxfred": {
 "from": null
 },
@@ -1880,6 +1892,9 @@
 "erqa": {
 "from": null
 },
+"esgintelligence": {
+"from": null
+},
 "esrpbench": {
 "from": null
 },
@@ -1896,6 +1911,9 @@
 "from": null
 },
 "evalplus": {
+"from": null
+},
+"evident": {
 "from": null
 },
 "evilens": {
@@ -2506,6 +2524,9 @@
 "healthjevlongitudinal": {
 "from": null
 },
+"heams": {
+"from": null
+},
 "hebrewtranscription": {
 "from": null
 },
@@ -2555,6 +2576,9 @@
 "from": null
 },
 "homesafebench": {
+"from": null
+},
+"hospitalbench": {
 "from": null
 },
 "hospitalityanalyticsbug": {
@@ -2974,6 +2998,9 @@
 "kbench01": {
 "from": null
 },
+"kbrowsecomp": {
+"from": null
+},
 "kcbench": {
 "from": null
 },
@@ -3225,6 +3252,9 @@
 "from": null
 },
 "locomo": {
+"from": null
+},
+"logguidedcodelocalization": {
 "from": null
 },
 "longbench2": {
@@ -3574,6 +3604,9 @@
 "mgsmmultilingualgradeschoolmathmgsm": {
 "from": null
 },
+"mhrcbench": {
+"from": null
+},
 "microperfbench": {
 "from": null
 },
@@ -3916,6 +3949,9 @@
 "naturalquestions": {
 "from": null
 },
+"navitalgym": {
+"from": null
+},
 "ncpbench": {
 "from": null
 },
@@ -4080,6 +4116,9 @@
 "omnivcbench": {
 "from": null
 },
+"omniworkspace": {
+"from": null
+},
 "oncology3dvqa": {
 "from": null
 },
@@ -4115,6 +4154,9 @@
 "from": null
 },
 "opengray": {
+"from": null
+},
+"openmasgapp": {
 "from": null
 },
 "openrca": {
@@ -4257,6 +4299,9 @@
 "pcontextbench": {
 "from": null
 },
+"pdeagentbench": {
+"from": null
+},
 "pdeubench": {
 "from": null
 },
@@ -4323,6 +4368,9 @@
 "from": "https://physrsi-eval.github.io/",
 "repo": "PhysRSI-Eval/PhysRSI-Eval-code"
 },
+"piearena": {
+"from": null
+},
 "piitrace": {
 "from": null
 },
@@ -4336,6 +4384,9 @@
 "from": null
 },
 "pitfallbenchanddialoguebench": {
+"from": null
+},
+"pixelbench": {
 "from": null
 },
 "pixiu": {
@@ -4769,6 +4820,9 @@
 "researchrubrics": {
 "from": null
 },
+"respacebench": {
+"from": null
+},
 "responsibleagentworkflowevaluation": {
 "from": null
 },
@@ -4861,6 +4915,9 @@
 "rtabench": {
 "from": null
 },
+"rtabench1": {
+"from": null
+},
 "rtsafe": {
 "from": null
 },
@@ -4894,6 +4951,9 @@
 "salesforcesweagent": {
 "from": null
 },
+"salesharnessleaderboard": {
+"from": null
+},
 "salesllm": {
 "from": null
 },
@@ -4916,6 +4976,9 @@
 "from": null
 },
 "scenemembenchmark": {
+"from": null
+},
+"schedopsbench": {
 "from": null
 },
 "schemadrift": {
@@ -5058,6 +5121,9 @@
 "shadearena": {
 "arxiv": "2506.15740",
 "from": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring"
+},
+"shapebenchmarkdata": {
+"from": null
 },
 "sharpebench": {
 "from": null
@@ -5256,6 +5322,9 @@
 "from": null
 },
 "stale": {
+"from": null
+},
+"stalebench": {
 "from": null
 },
 "startupbench": {
@@ -5492,6 +5561,9 @@
 "synthcorp": {
 "from": null
 },
+"synthdcb": {
+"from": null
+},
 "system1arena": {
 "from": null
 },
@@ -5502,6 +5574,9 @@
 "from": null
 },
 "talk2agent": {
+"from": null
+},
+"tamarinmodeling": {
 "from": null
 },
 "tandembench": {
@@ -5821,6 +5896,9 @@
 "vaguerepobench": {
 "from": null
 },
+"vahbench": {
+"from": null
+},
 "valcon": {
 "from": null
 },
@@ -5862,6 +5940,9 @@
 "from": null
 },
 "versioncontrolbench": {
+"from": null
+},
+"verusagebench": {
 "from": null
 },
 "verusweave": {
@@ -6163,6 +6244,9 @@
 "from": null
 },
 "wtmbench": {
+"from": null
+},
+"xaihealthbench": {
 "from": null
 },
 "xdailybench": {

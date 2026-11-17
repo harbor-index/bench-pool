@@ -2148,3 +2148,69 @@
 {"key": "plantagentbenchcore3k", "date": "2026-11-16", "tried": ["hf"], "hf": {"dataset": "benchmarkanon/PlantAgentBench-Core3K", "likes": 0, "downloads": 18, "gated": false, "private": false}}
 {"key": "enterprisemcpaiagentfunctioncallingpolicybenchmark1", "date": "2026-11-16", "tried": ["hf"], "hf": {"dataset": "Offlin33er/mcp-agent-tool-policy-benchmark-v1-sample", "likes": 0, "downloads": 0, "gated": false, "private": false}}
 {"key": "id:r-0f9f62695d", "date": "2026-11-16", "tried": ["hf"], "hf": {"dataset": "HYUKI5/nvidia__cvdp-benchmark-dataset", "likes": 0, "downloads": 0, "gated": false, "private": false}}
+{"key": "scarfbench", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-05-07", "venue": "arXiv.org", "arxiv": "2605.06754"}}
+{"key": "chartact", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "wulin-wulin/OSWorld_Chart", "stars": 14, "forks": 0, "created": "2026-01-31", "pushed": "2026-10-24", "archived": false}, "s2": {"citations": 2, "influential": 0, "published": "2026-05-26", "venue": "arXiv.org", "arxiv": "2605.26994"}}
+{"key": "automotiveenv", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2025-09-25", "venue": null, "arxiv": "2509.21143"}}
+{"key": "octave", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17681"}}
+{"key": "memoryconflict", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 14, "influential": 1, "published": "2026-05-20", "venue": "arXiv.org", "arxiv": "2605.20926"}}
+{"key": "powersystemsagent", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 3, "influential": 0, "published": "2026-06-18", "venue": "arXiv.org", "arxiv": "2606.20950"}}
+{"key": "towermind", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "tb6147877/TowerMind", "stars": 14, "forks": 2, "created": "2026-01-09", "pushed": "2026-08-31", "archived": false}, "s2": {"citations": 6, "influential": 0, "published": "2026-01-09", "venue": "AAAI Conference on Artificial Intelligence", "arxiv": "2601.05899"}}
+{"key": "racebench", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 3, "influential": 0, "published": "2026-03-27", "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering", "arxiv": "2603.26337"}}
+{"key": "assemblygrid", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-09-13", "venue": "arXiv.org", "arxiv": "2609.16075"}}
+{"key": "locabench256k", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 26, "influential": 5, "published": "2026-02-08", "venue": "arXiv.org", "arxiv": "2602.07962"}}
+{"key": "browsecompvl", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 143, "influential": 22, "published": "2025-08-07", "venue": "International Conference on Learning Representations", "arxiv": "2508.05748"}}
+{"key": "agenticrelationshipharm", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-06-02", "venue": "Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society", "arxiv": "2606.03271"}}
+{"key": "id:r-2253810745", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "Krueske/ANT-OR", "stars": 0, "forks": 0, "created": "2026-05-24", "pushed": "2026-10-26", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": "Conference on Empirical Methods in Natural Language Processing", "arxiv": "2610.32415"}}
+{"key": "mcpsecuritybenchmark", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "dongsenzhang/MSB", "stars": 56, "forks": 8, "created": "2025-11-27", "pushed": "2026-03-24", "archived": false}, "s2": {"citations": 57, "influential": 7, "published": "2025-10-14", "venue": "International Conference on Learning Representations", "arxiv": "2510.15994"}}
+{"key": "id:r-c256e884ba", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-09-09", "venue": null, "arxiv": "2609.10092"}}
+{"key": "id:r-fc3bf218ef", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 62, "influential": 3, "published": "2023-07-25", "venue": "arXiv.org", "arxiv": "2307.13692"}}
+{"key": "longfact", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 196, "influential": 21, "published": "2024-03-27", "venue": "Neural Information Processing Systems", "arxiv": "2403.18802"}}
+{"key": "livecodebench0109", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 2675, "influential": 408, "published": "2024-03-12", "venue": "International Conference on Learning Representations", "arxiv": "2403.07974"}}
+{"key": "hipho", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 24, "influential": 1, "published": "2025-09-09", "venue": "arXiv.org", "arxiv": "2509.07894"}}
+{"key": "countqa", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 31, "influential": 7, "published": "2025-08-08", "venue": "arXiv.org", "arxiv": "2508.06585"}}
+{"key": "corpusqa", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 8, "influential": 1, "published": "2026-01-21", "venue": "arXiv.org", "arxiv": "2601.14952"}}
+{"key": "cmtbenchmark", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 8, "influential": 1, "published": "2025-10-06", "venue": "International Conference on Learning Representations", "arxiv": "2510.05228"}}
+{"key": "chartmuseum", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 34, "influential": 4, "published": "2025-05-19", "venue": "Neural Information Processing Systems", "arxiv": "2505.13444"}}
+{"key": "evalitallm", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 9, "influential": 0, "published": "2025-02-04", "venue": "arXiv.org", "arxiv": "2502.02289"}}
+{"key": "uavvisloc", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 73, "influential": 5, "published": "2024-05-20", "venue": "arXiv.org", "arxiv": "2405.11936"}}
+{"key": "ftcircuitbench", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 15, "influential": 2, "published": "2026-01-06", "venue": "ACM Transactions on Quantum Computing", "arxiv": "2601.03185"}}
+{"key": "agenticpay", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 17, "influential": 3, "published": "2026-02-05", "venue": null, "arxiv": "2602.06008"}}
+{"key": "ctfdojo", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 16, "influential": 0, "published": "2025-08-25", "venue": "arXiv.org", "arxiv": "2508.18370"}}
+{"key": "underwateriqa", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18429"}}
+{"key": "id:arxiv-2611-18338", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18338"}}
+{"key": "id:r-0f9f62695d", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 68, "influential": 9, "published": "2025-06-17", "venue": "arXiv.org", "arxiv": "2506.14074"}}
+{"key": "weightbench", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18553"}}
+{"key": "privacypr", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18293"}}
+{"key": "webarenapro", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "McGill-NLP/webarena-pro", "stars": 10, "forks": 0, "created": "2026-11-11", "pushed": "2026-11-17", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17955"}}
+{"key": "ascendgym", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17621"}}
+{"key": "continualarc", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "unifyai/continual-arc", "stars": 37, "forks": 5, "created": "2026-10-17", "pushed": "2026-11-17", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.14505"}}
+{"key": "agentbenchmarkbatteries", "date": "2026-11-17", "tried": ["github"], "github": {"repo": "BPSAI/agent-benchmark-batteries", "stars": 1, "forks": 0, "created": "2026-07-26", "pushed": "2026-11-17", "archived": false}}
+{"key": "respacebench", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "caebench", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "openmasgapp", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "navitalgym", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "acceleratebench", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "AdAstraAbyssoque/accelerate-bench", "stars": 1, "forks": 0, "created": "2026-11-07", "pushed": "2026-11-17", "archived": false}}
+{"key": "detourbench", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "tamarinmodeling", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "pixelbench", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "vahbench", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "evident", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "swecowork", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "TokenWave-AI/swe-cowork-bench", "stars": 6, "forks": 0, "created": "2026-10-19", "pushed": "2026-11-17", "archived": false}}
+{"key": "heams", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "stalebench", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "logguidedcodelocalization", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "rtabench1", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "hospitalbench", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "omniworkspace", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "synthdcb", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "econsafebench", "date": "2026-11-17", "tried": ["s2"]}
+{"key": "kbrowsecomp", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 4, "influential": 3, "published": "2026-06-01", "venue": "Conference on Empirical Methods in Natural Language Processing", "arxiv": "2606.02404"}}
+{"key": "pdeagentbench", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 10, "influential": 0, "published": "2026-05-10", "venue": "arXiv.org", "arxiv": "2605.09636"}}
+{"key": "piearena", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-02-05", "venue": null, "arxiv": "2602.05302"}}
+{"key": "esgintelligence", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-01-13", "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing", "arxiv": "2601.08676"}}
+{"key": "mhrcbench", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-01-07", "venue": "arXiv.org", "arxiv": "2601.03708"}}
+{"key": "verusagebench", "date": "2026-11-17", "tried": ["s2"], "s2": {"citations": 27, "influential": 5, "published": "2025-12-20", "venue": "arXiv.org", "arxiv": "2512.18436"}}
+{"key": "shapebenchmarkdata", "date": "2026-11-17", "tried": ["hf"], "hf": {"dataset": "SHAPE-agent/benchmark-data", "likes": 0, "downloads": 105, "gated": false, "private": false}}
+{"key": "xaihealthbench", "date": "2026-11-17", "tried": ["github"], "github": {"repo": "Amna-Raheeba/xai-health-bench", "stars": 0, "forks": 0, "created": "2026-11-16", "pushed": "2026-11-17", "archived": false}}
+{"key": "inclusionmed", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "panuvi/inclusionmed", "stars": 35, "forks": 0, "created": "2026-10-17", "pushed": "2026-11-17", "archived": false}}
+{"key": "cantrajbench", "date": "2026-11-17", "tried": ["github", "s2"], "github": {"repo": "WangYuHang-cmd/GPS--CAN", "stars": 0, "forks": 0, "created": "2026-10-25", "pushed": "2026-11-09", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18442"}}
