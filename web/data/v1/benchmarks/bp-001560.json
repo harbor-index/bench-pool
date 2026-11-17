@@ -1,0 +1,113 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001560",
+ "name": "HABIT-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001560",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "This non-agentic benchmark has strong difficulty and attention, with no reported saturation; its synthetic provenance and partial human validation merit follow-up.",
+  "risks": [
+   "Only a sample of probes received human review; unreviewed tasks may require additional solvability checks.",
+   "Synthetic histories require assessment of how well the tasks transfer to real user interactions."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "LUMIA-Group/habit-bench",
+    "url": "https://github.com/LUMIA-Group/habit-bench",
+    "commit": "9539e1a3cab2d6d9b6fa046f87499f4b13420a40",
+    "license": "Apache-2.0",
+    "files": 1125,
+    "pushed": "2026-10-26"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:hollyming/HABIT-Bench",
+   "quote": "**Download:** the complete four-domain dataset is available at [hollyming/HABIT-Bench on Hugging Face](https://huggingface.co/datasets/hollyming/HABIT-Bench), including histories, probes, and gold annotations. This GitHub repository contains the evaluation code; dataset files and model weights are distributed separately.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": "MIT (Food); CDLA-Permissive-1.0 (Finance, Software); CC BY 4.0 (Travel)",
+   "redistribution_questions": [
+    "The repo bundles third-party memory-method code (methods/ has 1069 entries, e.g. Letta, MemOS, SeCom under MIT); does Apache-2.0 on the original HABIT-Bench code permit redistributing that mixed tree as long as LICENSES/ notices are kept?",
+    "What attribution must accompany redistribution of the dataset given per-domain licenses (MIT Food, CDLA-Permissive-1.0 Finance and Software, CC BY 4.0 Travel)?",
+    "No license is stated for model weights, which are distributed separately; can an adapter image ship or depend on them?"
+   ],
+   "quote": "The original HABIT-Bench code in this repository is licensed under the [Apache License 2.0](LICENSE).\n\nHABIT-Bench integrates work from the memory methods listed above. Third-party components retain their respective licenses and copyright notices in [`LICENSES/`](LICENSES/) and the corresponding source files.\n\nThe dataset has [domain-specific licenses](https://huggingface.co/datasets/hollyming/HABIT-Bench/blob/main/LICENSE): MIT for Food, CDLA-Permissive-1.0 for Finance and Software, and CC BY 4.0 for Travel. Refer to the dataset's license and attribution files when using or redistributing it. The code license does not change the licensing terms of the dataset or figures reproduced from the paper.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 3328,
+   "unit": "probe",
+   "manifest_path": "public/probes.jsonl",
+   "splits": [],
+   "pilot": "food_probe_000001",
+   "quote": null,
+   "evidence": "unknown",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "exact_match",
+   "entry_point": "evaluate.py (main run); evaluation/score.py (`python -m evaluation.score`) for scoring existing predictions",
+   "full_credit": "Prediction's `choice_id` must exactly match the probe's single deterministic gold choice; evidence_session_ids are optional and are scored separately against domain annotations.",
+   "quote": "Choice accuracy uses exact choice-ID matching. Evidence scoring follows each domain's annotations and reports invalid or out-of-scope attributions. Keep per-domain results visible when reporting aggregates.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": "gold/<domain>/probe_key.jsonl (linked as private/probe_key.jsonl in each domain dir)",
+   "command": "python -m evaluation.score --dataset-dir ../datasets/food --predictions predictions.jsonl --output-dir outputs/scored --method-name mem0",
+   "quote": null,
+   "evidence": "unknown",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "OpenAI-compatible Chat Completions server implementing POST /v1/chat/completions",
+    "Hugging Face Hub download of the pinned dataset revision and the BGE-M3 embedding model",
+    "per-method backing stores used by the wrapped memory systems (method configs in configs/method_config/)"
+   ],
+   "gpu": "yes",
+   "network_or_api": [
+    "LLM chat endpoint set via OPENAI_BASE_URL (default model Qwen3-8B, 40,000-token input budget)",
+    "Hugging Face dataset download (`hf download hollyming/HABIT-Bench --repo-type dataset --revision a1e4a529cb9ecbee8a8c6afe73eccdaf0a80b7b8`)",
+    "BGE-M3 embedding model fetched from Hugging Face unless a local model directory is given",
+    "MIRIX and other tool-using methods need tools, tool_choice, tool_calls, and tool_call_id support from the server"
+   ],
+   "credentials": [
+    "OPENAI_API_KEY (or --api-key; redacted in run manifests)"
+   ],
+   "exceptions": [
+    "MIRIX requires tool calling in addition to basic chat completion",
+    "Qwen configuration needs chat_template_kwargs.enable_thinking support; thinking is disabled by default",
+    "Full-Memory compacts history online with an 8,192-token summary envelope plus recent raw sessions",
+    "Two answer readers (--answer-protocol main vs current) have different prompts and parsing behaviour"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "Which model server and API key will back chat completions, and does it support tools and the chosen response_format?",
+   "Do we plug in via evaluate.py --adapter-command or memory_adapter.py, and exactly what JSONL record shape is required per probe?",
+   "How does the adapter ingest sessions chronologically per user while enforcing each probe's visible-history cutoff?",
+   "How do we keep gold answers and private evidence labels out of method inputs while scoring evidence separately?"
+  ],
+  "next_action": "Clone LUMIA-Group/habit-bench at 9539e1a, download the pinned dataset revision, create the public/private links, and run `python evaluate.py --method mem0 --dataset-dir ../datasets/food --output-dir o"
+ }
+}

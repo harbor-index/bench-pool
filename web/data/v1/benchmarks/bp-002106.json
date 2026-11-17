@@ -1,0 +1,133 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-002106",
+ "name": "Parallax",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002106",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Harbor-compatible agentic benchmark; expert-authored tasks, oracle-proven solvability and programmatic world-state checks make Real and Solid strong, while the new flag waives results.",
+  "risks": [
+   "No pilot results, so difficulty and saturation are unknown.",
+   "Judge agreement with people is not reported.",
+   "Requires a Langfuse project and external API keys."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "agent-labs-dev/parallax",
+    "url": "https://github.com/agent-labs-dev/parallax",
+    "commit": "6c30056e793467a08c0558d5f8214c44dc9c41f2",
+    "license": "MIT",
+    "files": 1290,
+    "pushed": "2026-11-17"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:agent-labs-dev/parallax",
+   "quote": "A task is a Harbor-compatible directory. It holds `task.toml`, one instruction per turn, a seed for the world, `checks.yaml`, `mutations.yaml`, and an oracle.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": "CC BY 4.0",
+   "redistribution_questions": [
+    "Do the redistributed tasks include third-party fixtures, which keep their own licences and are only listed in THIRD_PARTY.md?",
+    "Is the CC BY 4.0 attribution string reproduced with any copy of the task data?",
+    "The wheel places task data under parallax/tasks/; does that shift the MIT code / CC BY 4.0 data boundary?"
+   ],
+   "quote": "Code is licensed under [MIT](LICENSE). Task data under `tasks/` is licensed under [CC BY 4.0](LICENSE-DATA). Third-party fixtures keep their own licences, which are listed in [THIRD_PARTY.md](THIRD_PARTY.md).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": null,
+   "unit": "task",
+   "manifest_path": "task.toml",
+   "splits": [
+    "core",
+    "lite",
+    "hard",
+    "flagship",
+    "versus",
+    "conformance"
+   ],
+   "pilot": "conformance",
+   "quote": "| `conformance` | 5 capability canaries | Checking a new adapter before it is compared |",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "mixed",
+   "entry_point": "checks.yaml",
+   "full_credit": "All task checks pass against the four parallax-owned evidence sources (service state, server call log, workspace snapshot, trusted test run); for browser tasks, the LLM judge grades the final page as correct.",
+   "quote": "**Graded on world state, not self-report.** Checks read four things: the final service state, the server's own call log, the workspace snapshot and a trusted test run. What the harness says it did is kept for diagnosis only.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "controls_reported",
+   "path": "an oracle in each task directory (alongside `checks.yaml` and `mutations.yaml`)",
+   "command": "`parallax check` (a task ships only when it passes)",
+   "quote": "**Every task is proven gradeable.** A scripted oracle must pass every task. Two null agents must fail it: one claims success and does nothing, the other asks a question and does nothing. Seeded near-miss mutants must be caught.",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "mail",
+    "chat",
+    "calendar",
+    "drive",
+    "sheets",
+    "payments",
+    "scheduler",
+    "seeded web",
+    "one MCP server",
+    "Langfuse (for recording runs)"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "Langfuse Cloud or self-hosted v4.59.0 or later",
+    "OpenRouter (LLM judge panel)",
+    "model provider endpoint through the metering proxy (OpenAI-wire, OpenRouter by default)",
+    "live websites for the browser sources live-web, online-mind2web and bu-bench"
+   ],
+   "credentials": [
+    "LANGFUSE_BASE_URL",
+    "LANGFUSE_PUBLIC_KEY",
+    "LANGFUSE_SECRET_KEY",
+    "PARALLAX_LANGFUSE_PROJECT",
+    "OPENROUTER_API_KEY",
+    "PARALLAX_UPSTREAM_OPENAI_KEY",
+    "harness-native model credentials"
+   ],
+   "exceptions": [
+    "Browser tasks need no seeded world: they drive a real browser and are graded by an LLM judge.",
+    "Browser tasks draw on live websites from live-web, online-mind2web and bu-bench.",
+    "Desktop tasks run seeded GTK apps in a private X11 device box and grade saved files; other harnesses are NA."
+   ],
+   "quote": "You need Docker, Python 3.13, [uv](https://docs.astral.sh/uv/) and a Langfuse project (Langfuse Cloud, or self-hosted v4.59.0 or later).",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Do we ship a TOML manifest only, or does the harness need the four-method protocol for an SDK or remote API?",
+   "How does our harness mount the world MCP server and reach the metering proxy inside Docker?",
+   "Which keys and Langfuse project must be provisioned before any run's score counts?",
+   "What makes a task NA or INVALID for our harness, and must conformance pass before comparison?"
+  ],
+  "next_action": "Install the CLI, run `parallax check conformance --lint-only` offline, then run the conformance suite against the harness with Langfuse and judge keys set."
+ }
+}

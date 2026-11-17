@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001926",
+ "name": "Accelerate Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001926",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic Harbor-format benchmark with real scientific-code tasks, executable verifier and solvability controls; 67.4% best score is unsaturated.",
+  "risks": [
+   "Full 32-task archive needs manual access approval.",
+   "ICON needs external grid files and is not on Harbor Hub.",
+   "Single runs are noisy; close agents are not ordered."
+  ]
+ },
+ "harbor": {
+  "status": "hub",
+  "here": [
+   "hub: accelerate-bench/accelerate-bench"
+  ],
+  "family": []
+ },
+ "best_score": {
+  "pct": 67.4,
+  "source": "paper",
+  "model": null,
+  "as_of": "2026-11-07",
+  "systems": null,
+  "url": null
+ },
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "AdAstraAbyssoque/accelerate-bench",
+    "url": "https://github.com/AdAstraAbyssoque/accelerate-bench",
+    "commit": "eb94fdd63ea0eeec3a5cc6739815eab43ef49c23",
+    "license": "Apache-2.0",
+    "files": 67,
+    "pushed": "2026-11-17"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:AdAstraAbyssoque/accelerate-bench",
+   "quote": "The full release has all 32 tasks in one archive, with a manifest of every file's SHA-256.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": null,
+   "redistribution_questions": [
+    "May the task archive be redistributed despite the README saying not to redistribute them?",
+    "Is the task data licensed separately from the Apache-2.0 code license?"
+   ],
+   "quote": "Evaluation, reproduction, auditing and teaching are supported; please do not train on the tasks or redistribute them.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 32,
+   "unit": "task",
+   "manifest_path": "canonical/manifest.json",
+   "splits": [],
+   "pilot": "hpcg-multigrid-pcg",
+   "quote": "**32 tasks** from 8 application areas, adapted from scientific codes and supercomputing competitions",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": null,
+   "full_credit": "Correctness C=1 and lower candidate runtime, with reward r = C × max(0, 1 − T_candidate / T_baseline).",
+   "quote": "For each task the private verifier checks correctness (C = 1 or 0) and times the candidate and the unmodified program alternately on the same workload.",
+   "evidence": "reported"
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "a separate private verifier then rebuilds the final program, checks it on hidden inputs and times it against the unmodified program.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "public-test service",
+    "private verifier"
+   ],
+   "gpu": "no",
+   "network_or_api": [
+    "agent model API using ANTHROPIC_API_KEY and optional ANTHROPIC_BASE_URL",
+    "Hugging Face dataset access for full release"
+   ],
+   "credentials": [
+    "ANTHROPIC_API_KEY",
+    "ANTHROPIC_BASE_URL (for a compatible endpoint)",
+    "hf auth login and manual Hugging Face approval for full release"
+   ],
+   "exceptions": [
+    "ICON is full-release only and needs two grid files from their official source."
+   ],
+   "quote": "Running tasks needs Linux x86-64 with Docker Engine and Docker Compose v2.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "How will the adapter obtain the full 32-task archive given manual Hugging Face approval and the no-redistribution rule?",
+   "Should the adapter use the 31 Harbor Hub tasks or require the full release including ICON?",
+   "How will it run the private verifier and reproduce correctness-gated timing?",
+   "What model API credentials and Docker CPU/memory settings are required?"
+  ],
+  "next_action": "Start by running the published task hpcg-multigrid-pcg through Harbor Hub to validate the adapter."
+ }
+}

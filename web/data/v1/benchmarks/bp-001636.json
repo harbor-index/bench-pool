@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001636",
+ "name": "Continual Learning Exam",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001636",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now 47.7% (own leaderboard, 2026-11-11), recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "Only Lite task inputs are public; complete packages and rubrics require approval.",
+   "Judge agreement is measured on rubric items, not whole-level pass decisions.",
+   "Repeated-run evidence concerns fixed-submission grading rather than full agent evaluations."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": {
+  "pct": 47.7,
+  "source": "own leaderboard",
+  "model": "Claude Opus 5",
+  "as_of": "2026-11-11",
+  "systems": 17,
+  "url": "https://haoyu-zhao.github.io/CLE/leaderboard/"
+ },
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "haoyu-zhao/Continual-Learning-Exam",
+    "url": "https://github.com/haoyu-zhao/Continual-Learning-Exam",
+    "commit": "eef4ae2cf5aee5055241a3ddb674c922a6f43c1b",
+    "license": null,
+    "files": 12,
+    "pushed": "2026-10-27"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:Continual-Learning-Exam/CLE-Lite-Full",
+   "quote": "| [Full Packages](https://huggingface.co/datasets/Continual-Learning-Exam/CLE-Lite-Full) | Complete task packages, container environments, runtime, and evaluation material | Approval required |",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "What do the dataset usage terms require for evaluation and redistribution?",
+    "What permissions and retrieval details do NOTICE.md and PROVENANCE.md record?"
+   ],
+   "quote": "Third-party materials retain their original terms; each package's `NOTICE.md` and `PROVENANCE.md` record sources, permissions, and retrieval details. See the [dataset's usage terms](https://huggingface.co/datasets/Continual-Learning-Exam/CLE-Lite#data-sources-and-terms) for evaluation and redistribution requirements.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 120,
+   "unit": "task",
+   "manifest_path": null,
+   "splits": [
+    "CLE Lite",
+    "main evaluation"
+   ],
+   "pilot": "task 008",
+   "quote": "For downloadable packages, **CLE Lite** provides **20 tasks and 100 levels**. The main evaluation covers the full 120-task benchmark.",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "llm_judge",
+   "entry_point": null,
+   "full_credit": "A level passes only when every criterion is satisfied.",
+   "quote": "Choose either DeepSeek V4 Flash through OpenRouter or GPT-6.1-Sol through Codex as the judge; the OpenRouter option also needs an API key.",
+   "evidence": "reported"
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": "hf:Continual-Learning-Exam/CLE-Lite-Rubrics",
+   "command": null,
+   "quote": "| [Rubrics](https://huggingface.co/datasets/Continual-Learning-Exam/CLE-Lite-Rubrics) | Evaluation rubrics and reference answers | Approval required |",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [
+    "OpenRouter",
+    "Codex",
+    "Hugging Face"
+   ],
+   "credentials": [
+    "approved access to CLE Lite Full",
+    "Codex login",
+    "OpenRouter API key when using OpenRouter"
+   ],
+   "exceptions": [
+    "CLE Lite Full and Rubrics require approval",
+    "at least 30 GB for a single example task"
+   ],
+   "quote": "You will need Linux x86-64, Bash, Docker with Compose, `curl`, Python 3.10+, `uv`, Node.js 22+, approved access to [CLE Lite Full](https://huggingface.co/datasets/Continual-Learning-Exam/CLE-Lite-Full), and a Codex login for the solver. Reserve at least **30 GB for a single example task**. Choose either DeepSeek V4 Flash through OpenRouter or GPT-6.1-Sol through Codex as the judge; the OpenRouter option also needs an API key.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which release do we adapt: CLE Lite or Full?",
+   "Who approves access to Full Packages and Rubrics?",
+   "Which judge and login should the adapter use?",
+   "What redistribution terms apply to third-party files?"
+  ],
+  "next_action": "Request approved access to CLE Lite Full, then follow docs/evaluation.md to run task 008."
+ }
+}

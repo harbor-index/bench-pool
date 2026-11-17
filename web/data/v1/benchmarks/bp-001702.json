@@ -1,0 +1,108 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001702",
+ "name": "OpenFrontiers",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001702",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Real research problems, executable proof checking and documented reference solutions support T2; the best closed-book result is 7 of 40.",
+  "risks": [
+   "Select tasks with verified reference solutions; 90 benchmark problems remain open.",
+   "Settle whether AI-reviewed formal statements need independent human review.",
+   "Account for potentially contaminated public solutions and apply lineage and cutoff exclusions."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "jpbruneton/open_quantum_problems",
+    "url": "https://github.com/jpbruneton/open_quantum_problems",
+    "commit": "86c85bf4e44f1da766fd78f631271847faeb0400",
+    "license": null,
+    "files": 133,
+    "pushed": "2026-11-17"
+   },
+   {
+    "kind": "github",
+    "id": "teorth/optimizationproblems",
+    "url": "https://github.com/teorth/optimizationproblems",
+    "commit": "87b4ebbd426ff8db597a2004cc45da17903bdcf2",
+    "license": "Apache-2.0",
+    "files": 128,
+    "pushed": "2026-10-28"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:jpbruneton/open_quantum_problems",
+   "quote": "**Lean verified** (gold badge): reserved for `claimed-solved` entries whose full claimed solution is formalized in Lean according to its authors.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "Can the catalogue entries, research notes, and Lean links be redistributed when no licence is declared?",
+    "Does the Apache-2.0 optimization repository contribute any reused task material?"
+   ],
+   "quote": "licence field: None",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 29,
+   "unit": "problem",
+   "manifest_path": "app/data/problems.js",
+   "splits": [],
+   "pilot": null,
+   "quote": "At present 108 entries are open, 81 improved and 29 claimed solved.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "unknown",
+   "entry_point": null,
+   "full_credit": "The full claimed solution is formalized in Lean according to its authors; the maintainer does not rerun the Lean builds.",
+   "quote": "The Lean builds are not rerun by the maintainer, and a formal proof does not replace refereeing of the definitions it formalizes.",
+   "evidence": "reported"
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "app/data/cat-*.js (`lean.url` on a `claimed-solved` entry)",
+   "command": null,
+   "quote": "`lean`: on a `claimed-solved` entry only, `{ url, note }` when the main theorem of its claimed solution is formalized in Lean according to the authors; on an evidence item, `lean: true` records formalization, but only a claimed solution of a `claimed-solved` entry can display the badge.",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [],
+   "credentials": [],
+   "exceptions": [
+    "Lean toolchain is not described; the maintainer does not rerun Lean builds",
+    "Python checkers may need NumPy or only the standard library"
+   ],
+   "quote": "No network, no Git, no optimizer, no claim to certify the infinite-algebra proof or bibliographic novelty. Run with the bundled Python (NumPy already available).",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which exact entries are OpenFrontiers tasks?",
+   "Do tasks require Lean files or only problem statements?",
+   "Where is the Lean verifier command?",
+   "Can data be redistributed without a licence?"
+  ],
+  "next_action": "Inspect `app/data/cat-*.js` for `lean` URLs and confirm the exact OpenFrontiers task manifest with the maintainer."
+ }
+}

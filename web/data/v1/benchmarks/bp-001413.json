@@ -1,0 +1,108 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001413",
+ "name": "FDE-Gym",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001413",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Expert-adapted delivery tasks have executable grading and passing references; the best reported main-setting score is 0.56, though only three tasks are public.",
+  "risks": [
+   "Only three tasks are public; original tasks require a request and variants are held out.",
+   "Reference solutions are held out, limiting independent verification of the reported solvability anchors.",
+   "Self-hosting requires an external model key for stakeholder interactions."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "deeplethe/fde-gym",
+    "url": "https://github.com/deeplethe/fde-gym",
+    "commit": "1d9ed027af7c8312bacb1abad1467c87a91c004b",
+    "license": "Apache-2.0",
+    "files": 130,
+    "pushed": "2026-10-29"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:DeepLethe/FDE-Gym",
+   "quote": "- [DeepLethe/FDE-Gym](https://huggingface.co/datasets/DeepLethe/FDE-Gym): 20 scenarios across\n  banking, healthcare, logistics, manufacturing, energy and more, on request. Once you have a copy,\n  see \"Adding cases\" in [docs/self-hosting.md](docs/self-hosting.md).",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": null,
+   "redistribution_questions": [
+    "What are the cases' own terms on their Hugging Face pages?",
+    "May the open example cases be redistributed?",
+    "May the 20 on-request scenarios be redistributed?",
+    "Do the cases' terms allow benchmark use or training?"
+   ],
+   "quote": "Apache License 2.0 (see `LICENSE`). Copyright 2026 DeepLethe. The cases have their own terms,\nstated on their Hugging Face pages.\n\nPlease do not train on the cases.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 20,
+   "unit": "scenario",
+   "manifest_path": null,
+   "splits": [],
+   "pilot": null,
+   "quote": "The cases are not in this repository. They are downloaded as folders and brought into the library:\n\n- [DeepLethe/FDE-Gym-examples](https://huggingface.co/datasets/DeepLethe/FDE-Gym-examples): three\n  complete cases, open. `scripts/fetch_cases.py` downloads them into `cases/`, and the site imports\n  what it finds there when it starts.\n- [DeepLethe/FDE-Gym](https://huggingface.co/datasets/DeepLethe/FDE-Gym): 20 scenarios across\n  banking, healthcare, logistics, manufacturing, energy and more, on request. Once you have a copy,\n  see \"Adding cases\" in [docs/self-hosting.md](docs/self-hosting.md).",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "python3 harness/run.py grade --name us_x-L3-opus-1",
+   "full_credit": "A score of 100 for the reference solution; 80 or more is accepted",
+   "quote": "A score out of 100: 0 for changing nothing, 100 for the reference solution. 80 or more is accepted; an incident in production scores no higher than 0.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "controls_reported",
+   "path": null,
+   "command": "python3 harness/run.py validate --engagement us_x",
+   "quote": "A score out of 100: 0 for changing nothing, 100 for the reference solution. 80 or more is accepted; an incident in production scores no higher than 0.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "site",
+    "runner",
+    "PostgreSQL database",
+    "S3-compatible object store"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "OpenRouter API",
+    "LLM gateway"
+   ],
+   "credentials": [
+    "OpenRouter key",
+    "FDEGYM_RUNNER_TOKEN"
+   ],
+   "exceptions": [],
+   "quote": "You need Docker, Python 3.9 or later, and an [OpenRouter](https://openrouter.ai) key (a cheap model\nplays the customer's people), kept in a file outside the repository.\n\n```bash\ngit clone https://github.com/deeplethe/fde-gym.git && cd fde-gym\nmkdir -p ~/.fdegym && echo \"sk-or-...\" > ~/.fdegym/openrouter_key\npython3 scripts/fetch_cases.py        # the three open cases, into cases/\ndocker compose up --build             # http://127.0.0.1:8787\n```\n\nThat starts four things: the site, a runner (the machine that runs the cases, here a container), a\nPostgreSQL database, and an S3-compatible object store. The first account to sign up becomes the admin. Pick a case, press Begin, and you are on site.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which case set should the adapter use: the three open examples or the 20 on-request scenarios?",
+   "Where do the graders and reference solutions come from, and are they shipped with cases?",
+   "What exact command and held-out traffic define a score per case?",
+   "What are the cases' data terms and can they be redistributed?"
+  ],
+  "next_action": "Clone the repo, fetch the three open cases, and run one case through harness validate/grade."
+ }
+}

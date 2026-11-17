@@ -1,0 +1,122 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-002002",
+ "name": "GTAVBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002002",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now 70.9% (paper, 2026-11-09), recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "New benchmark with low attention and no independent leaderboard",
+   "Container needs GPU/browser support"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": {
+  "pct": 70.9,
+  "source": "paper",
+  "model": null,
+  "as_of": "2026-11-09",
+  "systems": null,
+  "url": null
+ },
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "ljbro/GTAGym",
+    "url": "https://github.com/ljbro/GTAGym",
+    "commit": "0d8f0fd7396caa4ccbbab9fe50ab382db717f773",
+    "license": null,
+    "files": 4443,
+    "pushed": "2026-11-12"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:ljbro/GTAGym",
+   "quote": "Game code, task definitions, rendering assets, and evaluation runners are included in this repository.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "What license applies to the GTAVBench task data and Hugging Face dataset?",
+    "Does the inherited MIT license cover only native-city game code?",
+    "Can GTA V-derived screenshots and task definitions be redistributed?",
+    "What does publicReleaseAuthorization 'not verified' mean for character assets?"
+   ],
+   "quote": "Asset-specific licenses and provenance remain in [licenses/](licenses/) and alongside the assets; the inherited game code retains its [MIT license](native-city/LICENSE).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 150,
+   "unit": "task",
+   "manifest_path": "tasks/manifest.json",
+   "splits": [
+    "test"
+   ],
+   "pilot": "c02-n01",
+   "quote": "The [Hugging Face dataset](https://huggingface.co/datasets/OpenMOSS-Team/GTAVBench) contains all 150 test tasks as Parquet, with seven fields: `id`, `category`, `instruction`, `initial_observation`, `environment_type`, `movement`, and `play_url`.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "npm run eval:json -- --config configs/local/my-model.json",
+   "full_credit": "Engine state determines task outcomes; shooting tasks use point-in-polygon gold checks.",
+   "quote": "Engine state determines task outcomes.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": "tasks/c10-n01/task.json",
+   "command": null,
+   "quote": "\"metric\": \"point_in_head_polygon\"",
+   "evidence": "inspected",
+   "path_found": true
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "local game server",
+    "browser automation (Chromium/Playwright)",
+    "model provider API",
+    "Codex CLI for Codex protocol"
+   ],
+   "gpu": "yes",
+   "network_or_api": [
+    "model provider API configured via baseURL/model/api/effort",
+    "local game server at http://127.0.0.1:4200/",
+    "Codex CLI"
+   ],
+   "credentials": [
+    "GTA_AGENT_API_KEY",
+    "model provider credentials",
+    "Codex provider credentials"
+   ],
+   "exceptions": [
+    "Image-based shooting generation requires an imported annotated image pool; sniping is evaluation-only."
+   ],
+   "quote": "Requirements: **Linux, Node.js 22.18+, Python 3, FFmpeg with `libx264`, and Chromium's Linux dependencies**. Automated GPU evaluation also needs a working graphics driver.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "protocol choice",
+   "browser/server setup",
+   "task data licensing",
+   "asset redistribution limits"
+  ],
+  "next_action": "Clone ljbro/GTAGym and start the local server on port 4200."
+ }
+}

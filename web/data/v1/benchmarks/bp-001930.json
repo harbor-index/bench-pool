@@ -1,0 +1,111 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001930",
+ "name": "CyberBinGym",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001930",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "New agentic binary-exploitation benchmark: 100 released tasks, public Docker images, executable crash/exploit scoring and stated reward-hack auditing; no baseline scores yet.",
+  "risks": [
+   "No baseline or model results reported, so difficulty and ceiling are unknown",
+   "Validation tool leaks image names and program output to the agent",
+   "Requires Docker engine isolated bridge mode with no weaker fallback"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "sunblaze-ucb/cyberbingym",
+    "url": "https://github.com/sunblaze-ucb/cyberbingym",
+    "commit": "3e5582a030154e57de7cf2908fce9cde88200fc2",
+    "license": "MIT",
+    "files": 224,
+    "pushed": "2026-11-11"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:sunblaze-ucb/cyberbingym",
+   "quote": "This release ships a curated **100-sample** dataset. The vulnerable/fixed Docker images the dataset references (`lambangaw/cybingym:*`, `n132/arvo:*`) are public on Docker Hub, so the benchmark runs with no private infrastructure.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does the MIT source-code license cover `data/dataset.json` and `data/<id>/desc.txt`?",
+    "What terms apply to the referenced Docker Hub images `lambangaw/cybingym:*` and `n132/arvo:*`?"
+   ],
+   "quote": "The source code is licensed under [MIT](LICENSE).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 100,
+   "unit": "task",
+   "manifest_path": "data/dataset.json",
+   "splits": [],
+   "pilot": "368",
+   "quote": "`data/dataset.json` ships with 100 curated samples (vulnerability description in `data/<id>/desc.txt`, plus Docker image references in each sample's metadata).",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "src/cyberbingym/scorer.py",
+   "full_credit": "Full `evaluation_level=full` scoring: proof-of-crash plus exploitability against the victim service; crash-only is diagnostic.",
+   "quote": "Crash-only runs are diagnostic; `evaluation_level=full` is the benchmark's primary objective.",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "default sandbox",
+    "victim service",
+    "proxy"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "OpenAI, Anthropic, or Moonshot model APIs",
+    "Docker Hub image pulls"
+   ],
+   "credentials": [
+    "OPENAI_API_KEY",
+    "ANTHROPIC_API_KEY",
+    "MOONSHOT_API_KEY"
+   ],
+   "exceptions": [
+    "Docker Engine must support isolated bridge gateway mode; no fallback.",
+    "`evaluation_level=crash` only supports CLI-backed agents `claude_code`, `codex`, and `kimi_code`.",
+    "Crash-only runs must use `include_vulnerability_description=true`."
+   ],
+   "quote": "The Docker Engine must support `isolated` bridge gateway mode (tested with Engine 28.2.2). The internal networks require this mode; there is no fallback to a weaker configuration if the engine rejects it.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Does MIT cover the dataset files?",
+   "Full scoring or crash-only diagnostic?",
+   "Can Docker use isolated bridge mode?",
+   "Which sample schema and entry point must be mirrored?"
+  ],
+  "next_action": "Confirm Docker isolated bridge support, then run the Inspect task on sample 368 with full evaluation."
+ }
+}

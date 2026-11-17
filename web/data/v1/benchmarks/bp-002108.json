@@ -1,0 +1,102 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-002108",
+ "name": "PlantAgentBench Core-3K",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002108",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now unknown, recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "Source-specific terms restrict unrestricted commercial use",
+   "No stated human review of tasks",
+   "Reference gold must be kept out of prompts and retrieval indexes"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "hf",
+    "id": "benchmarkanon/PlantAgentBench-Core3K",
+    "url": "https://huggingface.co/datasets/benchmarkanon/PlantAgentBench-Core3K",
+    "commit": "a6334d083abebddbd9b6dfdd05afb746b79ef562",
+    "license": "other",
+    "files": 51,
+    "pushed": null
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:benchmarkanon/PlantAgentBench-Core3K",
+   "quote": "from huggingface_hub import snapshot_download\nroot = snapshot_download(\"benchmarkanon/PlantAgentBench-Core3K\", repo_type=\"dataset\")",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": "other",
+   "redistribution_questions": [
+    "Which source-specific terms apply?",
+    "Can protected groups be reused?",
+    "Are upstream notices preserved?",
+    "Is commercial use allowed?"
+   ],
+   "quote": "license: other\nlicense_name: source-specific-plantagentbench-terms\nlicense_link: LICENSE.md",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 3000,
+   "unit": "episode",
+   "manifest_path": "episodes/*.parquet",
+   "splits": [
+    "test"
+   ],
+   "pilot": null,
+   "quote": "**3,000 Agent episodes**. This is the exact frozen 3,000-episode evaluation set, version 2 (2026-10-18).",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": null,
+   "full_credit": null,
+   "quote": "runtime/: formal PlantEnv, harness and scoring code, plus a portable storage adapter.",
+   "evidence": "reported"
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": "gold/",
+   "command": null,
+   "quote": "Gold is published under `gold/` for offline reproducibility and must never enter model prompts, tool responses, training examples from protected test groups, or retrieval indexes.",
+   "evidence": "inspected",
+   "path_found": true
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [],
+   "credentials": [],
+   "exceptions": [
+    "P4 uses the existing care-report-2.1.0 runtime overlay; the archived pre-overlay episode payloads and Gold remain unchanged."
+   ],
+   "quote": "runtime/: formal PlantEnv, harness and scoring code, plus a portable storage adapter.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "scoring entry point",
+   "gold isolation",
+   "runtime dependencies",
+   "split reuse"
+  ],
+  "next_action": "Download the snapshot and read USAGE.md before wiring the harness."
+ }
+}

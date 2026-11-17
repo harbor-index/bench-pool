@@ -1,0 +1,4 @@
+{"connector":"github","date":"2026-10-29","evidence_items":[
+{"source":"GitHub search","title":"Tacmind-Bench/TacMind","url":"https://github.com/Tacmind-Bench/TacMind","summary":"","published_at":"2026-10-29T07:06:10Z","authors":[],"organizations":["Tacmind-Bench"],"artifact_urls":[],"metrics":{"stars":11},"categories":["benchmark"],"source_tags":[],"event_kind":"released"},
+{"source":"GitHub search","title":"bmander/brep-bench","url":"https://github.com/bmander/brep-bench","summary":"","published_at":"2026-10-29T20:33:08Z","authors":[],"organizations":["bmander"],"artifact_urls":["https://brepbench.org"],"metrics":{"stars":10},"categories":["benchmark"],"source_tags":[],"event_kind":"released"}
+]}

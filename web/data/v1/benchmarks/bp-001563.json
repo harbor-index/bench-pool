@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001563",
+ "name": "MicroPerf-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001563",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Expert-written, reviewed tasks have executable evaluation and reference implementations; the best reported configuration scores 47.7 out of 100.",
+  "risks": [
+   "Performance measurements vary across hosts and repeated runs, requiring a controlled evaluation protocol.",
+   "The highest reported score is from a single profiling-augmented run and needs replication.",
+   "One nominal anti-pattern category has no instances."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "zyzcjnb/microperf",
+    "url": "https://github.com/zyzcjnb/microperf",
+    "commit": "89c3088a4561890b11a3fe60fb9d1c2038a4214f",
+    "license": "MIT",
+    "files": 39942,
+    "pushed": "2026-10-21"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:zyzcjnb/microperf",
+   "quote": "=== github: zyzcjnb/microperf (commit/revision 89c3088a4561890b11a3fe60fb9d1c2038a4214f, licence field: MIT) ===",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Can the derived instances be redistributed under MIT when the upstream projects carry their own licences, e.g. Robot Shop's Apache License Version 2.0?",
+    "Do the per-instance LICENSE files (Apache 2.0 in robot-shop) override the repository-level MIT field for those subtrees?"
+   ],
+   "quote": "These systems are derived from public open-source microservice benchmarks; please refer to the respective upstream projects for their licenses.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 65,
+   "unit": "instance",
+   "manifest_path": "repo/instances/",
+   "splits": [],
+   "pilot": "repo/instances/pitstop/pitstop",
+   "quote": "instances/               # 65 injected instances across 7 microservice systems (+5 unmodified originals as reference)",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "repo/instances/pitstop/run-all-mixed.sh",
+   "full_credit": "Not stated in the material; presumably beating the unmodified original's mixed-workload result in reports/*.json while verification is switched on.",
+   "quote": "echo \"Runs=$RUNS Duration=${DURATION}s Concurrency=$CONCURRENCY Warmup=${WARMUP}s Seed=$COUNT Scenario=$SCENARIO Verify=$VERIFY\" | tee -a \"$LOG\"",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "repo/strong-base/",
+   "command": null,
+   "quote": "strong-base/             # the strongest original version of each system (optimization target reference)",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "hotel (Go + MongoDB/memcached, wrk2 mixed workload)",
+    "media (C++ Thrift + memcached/MongoDB, wrk2 compose-review)",
+    "martian-bank-demo (Python/Node.js, locust mixed workload)",
+    "robot-shop (polyglot, locust browser-style load)",
+    "pitstop (.NET + RabbitMQ/SQL Server, custom benchmark harness)",
+    "social (DeathStarBench social-network, mixed workload)",
+    "spring-petclinic-micro (Java Spring Cloud + HSQLDB/MySQL, JMeter workload)"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [],
+   "credentials": [],
+   "exceptions": [
+    "social/ lists 11 injected instances and no unmodified original",
+    "spring-petclinic-micro/ lists 9 injected instances and no unmodified original",
+    "pitstop uses a custom benchmark harness rather than wrk2/locust",
+    "spring-petclinic-micro needs test_plan.jmx and perf_test-petclinic.sh (10 threads x 3 runs, JMeter)"
+   ],
+   "quote": "Each instance is a self-contained, dockerized microservice application with one or more injected anti-patterns (e.g., chatty communication, nano-service splitting, hub topologies, shared-database serialization, cache misuse).",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which variant is the real task, the injected one or the unmodified original?",
+   "What score or improvement threshold counts as full credit?",
+   "Does the VERIFY step check functional correctness or only mark the run?",
+   "Do upstream licences limit redistributing the injected instances?"
+  ],
+  "next_action": "Run the pitstop baseline and one injected variant, then read reports/*.json to see exactly what the verifier records."
+ }
+}

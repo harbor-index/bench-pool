@@ -1,0 +1,3 @@
+{"connector":"github","date":"2026-11-06","evidence_items":[
+{"source":"GitHub search","title":"martine-benchmark/martine-dataset","url":"https://github.com/martine-benchmark/martine-dataset","summary":"Martine: multi-view 3D surface reconstruction benchmark — data download, format and converters Topics: 3d-reconstruction, benchmark, dataset, multi-view-stereo, neurips, photometric-stereo","published_at":"2026-11-06T19:30:24Z","authors":[],"organizations":["martine-benchmark"],"artifact_urls":["https://martine-benchmark.github.io/"],"metrics":{"stars":10},"categories":["benchmark"],"source_tags":["3d-reconstruction","benchmark","dataset","multi-view-stereo","neurips","photometric-stereo"],"event_kind":"released"}
+]}

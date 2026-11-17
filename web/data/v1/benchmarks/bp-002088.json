@@ -1,0 +1,111 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-002088",
+ "name": "SWE-CoWork",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002088",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic benchmark on 101 real repositories with hidden executable tests; best complete-task pass rate is 7.92%, and Real, Diverse, Difficult, Valuable and Solid all hold up.",
+  "risks": [
+   "Needs a live LLM endpoint for the simulated colleagues",
+   "Two tasks need root controller, systemd, cgroup v2 and runc"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "TokenWave-AI/swe-cowork-bench",
+    "url": "https://github.com/TokenWave-AI/swe-cowork-bench",
+    "commit": "d733ad25d04867da9f6193fb838bd068b3399dc1",
+    "license": null,
+    "files": 23966,
+    "pushed": "2026-11-17"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:TokenWave-AI/swe-cowork-bench",
+   "quote": "=== github: TokenWave-AI/swe-cowork-bench (commit/revision d733ad25d04867da9f6193fb838bd068b3399dc1, licence field: None) ===",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "Which upstream licence and copyright notices apply to each task asset?",
+    "Can third-party code from each task be redistributed under this release?",
+    "Are there per-task restrictions not covered by a blanket release licence?"
+   ],
+   "quote": "Every task is built from an open-source repository. The upstream license and copyright notices stay with the corresponding task assets. This release grants no new blanket license over third-party code.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 101,
+   "unit": "task",
+   "manifest_path": "release/MANIFEST.json",
+   "splits": [],
+   "pilot": "001",
+   "quote": "| Tasks | 101, built on real open-source repositories |",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "./cowork finish RUN_ID",
+   "full_credit": "All F2P and all P2P nodes pass (reward = 1).",
+   "quote": "Solutions are graded by hidden fail-to-pass (F2P) and pass-to-pass (P2P) tests run in a fresh container.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "controls_reported",
+   "path": "release/tasks/NNN-*/solution/",
+   "command": "./cowork control 001 base && ./cowork control 001 gold",
+   "quote": "Every task ships a base/gold control: the untouched baseline fails all F2P nodes and passes all P2P nodes, and the reference solution passes everything.",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "workplace MCP server over stdio",
+    "colleague model Responses API endpoint"
+   ],
+   "gpu": "no",
+   "network_or_api": [
+    "Responses-API endpoint for the colleague model",
+    "Anthropic Messages-compatible endpoint for the solver in campaign runs",
+    "optional Anthropic-Messages-to-OpenAI-Chat bridge"
+   ],
+   "credentials": [
+    "COLLEAGUE_MODEL_API_KEY",
+    "SOLVER_API_KEY",
+    "COLLEAGUE_API_KEY"
+   ],
+   "exceptions": [
+    "Tasks 039 and 093 additionally need a root controller, systemd, cgroup v2 and runc.",
+    "Campaign output must be under /data2 for tasks 039/093."
+   ],
+   "quote": "**Requirements:** Linux/amd64, Docker Engine, Python 3.10+, and a Responses-API endpoint for the colleague model. Tasks 039 and 093 additionally need a root controller, systemd, cgroup v2 and runc.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which per-task upstream licences and notices must be preserved?",
+   "How will the adapter provide and key the colleague Responses API?",
+   "Can the adapter support tasks 039 and 093 with root, systemd, cgroup v2 and runc?",
+   "Where will hidden tests and reference solutions live outside the agent's view?"
+  ],
+  "next_action": "Set up Docker and a colleague Responses API, then run ./cowork doctor before trying task 001."
+ }
+}

@@ -1,0 +1,4 @@
+{"connector":"github","date":"2026-11-11","evidence_items":[
+{"source":"GitHub search","title":"VisionXLab/RSLiveBench-UAV","url":"https://github.com/VisionXLab/RSLiveBench-UAV","summary":"A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence","published_at":"2026-11-11T01:01:23Z","authors":[],"organizations":["VisionXLab"],"artifact_urls":[],"metrics":{"stars":25},"categories":["benchmark"],"source_tags":[],"event_kind":"released"},
+{"source":"GitHub search","title":"whiskerrs/benchmarks","url":"https://github.com/whiskerrs/benchmarks","summary":"The same shop app built by an AI in six cross-platform frameworks, measured on an iPhone","published_at":"2026-11-11T08:09:45Z","authors":[],"organizations":["whiskerrs"],"artifact_urls":[],"metrics":{"stars":15},"categories":["benchmark"],"source_tags":[],"event_kind":"released"}
+]}

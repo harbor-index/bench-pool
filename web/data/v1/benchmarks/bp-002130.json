@@ -1,0 +1,132 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-002130",
+ "name": "SchedOps-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002130",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "T2: agentic Docker benchmark; 165 released scenarios, programmatic end-state verifier, solvable, and best hidden-test score 11/27.",
+  "risks": [
+   "No external leaderboard or independent replication of scores",
+   "Hard-tier tasks have no observed successful episodes"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "zenodo",
+    "id": "24309981",
+    "url": "https://zenodo.org/records/24309981",
+    "commit": "3",
+    "license": "cc-by-4.0",
+    "files": 1,
+    "pushed": null
+   },
+   {
+    "kind": "github",
+    "id": "Proaiml/vardiya",
+    "url": "https://github.com/Proaiml/vardiya",
+    "commit": "9bc7391d19daaff693a8b42be2d3184e4edfe1e2",
+    "license": "Apache-2.0",
+    "files": 728,
+    "pushed": "2026-11-17"
+   },
+   {
+    "kind": "zenodo",
+    "id": "24309982",
+    "url": "https://zenodo.org/records/24309982",
+    "commit": "3",
+    "license": "cc-by-4.0",
+    "files": 1,
+    "pushed": null
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:Proaiml/vardiya",
+   "quote": "Kod, klasör ve komut adları değişmedi (`vardiya saha ...`, `bench/saha/`).",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": "Apache-2.0",
+   "redistribution_questions": [
+    "Does the Zenodo cc-by-4.0 licence field apply only to the paper/README, not the Apache-2.0 benchmark data?",
+    "Can the third-party Docker images and Windows ISO download be redistributed?"
+   ],
+   "quote": "I release the lab, scenarios, harness, raw episode evidence and analysis scripts under Apache 2.0",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 165,
+   "unit": "scenario",
+   "manifest_path": "bench/saha/",
+   "splits": [
+    "dev",
+    "test",
+    "zor-dev",
+    "zor-test",
+    "katalog-dev",
+    "katalog-test"
+   ],
+   "pilot": "aft-parola-degisti",
+   "quote": "The benchmark has 165 scenarios in six sets, each validated in both directions.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": null,
+   "full_credit": "All server-read end-state checks pass, with no harmful action and no false green.",
+   "quote": "judges the episode only by the end state read from the servers, with separate verdicts for partial, false green and harmful outcomes.",
+   "evidence": "reported"
+  },
+  "oracle": {
+   "level": "controls_reported",
+   "path": null,
+   "command": null,
+   "quote": "Bir senaryo kümeye ancak kimse dokunmadığında doğru çıkmıyor ve örnek çözüm doğru çıkıyorsa girer.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "JS7 scheduler",
+    "two Linux agent hosts",
+    "SFTP server",
+    "PostgreSQL database"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "Docker lab network for JS7/SFTP/PostgreSQL",
+    "model provider API for hosted models",
+    "local endpoint for qwen3:14b if used"
+   ],
+   "credentials": [
+    "lab-only accounts in compose/tickets (e.g., ctmadmin / Lab-Win-2026; example mftuser password Mft-2026-Kasim; JS7 JOC default admin)"
+   ],
+   "exceptions": [
+    "Windows-server scenarios need KVM and first boot takes 20-40 minutes."
+   ],
+   "quote": "a Docker lab with a real scheduler (JS7), two Linux agent hosts, an SFTP server and a PostgreSQL database.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which licence governs scenarios and evidence?",
+   "Where is the verifier command or manifest?",
+   "Which model endpoint and credentials are required?",
+   "Are Windows/KVM scenarios in scope?"
+  ],
+  "next_action": "Start with `aft-parola-degisti` in `dev`, launch `lab/saha/docker-compose.yml`, and confirm the no-op fails and the reference passes."
+ }
+}

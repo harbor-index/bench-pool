@@ -1,0 +1,113 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001392",
+ "name": "OS-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001392",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Real repository-derived tasks, executable tests with reference repairs, and a best reported split score of 26.4% support recommendation; cross-platform hosting needs verification.",
+  "risks": [
+   "Integrating evaluation across native Linux and Windows environments requires investigation.",
+   "Executable tests establish correctness only for covered behaviors."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "hf",
+    "id": "SWE-bench-Live/OS-bench",
+    "url": "https://huggingface.co/datasets/SWE-bench-Live/OS-bench",
+    "commit": "8b4aa7de955dbb7cf3c2dd926792c65c2fb853a1",
+    "license": "cc-by-4.0",
+    "files": 4,
+    "pushed": null
+   },
+   {
+    "kind": "github",
+    "id": "openclaw/openclaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "commit": "db69f011ab0879ee14c2da1c7c487d3a95829f99",
+    "license": "MIT",
+    "files": 65193,
+    "pushed": "2026-11-17"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:SWE-bench-Live/OS-bench",
+   "quote": "configs:\n- config_name: default\n  data_files:\n  - split: windows2linux\n    path: data/windows2linux-*\n  - split: linux2windows\n    path: data/linux2windows-*",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": "cc-by-4.0",
+   "redistribution_questions": [
+    "The only GitHub repo supplied is openclaw/openclaw (MIT), an AI assistant app whose README never mentions OS-Bench; is it the evaluation code or a mis-link?",
+    "What licence governs the OS-Bench evaluation harness that the card says is 'hosted on GitHub'?",
+    "May the linux2windows Windows docker images be redistributed or pulled by third parties?",
+    "Do the bundled patch/test_patch snippets inherited from upstream repos carry their own licences?"
+   ],
+   "quote": "licence field: cc-by-4.0",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 140,
+   "unit": "task",
+   "manifest_path": "data/windows2linux-*, data/linux2windows-*",
+   "splits": [
+    "windows2linux",
+    "linux2windows"
+   ],
+   "pilot": null,
+   "quote": "  - name: windows2linux\n    num_bytes: 22817246\n    num_examples: 91\n  - name: linux2windows\n    num_bytes: 3587861\n    num_examples: 49",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "per-instance test_cmds run inside docker_image",
+   "full_credit": "The FAIL_TO_PASS tests pass and the PASS_TO_PASS tests keep passing, as parsed by log_parser.",
+   "quote": "|rebuild_cmds|list[str]|\n|test_cmds|list[str]|\n|print_cmds|list[str]|\n|patch|str|\n|test_patch|Optional[str], by default disabled (null)|\n|log_parser|str|\n|PASS_TO_PASS|list[str]|\n|FAIL_TO_PASS|list[str]|",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "per-instance 'patch' field (plus optional 'test_patch')",
+   "command": null,
+   "quote": "|patch|str|\n|test_patch|Optional[str], by default disabled (null)|",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [],
+   "credentials": [],
+   "exceptions": [
+    "linux2windows split uses Windows docker images which can only be run on Docker Desktop on Windows system",
+    "Windows 10+ Enterprise/Professional or Windows Server 2025+ is required for the Windows-system path"
+   ],
+   "quote": "windows2linux split uses Linux docker images which can be run on Linux docker and Docker Desktop (windows/macos system).\n\nlinux2windows split uses Windows docker images which can only be run on Docker Desktop on Windows system.\n\nTo run on Windows system, Windows 10+ Enterprise/Professional or Windows Server 2025+ is required.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Where is the real OS-Bench eval harness? The supplied GitHub repo is an unrelated assistant app.",
+   "What exactly is scored: all FAIL_TO_PASS passing plus no PASS_TO_PASS regressions, read via log_parser?",
+   "Must we support both splits, or can linux2windows wait until a Windows host exists?",
+   "Is the shipped patch a trustworthy oracle, and is test_patch null in practice?"
+  ],
+  "next_action": "Pull one windows2linux instance from hf:SWE-bench-Live/OS-bench and run its rebuild_cmds then test_cmds inside its docker_image on Linux Docker."
+ }
+}

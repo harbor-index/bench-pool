@@ -1,0 +1,3 @@
+{"connector":"blogs","date":"2026-10-19","evidence_items":[
+{"source":"Blog: OpenAI","title":"Advancing coding in low‑resource programming languages","url":"https://openai.com/index/low-resource-programming-languages","summary":"Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.","published_at":"2026-10-19","authors":[],"organizations":["OpenAI"],"artifact_urls":[],"metrics":{},"categories":["benchmark"],"source_tags":[],"event_kind":"released"}
+]}

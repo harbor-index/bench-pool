@@ -1,0 +1,4 @@
+{"connector":"blogs","date":"2026-11-03","evidence_items":[
+{"source":"Blog: Hugging Face","title":"CWE-bench v2: More coverage, quality, and transparency","url":"https://huggingface.co/blog/cwe-bench","summary":"","published_at":"2026-11-03","authors":[],"organizations":["Hugging Face"],"artifact_urls":[],"metrics":{},"categories":["benchmark"],"source_tags":[],"event_kind":"released"},
+{"source":"Blog: Ai2","title":"StateBench: Testing how language models track state changes over long documents","url":"https://allenai.org/blog/statebench","summary":"StateBench tests how language models track changing information across long documents at four difficulty levels, revealing where models struggle and how targeted training helps recurrent and hybrid architectures handle longer sequences.","published_at":"2026-11-03","authors":[],"organizations":["Ai2"],"artifact_urls":[],"metrics":{},"categories":["benchmark"],"source_tags":[],"event_kind":"released"}
+]}

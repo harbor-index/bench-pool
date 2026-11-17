@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "generated_at": "2026-11-17T22:27:14Z",
+ "previous_build_id": null,
+ "data_generated": "2026-11-17 22:27 UTC",
+ "counts": {
+  "benchmarks": 2694,
+  "events": 0
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261117T2227Z-a952585f.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": []
+}

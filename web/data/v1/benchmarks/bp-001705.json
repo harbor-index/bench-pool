@@ -1,0 +1,107 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001705",
+ "name": "Req2Test-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001705",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Real developer artifacts and execution-validated reference tests support strong Real and Solid ratings; the best reported KillComplete@1 is 35.9%.",
+  "risks": [
+   "The verifier may reject tests that satisfy a defensible interpretation of an underspecified requirement.",
+   "Some project artifacts may have appeared in model training data.",
+   "Repeated generations can change individual task verdicts."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "code-philia/Req2Test-Bench",
+    "url": "https://github.com/code-philia/Req2Test-Bench",
+    "commit": "c0d7138f408bb7935d2c82e0fed82884f519b199",
+    "license": "MIT",
+    "files": 558,
+    "pushed": "2026-10-29"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:code-philia/Req2Test-Bench",
+   "quote": "Task rows (`eval`, `full`) and ground-truth tests (`gt_tests`) | [🤗 code-philia/Req2Test-Bench](https://huggingface.co/datasets/code-philia/Req2Test-Bench) | `load_dataset` ([docs/dataset.md](docs/dataset.md))",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does the MIT code licence also cover the HF task rows and gt_tests?",
+    "What terms apply to redistributing the HF dataset task rows and ground-truth tests?"
+   ],
+   "quote": "MIT License",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 2051,
+   "unit": "instance",
+   "manifest_path": null,
+   "splits": [
+    "eval",
+    "full"
+   ],
+   "pilot": "python-docx/features/api-open-document.feature:13",
+   "quote": "The `eval` split has 2,051 instances from 8 projects in Python, Java, PHP, Go, and Ruby.",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "req2test evaluate",
+   "full_credit": "Test passes and kills every scored mutant that the developers' own test catches (KillComplete), with scored > 0.",
+   "quote": "Req2Test-Bench runs that test against the project's real code. It checks whether the test passes, and whether it fails on every *mutant* (a copy of the code with one injected fault) that the developers' own test of the requirement catches. A test that does both is *KillComplete*.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "reference_passes_reported",
+   "path": "gt_tests",
+   "command": "req2test validate --project python-docx --sample 20",
+   "quote": "The first command scores the developers' own tests of 20 instances and should print \"OK, within single-observation noise\".",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [
+    "LLM provider API for agent-generated predictions, e.g. DeepSeek endpoint"
+   ],
+   "credentials": [
+    "DEEPSEEK_API_KEY or another model-provider key for agent runs, passed with --env"
+   ],
+   "exceptions": [
+    "Linux x86_64 and rootless Docker are required",
+    "Workspaces need bubblewrap",
+    "Mutation scoring is resource intensive: about 1,000 worker-hours for one full configuration"
+   ],
+   "quote": "Req2Test-Bench runs every test in rootless Docker on Linux x86_64. Your agent works in a workspace where it can run the project's code, and these workspaces need bubblewrap.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Do we consume the HF dataset rows or exported tasks.jsonl?",
+   "How do we create per-task workspaces and fetch runtime packs?",
+   "What prediction JSON shape and file collection does the harness require?",
+   "Can our host run rootless Docker and bubblewrap for full scoring?"
+  ],
+  "next_action": "Fetch the eval split for python-docx with `req2test fetch --split eval --project python-docx` and run `req2test validate --project python-docx --sample 20`."
+ }
+}

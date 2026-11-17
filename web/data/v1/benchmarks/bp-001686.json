@@ -1,0 +1,58 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001686",
+ "name": "FeatureArc",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001686",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Repository-derived tasks have validated executable checks, and the best agent completed 49.3% of whole features; task availability remains unclear.",
+  "risks": [
+   "Confirm that task data, hidden tests, and container images are available for Harbor integration."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": null,
+  "prompt_version": 1,
+  "sources": [],
+  "no_release": true,
+  "release": {
+   "quote": null,
+   "evidence": "unknown",
+   "tasks_live_in": "unknown"
+  },
+  "rights": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "verifier": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "oracle": {
+   "quote": null,
+   "evidence": "unknown",
+   "level": "none"
+  },
+  "runtime": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "No public repository or dataset was found in the pool's links, Hugging Face's paper record or the paper's own links. Are the tasks released?"
+  ],
+  "next_action": "Ask the authors where the tasks, environment and grader are released."
+ }
+}

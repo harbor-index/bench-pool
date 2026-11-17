@@ -1,0 +1,125 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001980",
+ "name": "BioXArena-Pro",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001980",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now unknown, recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "Test labels and answer files are private; scoring runs through Codabench.",
+   "Public tasks are non-commercial; some source licences restrict redistribution.",
+   "Every task needs a dedicated A100 GPU and a two-hour budget."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "hf",
+    "id": "mbzuai-ai4bio/BioXArena-Pro-Public",
+    "url": "https://huggingface.co/datasets/mbzuai-ai4bio/BioXArena-Pro-Public",
+    "commit": "3a53ff7370d365a5a13305cc372872e9876b4e26",
+    "license": "cc-by-nc-4.0",
+    "files": 12,
+    "pushed": null
+   },
+   {
+    "kind": "github",
+    "id": "mbzuai-ai4bio/BioXArena-Pro",
+    "url": "https://github.com/mbzuai-ai4bio/BioXArena-Pro",
+    "commit": "4b8ec111d547942bdcac33aa7a86d2eadac81ab8",
+    "license": "MIT",
+    "files": 475,
+    "pushed": "2026-11-11"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:mbzuai-ai4bio/BioXArena-Pro",
+   "quote": "This repository contains the evaluation harness for seven agent scaffolds, the 64 graders, and the scoring and leaderboard code.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": "cc-by-nc-4.0",
+   "redistribution_questions": [
+    "Does the non-commercial CC BY-NC 4.0 term on the public data block shipping task files inside an adapter image?",
+    "May the 101.70 GB public archive be mirrored, or must it be pulled from the Hugging Face release at run time?",
+    "How are the access-controlled private answers obtained, and how are they kept out of anything an agent can read?"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "count": 64,
+   "unit": "task",
+   "manifest_path": "Data-Public-by-Domain/MANIFEST.txt",
+   "splits": [
+    "training data",
+    "test inputs (held-out test set with private labels)"
+   ],
+   "pilot": "chemical-biology/solubility",
+   "quote": "**BioXArena-Pro** is a benchmark of **64 end-to-end biomedical machine-learning tasks in 8 domains** (8 tasks per domain) for autonomous ML agents: given a task description, public training data and test inputs, an agent must write runnable code, train a model within a fixed budget (7,200 s, 1 GPU, 16 CPUs, 96 GB) and submit predictions for the held-out test samples.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "scoring/score_final.py (calls tasks/<domain>/<task>/grade.py through evaluation/evaluate_llm_agents.py)",
+   "full_credit": "No pass/fail: each task's grader returns a higher-is-better score in [0, 1] (reported x100) computed from the submission against the private answers; a failed or invalid run scores 0.",
+   "quote": null,
+   "evidence": "unknown",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": "mbzuai-ai4bio/BioXArena-Pro-Private (per-task private answers, e.g. private/answers.csv)",
+   "command": "python scoring/score_final.py <model_dir> [...]",
+   "quote": "Test labels and grading assets are not included; they are in the access-controlled repository `mbzuai-ai4bio/BioXArena-Pro-Private`. Public and private files must come from the same release.",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "Slurm scheduler (one job per lane)",
+    "model API endpoints: OpenAI-compatible/OpenRouter, Anthropic Messages API, Google Gemini API",
+    "Codabench competition for scoring hidden-test predictions"
+   ],
+   "gpu": "yes",
+   "network_or_api": [
+    "the agent's own model API (openai / anthropic / gemini routes); network is open but agents may not look up the source data of a task"
+   ],
+   "credentials": [
+    "OPENROUTER_API_KEY or OPENAI_API_KEY",
+    "ANTHROPIC_API_KEY",
+    "GEMINI_API_KEY",
+    "access to mbzuai-ai4bio/BioXArena-Pro-Private (access on request) for scoring"
+   ],
+   "exceptions": [
+    "Biomni needs its data lake (about 15 GB) via python harness/download_biomni_data.py and BIOMNI_DATA_ROOT",
+    "Gemini-protocol runs went through a gateway on a separate machine of the same hardware class: scores comparable, agent times not",
+    "Private answers must never be placed where an agent can read them"
+   ],
+   "quote": "| Hardware | **1 GPU, 16 CPU cores, 96 GB RAM** per task (one Slurm job per lane) |",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which scaffold is being adapted first (the seven differ: vendor CLIs, minimal, Biomni data lake, MLEvolve), and which model route and keys will it use?",
+   "Where do the private answers live for the adapter, and how is the Landlock-style read-only public / writable-output sandbox reproduced?",
+   "Does the adapter ship the 101.70 GB public archive or mount it, given CC BY-NC 4.0 on the data?",
+   "Is each task's grade.py runnable outside the repo's fixed <domain>/<task>/public layout, or must the whole repo layout be preserved?"
+  ],
+  "next_action": "Run the pilot end-to-end: python make_runs.py --cli minimal --model <id> --tasks chemical-biology/solubility, then grade it with scoring/score_final.py against the private answers."
+ }
+}

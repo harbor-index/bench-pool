@@ -1,0 +1,4890 @@
+{
+ "as_of": "2026-11-17",
+ "source": "https://epoch.ai/data/benchmark_data.zip",
+ "licence": "CC BY 4.0, Epoch AI",
+ "benchmarks": [
+  {
+   "name": "GPQA diamond",
+   "ceiling": 0.97,
+   "baseline": 0.25,
+   "released": "2023-11-20",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "gpqa_diamond.csv",
+   "top": {
+    "score": 0.9684,
+    "model": "gpt-6.2-astra_max",
+    "org": "OpenAI",
+    "date": "2026-11-17"
+   },
+   "history": [
+    {
+     "date": "2023-03-14",
+     "score": 0.3573,
+     "model": "gpt-4-0314"
+    },
+    {
+     "date": "2023-11-06",
+     "score": 0.4236,
+     "model": "gpt-4-1106-preview"
+    },
+    {
+     "date": "2024-02-29",
+     "score": 0.4716,
+     "model": "claude-3-opus-20240229"
+    },
+    {
+     "date": "2024-05-13",
+     "score": 0.489,
+     "model": "gpt-4o-2024-05-13"
+    },
+    {
+     "date": "2024-06-20",
+     "score": 0.5404,
+     "model": "claude-3-5-sonnet-20240620"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.6237,
+     "model": "o1-mini-2024-09-12_high"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.7677,
+     "model": "o1-2024-12-17_high"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.7702,
+     "model": "o3-mini-2025-01-31_high"
+    },
+    {
+     "date": "2025-02-24",
+     "score": 0.7973,
+     "model": "claude-3-7-sonnet-20250219_64K"
+    },
+    {
+     "date": "2025-03-25",
+     "score": 0.8384,
+     "model": "gemini-2.5-pro-exp-03-25"
+    },
+    {
+     "date": "2025-06-05",
+     "score": 0.8485,
+     "model": "gemini-2.5-pro-preview-06-05"
+    },
+    {
+     "date": "2025-06-17",
+     "score": 0.8529,
+     "model": "gemini-2.5-pro"
+    },
+    {
+     "date": "2025-07-09",
+     "score": 0.87,
+     "model": "grok-4-0709"
+    },
+    {
+     "date": "2025-11-13",
+     "score": 0.8763,
+     "model": "gpt-5.1-2025-11-13_high"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.9261,
+     "model": "gemini-3-pro-preview"
+    },
+    {
+     "date": "2026-02-19",
+     "score": 0.9444,
+     "model": "gemini-3.1-pro-preview_high"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.946,
+     "model": "gpt-5.4-pro-2026-03-05_xhigh"
+    },
+    {
+     "date": "2026-08-13",
+     "score": 0.9482,
+     "model": "gemini-3.7-flash_high"
+    },
+    {
+     "date": "2026-09-02",
+     "score": 0.9539,
+     "model": "gemini-3.8-flash_high"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.9577,
+     "model": "gpt-6-astra_max"
+    },
+    {
+     "date": "2026-10-13",
+     "score": 0.964,
+     "model": "gemini-4-argon_high"
+    },
+    {
+     "date": "2026-11-10",
+     "score": 0.9653,
+     "model": "gemini-4-carbon_high"
+    },
+    {
+     "date": "2026-11-17",
+     "score": 0.9684,
+     "model": "gpt-6.2-astra_max"
+    }
+   ],
+   "velocity": 0.77,
+   "models": 340,
+   "page": {
+    "slug": "gpqa-diamond",
+    "checked": "2026-11-17",
+    "description": "A challenging multiple-choice question set in biology, chemistry, and physics, authored by PhD-level experts.",
+    "links": [
+     "https://arxiv.org/abs/2311.12022",
+     "https://github.com/google/BIG-bench",
+     "https://github.com/openai/simple-evals"
+    ],
+    "url": "https://epoch.ai/benchmarks/gpqa-diamond"
+   }
+  },
+  {
+   "name": "FrontierMath-2025-02-28-Private",
+   "ceiling": 0.57,
+   "baseline": 0.0,
+   "released": "2025-02-28",
+   "superseded_by": "FrontierMath-Tiers-1-3-v2-Private",
+   "in_index": true,
+   "file": "frontiermath.csv",
+   "top": {
+    "score": 0.524,
+    "model": "gpt-5.5-pro-pre-release_high",
+    "org": "OpenAI",
+    "date": "2026-04-23"
+   },
+   "history": [
+    {
+     "date": "2024-06-20",
+     "score": 0.0103,
+     "model": "claude-3-5-sonnet-20240620"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.0172,
+     "model": "o1-mini-2024-09-12_medium"
+    },
+    {
+     "date": "2024-10-22",
+     "score": 0.0207,
+     "model": "claude-3-5-sonnet-20241022"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.0931,
+     "model": "o1-2024-12-17_high"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.1241,
+     "model": "o3-mini-2025-01-31_high"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.2483,
+     "model": "o4-mini-2025-04-16_high"
+    },
+    {
+     "date": "2025-08-01",
+     "score": 0.29,
+     "model": "gemini-2.5-deep-think-2025-08-01-webapp"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.3241,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.376,
+     "model": "gemini-3-pro-preview"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.407,
+     "model": "gpt-5.2-2025-12-11_xhigh"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.5,
+     "model": "gpt-5.4-pro-2026-03-05_xhigh"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.524,
+     "model": "gpt-5.5-pro-pre-release_high"
+    }
+   ],
+   "velocity": 1.67,
+   "models": 101,
+   "page": {
+    "slug": "frontiermath-2025-02-28-private",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "FrontierMath-Tier-4-2025-07-01-Private",
+   "ceiling": 0.6,
+   "baseline": 0.0,
+   "released": "2025-07-11",
+   "superseded_by": "FrontierMath-Tier-4-v2-Private",
+   "in_index": true,
+   "file": "frontiermath_tier_4.csv",
+   "top": {
+    "score": 0.479,
+    "model": "gdm-ai-co-mathematician",
+    "org": "Google DeepMind",
+    "date": "2026-05-08"
+   },
+   "history": [
+    {
+     "date": "2024-06-20",
+     "score": 0.0,
+     "model": "claude-3-5-sonnet-20240620"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.0417,
+     "model": "o3-mini-2025-01-31_high"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.0625,
+     "model": "o4-mini-2025-04-16_high"
+    },
+    {
+     "date": "2025-08-01",
+     "score": 0.104,
+     "model": "gemini-2.5-deep-think-2025-08-01-webapp"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.125,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-10-07",
+     "score": 0.146,
+     "model": "gpt-5-pro-2025-10-06_high"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.1875,
+     "model": "gemini-3-pro-preview"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.313,
+     "model": "gpt-5.2-pro-2025-12-11-webapp"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.375,
+     "model": "gpt-5.4-pro-2026-03-05-web-app"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.396,
+     "model": "gpt-5.5-pro-pre-release_xhigh"
+    },
+    {
+     "date": "2026-05-08",
+     "score": 0.479,
+     "model": "gdm-ai-co-mathematician"
+    }
+   ],
+   "velocity": 2.78,
+   "models": 72,
+   "page": {
+    "slug": "frontiermath-tier-4-2025-07-01-private",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "FrontierMath-Tiers-1-3-v2-Private",
+   "ceiling": 0.95,
+   "baseline": 0.0,
+   "released": "2026-06-12",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "frontiermath_tiers_1_3_v2.csv",
+   "top": {
+    "score": 0.9509,
+    "model": "claude-fable-5-2_max",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2024-01-25",
+     "score": 0.0,
+     "model": "gpt-3.5-turbo-0125"
+    },
+    {
+     "date": "2024-04-09",
+     "score": 0.007,
+     "model": "gpt-4-turbo-2024-04-09"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.1474,
+     "model": "o1-2024-12-17_high"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.186,
+     "model": "o3-mini-2025-01-31_high"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.3614,
+     "model": "o4-mini-2025-04-16_high"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.5544,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-10-07",
+     "score": 0.5579,
+     "model": "gpt-5-pro-2025-10-06_high"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.74,
+     "model": "gpt-5.2-pro-2025-12-11_xhigh"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.8246,
+     "model": "gpt-5.4-pro-2026-03-05_xhigh"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.8772,
+     "model": "gpt-5.5-pro_xhigh"
+    },
+    {
+     "date": "2026-07-09",
+     "score": 0.8912,
+     "model": "gpt-5.6-sol_max"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.9018,
+     "model": "claude-fable-5-1_max"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.9368,
+     "model": "gpt-6-astra_max"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.9509,
+     "model": "claude-fable-5-2_max"
+    }
+   ],
+   "velocity": 3.28,
+   "models": 126,
+   "page": {
+    "slug": "frontiermath-tiers-1-3-v2-private",
+    "checked": "2026-11-17",
+    "description": "Expert-written math problems covering advanced undergrad through early career research.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/frontiermath-tiers-1-3-v2-private"
+   }
+  },
+  {
+   "name": "FrontierMath-Tier-4-v2-Private",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-06-12",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "frontiermath_tier_4_v2.csv",
+   "top": {
+    "score": 1.0,
+    "model": "claude-fable-5-2_max",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2025-01-31",
+     "score": 0.0,
+     "model": "o3-mini-2025-01-31_high"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.0488,
+     "model": "o4-mini-2025-04-16_high"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.2195,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.46,
+     "model": "gpt-5.2-pro-2025-12-11_xhigh"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.5854,
+     "model": "gpt-5.4-pro-2026-03-05_xhigh"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.7805,
+     "model": "gpt-5.5-pro_xhigh"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.902,
+     "model": "claude-fable-5_max"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.976,
+     "model": "gpt-6-astra_high"
+    },
+    {
+     "date": "2026-09-29",
+     "score": 1.0,
+     "model": "gpt-6.1-sol_max"
+    }
+   ],
+   "velocity": 6.51,
+   "models": 82,
+   "page": {
+    "slug": "frontiermath-tier-4-v2-private",
+    "checked": "2026-11-17",
+    "description": "Exceptionally difficult research-level math problems.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/frontiermath-tier-4-v2-private"
+   }
+  },
+  {
+   "name": "MATH level 5",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2021-03-05",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "math_level_5.csv",
+   "top": {
+    "score": 0.9813,
+    "model": "gpt-5-2025-08-07_high",
+    "org": "OpenAI",
+    "date": "2025-08-07"
+   },
+   "history": [
+    {
+     "date": "2023-06-13",
+     "score": 0.2297,
+     "model": "gpt-4-0613"
+    },
+    {
+     "date": "2023-11-06",
+     "score": 0.4002,
+     "model": "gpt-4-1106-preview"
+    },
+    {
+     "date": "2024-04-09",
+     "score": 0.4673,
+     "model": "gpt-4-turbo-2024-04-09"
+    },
+    {
+     "date": "2024-05-13",
+     "score": 0.5105,
+     "model": "gpt-4o-2024-05-13"
+    },
+    {
+     "date": "2024-06-20",
+     "score": 0.5168,
+     "model": "claude-3-5-sonnet-20240620"
+    },
+    {
+     "date": "2024-07-18",
+     "score": 0.5263,
+     "model": "gpt-4o-mini-2024-07-18"
+    },
+    {
+     "date": "2024-08-06",
+     "score": 0.5328,
+     "model": "gpt-4o-2024-08-06"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.8918,
+     "model": "o1-mini-2024-09-12_high"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.9471,
+     "model": "o1-2024-12-17_high"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.9649,
+     "model": "o3-mini-2025-01-31_high"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.9783,
+     "model": "o4-mini-2025-04-16_high"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.9813,
+     "model": "gpt-5-2025-08-07_high"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 108,
+   "page": {
+    "slug": "math-level-5",
+    "checked": "2026-11-17",
+    "description": "The hardest tier of problems from the MATH dataset, drawn from competitions like the AMC 10, AMC 12, and AIME.",
+    "links": [
+     "https://arxiv.org/abs/2103.03874"
+    ],
+    "url": "https://epoch.ai/benchmarks/math-level-5"
+   }
+  },
+  {
+   "name": "OTIS Mock AIME 2024-2025",
+   "ceiling": 1.0,
+   "baseline": 0.001,
+   "released": "2024-12-19",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "otis_mock_aime_2024_2025.csv",
+   "top": {
+    "score": 1.0,
+    "model": "kimi-k3.1-pro-together_max",
+    "org": "Moonshot",
+    "date": "2026-10-23"
+   },
+   "history": [
+    {
+     "date": "2023-03-14",
+     "score": 0.0056,
+     "model": "gpt-4-0314"
+    },
+    {
+     "date": "2023-06-13",
+     "score": 0.0111,
+     "model": "gpt-4-0613"
+    },
+    {
+     "date": "2023-07-11",
+     "score": 0.025,
+     "model": "claude-2.0"
+    },
+    {
+     "date": "2024-02-29",
+     "score": 0.0472,
+     "model": "claude-3-opus-20240229"
+    },
+    {
+     "date": "2024-04-09",
+     "score": 0.0667,
+     "model": "gpt-4-turbo-2024-04-09"
+    },
+    {
+     "date": "2024-05-14",
+     "score": 0.0681,
+     "model": "gemini-1.5-pro-001"
+    },
+    {
+     "date": "2024-07-18",
+     "score": 0.0694,
+     "model": "gpt-4o-mini-2024-07-18"
+    },
+    {
+     "date": "2024-07-23",
+     "score": 0.0972,
+     "model": "Llama-3.1-405B-Instruct"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.4694,
+     "model": "o1-mini-2024-09-12_high"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.7333,
+     "model": "o1-2024-12-17_high"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.7694,
+     "model": "o3-mini-2025-01-31_high"
+    },
+    {
+     "date": "2025-04-09",
+     "score": 0.7778,
+     "model": "grok-3-mini-beta_high"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.8444,
+     "model": "o3-2025-04-16_medium"
+    },
+    {
+     "date": "2025-06-17",
+     "score": 0.8472,
+     "model": "gemini-2.5-pro"
+    },
+    {
+     "date": "2025-07-25",
+     "score": 0.8667,
+     "model": "Qwen3-235B-A22B-Thinking-2507"
+    },
+    {
+     "date": "2025-08-05",
+     "score": 0.8889,
+     "model": "openai/gpt-oss-120b_high"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.9139,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.9611,
+     "model": "gpt-5.2-2025-12-11_high"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.9778,
+     "model": "gpt-5.4-2026-03-05_high"
+    },
+    {
+     "date": "2026-04-16",
+     "score": 0.978,
+     "model": "claude-opus-4-7_xhigh"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 1.0,
+     "model": "gpt-5.5-pro-pre-release_xhigh"
+    }
+   ],
+   "velocity": 0.72,
+   "models": 317,
+   "page": {
+    "slug": "otis-mock-aime-2024-2025",
+    "checked": "2026-11-17",
+    "description": "45 competition-style math problems from OTIS, harder than MATH Level 5 but easier than FrontierMath.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/otis-mock-aime-2024-2025"
+   }
+  },
+  {
+   "name": "SWE-Bench verified",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-08-13",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "swe-bench-verified",
+    "checked": "2026-11-17",
+    "description": "GitHub issues from real-world Python repos, testing whether models can implement valid code fixes.\nNote: our SWE-bench Verified scaffold was significantly upgraded in February 2026.",
+    "links": [
+     "https://github.com/SWE-agent/mini-swe-agent",
+     "https://github.com/SWE-bench/SWE-bench",
+     "https://github.com/meridianlabs-ai/inspect_swe",
+     "https://huggingface.co/datasets/davidowen-epoch/SWE-bench_Verified_epoch"
+    ],
+    "url": "https://epoch.ai/benchmarks/swe-bench-verified"
+   }
+  },
+  {
+   "name": "SimpleQA Verified",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-09-09",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "simpleqa_verified.csv",
+   "top": {
+    "score": 0.94,
+    "model": "claude-fable-5-2_max",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2024-02-29",
+     "score": 0.126,
+     "model": "claude-3-opus-20240229"
+    },
+    {
+     "date": "2024-08-06",
+     "score": 0.26,
+     "model": "gpt-4o-2024-08-06"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.411,
+     "model": "o1-2024-12-17_high"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.494,
+     "model": "o3-2025-04-16_high"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.501,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-12-17",
+     "score": 0.668,
+     "model": "gemini-3-flash-preview_high"
+    },
+    {
+     "date": "2026-02-19",
+     "score": 0.735,
+     "model": "gemini-3.1-pro-preview_high"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.756,
+     "model": "gpt-6-astra_max"
+    },
+    {
+     "date": "2026-10-13",
+     "score": 0.76,
+     "model": "gemini-4-argon_high"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.94,
+     "model": "claude-fable-5-2_max"
+    }
+   ],
+   "velocity": 3.66,
+   "models": 104,
+   "page": {
+    "slug": "simpleqa-verified",
+    "checked": "2026-11-17",
+    "description": "1,000 factual questions about politics, science and technology, art, sports, geography, music, and more.",
+    "links": [
+     "https://arxiv.org/abs/2411.04368",
+     "https://arxiv.org/abs/2509.07968"
+    ],
+    "url": "https://epoch.ai/benchmarks/simpleqa-verified"
+   }
+  },
+  {
+   "name": "Chess Puzzles",
+   "ceiling": 1.0,
+   "baseline": 0.0496,
+   "released": "2025-12-10",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "chess_puzzles.csv",
+   "top": {
+    "score": 0.79,
+    "model": "claude-fable-5-2_max",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2024-02-29",
+     "score": 0.04,
+     "model": "claude-3-opus-20240229"
+    },
+    {
+     "date": "2024-08-06",
+     "score": 0.09,
+     "model": "gpt-4o-2024-08-06"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.11,
+     "model": "o1-2024-12-17_low"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.15,
+     "model": "o3-mini-2025-01-31_high"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.37,
+     "model": "o3-2025-04-16_medium"
+    },
+    {
+     "date": "2025-10-07",
+     "score": 0.48,
+     "model": "gpt-5-pro-2025-10-06_high"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.6,
+     "model": "gpt-5.2-pro-2025-12-11_xhigh"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.63,
+     "model": "gpt-5.5_xhigh"
+    },
+    {
+     "date": "2026-07-09",
+     "score": 0.68,
+     "model": "gpt-5.6-sol_promax"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.76,
+     "model": "gpt-6-astra_promax"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.79,
+     "model": "claude-fable-5-2_max"
+    }
+   ],
+   "velocity": 2.59,
+   "models": 165,
+   "page": {
+    "slug": "chess-puzzles",
+    "checked": "2026-11-17",
+    "description": "100 novel puzzles, generated programmatically with a chess engine. Each puzzle has a single best next move.",
+    "links": [
+     "https://github.com/epoch-research/chess-puzzles-mirror"
+    ],
+    "url": "https://epoch.ai/benchmarks/chess-puzzles"
+   }
+  },
+  {
+   "name": "EBR-bench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-07-01",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "ebr_bench.csv",
+   "top": {
+    "score": 0.9238,
+    "model": "gpt-6.2-astra_max",
+    "org": "OpenAI",
+    "date": "2026-11-17"
+   },
+   "history": [
+    {
+     "date": "2025-08-05",
+     "score": 0.0794,
+     "model": "claude-opus-4-1-20250805"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.127,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.1429,
+     "model": "claude-opus-4-5-20251101_128K"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.2302,
+     "model": "gpt-5.2-2025-12-11_xhigh"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.254,
+     "model": "gpt-5.4-2026-03-05_xhigh"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.3429,
+     "model": "gpt-5.5_xhigh"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.3952,
+     "model": "claude-fable-5_max"
+    },
+    {
+     "date": "2026-07-09",
+     "score": 0.4476,
+     "model": "gpt-5.6-sol_max"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.4571,
+     "model": "claude-opus-5_max"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.5714,
+     "model": "claude-fable-5-1_max"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.7619,
+     "model": "gpt-6-astra_max"
+    },
+    {
+     "date": "2026-10-26",
+     "score": 0.781,
+     "model": "gpt-6.1-terra_max"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.9048,
+     "model": "claude-fable-5-2_max"
+    },
+    {
+     "date": "2026-11-17",
+     "score": 0.9238,
+     "model": "gpt-6.2-astra_max"
+    }
+   ],
+   "velocity": 6.65,
+   "models": 32,
+   "page": {
+    "slug": "ebr-bench",
+    "checked": "2026-11-17",
+    "description": "A test of AI systems' learning capabilities, measuring whether their scores improve across repeated playthroughs of the relatively obscure game Earthborne Rangers.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/ebr-bench"
+   }
+  },
+  {
+   "name": "Mystery Game Puzzles",
+   "ceiling": 1.0,
+   "baseline": 0.0922,
+   "released": "2026-07-30",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "mystery_game_puzzles.csv",
+   "top": {
+    "score": 0.95,
+    "model": "gpt-6.2-astra_max",
+    "org": "OpenAI",
+    "date": "2026-11-17"
+   },
+   "history": [
+    {
+     "date": "2023-06-13",
+     "score": 0.12,
+     "model": "gpt-4-0613"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.29,
+     "model": "o3-2025-04-16_high"
+    },
+    {
+     "date": "2026-02-19",
+     "score": 0.34,
+     "model": "gemini-3.1-pro-preview_high"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.37,
+     "model": "gpt-5.4-2026-03-05_xhigh"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.56,
+     "model": "gpt-5.5_xhigh"
+    },
+    {
+     "date": "2026-07-09",
+     "score": 0.58,
+     "model": "gpt-5.6-sol_max"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.59,
+     "model": "claude-opus-5_max"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.84,
+     "model": "gpt-6-astra_max"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.9,
+     "model": "claude-fable-5-2_max"
+    },
+    {
+     "date": "2026-11-17",
+     "score": 0.95,
+     "model": "gpt-6.2-astra_max"
+    }
+   ],
+   "velocity": 5.5,
+   "models": 147,
+   "page": {
+    "slug": "mystery-game-puzzles",
+    "checked": "2026-11-17",
+    "description": "100 positions from a puzzle-oriented variant of a well-known game, the details of which are deliberately left undisclosed.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/mystery-game-puzzles"
+   }
+  },
+  {
+   "name": "MirrorCode",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-06-26",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "mirrorcode.csv",
+   "top": {
+    "score": 0.9778,
+    "model": "claude-sonnet-5-5_max",
+    "org": "Anthropic",
+    "date": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2025-08-07",
+     "score": 0.0444,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.3222,
+     "model": "gpt-5.2-2025-12-11_xhigh"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.3333,
+     "model": "claude-opus-4-6_max"
+    },
+    {
+     "date": "2026-04-16",
+     "score": 0.4333,
+     "model": "claude-opus-4-7_max"
+    },
+    {
+     "date": "2026-05-28",
+     "score": 0.6556,
+     "model": "claude-opus-4-8_max"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.7,
+     "model": "claude-fable-5_max"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.8778,
+     "model": "claude-opus-5_max"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.9333,
+     "model": "claude-fable-5-1_max"
+    },
+    {
+     "date": "2026-09-22",
+     "score": 0.9556,
+     "model": "claude-opus-5-5_max"
+    },
+    {
+     "date": "2026-09-28",
+     "score": 0.9778,
+     "model": "claude-sonnet-5-5_max"
+    }
+   ],
+   "velocity": 7.78,
+   "models": 47,
+   "page": {
+    "slug": "mirrorcode",
+    "checked": "2026-11-17",
+    "description": "A long-horizon coding benchmark. Models reimplement entire programs end-to-end, without access to the original source code.",
+    "links": [
+     "https://arxiv.org/abs/2606.30182",
+     "https://github.com/epoch-research/MirrorCode"
+    ],
+    "url": "https://epoch.ai/benchmarks/mirrorcode"
+   }
+  },
+  {
+   "name": "Aider polyglot",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-12-21",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "aider_polyglot_external.csv",
+   "top": {
+    "score": 0.88,
+    "model": "gpt-5-2025-08-07_high",
+    "org": "OpenAI",
+    "date": "2025-08-07"
+   },
+   "history": [
+    {
+     "date": "2024-03-26",
+     "score": 0.102,
+     "model": "openhands-lm-32b-v0.1"
+    },
+    {
+     "date": "2024-08-06",
+     "score": 0.231,
+     "model": "gpt-4o-2024-08-06"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.329,
+     "model": "o1-mini-2024-09-12_unknown"
+    },
+    {
+     "date": "2024-10-22",
+     "score": 0.516,
+     "model": "claude-3-5-sonnet-20241022"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.617,
+     "model": "o1-2024-12-17_high"
+    },
+    {
+     "date": "2025-02-24",
+     "score": 0.649,
+     "model": "claude-3-7-sonnet-20250219_32K"
+    },
+    {
+     "date": "2025-03-25",
+     "score": 0.729,
+     "model": "gemini-2.5-pro-exp-03-25"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.813,
+     "model": "o3-2025-04-16_high"
+    },
+    {
+     "date": "2025-06-05",
+     "score": 0.831,
+     "model": "gemini-2.5-pro-preview-06-05_32K"
+    },
+    {
+     "date": "2025-06-10",
+     "score": 0.849,
+     "model": "o3-pro-2025-06-10_high"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.88,
+     "model": "gpt-5-2025-08-07_high"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 72,
+   "page": {
+    "slug": "aider-polyglot",
+    "checked": "2026-11-17",
+    "description": "A benchmark that evaluates models’ performance on a set of challenging programming problems from Exercism, an online programming education platform.",
+    "links": [
+     "https://github.com/Aider-AI/polyglot-benchmark"
+    ],
+    "url": "https://epoch.ai/benchmarks/aider-polyglot"
+   }
+  },
+  {
+   "name": "ANLI",
+   "ceiling": 1.0,
+   "baseline": 0.3333333333333333,
+   "released": "2019-10-31",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "adversarial_nli_external.csv",
+   "top": {
+    "score": 0.873,
+    "model": "UNICORN",
+    "org": null,
+    "date": ""
+   },
+   "history": [
+    {
+     "date": "2021-10-11",
+     "score": 0.397,
+     "model": "MT-NLG (ours) "
+    },
+    {
+     "date": "2023-09-27",
+     "score": 0.471,
+     "model": "Mistral 7b             "
+    },
+    {
+     "date": "2023-11-06",
+     "score": 0.581,
+     "model": "GPT-3.5 version 1106   "
+    }
+   ],
+   "velocity": 0.0,
+   "models": 12,
+   "page": {
+    "slug": "anli",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "ARC-AGI",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2019-11-05",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "arc_agi_external.csv",
+   "top": {
+    "score": 0.985,
+    "model": "Claude Fable 5 (XHigh)",
+    "org": "Anthropic",
+    "date": "2026-06-09"
+   },
+   "history": [
+    {
+     "date": "2024-09-12",
+     "score": 0.18,
+     "model": "o1-preview"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.307,
+     "model": "o1 (Medium)"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.345,
+     "model": "o3-mini (High)"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.6083,
+     "model": "o3 (High)"
+    },
+    {
+     "date": "2025-07-09",
+     "score": 0.6667,
+     "model": "Grok 4 (Thinking)"
+    },
+    {
+     "date": "2025-10-07",
+     "score": 0.702,
+     "model": "GPT-5 Pro"
+    },
+    {
+     "date": "2025-11-13",
+     "score": 0.7283,
+     "model": "GPT-5.1 (Thinking, High)"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.75,
+     "model": "Gemini 3 Pro"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.8,
+     "model": "Claude Opus 4.5 (64k thinking)"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.905,
+     "model": "GPT-5.2 Pro (X-High)"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.94,
+     "model": "Claude Opus 4.6 (120K, High)"
+    },
+    {
+     "date": "2026-02-12",
+     "score": 0.96,
+     "model": "Gemini 3 Deep Think (2/26)"
+    },
+    {
+     "date": "2026-02-19",
+     "score": 0.98,
+     "model": "Gemini 3.1 Pro (Preview)"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.985,
+     "model": "Claude Fable 5 (XHigh)"
+    }
+   ],
+   "velocity": 2.14,
+   "models": 314,
+   "page": {
+    "slug": "arc-agi",
+    "checked": "2026-11-17",
+    "description": "A concept-learning benchmark that evaluates few-shot abstraction, pattern induction, and program-like reasoning from input–output examples.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/arc-agi"
+   }
+  },
+  {
+   "name": "ARC AI2",
+   "ceiling": 1.0,
+   "baseline": 0.25,
+   "released": "2018-03-14",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "arc_ai2_external.csv",
+   "top": {
+    "score": 0.963,
+    "model": "GPT-4",
+    "org": null,
+    "date": ""
+   },
+   "history": [
+    {
+     "date": "2019-11-05",
+     "score": 0.25,
+     "model": "GPT2-XL-1.5B"
+    },
+    {
+     "date": "2021-08-05",
+     "score": 0.363,
+     "model": "GPT-J-6B"
+    },
+    {
+     "date": "2022-01-27",
+     "score": 0.532,
+     "model": "GPT-3 (175B) (One-shot)"
+    },
+    {
+     "date": "2022-03-15",
+     "score": 0.852,
+     "model": "GPT-3.5"
+    },
+    {
+     "date": "2023-07-20",
+     "score": 0.861,
+     "model": "StableBeluga2 70B"
+    },
+    {
+     "date": "2023-08-09",
+     "score": 0.863,
+     "model": "Claude Instant 1.2"
+    },
+    {
+     "date": "2023-11-06",
+     "score": 0.874,
+     "model": "GPT-3.5 version 1106   "
+    },
+    {
+     "date": "2024-04-23",
+     "score": 0.916,
+     "model": "Phi-3-medium 14b       "
+    },
+    {
+     "date": "2024-05-07",
+     "score": 0.922,
+     "model": "DeepSeek-V2 Base       "
+    },
+    {
+     "date": "2024-07-23",
+     "score": 0.953,
+     "model": "LLaMA-3.1 405B Base    "
+    }
+   ],
+   "velocity": 0.0,
+   "models": 117,
+   "page": {
+    "slug": "arc-ai2",
+    "checked": "2026-11-17",
+    "description": "A multiple-choice science benchmark assessing grade-school science knowledge and reasoning on questions from the AI2 ARC dataset.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/arc-ai2"
+   }
+  },
+  {
+   "name": "Balrog",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-11-20",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "balrog_external.csv",
+   "top": {
+    "score": 0.683,
+    "model": "gpt-6-astra_max",
+    "org": "OpenAI",
+    "date": "2026-09-03"
+   },
+   "history": [
+    {
+     "date": "2024-05-13",
+     "score": 0.323,
+     "model": "gpt-4o-2024-05-13"
+    },
+    {
+     "date": "2024-10-22",
+     "score": 0.326,
+     "model": "claude-3-5-sonnet-20241022"
+    },
+    {
+     "date": "2025-01-20",
+     "score": 0.349,
+     "model": "DeepSeek-R1"
+    },
+    {
+     "date": "2025-03-25",
+     "score": 0.433,
+     "model": "gemini-2.5-pro-exp-03-25"
+    },
+    {
+     "date": "2025-07-09",
+     "score": 0.436,
+     "model": "grok-4-0709"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.581,
+     "model": "gemini-3-pro-preview"
+    },
+    {
+     "date": "2026-07-09",
+     "score": 0.6,
+     "model": "gpt-5.6-sol_max"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.634,
+     "model": "claude-opus-5_max"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.683,
+     "model": "gpt-6-astra_max"
+    }
+   ],
+   "velocity": 2.06,
+   "models": 40,
+   "page": {
+    "slug": "balrog",
+    "checked": "2026-11-17",
+    "description": "A benchmark which evaluates models on their ability to play a series of games with widely varying difficulties.",
+    "links": [
+     "https://arxiv.org/abs/2411.13543",
+     "https://github.com/balrog-ai/Balrog"
+    ],
+    "url": "https://epoch.ai/benchmarks/balrog"
+   }
+  },
+  {
+   "name": "BBH",
+   "ceiling": 1.0,
+   "baseline": 0.25,
+   "released": "2022-10-17",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "bbh_external.csv",
+   "top": {
+    "score": 0.892,
+    "model": "Gemini 1.5 Pro (May 2024)",
+    "org": "Google DeepMind",
+    "date": "2024-05-14"
+   },
+   "history": [
+    {
+     "date": "2023-02-24",
+     "score": 0.584,
+     "model": "LLaMA 65B"
+    },
+    {
+     "date": "2023-06-13",
+     "score": 0.7512,
+     "model": "GPT-4"
+    },
+    {
+     "date": "2024-02-15",
+     "score": 0.84,
+     "model": "Gemini 1.5 Pro (Feb 2024)"
+    },
+    {
+     "date": "2024-05-14",
+     "score": 0.892,
+     "model": "Gemini 1.5 Pro (May 2024)"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 74,
+   "page": {
+    "slug": "bbh",
+    "checked": "2026-11-17",
+    "description": "A curated subset of BIG-bench tasks that remain difficult for large language models, probing compositional, symbolic, and multi-step reasoning.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/bbh"
+   }
+  },
+  {
+   "name": "CadEval",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-04-22",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "cad_eval_external.csv",
+   "top": {
+    "score": 0.74,
+    "model": "o3-2025-04-16",
+    "org": "OpenAI",
+    "date": "2025-04-16"
+   },
+   "history": [
+    {
+     "date": "2024-03-07",
+     "score": 0.12,
+     "model": "claude-3-haiku-20240307"
+    },
+    {
+     "date": "2024-08-06",
+     "score": 0.26,
+     "model": "gpt-4o-2024-08-06"
+    },
+    {
+     "date": "2024-09-24",
+     "score": 0.34,
+     "model": "gemini-1.5-pro"
+    },
+    {
+     "date": "2024-10-22",
+     "score": 0.48,
+     "model": "claude-3-5-sonnet-20241022"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.56,
+     "model": "o1-2024-12-17"
+    },
+    {
+     "date": "2025-03-31",
+     "score": 0.64,
+     "model": "gemini-2.5-pro-preview-03-25"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.74,
+     "model": "o3-2025-04-16"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 15,
+   "page": {
+    "slug": "cadeval",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "Cybench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-08-15",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "cybench_external.csv",
+   "top": {
+    "score": 0.93,
+    "model": "claude-opus-4-6_unknown",
+    "org": "Anthropic",
+    "date": "2026-02-05"
+   },
+   "history": [
+    {
+     "date": "2024-02-15",
+     "score": 0.075,
+     "model": "gemini-1.5-pro-001-feb24"
+    },
+    {
+     "date": "2024-02-29",
+     "score": 0.1,
+     "model": "claude-3-opus-20240229"
+    },
+    {
+     "date": "2024-06-20",
+     "score": 0.175,
+     "model": "claude-3-5-sonnet-20240620"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.225,
+     "model": "o3-mini-2025-01-31_medium"
+    },
+    {
+     "date": "2025-05-22",
+     "score": 0.38,
+     "model": "claude-opus-4-20250514"
+    },
+    {
+     "date": "2025-07-09",
+     "score": 0.43,
+     "model": "grok-4-0709"
+    },
+    {
+     "date": "2025-09-29",
+     "score": 0.6,
+     "model": "claude-sonnet-4-5-20250929_unknown"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.82,
+     "model": "claude-opus-4-5-20251101_unknown"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.93,
+     "model": "claude-opus-4-6_unknown"
+    }
+   ],
+   "velocity": 2.75,
+   "models": 22,
+   "page": {
+    "slug": "cybench",
+    "checked": "2026-11-17",
+    "description": "A cybersecurity agent benchmark measuring autonomous vulnerability discovery and exploitation across sandboxed challenges.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/cybench"
+   }
+  },
+  {
+   "name": "DeepResearch Bench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-06-13",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "deepresearchbench_external.csv",
+   "top": {
+    "score": 0.553,
+    "model": "claude-opus-4-6_high",
+    "org": "Anthropic",
+    "date": "2026-02-05"
+   },
+   "history": [
+    {
+     "date": "2025-02-24",
+     "score": 0.436,
+     "model": "claude-3-7-sonnet-20250219_2K"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.452,
+     "model": "o3-2025-04-16_medium"
+    },
+    {
+     "date": "2025-05-22",
+     "score": 0.468,
+     "model": "claude-opus-4-20250514_2K"
+    },
+    {
+     "date": "2025-07-09",
+     "score": 0.473,
+     "model": "grok-4-0709"
+    },
+    {
+     "date": "2025-08-05",
+     "score": 0.483,
+     "model": "claude-opus-4-1-20250805"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.496,
+     "model": "gpt-5-2025-08-07_low"
+    },
+    {
+     "date": "2025-09-29",
+     "score": 0.526,
+     "model": "claude-sonnet-4-5-20250929_2K"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.548,
+     "model": "claude-opus-4-5-20251101_high"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.553,
+     "model": "claude-opus-4-6_high"
+    }
+   ],
+   "velocity": 0.23,
+   "models": 41,
+   "page": {
+    "slug": "deepresearch-bench",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "Fiction.LiveBench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-02-21",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "fictionlivebench_external.csv",
+   "top": {
+    "score": 0.972,
+    "model": "gpt-5-2025-08-07_medium",
+    "org": "OpenAI",
+    "date": "2025-08-07"
+   },
+   "history": [
+    {
+     "date": "2024-12-06",
+     "score": 0.333,
+     "model": "Llama-3.3-70B-Instruct"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.833,
+     "model": "o1-2024-12-17_medium"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.889,
+     "model": "o3-2025-04-16_medium"
+    },
+    {
+     "date": "2025-06-05",
+     "score": 0.917,
+     "model": "gemini-2.5-pro-preview-06-05"
+    },
+    {
+     "date": "2025-06-10",
+     "score": 0.972,
+     "model": "o3-pro-2025-06-10_medium"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 62,
+   "page": {
+    "slug": "fiction-livebench",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "GeoBench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-03-01",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "geobench_external.csv",
+   "top": {
+    "score": 0.89,
+    "model": "claude-fable-5_high",
+    "org": "Anthropic",
+    "date": "2026-06-09"
+   },
+   "history": [
+    {
+     "date": "2024-07-18",
+     "score": 0.64,
+     "model": "gpt-4o-mini-2024-07-18"
+    },
+    {
+     "date": "2024-09-24",
+     "score": 0.76,
+     "model": "gemini-1.5-flash-002"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.8,
+     "model": "o1-2024-12-17_medium"
+    },
+    {
+     "date": "2025-03-25",
+     "score": 0.84,
+     "model": "gemini-2.5-pro-exp-03-25"
+    },
+    {
+     "date": "2025-05-06",
+     "score": 0.86,
+     "model": "gemini-2.5-pro-preview-05-06"
+    },
+    {
+     "date": "2025-12-17",
+     "score": 0.88,
+     "model": "gemini-3-flash-preview"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.89,
+     "model": "claude-fable-5_high"
+    }
+   ],
+   "velocity": 0.25,
+   "models": 49,
+   "page": {
+    "slug": "geobench",
+    "checked": "2026-11-17",
+    "description": "A benchmark testing models’ ability to identify the real world location a picture was taken at, based on the popular game [GeoGuessr](https://www.geoguessr.com/).",
+    "links": [
+     "https://github.com/ccmdi/geobench"
+    ],
+    "url": "https://epoch.ai/benchmarks/geobench"
+   }
+  },
+  {
+   "name": "GSM8K",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2021-10-27",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "gsm8k_external.csv",
+   "top": {
+    "score": 0.945,
+    "model": "DS-Coder-V2-Instruct",
+    "org": "DeepSeek",
+    "date": "2024-06-17"
+   },
+   "history": [
+    {
+     "date": "2020-06-22",
+     "score": 0.007,
+     "model": "babbage (1.3B)"
+    },
+    {
+     "date": "2022-03-15",
+     "score": 0.568,
+     "model": "code-davinci-002"
+    },
+    {
+     "date": "2022-11-28",
+     "score": 0.782,
+     "model": "GPT-3.5 (8-shot)"
+    },
+    {
+     "date": "2023-03-14",
+     "score": 0.92,
+     "model": "GPT-4"
+    },
+    {
+     "date": "2024-06-17",
+     "score": 0.945,
+     "model": "DS-Coder-V2-Instruct"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 203,
+   "page": {
+    "slug": "gsm8k",
+    "checked": "2026-11-17",
+    "description": "A grade-school math word problem benchmark focused on multi-step arithmetic reasoning and exact-match solutions.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/gsm8k"
+   }
+  },
+  {
+   "name": "GSO-Bench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-05-29",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "gso_external.csv",
+   "top": {
+    "score": 0.8824,
+    "model": "claude-fable-5-1_unknown",
+    "org": "Anthropic",
+    "date": "2026-09-01"
+   },
+   "history": [
+    {
+     "date": "2024-10-22",
+     "score": 0.046,
+     "model": "claude-3-5-sonnet-20241022"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.0882,
+     "model": "o3-2025-04-16_high"
+    },
+    {
+     "date": "2025-09-29",
+     "score": 0.1471,
+     "model": "claude-sonnet-4-5-20250929_unknown"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.1863,
+     "model": "gemini-3-pro-preview"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.265,
+     "model": "claude-opus-4-5-20251101"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.2745,
+     "model": "gpt-5.2-2025-12-11_high"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.412,
+     "model": "claude-opus-4-6_high"
+    },
+    {
+     "date": "2026-04-16",
+     "score": 0.4412,
+     "model": "claude-opus-4-7_high"
+    },
+    {
+     "date": "2026-05-28",
+     "score": 0.4706,
+     "model": "claude-opus-4-8_unknown"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.7843,
+     "model": "claude-fable-5_unknown"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.8824,
+     "model": "claude-fable-5-1_unknown"
+    }
+   ],
+   "velocity": 6.13,
+   "models": 42,
+   "page": {
+    "slug": "gso-bench",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "HellaSwag",
+   "ceiling": 1.0,
+   "baseline": 0.25,
+   "released": "2019-05-19",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "hella_swag_external.csv",
+   "top": {
+    "score": 0.953,
+    "model": "GPT-4",
+    "org": "OpenAI",
+    "date": "2023-03-14"
+   },
+   "history": [
+    {
+     "date": "2019-11-05",
+     "score": 0.4,
+     "model": "GPT2-XL-1.5B"
+    },
+    {
+     "date": "2020-06-22",
+     "score": 0.555,
+     "model": "babbage (1.3B)"
+    },
+    {
+     "date": "2021-08-05",
+     "score": 0.662,
+     "model": "GPT-J-6B"
+    },
+    {
+     "date": "2021-10-11",
+     "score": 0.824,
+     "model": "Megatron-NLG (530B)"
+    },
+    {
+     "date": "2022-04-04",
+     "score": 0.838,
+     "model": "PaLM-540B"
+    },
+    {
+     "date": "2022-11-28",
+     "score": 0.855,
+     "model": "GPT-3.5"
+    },
+    {
+     "date": "2023-03-14",
+     "score": 0.953,
+     "model": "GPT-4"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 110,
+   "page": {
+    "slug": "hellaswag",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "LAMBADA",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2016-06-20",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "lambada_external.csv",
+   "top": {
+    "score": 0.8715,
+    "model": "MT-NLG (ours) ",
+    "org": "Microsoft,Nvidia",
+    "date": "2021-10-11"
+   },
+   "history": [
+    {
+     "date": "2021-10-11",
+     "score": 0.8715,
+     "model": "MT-NLG (ours) "
+    }
+   ],
+   "velocity": 0.0,
+   "models": 59,
+   "page": {
+    "slug": "lambada",
+    "checked": "2026-11-17",
+    "description": "A long-context language modeling benchmark where the final word of a passage must be predicted from broader discourse.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/lambada"
+   }
+  },
+  {
+   "name": "Lech Mazur Writing",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-01-31",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "lech-mazur-writing",
+    "checked": "2026-11-17",
+    "description": "A creative story-writing benchmark where models must weave ten assigned elements into short stories, graded on a 0–10 rubric by a panel of LLM judges. Frozen at the benchmark's final 0–10 leaderboard (August 2025).",
+    "links": [
+     "https://github.com/lechmazur/writing"
+    ],
+    "url": "https://epoch.ai/benchmarks/lech-mazur-writing"
+   }
+  },
+  {
+   "name": "MMLU",
+   "ceiling": 1.0,
+   "baseline": 0.25,
+   "released": "2020-09-07",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "mmlu_external.csv",
+   "top": {
+    "score": 0.881,
+    "model": "GPT-4o",
+    "org": "OpenAI",
+    "date": "2024-11-20"
+   },
+   "history": [
+    {
+     "date": "2021-08-05",
+     "score": 0.257,
+     "model": "GPT-J-6B"
+    },
+    {
+     "date": "2021-12-08",
+     "score": 0.6,
+     "model": "Gopher"
+    },
+    {
+     "date": "2022-03-15",
+     "score": 0.7,
+     "model": "GPT-3.5"
+    },
+    {
+     "date": "2023-03-14",
+     "score": 0.864,
+     "model": "GPT-4 (initial release)"
+    },
+    {
+     "date": "2024-06-20",
+     "score": 0.865,
+     "model": "Claude 3.5 Sonnet (20240620)"
+    },
+    {
+     "date": "2024-09-24",
+     "score": 0.869,
+     "model": "Gemini 1.5 Pro (002)"
+    },
+    {
+     "date": "2024-10-22",
+     "score": 0.873,
+     "model": "Claude 3.5 Sonnet (20241022)"
+    },
+    {
+     "date": "2024-11-20",
+     "score": 0.881,
+     "model": "GPT-4o"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 211,
+   "page": {
+    "slug": "mmlu",
+    "checked": "2026-11-17",
+    "description": "A multi-task exam-style benchmark covering dozens of academic and professional subjects to test breadth of knowledge and problem solving.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/mmlu"
+   }
+  },
+  {
+   "name": "OpenBookQA",
+   "ceiling": 1.0,
+   "baseline": 0.25,
+   "released": "2018-09-08",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "open_book_qa_external.csv",
+   "top": {
+    "score": 0.88,
+    "model": "Phi-3-small",
+    "org": "Microsoft",
+    "date": "2024-04-23"
+   },
+   "history": [
+    {
+     "date": "2019-11-05",
+     "score": 0.224,
+     "model": "GPT2-XL-1.5B"
+    },
+    {
+     "date": "2021-03-30",
+     "score": 0.232,
+     "model": "GPT-Neo-2.7B"
+    },
+    {
+     "date": "2021-08-05",
+     "score": 0.382,
+     "model": "GPT-J-6B"
+    },
+    {
+     "date": "2021-12-13",
+     "score": 0.63,
+     "model": "GLaM"
+    },
+    {
+     "date": "2022-01-27",
+     "score": 0.654,
+     "model": "GPT-3 (175B)"
+    },
+    {
+     "date": "2022-04-04",
+     "score": 0.68,
+     "model": "PaLM 540B"
+    },
+    {
+     "date": "2023-09-27",
+     "score": 0.798,
+     "model": "Mistral 7b             "
+    },
+    {
+     "date": "2023-11-06",
+     "score": 0.86,
+     "model": "GPT-3.5 version 1106   "
+    },
+    {
+     "date": "2024-04-23",
+     "score": 0.88,
+     "model": "Phi-3-small"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 62,
+   "page": {
+    "slug": "openbookqa",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "OSWorld",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-04-11",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "os_world_external.csv",
+   "top": {
+    "score": 0.721,
+    "model": "claude-sonnet-4-6",
+    "org": "Anthropic",
+    "date": "2026-02-17"
+   },
+   "history": [
+    {
+     "date": "2024-09-19",
+     "score": 0.05,
+     "model": "Qwen2.5-VL-72B-Instruct"
+    },
+    {
+     "date": "2025-02-24",
+     "score": 0.358,
+     "model": "claude-3-7-sonnet-20250219"
+    },
+    {
+     "date": "2025-05-22",
+     "score": 0.439,
+     "model": "claude-sonnet-4-20250514"
+    },
+    {
+     "date": "2025-09-29",
+     "score": 0.629,
+     "model": "claude-sonnet-4-5-20250929"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.663,
+     "model": "claude-opus-4-5-20251101"
+    },
+    {
+     "date": "2026-02-17",
+     "score": 0.721,
+     "model": "claude-sonnet-4-6"
+    }
+   ],
+   "velocity": 0.77,
+   "models": 10,
+   "page": {
+    "slug": "osworld",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "PIQA",
+   "ceiling": 1.0,
+   "baseline": 0.5,
+   "released": "2019-11-26",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "piqa_external.csv",
+   "top": {
+    "score": 0.901,
+    "model": "UNICORN",
+    "org": null,
+    "date": ""
+   },
+   "history": [
+    {
+     "date": "2019-11-05",
+     "score": 0.705,
+     "model": "GPT2-XL-1.5B"
+    },
+    {
+     "date": "2021-03-30",
+     "score": 0.729,
+     "model": "GPT-Neo-2.7B"
+    },
+    {
+     "date": "2021-08-05",
+     "score": 0.754,
+     "model": "GPT-J-6B"
+    },
+    {
+     "date": "2021-10-11",
+     "score": 0.8319,
+     "model": "MT-NLG"
+    },
+    {
+     "date": "2023-06-22",
+     "score": 0.842,
+     "model": "Inflection-1"
+    },
+    {
+     "date": "2023-09-06",
+     "score": 0.849,
+     "model": "Falcon 180B"
+    },
+    {
+     "date": "2024-07-18",
+     "score": 0.887,
+     "model": "GPT-4o-mini"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 104,
+   "page": {
+    "slug": "piqa",
+    "checked": "2026-11-17",
+    "description": "A physical commonsense benchmark where models choose the more feasible solution to everyday problems.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/piqa"
+   }
+  },
+  {
+   "name": "ScienceQA",
+   "ceiling": 1.0,
+   "baseline": 0.25,
+   "released": "2022-09-20",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "scienceqa",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "SimpleBench",
+   "ceiling": 1.0,
+   "baseline": 0.1666666666666666,
+   "released": "2024-10-31",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "simplebench_external.csv",
+   "top": {
+    "score": 0.949,
+    "model": "claude-fable-5-2_unknown",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2024-02-29",
+     "score": 0.235,
+     "model": "claude-3-opus-20240229"
+    },
+    {
+     "date": "2024-04-09",
+     "score": 0.251,
+     "model": "gpt-4-turbo-2024-04-09"
+    },
+    {
+     "date": "2024-06-20",
+     "score": 0.275,
+     "model": "claude-3-5-sonnet-20240620"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.417,
+     "model": "o1-preview-2024-09-12"
+    },
+    {
+     "date": "2025-02-24",
+     "score": 0.464,
+     "model": "claude-3-7-sonnet-20250219_12K"
+    },
+    {
+     "date": "2025-03-25",
+     "score": 0.516,
+     "model": "gemini-2.5-pro-exp-03-25"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.531,
+     "model": "o3-2025-04-16_high"
+    },
+    {
+     "date": "2025-05-22",
+     "score": 0.588,
+     "model": "claude-opus-4-20250514_12K"
+    },
+    {
+     "date": "2025-06-05",
+     "score": 0.624,
+     "model": "gemini-2.5-pro-preview-06-05"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.764,
+     "model": "gemini-3-pro-preview"
+    },
+    {
+     "date": "2026-02-19",
+     "score": 0.796,
+     "model": "gemini-3.1-pro-preview"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.819,
+     "model": "claude-fable-5_max"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.866,
+     "model": "claude-fable-5-1_unknown"
+    },
+    {
+     "date": "2026-09-22",
+     "score": 0.884,
+     "model": "claude-opus-5-5_unknown"
+    },
+    {
+     "date": "2026-10-13",
+     "score": 0.917,
+     "model": "gemini-4-argon_unknown"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.949,
+     "model": "claude-fable-5-2_unknown"
+    }
+   ],
+   "velocity": 2.71,
+   "models": 126,
+   "page": {
+    "slug": "simplebench",
+    "checked": "2026-11-17",
+    "description": "A benchmark testing common-sense reasoning including ‘trick questions’ and situations that require an understanding of space, time or social cues.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/simplebench"
+   }
+  },
+  {
+   "name": "SuperGLUE",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2019-05-02",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "superglue_external.csv",
+   "top": {
+    "score": 0.889,
+    "model": "T5-11B",
+    "org": "Google",
+    "date": ""
+   },
+   "history": [
+    {
+     "date": "2022-01-27",
+     "score": 0.718,
+     "model": "GPT-3 Few-Shot"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 8,
+   "page": {
+    "slug": "superglue",
+    "checked": "2026-11-17",
+    "description": "A suite of diverse language understanding tasks designed to be more challenging than GLUE, emphasizing reasoning and sample efficiency.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/superglue"
+   }
+  },
+  {
+   "name": "Terminal Bench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-05-19",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "terminalbench_external.csv",
+   "top": {
+    "score": 0.8472,
+    "model": "GPT-5.5",
+    "org": "OpenAI",
+    "date": "2026-04-23"
+   },
+   "history": [
+    {
+     "date": "2025-06-17",
+     "score": 0.3264,
+     "model": "Gemini 2.5 Pro"
+    },
+    {
+     "date": "2025-08-05",
+     "score": 0.38,
+     "model": "claude-opus-4-1-20250805"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.4961,
+     "model": "GPT-5"
+    },
+    {
+     "date": "2025-11-12",
+     "score": 0.6157,
+     "model": "GPT-5.1-Codex-Mini"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.6943,
+     "model": "Gemini 3 Pro"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.798,
+     "model": "Claude Opus 4.6"
+    },
+    {
+     "date": "2026-02-19",
+     "score": 0.8022,
+     "model": "Gemini 3.1 Pro"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.818,
+     "model": "GPT-5.4"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.8472,
+     "model": "GPT-5.5"
+    }
+   ],
+   "velocity": 1.93,
+   "models": 75,
+   "page": {
+    "slug": "terminal-bench",
+    "checked": "2026-11-17",
+    "description": "A benchmark of tasks which require a model to complete tasks using a computer terminal, testing its ability to understand and employ the programs available to it.",
+    "links": [
+     "https://github.com/harbor-framework/terminal-bench-2"
+    ],
+    "url": "https://epoch.ai/benchmarks/terminal-bench"
+   }
+  },
+  {
+   "name": "The Agent Company",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-12-18",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "the_agent_company_external.csv",
+   "top": {
+    "score": 0.429,
+    "model": "TTE-MatrixAgent + Deepseek-V3.2",
+    "org": "DeepSeek",
+    "date": "2025-09-29"
+   },
+   "history": [
+    {
+     "date": "2024-06-07",
+     "score": 0.011,
+     "model": "OpenHands + Qwen-2-72b"
+    },
+    {
+     "date": "2024-07-23",
+     "score": 0.074,
+     "model": "OpenHands + Llama-3.1-405b"
+    },
+    {
+     "date": "2024-10-22",
+     "score": 0.24,
+     "model": "OpenHands + Claude 3.5 Sonnet"
+    },
+    {
+     "date": "2025-02-24",
+     "score": 0.309,
+     "model": "OpenHands-Versa + Claude 3.7 Sonnet"
+    },
+    {
+     "date": "2025-05-22",
+     "score": 0.331,
+     "model": "OpenHands-Versa + Claude Sonnet 4"
+    },
+    {
+     "date": "2025-09-25",
+     "score": 0.411,
+     "model": "MUSE + Gemini 2.5 Flash"
+    },
+    {
+     "date": "2025-09-29",
+     "score": 0.429,
+     "model": "TTE-MatrixAgent + Deepseek-V3.2"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 16,
+   "page": {
+    "slug": "the-agent-company",
+    "checked": "2026-11-17",
+    "description": "A community-run evaluation of end-to-end software agents that attempt realistic tasks in reproducible environments.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/the-agent-company"
+   }
+  },
+  {
+   "name": "TriviaQA",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2017-05-09",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "trivia_qa_external.csv",
+   "top": {
+    "score": 0.876,
+    "model": "LLAMA 2 70B",
+    "org": "Meta AI",
+    "date": "2023-07-18"
+   },
+   "history": [
+    {
+     "date": "2021-12-08",
+     "score": 0.572,
+     "model": "Gopher 280B"
+    },
+    {
+     "date": "2021-12-13",
+     "score": 0.758,
+     "model": "GLaM"
+    },
+    {
+     "date": "2022-04-04",
+     "score": 0.814,
+     "model": "PaLM-540B"
+    },
+    {
+     "date": "2023-02-24",
+     "score": 0.86,
+     "model": "LLAMA 1 65B"
+    },
+    {
+     "date": "2023-04-18",
+     "score": 0.867,
+     "model": "Claude 1.3"
+    },
+    {
+     "date": "2023-07-11",
+     "score": 0.875,
+     "model": "Claude 2"
+    },
+    {
+     "date": "2023-07-18",
+     "score": 0.876,
+     "model": "LLAMA 2 70B"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 51,
+   "page": {
+    "slug": "triviaqa",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "VPCT",
+   "ceiling": 1.0,
+   "baseline": 0.3333333333333333,
+   "released": "2025-01-30",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "vpct_external.csv",
+   "top": {
+    "score": 0.91,
+    "model": "gemini-3-pro-preview",
+    "org": "Google DeepMind",
+    "date": "2025-11-18"
+   },
+   "history": [
+    {
+     "date": "2024-06-20",
+     "score": 0.33,
+     "model": "claude-3-5-sonnet-20240620"
+    },
+    {
+     "date": "2024-07-18",
+     "score": 0.34,
+     "model": "gpt-4o-mini-2024-07-18"
+    },
+    {
+     "date": "2024-11-20",
+     "score": 0.4,
+     "model": "gpt-4o-2024-11-20"
+    },
+    {
+     "date": "2025-02-27",
+     "score": 0.45,
+     "model": "gpt-4.5-preview-2025-02-27"
+    },
+    {
+     "date": "2025-03-31",
+     "score": 0.48,
+     "model": "gemini-2.5-pro-preview-03-25"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.575,
+     "model": "o4-mini-2025-04-16_medium"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.66,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.91,
+     "model": "gemini-3-pro-preview"
+    }
+   ],
+   "velocity": 2.08,
+   "models": 38,
+   "page": {
+    "slug": "vpct",
+    "checked": "2026-11-17",
+    "description": "A series of questions testing models’ ability to comprehend diagrams depicting simple scenarios involving balls falling down a series of ramps and landing in buckets.",
+    "links": [
+     "https://github.com/camelCase12/vpct-runner"
+    ],
+    "url": "https://epoch.ai/benchmarks/vpct"
+   }
+  },
+  {
+   "name": "WeirdML",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-01-16",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "weirdml_external.csv",
+   "top": {
+    "score": 0.9357,
+    "model": "gpt-6-astra_promax",
+    "org": "OpenAI",
+    "date": "2026-09-03"
+   },
+   "history": [
+    {
+     "date": "2023-06-13",
+     "score": 0.1236,
+     "model": "gpt-4-0613"
+    },
+    {
+     "date": "2024-02-29",
+     "score": 0.1922,
+     "model": "claude-3-opus-20240229"
+    },
+    {
+     "date": "2024-06-20",
+     "score": 0.3097,
+     "model": "claude-3-5-sonnet-20240620"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.4756,
+     "model": "o1-preview-2024-09-12"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.5256,
+     "model": "o4-mini-2025-04-16_high"
+    },
+    {
+     "date": "2025-06-10",
+     "score": 0.5821,
+     "model": "o3-pro-2025-06-10_high"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.607,
+     "model": "gpt-5-2025-08-07_high"
+    },
+    {
+     "date": "2025-11-13",
+     "score": 0.6077,
+     "model": "gpt-5.1-2025-11-13_high"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.6993,
+     "model": "gemini-3-pro-preview"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.7219,
+     "model": "gpt-5.2-2025-12-11_xhigh"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.793,
+     "model": "gpt-5.3-codex"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.8491,
+     "model": "gpt-5.5_xhigh"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.9194,
+     "model": "claude-fable-5_max"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.929,
+     "model": "claude-fable-5-1_max"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.9357,
+     "model": "gpt-6-astra_promax"
+    }
+   ],
+   "velocity": 2.74,
+   "models": 173,
+   "page": {
+    "slug": "weirdml",
+    "checked": "2026-11-17",
+    "description": "A benchmark of nonstandard ML engineering tasks in a variety of domains.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/weirdml"
+   }
+  },
+  {
+   "name": "Winogrande",
+   "ceiling": 1.0,
+   "baseline": 0.5,
+   "released": "2019-07-24",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "wino_grande_external.csv",
+   "top": {
+    "score": 0.892,
+    "model": "LLaMA-3.1 405B Base",
+    "org": "Meta AI",
+    "date": "2024-07-23"
+   },
+   "history": [
+    {
+     "date": "2019-11-05",
+     "score": 0.583,
+     "model": "GPT-2-XL 1.5B"
+    },
+    {
+     "date": "2021-08-05",
+     "score": 0.645,
+     "model": "GPT-J-6B"
+    },
+    {
+     "date": "2021-10-11",
+     "score": 0.789,
+     "model": "Megatron-NLG (530B)"
+    },
+    {
+     "date": "2021-12-13",
+     "score": 0.792,
+     "model": "GLaM"
+    },
+    {
+     "date": "2022-03-15",
+     "score": 0.816,
+     "model": "GPT-3.5"
+    },
+    {
+     "date": "2022-04-04",
+     "score": 0.851,
+     "model": "5-shot PaLM"
+    },
+    {
+     "date": "2023-03-14",
+     "score": 0.875,
+     "model": "GPT-4"
+    },
+    {
+     "date": "2024-02-29",
+     "score": 0.885,
+     "model": "Claude 3 Opus"
+    },
+    {
+     "date": "2024-07-23",
+     "score": 0.892,
+     "model": "LLaMA-3.1 405B Base"
+    }
+   ],
+   "velocity": 0.0,
+   "models": 114,
+   "page": {
+    "slug": "winogrande",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "APEX-Agents",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-01-21",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "apex_agents_external.csv",
+   "top": {
+    "score": 0.842,
+    "model": "Gemini 4 Carbon",
+    "org": "Google DeepMind",
+    "date": "2026-11-10"
+   },
+   "history": [
+    {
+     "date": "2025-08-05",
+     "score": 0.044,
+     "model": "GPT-OSS-120B"
+    },
+    {
+     "date": "2025-12-01",
+     "score": 0.213,
+     "model": "DeepSeek-V3.2"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.463,
+     "model": "Opus 4.6"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.524,
+     "model": "GPT-5.4"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.551,
+     "model": "GPT-5.5"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.636,
+     "model": "Fable 5"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.658,
+     "model": "Opus 5"
+    },
+    {
+     "date": "2026-08-13",
+     "score": 0.678,
+     "model": "Gemini 3.7 Flash"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.686,
+     "model": "Fable 5.1 [claude-fable-5.1]"
+    },
+    {
+     "date": "2026-09-21",
+     "score": 0.7,
+     "model": "Grok 4.7"
+    },
+    {
+     "date": "2026-09-22",
+     "score": 0.735,
+     "model": "Opus 5.5 [claude-opus-5-5]"
+    },
+    {
+     "date": "2026-09-28",
+     "score": 0.755,
+     "model": "Sonnet 5.5 [claude-sonnet-5-5]"
+    },
+    {
+     "date": "2026-10-13",
+     "score": 0.824,
+     "model": "Gemini 4 Argon"
+    },
+    {
+     "date": "2026-11-10",
+     "score": 0.842,
+     "model": "Gemini 4 Carbon"
+    }
+   ],
+   "velocity": 6.66,
+   "models": 66,
+   "page": {
+    "slug": "apex-agents",
+    "checked": "2026-11-17",
+    "description": "A benchmark evaluating whether AI agents can execute long-horizon professional tasks in investment banking, management consulting, and corporate law within realistic simulated work environments.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/apex-agents"
+   }
+  },
+  {
+   "name": "ARC-AGI-2",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-03-24",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "arc_agi_2_external.csv",
+   "top": {
+    "score": 0.95,
+    "model": "GPT-6 Astra (Max)",
+    "org": "OpenAI",
+    "date": "2026-09-03"
+   },
+   "history": [
+    {
+     "date": "2024-07-18",
+     "score": 0.0,
+     "model": "GPT-4o-mini"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.0083,
+     "model": "o1-mini"
+    },
+    {
+     "date": "2025-01-20",
+     "score": 0.013,
+     "model": "Deepseek R1"
+    },
+    {
+     "date": "2025-01-31",
+     "score": 0.0299,
+     "model": "o3-mini (High)"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.0653,
+     "model": "o3 (High)"
+    },
+    {
+     "date": "2025-05-22",
+     "score": 0.0861,
+     "model": "Claude Opus 4 (Thinking 16K)"
+    },
+    {
+     "date": "2025-07-09",
+     "score": 0.1598,
+     "model": "Grok 4 (Thinking)"
+    },
+    {
+     "date": "2025-10-07",
+     "score": 0.1833,
+     "model": "GPT-5 Pro"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.3111,
+     "model": "Gemini 3 Pro"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.3764,
+     "model": "Opus 4.5 (Thinking, 64K)"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.5416,
+     "model": "GPT-5.2 Pro (High)"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.6917,
+     "model": "Claude Opus 4.6 (120K, High)"
+    },
+    {
+     "date": "2026-02-12",
+     "score": 0.8458,
+     "model": "Gemini 3 Deep Think (2/26)"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.85,
+     "model": "GPT-5.5 (xHigh)"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.8917,
+     "model": "Claude Fable 5 (Max)"
+    },
+    {
+     "date": "2026-07-09",
+     "score": 0.925,
+     "model": "GPT-5.6 Sol (Max)"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.95,
+     "model": "GPT-6 Astra (Max)"
+    }
+   ],
+   "velocity": 6.39,
+   "models": 297,
+   "page": {
+    "slug": "arc-agi-2",
+    "checked": "2026-11-17",
+    "description": "A harder successor to ARC-AGI that tests few-shot abstract reasoning and pattern generalization on grid-based tasks, with an added emphasis on efficiency of compute per task solved.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/arc-agi-2"
+   }
+  },
+  {
+   "name": "HLE",
+   "ceiling": 1.0,
+   "baseline": 0.048,
+   "released": "2025-01-23",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "hle",
+    "checked": "2026-11-17",
+    "description": "A set of 2,500 expert-authored questions spanning over 100 academic subjects, designed to test the limits of frontier AI models on problems that require deep, specialized knowledge.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/hle"
+   }
+  },
+  {
+   "name": "PostTrainBench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-03-11",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "posttrainbench_external.csv",
+   "top": {
+    "score": 0.4465,
+    "model": "Fable 5.1 (Max)",
+    "org": "Anthropic",
+    "date": "2026-09-01"
+   },
+   "history": [
+    {
+     "date": "2026-02-19",
+     "score": 0.1811,
+     "model": "Gemini 3.1 Pro"
+    },
+    {
+     "date": "2026-04-16",
+     "score": 0.2434,
+     "model": "Opus 4.7 (xHigh)"
+    },
+    {
+     "date": "2026-05-28",
+     "score": 0.31,
+     "model": "Opus 4.8 (Max)"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.3727,
+     "model": "Fable 5 (Max)"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.4465,
+     "model": "Fable 5.1 (Max)"
+    }
+   ],
+   "velocity": 2.98,
+   "models": 22,
+   "page": {
+    "slug": "posttrainbench",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "CursorBench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-03-11",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "cursorbench",
+    "checked": "2026-11-17",
+    "description": "A benchmark scoring coding agents on ambiguous, multi-file tasks drawn from real Cursor sessions.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/cursorbench"
+   }
+  },
+  {
+   "name": "GBAEval",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-05-02",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "gbaeval",
+    "checked": "2026-11-17",
+    "description": "A long-horizon software engineering benchmark tasking AI coding agents with implementing a Game Boy Advance emulator from scratch.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/gbaeval"
+   }
+  },
+  {
+   "name": "CritPt",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-09-30",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "critpt",
+    "checked": "2026-11-17",
+    "description": "A benchmark testing whether AI can reason through complex, open-ended, research-level physics problems modeled on entry-level original research projects.",
+    "links": [
+     "https://arxiv.org/abs/2509.26574",
+     "https://github.com/CritPt-Benchmark/CritPt"
+    ],
+    "url": "https://epoch.ai/benchmarks/critpt"
+   }
+  },
+  {
+   "name": "ExploitBench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-05-13",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "exploitbench_external.csv",
+   "top": {
+    "score": 0.738,
+    "model": "Claude Mythos Preview (AutoNudge)",
+    "org": "Anthropic",
+    "date": "2026-04-07"
+   },
+   "history": [
+    {
+     "date": "2025-10-15",
+     "score": 0.137,
+     "model": "Claude Haiku 4.5 (AutoNudge)"
+    },
+    {
+     "date": "2026-02-17",
+     "score": 0.236,
+     "model": "Claude Sonnet 4.6"
+    },
+    {
+     "date": "2026-02-19",
+     "score": 0.261,
+     "model": "Gemini 3.1 Pro Preview"
+    },
+    {
+     "date": "2026-04-07",
+     "score": 0.738,
+     "model": "Claude Mythos Preview (AutoNudge)"
+    }
+   ],
+   "velocity": 5.01,
+   "models": 20,
+   "page": {
+    "slug": "exploitbench",
+    "checked": "2026-11-17",
+    "description": "A benchmark measuring how far LLM agents can climb a \"capability ladder\" of software exploitation against real, hardened security vulnerabilities.",
+    "links": [
+     "https://arxiv.org/abs/2605.14153",
+     "https://github.com/exploitbench/exploitbench"
+    ],
+    "url": "https://epoch.ai/benchmarks/exploitbench"
+   }
+  },
+  {
+   "name": "Remote Labor Index",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-10-29",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "rli_external.csv",
+   "top": {
+    "score": 0.4125,
+    "model": "Fable 5.2",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2025-06-05",
+     "score": 0.0083,
+     "model": "gemini-2.5-pro-preview-06-05"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.0167,
+     "model": "gpt-5-2025-08-07"
+    },
+    {
+     "date": "2025-09-29",
+     "score": 0.0208,
+     "model": "claude-4-5-Sonnet"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.0375,
+     "model": "claude-opus-4-5-20251101-thinking"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.0417,
+     "model": "claude-opus-4-6 (CoWork)"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.0625,
+     "model": "Codex GPT 5.5"
+    },
+    {
+     "date": "2026-05-28",
+     "score": 0.0833,
+     "model": "Opus 4.8"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.161,
+     "model": "Fable-5"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.1792,
+     "model": "Fable 5.1"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.2083,
+     "model": "GPT 6 Astra"
+    },
+    {
+     "date": "2026-09-22",
+     "score": 0.2125,
+     "model": "Opus 5.5"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.4125,
+     "model": "Fable 5.2"
+    }
+   ],
+   "velocity": 3.27,
+   "models": 20,
+   "page": {
+    "slug": "remote-labor-index",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "GDPval",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-09-25",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "gdpval_external.csv",
+   "top": {
+    "score": 0.497,
+    "model": "GPT-5.2",
+    "org": "OpenAI",
+    "date": "2025-12-11"
+   },
+   "history": [
+    {
+     "date": "2024-11-20",
+     "score": 0.099,
+     "model": "GPT-4o"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.308,
+     "model": "o3"
+    },
+    {
+     "date": "2025-08-05",
+     "score": 0.436,
+     "model": "Claude Opus 4.1"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.455,
+     "model": "Claude Opus 4.5"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.497,
+     "model": "GPT-5.2"
+    }
+   ],
+   "velocity": 0.51,
+   "models": 11,
+   "page": {
+    "slug": "gdpval",
+    "checked": "2026-11-17",
+    "description": "A benchmark measuring model performance on well-specified tasks drawn from selected real-world occupations.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/gdpval"
+   }
+  },
+  {
+   "name": "CL-bench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-02-03",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "cl_bench_external.csv",
+   "top": {
+    "score": 0.279,
+    "model": "GPT-5.4 (xhigh)",
+    "org": "OpenAI",
+    "date": "2026-03-05"
+   },
+   "history": [
+    {
+     "date": "2025-04-16",
+     "score": 0.178,
+     "model": "o3 (High)"
+    },
+    {
+     "date": "2025-11-13",
+     "score": 0.237,
+     "model": "GPT 5.1 (High)"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.279,
+     "model": "GPT-5.4 (xhigh)"
+    }
+   ],
+   "velocity": 0.35,
+   "models": 23,
+   "page": {
+    "slug": "cl-bench",
+    "checked": "2026-11-17",
+    "description": "A benchmark testing whether models can learn genuinely new knowledge from context at inference time and then apply it to expert-designed tasks.",
+    "links": [
+     "https://arxiv.org/abs/2602.03587",
+     "https://github.com/Tencent-Hunyuan/CL-bench"
+    ],
+    "url": "https://epoch.ai/benchmarks/cl-bench"
+   }
+  },
+  {
+   "name": "CL-bench Life",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-04-29",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "cl_bench_life_external.csv",
+   "top": {
+    "score": 0.222,
+    "model": "GPT 5.5 (High)",
+    "org": "OpenAI",
+    "date": "2026-04-23"
+   },
+   "history": [
+    {
+     "date": "2025-09-29",
+     "score": 0.095,
+     "model": "DeepSeek V3.2 Thinking"
+    },
+    {
+     "date": "2025-11-13",
+     "score": 0.173,
+     "model": "GPT 5.1 (High)"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.217,
+     "model": "GPT 5.4 (xHigh)"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.222,
+     "model": "GPT 5.5 (High)"
+    }
+   ],
+   "velocity": 0.41,
+   "models": 17,
+   "page": {
+    "slug": "cl-bench-life",
+    "checked": "2026-11-17",
+    "description": "A companion to CL-bench testing whether models can learn from and reason over messy, real-life context such as everyday communication, scattered notes, and behavioral traces.",
+    "links": [
+     "https://arxiv.org/abs/2604.27043",
+     "https://huggingface.co/datasets/tencent/CL-bench-Life"
+    ],
+    "url": "https://epoch.ai/benchmarks/cl-bench-life"
+   }
+  },
+  {
+   "name": "OSWorld 2.0",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-06-26",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "osworld_2_external.csv",
+   "top": {
+    "score": 0.3143,
+    "model": "Claude Opus 5 (max)",
+    "org": "Anthropic",
+    "date": "2026-07-24"
+   },
+   "history": [
+    {
+     "date": "2026-02-17",
+     "score": 0.093,
+     "model": "Claude Sonnet 4.6 (medium)"
+    },
+    {
+     "date": "2026-04-16",
+     "score": 0.182,
+     "model": "Claude Opus 4.7 (max)"
+    },
+    {
+     "date": "2026-05-28",
+     "score": 0.206,
+     "model": "Claude Opus 4.8 (max)"
+    },
+    {
+     "date": "2026-07-09",
+     "score": 0.2734,
+     "model": "GPT-5.6 Sol (max)"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.3143,
+     "model": "Claude Opus 5 (max)"
+    }
+   ],
+   "velocity": 2.47,
+   "models": 14,
+   "page": {
+    "slug": "osworld-2-0",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "Surface Evolver Bench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-06-19",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "surface_evolver_bench_external.csv",
+   "top": {
+    "score": 0.95,
+    "model": "claude-fable-5 (high)",
+    "org": "Anthropic",
+    "date": "2026-06-09"
+   },
+   "history": [
+    {
+     "date": "2025-08-05",
+     "score": 0.25,
+     "model": "gpt-oss-120b"
+    },
+    {
+     "date": "2026-04-02",
+     "score": 0.3062,
+     "model": "gemma-4-31b-it (none)"
+    },
+    {
+     "date": "2026-04-14",
+     "score": 0.4438,
+     "model": "qwen3.6-35b-a3b"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.8812,
+     "model": "gpt-5.5 (high)"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.95,
+     "model": "claude-fable-5 (high)"
+    }
+   ],
+   "velocity": 5.84,
+   "models": 28,
+   "page": {
+    "slug": "surface-evolver-bench",
+    "checked": "2026-11-17",
+    "description": "An agentic benchmark testing whether LLMs can write Surface Evolver simulations of liquid surfaces shaped by surface tension.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/surface-evolver-bench"
+   }
+  },
+  {
+   "name": "METR Time Horizons",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-03-19",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "metr_time_horizons_external.csv",
+   "top": {
+    "score": 0.852,
+    "model": "claude-mythos-preview-early",
+    "org": "Anthropic",
+    "date": "2026-04-07"
+   },
+   "history": [
+    {
+     "date": "2019-11-05",
+     "score": 0.101,
+     "model": "gpt2-xl"
+    },
+    {
+     "date": "2023-03-14",
+     "score": 0.3611,
+     "model": "gpt-4-0314"
+    },
+    {
+     "date": "2024-04-09",
+     "score": 0.3674,
+     "model": "gpt-4-turbo-2024-04-09"
+    },
+    {
+     "date": "2024-05-13",
+     "score": 0.4076,
+     "model": "gpt-4o-2024-05-13"
+    },
+    {
+     "date": "2024-09-12",
+     "score": 0.4514,
+     "model": "o1-preview-2024-09-12"
+    },
+    {
+     "date": "2024-10-22",
+     "score": 0.4524,
+     "model": "claude-3-5-sonnet-20241022"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.5105,
+     "model": "o1-2024-12-17_medium"
+    },
+    {
+     "date": "2025-01-20",
+     "score": 0.5193,
+     "model": "DeepSeek-R1"
+    },
+    {
+     "date": "2025-02-24",
+     "score": 0.5997,
+     "model": "claude-3-7-sonnet-20250219_16K"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.6544,
+     "model": "o3-2025-04-16_medium"
+    },
+    {
+     "date": "2025-07-09",
+     "score": 0.6658,
+     "model": "grok-4-0709"
+    },
+    {
+     "date": "2025-08-05",
+     "score": 0.6681,
+     "model": "claude-opus-4-1-20250805_16K"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.6961,
+     "model": "gpt-5-2025-08-07_medium"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.7098,
+     "model": "gemini-3-pro-preview"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.7497,
+     "model": "claude-opus-4-5-20251101_16K"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.7529,
+     "model": "gpt-5.2-2025-12-11_high"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.7886,
+     "model": "claude-opus-4-6_unknown"
+    },
+    {
+     "date": "2026-04-07",
+     "score": 0.852,
+     "model": "claude-mythos-preview-early"
+    }
+   ],
+   "velocity": 1.3,
+   "models": 46,
+   "page": {
+    "slug": "metr-time-horizons",
+    "checked": "2026-11-17",
+    "description": "Durations of the longest task that models can complete correctly more often than not, across a set of software engineering and related tasks.",
+    "links": [
+     "https://arxiv.org/abs/2411.15114",
+     "https://arxiv.org/abs/2503.14499",
+     "https://arxiv.org/abs/2503.17354",
+     "https://github.com/poking-agents/modular-public"
+    ],
+    "url": "https://epoch.ai/benchmarks/metr-time-horizons"
+   }
+  },
+  {
+   "name": "DeepSWE",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-05-26",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "deepswe",
+    "checked": "2026-11-17",
+    "description": "A benchmark of original, long-horizon software engineering tasks written from scratch across active open-source repositories.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/deepswe"
+   }
+  },
+  {
+   "name": "ProofBench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-01-30",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "proofbench_external.csv",
+   "top": {
+    "score": 1.0,
+    "model": "anthropic/claude-fable-5-1",
+    "org": "Anthropic",
+    "date": "2026-09-01"
+   },
+   "history": [
+    {
+     "date": "2025-08-07",
+     "score": 0.18,
+     "model": "openai/gpt-5-2025-08-07"
+    },
+    {
+     "date": "2025-09-29",
+     "score": 0.19,
+     "model": "anthropic/claude-sonnet-4-5-20250929-thinking"
+    },
+    {
+     "date": "2025-11-18",
+     "score": 0.2,
+     "model": "google/gemini-3-pro-preview"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.36,
+     "model": "anthropic/claude-opus-4-5-20251101-thinking"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.5,
+     "model": "anthropic/claude-opus-4-6-thinking"
+    },
+    {
+     "date": "2026-03-05",
+     "score": 0.56,
+     "model": "openai/gpt-5.4-2026-03-05"
+    },
+    {
+     "date": "2026-05-28",
+     "score": 0.69,
+     "model": "anthropic/claude-opus-4-8"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.95,
+     "model": "anthropic/claude-fable-5"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.99,
+     "model": "anthropic/claude-opus-5"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 1.0,
+     "model": "anthropic/claude-fable-5-1"
+    }
+   ],
+   "velocity": 6.76,
+   "models": 85,
+   "page": {
+    "slug": "proofbench",
+    "checked": "2026-11-17",
+    "description": "A benchmark of graduate-level mathematics problems where models must write Lean 4 proofs that pass formal verification.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/proofbench"
+   }
+  },
+  {
+   "name": "FrontierCode",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-06-08",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "frontiercode_external.csv",
+   "top": {
+    "score": 0.5464,
+    "model": "Claude Opus 5.5",
+    "org": "Anthropic",
+    "date": "2026-09-22"
+   },
+   "history": [
+    {
+     "date": "2026-02-05",
+     "score": 0.2664,
+     "model": "Claude Opus 4.6"
+    },
+    {
+     "date": "2026-03-17",
+     "score": 0.2704,
+     "model": "GPT-5.4-mini"
+    },
+    {
+     "date": "2026-04-16",
+     "score": 0.3854,
+     "model": "Claude Opus 4.7"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.4296,
+     "model": "GPT-5.5"
+    },
+    {
+     "date": "2026-05-28",
+     "score": 0.465,
+     "model": "Claude Opus 4.8"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.5348,
+     "model": "Claude Fable 5"
+    },
+    {
+     "date": "2026-09-22",
+     "score": 0.5464,
+     "model": "Claude Opus 5.5"
+    }
+   ],
+   "velocity": 2.99,
+   "models": 46,
+   "page": {
+    "slug": "frontiercode",
+    "checked": "2026-11-17",
+    "description": "A benchmark testing whether coding agents can produce mergeable fixes for real, hard open-source issues.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/frontiercode"
+   }
+  },
+  {
+   "name": "LMCA",
+   "ceiling": 0.85,
+   "baseline": 0.0,
+   "released": "2026-08-12",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "lmca_external.csv",
+   "top": {
+    "score": 0.7061,
+    "model": "Claude Fable 5.2 (xhigh)",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2023-06-13",
+     "score": 0.1706,
+     "model": "GPT-4"
+    },
+    {
+     "date": "2024-12-06",
+     "score": 0.1752,
+     "model": "Llama 3.3 70B"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.2227,
+     "model": "o1"
+    },
+    {
+     "date": "2025-04-14",
+     "score": 0.2561,
+     "model": "GPT-4.1"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.397,
+     "model": "o3"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.3999,
+     "model": "GPT-5"
+    },
+    {
+     "date": "2025-11-13",
+     "score": 0.4389,
+     "model": "GPT-5.1"
+    },
+    {
+     "date": "2025-11-24",
+     "score": 0.4446,
+     "model": "Claude Opus 4.5"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.5576,
+     "model": "Claude Opus 4.6"
+    },
+    {
+     "date": "2026-05-28",
+     "score": 0.5751,
+     "model": "Claude Opus 4.8"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.6115,
+     "model": "Claude Fable 5 (high)"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.6445,
+     "model": "Claude Opus 5 (xhigh)"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.6546,
+     "model": "Claude Fable 5.1"
+    },
+    {
+     "date": "2026-09-22",
+     "score": 0.6823,
+     "model": "Claude Opus 5.5"
+    },
+    {
+     "date": "2026-09-28",
+     "score": 0.6826,
+     "model": "Claude Sonnet 5.5"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.7061,
+     "model": "Claude Fable 5.2 (xhigh)"
+    }
+   ],
+   "velocity": 2.23,
+   "models": 203,
+   "page": {
+    "slug": "lmca",
+    "checked": "2026-11-17",
+    "description": "A benchmark measuring how well models judge the quality of conceptual arguments, scored by agreement with expert ratings.",
+    "links": [
+     "https://arxiv.org/abs/2607.27499"
+    ],
+    "url": "https://epoch.ai/benchmarks/lmca"
+   }
+  },
+  {
+   "name": "DTBench",
+   "ceiling": 1.0,
+   "baseline": 0.4,
+   "released": "2026-08-12",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "dtbench_external.csv",
+   "top": {
+    "score": 0.992,
+    "model": "Claude Fable 5.2",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2023-06-13",
+     "score": 0.6267,
+     "model": "GPT-4"
+    },
+    {
+     "date": "2024-05-13",
+     "score": 0.6453,
+     "model": "GPT-4o"
+    },
+    {
+     "date": "2024-06-20",
+     "score": 0.6777,
+     "model": "Claude 3.5 Sonnet (Jun '24)"
+    },
+    {
+     "date": "2024-10-22",
+     "score": 0.6784,
+     "model": "Claude 3.5 Sonnet (Oct '24)"
+    },
+    {
+     "date": "2024-12-17",
+     "score": 0.7467,
+     "model": "o1"
+    },
+    {
+     "date": "2025-04-16",
+     "score": 0.848,
+     "model": "o3"
+    },
+    {
+     "date": "2025-06-10",
+     "score": 0.8693,
+     "model": "o3-pro"
+    },
+    {
+     "date": "2025-08-07",
+     "score": 0.9067,
+     "model": "GPT-5"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.9093,
+     "model": "GPT-5.2"
+    },
+    {
+     "date": "2026-02-05",
+     "score": 0.912,
+     "model": "Claude Opus 4.6"
+    },
+    {
+     "date": "2026-02-19",
+     "score": 0.9707,
+     "model": "Gemini 3.1 Pro (medium)"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.984,
+     "model": "Claude Fable 5"
+    },
+    {
+     "date": "2026-09-22",
+     "score": 0.9893,
+     "model": "Claude Opus 5.5"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.992,
+     "model": "Claude Fable 5.2"
+    }
+   ],
+   "velocity": 0.71,
+   "models": 241,
+   "page": {
+    "slug": "dtbench",
+    "checked": "2026-11-17",
+    "description": "A benchmark of handcrafted multiple-choice questions testing models' understanding of the decision theory of Newcomb-like problems.",
+    "links": [
+     "https://arxiv.org/abs/2411.10588",
+     "https://github.com/casparoe/newcomblike_questions_dataset"
+    ],
+    "url": "https://epoch.ai/benchmarks/dtbench"
+   }
+  },
+  {
+   "name": "BoolQ",
+   "ceiling": 1.0,
+   "baseline": 0.5,
+   "released": "2019-05-24",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "boolq",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "CSQA2",
+   "ceiling": 1.0,
+   "baseline": 0.5,
+   "released": "2022-01-14",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "csqa2",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "ForecastBench",
+   "ceiling": 1.0,
+   "baseline": 0.5,
+   "released": "2024-09-30",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "forecastbench",
+    "checked": "2026-11-17",
+    "description": "A dynamic, continuously updated benchmark of AI forecasting ability on real-world future events, with direct comparison to human superforecasters and the general public.",
+    "links": [
+     "https://arxiv.org/abs/2409.19839"
+    ],
+    "url": "https://epoch.ai/benchmarks/forecastbench"
+   }
+  },
+  {
+   "name": "LiveBench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-06-27",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "livebench",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "METR",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-03-18",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "metr",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "VideoMME",
+   "ceiling": 1.0,
+   "baseline": 0.25,
+   "released": "2024-05-31",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "videomme",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "FrontierMath-Erdos",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-09-03",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "frontiermath-erdos",
+    "checked": "2026-11-17",
+    "description": "A collection of problems posed or studied by mathematician Paul Erdős, open as of August 2026 and curated to be especially interesting and difficult.",
+    "links": [
+     "https://arxiv.org/abs/2609.25050",
+     "https://github.com/epoch-research/LeanOpenProblems",
+     "https://github.com/epoch-research/LeanOpenProblems-results",
+     "https://github.com/google-deepmind/formal-conjectures",
+     "https://github.com/leanprover/comparator",
+     "https://github.com/openai/math"
+    ],
+    "url": "https://epoch.ai/benchmarks/frontiermath-erdos"
+   }
+  },
+  {
+   "name": "Furniture Assembly",
+   "ceiling": 1.0,
+   "baseline": 0.3,
+   "released": "2026-09-23",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "furniture_assembly.csv",
+   "top": {
+    "score": 0.9,
+    "model": "claude-fable-5-2_max",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2025-11-24",
+     "score": 0.2833,
+     "model": "claude-opus-4-5-20251101_64K"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.3833,
+     "model": "gpt-5.2-2025-12-11_xhigh"
+    },
+    {
+     "date": "2026-04-23",
+     "score": 0.4417,
+     "model": "gpt-5.5_xhigh"
+    },
+    {
+     "date": "2026-07-09",
+     "score": 0.5667,
+     "model": "gpt-5.6-sol_max"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.6083,
+     "model": "claude-opus-5_max"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.7,
+     "model": "claude-fable-5-1_max"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.8,
+     "model": "gpt-6-astra_max"
+    },
+    {
+     "date": "2026-09-22",
+     "score": 0.8333,
+     "model": "claude-opus-5-5_max"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.9,
+     "model": "claude-fable-5-2_max"
+    }
+   ],
+   "velocity": 5.24,
+   "models": 40,
+   "page": {
+    "slug": "furniture-assembly",
+    "checked": "2026-11-17",
+    "description": "A test of spatial reasoning. Models are shown photos of IKEA furniture builds, some with deliberate assembly mistakes, and must say whether the build is correct and identify the mistaken step.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/furniture-assembly"
+   }
+  },
+  {
+   "name": "GDP.pdf",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-04-14",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "gdp-pdf",
+    "checked": "2026-11-17",
+    "description": "A benchmark testing whether models can answer questions about real-world professional PDFs.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/gdp-pdf"
+   }
+  },
+  {
+   "name": "FrontierSWE",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-09-02",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "frontierswe_external.csv",
+   "top": {
+    "score": 0.6994,
+    "model": "Claude Fable 5.2",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2026-06-09",
+     "score": 0.4696,
+     "model": "Claude Fable 5"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.5201,
+     "model": "Claude Opus 5"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.5629,
+     "model": "Claude Fable 5.1"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.6551,
+     "model": "GPT-6 Astra"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.6994,
+     "model": "Claude Fable 5.2"
+    }
+   ],
+   "velocity": 4.34,
+   "models": 25,
+   "page": {
+    "slug": "frontierswe",
+    "checked": "2026-11-17",
+    "description": "An ultra-long-horizon software engineering benchmark testing coding agents on implementation, performance, scientific-computing, visual-reasoning and AI-research tasks with a 20-hour budget per task.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/frontierswe"
+   }
+  },
+  {
+   "name": "SciCode",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-07-18",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "scicode",
+    "checked": "2026-11-17",
+    "description": "A scientist-curated benchmark of research-coding problems drawn from across the natural sciences.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/scicode"
+   }
+  },
+  {
+   "name": "WebDev Arena",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-12-10",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "webdev-arena",
+    "checked": "2026-11-17",
+    "description": "A platform where users vote on which of two anonymous models do a better job producing websites according to the user’s requests. Previously known as WebDev Arena, now a subset of [Text Arena](https://arena.ai/leaderboard/text).",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/webdev-arena"
+   }
+  },
+  {
+   "name": "Blueprint-Bench 2",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-05-04",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "blueprint-bench-2",
+    "checked": "2026-11-17",
+    "description": "A spatial-intelligence benchmark where AI agents convert apartment photographs into 2D floor plans.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/blueprint-bench-2"
+   }
+  },
+  {
+   "name": "MindCube",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-06-26",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "mindcube",
+    "checked": "2026-11-17",
+    "description": "A benchmark testing whether vision-language models can build spatial mental models of scenes from limited camera views.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/mindcube"
+   }
+  },
+  {
+   "name": "SpatialViz-Bench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-07-10",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "spatialviz-bench",
+    "checked": "2026-11-17",
+    "description": "A benchmark of programmatically generated spatial visualization puzzles for multimodal models, spanning mental rotation, folding, penetration, and animation.",
+    "links": [
+     "https://arxiv.org/abs/2507.07610"
+    ],
+    "url": "https://epoch.ai/benchmarks/spatialviz-bench"
+   }
+  },
+  {
+   "name": "BTF-3",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": null,
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "btf-3",
+    "checked": "2026-11-17",
+    "description": "A \"pastcasting\" benchmark where forecasting agents research already-resolved questions against a frozen web snapshot, scored on the Brier scale.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/btf-3"
+   }
+  },
+  {
+   "name": "EnigmaEval",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-02-13",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "enigmaeval",
+    "checked": "2026-11-17",
+    "description": "A benchmark of long, multimodal puzzle-hunt puzzles requiring creative multi-step reasoning over mixed text and images.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/enigmaeval"
+   }
+  },
+  {
+   "name": "AlgoTune",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-07-19",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "algotune",
+    "checked": "2026-11-17",
+    "description": "A benchmark testing whether language models can write code that runs faster than expert reference implementations while remaining correct.",
+    "links": [
+     "https://arxiv.org/abs/2507.15887",
+     "https://github.com/oripress/AlgoTune"
+    ],
+    "url": "https://epoch.ai/benchmarks/algotune"
+   }
+  },
+  {
+   "name": "ALE-Bench",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-06-10",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "ale-bench",
+    "checked": "2026-11-17",
+    "description": "A benchmark evaluating AI on long-horizon, objective-driven algorithm engineering using hard combinatorial optimization problems from competitive programming contests.",
+    "links": [
+     "https://arxiv.org/abs/2506.09050",
+     "https://github.com/SakanaAI/ALE-Bench"
+    ],
+    "url": "https://epoch.ai/benchmarks/ale-bench"
+   }
+  },
+  {
+   "name": "Vending-Bench 2",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-11-18",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "vending-bench-2",
+    "checked": "2026-11-17",
+    "description": "A benchmark measuring an AI agent's ability to stay coherent and run a simulated vending machine business profitably over a full simulated year.",
+    "links": [
+     "https://arxiv.org/abs/2502.15840"
+    ],
+    "url": "https://epoch.ai/benchmarks/vending-bench-2"
+   }
+  },
+  {
+   "name": "TextQuests",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-07-31",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "textquests",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "SWE-bench Pro",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-09-21",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "swe-bench-pro",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "GraphWalks",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2025-04-14",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "graphwalks",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "Berkeley Function Calling Leaderboard",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2024-02-27",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "berkeley-function-calling-leaderboard",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "HealthBench Professional",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-04-30",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "healthbench-professional",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "WeirdML v3",
+   "ceiling": 0.9,
+   "baseline": 0.0,
+   "released": "2026-09-18",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "weirdml_v3_external.csv",
+   "top": {
+    "score": 0.6528,
+    "model": "Claude Fable 5.2 (xhigh)",
+    "org": "Anthropic",
+    "date": "2026-11-09"
+   },
+   "history": [
+    {
+     "date": "2025-11-24",
+     "score": 0.0713,
+     "model": "Claude Opus 4.5 (high)"
+    },
+    {
+     "date": "2025-12-11",
+     "score": 0.0972,
+     "model": "GPT-5.2 (xhigh)"
+    },
+    {
+     "date": "2026-06-09",
+     "score": 0.2786,
+     "model": "Claude Fable 5 (xhigh)"
+    },
+    {
+     "date": "2026-07-24",
+     "score": 0.3254,
+     "model": "Claude Opus 5 (xhigh)"
+    },
+    {
+     "date": "2026-09-01",
+     "score": 0.4353,
+     "model": "Claude Fable 5.1 (xhigh)"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.5405,
+     "model": "GPT-6 Astra (xhigh)"
+    },
+    {
+     "date": "2026-11-09",
+     "score": 0.6528,
+     "model": "Claude Fable 5.2 (xhigh)"
+    }
+   ],
+   "velocity": 4.94,
+   "models": 27,
+   "page": {
+    "slug": "weirdml-v3",
+    "checked": "2026-11-17",
+    "description": "An agentic benchmark of 11 hand-made machine learning and data analysis tasks with unfamiliar data, unspecified goals, and limited feedback.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/weirdml-v3"
+   }
+  },
+  {
+   "name": "SpireClimb (Slay the Spire 1, Ascension 20 Heart)",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-10-14",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "spireclimb-slay-the-spire-1-ascension-20-heart",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "SpireClimb (Slay the Spire 2, Ascension 10)",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-10-14",
+   "superseded_by": null,
+   "in_index": false,
+   "file": null,
+   "top": null,
+   "history": [],
+   "velocity": null,
+   "models": 0,
+   "page": {
+    "slug": "spireclimb-slay-the-spire-2-ascension-10",
+    "checked": "2026-11-17",
+    "description": null,
+    "links": []
+   }
+  },
+  {
+   "name": "SpireClimb",
+   "ceiling": 1.0,
+   "baseline": 0.0,
+   "released": "2026-10-14",
+   "superseded_by": null,
+   "in_index": true,
+   "file": "spireclimb.csv",
+   "top": {
+    "score": 0.4133,
+    "model": "gpt-6.2-astra_max",
+    "org": "OpenAI",
+    "date": "2026-11-17"
+   },
+   "history": [
+    {
+     "date": "2026-09-01",
+     "score": 0.02,
+     "model": "claude-fable-5-1_max"
+    },
+    {
+     "date": "2026-09-03",
+     "score": 0.34,
+     "model": "gpt-6-astra_max"
+    },
+    {
+     "date": "2026-11-17",
+     "score": 0.4133,
+     "model": "gpt-6.2-astra_max"
+    }
+   ],
+   "velocity": 15.55,
+   "models": 10,
+   "page": {
+    "slug": "spireclimb",
+    "checked": "2026-11-17",
+    "description": "Models play both Slay the Spire games at their respective maximum difficulties through a computer-use harness.",
+    "links": [],
+    "url": "https://epoch.ai/benchmarks/spireclimb"
+   }
+  }
+ ]
+}

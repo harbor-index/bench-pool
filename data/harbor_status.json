@@ -1,0 +1,4101 @@
+{
+ "as_of": "2026-11-17",
+ "registry": [
+  {
+   "name": "aider-polyglot",
+   "version": "1.0",
+   "tasks": 225,
+   "description": "A polyglot coding benchmark that evaluates AI agents' ability to perform code editing and generation tasks across multiple programming languages."
+  },
+  {
+   "name": "aime",
+   "version": "1.0",
+   "tasks": 60,
+   "description": "American Invitational Mathematics Examination (AIME) benchmark for evaluating mathematical reasoning and problem-solving capabilities. Contains 60 competition-level mathematics problems from AIME 2024"
+  },
+  {
+   "name": "algotune",
+   "version": "1.0",
+   "tasks": 154,
+   "description": "AlgoTune: 154 algorithm optimization tasks focusing on speedup-based scoring from the AlgoTune benchmark."
+  },
+  {
+   "name": "arc_agi_2",
+   "version": "1.0",
+   "tasks": 167,
+   "description": "ARC-AGI-2: A benchmark measuring abstract reasoning through visual grid puzzles requiring rule inference and generalization."
+  },
+  {
+   "name": "autocodebench",
+   "version": "lite200",
+   "tasks": 200,
+   "description": "Adapter for AutoCodeBench (https://github.com/Tencent-Hunyuan/AutoCodeBenchmark)."
+  },
+  {
+   "name": "binary-audit",
+   "version": "1.0",
+   "tasks": 46,
+   "description": "An open-source benchmark for evaluating AI agents' ability to find backdoors hidden in compiled binaries."
+  },
+  {
+   "name": "bixbench",
+   "version": "1.5",
+   "tasks": 205,
+   "description": "BixBench - A benchmark for evaluating AI agents on bioinformatics and computational biology tasks."
+  },
+  {
+   "name": "bixbench-cli",
+   "version": "1.5",
+   "tasks": 205,
+   "description": "bixbench-cli - A benchmark for evaluating AI agents on bioinformatics and computational biology tasks. (Adapted for CLI execution)"
+  },
+  {
+   "name": "codepde",
+   "version": "1.0",
+   "tasks": 5,
+   "description": "CodePDE evaluates code generation capabilities on scientific computing tasks, specifically focusing on Partial Differential Equation (PDE) solving."
+  },
+  {
+   "name": "compilebench",
+   "version": "1.0",
+   "tasks": 15,
+   "description": "Version 1.0 of CompileBench, a benchmark on real open-source projects against dependency hell, legacy toolchains, and complex build systems."
+  },
+  {
+   "name": "cooperbench",
+   "version": "1.0",
+   "tasks": 652,
+   "description": "CooperBench: multi-agent cooperation benchmark. 652 feature pairs across 12 repos requiring two agents to coordinate via messaging."
+  },
+  {
+   "name": "crustbench",
+   "version": "1.0",
+   "tasks": 100,
+   "description": "CRUST-bench: 100 C-to-safe-Rust transpilation tasks from real-world C repositories."
+  },
+  {
+   "name": "dabstep",
+   "version": "1.0",
+   "tasks": 450,
+   "description": "DABstep: Data Agent Benchmark for Multi-step Reasoning. 450 tasks where agents analyze payment transaction data with Python/pandas to answer business questions."
+  },
+  {
+   "name": "ds-1000",
+   "version": "head",
+   "tasks": 1000,
+   "description": "DS-1000 is a code generation benchmark with 1000 realistic data science problems across seven popular Python libraries."
+  },
+  {
+   "name": "evoeval",
+   "version": "1.0",
+   "tasks": 100,
+   "description": "EvoEval_difficult: 100 challenging Python programming tasks evolved from HumanEval."
+  },
+  {
+   "name": "gaia",
+   "version": "1.0",
+   "tasks": 165,
+   "description": "GAIA (General AI Assistants): 165 validation tasks for multi-step reasoning, tool use, and multimodal question answering."
+  },
+  {
+   "name": "gpqa-diamond",
+   "version": "1.0",
+   "tasks": 198,
+   "description": "GPQA Diamond subset: 198 graduate-level multiple-choice questions in biology, physics, and chemistry for evaluating scientific reasoning."
+  },
+  {
+   "name": "hello-world",
+   "version": "1.0",
+   "tasks": 1,
+   "description": "A simple example task to create a hello.txt file with 'Hello, world!' as content."
+  },
+  {
+   "name": "humanevalfix",
+   "version": "1.0",
+   "tasks": 164,
+   "description": "HumanEvalFix: 164 Python code repair tasks from HumanEvalPack."
+  },
+  {
+   "name": "ineqmath",
+   "version": "1.0",
+   "tasks": 100,
+   "description": "This adapter brings IneqMath, the dev set of the first inequality-proof Q\\&A benchmark for LLMs, into Harbor, enabling standardized evaluation of models on mathematical reasoning and proof constructio"
+  },
+  {
+   "name": "mmmlu",
+   "version": "parity",
+   "tasks": 150,
+   "description": "MMMLU (Multilingual MMLU) parity validation subset with 10 tasks per language across 15 languages (150 tasks total). Evaluates language models' subject knowledge and reasoning across multiple language"
+  },
+  {
+   "name": "lawbench",
+   "version": "1.0",
+   "tasks": 1000,
+   "description": "LawBench: Benchmarking Legal Knowledge of Large Language Models"
+  },
+  {
+   "name": "livecodebench",
+   "version": "6.0",
+   "tasks": 100,
+   "description": "A subset of 100 sampled tasks from the release_v6 version of LiveCodeBench tasks."
+  },
+  {
+   "name": "mlgym-bench",
+   "version": "1.0",
+   "tasks": 12,
+   "description": "Evaluates agents on ML tasks across computer vision, RL, tabular ML, and game theory."
+  },
+  {
+   "name": "mmau",
+   "version": "1.0",
+   "tasks": 1000,
+   "description": "MMAU: 1000 carefully curated audio clips paired with human-annotated natural language questions and answers spanning speech, environmental sounds, and music."
+  },
+  {
+   "name": "otel-bench",
+   "version": "1.0",
+   "tasks": 26,
+   "description": "OpenTelemetry Benchmark - evaluates AI agents' ability to instrument applications with OpenTelemetry tracing across multiple languages."
+  },
+  {
+   "name": "reasoning-gym-easy",
+   "version": "parity",
+   "tasks": 288,
+   "description": "Reasoning Gym benchmark (easy difficulty). Original benchmark: https://github.com/open-thought/reasoning-gym"
+  },
+  {
+   "name": "reasoning-gym-hard",
+   "version": "parity",
+   "tasks": 288,
+   "description": "Reasoning Gym benchmark (hard difficulty). Original benchmark: https://github.com/open-thought/reasoning-gym"
+  },
+  {
+   "name": "replicationbench",
+   "version": "1.0",
+   "tasks": 90,
+   "description": "ReplicationBench - A benchmark for evaluating AI agents on reproducing computational results from astrophysics research papers. Adapted from Christine8888/replicationbench-release."
+  },
+  {
+   "name": "researchcodebench",
+   "version": "1.0",
+   "tasks": 212,
+   "description": "ResearchCodeBench evaluates AI agents' ability to implement algorithms from academic papers. Contains 212 code implementation tasks across 20 ML/AI research problems from top-tier venues (ICLR, NeurIP"
+  },
+  {
+   "name": "rexbench",
+   "version": "1.0",
+   "tasks": 2,
+   "description": "A benchmark to evaluate the ability of AI agents to extend existing AI research through research experiment implementation tasks. Original benchmark: https://github.com/tinlaboratory/rexbench. Website"
+  },
+  {
+   "name": "simpleqa",
+   "version": "1.0",
+   "tasks": 4326,
+   "description": "SimpleQA: 4,326 short, fact-seeking questions from OpenAI for evaluating language model factuality. Uses LLM-as-a-judge grading. Source: https://openai.com/index/introducing-simpleqa/"
+  },
+  {
+   "name": "sldbench",
+   "version": "1.0",
+   "tasks": 8,
+   "description": "SLDBench: A benchmark for scaling law discovery with symbolic regression tasks."
+  },
+  {
+   "name": "spider2-dbt",
+   "version": "1.0",
+   "tasks": 64,
+   "description": "Spider 2.0-DBT is a comprehensive code generation agent task that includes 68 examples. Solving these tasks requires models to understand project code, navigating complex SQL environments and handling"
+  },
+  {
+   "name": "strongreject",
+   "version": "parity",
+   "tasks": 150,
+   "description": "StrongReject benchmark for evaluating LLM safety and jailbreak resistance. Parity subset with 150 tasks (50 prompts * 3 jailbreaks)."
+  },
+  {
+   "name": "swe-gen-js",
+   "version": "1.0",
+   "tasks": 1000,
+   "description": "SWE-gen-JS: 1000 JavaScript/TypeScript bug fix tasks from 30 open-source GitHub repos, generated using SWE-gen."
+  },
+  {
+   "name": "swe-lancer-diamond",
+   "version": "all",
+   "tasks": 463,
+   "description": "Adapter for SWE-Lancer (https://github.com/openai/preparedness/blob/main/project/swelancer/README.md). Both manager and individual contributor tasks."
+  },
+  {
+   "name": "swe-lancer-diamond",
+   "version": "ic",
+   "tasks": 198,
+   "description": "Adapter for SWE-Lancer (https://github.com/openai/preparedness/blob/main/project/swelancer/README.md). Only the individual contributor SWE tasks."
+  },
+  {
+   "name": "swe-lancer-diamond",
+   "version": "manager",
+   "tasks": 265,
+   "description": "Adapter for SWE-Lancer (https://github.com/openai/preparedness/blob/main/project/swelancer/README.md). Only the manager tasks."
+  },
+  {
+   "name": "swebench-verified",
+   "version": "1.0",
+   "tasks": 500,
+   "description": "A human-validated subset of 500 SWE-bench tasks"
+  },
+  {
+   "name": "swebenchpro",
+   "version": "1.0",
+   "tasks": 731,
+   "description": "SWE-bench Pro: A multi-language software engineering benchmark with 731 instances covering Python, JavaScript/TypeScript, and Go. Evaluates AI systems' ability to resolve real-world bugs and implement"
+  },
+  {
+   "name": "swesmith",
+   "version": "1.0",
+   "tasks": 100,
+   "description": "SWE-smith is a synthetically generated dataset of software engineering tasks derived from GitHub issues for training and evaluating code generation models."
+  },
+  {
+   "name": "swtbench-verified",
+   "version": "1.0",
+   "tasks": 433,
+   "description": "SWTBench Verified - Software Testing Benchmark for code generation"
+  },
+  {
+   "name": "terminal-bench",
+   "version": "2.0",
+   "tasks": 89,
+   "description": "Version 2.0 of Terminal-Bench, a benchmark for testing agents in terminal environments. More tasks, harder, and higher quality than 1.0."
+  },
+  {
+   "name": "terminal-bench-pro",
+   "version": "1.0",
+   "tasks": 200,
+   "description": "Terminal-Bench Pro (Public Set) is an extended benchmark dataset for testing AI agents in real terminal environments. From compiling code to training models and setting up servers, Terminal-Bench Pro "
+  },
+  {
+   "name": "terminal-bench-sample",
+   "version": "2.0",
+   "tasks": 10,
+   "description": "A sample of tasks from Terminal-Bench 2.0."
+  },
+  {
+   "name": "usaco",
+   "version": "2.0",
+   "tasks": 304,
+   "description": "USACO: 304 Python programming problems from USACO competition."
+  },
+  {
+   "name": "bird-bench",
+   "version": "parity",
+   "tasks": 150,
+   "description": "BIRD SQL parity subset (150 tasks, seed 42). Original benchmark: https://huggingface.co/datasets/birdsql/bird_sql_dev_20251106. Adapter: https://github.com/laude-institute/harbor/tree/main/adapters/bi"
+  },
+  {
+   "name": "vmax-tasks",
+   "version": "1.0",
+   "tasks": 1043,
+   "description": "A collection of 1,043 validated real-world bug-fixing tasks from popular open-source JavaScript projects including Vue.js, Docusaurus, Redux, and Chalk. Each task presents an authentic bug report with"
+  },
+  {
+   "name": "seta-env",
+   "version": "1.0",
+   "tasks": 1376,
+   "description": "CAMEL SETA Environment for RL training"
+  },
+  {
+   "name": "code-contests",
+   "version": "1.0",
+   "tasks": 9644,
+   "description": "A competitive programming benchmark from DeepMind that evaluates AI agents' ability to solve algorithmic problems, covering algorithms, data structures, and competitive programming challenges."
+  },
+  {
+   "name": "openthoughts-tblite",
+   "version": "2.0",
+   "tasks": 100,
+   "description": "OpenThoughts-TBLite: A difficulty-calibrated benchmark of 100 tasks for building terminal agents. By OpenThoughts Agent team, Snorkel AI, Bespoke Labs."
+  },
+  {
+   "name": "kumo",
+   "version": "parity",
+   "tasks": 212,
+   "description": "KUMO parity subset (seeds 0/1; 212 tasks)."
+  },
+  {
+   "name": "kumo",
+   "version": "1.0",
+   "tasks": 5300,
+   "description": "KUMO full dataset (5300 tasks; 50 instances per scenario)."
+  },
+  {
+   "name": "kumo",
+   "version": "easy",
+   "tasks": 5050,
+   "description": "KUMO(easy) split (5050 tasks; 50 instances per scenario)."
+  },
+  {
+   "name": "kumo",
+   "version": "hard",
+   "tasks": 250,
+   "description": "KUMO(hard) split (250 tasks; 50 instances per scenario)."
+  },
+  {
+   "name": "termigen-environments",
+   "version": "1.0",
+   "tasks": 3566,
+   "description": "3,500+ verified Docker environments for training and evaluating terminal agents, spanning 11 task categories across infrastructure, data/algorithm applications, and specialized domains including softw"
+  },
+  {
+   "name": "bigcodebench-hard-complete",
+   "version": "1.0.0",
+   "tasks": 145,
+   "description": "BigCodeBench-Hard complete benchmark adapter for Harbor - challenging Python programming tasks with reward-based verification"
+  },
+  {
+   "name": "financeagent",
+   "version": "public",
+   "tasks": 50,
+   "description": "Finance Agent is a tool for financial research and analysis that leverages large language models and specialized financial tools to answer complex queries about companies, financial statements, and SE"
+  },
+  {
+   "name": "satbench",
+   "version": "1.0",
+   "tasks": 2100,
+   "description": "SATBench is a benchmark for evaluating the logical reasoning capabilities of LLMs through logical puzzles derived from Boolean satisfiability (SAT) problems."
+  },
+  {
+   "name": "spreadsheetbench-verified",
+   "version": "1.0",
+   "tasks": 400,
+   "description": "A benchmark evaluating AI agents on real-world spreadsheet manipulation tasks (400 tasks from verified_400). Tasks involve Excel file manipulation including formula writing, data transformation, forma"
+  },
+  {
+   "name": "labbench",
+   "version": "1.0",
+   "tasks": 181,
+   "description": "LAB-Bench FigQA: 181 scientific figure reasoning tasks in biology from Future-House LAB-Bench."
+  },
+  {
+   "name": "bfcl",
+   "version": "1.0",
+   "tasks": 3641,
+   "description": "Berkeley Function-Calling Leaderboard: 3,641 function calling tasks for evaluating LLM tool use capabilities across simple, multiple, parallel, and irrelevance categories."
+  },
+  {
+   "name": "bfcl_parity",
+   "version": "1.0",
+   "tasks": 123,
+   "description": "BFCL parity subset: 123 stratified sampled tasks for validating Harbor adapter equivalence with original BFCL benchmark."
+  },
+  {
+   "name": "qcircuitbench",
+   "version": "1.0",
+   "tasks": 28,
+   "description": "QCircuitBench evaluates agents on quantum algorithm design using quantum programming languages. Original benchmark: https://github.com/EstelYang/QCircuitBench."
+  },
+  {
+   "name": "quixbugs",
+   "version": "1.0",
+   "tasks": 80,
+   "description": "QuixBugs is a multi-lingual program repair benchmark with 40 Python and 40 Java programs, each containing a single-line defect. Tasks cover algorithms and data structures including sorting, graph, dyn"
+  },
+  {
+   "name": "deveval",
+   "version": "1.0",
+   "tasks": 63,
+   "description": "DevEval benchmark: comprehensive evaluation of LLMs across software development lifecycle (implementation, unit testing, acceptance testing) for 21 real-world repositories across Python, C++, Java, an"
+  },
+  {
+   "name": "medagentbench",
+   "version": "1.0",
+   "tasks": 300,
+   "description": "MedAgentBench: 300 patient-specific clinically-derived tasks across 10 categories in a FHIR-compliant interactive healthcare environment."
+  },
+  {
+   "name": "pixiu",
+   "version": "parity",
+   "tasks": 435,
+   "description": "PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance. Original benchmark: https://github.com/TheFinAI/PIXIU. Adapter details: https://github.com/laude-institute/harbor/"
+  },
+  {
+   "name": "ade-bench",
+   "version": "1.0",
+   "tasks": 48,
+   "description": "Analytics Data Engineer Bench: tasks evaluating AI agents on dbt/SQL data analytics engineering bugs. Original benchmark: https://github.com/dbt-labs/ade-bench."
+  },
+  {
+   "name": "ml-dev-bench",
+   "version": "1.0",
+   "tasks": 33,
+   "description": "ML-Dev-Bench: A benchmark for testing AI agents on machine learning development tasks including model implementation, training, debugging, and optimization."
+  },
+  {
+   "name": "featurebench-lite",
+   "version": "1.0",
+   "tasks": 30,
+   "description": "FeatureBench lite split: 30 feature-implementation tasks (26 lv1 + 4 lv2) across Python repos. Original benchmark: https://github.com/LiberCoders/FeatureBench. Adapter: https://github.com/harbor-frame"
+  },
+  {
+   "name": "featurebench",
+   "version": "1.0",
+   "tasks": 200,
+   "description": "FeatureBench full split: 200 feature-implementation tasks across 24 Python repos. 7 tasks require Ampere+ GPU. Original benchmark: https://github.com/LiberCoders/FeatureBench. Adapter: https://github."
+  },
+  {
+   "name": "featurebench-modal",
+   "version": "1.0",
+   "tasks": 200,
+   "description": "FeatureBench full split for Modal: 200 feature-implementation tasks with gpus=1 for GPU tasks (44/200). Use with -e modal. Original benchmark: https://github.com/LiberCoders/FeatureBench."
+  },
+  {
+   "name": "featurebench-lite-modal",
+   "version": "1.0",
+   "tasks": 30,
+   "description": "FeatureBench lite split for Modal: 30 feature-implementation tasks with gpus=1 for GPU tasks (7/30). Use with -e modal. Original benchmark: https://github.com/LiberCoders/FeatureBench."
+  },
+  {
+   "name": "swebench_multilingual",
+   "version": "1.0",
+   "tasks": 300,
+   "description": "SWE-bench Multilingual extends the original Python-focused SWE-bench benchmark to support multiple programming languages. Original benchmark: https://www.swebench.com/multilingual.html."
+  },
+  {
+   "name": "scale-ai/swe-atlas-qna",
+   "version": "1.0",
+   "tasks": 124,
+   "description": "SWE-Atlas Codebase QnA benchmark that evaluates AI agents' ability to comprehend and query existing codebases."
+  },
+  {
+   "name": "scale-ai/swe-atlas-tw",
+   "version": "1.0",
+   "tasks": 90,
+   "description": "SWE-Atlas Test Writing benchmark that evaluates AI agents' ability to write comprehensive unit tests."
+  },
+  {
+   "name": "legacy-bench",
+   "version": "1.0",
+   "tasks": 10,
+   "description": "A benchmark for evaluating AI agents on legacy code maintenance and modernization tasks across multiple language families including COBOL, Java 7, C, Fortran, and Assembly."
+  },
+  {
+   "name": "gso",
+   "version": "1.0",
+   "tasks": 102,
+   "description": "GSO: 102 software optimization tasks focusing on performance improvement."
+  }
+ ],
+ "hub": [
+  "Enterprise-Bench/l1-l2-bench",
+  "Enterprise-Bench/l1-l2-bench-v2",
+  "LiteCoder/LiteCoder-rl",
+  "MichaelY310/devopsgym",
+  "NovitaAI/tb21-code-debug",
+  "NovitaAI/tb21-data-science",
+  "NovitaAI/tb21-file-recovery",
+  "NovitaAI/tb21-systems-security",
+  "aarr/aarri-bench",
+  "abhishek203/task-aw",
+  "abundant/swe-gen-cpp",
+  "abundant/swe-gen-go",
+  "abundant/swe-gen-java",
+  "abundant/swe-gen-js",
+  "abundant/swe-gen-rust",
+  "abundant/swe-marathon",
+  "accelerate-bench/accelerate-bench",
+  "accordproject/skills",
+  "actava-ai/chi-bench",
+  "adameubanks/rating-generation-consistency",
+  "adyen/dabstep",
+  "agentic-labs/erp-bench",
+  "agentscope-ai/pawbench",
+  "ai-forever/harness-bench-fast",
+  "aider/aider-polyglot",
+  "aime/aime",
+  "alabamamike/beam-dd-test-hard",
+  "alabamamike/beam-dd-test-normal",
+  "ale/rsi-post-training",
+  "algotune/algotune",
+  "alibaba-aaig/alibaba-ctf",
+  "android-bench/android-bench",
+  "apple/mmau",
+  "arcprize/arc-agi-2",
+  "arcus-labs/tau3-banking",
+  "arcus-labs/tau3-banking-dev",
+  "arcus-labs/tau3-banking-test",
+  "arthrod/harvey-redline",
+  "arthrod/harvey-redline-jubarte",
+  "arthrod/harvey-redline-lab",
+  "aryaniyaps/lamina-bench",
+  "ashantanu/task1_v3_1_stock_research_basket_rolling",
+  "atm-bench/atm-bench-hard-sgm",
+  "au12321ua/cadir-ci-benchmark",
+  "au12321ua/mesh2cad-benchmark",
+  "au12321ua/mesh2cad-benchmark-sca",
+  "au12321ua/mesh2cad-smoke",
+  "au12321ua/mesh2cad-smoke-sca",
+  "based-models/causal-reflection-tb21",
+  "based-models/tau2-airline",
+  "bauerjustin/tb3-preview-v2",
+  "bauerjustin/terminal-bench-3-test",
+  "bencalvert04/programbench",
+  "benchflow/skillsbench",
+  "bespokelabs/autoresearch-exam",
+  "bigcode/bigcodebench-hard-complete",
+  "bigcode/humanevalfix",
+  "billxbf/mimo-v26-code",
+  "billxbf/mimo-v26-cyber",
+  "billxbf/mimo-v26-general",
+  "billxbf/mimo-v26-music",
+  "billxbf/mimo-v26-terminal",
+  "billxbf/mimo-v26-webdev",
+  "billxbf/terminal-agent-mix",
+  "billxbf/terminal-agent-mix-light",
+  "binary-audit/binary-audit",
+  "biopharma-bench/biopharma-bench",
+  "birdsql/bird-mini-dev",
+  "birdsql/dii-v1-muscle",
+  "blobfishai/arc-crm-6",
+  "blobfishai/counselbench-100",
+  "blobfishai/dealbench-100-suite",
+  "blobfishai/devopsbench-100",
+  "blobfishai/domainbench-24",
+  "blobfishai/erpbench-100-suite",
+  "blobfishai/hubbench",
+  "blobfishai/ledgerbench-100",
+  "blobfishai/litigation",
+  "blobfishai/salesbench-100",
+  "blobfishai/semikongbench-100",
+  "blobfishai/webbench",
+  "brando90/vb-generation-one-20260913",
+  "cais/swebenchpro",
+  "camel-ai/seta-env",
+  "carlesoctav/gemma4_gh_pr",
+  "chloe/tooluse-law",
+  "cmu/refav",
+  "codepde/codepde",
+  "cohere/terminal_bench_aai",
+  "cookbook/test",
+  "crustbench/crustbench",
+  "datacurve/deep-swe",
+  "datacurve/deep-swe-1-1",
+  "dbt-labs/ade-bench",
+  "deveval/deveval",
+  "diyakejriwal/finsearchcomp-t2-global",
+  "doe/degennaro-workplace-sample",
+  "doe/legal-consent-sweep",
+  "doe/legal-world-sample",
+  "doe/sample-pack",
+  "drugtargetbench/drugtargetbench",
+  "elfsong/cpu2gpu",
+  "elfsong/mercury-eval",
+  "evaligo/swe-pair",
+  "evaligo/swe-race",
+  "evoeval/evoeval",
+  "factory-ai/legacy-bench",
+  "featurebench/featurebench",
+  "featurebench/featurebench-lite",
+  "featurebench/featurebench-lite-modal",
+  "featurebench/featurebench-modal",
+  "filing-bench/filing-bench",
+  "fritzprix/libragent-browser-dual-12",
+  "fritzprix/libragent-compaction-fact-recall-1",
+  "fritzprix/libragent-diverse-9",
+  "fritzprix/libragent-knowledge-bridge-2",
+  "fritzprix/libragent-media-desktop-10",
+  "fritzprix/libragent-org-collab-7",
+  "fritzprix/libragent-swe-diverse-8",
+  "frontier-harness-eval/frontier-harness-eval",
+  "frontier-harness-eval/frontier-harness-eval-lite",
+  "frontis/agent-obs-core",
+  "frontis/generated-basic-production-traces",
+  "futurehouse/bixbench",
+  "futurehouse/bixbench-cli",
+  "futurehouse/labbench",
+  "gabeorlanski/slopcodebench",
+  "gaia/gaia",
+  "gnucleus-ai/cad-bench",
+  "gorilla/bfcl",
+  "gorilla/bfcl_parity",
+  "gpqa-diamond/gpqa-diamond",
+  "grafana/o11y-bench",
+  "grandsmile/unicode",
+  "gustofied/compute-bazaar-bench",
+  "hack-verifiable-environments/hv-terminal-bench-2-1",
+  "handshake-ai/atlas-finance",
+  "harbor-index/harbor-index",
+  "harbor-index/harbor-index-1.0",
+  "harbor/hello-world",
+  "harveyai/lab",
+  "hcltech-robotics/simreadybench",
+  "hcltech-robotics/simrepairbench",
+  "heytalal/maydan-hf-rl-sampler",
+  "huu256/gauntlet",
+  "huu256/gauntlet-planner",
+  "huu256/hpd-benchmark",
+  "huu256/hpd-training",
+  "hwe-bench/hwe-bench",
+  "i17470/ds",
+  "i18436wni51m/ds88",
+  "i18677vr50t0/ds70",
+  "i18677vr50t0/ds71",
+  "i19330nk7e33/ds90",
+  "i3886org/i3886dsy",
+  "i4030iaesfw/xssds",
+  "i5260teamalpx/i5609gppzcss",
+  "ibragim-badertdinov/hard12",
+  "ibragim-badertdinov/swe-rebench-07-2026",
+  "ibragim-badertdinov/swe-rebench-v2.1-rl",
+  "ineqmath/ineqmath",
+  "infra-bench/infra-bench-v1",
+  "islo-labs/reward-hack-bench",
+  "islo-labs/reward-hack-bench-control",
+  "itmo-autods/fdata-exit-case",
+  "itmo-autods/maize-yield-case",
+  "itmo-autods/openpoly-tg-case",
+  "itmo-autods/scientific-cases",
+  "ivanleo/agent-search",
+  "josancamon19/nim",
+  "josancamon19/nim-hard",
+  "josancamon19/physician-bench",
+  "kgmon/deepsearchqa",
+  "klinikebench/klinikebench",
+  "kumo/kumo-1",
+  "kumo/kumo-easy",
+  "kumo/kumo-hard",
+  "kumo/kumo-parity",
+  "kw-bench/kw-sap",
+  "kw-bench/kw-sap-easy",
+  "kw-bench/kw-sap-vat",
+  "lamina/product-bench",
+  "last-secure-code-benchmark/last-secure-code-benchmark",
+  "lawbench/lawbench",
+  "lcb/longswebench-32k",
+  "letta-ai/frontier-memory",
+  "lica-world/gdb",
+  "livecodebench/livecodebench",
+  "llamaindex/extractbench-pro",
+  "longtail-swe/longtail-swe",
+  "longtail-swe/longtail-swe-easy",
+  "looni-lab/smdd-bench",
+  "lowgular/browser-use-linkedin",
+  "luosuu/SWE-kokkos-bench",
+  "maxbittker/runebench",
+  "mercor/apex-agents-1-1",
+  "meta/mlgym-bench",
+  "minnesotanlp/aar",
+  "mmtb/multimedia-terminalbench",
+  "model-topography/workbench",
+  "morris-biotech/historical-systems-bugs",
+  "nanoswe/swe-bench-verified",
+  "nextflow-frontier/bioml-bench",
+  "nl2repobench/nl2repobench",
+  "nlile/registry-history-20260908",
+  "nvats/codeskills-bench",
+  "obtuseorion/geoworld",
+  "open-design/open-design",
+  "openai/mmmlu",
+  "openai/swe-lancer-diamond-all",
+  "openai/swe-lancer-diamond-ic",
+  "openai/swe-lancer-diamond-manager",
+  "openthoughts/openthoughts-tblite",
+  "openthoughts/tasktrove-code-contests-noblock",
+  "openthoughts/tasktrove-exp-flat25-pseudocode-v2",
+  "openthoughts/tasktrove-exp-flat25-speed-bonus-v2",
+  "openthoughts/tasktrove-exp-flat25-stackoverflow-v2",
+  "openthoughts/tasktrove-exp-flat25-subtle-debug-v3",
+  "openthoughts/tasktrove-exp-rle-adversarial",
+  "openthoughts/tasktrove-exp-rle-detailed-v3",
+  "openthoughts/tasktrove-exp-rle-error-report-v3",
+  "openthoughts/tasktrove-exp-rle-github-issue-v3",
+  "openthoughts/tasktrove-exp-rle-heavy-padding-v2",
+  "openthoughts/tasktrove-exp-rle-minimal-instructions-v3",
+  "openthoughts/tasktrove-exp-rpt-codenet-python-v2",
+  "openthoughts/tasktrove-exp-rpt-crosscodeeval-csharp-v4",
+  "openthoughts/tasktrove-exp-rpt-crosscodeeval-java",
+  "openthoughts/tasktrove-exp-rpt-curriculum-easy",
+  "openthoughts/tasktrove-exp-rpt-curriculum-hard",
+  "openthoughts/tasktrove-exp-rpt-curriculum-medium",
+  "openthoughts/tasktrove-exp-rpt-defects4j-v3-v4",
+  "openthoughts/tasktrove-exp-rpt-e2egit-large",
+  "openthoughts/tasktrove-exp-rpt-e2egit-v2",
+  "openthoughts/tasktrove-exp-rpt-exercism-python-v2",
+  "openthoughts/tasktrove-exp-rpt-ghactions-v3",
+  "openthoughts/tasktrove-exp-rpt-issue",
+  "openthoughts/tasktrove-exp-rpt-methods2test-large-v2",
+  "openthoughts/tasktrove-exp-rpt-methods2test-large-v3",
+  "openthoughts/tasktrove-exp-rpt-multifile",
+  "openthoughts/tasktrove-exp-rpt-nemotron-cpp",
+  "openthoughts/tasktrove-exp-rpt-nemotron-junit",
+  "openthoughts/tasktrove-exp-rpt-pr",
+  "openthoughts/tasktrove-exp-rpt-pr-v2",
+  "openthoughts/tasktrove-exp-rpt-pymethods2test-large",
+  "openthoughts/tasktrove-exp-rpt-pymethods2test-v3",
+  "openthoughts/tasktrove-exp-rpt-scaffold-v2",
+  "openthoughts/tasktrove-exp-rpt-stack-bash-v3",
+  "openthoughts/tasktrove-exp-rpt-stack-bash-withtests-gpt5mini-v2",
+  "openthoughts/tasktrove-exp-rpt-stack-bash-withtests-v2",
+  "openthoughts/tasktrove-exp-rpt-stack-csharp-v5",
+  "openthoughts/tasktrove-exp-rpt-stack-dockerfile-gpt5mini-v3",
+  "openthoughts/tasktrove-exp-rpt-stack-dockerfile-v2",
+  "openthoughts/tasktrove-exp-rpt-stack-go-v4",
+  "openthoughts/tasktrove-exp-rpt-stack-jest-large",
+  "openthoughts/tasktrove-exp-rpt-stack-jest-v2",
+  "openthoughts/tasktrove-exp-rpt-stack-junit-v6",
+  "openthoughts/tasktrove-exp-rpt-stack-php-large-v6",
+  "openthoughts/tasktrove-exp-rpt-stack-php-v2-v6",
+  "openthoughts/tasktrove-exp-rpt-stack-pytest-large",
+  "openthoughts/tasktrove-exp-rpt-stack-pytest-v2",
+  "openthoughts/tasktrove-exp-rpt-stack-ruby-v2",
+  "openthoughts/tasktrove-exp-rpt-stack-rust-v2",
+  "openthoughts/tasktrove-exp-rpt-taco-v2",
+  "openthoughts/tasktrove-exp-rpt-unitsyn-python-large",
+  "openthoughts/tasktrove-exp-rpt-unitsyn-python-v3",
+  "openthoughts/tasktrove-freelancer-projects-sandboxes-ta-rl-gpt-5-mini-v2",
+  "openthoughts/tasktrove-freelancer-projects-sandboxes-ta-rl-gpt-5-nano-v2",
+  "openthoughts/tasktrove-inferredbugs-sandboxes-verifier",
+  "openthoughts/tasktrove-llm-verifier-freelancer",
+  "openthoughts/tasktrove-mix-baseline-uniform-v2",
+  "openthoughts/tasktrove-mix-h1-struggle-zone-v2",
+  "openthoughts/tasktrove-mix-h10-reward-binary-v2",
+  "openthoughts/tasktrove-mix-h10-reward-proportional-v2",
+  "openthoughts/tasktrove-mix-h10-reward-staged-v2",
+  "openthoughts/tasktrove-mix-h11-compositional-gradient-v2",
+  "openthoughts/tasktrove-mix-h11-single-skill-only-v2",
+  "openthoughts/tasktrove-mix-h2-language-balanced-v2",
+  "openthoughts/tasktrove-mix-h2-language-proportional",
+  "openthoughts/tasktrove-mix-h4-binary-easy",
+  "openthoughts/tasktrove-mix-h5-skill-diverse-v2",
+  "openthoughts/tasktrove-mix-h6-test-quality-top25",
+  "openthoughts/tasktrove-mix-h7-raw-volume-5k-v2",
+  "openthoughts/tasktrove-mix-h8-adversarial-tests-v2",
+  "openthoughts/tasktrove-mix-h8-original-tests-v2",
+  "openthoughts/tasktrove-nemotron-code-oracle-filtered",
+  "openthoughts/tasktrove-nemotron-gym-agent-calendar",
+  "openthoughts/tasktrove-nemotron-gym-agent-workplace-v2",
+  "openthoughts/tasktrove-nemotron-gym-competitive-coding",
+  "openthoughts/tasktrove-nemotron-gym-identity-following-v2",
+  "openthoughts/tasktrove-nemotron-gym-instruction-following-adversarial-v3",
+  "openthoughts/tasktrove-nemotron-gym-instruction-following-calendar",
+  "openthoughts/tasktrove-nemotron-gym-instruction-following-structured",
+  "openthoughts/tasktrove-nemotron-gym-instruction-following-v2",
+  "openthoughts/tasktrove-nemotron-gym-knowledge-web-search-mcqa",
+  "openthoughts/tasktrove-nemotron-gym-math-advanced-calculations-v3",
+  "openthoughts/tasktrove-nl2bash-tasks-cleaned-oracle",
+  "openthoughts/tasktrove-openswe-tasks-patched-v5-oracle-success",
+  "openthoughts/tasktrove-r2egym-patched-full-oracle",
+  "openthoughts/tasktrove-selfinstruct-naive-sandboxes-2-verified",
+  "openthoughts/tasktrove-swe-rebench-patched-oracle",
+  "openthoughts/tasktrove-swe-rebench-v2-patched-oracle",
+  "openthoughts/tasktrove-swegym-tasks-patched-validated-v2",
+  "openthoughts/tasktrove-swesmith-oracle-filtered",
+  "orca-bench/orca-bench",
+  "orca-bench/orca-bench-private",
+  "orca-bench/orca-bench-verified",
+  "orenyomtov/l10-lb-victim",
+  "orinlabs/horizon-1-public",
+  "orinlabs/horizon-public",
+  "oro-agents/smb-bench",
+  "parley-labs/negotiation-sample",
+  "phmforge/phmforge",
+  "polyvorlabs/cyberdefense-bench",
+  "polyvorlabs/klyrune-bench",
+  "polyvorlabs/revbench",
+  "pranalabs-ai-team/3dscenebench-mini",
+  "punitarani/harvey-labs",
+  "qcircuitbench/qcircuitbench",
+  "quesma/compilebench",
+  "quesma/otel-bench",
+  "quixbugs/quixbugs",
+  "rachittshah/railhead",
+  "rachittshah/railhead-train",
+  "reacher-z/WebsiteBench",
+  "reactbench/reactbench",
+  "reasoning-gym/reasoning-gym-easy",
+  "reasoning-gym/reasoning-gym-hard",
+  "red-hat-ai/SWE-benchify-hard",
+  "red-hat-ai/haiku-hard",
+  "refresh/blenderbench-20",
+  "replicationbench/replicationbench",
+  "review-bench/reviewbench-public",
+  "rexbench/rexbench",
+  "rounakbende10/rh-swe-bench",
+  "rsi-index/post-training",
+  "rsibench-infra/recursive-improve-cases",
+  "ryanmarten/tb-test",
+  "ryanmarten/tb4-preview",
+  "ryanmarten/terminal-bench-4-no-prebuild",
+  "satbench/satbench",
+  "scale-ai/hil-bench",
+  "scale-ai/hil-bench-sql-ask-human",
+  "scale-ai/hil-bench-swe-ask-human",
+  "scale-ai/swe-atlas-qna",
+  "scale-ai/swe-atlas-rf",
+  "scale-ai/swe-atlas-tw",
+  "scale-ai/swe-bench-pro",
+  "scienceagentbench/scienceagentbench",
+  "shiv-eshwar/lb6-dev-pilot-issue18-rewardkit",
+  "sierra-research/tau3-bench",
+  "silrlab/long-horizon-terminal-bench",
+  "silrlab/long-horizon-terminal-bench-2.0",
+  "silverwhite/slopcodebench-friction",
+  "skill2env/skill2env",
+  "skill2env/skill2env-lite",
+  "sldbench/sldbench",
+  "snorkel-ai/senior-swe-bench-v2026.06",
+  "snowflake-labs/data-eng-bench",
+  "solana-foundation/machine-trading",
+  "stanford/medagentbench",
+  "stbenjam/ramen-bench",
+  "strongreject/strongreject",
+  "suryanshsh/robotsevolved-gui-lessons-v1",
+  "svgap/svgap-reset-release",
+  "swe-bench/swe-bench-verified",
+  "swe-bench/swe-smith",
+  "swe-rebench/swe-rebench-leaderboard",
+  "swt-bench/swt-bench-verified",
+  "synthetic-sciences/frontierml",
+  "tbench-dw-a-dw_1784073139_2608908/dw-dataset",
+  "tbench-dw2-a-dw2_1784073189_2619080/dw2-dataset",
+  "tbench-dw3-a-dw3_1784073253_2627946/dw3-dataset",
+  "tbench-lbtest-a-xt_1784071893_2521724/xt-dataset",
+  "tbench-lbtest-lb_1784071796_2517183/lbtest-dataset",
+  "tbench-pubcrack-a-pc_1784073251/pubcrack-dataset",
+  "tbench-rv-a-rv_1784073719_2926154/rv-dataset",
+  "tbench-up-a-up_1784106749_3678887/up-dataset",
+  "tbench-up2-a-up2_1784107856_4005736/up2-dataset",
+  "tbench-up3-a-up3_1784108188_141385/up3-dataset",
+  "tbench-up4-a-up4_1784108341_146593/up4-dataset",
+  "tencent/autocodebench",
+  "termigen/termigen-environments",
+  "terminal-bench-pro/terminal-bench-pro",
+  "terminal-bench-science/terminal-bench-science",
+  "terminal-bench/terminal-bench",
+  "terminal-bench/terminal-bench-2",
+  "terminal-bench/terminal-bench-2-1",
+  "terminal-bench/terminal-bench-cpu-only",
+  "theagentcompany/theagentcompany",
+  "thetalab/vector-edit-gym",
+  "tinycomputerai/bun-server-bench",
+  "titouanlne/arc-agi-2-k8s",
+  "titouanlne/dbt-labs-k8s",
+  "tmax/TMax-15K-Harbor",
+  "tmax/tmax-13k-v1.1",
+  "tomseimandi/ade-bench",
+  "usaco/usaco",
+  "userbench/UserBench",
+  "userbench/UserBench-train400",
+  "valenlabs/abmaze",
+  "valenlabs/frontierbioml",
+  "vals/financeagent",
+  "vibrantlabsai/itsm-bench",
+  "victorojewale/abstention-act",
+  "viratzzs/petct-pilot",
+  "vmax-modal/modal-port-v1-eval-patched",
+  "vmax-modal/modal-port-v1-train-patched",
+  "vmax/vmax-tasks",
+  "walkerhughes/tb-test",
+  "walkerhughes/tb-test-cpu",
+  "websitebench/WebsiteBench",
+  "wildawm/train-rl-208-set",
+  "wildawm/train-sft-100-set",
+  "wildawm/val-33-set",
+  "withmartian/clojure-swerebench-v2-validated-51",
+  "xiaoboai/pawbench",
+  "xlang-ai/osworld-verified",
+  "xlang/ds-1000",
+  "yanagiorigami/frontier-cs",
+  "ykhli/tetrisbench",
+  "zenml/zenml-bench"
+ ],
+ "hub_info": {
+  "Enterprise-Bench/l1-l2-bench": {
+   "checked": "2026-11-17",
+   "tasks": 14,
+   "version": "2.0.1",
+   "description": "Enterprise Agent Benchmark",
+   "links": [
+    "https://github.com/devrev/enterprise-bench",
+    "https://github.com/laude-institute/harbor"
+   ]
+  },
+  "Enterprise-Bench/l1-l2-bench-v2": {
+   "checked": "2026-11-17",
+   "tasks": 42,
+   "version": "1.0.0",
+   "description": "Enterprise-Bench v2: 42 L1-L2 tasks across engineering, sales, support, and UK workflows with six MCP services.",
+   "links": [
+    "https://github.com/devrev/enterprise-bench",
+    "https://github.com/laude-institute/harbor"
+   ]
+  },
+  "LiteCoder/LiteCoder-rl": {
+   "checked": "2026-11-17",
+   "tasks": 602,
+   "version": "2.0.0",
+   "description": "LiteCoder Terminal RL environments",
+   "links": [
+    "https://github.com/icip-cas/LiteCoder"
+   ]
+  },
+  "MichaelY310/devopsgym": {
+   "checked": "2026-11-17",
+   "tasks": 728,
+   "version": "1.0.0",
+   "description": "DevOps-Gym benchmark adapted to Harbor format - 729 tasks across 5 categories: Build, Monitoring, Issue Resolving, Test Generation, and End-to-End",
+   "links": []
+  },
+  "NovitaAI/tb21-code-debug": {
+   "checked": "2026-11-17",
+   "tasks": 32,
+   "version": "1.0.1",
+   "description": "Terminal-Bench 2.1 subset for coding, software engineering, debugging, and game-like reasoning tasks, curated for Novita Sandbox Hackathon.",
+   "links": []
+  },
+  "NovitaAI/tb21-data-science": {
+   "checked": "2026-11-17",
+   "tasks": 26,
+   "version": "1.0.1",
+   "description": "Terminal-Bench 2.1 subset for data science, scientific computing, machine learning, model training, optimization, querying, and video processing tasks, curated for Novita…",
+   "links": []
+  },
+  "NovitaAI/tb21-file-recovery": {
+   "checked": "2026-11-17",
+   "tasks": 9,
+   "version": "1.0.1",
+   "description": "Terminal-Bench 2.1 subset for file operations, data manipulation, document processing, log analysis, and recovery tasks, curated for Novita Sandbox Hackathon.",
+   "links": []
+  },
+  "NovitaAI/tb21-systems-security": {
+   "checked": "2026-11-17",
+   "tasks": 22,
+   "version": "1.0.1",
+   "description": "Terminal-Bench 2.1 subset for systems, operations, security, cryptanalysis, and assistant-style operational tasks, curated for Novita Sandbox Hackathon.",
+   "links": []
+  },
+  "aarr/aarri-bench": {
+   "checked": "2026-11-17",
+   "tasks": 82,
+   "version": "1.0.0",
+   "description": "aarri(act as a real research intern)-bench, for evaluating LLM agents in academic research tasks",
+   "links": []
+  },
+  "abhishek203/task-aw": {
+   "checked": "2026-11-17",
+   "tasks": 5,
+   "version": "1.0.0",
+   "description": "IT support mock-provider tasks (a-1, a-2, a-3, a-4, a-8)",
+   "links": []
+  },
+  "abundant/swe-gen-cpp": {
+   "checked": "2026-11-17",
+   "tasks": 999,
+   "version": "1.0.0",
+   "description": "Dataset of 1000 C++ SWE tasks",
+   "links": []
+  },
+  "abundant/swe-gen-go": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "1.0.0",
+   "description": "Dataset of 1000 Go SWE tasks",
+   "links": []
+  },
+  "abundant/swe-gen-java": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "1.0.0",
+   "description": "Dataset of 1000 Java SWE tasks",
+   "links": []
+  },
+  "abundant/swe-gen-js": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "1.0.0",
+   "description": "Dataset of 1000 JS/TS SWE tasks",
+   "links": []
+  },
+  "abundant/swe-gen-rust": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "1.0.0",
+   "description": "Dataset of 1000 Rust SWE tasks",
+   "links": []
+  },
+  "abundant/swe-marathon": {
+   "checked": "2026-11-17",
+   "tasks": 20,
+   "version": "2.0.0",
+   "description": "Ultra long-horizon software engineering tasks from SWE-Marathon.",
+   "links": []
+  },
+  "accelerate-bench/accelerate-bench": {
+   "checked": "2026-11-17",
+   "tasks": 31,
+   "version": "1.0.0",
+   "description": "Accelerate Bench v1.1: 31 of the 32 scientific application optimization tasks for coding agents. Each task gives the agent a working application (GROMACS, OpenFOAM, Quant…",
+   "links": [
+    "https://github.com/AdAstraAbyssoque/accelerate-bench",
+    "https://github.com/AdAstraAbyssoque/accelerate-bench."
+   ]
+  },
+  "accordproject/skills": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.1",
+   "description": "Eval dataset for the accordproject concerto-validate skill: fix a Concerto JSON instance with a broken $class so it validates.",
+   "links": [
+    "https://github.com/accordproject/skills"
+   ]
+  },
+  "actava-ai/chi-bench": {
+   "checked": "2026-11-17",
+   "tasks": 78,
+   "version": "8.0.1",
+   "description": "χ-Bench — long-horizon, policy-rich U.S. healthcare workflow agent benchmark across provider prior-auth, payer UM, and care management. 78 single-agent tasks on the hub (…",
+   "links": [
+    "https://arxiv.org/abs/2605.16679",
+    "https://github.com/actava-ai/chi-bench",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "adameubanks/rating-generation-consistency": {
+   "checked": "2026-11-17",
+   "tasks": 45,
+   "version": "1.0.0",
+   "description": "Generate a short post for a target stance, then re-rate it on the same scale. Neutral topics only. Scales: [-1,1], [0,10], [1,5]. Reward is max(0, 1 - |norm(target) - nor…",
+   "links": []
+  },
+  "adyen/dabstep": {
+   "checked": "2026-11-17",
+   "tasks": 450,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "agentic-labs/erp-bench": {
+   "checked": "2026-11-17",
+   "tasks": 300,
+   "version": "1.0.0",
+   "description": "ERP-Bench is the Odoo 19 benchmark used in the Anchor paper, \"Preventing Artifact Drift in Agent Benchmark Generation.\" It contains 300 long-horizon procurement and manu…",
+   "links": []
+  },
+  "agentscope-ai/pawbench": {
+   "checked": "2026-11-17",
+   "tasks": 150,
+   "version": "3.1.0",
+   "description": "PawBench: A comprehensive agent benchmark with 150 tasks covering coding, data analysis, tool use, reasoning, safety, and multimodal capabilities.",
+   "links": []
+  },
+  "ai-forever/harness-bench-fast": {
+   "checked": "2026-11-17",
+   "tasks": 231,
+   "version": "1.0.0",
+   "description": "Self-contained file-operation agent benchmark",
+   "links": []
+  },
+  "aider/aider-polyglot": {
+   "checked": "2026-11-17",
+   "tasks": 225,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "aime/aime": {
+   "checked": "2026-11-17",
+   "tasks": 60,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "alabamamike/beam-dd-test-hard": {
+   "checked": "2026-11-17",
+   "tasks": 1200,
+   "version": "1.0.0",
+   "description": "Beam-DD v0.4.1 test-hard: due-diligence QA over synthetic data rooms (MIT). https://huggingface.co/datasets/alabamamikertr/beam-dd-dataroom",
+   "links": []
+  },
+  "alabamamike/beam-dd-test-normal": {
+   "checked": "2026-11-17",
+   "tasks": 700,
+   "version": "1.0.0",
+   "description": "Beam-DD v0.4.1 test-normal: due-diligence QA over synthetic data rooms (MIT). https://huggingface.co/datasets/alabamamikertr/beam-dd-dataroom",
+   "links": []
+  },
+  "ale/rsi-post-training": {
+   "checked": "2026-11-17",
+   "tasks": 6,
+   "version": "10.0.0",
+   "description": "ALE RSI post-training benchmark tasks for evaluating agent capabilities in research-level post-training workflows",
+   "links": []
+  },
+  "algotune/algotune": {
+   "checked": "2026-11-17",
+   "tasks": 154,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "alibaba-aaig/alibaba-ctf": {
+   "checked": "2026-11-17",
+   "tasks": 87,
+   "version": "7.0.0",
+   "description": "A dataset of 87 Capture-The-Flag tasks curated from the AlibabaCTF competition series (2023-2026) for evaluating agents on offensive security work.",
+   "links": []
+  },
+  "android-bench/android-bench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "2.0.3",
+   "description": "A dataset of 100 Android software engineering tasks derived from real-world repositories.",
+   "links": []
+  },
+  "apple/mmau": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "arcprize/arc-agi-2": {
+   "checked": "2026-11-17",
+   "tasks": 167,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "arcus-labs/tau3-banking": {
+   "checked": "2026-11-17",
+   "tasks": 97,
+   "version": "1.0.0",
+   "description": "Sierra v1.0.1 banking; full97; unchanged split-v2 membership.",
+   "links": []
+  },
+  "arcus-labs/tau3-banking-dev": {
+   "checked": "2026-11-17",
+   "tasks": 30,
+   "version": "2.0.0",
+   "description": "T3 banking dev split (30 tasks); base image pulled from mirror.gcr.io instead of Docker Hub",
+   "links": []
+  },
+  "arcus-labs/tau3-banking-test": {
+   "checked": "2026-11-17",
+   "tasks": 30,
+   "version": "2.0.0",
+   "description": "T3 banking test split (30 tasks); base image pulled from mirror.gcr.io instead of Docker Hub",
+   "links": []
+  },
+  "arthrod/harvey-redline": {
+   "checked": "2026-11-17",
+   "tasks": 286,
+   "version": "1.0.0",
+   "description": "Harvey Labs (punitarani) tasks whose deliverable is a redline/marked-up document: contracts first-turn, subsequent-turn and counterparty-paper-review redlines, practice-…",
+   "links": []
+  },
+  "arthrod/harvey-redline-jubarte": {
+   "checked": "2026-11-17",
+   "tasks": 281,
+   "version": "2.1.0",
+   "description": "Harvey LAB redline tasks (281), jubarte arm: same as arthrod/harvey-redline-lab but the docx skill's redline/comment/accept route is jubarte (main e5e0838d9, linux-aarch…",
+   "links": []
+  },
+  "arthrod/harvey-redline-lab": {
+   "checked": "2026-11-17",
+   "tasks": 281,
+   "version": "1.1.0",
+   "description": "Harvey LAB redline tasks (281) with LAB's own docx skill (incl. scripts/redline.py) restored in Harvey's sandbox image. Control arm of the jubarte A/B; twin: arthrod/har…",
+   "links": []
+  },
+  "aryaniyaps/lamina-bench": {
+   "checked": "2026-11-17",
+   "tasks": 20,
+   "version": "2.0.0",
+   "description": "LaminaBench v1: SkillsBench-paired product implementation benchmark (10 tasks, control + treatment arms)",
+   "links": []
+  },
+  "ashantanu/task1_v3_1_stock_research_basket_rolling": {
+   "checked": "2026-11-17",
+   "tasks": 8,
+   "version": "1.0.0",
+   "description": "Task 1 v3.1: eight rolling as-of stock research basket tasks for repeated model trajectories.",
+   "links": []
+  },
+  "atm-bench/atm-bench-hard-sgm": {
+   "checked": "2026-11-17",
+   "tasks": 31,
+   "version": "1.0.0",
+   "description": "ATM-Bench-Hard SGM Harbor tasks",
+   "links": []
+  },
+  "au12321ua/cadir-ci-benchmark": {
+   "checked": "2026-11-17",
+   "tasks": 2,
+   "version": "1.2.0",
+   "description": "Two native Harbor tasks for CADIR release checks.",
+   "links": []
+  },
+  "au12321ua/mesh2cad-benchmark": {
+   "checked": "2026-11-17",
+   "tasks": 7,
+   "version": "4.0.0",
+   "description": "7 scans of 7 parts, medium scans, seed 20261014.",
+   "links": []
+  },
+  "au12321ua/mesh2cad-benchmark-sca": {
+   "checked": "2026-11-17",
+   "tasks": 27,
+   "version": "1.0.0",
+   "description": "SCA environment fork of au12321ua/mesh2cad-benchmark@0.1.2.",
+   "links": []
+  },
+  "au12321ua/mesh2cad-smoke": {
+   "checked": "2026-11-17",
+   "tasks": 2,
+   "version": "7.0.0",
+   "description": "2 self-contained mesh reconstruction smoke tasks.",
+   "links": []
+  },
+  "au12321ua/mesh2cad-smoke-sca": {
+   "checked": "2026-11-17",
+   "tasks": 6,
+   "version": "1.0.0",
+   "description": "SCA environment fork of au12321ua/mesh2cad-smoke@0.3.1.",
+   "links": []
+  },
+  "based-models/causal-reflection-tb21": {
+   "checked": "2026-11-17",
+   "tasks": 30,
+   "version": "1.0.0",
+   "description": "Based Models causal-reflection campaign on a 30-task Terminal-Bench 2.1 slice. Not the official TB 2.1 leaderboard.",
+   "links": []
+  },
+  "based-models/tau2-airline": {
+   "checked": "2026-11-17",
+   "tasks": 0,
+   "version": "1.0.2",
+   "description": "GLM-5.3-Flash airline scores on tau2 1.0.1. This package is a leaderboard, not a runnable task set.",
+   "links": []
+  },
+  "bauerjustin/tb3-preview-v2": {
+   "checked": "2026-11-17",
+   "tasks": 111,
+   "version": "2.0.0",
+   "description": "Snapshot of harbor-framework/terminal-bench-3 tb3-preview-v2 branch (111 tasks)",
+   "links": []
+  },
+  "bauerjustin/terminal-bench-3-test": {
+   "checked": "2026-11-17",
+   "tasks": 64,
+   "version": "1.0.1",
+   "description": "Terminal Bench 3 tasks",
+   "links": []
+  },
+  "bencalvert04/programbench": {
+   "checked": "2026-11-17",
+   "tasks": 200,
+   "version": "1.0.1",
+   "description": "ProgramBench cleanroom reconstruction tasks: reimplementing real-world CLI tools from popular open-source repos.",
+   "links": [
+    "https://github.com/facebookresearch/ProgramBench"
+   ]
+  },
+  "benchflow/skillsbench": {
+   "checked": "2026-11-17",
+   "tasks": 87,
+   "version": "2.0.1",
+   "description": "SkillsBench v1.1 — 87-task benchmark snapshot",
+   "links": []
+  },
+  "bespokelabs/autoresearch-exam": {
+   "checked": "2026-11-17",
+   "tasks": 29,
+   "version": "3.0.1",
+   "description": "AutoResearchExam measures an agent's ability to improve and generalize on open ended machine learning research tasks. The dataset contains 29 tasks across machine learnin…",
+   "links": [
+    "https://github.com/bespokelabsai/AutoResearchExam",
+    "https://github.com/bespokelabsai/AutoResearchExam-Terminus",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "bigcode/bigcodebench-hard-complete": {
+   "checked": "2026-11-17",
+   "tasks": 145,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "bigcode/humanevalfix": {
+   "checked": "2026-11-17",
+   "tasks": 164,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "billxbf/mimo-v26-code": {
+   "checked": "2026-11-17",
+   "tasks": 2698,
+   "version": "2.0.0",
+   "description": "MiMo-V2.6-RL Code: 2698 Harbor tasks (converted from XiaomiMiMo/MiMo-V2.6-RL-oss)",
+   "links": [
+    "https://github.com/SWE-agent/mini-swe-agent",
+    "https://github.com/XiaomiMiMo/mimoagent",
+    "https://github.com/XiaomiMiMo/verl",
+    "https://github.com/adithya-s-k/FineEnvs",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "billxbf/mimo-v26-cyber": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "2.0.0",
+   "description": "MiMo-V2.6-RL Cyber: 1000 Harbor tasks (converted from XiaomiMiMo/MiMo-V2.6-RL-oss)",
+   "links": [
+    "https://github.com/SWE-agent/mini-swe-agent",
+    "https://github.com/XiaomiMiMo/mimoagent",
+    "https://github.com/XiaomiMiMo/verl",
+    "https://github.com/adithya-s-k/FineEnvs",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "billxbf/mimo-v26-general": {
+   "checked": "2026-11-17",
+   "tasks": 925,
+   "version": "2.0.0",
+   "description": "MiMo-V2.6-RL General: 925 Harbor tasks (converted from XiaomiMiMo/MiMo-V2.6-RL-oss)",
+   "links": [
+    "https://github.com/SWE-agent/mini-swe-agent",
+    "https://github.com/XiaomiMiMo/mimoagent",
+    "https://github.com/XiaomiMiMo/verl",
+    "https://github.com/adithya-s-k/FineEnvs",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "billxbf/mimo-v26-music": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "2.0.0",
+   "description": "MiMo-V2.6-RL Music: 1000 Harbor tasks (converted from XiaomiMiMo/MiMo-V2.6-RL-oss)",
+   "links": [
+    "https://github.com/SWE-agent/mini-swe-agent",
+    "https://github.com/XiaomiMiMo/mimoagent",
+    "https://github.com/XiaomiMiMo/verl",
+    "https://github.com/adithya-s-k/FineEnvs",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "billxbf/mimo-v26-terminal": {
+   "checked": "2026-11-17",
+   "tasks": 64,
+   "version": "2.0.0",
+   "description": "MiMo-V2.6-RL Terminal: 64 Harbor tasks converted from XiaomiMiMo/MiMo-V2.6-RL-oss",
+   "links": [
+    "https://github.com/SWE-agent/mini-swe-agent",
+    "https://github.com/XiaomiMiMo/mimoagent",
+    "https://github.com/XiaomiMiMo/verl",
+    "https://github.com/adithya-s-k/FineEnvs",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "billxbf/mimo-v26-webdev": {
+   "checked": "2026-11-17",
+   "tasks": 2093,
+   "version": "1.1.0",
+   "description": "MiMo-V2.6-RL Webdev: 2093 Harbor tasks (converted from XiaomiMiMo/MiMo-V2.6-RL-oss)",
+   "links": [
+    "https://github.com/SWE-agent/mini-swe-agent",
+    "https://github.com/XiaomiMiMo/mimoagent",
+    "https://github.com/XiaomiMiMo/verl",
+    "https://github.com/adithya-s-k/FineEnvs",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "billxbf/terminal-agent-mix": {
+   "checked": "2026-11-17",
+   "tasks": 9207,
+   "version": "2.0.1",
+   "description": "9k mix of public terminal / coding agent data",
+   "links": []
+  },
+  "billxbf/terminal-agent-mix-light": {
+   "checked": "2026-11-17",
+   "tasks": 3064,
+   "version": "1.0.0",
+   "description": "3k subsample of billxbf/terminal-agent-mix",
+   "links": []
+  },
+  "binary-audit/binary-audit": {
+   "checked": "2026-11-17",
+   "tasks": 46,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "biopharma-bench/biopharma-bench": {
+   "checked": "2026-11-17",
+   "tasks": 10,
+   "version": "3.0.0",
+   "description": "Ten assignments at Havenor Therapeutics, a fictional company that makes sterile injectable drugs. The company date is 27 September 2026. An agent takes an employee's seat…",
+   "links": []
+  },
+  "birdsql/bird-mini-dev": {
+   "checked": "2026-11-17",
+   "tasks": 1500,
+   "version": "2.0.2",
+   "description": "BIRD Mini-Dev: 500 aligned questions across SQLite, MySQL and PostgreSQL (1,500 dialect-specific tasks).",
+   "links": []
+  },
+  "birdsql/dii-v1-muscle": {
+   "checked": "2026-11-17",
+   "tasks": 200,
+   "version": "1.0.1",
+   "description": "Data Intelligence Index (DII) v1.0 Muscle, public set: 200 hard data tasks from 9 benchmarks in 7 categories: database question answering (BIRD Mini-Dev), database analy…",
+   "links": [
+    "https://github.com/OpenDataBox/Workspace-Bench",
+    "https://github.com/Snowflake-Labs/dare-bench",
+    "https://github.com/bird-bench/BIRD-CRITIC-1",
+    "https://github.com/bird-bench/BIRD-Interact",
+    "https://github.com/bird-bench/Data-Intelligence-Index"
+   ]
+  },
+  "blobfishai/arc-crm-6": {
+   "checked": "2026-11-17",
+   "tasks": 6,
+   "version": "3.0.0",
+   "description": "Six independently authored synthetic CRM workflows on one mocked CLI/web/REST/MCP world per episode. Partial Arc-inspired coverage, not source-row reproduction.",
+   "links": [
+    "https://github.com/blobfishai/arc-crm-agent-simulation"
+   ]
+  },
+  "blobfishai/counselbench-100": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "6.0.0",
+   "description": "100 high-level legal-agent tasks with 97-asset multi-provider evidence rooms, distinct deep trajectories, and native causal state verification.",
+   "links": [
+    "https://github.com/blobfishai/legal-agent-simulation"
+   ]
+  },
+  "blobfishai/dealbench-100-suite": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "3.0.0",
+   "description": "100 executable investment-banking workflows with deterministic DealScore grading",
+   "links": [
+    "https://github.com/blobfishai/deal-agent-simulation"
+   ]
+  },
+  "blobfishai/devopsbench-100": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "8.0.0",
+   "description": "100 deterministic long-horizon DevOps/SRE agent tasks over an executable NovaCart world with 32-67 call reference trajectories and state-diff vcode verifiers.",
+   "links": []
+  },
+  "blobfishai/domainbench-24": {
+   "checked": "2026-11-17",
+   "tasks": 24,
+   "version": "8.0.0",
+   "description": "24 deeply realistic stateful MCP tasks across six enterprise domains",
+   "links": []
+  },
+  "blobfishai/erpbench-100-suite": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "100 executable Oracle-Fusion-shaped ERP workflows with deterministic ERPScore grading",
+   "links": []
+  },
+  "blobfishai/hubbench": {
+   "checked": "2026-11-17",
+   "tasks": 104,
+   "version": "5.0.0",
+   "description": "HubBench: one oracle-proven, deterministically graded Blobfish benchmark family per Harbor Hub professional-domain cluster — 104 stateful multi-system employee-decision …",
+   "links": []
+  },
+  "blobfishai/ledgerbench-100": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "6.0.0",
+   "description": "100 causal corporate-finance workflows over a closed ERP sandbox: provider-shaped MCP tools, distributed evidence, exact state transitions, and no LLM judge.",
+   "links": []
+  },
+  "blobfishai/litigation": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "2.0.0",
+   "description": "Executable litigation environments for agent training and evaluation. 100 long-horizon tasks, a median of 108 verified tool-calling steps each, worked across eight syste…",
+   "links": []
+  },
+  "blobfishai/salesbench-100": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "9.0.0",
+   "description": "100 high-level sales operations requests with evidence-determined multi-system trajectories.",
+   "links": []
+  },
+  "blobfishai/semikongbench-100": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "100 executable semiconductor exception workflows with deterministic SemiOpsScore grading",
+   "links": []
+  },
+  "blobfishai/webbench": {
+   "checked": "2026-11-17",
+   "tasks": 159,
+   "version": "4.0.0",
+   "description": "WebBench: browser-only correlated SaaS work over deterministic populated Blobfish worlds — 159 tasks graded executably against the applications backends (WebScore, no LL…",
+   "links": []
+  },
+  "brando90/vb-generation-one-20260913": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "One private VeriBench generation infrastructure trial; unscored",
+   "links": []
+  },
+  "cais/swebenchpro": {
+   "checked": "2026-11-17",
+   "tasks": 731,
+   "version": "2.0.0",
+   "description": "SWE-bench Pro with anti-exploitation (git history isolation + GitHub network blocking). 731 tasks, Python/JS/TS/Go.",
+   "links": []
+  },
+  "camel-ai/seta-env": {
+   "checked": "2026-11-17",
+   "tasks": 1376,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "carlesoctav/gemma4_gh_pr": {
+   "checked": "2026-11-17",
+   "tasks": 118,
+   "version": "1.0.0",
+   "description": "Gemma 4 GitHub PR evaluation benchmark tasks",
+   "links": []
+  },
+  "chloe/tooluse-law": {
+   "checked": "2026-11-17",
+   "tasks": 23,
+   "version": "2.0.0",
+   "description": "Tool Use Law Benchmark",
+   "links": []
+  },
+  "cmu/refav": {
+   "checked": "2026-11-17",
+   "tasks": 1500,
+   "version": "2.0.0",
+   "description": "RefAV benchmark",
+   "links": []
+  },
+  "codepde/codepde": {
+   "checked": "2026-11-17",
+   "tasks": 5,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "cohere/terminal_bench_aai": {
+   "checked": "2026-11-17",
+   "tasks": 44,
+   "version": "1.0.0",
+   "description": "AAII Terminal-Bench Hard: 44 hard tasks from terminal-bench v1 (terminal-bench-core==0.1.1), used with the Terminus-2 agent.",
+   "links": []
+  },
+  "cookbook/test": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "crustbench/crustbench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "datacurve/deep-swe": {
+   "checked": "2026-11-17",
+   "tasks": 113,
+   "version": "1.0.1",
+   "description": "DeepSWE: Measuring frontier coding agents on original, long-horizon engineering tasks",
+   "links": [
+    "https://github.com/datacurve-ai/pier"
+   ]
+  },
+  "datacurve/deep-swe-1-1": {
+   "checked": "2026-11-17",
+   "tasks": 113,
+   "version": "1.0.0",
+   "description": "DeepSWE: Measuring frontier coding agents on original, long-horizon engineering tasks",
+   "links": [
+    "https://github.com/datacurve-ai/pier"
+   ]
+  },
+  "dbt-labs/ade-bench": {
+   "checked": "2026-11-17",
+   "tasks": 48,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "deveval/deveval": {
+   "checked": "2026-11-17",
+   "tasks": 63,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "diyakejriwal/finsearchcomp-t2-global": {
+   "checked": "2026-11-17",
+   "tasks": 119,
+   "version": "2.0.0",
+   "description": "FinSearchComp Global T2 Simple_Historical_Lookup (119 tasks) @ 55b6393; you_client UA fix for api.you.com Cloudflare 1010",
+   "links": [
+    "https://github.com/randomtutu/FinSearchComp"
+   ]
+  },
+  "doe/degennaro-workplace-sample": {
+   "checked": "2026-11-17",
+   "tasks": 4,
+   "version": "2.0.2",
+   "description": "A sample of workplace-assistant tasks in one software company's Slack, Gmail, Calendar, Linear, ClickUp, Notion, CRM and files, served by local mocks of 80 production tool…",
+   "links": []
+  },
+  "doe/legal-consent-sweep": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.4",
+   "description": "A complete acquisition consent workstream with a populated legal data room, simulated correspondence, reference solution and separate verifier",
+   "links": []
+  },
+  "doe/legal-world-sample": {
+   "checked": "2026-11-17",
+   "tasks": 4,
+   "version": "1.0.6",
+   "description": "A sample of legal-assistant tasks inside one law practice's mail, Drive, calendars and document library, served by a local mock with 23 tools; graded on the drafts, mail, …",
+   "links": []
+  },
+  "doe/sample-pack": {
+   "checked": "2026-11-17",
+   "tasks": 5,
+   "version": "1.1.0",
+   "description": "Five Harbor tasks in legal, private equity and corporate card operations, graded by deterministic checks and a claude-opus-5-5 and gpt-6-astra judge panel",
+   "links": []
+  },
+  "drugtargetbench/drugtargetbench": {
+   "checked": "2026-11-17",
+   "tasks": 60,
+   "version": "5.0.0",
+   "description": "Agentic causal target discovery across 20 semi-synthetic biobank worlds. Derive a cardiac phenotype from raw cine-MRI, then identify the proteins that causally drive dise…",
+   "links": []
+  },
+  "elfsong/cpu2gpu": {
+   "checked": "2026-11-17",
+   "tasks": 258,
+   "version": "6.0.0",
+   "description": "CPU-to-GPU porting benchmark: 258 novel multicore CPU programs to port to CUDA, graded on hidden inputs for correctness and decades of speedup over a direct reference po…",
+   "links": []
+  },
+  "elfsong/mercury-eval": {
+   "checked": "2026-11-17",
+   "tasks": 256,
+   "version": "1.0.0",
+   "description": "Mercury eval: 256 Python code-efficiency tasks; CC-BY-NC-4.0.",
+   "links": [
+    "https://github.com/Elfsong/Mercury_Eval"
+   ]
+  },
+  "evaligo/swe-pair": {
+   "checked": "2026-11-17",
+   "tasks": 62,
+   "version": "1.0.0",
+   "description": "SWE-Pair v0.1 public split: 62 tasks, each two real bugs from the same open-source Python project behind one bug report, graded by both pull requests' hidden tests. Leade…",
+   "links": []
+  },
+  "evaligo/swe-race": {
+   "checked": "2026-11-17",
+   "tasks": 94,
+   "version": "1.0.0",
+   "description": "SWE-Race v0.1 public split: 94 real concurrency bugs from open-source Python projects, graded by each project's own hidden tests. Leaderboard: https://labs.evaligo.com/sw…",
+   "links": []
+  },
+  "evoeval/evoeval": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "factory-ai/legacy-bench": {
+   "checked": "2026-11-17",
+   "tasks": 10,
+   "version": "1.0.0",
+   "description": "Legacy-Bench public sample tasks for evaluating AI coding agents on legacy software engineering tasks.",
+   "links": []
+  },
+  "featurebench/featurebench": {
+   "checked": "2026-11-17",
+   "tasks": 200,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "featurebench/featurebench-lite": {
+   "checked": "2026-11-17",
+   "tasks": 30,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "featurebench/featurebench-lite-modal": {
+   "checked": "2026-11-17",
+   "tasks": 30,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "featurebench/featurebench-modal": {
+   "checked": "2026-11-17",
+   "tasks": 200,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "filing-bench/filing-bench": {
+   "checked": "2026-11-17",
+   "tasks": 85,
+   "version": "1.0.0",
+   "description": "Point-in-time SEC XBRL finance questions with hand-checked answer keys (public split; a held-out split is kept private)",
+   "links": []
+  },
+  "fritzprix/libragent-browser-dual-12": {
+   "checked": "2026-11-17",
+   "tasks": 12,
+   "version": "1.0.0",
+   "description": "12-task LibrAgent browser dual-mode harness: 6 scenarios × sidecar|userChrome. In-container static server published to host. userChrome tasks require Extension Bridge Con…",
+   "links": []
+  },
+  "fritzprix/libragent-compaction-fact-recall-1": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "5.0.0",
+   "description": "Compaction suite v0.5: cascade + mutchain (eligibility) and codesweep (quality). Anti-grep pressure via large sequential write windows.",
+   "links": []
+  },
+  "fritzprix/libragent-diverse-9": {
+   "checked": "2026-11-17",
+   "tasks": 9,
+   "version": "1.0.1",
+   "description": "Stratified 9-task smoke suite from Terminal-Bench 2.1 for LibrAgent harness eval. Difficulty mix: 2 easy / 4 medium / 3 hard across 7 categories (SE, debugging, sysadmin, …",
+   "links": []
+  },
+  "fritzprix/libragent-knowledge-bridge-2": {
+   "checked": "2026-11-17",
+   "tasks": 2,
+   "version": "1.0.0",
+   "description": "2-task serial suite: research+distill into Knowledge, then cold-session solve via searchKnowledge. Validates assistant-scoped knowledge bridging across Harbor trials (hist…",
+   "links": []
+  },
+  "fritzprix/libragent-media-desktop-10": {
+   "checked": "2026-11-17",
+   "tasks": 10,
+   "version": "3.0.0",
+   "description": "10-task LibrAgent harness: 5 Terminal-Bench vision/OCR/video + 2 Harbor Index (batch OCR + GAIA chess exact-match) + 3 custom web visual-bug tasks (browser__). All verifi…",
+   "links": []
+  },
+  "fritzprix/libragent-org-collab-7": {
+   "checked": "2026-11-17",
+   "tasks": 7,
+   "version": "2.0.0",
+   "description": "7-task LibrAgent suite for explicit Org teamwork: scaffold/createOrg/spawn/checkSession across hub-spoke, sequential, swarm, rework, and bootstrap-trap missions. Verifies …",
+   "links": []
+  },
+  "fritzprix/libragent-swe-diverse-8": {
+   "checked": "2026-11-17",
+   "tasks": 8,
+   "version": "1.0.0",
+   "description": "LibrAgent iteration suite: 8 easy SWE-bench Verified tasks (one per repo, <15 min fix). Not a Verified solve-rate estimate.",
+   "links": []
+  },
+  "frontier-harness-eval/frontier-harness-eval": {
+   "checked": "2026-11-17",
+   "tasks": 62,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "frontier-harness-eval/frontier-harness-eval-lite": {
+   "checked": "2026-11-17",
+   "tasks": 25,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "frontis/agent-obs-core": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "4.0.0",
+   "description": "Three source-backed agent reliability tasks: fallback honesty and a paired integrity/control evaluation.",
+   "links": []
+  },
+  "frontis/generated-basic-production-traces": {
+   "checked": "2026-11-17",
+   "tasks": 57,
+   "version": "5.1.0",
+   "description": "Basic runnable replay Tasks mechanically generated from Frontis production Historical Trials.",
+   "links": []
+  },
+  "futurehouse/bixbench": {
+   "checked": "2026-11-17",
+   "tasks": 205,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "futurehouse/bixbench-cli": {
+   "checked": "2026-11-17",
+   "tasks": 205,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "futurehouse/labbench": {
+   "checked": "2026-11-17",
+   "tasks": 181,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "gabeorlanski/slopcodebench": {
+   "checked": "2026-11-17",
+   "tasks": 36,
+   "version": "4.0.0",
+   "description": "SlopCodeBench multi-checkpoint coding benchmark tasks converted for Harbor.",
+   "links": [
+    "https://arxiv.org/abs/2603.24755",
+    "https://github.com/SprocketLab/scb-problems",
+    "https://github.com/SprocketLab/slop-code-bench"
+   ]
+  },
+  "gaia/gaia": {
+   "checked": "2026-11-17",
+   "tasks": 165,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "gnucleus-ai/cad-bench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "3.0.0",
+   "description": "gNucleus AI CAD-generation benchmark v3 -- 100 parametric FreeCAD tasks: 30 text-to-CAD create, 30 create-and-edit, 40 image-to-CAD (Harbor schema 1.3; requires harbor >…",
+   "links": []
+  },
+  "gorilla/bfcl": {
+   "checked": "2026-11-17",
+   "tasks": 3641,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "gorilla/bfcl_parity": {
+   "checked": "2026-11-17",
+   "tasks": 123,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "gpqa-diamond/gpqa-diamond": {
+   "checked": "2026-11-17",
+   "tasks": 198,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "grafana/o11y-bench": {
+   "checked": "2026-11-17",
+   "tasks": 63,
+   "version": "1.0.0",
+   "description": "o11y-bench: an open agentic observability benchmark. Measures how well AI agents perform 63 real-world observability tasks across logs, metrics, traces, dashboards, and i…",
+   "links": [
+    "https://github.com/grafana/o11y-bench"
+   ]
+  },
+  "grandsmile/unicode": {
+   "checked": "2026-11-17",
+   "tasks": 399,
+   "version": "1.0.0",
+   "description": "UniCode generative coding benchmark adapted to Harbor. Oracle-verified subset with valid_codes-derived solutions.",
+   "links": []
+  },
+  "gustofied/compute-bazaar-bench": {
+   "checked": "2026-11-17",
+   "tasks": 4,
+   "version": "2.0.0",
+   "description": "A benchmark for evaluating agents on compute-market tasks.",
+   "links": []
+  },
+  "hack-verifiable-environments/hv-terminal-bench-2-1": {
+   "checked": "2026-11-17",
+   "tasks": 89,
+   "version": "2.0.1",
+   "description": "Hack-verifiable version of terminal-bench-2-1. Each task includes hidden solution and test files; inotifywait detects whether agents access them instead of solving legiti…",
+   "links": []
+  },
+  "handshake-ai/atlas-finance": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "6.1.0",
+   "description": "100 expert-level finance tasks in 13 realistic firm environments, served over MCP (Outlook, Slack, Drive, Calendar, OneNote) and graded by an agent-as-judge against weig…",
+   "links": []
+  },
+  "harbor-index/harbor-index": {
+   "checked": "2026-11-17",
+   "tasks": 80,
+   "version": "4.0.0",
+   "description": "Harbor Index: 80 agentic evaluation tasks spanning SWE, security, science, math, and optimization (revision 1.4).",
+   "links": []
+  },
+  "harbor-index/harbor-index-1.0": {
+   "checked": "2026-11-17",
+   "tasks": 82,
+   "version": "1.0.0",
+   "description": "Harbor Index is an 82-task benchmark for agentic evaluation. It was distilled from more than 6,000 candidate tasks through repeated model runs, automated broken-task iden…",
+   "links": []
+  },
+  "harbor/hello-world": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "harveyai/lab": {
+   "checked": "2026-11-17",
+   "tasks": 1251,
+   "version": "1.0.0",
+   "description": "Harvey LAB - open-source benchmark for evaluating agents on real legal work.",
+   "links": []
+  },
+  "hcltech-robotics/simreadybench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "5.0.0",
+   "description": "SimReadyBench NV100",
+   "links": []
+  },
+  "hcltech-robotics/simrepairbench": {
+   "checked": "2026-11-17",
+   "tasks": 25,
+   "version": "14.0.0",
+   "description": "CASTAIGNE25 OpenUSD repair tasks with partial-credit state verification",
+   "links": []
+  },
+  "heytalal/maydan-hf-rl-sampler": {
+   "checked": "2026-11-17",
+   "tasks": 10,
+   "version": "1.0.0",
+   "description": "English-language synthetic Saudi/GCC government-workflow sampler for AI-agent evaluation, focused on GOSI F11 contribution reconciliation.",
+   "links": []
+  },
+  "huu256/gauntlet": {
+   "checked": "2026-11-17",
+   "tasks": 5,
+   "version": "1.0.0",
+   "description": "Gauntlet: five hard fundraising-desk games (6x6 to 14x14), a stochastic job-shop scheduling problem played through a chat with a hidden game server. Pass/fail against a fi…",
+   "links": []
+  },
+  "huu256/gauntlet-planner": {
+   "checked": "2026-11-17",
+   "tasks": 5,
+   "version": "1.0.0",
+   "description": "Gauntlet: five hard fundraising-desk games (6x6 to 14x14), a stochastic job-shop scheduling problem played through a chat with a hidden game server. Pass/fail against a fi…",
+   "links": []
+  },
+  "huu256/hpd-benchmark": {
+   "checked": "2026-11-17",
+   "tasks": 7,
+   "version": "1.0.1",
+   "description": "Benchmark test data (do not train on it): professional agentic tasks in mock enterprise environments, based on public benchmarks. For research purposes only; simulated pro…",
+   "links": []
+  },
+  "huu256/hpd-training": {
+   "checked": "2026-11-17",
+   "tasks": 4,
+   "version": "1.0.0",
+   "description": "Training set: self-authored professional agentic tasks in mock enterprise environments. For research purposes only; simulated problems, not professional advice (legal, med…",
+   "links": []
+  },
+  "hwe-bench/hwe-bench": {
+   "checked": "2026-11-17",
+   "tasks": 77,
+   "version": "3.0.0",
+   "description": "HWE-bench evaluates LLM agents on engineering-simulation tasks: the agent drives a real solver and is scored on whether the number it reports lands inside a defensible to…",
+   "links": [
+    "https://github.com/svd-ai-lab/hwe-bench"
+   ]
+  },
+  "i17470/ds": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "probe dataset",
+   "links": []
+  },
+  "i18436wni51m/ds88": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "probe88 dataset",
+   "links": []
+  },
+  "i18677vr50t0/ds70": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "probe88 dataset",
+   "links": []
+  },
+  "i18677vr50t0/ds71": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "probe71 dataset",
+   "links": []
+  },
+  "i19330nk7e33/ds90": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "probe88 dataset",
+   "links": []
+  },
+  "i3886org/i3886dsy": {
+   "checked": "2026-11-17",
+   "tasks": 2,
+   "version": "1.0.0",
+   "description": "probe",
+   "links": []
+  },
+  "i4030iaesfw/xssds": {
+   "checked": "2026-11-17",
+   "tasks": 0,
+   "version": "1.0.0",
+   "description": "<img src=x onerror=\"document.title='XSSDS'\">",
+   "links": []
+  },
+  "i5260teamalpx/i5609gppzcss": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "i5609 promote probe",
+   "links": []
+  },
+  "ibragim-badertdinov/hard12": {
+   "checked": "2026-11-17",
+   "tasks": 12,
+   "version": "1.3.0",
+   "description": "12 hard, verified coding tasks from Terminal-Bench 4.0, DeepSWE 1.1, SWE-rebench, LongTail-SWE and SWE-bench Pro V2 across Python, TypeScript, JavaScript, Go, Elixir and …",
+   "links": [
+    "https://github.com/harbor-framework/terminal-bench",
+    "https://github.com/scaleapi/SWE-bench_Pro-os"
+   ]
+  },
+  "ibragim-badertdinov/swe-rebench-07-2026": {
+   "checked": "2026-11-17",
+   "tasks": 111,
+   "version": "4.0.0",
+   "description": "111 hard SWE-rebench leaderboard tasks from the July 2026 snapshot across Go, Java, Python, Rust, and TypeScript",
+   "links": [
+    "https://arxiv.org/abs/2505.20411"
+   ]
+  },
+  "ibragim-badertdinov/swe-rebench-v2.1-rl": {
+   "checked": "2026-11-17",
+   "tasks": 21272,
+   "version": "2.0.0",
+   "description": "21,272 verified SWE-rebench V2.1 tasks for RL training of coding agents across 20 languages, with public prebuilt Docker images",
+   "links": [
+    "https://arxiv.org/abs/2602.23866"
+   ]
+  },
+  "ineqmath/ineqmath": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "infra-bench/infra-bench-v1": {
+   "checked": "2026-11-17",
+   "tasks": 20,
+   "version": "1.0.0",
+   "description": "20 AI-infra engineering tasks on AMD MI35X (5 categories: model deployment, profiling, kernel implementation, kernel tuning, debug triage)",
+   "links": [
+    "https://github.com/harbor-framework/harbor",
+    "https://github.com/sammysun0711/InfraBench"
+   ]
+  },
+  "islo-labs/reward-hack-bench": {
+   "checked": "2026-11-17",
+   "tasks": 8,
+   "version": "2.0.0",
+   "description": "Reward-hacking benchmark: SWE-bench + CyBench tasks with injected solution-retrieval cheat prompts, scored by a fairness LLM judge. Reward = solved without cheating.",
+   "links": [
+    "https://github.com/islo-labs/reward-hack-bench"
+   ]
+  },
+  "islo-labs/reward-hack-bench-control": {
+   "checked": "2026-11-17",
+   "tasks": 8,
+   "version": "2.0.0",
+   "description": "Baseline/control companion to reward-hack-bench: the same 8 SWE-bench + CyBench tasks with NO cheat prompt, still scored by the fairness judge. Also packages these CyBench…",
+   "links": [
+    "https://github.com/islo-labs/reward-hack-bench"
+   ]
+  },
+  "itmo-autods/fdata-exit-case": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "F-DATA Fugaku exit-state case (SciData 2025)",
+   "links": []
+  },
+  "itmo-autods/maize-yield-case": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "Maize grain-yield case (G2F G3 2023)",
+   "links": []
+  },
+  "itmo-autods/openpoly-tg-case": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "Polymer Tg OpenPoly case (CJPS 2025)",
+   "links": []
+  },
+  "itmo-autods/scientific-cases": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "1.0.0",
+   "description": "AutoDS scientific ML cases: maize yield (G3 2023), polymer Tg (OpenPoly 2025), Fugaku HPC exit-state (F-DATA 2025) — train/test split + author baseline in each task",
+   "links": []
+  },
+  "ivanleo/agent-search": {
+   "checked": "2026-11-17",
+   "tasks": 20,
+   "version": "2.0.0",
+   "description": "Evaluation dataset for agent-search task.",
+   "links": []
+  },
+  "josancamon19/nim": {
+   "checked": "2026-11-17",
+   "tasks": 285,
+   "version": "5.1.0",
+   "description": "285 issue-linked Nim compiler tasks with Linux amd64 C-backend black-box evaluation.",
+   "links": []
+  },
+  "josancamon19/nim-hard": {
+   "checked": "2026-11-17",
+   "tasks": 15,
+   "version": "3.1.0",
+   "description": "15 validated issue-only Nim tasks unsolved by DeepSeek V4.1 Flash; static/rubric passed and no disqualifying trial-analysis findings.",
+   "links": []
+  },
+  "josancamon19/physician-bench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "Harbor packaging of the 100 Apache-2.0 HealthRex PhysicianBench tasks. Runtime requires separately authorized access to the fhir-full:v1 EHR image from Stanford Redivis.",
+   "links": []
+  },
+  "kgmon/deepsearchqa": {
+   "checked": "2026-11-17",
+   "tasks": 900,
+   "version": "1.0.1",
+   "description": "DeepSearchQA is a 900-prompt factuality benchmark from Google DeepMind for evaluating deep research agents on difficult multi-step information-seeking tasks.",
+   "links": []
+  },
+  "klinikebench/klinikebench": {
+   "checked": "2026-11-17",
+   "tasks": 333,
+   "version": "2.0.3",
+   "description": "KlinikeBench: 333 long-horizon clinical consultations with an LLM-simulated patient, a 140-tool clinical action surface and four-gate scoring (diagnosis, required tools,…",
+   "links": [
+    "https://arxiv.org/abs/2609.38480",
+    "https://github.com/Zehui127/klinikebench-train"
+   ]
+  },
+  "kumo/kumo-1": {
+   "checked": "2026-11-17",
+   "tasks": 5300,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "kumo/kumo-easy": {
+   "checked": "2026-11-17",
+   "tasks": 5050,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "kumo/kumo-hard": {
+   "checked": "2026-11-17",
+   "tasks": 250,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "kumo/kumo-parity": {
+   "checked": "2026-11-17",
+   "tasks": 212,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "kw-bench/kw-sap": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "1.0.0",
+   "description": "kw-bench procure-to-pay forensics (hard): find a ghost vendor, a bank-account diversion, price creep and duplicate payments in ~300 MB of SAP extracts, without accusing th…",
+   "links": []
+  },
+  "kw-bench/kw-sap-easy": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "1.0.0",
+   "description": "kw-bench procure-to-pay forensics (easy tier): the same schemes on a smaller, simpler extract. Deterministic grading.",
+   "links": []
+  },
+  "kw-bench/kw-sap-vat": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "1.0.0",
+   "description": "kw-bench VAT chain family: reconstruct five years of intra-group VAT across three generations of SAP (ECC, a partial S/4HANA migration, a 2024 redesign) from raw extracts,…",
+   "links": []
+  },
+  "lamina/product-bench": {
+   "checked": "2026-11-17",
+   "tasks": 12,
+   "version": "1.0.6",
+   "description": "Product Bench — 3-arm public benchmark (direct / plan / lamina). Thin-slice greenfield product coding with a RewardKit LLM judge. Median of 3 full reruns using Cursor CLI…",
+   "links": [
+    "https://github.com/aryaniyaps/lamina"
+   ]
+  },
+  "last-secure-code-benchmark/last-secure-code-benchmark": {
+   "checked": "2026-11-17",
+   "tasks": 450,
+   "version": "3.0.1",
+   "description": "Last Secure Code Benchmark (LSCBench): 450 secure code generation tasks from 150 vulnerability scenarios, each at function, file, and repository granularity, in seven la…",
+   "links": [
+    "https://arxiv.org/abs/2610.14766"
+   ]
+  },
+  "lawbench/lawbench": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "lcb/longswebench-32k": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "4.0.0",
+   "description": "LongCodeBench (LCB) LongSWE-Bench tasks — 32k context window bucket",
+   "links": []
+  },
+  "letta-ai/frontier-memory": {
+   "checked": "2026-11-17",
+   "tasks": 15,
+   "version": "3.0.0",
+   "description": "Frontier Memory: the 15 target tasks a fixed task agent attempts with a dreamed memory",
+   "links": [
+    "https://github.com/letta-ai/frontier-memory"
+   ]
+  },
+  "lica-world/gdb": {
+   "checked": "2026-11-17",
+   "tasks": 33786,
+   "version": "1.0.0",
+   "description": "Full GraphicDesignBench (GDB) benchmark converted to Harbor tasks.",
+   "links": []
+  },
+  "livecodebench/livecodebench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "llamaindex/extractbench-pro": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "2.0.2",
+   "description": "ExtractBench Pro: 100 synthetic document extraction tasks across six challenges; deterministic Value F1 reward.",
+   "links": [
+    "https://github.com/run-llama/ExtractBench"
+   ]
+  },
+  "longtail-swe/longtail-swe": {
+   "checked": "2026-11-17",
+   "tasks": 202,
+   "version": "1.1.0",
+   "description": "LongTail-SWE: 202 hard real-world SWE tasks across 13 long-tail languages",
+   "links": [
+    "https://arxiv.org/abs/2611.10304",
+    "https://github.com/SWE-rebench/LongTail-SWE"
+   ]
+  },
+  "longtail-swe/longtail-swe-easy": {
+   "checked": "2026-11-17",
+   "tasks": 269,
+   "version": "1.0.0",
+   "description": "LongTail-SWE easy: 269 real-world SWE tasks across 13 long-tail languages",
+   "links": [
+    "https://arxiv.org/abs/2611.10304"
+   ]
+  },
+  "looni-lab/smdd-bench": {
+   "checked": "2026-11-17",
+   "tasks": 502,
+   "version": "1.0.0",
+   "description": "SMDD-Bench: five small-molecule design task families with an agent harness, GPU oracle and setup guide.",
+   "links": [
+    "https://arxiv.org/abs/2605.21740"
+   ]
+  },
+  "lowgular/browser-use-linkedin": {
+   "checked": "2026-11-17",
+   "tasks": 13,
+   "version": "3.0.0",
+   "description": "LinkedIn reads in plain language against recorded page snapshots",
+   "links": []
+  },
+  "luosuu/SWE-kokkos-bench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "7.0.0",
+   "description": "100 Kokkos ecosystem regression repair tasks (250-request budget)",
+   "links": [
+    "https://github.com/Luosuu/tinker-cookbook",
+    "https://github.com/kokkos/kokkos",
+    "https://github.com/kokkos/kokkos-kernels",
+    "https://github.com/kokkos/pykokkos"
+   ]
+  },
+  "maxbittker/runebench": {
+   "checked": "2026-11-17",
+   "tasks": 32,
+   "version": "2.0.0",
+   "description": "Benchmark suite for evaluating AI agents on RuneScape gameplay tasks",
+   "links": []
+  },
+  "mercor/apex-agents-1-1": {
+   "checked": "2026-11-17",
+   "tasks": 240,
+   "version": "4.0.1",
+   "description": "Long-horizon professional-services benchmark in investment banking, law, and management consulting, written by practicing analysts, consultants, and corporate lawyers. F…",
+   "links": [
+    "https://arxiv.org/abs/2601.14242",
+    "https://github.com/Mercor-Intelligence/apex_loop_truncated_tools_agent"
+   ]
+  },
+  "meta/mlgym-bench": {
+   "checked": "2026-11-17",
+   "tasks": 12,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "minnesotanlp/aar": {
+   "checked": "2026-11-17",
+   "tasks": 1400,
+   "version": "1.0.0",
+   "description": "The Amazing Agent Race (AAR): 1400 multi-step scavenger-hunt puzzles for evaluating LLM agents on tool use, web navigation, and arithmetic reasoning. Includes linear (…",
+   "links": []
+  },
+  "mmtb/multimedia-terminalbench": {
+   "checked": "2026-11-17",
+   "tasks": 105,
+   "version": "1.0.0",
+   "description": "MultiMedia-TerminalBench (MMTB): a benchmark of 105 realistic multimedia-file tasks in persistent terminal workspaces, across 5 meta-categories grounded in paid practiti…",
+   "links": []
+  },
+  "model-topography/workbench": {
+   "checked": "2026-11-17",
+   "tasks": 12,
+   "version": "2.0.0",
+   "description": "Model Topography Workbench: entry, middle management and senior executive rungs.",
+   "links": []
+  },
+  "morris-biotech/historical-systems-bugs": {
+   "checked": "2026-11-17",
+   "tasks": 2,
+   "version": "1.0.1",
+   "description": "Two historical C systems bug-fix tasks for coding agents: Linux DesignWare SPI chip selects and Unikraft cooperative scheduler wakeups, graded by running the real code.",
+   "links": []
+  },
+  "nanoswe/swe-bench-verified": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "SWE-bench Verified as used for nanoswe evals: 17 of the 500 instances are dropped because they do not run on our internal cluster, leaving a fixed 483-instance subset. Tas…",
+   "links": []
+  },
+  "nextflow-frontier/bioml-bench": {
+   "checked": "2026-11-17",
+   "tasks": 22,
+   "version": "1.0.0",
+   "description": "22 biomedical machine-learning tasks from BioML-bench, packaged for local Harbor runs.",
+   "links": [
+    "https://github.com/science-machine/biomlbench"
+   ]
+  },
+  "nl2repobench/nl2repobench": {
+   "checked": "2026-11-17",
+   "tasks": 104,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "nlile/registry-history-20260908": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.1",
+   "description": "Synth Registry immutable dataset history acceptance. One public upstream task, exact pinned membership. Revision two changes the selected task version.",
+   "links": []
+  },
+  "nvats/codeskills-bench": {
+   "checked": "2026-11-17",
+   "tasks": 23,
+   "version": "1.0.0",
+   "description": "A small set of real-life programming tasks: bug fixes, merge-conflict resolution, dependency cleanup, API migration, and performance regressions across compact Python rep…",
+   "links": []
+  },
+  "obtuseorion/geoworld": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "1.0.0",
+   "description": "Three long-horizon tasks in a generated geomechanics software company (Halvard Geomechanics, solver GeoSolve).",
+   "links": []
+  },
+  "open-design/open-design": {
+   "checked": "2026-11-17",
+   "tasks": 7,
+   "version": "7.1.0",
+   "description": "Open Design Benchmark — AI agent evaluation on design-asset generation tasks (landing pages, dashboards, mobile onboarding, PPT reports, text layouts, incremental patches,…",
+   "links": []
+  },
+  "openai/mmmlu": {
+   "checked": "2026-11-17",
+   "tasks": 150,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "openai/swe-lancer-diamond-all": {
+   "checked": "2026-11-17",
+   "tasks": 463,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "openai/swe-lancer-diamond-ic": {
+   "checked": "2026-11-17",
+   "tasks": 198,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "openai/swe-lancer-diamond-manager": {
+   "checked": "2026-11-17",
+   "tasks": 265,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "openthoughts/openthoughts-tblite": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "openthoughts/tasktrove-code-contests-noblock": {
+   "checked": "2026-11-17",
+   "tasks": 8728,
+   "version": "1.0.0",
+   "description": "code-contests-noblock tasks (8728 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/code-contests-no…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-flat25-pseudocode-v2": {
+   "checked": "2026-11-17",
+   "tasks": 728,
+   "version": "1.0.0",
+   "description": "exp flat25 pseudocode-v2 tasks (728 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_flat25_pseudoc…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-flat25-speed-bonus-v2": {
+   "checked": "2026-11-17",
+   "tasks": 764,
+   "version": "1.0.0",
+   "description": "exp flat25 speed bonus-v2 tasks (764 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_flat25_speed_…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-flat25-stackoverflow-v2": {
+   "checked": "2026-11-17",
+   "tasks": 765,
+   "version": "1.0.0",
+   "description": "exp flat25 stackoverflow-v2 tasks (765 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_flat25_stac…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-flat25-subtle-debug-v3": {
+   "checked": "2026-11-17",
+   "tasks": 289,
+   "version": "1.0.0",
+   "description": "exp flat25 subtle debug-v3 tasks (289 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_flat25_subtl…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rle-adversarial": {
+   "checked": "2026-11-17",
+   "tasks": 5000,
+   "version": "1.0.0",
+   "description": "exp rle adversarial tasks (5000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rle_adversaria…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rle-detailed-v3": {
+   "checked": "2026-11-17",
+   "tasks": 413,
+   "version": "1.0.0",
+   "description": "exp rle detailed-v3 tasks (413 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rle_detailed-v3.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rle-error-report-v3": {
+   "checked": "2026-11-17",
+   "tasks": 261,
+   "version": "1.0.0",
+   "description": "exp rle error report-v3 tasks (261 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rle_error_repor…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rle-github-issue-v3": {
+   "checked": "2026-11-17",
+   "tasks": 264,
+   "version": "1.0.0",
+   "description": "exp rle github issue-v3 tasks (264 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rle_github_issu…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rle-heavy-padding-v2": {
+   "checked": "2026-11-17",
+   "tasks": 784,
+   "version": "1.0.0",
+   "description": "exp rle heavy padding-v2 tasks (784 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rle_heavy_padd…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rle-minimal-instructions-v3": {
+   "checked": "2026-11-17",
+   "tasks": 233,
+   "version": "1.0.0",
+   "description": "exp rle minimal instructions-v3 tasks (233 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rle_min…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-codenet-python-v2": {
+   "checked": "2026-11-17",
+   "tasks": 10000,
+   "version": "1.0.0",
+   "description": "exp rpt codenet-python-v2 tasks (10000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_code…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-crosscodeeval-csharp-v4": {
+   "checked": "2026-11-17",
+   "tasks": 1768,
+   "version": "1.0.0",
+   "description": "exp rpt crosscodeeval-csharp-v4 tasks (1768 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-crosscodeeval-java": {
+   "checked": "2026-11-17",
+   "tasks": 2139,
+   "version": "1.0.0",
+   "description": "exp rpt crosscodeeval-java tasks (2139 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_cro…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-curriculum-easy": {
+   "checked": "2026-11-17",
+   "tasks": 514,
+   "version": "1.0.0",
+   "description": "exp rpt curriculum-easy tasks (514 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_curriculu…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-curriculum-hard": {
+   "checked": "2026-11-17",
+   "tasks": 506,
+   "version": "1.0.0",
+   "description": "exp rpt curriculum-hard tasks (506 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_curriculu…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-curriculum-medium": {
+   "checked": "2026-11-17",
+   "tasks": 512,
+   "version": "1.0.0",
+   "description": "exp rpt curriculum-medium tasks (512 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_curricu…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-defects4j-v3-v4": {
+   "checked": "2026-11-17",
+   "tasks": 216,
+   "version": "1.0.0",
+   "description": "exp rpt defects4j-v3-v4 tasks (216 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_defects4j-v…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-e2egit-large": {
+   "checked": "2026-11-17",
+   "tasks": 5000,
+   "version": "1.0.0",
+   "description": "exp rpt e2egit-large tasks (5000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_e2egit-la…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-e2egit-v2": {
+   "checked": "2026-11-17",
+   "tasks": 500,
+   "version": "1.0.0",
+   "description": "exp rpt e2egit-v2 tasks (500 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_e2egit-v2.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-exercism-python-v2": {
+   "checked": "2026-11-17",
+   "tasks": 133,
+   "version": "1.0.0",
+   "description": "exp rpt exercism-python-v2 tasks (133 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_exercism…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-ghactions-v3": {
+   "checked": "2026-11-17",
+   "tasks": 9930,
+   "version": "1.0.0",
+   "description": "exp rpt ghactions-v3 tasks (9930 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_ghactions-v…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-issue": {
+   "checked": "2026-11-17",
+   "tasks": 4830,
+   "version": "1.0.0",
+   "description": "exp rpt issue tasks (4830 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_issue.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-methods2test-large-v2": {
+   "checked": "2026-11-17",
+   "tasks": 4472,
+   "version": "1.0.0",
+   "description": "exp rpt methods2test-large-v2 tasks (4472 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_me…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-methods2test-large-v3": {
+   "checked": "2026-11-17",
+   "tasks": 4472,
+   "version": "1.0.0",
+   "description": "exp rpt methods2test-large-v3 tasks (4472 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_me…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-multifile": {
+   "checked": "2026-11-17",
+   "tasks": 4907,
+   "version": "1.0.0",
+   "description": "exp rpt multifile tasks (4907 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_multifile.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-nemotron-cpp": {
+   "checked": "2026-11-17",
+   "tasks": 5000,
+   "version": "1.0.0",
+   "description": "exp rpt nemotron-cpp tasks (5000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_nemotron-…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-nemotron-junit": {
+   "checked": "2026-11-17",
+   "tasks": 5000,
+   "version": "1.0.0",
+   "description": "exp rpt nemotron-junit tasks (5000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_nemotro…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-pr": {
+   "checked": "2026-11-17",
+   "tasks": 4793,
+   "version": "1.0.0",
+   "description": "exp rpt pr tasks (4793 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_pr.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-pr-v2": {
+   "checked": "2026-11-17",
+   "tasks": 4793,
+   "version": "1.0.0",
+   "description": "exp rpt pr-v2 tasks (4793 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_pr-v2.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-pymethods2test-large": {
+   "checked": "2026-11-17",
+   "tasks": 5000,
+   "version": "1.0.0",
+   "description": "exp rpt pymethods2test-large tasks (5000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_p…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-pymethods2test-v3": {
+   "checked": "2026-11-17",
+   "tasks": 500,
+   "version": "1.0.0",
+   "description": "exp rpt pymethods2test-v3 tasks (500 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_pymetho…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-scaffold-v2": {
+   "checked": "2026-11-17",
+   "tasks": 4861,
+   "version": "1.0.0",
+   "description": "exp rpt scaffold-v2 tasks (4861 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_scaffold-v2.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-bash-v3": {
+   "checked": "2026-11-17",
+   "tasks": 9384,
+   "version": "1.0.0",
+   "description": "exp rpt stack-bash-v3 tasks (9384 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack-bash…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-bash-withtests-gpt5mini-v2": {
+   "checked": "2026-11-17",
+   "tasks": 8922,
+   "version": "1.0.0",
+   "description": "exp rpt stack-bash-withtests-gpt5mini-v2 tasks (8922 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-bash-withtests-v2": {
+   "checked": "2026-11-17",
+   "tasks": 8922,
+   "version": "1.0.0",
+   "description": "exp rpt stack-bash-withtests-v2 tasks (8922 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-csharp-v5": {
+   "checked": "2026-11-17",
+   "tasks": 9485,
+   "version": "1.0.0",
+   "description": "exp rpt stack-csharp-v5 tasks (9485 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack-cs…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-dockerfile-gpt5mini-v3": {
+   "checked": "2026-11-17",
+   "tasks": 4137,
+   "version": "1.0.0",
+   "description": "exp rpt stack-dockerfile-gpt5mini-v3 tasks (4137 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-dockerfile-v2": {
+   "checked": "2026-11-17",
+   "tasks": 497,
+   "version": "1.0.0",
+   "description": "exp rpt stack-dockerfile-v2 tasks (497 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_stack…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-go-v4": {
+   "checked": "2026-11-17",
+   "tasks": 2313,
+   "version": "1.0.0",
+   "description": "exp rpt stack-go-v4 tasks (2313 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack-go-v4.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-jest-large": {
+   "checked": "2026-11-17",
+   "tasks": 5000,
+   "version": "1.0.0",
+   "description": "exp rpt stack-jest-large tasks (5000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_stack…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-jest-v2": {
+   "checked": "2026-11-17",
+   "tasks": 500,
+   "version": "1.0.0",
+   "description": "exp rpt stack-jest-v2 tasks (500 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_stack-jest-…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-junit-v6": {
+   "checked": "2026-11-17",
+   "tasks": 872,
+   "version": "1.0.0",
+   "description": "exp rpt stack-junit-v6 tasks (872 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack-junit-…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-php-large-v6": {
+   "checked": "2026-11-17",
+   "tasks": 3789,
+   "version": "1.0.0",
+   "description": "exp rpt stack-php-large-v6 tasks (3789 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-php-v2-v6": {
+   "checked": "2026-11-17",
+   "tasks": 438,
+   "version": "1.0.0",
+   "description": "exp rpt stack-php-v2-v6 tasks (438 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack-php-v…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-pytest-large": {
+   "checked": "2026-11-17",
+   "tasks": 5000,
+   "version": "1.0.0",
+   "description": "exp rpt stack-pytest-large tasks (5000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_sta…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-pytest-v2": {
+   "checked": "2026-11-17",
+   "tasks": 500,
+   "version": "1.0.0",
+   "description": "exp rpt stack-pytest-v2 tasks (500 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_stack-pyt…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-ruby-v2": {
+   "checked": "2026-11-17",
+   "tasks": 8627,
+   "version": "1.0.0",
+   "description": "exp rpt stack-ruby-v2 tasks (8627 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack-ruby…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack-rust-v2": {
+   "checked": "2026-11-17",
+   "tasks": 9987,
+   "version": "1.0.0",
+   "description": "exp rpt stack-rust-v2 tasks (9987 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack-rust…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-taco-v2": {
+   "checked": "2026-11-17",
+   "tasks": 10000,
+   "version": "1.0.0",
+   "description": "exp rpt taco-v2 tasks (10000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_taco-v2.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-unitsyn-python-large": {
+   "checked": "2026-11-17",
+   "tasks": 5000,
+   "version": "1.0.0",
+   "description": "exp rpt unitsyn-python-large tasks (5000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_u…",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-unitsyn-python-v3": {
+   "checked": "2026-11-17",
+   "tasks": 500,
+   "version": "1.0.0",
+   "description": "exp rpt unitsyn-python-v3 tasks (500 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_unitsyn…",
+   "links": []
+  },
+  "openthoughts/tasktrove-freelancer-projects-sandboxes-ta-rl-gpt-5-mini-v2": {
+   "checked": "2026-11-17",
+   "tasks": 9999,
+   "version": "1.0.0",
+   "description": "freelancer-projects-sandboxes-ta-rl-gpt-5-mini-v2 tasks (9999 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Sour…",
+   "links": []
+  },
+  "openthoughts/tasktrove-freelancer-projects-sandboxes-ta-rl-gpt-5-nano-v2": {
+   "checked": "2026-11-17",
+   "tasks": 9999,
+   "version": "1.0.0",
+   "description": "freelancer-projects-sandboxes-ta-rl-gpt-5-nano-v2 tasks (9999 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Sour…",
+   "links": []
+  },
+  "openthoughts/tasktrove-inferredbugs-sandboxes-verifier": {
+   "checked": "2026-11-17",
+   "tasks": 9991,
+   "version": "1.0.0",
+   "description": "inferredbugs-sandboxes-verifier tasks (9991 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/inferr…",
+   "links": []
+  },
+  "openthoughts/tasktrove-llm-verifier-freelancer": {
+   "checked": "2026-11-17",
+   "tasks": 10000,
+   "version": "1.0.0",
+   "description": "llm-verifier-freelancer tasks (10000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/llm-verifier…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-baseline-uniform-v2": {
+   "checked": "2026-11-17",
+   "tasks": 3718,
+   "version": "1.0.0",
+   "description": "mix baseline uniform-v2 tasks (3718 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_baseline_uni…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h1-struggle-zone-v2": {
+   "checked": "2026-11-17",
+   "tasks": 3116,
+   "version": "1.0.0",
+   "description": "mix h1 struggle zone-v2 tasks (3116 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h1_struggle_…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h10-reward-binary-v2": {
+   "checked": "2026-11-17",
+   "tasks": 2862,
+   "version": "1.0.0",
+   "description": "mix h10 reward binary-v2 tasks (2862 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h10_reward_…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h10-reward-proportional-v2": {
+   "checked": "2026-11-17",
+   "tasks": 2873,
+   "version": "1.0.0",
+   "description": "mix h10 reward proportional-v2 tasks (2873 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h10_r…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h10-reward-staged-v2": {
+   "checked": "2026-11-17",
+   "tasks": 3873,
+   "version": "1.0.0",
+   "description": "mix h10 reward staged-v2 tasks (3873 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h10_reward_…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h11-compositional-gradient-v2": {
+   "checked": "2026-11-17",
+   "tasks": 3873,
+   "version": "1.0.0",
+   "description": "mix h11 compositional gradient-v2 tasks (3873 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h1…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h11-single-skill-only-v2": {
+   "checked": "2026-11-17",
+   "tasks": 2873,
+   "version": "1.0.0",
+   "description": "mix h11 single skill only-v2 tasks (2873 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h11_sin…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h2-language-balanced-v2": {
+   "checked": "2026-11-17",
+   "tasks": 4506,
+   "version": "1.0.0",
+   "description": "mix h2 language balanced-v2 tasks (4506 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h2_langu…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h2-language-proportional": {
+   "checked": "2026-11-17",
+   "tasks": 4135,
+   "version": "1.0.0",
+   "description": "mix h2 language proportional tasks (4135 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/mix_h2_la…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h4-binary-easy": {
+   "checked": "2026-11-17",
+   "tasks": 2010,
+   "version": "1.0.0",
+   "description": "mix h4 binary easy tasks (2010 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/mix_h4_binary_easy.",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h5-skill-diverse-v2": {
+   "checked": "2026-11-17",
+   "tasks": 3166,
+   "version": "1.0.0",
+   "description": "mix h5 skill diverse-v2 tasks (3166 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h5_skill_div…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h6-test-quality-top25": {
+   "checked": "2026-11-17",
+   "tasks": 2747,
+   "version": "1.0.0",
+   "description": "mix h6 test quality top25 tasks (2747 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/mix_h6_test_…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h7-raw-volume-5k-v2": {
+   "checked": "2026-11-17",
+   "tasks": 3718,
+   "version": "1.0.0",
+   "description": "mix h7 raw volume 5k-v2 tasks (3718 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h7_raw_volum…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h8-adversarial-tests-v2": {
+   "checked": "2026-11-17",
+   "tasks": 2873,
+   "version": "1.0.0",
+   "description": "mix h8 adversarial tests-v2 tasks (2873 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h8_adver…",
+   "links": []
+  },
+  "openthoughts/tasktrove-mix-h8-original-tests-v2": {
+   "checked": "2026-11-17",
+   "tasks": 2862,
+   "version": "1.0.0",
+   "description": "mix h8 original tests-v2 tasks (2862 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h8_original…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-code-oracle-filtered": {
+   "checked": "2026-11-17",
+   "tasks": 15165,
+   "version": "1.0.0",
+   "description": "nemotron-code-oracle-filtered tasks (15165 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: SankalpKJ/nemo…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-agent-calendar": {
+   "checked": "2026-11-17",
+   "tasks": 3358,
+   "version": "1.0.0",
+   "description": "nemotron-gym-agent-calendar tasks (3358 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/nemotron-gym…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-agent-workplace-v2": {
+   "checked": "2026-11-17",
+   "tasks": 297,
+   "version": "1.0.0",
+   "description": "nemotron-gym-agent-workplace-v2 tasks (297 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/nemotron-gy…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-competitive-coding": {
+   "checked": "2026-11-17",
+   "tasks": 15713,
+   "version": "1.0.0",
+   "description": "nemotron-gym-competitive-coding tasks (15713 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/nemotr…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-identity-following-v2": {
+   "checked": "2026-11-17",
+   "tasks": 21660,
+   "version": "1.0.0",
+   "description": "nemotron-gym-identity-following-v2 tasks (21660 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/nem…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-instruction-following-adversarial-v3": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "1.0.0",
+   "description": "nemotron-gym-instruction-following-adversarial-v3 tasks (1000 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Sour…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-instruction-following-calendar": {
+   "checked": "2026-11-17",
+   "tasks": 8387,
+   "version": "1.0.0",
+   "description": "nemotron-gym-instruction-following-calendar tasks (8387 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: la…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-instruction-following-structured": {
+   "checked": "2026-11-17",
+   "tasks": 9437,
+   "version": "1.0.0",
+   "description": "nemotron-gym-instruction-following-structured tasks (9437 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: …",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-instruction-following-v2": {
+   "checked": "2026-11-17",
+   "tasks": 46391,
+   "version": "1.0.0",
+   "description": "nemotron-gym-instruction-following-v2 tasks (46391 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-knowledge-web-search-mcqa": {
+   "checked": "2026-11-17",
+   "tasks": 2915,
+   "version": "1.0.0",
+   "description": "nemotron-gym-knowledge-web-search-mcqa tasks (2915 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/n…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nemotron-gym-math-advanced-calculations-v3": {
+   "checked": "2026-11-17",
+   "tasks": 5291,
+   "version": "1.0.0",
+   "description": "nemotron-gym-math-advanced-calculations-v3 tasks (5291 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: lai…",
+   "links": []
+  },
+  "openthoughts/tasktrove-nl2bash-tasks-cleaned-oracle": {
+   "checked": "2026-11-17",
+   "tasks": 1570,
+   "version": "1.0.0",
+   "description": "nl2bash-tasks-cleaned-oracle tasks (1570 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent2/nl2bash-…",
+   "links": []
+  },
+  "openthoughts/tasktrove-openswe-tasks-patched-v5-oracle-success": {
+   "checked": "2026-11-17",
+   "tasks": 17504,
+   "version": "1.0.0",
+   "description": "openswe-tasks-patched-v5-oracle-success tasks (17504 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laio…",
+   "links": []
+  },
+  "openthoughts/tasktrove-r2egym-patched-full-oracle": {
+   "checked": "2026-11-17",
+   "tasks": 3328,
+   "version": "1.0.0",
+   "description": "r2egym-patched-full-oracle tasks (3328 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/r2egym-patc…",
+   "links": []
+  },
+  "openthoughts/tasktrove-selfinstruct-naive-sandboxes-2-verified": {
+   "checked": "2026-11-17",
+   "tasks": 9638,
+   "version": "1.0.0",
+   "description": "selfinstruct-naive-sandboxes-2-verified tasks (9638 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgen…",
+   "links": []
+  },
+  "openthoughts/tasktrove-swe-rebench-patched-oracle": {
+   "checked": "2026-11-17",
+   "tasks": 3787,
+   "version": "1.0.0",
+   "description": "swe rebench patched oracle tasks (3787 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/swe_rebench…",
+   "links": []
+  },
+  "openthoughts/tasktrove-swe-rebench-v2-patched-oracle": {
+   "checked": "2026-11-17",
+   "tasks": 18341,
+   "version": "1.0.0",
+   "description": "swe rebench v2 patched oracle tasks (18341 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/swe_re…",
+   "links": []
+  },
+  "openthoughts/tasktrove-swegym-tasks-patched-validated-v2": {
+   "checked": "2026-11-17",
+   "tasks": 989,
+   "version": "1.0.0",
+   "description": "swegym-tasks-patched-validated-v2 tasks (989 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/swegym-ta…",
+   "links": []
+  },
+  "openthoughts/tasktrove-swesmith-oracle-filtered": {
+   "checked": "2026-11-17",
+   "tasks": 12942,
+   "version": "1.0.0",
+   "description": "swesmith-oracle-filtered tasks (12942 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: SankalpKJ/swesmith-…",
+   "links": []
+  },
+  "orca-bench/orca-bench": {
+   "checked": "2026-11-17",
+   "tasks": 755,
+   "version": "2.0.0",
+   "description": "An agent benchmark for root cause analysis — public split of 755 tasks across 77 incidents (245 easy, 264 medium, 246 hard). For the results on all 1,079 tasks, please s…",
+   "links": [
+    "https://arxiv.org/abs/2607.28545",
+    "https://arxiv.org/abs/2607.28545.",
+    "https://github.com/ORCA-bench/ORCA-bench"
+   ]
+  },
+  "orca-bench/orca-bench-private": {
+   "checked": "2026-11-17",
+   "tasks": 324,
+   "version": "1.0.0",
+   "description": "An agent benchmark for root cause analysis — held-out private (answers removed) split of 324 tasks across 31 incidents (108 easy, 117 medium, 99 hard). For the results o…",
+   "links": [
+    "https://arxiv.org/abs/2607.28545",
+    "https://arxiv.org/abs/2607.28545.",
+    "https://github.com/ORCA-bench/ORCA-bench"
+   ]
+  },
+  "orca-bench/orca-bench-verified": {
+   "checked": "2026-11-17",
+   "tasks": 40,
+   "version": "1.0.0",
+   "description": "An agent benchmark for root cause analysis — verified split of 40 tasks across 40 incidents (10 easy, 15 medium, 15 hard). For the results on all 1,079 tasks, please see …",
+   "links": [
+    "https://arxiv.org/abs/2607.28545",
+    "https://arxiv.org/abs/2607.28545.",
+    "https://github.com/ORCA-bench/ORCA-bench"
+   ]
+  },
+  "orenyomtov/l10-lb-victim": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "orinlabs/horizon-1-public": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "1.0.0",
+   "description": "Horizon-1 sample set: continual-learning eval tasks",
+   "links": []
+  },
+  "orinlabs/horizon-public": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "1.0.2",
+   "description": "Horizon sample set: continual-learning eval tasks",
+   "links": [
+    "https://arxiv.org/abs/2402.17753",
+    "https://arxiv.org/abs/2410.10813",
+    "https://github.com/orinlabs/horizon"
+   ]
+  },
+  "oro-agents/smb-bench": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.1",
+   "description": "SMB Bench: your own agent runs a simulated small business's buying desk for a 90-day quarter on ORO's hosted service, scored in margin points over a fixed buying rule",
+   "links": []
+  },
+  "parley-labs/negotiation-sample": {
+   "checked": "2026-11-17",
+   "tasks": 10,
+   "version": "2.0.0",
+   "description": "Public development sample of the Parley Labs negotiation and economic-decision tasks (working capital, bargaining under pressure, planning ahead, restraint). Evaluation o…",
+   "links": []
+  },
+  "phmforge/phmforge": {
+   "checked": "2026-11-17",
+   "tasks": 123,
+   "version": "1.0.2",
+   "description": "PHMForge: 99 industrial prognostics and health management scenarios for LLM agents (NeurIPS 2026 Evaluations & Datasets Track)",
+   "links": [
+    "https://github.com/IBM/AssetOpsBench"
+   ]
+  },
+  "polyvorlabs/cyberdefense-bench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "3.0.0",
+   "description": "A 100-task Harbor benchmark for evaluating agentic cybersecurity defense and hardening loops against local simulated attack probes.",
+   "links": []
+  },
+  "polyvorlabs/klyrune-bench": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.1",
+   "description": "A lightweight 100-task Harbor dataset for measuring Klyrune and other agentic CLI coding loops.",
+   "links": []
+  },
+  "polyvorlabs/revbench": {
+   "checked": "2026-11-17",
+   "tasks": 22,
+   "version": "14.0.0",
+   "description": "A Harbor benchmark of local Reverse Engineering CTF challenges where agents must recover exact flags from supplied artifacts.",
+   "links": []
+  },
+  "pranalabs-ai-team/3dscenebench-mini": {
+   "checked": "2026-11-17",
+   "tasks": 7,
+   "version": "3.0.1",
+   "description": "3DSceneBench mini: seven scenes of 3DSceneBench, one per category, each with its reference room, so a run ends with the full score (appearance, geometry, functionality). 7…",
+   "links": [
+    "https://github.com/PranaLabs/3DSceneBench"
+   ]
+  },
+  "punitarani/harvey-labs": {
+   "checked": "2026-11-17",
+   "tasks": 1760,
+   "version": "1.0.0",
+   "description": "Harvey Labs: 1,760 legal-drafting tasks (LAB) across 26 practice areas, graded with Harbor rewardkit (LLM-judge, OpenRouter default, 111,826 binary criteria).",
+   "links": []
+  },
+  "qcircuitbench/qcircuitbench": {
+   "checked": "2026-11-17",
+   "tasks": 28,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "quesma/compilebench": {
+   "checked": "2026-11-17",
+   "tasks": 15,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "quesma/otel-bench": {
+   "checked": "2026-11-17",
+   "tasks": 26,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "quixbugs/quixbugs": {
+   "checked": "2026-11-17",
+   "tasks": 80,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "rachittshah/railhead": {
+   "checked": "2026-11-17",
+   "tasks": 533,
+   "version": "1.0.0",
+   "description": "Railhead eval set (dev + ood): models play OpenTTD directly; replay-verified rewards, run-off valuation, priced forks, promise-keeping contracts.",
+   "links": [
+    "https://github.com/rachittshah/railhead"
+   ]
+  },
+  "rachittshah/railhead-train": {
+   "checked": "2026-11-17",
+   "tasks": 1006,
+   "version": "1.0.0",
+   "description": "Railhead train set: models play OpenTTD directly; replay-verified rewards, run-off valuation, priced forks, promise-keeping contracts.",
+   "links": [
+    "https://github.com/rachittshah/railhead"
+   ]
+  },
+  "reacher-z/WebsiteBench": {
+   "checked": "2026-11-17",
+   "tasks": 70,
+   "version": "4.0.0",
+   "description": "Moved to websitebench/WebsiteBench. This dataset lists the same 70 WebsiteBench tasks.",
+   "links": [
+    "https://github.com/TIGER-AI-Lab/WebsiteBench"
+   ]
+  },
+  "reactbench/reactbench": {
+   "checked": "2026-11-17",
+   "tasks": 39,
+   "version": "1.0.0",
+   "description": "ReactBench: coding agents on realistic React work",
+   "links": [
+    "https://github.com/millionco/reactbench"
+   ]
+  },
+  "reasoning-gym/reasoning-gym-easy": {
+   "checked": "2026-11-17",
+   "tasks": 288,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "reasoning-gym/reasoning-gym-hard": {
+   "checked": "2026-11-17",
+   "tasks": 288,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "red-hat-ai/SWE-benchify-hard": {
+   "checked": "2026-11-17",
+   "tasks": 284,
+   "version": "2.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "red-hat-ai/haiku-hard": {
+   "checked": "2026-11-17",
+   "tasks": 138,
+   "version": "4.0.0",
+   "description": "SWE-benchify synthetic Go benchmark instances",
+   "links": []
+  },
+  "refresh/blenderbench-20": {
+   "checked": "2026-11-17",
+   "tasks": 20,
+   "version": "1.0.1",
+   "description": "20 preserved BlenderBench tasks with 40 linked historical Astra/Opus runs; public, version-pinned, no new evaluations.",
+   "links": [
+    "https://github.com/refreshdotdev/project-blender"
+   ]
+  },
+  "replicationbench/replicationbench": {
+   "checked": "2026-11-17",
+   "tasks": 90,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "review-bench/reviewbench-public": {
+   "checked": "2026-11-17",
+   "tasks": 219,
+   "version": "1.0.1",
+   "description": "ReviewBench: 219 frozen PRs; harness-neutral reviewer; separate Claude Opus 5 judge.",
+   "links": [
+    "https://github.com/review-bench/ReviewBench"
+   ]
+  },
+  "rexbench/rexbench": {
+   "checked": "2026-11-17",
+   "tasks": 2,
+   "version": "1.0.0",
+   "description": "RExBench - 2 tasks (cogs, othello) evaluating AI agents' ability to extend existing AI research through research experiment implementation. Tasks require an A100 40GB GPU …",
+   "links": []
+  },
+  "rounakbende10/rh-swe-bench": {
+   "checked": "2026-11-17",
+   "tasks": 337,
+   "version": "8.0.1",
+   "description": "Red Hat SWE-bench - 337 tasks from 24 RH ecosystem repos",
+   "links": [
+    "https://github.com/harbor-framework/harbor",
+    "https://github.com/rounakbende10/rh-swe-bench"
+   ]
+  },
+  "rsi-index/post-training": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "3.0.0",
+   "description": "ALE RSI post-training benchmark tasks for evaluating agent capabilities in research-level post-training workflows",
+   "links": []
+  },
+  "rsibench-infra/recursive-improve-cases": {
+   "checked": "2026-11-17",
+   "tasks": 3,
+   "version": "3.0.0",
+   "description": "Recursive self-opt cases: uploaded Harbor trials (trajectories) of GLM-5.3 on infer-glm5p3-744b and Kimi-K3 on infer-kimik3-2p8t. Digests match trial lock.json.",
+   "links": []
+  },
+  "ryanmarten/tb-test": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "4.0.0",
+   "description": "Terminal-Bench is a benchmark for measuring agents' abilities to complete tasks using a terminal.",
+   "links": []
+  },
+  "ryanmarten/tb4-preview": {
+   "checked": "2026-11-17",
+   "tasks": 66,
+   "version": "1.0.0",
+   "description": "Terminal-Bench is a benchmark for measuring agents' abilities to complete tasks using a terminal.",
+   "links": [
+    "https://github.com/harbor-framework/terminal-bench"
+   ]
+  },
+  "ryanmarten/terminal-bench-4-no-prebuild": {
+   "checked": "2026-11-17",
+   "tasks": 66,
+   "version": "1.0.0",
+   "description": "Terminal Bench 4 No Prebuild: Terminal-Bench 4.0.0 tasks from the v4.0.0 GitHub release source, published without prebuilt Docker image pins.",
+   "links": [
+    "https://github.com/harbor-framework/terminal-bench"
+   ]
+  },
+  "satbench/satbench": {
+   "checked": "2026-11-17",
+   "tasks": 2100,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "scale-ai/hil-bench": {
+   "checked": "2026-11-17",
+   "tasks": 600,
+   "version": "4.1.0",
+   "description": "HiL-Bench Harbor Release",
+   "links": []
+  },
+  "scale-ai/hil-bench-sql-ask-human": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.1.0",
+   "description": "Public HiL-Bench SQL ask-human tasks.",
+   "links": []
+  },
+  "scale-ai/hil-bench-swe-ask-human": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "Public HiL-Bench SWE ask-human tasks.",
+   "links": []
+  },
+  "scale-ai/swe-atlas-qna": {
+   "checked": "2026-11-17",
+   "tasks": 124,
+   "version": "1.0.0",
+   "description": "SWE-Atlas - Codebase QnA is a benchmark of deep codebase comprehension and QnA problems for coding agents. Checkout https://github.com/scaleapi/SWE-Atlas/ for instructio…",
+   "links": [
+    "https://github.com/scaleapi/SWE-Atlas"
+   ]
+  },
+  "scale-ai/swe-atlas-rf": {
+   "checked": "2026-11-17",
+   "tasks": 70,
+   "version": "1.0.0",
+   "description": "SWE-Atlas - Refactoring -- A benchmark of refactoring tasks for coding agents",
+   "links": []
+  },
+  "scale-ai/swe-atlas-tw": {
+   "checked": "2026-11-17",
+   "tasks": 90,
+   "version": "1.1.0",
+   "description": "SWE-Atlas - Test Writing -- A benchmark of comprehensive test writing problems for coding agents. Checkout https://github.com/scaleapi/SWE-Atlas/ for instructions on runn…",
+   "links": [
+    "https://github.com/scaleapi/SWE-Atlas"
+   ]
+  },
+  "scale-ai/swe-bench-pro": {
+   "checked": "2026-11-17",
+   "tasks": 731,
+   "version": "2.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "scienceagentbench/scienceagentbench": {
+   "checked": "2026-11-17",
+   "tasks": 102,
+   "version": "1.0.0",
+   "description": "ScienceAgentBench full benchmark adapted to Harbor with Modal GPU support for GPU-backed tasks.",
+   "links": [
+    "https://github.com/OSU-NLP-Group/ScienceAgentBench",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "shiv-eshwar/lb6-dev-pilot-issue18-rewardkit": {
+   "checked": "2026-11-17",
+   "tasks": 12,
+   "version": "1.0.3",
+   "description": "Lamina Product Coding Pilot — 3-arm (direct / plan / lamina). Small product apps, LLM-judge on product code, median of 3 seeds. Development-only; not confirmatory LaminaB…",
+   "links": [
+    "https://github.com/aryaniyaps/lamina"
+   ]
+  },
+  "sierra-research/tau3-bench": {
+   "checked": "2026-11-17",
+   "tasks": 375,
+   "version": "1.0.0",
+   "description": "tau3-bench is a simulation framework for evaluating customer service agents across multiple domains. It includes 375 tasks spanning four domains: airline, retail, teleco…",
+   "links": [
+    "https://arxiv.org/abs/2406.12045",
+    "https://arxiv.org/abs/2506.07982"
+   ]
+  },
+  "silrlab/long-horizon-terminal-bench": {
+   "checked": "2026-11-17",
+   "tasks": 46,
+   "version": "3.0.0",
+   "description": "Long-Horizon Terminal-Bench: 46-task benchmark measuring how well LLM agents sustain useful work in a containerized terminal over hundreds of steps. Hidden rebuild-from-a…",
+   "links": [
+    "https://arxiv.org/abs/2607.08964",
+    "https://github.com/laude-institute/harbor",
+    "https://github.com/laude-institute/terminal-bench",
+    "https://github.com/laude-institute/terminal-bench-2"
+   ]
+  },
+  "silrlab/long-horizon-terminal-bench-2.0": {
+   "checked": "2026-11-17",
+   "tasks": 77,
+   "version": "2.0.0",
+   "description": "Long-Horizon Terminal-Bench 2.0: 77-task benchmark measuring how well LLM agents sustain useful work in a containerized terminal over hundreds of steps. The 46 original t…",
+   "links": [
+    "https://arxiv.org/abs/2607.08964",
+    "https://github.com/laude-institute/harbor",
+    "https://github.com/laude-institute/terminal-bench",
+    "https://github.com/laude-institute/terminal-bench-2"
+   ]
+  },
+  "silverwhite/slopcodebench-friction": {
+   "checked": "2026-11-17",
+   "tasks": 36,
+   "version": "1.0.0",
+   "description": "Friction-hunting artifact from an unofficial harness-native evaluation round (orz, deepseek-v4-flash, k=1). NOT an official score submission. Official round scores are ha…",
+   "links": [
+    "https://github.com/gabeorlanski/scb-problems"
+   ]
+  },
+  "skill2env/skill2env": {
+   "checked": "2026-11-17",
+   "tasks": 7496,
+   "version": "1.0.1",
+   "description": "Terminal Agent dataset converted from OSS Agent Skills and given back to the public.",
+   "links": [
+    "https://github.com/NVlabs/Skill2Env"
+   ]
+  },
+  "skill2env/skill2env-lite": {
+   "checked": "2026-11-17",
+   "tasks": 1508,
+   "version": "2.0.0",
+   "description": "1508 skill2env tasks sized for small models",
+   "links": []
+  },
+  "sldbench/sldbench": {
+   "checked": "2026-11-17",
+   "tasks": 8,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "snorkel-ai/senior-swe-bench-v2026.06": {
+   "checked": "2026-11-17",
+   "tasks": 50,
+   "version": "3.0.0",
+   "description": "Senior SWE-Bench (v2026.06) public dataset",
+   "links": []
+  },
+  "snowflake-labs/data-eng-bench": {
+   "checked": "2026-11-17",
+   "tasks": 103,
+   "version": "1.0.0",
+   "description": "Agentic dbt data-engineering benchmark: 103 real-world dbt tasks (analytics, dimensional modeling, incremental models, bug-fixes, snapshots) runnable hermetically on Duc…",
+   "links": [
+    "https://github.com/Snowflake-Labs/data-eng-bench"
+   ]
+  },
+  "solana-foundation/machine-trading": {
+   "checked": "2026-11-17",
+   "tasks": 4,
+   "version": "14.0.0",
+   "description": "Trading tasks for agents on Solana: bots trade DeFi markets replayed on offline mainnet snapshots with Surfpool.",
+   "links": [
+    "https://github.com/lgalabru/machine-trading",
+    "https://github.com/solana-foundation/surfpool"
+   ]
+  },
+  "stanford/medagentbench": {
+   "checked": "2026-11-17",
+   "tasks": 300,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "stbenjam/ramen-bench": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "2.1.0",
+   "description": "Creative-coding task for vegan ramen in well-formed, standalone, code-drawn HTML.",
+   "links": []
+  },
+  "strongreject/strongreject": {
+   "checked": "2026-11-17",
+   "tasks": 150,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "suryanshsh/robotsevolved-gui-lessons-v1": {
+   "checked": "2026-11-17",
+   "tasks": 10,
+   "version": "1.0.0",
+   "description": "Ten offline Robots Evolved GUI lessons with calibrated screenshot/click/key tools, protected host grading, hidden Oracle references, and a bundled portable Harbor launche…",
+   "links": [
+    "https://github.com/dunnus/robotsevolvedEnv"
+   ]
+  },
+  "svgap/svgap-reset-release": {
+   "checked": "2026-11-17",
+   "tasks": 8,
+   "version": "1.0.3",
+   "description": "Some RTL agents pass every test but still wire reset incorrectly. Eight SystemVerilog tasks expose that hidden failure.",
+   "links": [
+    "https://github.com/shsridhar-beep/svgap"
+   ]
+  },
+  "swe-bench/swe-bench-verified": {
+   "checked": "2026-11-17",
+   "tasks": 500,
+   "version": "2.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": [
+    "https://arxiv.org/abs/2310.06770",
+    "https://github.com/SWE-bench/SWE-bench",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "swe-bench/swe-smith": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "swe-rebench/swe-rebench-leaderboard": {
+   "checked": "2026-11-17",
+   "tasks": 860,
+   "version": "1.0.1",
+   "description": "SWE-rebench leaderboard: 860 curated Python SWE tasks from Nebius AI R&D. All instances have pre-built Docker images. Continuously updated monthly splits.",
+   "links": [
+    "https://arxiv.org/abs/2505.20411",
+    "https://arxiv.org/abs/2602.23866",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "swt-bench/swt-bench-verified": {
+   "checked": "2026-11-17",
+   "tasks": 433,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "synthetic-sciences/frontierml": {
+   "checked": "2026-11-17",
+   "tasks": 0,
+   "version": "1.0.0",
+   "description": "FrontierML evaluates whether AI agents can complete useful ML research projects under a fixed research budget. Tasks coming soon: https://frontierml.ai",
+   "links": []
+  },
+  "tbench-dw-a-dw_1784073139_2608908/dw-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-dw2-a-dw2_1784073189_2619080/dw2-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-dw3-a-dw3_1784073253_2627946/dw3-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-lbtest-a-xt_1784071893_2521724/xt-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-lbtest-lb_1784071796_2517183/lbtest-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-pubcrack-a-pc_1784073251/pubcrack-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-rv-a-rv_1784073719_2926154/rv-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-up-a-up_1784106749_3678887/up-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-up2-a-up2_1784107856_4005736/up2-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-up3-a-up3_1784108188_141385/up3-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tbench-up4-a-up4_1784108341_146593/up4-dataset": {
+   "checked": "2026-11-17",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "tencent/autocodebench": {
+   "checked": "2026-11-17",
+   "tasks": 200,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "termigen/termigen-environments": {
+   "checked": "2026-11-17",
+   "tasks": 3566,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "terminal-bench-pro/terminal-bench-pro": {
+   "checked": "2026-11-17",
+   "tasks": 200,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "terminal-bench-science/terminal-bench-science": {
+   "checked": "2026-11-17",
+   "tasks": 70,
+   "version": "7.0.1",
+   "description": "A benchmark for evaluating AI agents on research workflows across the life, physical, earth, mathematical, and engineering sciences.",
+   "links": [
+    "https://github.com/harbor-framework/terminal-bench-science"
+   ]
+  },
+  "terminal-bench/terminal-bench": {
+   "checked": "2026-11-17",
+   "tasks": 66,
+   "version": "4.0.0",
+   "description": "Terminal-Bench is a benchmark for measuring agents' abilities to complete tasks using a terminal.",
+   "links": [
+    "https://github.com/harbor-framework/terminal-bench"
+   ]
+  },
+  "terminal-bench/terminal-bench-2": {
+   "checked": "2026-11-17",
+   "tasks": 89,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "terminal-bench/terminal-bench-2-1": {
+   "checked": "2026-11-17",
+   "tasks": 89,
+   "version": "2.0.2",
+   "description": "Version 2.1 of Terminal-Bench, a benchmark for evaluating agents in terminal environments.",
+   "links": [
+    "https://arxiv.org/abs/2601.11868",
+    "https://github.com/harbor-framework/terminal-bench-2",
+    "https://github.com/harbor-framework/terminal-bench-2-1"
+   ]
+  },
+  "terminal-bench/terminal-bench-cpu-only": {
+   "checked": "2026-11-17",
+   "tasks": 63,
+   "version": "2.0.0",
+   "description": "The CPU-only subset of Terminal-Bench, using the same task revisions and release tag as the full dataset.",
+   "links": []
+  },
+  "theagentcompany/theagentcompany": {
+   "checked": "2026-11-17",
+   "tasks": 174,
+   "version": "1.0.2",
+   "description": "TheAgentCompany: 174 professional tasks across GitLab, Plane, OwnCloud, and RocketChat services, evaluating LLM agents on real-world professional work",
+   "links": [
+    "https://arxiv.org/abs/2412.14161",
+    "https://github.com/TheAgentCompany/TheAgentCompany",
+    "https://github.com/harbor-framework/harbor"
+   ]
+  },
+  "thetalab/vector-edit-gym": {
+   "checked": "2026-11-17",
+   "tasks": 106,
+   "version": "1.0.0",
+   "description": "106 hand-authored SVG editing tasks across four difficulty tiers (easy / medium / hard / very_hard). Each task is a corrupted SVG plus a natural-language fix instruction…",
+   "links": []
+  },
+  "tinycomputerai/bun-server-bench": {
+   "checked": "2026-11-17",
+   "tasks": 50,
+   "version": "3.0.0",
+   "description": "bun-server-bench: a correctness benchmark of 50 production-shaped Bun server engineering tasks for evaluating AI coding agents.",
+   "links": [
+    "https://github.com/tinycomputerai/bun-server-bench"
+   ]
+  },
+  "titouanlne/arc-agi-2-k8s": {
+   "checked": "2026-11-17",
+   "tasks": 167,
+   "version": "1.0.0",
+   "description": "ARC-AGI-2 tasks adapted for Kubernetes sandbox execution via a shared pre-built Docker Hub image",
+   "links": []
+  },
+  "titouanlne/dbt-labs-k8s": {
+   "checked": "2026-11-17",
+   "tasks": 48,
+   "version": "1.0.1",
+   "description": "dbt-labs ADE-bench tasks adapted for Kubernetes sandbox execution via pre-built Docker Hub images",
+   "links": []
+  },
+  "tmax/TMax-15K-Harbor": {
+   "checked": "2026-11-17",
+   "tasks": 14601,
+   "version": "1.1.0",
+   "description": "15k compositional terminal-agent tasks: legacy 10k (self-contained) + v2 5k (intricate, multimodal fixtures). Programmatic verifier per task.",
+   "links": []
+  },
+  "tmax/tmax-13k-v1.1": {
+   "checked": "2026-11-17",
+   "tasks": 13565,
+   "version": "1.0.1",
+   "description": "13,565 hardened TMax terminal-agent tasks, v1.1. Matches the published TMax-13K v1.1 training and metadata datasets.",
+   "links": [
+    "https://arxiv.org/abs/2606.23321"
+   ]
+  },
+  "tomseimandi/ade-bench": {
+   "checked": "2026-11-17",
+   "tasks": 48,
+   "version": "1.0.0",
+   "description": "ADE-Bench adapted to run with Inspect Harbor on K8s",
+   "links": []
+  },
+  "usaco/usaco": {
+   "checked": "2026-11-17",
+   "tasks": 304,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "userbench/UserBench": {
+   "checked": "2026-11-17",
+   "tasks": 620,
+   "version": "7.0.0",
+   "description": "UserBench eval: 620 next-message tasks across 62 developers. Composer 2.5 classifies gold and predicted messages into multi-label acts; reward is set Jaccard/IoU.",
+   "links": []
+  },
+  "userbench/UserBench-train400": {
+   "checked": "2026-11-17",
+   "tasks": 620,
+   "version": "4.0.0",
+   "description": "UserBench train400 twin: the same 620 held tasks plus 400 leak-safe prior turns per developer. Composer 2.5 multi-label acts score by set Jaccard/IoU.",
+   "links": [
+    "https://github.com/AlienKevin/user-simulator"
+   ]
+  },
+  "valenlabs/abmaze": {
+   "checked": "2026-11-17",
+   "tasks": 200,
+   "version": "2.0.0",
+   "description": "AbMaze v0.3: antibody optimization over real combinatorially complete landscapes (hidden norm_gain scoring).",
+   "links": []
+  },
+  "valenlabs/frontierbioml": {
+   "checked": "2026-11-17",
+   "tasks": 4,
+   "version": "2.0.3",
+   "description": "FrontierBioML: four machine learning tasks in computational biology (binder triage, decoy scoring, partner-selective KRAS variants, budgeted screening) with deterministic …",
+   "links": []
+  },
+  "vals/financeagent": {
+   "checked": "2026-11-17",
+   "tasks": 50,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "vibrantlabsai/itsm-bench": {
+   "checked": "2026-11-17",
+   "tasks": 53,
+   "version": "3.0.0",
+   "description": "ITSMBench: enterprise ITSM agent tasks graded on database state",
+   "links": [
+    "https://arxiv.org/abs/2406.12045",
+    "https://github.com/ServiceNow/EnterpriseOps-Gym",
+    "https://github.com/vibrantlabsai/Enterprise-Worlds"
+   ]
+  },
+  "victorojewale/abstention-act": {
+   "checked": "2026-11-17",
+   "tasks": 22,
+   "version": "10.0.2",
+   "description": "Compliance-bias benchmark: safe action, clarification, and abstention",
+   "links": [
+    "https://github.com/harbor-framework/docs",
+    "https://github.com/victorojewale/abstention-act"
+   ]
+  },
+  "viratzzs/petct-pilot": {
+   "checked": "2026-11-17",
+   "tasks": 2,
+   "version": "3.0.0",
+   "description": "Private two-task PET/CT benchmark pilot; separately scored lesion mapping and result repair tasks.",
+   "links": []
+  },
+  "vmax-modal/modal-port-v1-eval-patched": {
+   "checked": "2026-11-17",
+   "tasks": 427,
+   "version": "1.0.0",
+   "description": "Patched verifier rebuild: reworked Modal capability-contract checks + unified reward (behavior x contract_gate). Tasks identical except tests/verify.py.",
+   "links": []
+  },
+  "vmax-modal/modal-port-v1-train-patched": {
+   "checked": "2026-11-17",
+   "tasks": 1702,
+   "version": "2.0.0",
+   "description": "Patched verifier rebuild: reworked Modal capability-contract checks + unified reward (behavior x contract_gate). Tasks identical except tests/verify.py.",
+   "links": []
+  },
+  "vmax/vmax-tasks": {
+   "checked": "2026-11-17",
+   "tasks": 1043,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "walkerhughes/tb-test": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "Terminal-Bench is a benchmark for measuring agents' abilities to complete tasks using a terminal.",
+   "links": [
+    "https://github.com/harbor-framework/terminal-bench"
+   ]
+  },
+  "walkerhughes/tb-test-cpu": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "The CPU-only subset of Terminal-Bench, using the same task revisions and release tag as the full dataset.",
+   "links": []
+  },
+  "websitebench/WebsiteBench": {
+   "checked": "2026-11-17",
+   "tasks": 70,
+   "version": "3.0.0",
+   "description": "Can AI agents rebuild websites through browser exploration? 70 website-reconstruction tasks.",
+   "links": [
+    "https://github.com/TIGER-AI-Lab/WebsiteBench"
+   ]
+  },
+  "wildawm/train-rl-208-set": {
+   "checked": "2026-11-17",
+   "tasks": 208,
+   "version": "2.0.0",
+   "description": "WildAWM RL training split: 208 tasks (set_rl208)",
+   "links": []
+  },
+  "wildawm/train-sft-100-set": {
+   "checked": "2026-11-17",
+   "tasks": 100,
+   "version": "2.0.0",
+   "description": "WildAWM SFT training split: 100 tasks (set_sft100)",
+   "links": []
+  },
+  "wildawm/val-33-set": {
+   "checked": "2026-11-17",
+   "tasks": 33,
+   "version": "2.0.0",
+   "description": "WildAWM validation split: 33 tasks (set_val33)",
+   "links": []
+  },
+  "withmartian/clojure-swerebench-v2-validated-51": {
+   "checked": "2026-11-17",
+   "tasks": 51,
+   "version": "1.0.0",
+   "description": "51 Clojure SWE-rebench V2 tasks validated for coding-agent evaluation.",
+   "links": []
+  },
+  "xiaoboai/pawbench": {
+   "checked": "2026-11-17",
+   "tasks": 150,
+   "version": "1.0.0",
+   "description": "PawBench: A comprehensive agent benchmark with 150 tasks covering coding, data analysis, tool use, reasoning, safety, and multimodal capabilities.",
+   "links": []
+  },
+  "xlang-ai/osworld-verified": {
+   "checked": "2026-11-17",
+   "tasks": 361,
+   "version": "1.0.0",
+   "description": "OSWorld-Verified Harbor adaptation: 361 Ubuntu desktop-control tasks from OSWorld, excluding the 8 Google Drive/login credential-backed tasks.",
+   "links": [
+    "https://github.com/xlang-ai/OSWorld"
+   ]
+  },
+  "xlang/ds-1000": {
+   "checked": "2026-11-17",
+   "tasks": 1000,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "yanagiorigami/frontier-cs": {
+   "checked": "2026-11-17",
+   "tasks": 172,
+   "version": "1.0.0",
+   "description": "Frontier-CS competitive programming benchmark: 172 open-ended algorithmic problems with partial scoring via go-judge.",
+   "links": []
+  },
+  "ykhli/tetrisbench": {
+   "checked": "2026-11-17",
+   "tasks": 1,
+   "version": "1.0.0",
+   "description": "TetrisBench strategy track: submit one JS placement-scoring function; mean raw game score over 20 fixed public seeds x 500 pieces, separately verified.",
+   "links": []
+  },
+  "zenml/zenml-bench": {
+   "checked": "2026-11-17",
+   "tasks": 18,
+   "version": "1.0.0",
+   "description": "ZenML Bench v0.1: 18 Harbor tasks where coding agents build, fix, configure and research with real ZenML 0.96.4; graded on the state ZenML recorded. https://github.com/ze…",
+   "links": [
+    "https://github.com/zenml-io/zenml-bench"
+   ]
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2227Z-a952585f",
+ "pid": "bp-001558",
+ "name": "FrontierCS 2",
+ "aliases": [
+  "FrontierCS"
+ ],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001558",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Tasks use research artifacts with executable evaluation and reference solutions; the best reported agent passes 58% of runs.",
+  "risks": [
+   "Most of the announced task set is not yet released.",
+   "Some tasks require substantial GPU resources and external infrastructure.",
+   "Reference code establishes a working baseline, but passing requires improving on it."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": [
+   "hub: yanagiorigami/frontier-cs",
+   "pool: FrontierCS (adapter)"
+  ]
+ },
+ "best_score": {
+  "pct": 58.0,
+  "source": "paper",
+  "model": "Claude Opus 5.5",
+  "as_of": "2026-10-21",
+  "systems": null,
+  "url": null
+ },
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "FrontierCS/FrontierCS-2",
+    "url": "https://github.com/FrontierCS/FrontierCS-2",
+    "commit": "1867a902b24a3a89e8c1ede73f76c28d1f102c3c",
+    "license": "CC-BY-4.0",
+    "files": 27091,
+    "pushed": "2026-11-17"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:FrontierCS/FrontierCS-2",
+   "quote": "**48 / 150 tasks released**, more to come. Full list and resources: [TASKS.md](TASKS.md).",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "CC-BY-4.0",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does CC-BY-4.0 cover task repositories, task images and run traces?",
+    "Are third-party paper artifacts and datasets separately licensed?",
+    "Can the released run traces be redistributed?"
+   ],
+   "quote": "Attribution 4.0 International",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 48,
+   "unit": "task",
+   "manifest_path": "TASKS.md",
+   "splits": [
+    "train",
+    "eval"
+   ],
+   "pilot": "batch_local_counting",
+   "quote": "**48 / 150 tasks released**, more to come. Full list and resources: [TASKS.md](TASKS.md).",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "scripts/run_task_verifier.sh IMAGE PAYLOAD.tar DATASET MODE OUTDIR",
+   "full_credit": "PASS only if the submission beats the reference on every workload and every metric in the task's beat specification; score measures progress beyond that.",
+   "quote": "The result is **PASS** only if the submission beats the reference on every workload and every metric in the task's beat specification.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "judge/ (reference patch)",
+   "command": "./python scripts/reference_parity.py --task batch_local_counting --config config/site.json --management-url http://127.0.0.1:8080 --seed-receipt .state/<site>/task-seed-receipt.json --receipt .state/<site>/reference-parity.json",
+   "quote": "To replay a task's reference solution and confirm your site reproduces its expected score:",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "AWS EKS cluster",
+    "EFS storage",
+    "in-cluster registry",
+    "management service",
+    "frontier-litellm model gateway",
+    "Modal GPU runners"
+   ],
+   "gpu": "yes",
+   "network_or_api": [
+    "OpenAI-compatible model provider API (for example OpenRouter)",
+    "Modal GPU API"
+   ],
+   "credentials": [
+    "AWS credentials",
+    "Modal token for GPU sites",
+    "model provider API keys",
+    "LiteLLM keys for progent_privilege_control"
+   ],
+   "exceptions": [
+    "progent_privilege_control needs a gateway model named progent-agent-gpt-4o-mini with a nonzero price and $65 per run in total",
+    "GPU tasks need Modal; CPU-only sites do not"
+   ],
+   "quote": "| **AWS** | The evaluation site: an EKS cluster, EFS storage, an in-cluster registry and the management service, created by Terraform in your account. |\n| **Modal** | GPU tasks only: Agent GPU runners and GPU verification. CPU-only sites do not need it. |\n| **API keys** | Model calls made by the Agent, and the task model of `progent_privilege_control`. Any OpenAI-compatible provider works (for example, OpenRouter, which is the default allowed model domain). |",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which license covers task images and run traces?",
+   "Where is the per-task manifest and verifier entry point?",
+   "How are held-out eval workloads kept hidden?",
+   "Which tasks need GPU, Modal or model keys?"
+  ],
+  "next_action": "Run scripts/reference_parity.py on batch_local_counting to confirm the reference score."
+ }
+}
