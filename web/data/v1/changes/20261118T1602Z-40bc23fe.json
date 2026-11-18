@@ -1,0 +1,527 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T1602Z-40bc23fe",
+ "generated_at": "2026-11-18T16:02:38Z",
+ "previous_build_id": "20261118T0001Z-30b23dda",
+ "data_generated": "2026-11-18 16:02 UTC",
+ "counts": {
+  "benchmarks": 2721,
+  "events": 39
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261118T1602Z-40bc23fe.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "discovered",
+   "pid": "bp-002721",
+   "name": "SciWorkBench",
+   "after": {
+    "name": "SciWorkBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002711",
+   "name": "EJBench",
+   "after": {
+    "name": "EJBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002708",
+   "name": "BankerVerifierBench",
+   "after": {
+    "name": "BankerVerifierBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002703",
+   "name": "SkillBuffBench",
+   "after": {
+    "name": "SkillBuffBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002702",
+   "name": "SEAM",
+   "after": {
+    "name": "SEAM",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002701",
+   "name": "RoboTeam",
+   "after": {
+    "name": "RoboTeam",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002700",
+   "name": "OfficePrism",
+   "after": {
+    "name": "OfficePrism",
+    "tier": null,
+    "covered": null,
+    "best": 76.4,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002699",
+   "name": "Multi-Agent Memory Inconsistency",
+   "after": {
+    "name": "Multi-Agent Memory Inconsistency",
+    "tier": null,
+    "covered": null,
+    "best": 16.2,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002698",
+   "name": "MAVEBench",
+   "after": {
+    "name": "MAVEBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002697",
+   "name": "IfcEditBench",
+   "after": {
+    "name": "IfcEditBench",
+    "tier": null,
+    "covered": null,
+    "best": 86.78,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002714",
+   "name": "HH-Bench",
+   "after": {
+    "name": "HH-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002696",
+   "name": "ForecastGym",
+   "after": {
+    "name": "ForecastGym",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "renamed",
+   "pid": "bp-002461",
+   "name": "ATLAS-Finance",
+   "before": "Atlas Finance",
+   "after": "ATLAS-Finance"
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002706",
+   "name": "ALE-Science Benchmark",
+   "after": {
+    "name": "ALE-Science Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002724",
+   "name": "VisualArtifactSpec 1.0",
+   "after": {
+    "name": "VisualArtifactSpec 1.0",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002723",
+   "name": "ViRA-Bench",
+   "after": {
+    "name": "ViRA-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002717",
+   "name": "MaLAB",
+   "after": {
+    "name": "MaLAB",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002715",
+   "name": "HiddenPhys",
+   "after": {
+    "name": "HiddenPhys",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002713",
+   "name": "FEM-Bench",
+   "after": {
+    "name": "FEM-Bench",
+    "tier": null,
+    "covered": null,
+    "best": 96.5,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002709",
+   "name": "BLIP-Live",
+   "after": {
+    "name": "BLIP-Live",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002720",
+   "name": "robotics-bench",
+   "after": {
+    "name": "robotics-bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002710",
+   "name": "Breath-Dx",
+   "after": {
+    "name": "Breath-Dx",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002719",
+   "name": "Realtime-Bench",
+   "after": {
+    "name": "Realtime-Bench",
+    "tier": null,
+    "covered": null,
+    "best": 44.0,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "renamed",
+   "pid": "bp-000965",
+   "name": "Agent Benchmark Tasks",
+   "before": "agent-benchmark-tasks",
+   "after": "Agent Benchmark Tasks"
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002704",
+   "name": "Agent Scaffolding Benchmark",
+   "after": {
+    "name": "Agent Scaffolding Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002712",
+   "name": "EMRD",
+   "after": {
+    "name": "EMRD",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002716",
+   "name": "IH-Benchmark",
+   "after": {
+    "name": "IH-Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": 97.8,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-002449",
+   "name": "SWE-Review",
+   "before": null,
+   "after": 8.9
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002718",
+   "name": "MTEB-BR",
+   "after": {
+    "name": "MTEB-BR",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-002439",
+   "name": "OmniGAIA",
+   "before": null,
+   "after": 49.8
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-002427",
+   "name": "HLE-Verified",
+   "before": null,
+   "after": 53.6
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-002430",
+   "name": "LABBench2",
+   "before": null,
+   "after": 82.1
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002695",
+   "name": "FactoryBench-100",
+   "after": {
+    "name": "FactoryBench-100",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": "hub",
+    "harbor_here": [
+     "hub: blobfishai/factorybench-100"
+    ],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002707",
+   "name": "Arabic TTS Benchmark",
+   "after": {
+    "name": "Arabic TTS Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002722",
+   "name": "SOP-Bench",
+   "after": {
+    "name": "SOP-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002705",
+   "name": "AgentRewardBench",
+   "after": {
+    "name": "AgentRewardBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002480",
+   "name": "CounselBench 100"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002649",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002481",
+   "name": "CPU2GPU"
+  }
+ ]
+}

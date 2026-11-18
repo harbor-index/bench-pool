@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-17",
+ "as_of": "2026-11-18",
  "registry": [
   {
    "name": "aider-polyglot",
@@ -484,7 +484,7 @@
  ],
  "hub": [
   "Enterprise-Bench/l1-l2-bench",
-  "Enterprise-Bench/l1-l2-bench-v2",
+  "Enterprise-Bench/l1-l2-bench-v",
   "LiteCoder/LiteCoder-rl",
   "MichaelY310/devopsgym",
   "NovitaAI/tb21-code-debug",
@@ -553,11 +553,12 @@
   "birdsql/bird-mini-dev",
   "birdsql/dii-v1-muscle",
   "blobfishai/arc-crm-6",
-  "blobfishai/counselbench-100",
+  "blobfishai/coun",
   "blobfishai/dealbench-100-suite",
   "blobfishai/devopsbench-100",
   "blobfishai/domainbench-24",
   "blobfishai/erpbench-100-suite",
+  "blobfishai/factorybench-100",
   "blobfishai/hubbench",
   "blobfishai/ledgerbench-100",
   "blobfishai/litigation",
@@ -584,7 +585,7 @@
   "doe/legal-world-sample",
   "doe/sample-pack",
   "drugtargetbench/drugtargetbench",
-  "elfsong/cpu2gpu",
+  "elfsong/cp",
   "elfsong/mercury-eval",
   "evaligo/swe-pair",
   "evaligo/swe-race",
@@ -692,6 +693,7 @@
   "obtuseorion/geoworld",
   "open-design/open-design",
   "openai/mmmlu",
+  "openai/simpleqa",
   "openai/swe-lancer-diamond-all",
   "openai/swe-lancer-diamond-ic",
   "openai/swe-lancer-diamond-manager",
@@ -729,6 +731,7 @@
   "openthoughts/tasktrove-exp-rpt-pymethods2test-large",
   "openthoughts/tasktrove-exp-rpt-pymethods2test-v3",
   "openthoughts/tasktrove-exp-rpt-scaffold-v2",
+  "openthoughts/tasktrove-exp-rpt-stack",
   "openthoughts/tasktrove-exp-rpt-stack-bash-v3",
   "openthoughts/tasktrove-exp-rpt-stack-bash-withtests-gpt5mini-v2",
   "openthoughts/tasktrove-exp-rpt-stack-bash-withtests-v2",
@@ -738,7 +741,6 @@
   "openthoughts/tasktrove-exp-rpt-stack-go-v4",
   "openthoughts/tasktrove-exp-rpt-stack-jest-large",
   "openthoughts/tasktrove-exp-rpt-stack-jest-v2",
-  "openthoughts/tasktrove-exp-rpt-stack-junit-v6",
   "openthoughts/tasktrove-exp-rpt-stack-php-large-v6",
   "openthoughts/tasktrove-exp-rpt-stack-php-v2-v6",
   "openthoughts/tasktrove-exp-rpt-stack-pytest-large",
@@ -753,7 +755,6 @@
   "openthoughts/tasktrove-inferredbugs-sandboxes-verifier",
   "openthoughts/tasktrove-llm-verifier-freelancer",
   "openthoughts/tasktrove-mix-baseline-uniform-v2",
-  "openthoughts/tasktrove-mix-h1-struggle-zone-v2",
   "openthoughts/tasktrove-mix-h10-reward-binary-v2",
   "openthoughts/tasktrove-mix-h10-reward-proportional-v2",
   "openthoughts/tasktrove-mix-h10-reward-staged-v2",
@@ -912,16 +913,6 @@
    "tasks": 14,
    "version": "2.0.1",
    "description": "Enterprise Agent Benchmark",
-   "links": [
-    "https://github.com/devrev/enterprise-bench",
-    "https://github.com/laude-institute/harbor"
-   ]
-  },
-  "Enterprise-Bench/l1-l2-bench-v2": {
-   "checked": "2026-11-17",
-   "tasks": 42,
-   "version": "1.0.0",
-   "description": "Enterprise-Bench v2: 42 L1-L2 tasks across engineering, sales, support, and UK workflows with six MCP services.",
    "links": [
     "https://github.com/devrev/enterprise-bench",
     "https://github.com/laude-institute/harbor"
@@ -1464,15 +1455,6 @@
     "https://github.com/blobfishai/arc-crm-agent-simulation"
    ]
   },
-  "blobfishai/counselbench-100": {
-   "checked": "2026-11-17",
-   "tasks": 100,
-   "version": "6.0.0",
-   "description": "100 high-level legal-agent tasks with 97-asset multi-provider evidence rooms, distinct deep trajectories, and native causal state verification.",
-   "links": [
-    "https://github.com/blobfishai/legal-agent-simulation"
-   ]
-  },
   "blobfishai/dealbench-100-suite": {
    "checked": "2026-11-17",
    "tasks": 100,
@@ -1689,13 +1671,6 @@
    "tasks": 60,
    "version": "5.0.0",
    "description": "Agentic causal target discovery across 20 semi-synthetic biobank worlds. Derive a cardiac phenotype from raw cine-MRI, then identify the proteins that causally drive dise…",
-   "links": []
-  },
-  "elfsong/cpu2gpu": {
-   "checked": "2026-11-17",
-   "tasks": 258,
-   "version": "6.0.0",
-   "description": "CPU-to-GPU porting benchmark: 258 novel multicore CPU programs to port to CUDA, graded on hidden inputs for correctness and decades of speedup over a direct reference po…",
    "links": []
   },
   "elfsong/mercury-eval": {
@@ -2821,13 +2796,6 @@
    "description": "exp rpt stack-jest-v2 tasks (500 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: DCAgent/exp_rpt_stack-jest-…",
    "links": []
   },
-  "openthoughts/tasktrove-exp-rpt-stack-junit-v6": {
-   "checked": "2026-11-17",
-   "tasks": 872,
-   "version": "1.0.0",
-   "description": "exp rpt stack-junit-v6 tasks (872 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/exp_rpt_stack-junit-…",
-   "links": []
-  },
   "openthoughts/tasktrove-exp-rpt-stack-php-large-v6": {
    "checked": "2026-11-17",
    "tasks": 3789,
@@ -2924,13 +2892,6 @@
    "tasks": 3718,
    "version": "1.0.0",
    "description": "mix baseline uniform-v2 tasks (3718 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_baseline_uni…",
-   "links": []
-  },
-  "openthoughts/tasktrove-mix-h1-struggle-zone-v2": {
-   "checked": "2026-11-17",
-   "tasks": 3116,
-   "version": "1.0.0",
-   "description": "mix h1 struggle zone-v2 tasks (3116 tasks). Part of OpenThoughts TaskTrove. See https://huggingface.co/datasets/open-thoughts/TaskTrove. Source: laion/mix_h1_struggle_…",
    "links": []
   },
   "openthoughts/tasktrove-mix-h10-reward-binary-v2": {
@@ -4106,6 +4067,51 @@
    "links": [
     "https://arxiv.org/abs/2505.03733"
    ]
+  },
+  "Enterprise-Bench/l1-l2-bench-v": {
+   "checked": "2026-11-18",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "blobfishai/coun": {
+   "checked": "2026-11-18",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "blobfishai/factorybench-100": {
+   "checked": "2026-11-18",
+   "tasks": 100,
+   "version": "7.0.1",
+   "description": "100 executable manufacturing ERP workflow tasks with deterministic FactoryScore grading",
+   "links": [
+    "https://github.com/Mercor-Intelligence/archipelago",
+    "https://github.com/blobfishai/factory-agent-simulation"
+   ]
+  },
+  "elfsong/cp": {
+   "checked": "2026-11-18",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
+  },
+  "openai/simpleqa": {
+   "checked": "2026-11-18",
+   "tasks": 4326,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "openthoughts/tasktrove-exp-rpt-stack": {
+   "checked": "2026-11-18",
+   "tasks": null,
+   "version": null,
+   "description": "Open in Harbor to explore tasks and datasets.",
+   "links": []
   }
  }
 }

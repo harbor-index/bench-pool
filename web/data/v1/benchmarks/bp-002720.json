@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T1722Z-ab714cd8",
+ "pid": "bp-002720",
+ "name": "robotics-bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002720",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "New agentic benchmark; Real and Solid strong, no weak dimension, containerized replay verifier; T2 waives Difficult/Attention for new.",
+  "risks": [
+   "Human review of contributor-built tasks is not documented",
+   "Task count and category diversity are not stated",
+   "Full GPU tier is not open yet; only CPU tier is complete"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-18",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "ZIWU-AI/robotics-bench",
+    "url": "https://github.com/ZIWU-AI/robotics-bench",
+    "commit": "83a928f33d8dcfd8f7d4de1cbc1801461eefa54e",
+    "license": "Apache-2.0",
+    "files": 678,
+    "pushed": "2026-11-18"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:ZIWU-AI/robotics-bench",
+   "quote": "=== github: ZIWU-AI/robotics-bench (commit/revision 83a928f33d8dcfd8f7d4de1cbc1801461eefa54e, licence field: Apache-2.0) ===",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does the repository licence cover contributed scenes, assets and recordings, or only the code?",
+    "Must the Terminal-Bench-Science NOTICE be preserved when redistributing adapted automation?"
+   ],
+   "quote": "## License\n\n[Apache License 2.0](LICENSE).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": null,
+   "unit": "case",
+   "manifest_path": "tasks/<case>/task.toml",
+   "splits": [],
+   "pilot": "tools/case-kit/example/gantry-push",
+   "quote": "Start from the complete example [`tools/case-kit/example/gantry-push`](tools/case-kit/example/gantry-push): a\n   three-axis gantry pushing a puck in MuJoCo, under 500 lines.",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "tests/verify.py",
+   "full_credit": "Reference solution scores 1; doing nothing or a forged recording scores 0.",
+   "quote": "The case's tests/verify.py does:\n\n    entries, seal, problems = load_export(EXPORT, api=..., backend=..., scene_sha256=...)\n    ... replay `entries` in a fresh simulator, compare every recorded state, evaluate the success check on the\n        replayed states ...\n    main(grade)    # writes /logs/verifier/reward.txt and details.json",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "controls_reported",
+   "path": null,
+   "command": null,
+   "quote": "The reference solution, which works through the same interface, scores 1; doing nothing, and any\n  forged recording, scores 0.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "no",
+   "network_or_api": [],
+   "credentials": [],
+   "exceptions": [
+    "GPU tier is optional and will open later on the bench's GPU pool"
+   ],
+   "quote": "Every case starts with a CPU tier that runs in ordinary Docker containers, and the CPU tier is a complete case on its\nown. An optional GPU tier on the bench's GPU pool will open later ([docs/LADDER.md](docs/LADDER.md)).",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Confirm the live task list and whether gantry-push is only a template.",
+   "Pin down the per-task verifier command and the reward file contract.",
+   "Decide whether CPU-only Docker is enough or the optional GPU tier matters.",
+   "Check whether contributed scenes, assets and recordings are redistributable under Apache-2.0."
+  ],
+  "next_action": "Run `python tools/case-kit/gate.py tools/case-kit/example/gantry-push` as the first local case check."
+ }
+}

@@ -311,7 +311,13 @@
 "agentretrievalbench": {
 "from": null
 },
+"agentrewardbench": {
+"from": null
+},
 "agentrobustbench": {
+"from": null
+},
+"agentscaffolding": {
 "from": null
 },
 "agentscripteval": {
@@ -424,6 +430,9 @@
 "from": null
 },
 "alephalphahoneypot": {
+"from": null
+},
+"alescience": {
 "from": null
 },
 "alfworldpara": {
@@ -562,6 +571,9 @@
 "from": null
 },
 "arabiclongcontextconversationalmemorydataset": {
+"from": null
+},
+"arabictts": {
 "from": null
 },
 "arc": {
@@ -785,6 +797,9 @@
 "bankertoolbench": {
 "from": null
 },
+"bankerverifierbench": {
+"from": null
+},
 "bankworld": {
 "from": null
 },
@@ -978,6 +993,9 @@
 "from": null
 },
 "blink": {
+"from": null
+},
+"bliplive": {
 "from": null
 },
 "blockblastbench": {
@@ -2035,6 +2053,9 @@
 "egostream": {
 "from": null
 },
+"ejbench": {
+"from": null
+},
 "ekalavyadelegation": {
 "from": null
 },
@@ -2233,6 +2254,9 @@
 "fabench": {
 "from": null
 },
+"factorybench100": {
+"from": null
+},
 "factsgrounding": {
 "from": null
 },
@@ -2279,6 +2303,9 @@
 "from": null
 },
 "feb30": {
+"from": null
+},
+"fembench": {
 "from": null
 },
 "fiduciabench": {
@@ -2419,6 +2446,9 @@
 "from": null
 },
 "forecastbench": {
+"from": null
+},
+"forecastgym": {
 "from": null
 },
 "foresci": {
@@ -3085,6 +3115,9 @@
 "id:arxiv-2608-06931": {
 "from": null
 },
+"id:arxiv-2608-08077": {
+"from": null
+},
 "id:arxiv-2608-08392": {
 "from": null
 },
@@ -3155,6 +3188,9 @@
 "from": null
 },
 "id:arxiv-2611-18338": {
+"from": null
+},
+"id:arxiv-2611-22971": {
 "from": null
 },
 "id:r-0d426f76fc": {
@@ -3259,6 +3295,9 @@
 "ifbench": {
 "from": null
 },
+"ifceditbench": {
+"from": null
+},
 "ifcmcq": {
 "from": null
 },
@@ -3266,6 +3305,9 @@
 "from": null
 },
 "ifeval": {
+"from": null
+},
+"ihbenchmark": {
 "from": null
 },
 "imagemining": {
@@ -3870,6 +3912,9 @@
 "makerbench": {
 "from": null
 },
+"malab": {
+"from": null
+},
 "maliciousagentskillsbench": {
 "from": null
 },
@@ -3937,6 +3982,9 @@
 "from": null
 },
 "mattoolbench": {
+"from": null
+},
+"mavebench": {
 "from": null
 },
 "maverix": {
@@ -4439,6 +4487,9 @@
 "mtbench": {
 "from": null
 },
+"mtebbr": {
+"from": null
+},
 "mtvabench": {
 "from": null
 },
@@ -4458,6 +4509,9 @@
 "from": null
 },
 "multiagentinject": {
+"from": null
+},
+"multiagentmemoryinconsistency": {
 "from": null
 },
 "multichallenge": {
@@ -4671,6 +4725,9 @@
 "from": null
 },
 "oenobench": {
+"from": null
+},
+"officeprism": {
 "from": null
 },
 "officeqabench": {
@@ -5389,6 +5446,9 @@
 "realkiefcc": {
 "from": null
 },
+"realtimebench": {
+"from": null
+},
 "realtimespeechlatency": {
 "from": null
 },
@@ -5603,6 +5663,12 @@
 "roboswe": {
 "from": null
 },
+"roboteam": {
+"from": null
+},
+"roboticsbench": {
+"from": null
+},
 "robotsevolvedguilessons1": {
 "from": null
 },
@@ -5802,6 +5868,9 @@
 "scivisagentbench": {
 "from": null
 },
+"sciworkbench": {
+"from": null
+},
 "scope": {
 "from": null
 },
@@ -5976,6 +6045,9 @@
 "skill2envlite": {
 "from": null
 },
+"skillbuffbench": {
+"from": null
+},
 "skillct": {
 "from": null
 },
@@ -6057,6 +6129,9 @@
 "from": null
 },
 "solexecbench": {
+"from": null
+},
+"sopbench": {
 "from": null
 },
 "sourcetestrepair": {

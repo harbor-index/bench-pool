@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T1722Z-ab714cd8",
+ "pid": "bp-000689",
+ "name": "SUSVIBES",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000689",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Real-artifact tasks have executable tests and passing reference solutions; the best reported main-experiment joint correctness and security score is 12.9%.",
+  "risks": [
+   "Verify that the published materials include runnable harnesses and Docker images; their public availability is not established in the text.",
+   "Security tests are proxies and may miss exploit modalities.",
+   "Run-to-run variance is not reported."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": {
+  "pct": 11.8,
+  "source": "paper",
+  "model": "SWE-Agent with Claude 4 Sonnet",
+  "as_of": "2025-12-02",
+  "systems": null,
+  "url": null
+ },
+ "readiness": {
+  "date": "2026-11-18",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "LeiLiLab/susvibes",
+    "url": "https://github.com/LeiLiLab/susvibes",
+    "commit": "5d957e6f1850595623d551d089193532e6fa60ce",
+    "license": "MIT",
+    "files": 203,
+    "pushed": "2026-10-22"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:LeiLiLab/susvibes",
+   "quote": "The SusVibes dataset ships with this repository at `datasets/default/susvibes_dataset.jsonl`.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does the MIT license cover the bundled dataset itself, or only the code?",
+    "Can the pre-built Docker images and upstream project code be redistributed?"
+   ],
+   "quote": "MIT License",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 186,
+   "unit": "task",
+   "manifest_path": "datasets/default/susvibes_dataset.jsonl",
+   "splits": [],
+   "pilot": "datasets/default/examples/sample_predictions.json",
+   "quote": "It consists of 186 feature-request software-engineering tasks from real-world open-source projects, for which, human programmers committed vulnerable implementations.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "python -m susvibes.eval.core",
+   "full_credit": "Not stated; the described evaluation applies the agent patch and runs the tests.",
+   "quote": "evaluating them exercises the whole pipeline — pulling the Docker image, applying the patch, and running the tests — on just a couple of instances.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "Other metadata and evaluation specifications are not detailed here.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [
+    "Claude/Anthropic API via ANTHROPIC_MODEL, ANTHROPIC_BASE_URL, ANTHROPIC_AUTH_TOKEN, ANTHROPIC_API_KEY",
+    "Gemini API via GEMINI_MODEL, GEMINI_API_KEY"
+   ],
+   "credentials": [
+    "ANTHROPIC_MODEL",
+    "ANTHROPIC_BASE_URL",
+    "ANTHROPIC_AUTH_TOKEN",
+    "ANTHROPIC_API_KEY",
+    "GEMINI_MODEL",
+    "GEMINI_API_KEY"
+   ],
+   "exceptions": [
+    "Needs at least 300GB free storage plus 4GB RAM and 4 CPU cores per parallel worker",
+    "Uses x86_64 Docker images; x86_64 machine recommended"
+   ],
+   "quote": "SusVibes evaluation can be resource intensive; for an accurate run, provide at least 300GB of free storage plus 4GB of RAM and 4 CPU cores per parallel worker. The task environments are distributed as `x86_64` Docker images, so it is recommended to also use an `x86_64` machine.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Is the bundled dataset and are the Docker images redistributable under MIT?",
+   "What exact scoring decides full credit for functionality and security?",
+   "Which agent credentials and API endpoints should the adapter use?",
+   "How should the adapter handle 300GB storage, x86_64, and parallel resource limits?"
+  ],
+  "next_action": "Run the shipped sample predictions through python -m susvibes.eval.core to sanity-check the harness."
+ }
+}

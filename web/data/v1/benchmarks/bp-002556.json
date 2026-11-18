@@ -1,0 +1,108 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T1722Z-ab714cd8",
+ "pid": "bp-002556",
+ "name": "MultiMedia-TerminalBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002556",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "No blocking rule; 105 Harbor-format tasks, programmatic verifiers, public data, and a 37.1% top score support recommendation.",
+  "risks": [
+   "Single-seed results; no repeated runs or error bars.",
+   "Some media carry noncommercial or GPL redistribution limits."
+  ]
+ },
+ "harbor": {
+  "status": "hub",
+  "here": [
+   "hub: mmtb/multimedia-terminalbench"
+  ],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-18",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "mm-tbench/multimedia-terminal-bench",
+    "url": "https://github.com/mm-tbench/multimedia-terminal-bench",
+    "commit": "c96adc0001378d8e1f71a073a823f5d80bbbb1d0",
+    "license": "MIT",
+    "files": 1045,
+    "pushed": "2026-07-27"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:mm-tbench/multimedia-terminal-bench",
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": "per-asset licenses recorded in each task's media.toml under [media.source].license (mixed families: Apache-2.0, MIT, ODbL-1.0, Public Domain, CC-BY, CC0-1.0, GPL, CC-BY-NC, Wav2Lip-derived research-use, GFDL 1.2)",
+   "redistribution_questions": [
+    "Do the 4 non-commercial / research-only media files need to be excluded before redistributing tasks?",
+    "Does the MIT code license cover the media assets, or only the repository code?",
+    "Which per-file attribution strings must be carried into any republished task?"
+   ],
+   "quote": "All 536 declared media records carry a license tag in their `[media.source].license` field.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 105,
+   "unit": "task",
+   "manifest_path": "datasets/mmtb-core/",
+   "splits": [],
+   "pilot": "datasets/mmtb-core/audience-ringtone-detection",
+   "quote": "Each task ships with an `instruction.md`, a `media.toml` recording asset provenance, license, and content hashes, the `environment/` Dockerfile that builds the workspace, and a verifier under `tests/`.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "tests/ (per-task verifier); results written to /logs/verifier/",
+   "full_credit": "The produced artifact at the fixed output path must clear the task-specific threshold to earn the binary success verdict (a partial score is also assigned).",
+   "quote": "**Artifact evaluator** — a deterministic verifier that scores the produced artifact and assigns both a partial score and a binary verdict against a task-specific threshold.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "**Instruction** — the user goal and required deliverable, stated without exposing the answer.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [
+    "LiteLLM model endpoints in <provider>/<model> form (e.g. gemini/gemini-3.1-pro-preview, anthropic/claude-sonnet-4-6, openrouter/google/gemini-3.1-pro-preview)",
+    "HuggingFace Hub media mirror mm-tbench/mmtb-media for asset download",
+    "Harbor registry mmtb/multimedia-terminalbench@v1.0 for no-clone runs"
+   ],
+   "credentials": [
+    "Provider API key in .env (e.g. GEMINI_API_KEY, ANTHROPIC_API_KEY, OPENAI_API_KEY)",
+    "Codex CLI OAuth token bundle at ~/.codex/auth.json (OPENAI_API_KEY is NOT required for that path)"
+   ],
+   "exceptions": [
+    "Codex CLI OAuth runs are local Docker only; the host's ~/.codex/auth.json is not visible to Daytona sandboxes",
+    "Terminus family agents require a local clone because they live in mmtb_runtime/"
+   ],
+   "quote": "Requires Docker and Python 3.11+.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "How does an adapter locate each task's verifier, thresholds, and expected artifact paths without reading the paper?",
+   "Can a run proceed offline after downloading media once, or is HuggingFace access required per trial?",
+   "Which license-restricted media files must be filtered or re-licensed for redistribution?",
+   "Do any tasks need a GPU or special system packages inside the container?"
+  ],
+  "next_action": "Run one registry task (mmtb/audience-ringtone-detection@v1.0) with a built-in agent and inspect the task directory and /logs/verifier/ output."
+ }
+}

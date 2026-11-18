@@ -1,0 +1,956 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T1717Z-0a67e7b8",
+ "generated_at": "2026-11-18T17:17:30Z",
+ "previous_build_id": "20261118T1602Z-40bc23fe",
+ "data_generated": "2026-11-18 17:17 UTC",
+ "counts": {
+  "benchmarks": 2721,
+  "events": 134
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261118T1717Z-0a67e7b8.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002721",
+   "name": "SciWorkBench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002259",
+   "name": "Legal Agent Benchmark",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002711",
+   "name": "EJBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002708",
+   "name": "BankerVerifierBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002703",
+   "name": "SkillBuffBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002702",
+   "name": "SEAM",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002701",
+   "name": "RoboTeam",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002700",
+   "name": "OfficePrism",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002699",
+   "name": "Multi-Agent Memory Inconsistency",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002698",
+   "name": "MAVEBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002697",
+   "name": "IfcEditBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002714",
+   "name": "HH-Bench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002696",
+   "name": "ForecastGym",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002461",
+   "name": "ATLAS-Finance",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002461",
+   "name": "ATLAS-Finance",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002706",
+   "name": "ALE-Science Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002724",
+   "name": "VisualArtifactSpec 1.0",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002723",
+   "name": "ViRA-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002717",
+   "name": "MaLAB",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002715",
+   "name": "HiddenPhys",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002713",
+   "name": "FEM-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002709",
+   "name": "BLIP-Live",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002720",
+   "name": "robotics-bench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002720",
+   "name": "robotics-bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002710",
+   "name": "Breath-Dx",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002719",
+   "name": "Realtime-Bench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002719",
+   "name": "Realtime-Bench",
+   "before": null,
+   "after": "unverified"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002704",
+   "name": "Agent Scaffolding Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002712",
+   "name": "EMRD",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002716",
+   "name": "IH-Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002582",
+   "name": "SETA env",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002718",
+   "name": "MTEB-BR",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002695",
+   "name": "FactoryBench-100",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002707",
+   "name": "Arabic TTS Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002722",
+   "name": "SOP-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002705",
+   "name": "AgentRewardBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002673",
+   "name": "SWE-Gym",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002673",
+   "name": "SWE-Gym",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002678",
+   "name": "TB21 File Recovery",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002672",
+   "name": "SWE-rebench v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002671",
+   "name": "SWE-rebench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002605",
+   "name": "SWE-Race",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002604",
+   "name": "SWE-Pair",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002603",
+   "name": "SWE-Lancer Diamond Manager",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002602",
+   "name": "SWE-Lancer Diamond IC",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002601",
+   "name": "SWE-Lancer Diamond All",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002599",
+   "name": "SWE-Gen Rust",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002598",
+   "name": "SWE-Gen JS",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002597",
+   "name": "SWE-Gen Java",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002596",
+   "name": "SWE-Gen Go",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002595",
+   "name": "SWE-Gen C++",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002594",
+   "name": "SWE-benchify Hard",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002592",
+   "name": "SWE-Atlas Refactoring",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002588",
+   "name": "SMB Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002586",
+   "name": "skill2env lite",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002584",
+   "name": "SimRepairBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002583",
+   "name": "SimReadyBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002581",
+   "name": "Senior SWE-Bench v2026.06",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002580",
+   "name": "SemiKongBench 100",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002670",
+   "name": "Self-Instruct Naive Sandboxes 2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002578",
+   "name": "RuneBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002617",
+   "name": "RLE minimal instructions v3",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002616",
+   "name": "RLE heavy padding v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002615",
+   "name": "RLE GitHub issue v3",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002614",
+   "name": "RLE error report v3",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002572",
+   "name": "revbench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002571",
+   "name": "Rating Generation Consistency",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002570",
+   "name": "ramen-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002669",
+   "name": "R2E-Gym",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002567",
+   "name": "PhysicianBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002566",
+   "name": "PET/CT pilot",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002668",
+   "name": "OpenSWE",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002561",
+   "name": "OpenPoly Tg Case",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002560",
+   "name": "Open Design Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002667",
+   "name": "NL2Bash",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002558",
+   "name": "nim-hard",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002557",
+   "name": "nim",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002666",
+   "name": "Nemotron-Gym Math Advanced Calculations v3",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002665",
+   "name": "Nemotron-Gym Knowledge Web Search MCQA",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002664",
+   "name": "Nemotron-Gym Instruction Following v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002663",
+   "name": "Nemotron-Gym Instruction Following Structured",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002662",
+   "name": "Nemotron-Gym Instruction Following Calendar",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002661",
+   "name": "Nemotron-Gym Instruction Following Adversarial v3",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002660",
+   "name": "Nemotron-Gym Identity Following v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002659",
+   "name": "Nemotron-Gym Competitive Coding",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002658",
+   "name": "Nemotron-Gym Agent Workplace v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002657",
+   "name": "Nemotron-Gym Agent Calendar",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002656",
+   "name": "Nemotron Code",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002556",
+   "name": "MultiMedia-TerminalBench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002556",
+   "name": "MultiMedia-TerminalBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002693",
+   "name": "Model Topography Workbench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002555",
+   "name": "Modal Port v1 Eval Patched",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002655",
+   "name": "Mix H8 Original Tests v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002654",
+   "name": "Mix H8 Adversarial Tests v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002631",
+   "name": "methods2test-large-v3",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002630",
+   "name": "methods2test-large-v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002548",
+   "name": "Mesh2CAD Benchmark SCA",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002547",
+   "name": "Mesh2CAD Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002545",
+   "name": "Maize Yield Case",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002542",
+   "name": "LongSWE-Bench 32k",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002539",
+   "name": "Litigation",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002538",
+   "name": "LibrAgent SWE Diverse 8",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002537",
+   "name": "LibrAgent Org Collab 7",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002536",
+   "name": "LibrAgent Media Desktop 10",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002535",
+   "name": "LibrAgent Knowledge Bridge 2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002534",
+   "name": "LibrAgent Diverse 9",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002533",
+   "name": "LibrAgent Compaction Fact Recall 1",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002532",
+   "name": "LibrAgent Browser Dual 12",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002531",
+   "name": "Legal Consent Sweep",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002530",
+   "name": "Legacy-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002529",
+   "name": "LedgerBench 100",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002528",
+   "name": "LaminaBench v1",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002526",
+   "name": "kw-bench VAT Chain",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002525",
+   "name": "kw-bench SAP easy",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002524",
+   "name": "kw-bench SAP",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002523",
+   "name": "klyrune-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002520",
+   "name": "HV Terminal-Bench 2.1",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002519",
+   "name": "hpd-benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002517",
+   "name": "Horizon-1",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002516",
+   "name": "Historical Systems Bugs",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002515",
+   "name": "HiL-Bench SWE Ask-Human",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002514",
+   "name": "HiL-Bench SQL Ask-Human",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002513",
+   "name": "HiL-Bench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002513",
+   "name": "HiL-Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002511",
+   "name": "Harvey Redline Jubarte",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002510",
+   "name": "Harvey Redline",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002509",
+   "name": "Harvey Labs",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002512",
+   "name": "Harvey LAB Redline",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002508",
+   "name": "Harness Bench Fast",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002506",
+   "name": "Harbor Index 1.0",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002505",
+   "name": "haiku-hard",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002501",
+   "name": "GraphicDesignBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002504",
+   "name": "GeoWorld",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002502",
+   "name": "gemma4_gh_pr",
+   "before": null,
+   "after": "hold"
+  }
+ ]
+}

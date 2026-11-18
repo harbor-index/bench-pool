@@ -1,0 +1,74 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T1722Z-ab714cd8",
+ "generated_at": "2026-11-18T17:22:25Z",
+ "previous_build_id": "20261118T1717Z-0a67e7b8",
+ "data_generated": "2026-11-18 17:22 UTC",
+ "counts": {
+  "benchmarks": 2721,
+  "events": 8
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261118T1722Z-ab714cd8.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002461",
+   "name": "ATLAS-Finance",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002720",
+   "name": "robotics-bench",
+   "before": null,
+   "after": "controls_reported"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002719",
+   "name": "Realtime-Bench",
+   "before": "unverified",
+   "after": "real"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002719",
+   "name": "Realtime-Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000689",
+   "name": "SUSVIBES",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002673",
+   "name": "SWE-Gym",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002556",
+   "name": "MultiMedia-TerminalBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002513",
+   "name": "HiL-Bench",
+   "before": null,
+   "after": "none"
+  }
+ ]
+}
