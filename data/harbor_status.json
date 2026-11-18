@@ -893,6 +893,7 @@
   "vmax/vmax-tasks",
   "walkerhughes/tb-test",
   "walkerhughes/tb-test-cpu",
+  "webgen-bench/webgen-bench",
   "websitebench/WebsiteBench",
   "wildawm/train-rl-208-set",
   "wildawm/train-sft-100-set",
@@ -4095,6 +4096,15 @@
    "description": "ZenML Bench v0.1: 18 Harbor tasks where coding agents build, fix, configure and research with real ZenML 0.96.4; graded on the state ZenML recorded. https://github.com/ze…",
    "links": [
     "https://github.com/zenml-io/zenml-bench"
+   ]
+  },
+  "webgen-bench/webgen-bench": {
+   "checked": "2026-11-17",
+   "tasks": 101,
+   "version": "2.0.1",
+   "description": "WebGen-Bench: evaluating LLMs on generating interactive and functional websites from scratch.",
+   "links": [
+    "https://arxiv.org/abs/2505.03733"
    ]
   }
  }

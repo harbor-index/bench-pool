@@ -1,0 +1,105 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "pid": "bp-002393",
+ "name": "ALE-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002393",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic real-task benchmark with executable scorer and human-solvable tasks; best reported 53.7% is unsaturated, so T2 holds.",
+  "risks": [
+   "small task pool: only 40 tasks from 49 contests",
+   "main results single-run, no error bars",
+   "hardware-dependent scoring needs standardized CPU"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "SakanaAI/ALE-Bench",
+    "url": "https://github.com/SakanaAI/ALE-Bench",
+    "commit": "8ba16e6baf743aa8736516c45d1c52afdbd4de99",
+    "license": "Apache-2.0",
+    "files": 431,
+    "pushed": "2026-11-16"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:SakanaAI/ALE-Bench",
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": null,
+   "redistribution_questions": [
+    "What licence and terms cover the Hugging Face problem data (not stated)?",
+    "Do the AtCoder Heuristic Contest generative-AI usage rules constrain redistribution or use of the derived problems?",
+    "The README says the repo is not an official SakanaAI or AtCoder product; who clears the AHC-derived material for reuse?"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "count": null,
+   "unit": "problem",
+   "manifest_path": null,
+   "splits": [],
+   "pilot": "ahc001",
+   "quote": "Below is an example script demonstrating how to use the ALE-Bench toolkit for evaluating an AI agent on a specific problem (e.g., `ahc001`).",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "session.public_eval / session.private_eval (src/ale_bench); shell wrapper scripts/run_eval.sh",
+   "full_credit": "Submitted code is executed by the judge in a Docker image against public and then private test cases and converted to a score, rank and performance rather than pass/fail.",
+   "quote": null,
+   "evidence": "unknown",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "NOTE: While the `session` object contains attributes like `private_seeds`, `rank_performance_map`, and `standings`, these (and any other attributes prefixed with an underscore, e.g., `_private_inputs`) MUST NOT be accessed or used during your experiment to ensure fair evaluation.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "optional local visualization server (visualization_server_port=8080)"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "Hugging Face Hub for on-demand data download (hf_hub_download default)",
+    "Docker Hub base images (yimjk/ale-bench)",
+    "LLM/model endpoint for the agent under evaluation (ale_bench_eval, pydantic-ai[bedrock])"
+   ],
+   "credentials": [],
+   "exceptions": [
+    "lite_version=False must be set at session start for rank and performance calculation",
+    "reactive problem types require inspecting local Rust tool sources"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "Are the problems taken from the Hugging Face dataset, and what terms allow us to redistribute them?",
+   "How many problems exist and which judge version and code languages must the adapter support?",
+   "How should a score be turned into a task pass/fail for a programmatic verifier?",
+   "Does any reference solution or gold output ship with the data, or must the oracle come from elsewhere?"
+  ],
+  "next_action": "Run ale_bench.start(problem_id=\"ahc001\", lite_version=False) plus one public_eval to capture the real score artifact shape."
+ }
+}

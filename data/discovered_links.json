@@ -11,10 +11,19 @@
 "360cityarena": {
 "from": null
 },
+"3dscenebench": {
+"from": null
+},
+"3dscenebenchmini": {
+"from": null
+},
 "4dcodebench": {
 "arxiv": "2610.03715",
 "from": "https://4dcodebench.com/",
 "repo": "4DCodeBench/4DCodeBench"
+},
+"4dmemorybench": {
+"from": null
 },
 "aabriefcase": {
 "from": null
@@ -28,13 +37,28 @@
 "aaomniscience": {
 "from": null
 },
+"aar": {
+"from": null
+},
+"aarribench": {
+"from": null
+},
 "abcbench": {
 "from": null
 },
 "abfbench": {
 "from": null
 },
+"abhbench": {
+"from": null
+},
 "ablationbench": {
+"from": null
+},
+"abmaze": {
+"from": null
+},
+"abstentionact": {
 "from": null
 },
 "acbench": {
@@ -169,6 +193,9 @@
 "agenthazard": {
 "from": null
 },
+"agentheal": {
+"from": null
+},
 "agenthop": {
 "from": null
 },
@@ -218,6 +245,9 @@
 "agenticrelationshipharm": {
 "from": null
 },
+"agenticrlbench": {
+"from": null
+},
 "agenticsafetybench": {
 "from": null
 },
@@ -251,6 +281,12 @@
 "agentmeter": {
 "from": null
 },
+"agentmoneybench": {
+"from": null
+},
+"agentobscore": {
+"from": null
+},
 "agentobservatorybenchmarks": {
 "from": null
 },
@@ -281,6 +317,9 @@
 "agentscripteval": {
 "from": null
 },
+"agentsearch": {
+"from": null
+},
 "agentselect": {
 "from": null
 },
@@ -296,6 +335,9 @@
 "agentslastexam": {
 "from": "https://agents-last-exam.org",
 "repo": "rdi-berkeley/agents-last-exam"
+},
+"agentstartupbench": {
+"from": null
 },
 "agentstream": {
 "from": null
@@ -351,6 +393,9 @@
 "aiescapelab": {
 "from": null
 },
+"aifaultbench": {
+"from": null
+},
 "aime": {
 "from": null
 },
@@ -387,6 +432,9 @@
 "algotune": {
 "from": null
 },
+"alibabactf": {
+"from": null
+},
 "alignbench": {
 "from": null
 },
@@ -394,6 +442,9 @@
 "from": null
 },
 "alipaypibench": {
+"from": null
+},
+"alivebench": {
 "from": null
 },
 "alpacaeval2": {
@@ -436,6 +487,9 @@
 "from": "https://android-developers.googleblog.com/2026/03/elevating-ai-assisted-androi.html",
 "repo": "android-bench/android-bench"
 },
+"androidflux": {
+"from": null
+},
 "androidlife": {
 "from": null
 },
@@ -470,6 +524,12 @@
 "from": null
 },
 "aobench": {
+"from": null
+},
+"aosbench": {
+"from": null
+},
+"apex": {
 "from": null
 },
 "apexagents": {
@@ -518,6 +578,9 @@
 "arcagi2": {
 "from": null
 },
+"arcagi2k8s": {
+"from": null
+},
 "arcagi3": {
 "from": null
 },
@@ -528,6 +591,9 @@
 "from": null
 },
 "arcc": {
+"from": null
+},
+"arccrm6": {
 "from": null
 },
 "arebench": {
@@ -599,7 +665,13 @@
 "atlasbench": {
 "from": null
 },
+"atlasfinance": {
+"from": null
+},
 "atlaslatticebench": {
+"from": null
+},
+"atmbenchhardsgm": {
 "from": null
 },
 "atmmemorytrap": {
@@ -660,6 +732,9 @@
 "autonomoussciencebench": {
 "from": null
 },
+"autoresearchexam": {
+"from": null
+},
 "autotunebench": {
 "from": null
 },
@@ -676,6 +751,9 @@
 "from": null
 },
 "b3agentsecurity": {
+"from": null
+},
+"bababench": {
 "from": null
 },
 "babelarena": {
@@ -722,7 +800,19 @@
 "bbh": {
 "from": null
 },
+"bcvl": {
+"from": null
+},
 "beaker": {
+"from": null
+},
+"beam128k": {
+"from": null
+},
+"beamddtesthard": {
+"from": null
+},
+"beamddtestnormal": {
 "from": null
 },
 "beamprocurement": {
@@ -770,6 +860,9 @@
 "berkeleyfunctioncallingleaderboardbfcl": {
 "from": null
 },
+"beyondaime": {
+"from": null
+},
 "bfcl": {
 "from": null
 },
@@ -783,6 +876,9 @@
 "from": null
 },
 "bfcl4": {
+"from": null
+},
+"bfclparity": {
 "from": null
 },
 "bigbench": {
@@ -806,6 +902,9 @@
 "bigcodebenchfull": {
 "from": null
 },
+"bigcodebenchhardcomplete": {
+"from": null
+},
 "bigfinancebench": {
 "arxiv": "2606.03829",
 "from": "https://bigfinancebench.com/",
@@ -814,6 +913,9 @@
 "biglawbench": {
 "from": "https://www.harvey.ai/blog/introducing-biglaw-bench",
 "repo": "harveyai/biglaw-bench"
+},
+"binaryaudit": {
+"from": null
 },
 "bioagentbench": {
 "from": null
@@ -833,6 +935,12 @@
 "biolpbench": {
 "from": null
 },
+"biomlbench": {
+"from": null
+},
+"biopharmabench": {
+"from": null
+},
 "bioxarenapro": {
 "from": null
 },
@@ -845,16 +953,28 @@
 "from": "https://bird-interact.github.io/",
 "repo": "bird-bench/BIRD-Interact"
 },
+"birdminidev": {
+"from": null
+},
 "birdsqldev": {
 "from": null
 },
 "bixbench": {
 "from": null
 },
+"bixbenchcli": {
+"from": null
+},
+"blenderbench20": {
+"from": null
+},
 "blendergym": {
 "from": null
 },
 "blindspot": {
+"from": null
+},
+"blindtochange": {
 "from": null
 },
 "blink": {
@@ -864,6 +984,9 @@
 "from": null
 },
 "bluedotagentbenchmarks": {
+"from": null
+},
+"blueprintbench2": {
 "from": null
 },
 "bobsharedbrain": {
@@ -905,6 +1028,12 @@
 "browseragents": {
 "from": null
 },
+"browseruselinkedin": {
+"from": null
+},
+"btf3": {
+"from": null
+},
 "btsagentbench": {
 "from": null
 },
@@ -918,6 +1047,12 @@
 "from": null
 },
 "bulkprbench": {
+"from": null
+},
+"bunserverbench": {
+"from": null
+},
+"burger": {
 "from": null
 },
 "businessarena": {
@@ -956,6 +1091,9 @@
 "calendaragent": {
 "from": null
 },
+"calibratedreliance": {
+"from": null
+},
 "callscreenbench": {
 "from": null
 },
@@ -963,6 +1101,9 @@
 "from": null
 },
 "camelotbench": {
+"from": null
+},
+"camgii": {
 "from": null
 },
 "canarytools": {
@@ -978,6 +1119,9 @@
 "from": null
 },
 "carryoverbench": {
+"from": null
+},
+"casebench": {
 "from": null
 },
 "castworld": {
@@ -1082,6 +1226,9 @@
 "chemrxnbench": {
 "from": null
 },
+"chesspuzzles": {
+"from": null
+},
 "chesspuzzles2": {
 "from": "https://epoch.ai/benchmarks/chess-puzzles",
 "repo": "epoch-research/chess-puzzles-mirror"
@@ -1131,6 +1278,9 @@
 "claweval": {
 "from": null
 },
+"clawevalmm": {
+"from": null
+},
 "clawprobench": {
 "from": null
 },
@@ -1138,6 +1288,9 @@
 "from": null
 },
 "clbench": {
+"from": null
+},
+"clbenchlife": {
 "from": null
 },
 "clibench": {
@@ -1149,6 +1302,9 @@
 "clinlens": {
 "from": null
 },
+"clojureswerebench2validated51": {
+"from": null
+},
 "cloningscenarios": {
 "from": null
 },
@@ -1156,6 +1312,9 @@
 "from": null
 },
 "cloudopsbench": {
+"from": null
+},
+"clrbench": {
 "from": null
 },
 "cluewsc": {
@@ -1182,6 +1341,10 @@
 "codearena": {
 "from": null
 },
+"codecapbench": {
+"from": "https://codecap-bench.github.io/",
+"repo": "kevin236-max/CodeCap-Bench"
+},
 "codeclash": {
 "arxiv": "2511.00839",
 "from": "https://codeclash.ai/",
@@ -1194,6 +1357,9 @@
 "from": null
 },
 "codepde": {
+"from": null
+},
+"codeskillsbench": {
 "from": null
 },
 "codingagentbenchmark": {
@@ -1229,6 +1395,9 @@
 "commonsenseqa": {
 "from": null
 },
+"compactbench": {
+"from": null
+},
 "companionbench": {
 "from": null
 },
@@ -1243,6 +1412,9 @@
 "from": null
 },
 "compressagent": {
+"from": null
+},
+"computebazaarbench": {
 "from": null
 },
 "concurrentfileoperationraceconditionverification": {
@@ -1320,6 +1492,9 @@
 "cotcontrol": {
 "from": null
 },
+"counselbench100": {
+"from": null
+},
 "countbench": {
 "from": null
 },
@@ -1339,6 +1514,9 @@
 "from": null
 },
 "covost2enzh": {
+"from": null
+},
+"cpu2gpu": {
 "from": null
 },
 "cpumcptoolcalling": {
@@ -1398,6 +1576,9 @@
 "crpcbench": {
 "from": null
 },
+"crperelation": {
+"from": null
+},
 "crustbench": {
 "from": null
 },
@@ -1431,6 +1612,9 @@
 "cuaharm": {
 "from": null
 },
+"cualite": {
+"from": null
+},
 "cuarecovery": {
 "from": null
 },
@@ -1438,6 +1622,15 @@
 "from": null
 },
 "curationbench": {
+"from": null
+},
+"cursebench": {
+"from": null
+},
+"cursorbench": {
+"from": null
+},
+"cursorbench32": {
 "from": null
 },
 "customer360": {
@@ -1470,6 +1663,9 @@
 "from": null
 },
 "cyberclear": {
+"from": null
+},
+"cyberdefensebench": {
 "from": null
 },
 "cyberdual": {
@@ -1516,6 +1712,9 @@
 "dashact": {
 "from": null
 },
+"dataengbench": {
+"from": null
+},
 "dataspace": {
 "from": null
 },
@@ -1528,10 +1727,16 @@
 "dbenchbio": {
 "from": null
 },
+"dbtlabsk8s": {
+"from": null
+},
 "dbtlbench": {
 "from": null
 },
 "ddbench": {
+"from": null
+},
+"dealbench100suite": {
 "from": null
 },
 "decarena": {
@@ -1541,6 +1746,9 @@
 "from": null
 },
 "decompgym": {
+"from": null
+},
+"decoycount": {
 "from": null
 },
 "deepplanning": {
@@ -1557,6 +1765,9 @@
 "deepresearchbenchii": {
 "from": null
 },
+"deepresearchrewardbench": {
+"from": null
+},
 "deeprsi": {
 "arxiv": "2603.08640",
 "from": "https://www.deeprsi.com/blog/"
@@ -1567,6 +1778,9 @@
 "deepswe": {
 "from": "https://deepswe.datacurve.ai",
 "repo": "datacurve-ai/deep-swe"
+},
+"deepswe11": {
+"from": null
 },
 "deepsynth": {
 "from": null
@@ -1583,6 +1797,9 @@
 "deputybench": {
 "from": null
 },
+"dermmcqa": {
+"from": null
+},
 "design2code": {
 "from": null
 },
@@ -1595,10 +1812,16 @@
 "deveval": {
 "from": null
 },
+"devopsbench100": {
+"from": null
+},
 "devopsgym": {
 "from": null
 },
 "devrevnl2sql": {
+"from": null
+},
+"dexarena": {
 "from": null
 },
 "dexholdem": {
@@ -1651,10 +1874,25 @@
 "dogbench": {
 "from": null
 },
+"domainbench24": {
+"from": null
+},
+"doubaomultiturnbench": {
+"from": null
+},
+"doubletakebench": {
+"from": null
+},
 "draco": {
 "from": null
 },
+"draftbench": {
+"from": null
+},
 "dramachainbench": {
+"from": null
+},
+"dramavqa": {
 "from": null
 },
 "drawaibench": {
@@ -1679,6 +1917,9 @@
 "from": null
 },
 "drop": {
+"from": null
+},
+"drugtargetbench": {
 "from": null
 },
 "ds1000": {
@@ -1735,6 +1976,9 @@
 "from": null
 },
 "e2eswe": {
+"from": null
+},
+"ebrbench": {
 "from": null
 },
 "ecdsafail": {
@@ -1825,6 +2069,9 @@
 "embodiedplayground": {
 "from": null
 },
+"embodiedqaevidenceaudit": {
+"from": null
+},
 "embodiedskillbench": {
 "from": null
 },
@@ -1841,6 +2088,9 @@
 "from": null
 },
 "engrambench": {
+"from": null
+},
+"enigmaeval": {
 "from": null
 },
 "enterprisebench": {
@@ -1887,6 +2137,9 @@
 "from": null
 },
 "erpbench": {
+"from": null
+},
+"erpbench100suite": {
 "from": null
 },
 "erqa": {
@@ -1974,6 +2227,12 @@
 "extractbench": {
 "from": null
 },
+"extractbenchpro": {
+"from": null
+},
+"fabench": {
+"from": null
+},
 "factsgrounding": {
 "from": null
 },
@@ -1981,6 +2240,9 @@
 "from": null
 },
 "failuretransparentagents": {
+"from": null
+},
+"fairuniverseweaklensingmluncertaintychallenge": {
 "from": null
 },
 "falsecompletionbench": {
@@ -1995,7 +2257,13 @@
 "faultrepair": {
 "from": null
 },
+"favorbench": {
+"from": null
+},
 "fcgbench": {
+"from": null
+},
+"fdataexitcase": {
 "from": null
 },
 "featbench": {
@@ -2020,6 +2288,12 @@
 "from": null
 },
 "figqa": {
+"from": null
+},
+"filingbench": {
+"from": null
+},
+"filingloop": {
 "from": null
 },
 "filmbench": {
@@ -2074,6 +2348,9 @@
 "finhopper": {
 "from": null
 },
+"finlocomo": {
+"from": null
+},
 "finmtm": {
 "from": null
 },
@@ -2095,6 +2372,9 @@
 "finsearchcomp": {
 "arxiv": "2509.13160",
 "from": "https://randomtutu.github.io/FinSearchComp/"
+},
+"finsearchcompt2global": {
+"from": null
 },
 "finskillbench": {
 "from": null
@@ -2138,6 +2418,9 @@
 "fomcfedput": {
 "from": null
 },
+"forecastbench": {
+"from": null
+},
 "foresci": {
 "from": null
 },
@@ -2178,6 +2461,9 @@
 "frontierbench01": {
 "from": null
 },
+"frontierbioml": {
+"from": null
+},
 "frontierco": {
 "from": null
 },
@@ -2196,7 +2482,22 @@
 "frontierfinance": {
 "from": null
 },
+"frontierharnesseval": {
+"from": null
+},
+"frontierharnessevallite": {
+"from": null
+},
 "frontiermath": {
+"from": null
+},
+"frontiermathtier42private": {
+"from": null
+},
+"frontiermemory": {
+"from": null
+},
+"frontierml": {
 "from": null
 },
 "frontieror": {
@@ -2207,6 +2508,9 @@
 "frontierphysics": {
 "from": "https://www.benchflow.ai/frontierphysics",
 "repo": "benchflow-ai/benchflow"
+},
+"frontierrefactor": {
+"from": null
 },
 "frontierscience": {
 "from": null
@@ -2220,6 +2524,9 @@
 "frontierswe": {
 "from": null
 },
+"frontiersweimpl": {
+"from": null
+},
 "frontiervideo": {
 "from": null
 },
@@ -2229,10 +2536,16 @@
 "ftlbench": {
 "from": null
 },
+"funcadbench": {
+"from": null
+},
 "functionalmath": {
 "from": null
 },
 "funeshandoffrecall": {
+"from": null
+},
+"furnitureassembly": {
 "from": null
 },
 "furnitureinvehiclepacking": {
@@ -2265,7 +2578,22 @@
 "gauge": {
 "from": null
 },
+"gauntlet": {
+"from": null
+},
+"gauntletplanner": {
+"from": null
+},
+"gbaeval": {
+"from": null
+},
 "gcamgym": {
+"from": null
+},
+"gcgeceval": {
+"from": null
+},
+"gdb": {
 "from": null
 },
 "gdmsituationalawareness": {
@@ -2290,6 +2618,15 @@
 "gdpvalmm": {
 "from": null
 },
+"gdpxlsx": {
+"from": null
+},
+"gemma4ghpr": {
+"from": null
+},
+"gemsbench": {
+"from": null
+},
 "gemsger": {
 "from": null
 },
@@ -2301,6 +2638,9 @@
 "repo": "datacurve-ai/deep-swe."
 },
 "genenetworkkg": {
+"from": null
+},
+"generatedbasicproductiontraces": {
 "from": null
 },
 "genscale": {
@@ -2322,6 +2662,9 @@
 "from": null
 },
 "geonatureagent": {
+"from": null
+},
+"geoworld": {
 "from": null
 },
 "ggufbench": {
@@ -2419,10 +2762,16 @@
 "gridworld3denv": {
 "from": null
 },
+"groundedvdr": {
+"from": null
+},
 "groundtruthdynamicbenchmarkgeology": {
 "from": null
 },
 "groundui1k": {
+"from": null
+},
+"groupassistbench": {
 "from": null
 },
 "grouptravelbench": {
@@ -2455,6 +2804,12 @@
 "guirewardbench": {
 "from": null
 },
+"gymanythingrt": {
+"from": null
+},
+"haikuhard": {
+"from": null
+},
 "hakaribench": {
 "from": null
 },
@@ -2473,7 +2828,16 @@
 "harborindex": {
 "from": null
 },
+"harborindex1": {
+"from": null
+},
+"hard12": {
+"from": null
+},
 "harnessbench": {
+"from": null
+},
+"harnessbenchfast": {
 "from": null
 },
 "harnessdev": {
@@ -2498,6 +2862,21 @@
 "from": null
 },
 "harveylablegalagent": {
+"from": null
+},
+"harveylabs": {
+"from": null
+},
+"harveylabvals": {
+"from": null
+},
+"harveyredline": {
+"from": null
+},
+"harveyredlinejubarte": {
+"from": null
+},
+"harveyredlinelab": {
 "from": null
 },
 "havln2": {
@@ -2548,6 +2927,15 @@
 "hiddenmath": {
 "from": null
 },
+"hilbench": {
+"from": null
+},
+"hilbenchsqlaskhuman": {
+"from": null
+},
+"hilbenchsweaskhuman": {
+"from": null
+},
 "himaecom": {
 "from": null
 },
@@ -2558,6 +2946,12 @@
 "from": null
 },
 "hipho": {
+"from": null
+},
+"historicalsystemsbugs": {
+"from": null
+},
+"hleverified": {
 "from": null
 },
 "hm3dm3": {
@@ -2578,6 +2972,12 @@
 "homesafebench": {
 "from": null
 },
+"horizon1public": {
+"from": null
+},
+"horizonmath": {
+"from": null
+},
 "hospitalbench": {
 "from": null
 },
@@ -2596,6 +2996,9 @@
 "hpcagentsafetybench": {
 "from": null
 },
+"hpd": {
+"from": null
+},
 "hscbench": {
 "from": null
 },
@@ -2609,6 +3012,9 @@
 "from": null
 },
 "humaneval": {
+"from": null
+},
+"humanevaler": {
 "from": null
 },
 "humanevalfix": {
@@ -2628,6 +3034,9 @@
 "from": "https://agi.safe.ai/",
 "repo": "centerforaisafety/hle"
 },
+"hvterminalbench21": {
+"from": null
+},
 "hwebench": {
 "from": null
 },
@@ -2644,6 +3053,12 @@
 "from": null
 },
 "ibabench": {
+"from": null
+},
+"icallbench": {
+"from": null
+},
+"iclayoutbench": {
 "from": null
 },
 "icmbench": {
@@ -2718,10 +3133,25 @@
 "id:arxiv-2610-27777": {
 "from": null
 },
+"id:arxiv-2610-30537": {
+"from": null
+},
+"id:arxiv-2610-32415": {
+"from": null
+},
 "id:arxiv-2610-32536": {
 "from": null
 },
+"id:arxiv-2610-35773": {
+"from": null
+},
+"id:arxiv-2610-41272": {
+"from": null
+},
 "id:arxiv-2611-02132": {
+"from": null
+},
+"id:arxiv-2611-10037": {
 "from": null
 },
 "id:arxiv-2611-18338": {
@@ -2891,6 +3321,9 @@
 "infrabench": {
 "from": null
 },
+"infrabench1": {
+"from": null
+},
 "infradev": {
 "from": null
 },
@@ -2986,6 +3419,9 @@
 "journeyman": {
 "from": null
 },
+"joyfrontbench": {
+"from": null
+},
 "jrdbavr": {
 "from": null
 },
@@ -3025,7 +3461,13 @@
 "kinouav": {
 "from": null
 },
+"klasktron": {
+"from": null
+},
 "klinikebench": {
+"from": null
+},
+"klyrunebench": {
 "from": null
 },
 "knowledgeagent": {
@@ -3052,7 +3494,25 @@
 "kvsharearena": {
 "from": null
 },
+"kwbench": {
+"from": null
+},
+"kwsap": {
+"from": null
+},
+"kwsapeasy": {
+"from": null
+},
+"kwsapvat": {
+"from": null
+},
+"l1l2bench": {
+"from": null
+},
 "labbench": {
+"from": null
+},
+"labbench2": {
 "from": null
 },
 "labeu": {
@@ -3065,6 +3525,9 @@
 "from": null
 },
 "lambada": {
+"from": null
+},
+"laminabench": {
 "from": null
 },
 "langmap": {
@@ -3097,10 +3560,22 @@
 "leaps": {
 "from": null
 },
+"lechmazurwriting": {
+"from": null
+},
+"ledgerbench100": {
+"from": null
+},
+"legacybench": {
+"from": null
+},
 "legalagent": {
 "from": null
 },
 "legalbench": {
+"from": null
+},
+"legalconsentsweep": {
 "from": null
 },
 "legalresearchbench": {
@@ -3131,6 +3606,27 @@
 "liberoperm": {
 "from": null
 },
+"libragentbrowserdual12": {
+"from": null
+},
+"libragentcompactionfactrecall1": {
+"from": null
+},
+"libragentdiverse9": {
+"from": null
+},
+"libragentknowledgebridge2": {
+"from": null
+},
+"libragentmediadesktop10": {
+"from": null
+},
+"libragentorgcollab7": {
+"from": null
+},
+"libragentswediverse8": {
+"from": null
+},
 "libstructbench": {
 "from": null
 },
@@ -3156,6 +3652,9 @@
 "from": null
 },
 "linguaguardbench": {
+"from": null
+},
+"litigation": {
 "from": null
 },
 "litmus": {
@@ -3242,6 +3741,9 @@
 "llmtradingagent": {
 "from": null
 },
+"lmca": {
+"from": null
+},
 "locabench256k": {
 "from": null
 },
@@ -3255,6 +3757,9 @@
 "from": null
 },
 "logguidedcodelocalization": {
+"from": null
+},
+"logloc": {
 "from": null
 },
 "longbench2": {
@@ -3299,6 +3804,12 @@
 "longrunagi": {
 "from": null
 },
+"longswebench32k": {
+"from": null
+},
+"longtailsweeasy": {
+"from": null
+},
 "longtextbench": {
 "from": null
 },
@@ -3320,10 +3831,16 @@
 "m3madbench": {
 "from": null
 },
+"m3wmebench": {
+"from": null
+},
 "m4bench": {
 "from": null
 },
 "macbench": {
+"from": null
+},
+"machinetrading": {
 "from": null
 },
 "macosworld": {
@@ -3344,6 +3861,9 @@
 "magmabench": {
 "from": null
 },
+"maizeyieldcase": {
+"from": null
+},
 "makemesay": {
 "from": null
 },
@@ -3353,7 +3873,13 @@
 "maliciousagentskillsbench": {
 "from": null
 },
+"mamathbench": {
+"from": null
+},
 "managercoercion": {
+"from": null
+},
+"maniladder": {
 "from": null
 },
 "maniunit": {
@@ -3507,6 +4033,9 @@
 "medxpertqamm": {
 "from": null
 },
+"megabike": {
+"from": null
+},
 "megamlqa": {
 "from": null
 },
@@ -3582,7 +4111,16 @@
 "mentorqa": {
 "from": null
 },
+"mercuryeval": {
+"from": null
+},
 "mergegym": {
+"from": null
+},
+"mesh2cad": {
+"from": null
+},
+"mesh2cadbenchmarksca": {
 "from": null
 },
 "metagenomicsbench": {
@@ -3598,13 +4136,22 @@
 "mettlebench": {
 "from": null
 },
+"mewc": {
+"from": null
+},
 "mgsm": {
 "from": null
 },
 "mgsmmultilingualgradeschoolmathmgsm": {
 "from": null
 },
+"mhcad": {
+"from": null
+},
 "mhrcbench": {
+"from": null
+},
+"miabench": {
 "from": null
 },
 "microperfbench": {
@@ -3613,7 +4160,31 @@
 "midtaskperturbationresponsiveness": {
 "from": null
 },
+"mimo26code": {
+"from": null
+},
+"mimo26cyber": {
+"from": null
+},
+"mimo26general": {
+"from": null
+},
+"mimo26music": {
+"from": null
+},
+"mimo26terminal": {
+"from": null
+},
+"mimo26webdev": {
+"from": null
+},
+"mimocodingbench": {
+"from": null
+},
 "minbench": {
+"from": null
+},
+"mindcube": {
 "from": null
 },
 "mindiebench": {
@@ -3629,6 +4200,9 @@
 "from": null
 },
 "mineodyssey": {
+"from": null
+},
+"mineralexp": {
 "from": null
 },
 "minerva": {
@@ -3694,6 +4268,9 @@
 "from": "https://sonalkum.github.io/mmau-pro/",
 "repo": "sonalkum/MMAUPro"
 },
+"mmbc": {
+"from": null
+},
 "mmbench": {
 "from": null
 },
@@ -3704,6 +4281,9 @@
 "from": null
 },
 "mmbrowsecomp": {
+"from": null
+},
+"mmclawbench": {
 "from": null
 },
 "mme": {
@@ -3811,10 +4391,19 @@
 "mobilitydataengineeringtasks": {
 "from": null
 },
+"modalport1evalpatched": {
+"from": null
+},
 "modelicaagentworkflow": {
 "from": null
 },
 "modelvalidatorchallenges": {
+"from": null
+},
+"mofcrystalqa": {
+"from": null
+},
+"mongobench": {
 "from": null
 },
 "monopolybench": {
@@ -3889,6 +4478,9 @@
 "multilingualmmlu": {
 "from": null
 },
+"multimediaterminalbench": {
+"from": null
+},
 "multimodalsea": {
 "from": null
 },
@@ -3899,6 +4491,9 @@
 "from": null
 },
 "multiplembpp": {
+"from": null
+},
+"multistepswe": {
 "from": null
 },
 "multiswebench": {
@@ -3928,10 +4523,16 @@
 "mvxbench": {
 "from": null
 },
+"mysterygamepuzzles": {
+"from": null
+},
 "n8nharness": {
 "from": null
 },
 "nanoeval": {
+"from": null
+},
+"nanogpt": {
 "from": null
 },
 "nanopath": {
@@ -3979,6 +4580,12 @@
 "nihmultineedle": {
 "from": null
 },
+"nim": {
+"from": null
+},
+"nimhard": {
+"from": null
+},
 "nl2repo": {
 "from": null
 },
@@ -3997,10 +4604,16 @@
 "normgym": {
 "from": null
 },
+"nova63": {
+"from": null
+},
 "nq": {
 "from": null
 },
 "nsfabenchmarks": {
+"from": null
+},
+"ntbench": {
 "from": null
 },
 "numtrace": {
@@ -4013,6 +4626,9 @@
 "from": null
 },
 "nytconnections": {
+"from": null
+},
+"o11ybench": {
 "from": null
 },
 "oaddbench": {
@@ -4034,6 +4650,9 @@
 "from": null
 },
 "octave": {
+"from": null
+},
+"octocodingbench": {
 "from": null
 },
 "odinw": {
@@ -4091,6 +4710,9 @@
 "omnidocbench15": {
 "from": null
 },
+"omnigaia": {
+"from": null
+},
 "omnilingualgaia2": {
 "from": null
 },
@@ -4122,6 +4744,9 @@
 "oncology3dvqa": {
 "from": null
 },
+"onemillionbench": {
+"from": null
+},
 "onlinemind2web": {
 "from": null
 },
@@ -4138,6 +4763,9 @@
 "from": null
 },
 "openbookqa": {
+"from": null
+},
+"opendesign": {
 "from": null
 },
 "opendgo": {
@@ -4159,6 +4787,9 @@
 "openmasgapp": {
 "from": null
 },
+"openpolytgcase": {
+"from": null
+},
 "openrca": {
 "from": null
 },
@@ -4166,6 +4797,9 @@
 "from": null
 },
 "openrewrite": {
+"from": null
+},
+"openthoughtstblite": {
 "from": null
 },
 "openuniversalarabicasr": {
@@ -4216,6 +4850,9 @@
 "from": "https://quesma.com/benchmarks/otel/",
 "repo": "QuesmaOrg/otel-bench"
 },
+"otismockaime20242025": {
+"from": null
+},
 "ovbench": {
 "from": null
 },
@@ -4237,16 +4874,26 @@
 "p2pclawinnovative": {
 "from": null
 },
+"pacebench": {
+"arxiv": "2610.26394",
+"from": "https://tianqiliu1.github.io/PACE-Bench/"
+},
 "paibench": {
 "from": null
 },
 "painterbench": {
 "from": null
 },
+"panovideobench": {
+"from": null
+},
 "paperbench": {
 "from": null
 },
 "paraguibench": {
+"from": null
+},
+"parallact": {
 "from": null
 },
 "parallax": {
@@ -4265,6 +4912,9 @@
 "from": null
 },
 "parsebench": {
+"from": null
+},
+"parsebench2": {
 "from": null
 },
 "partbench": {
@@ -4326,7 +4976,13 @@
 "personalagentbenchmark": {
 "from": null
 },
+"personasciencebench": {
+"from": null
+},
 "personatrail": {
+"from": null
+},
+"petctpilot": {
 "from": null
 },
 "petri": {
@@ -4338,6 +4994,9 @@
 "from": null
 },
 "pfarena": {
+"from": null
+},
+"phantombench": {
 "from": null
 },
 "phmforge": {
@@ -4358,6 +5017,9 @@
 "physfieldbench": {
 "from": null
 },
+"physicianbench": {
+"from": null
+},
 "physicsfinals": {
 "from": null
 },
@@ -4375,6 +5037,9 @@
 "from": null
 },
 "pinballbenchmarks": {
+"from": null
+},
+"pinchbench": {
 "from": null
 },
 "piqa": {
@@ -4509,6 +5174,9 @@
 "privacypr": {
 "from": null
 },
+"privacytrace": {
+"from": null
+},
 "proactbench": {
 "from": null
 },
@@ -4521,7 +5189,13 @@
 "processbench": {
 "from": null
 },
+"productbench": {
+"from": null
+},
 "productionbimworkflows": {
+"from": null
+},
+"productwebbench": {
 "from": null
 },
 "profbench": {
@@ -4545,6 +5219,9 @@
 "promptshieldhome": {
 "from": null
 },
+"proofbench": {
+"from": null
+},
 "prooforclaim": {
 "from": null
 },
@@ -4552,6 +5229,9 @@
 "from": null
 },
 "protean": {
+"from": null
+},
+"proteingeobench": {
 "from": null
 },
 "proteingym13": {
@@ -4596,6 +5276,9 @@
 "q2dweb": {
 "from": null
 },
+"qabench": {
+"from": null
+},
 "qasper": {
 "from": null
 },
@@ -4603,6 +5286,9 @@
 "from": null
 },
 "qmsum": {
+"from": null
+},
+"qsimarena": {
 "from": null
 },
 "quac": {
@@ -4629,6 +5315,12 @@
 "qvhighlights": {
 "from": null
 },
+"qwenclawbench": {
+"from": null
+},
+"qwenqoderbench": {
+"from": null
+},
 "qwenswebench": {
 "from": null
 },
@@ -4650,7 +5342,16 @@
 "railguard": {
 "from": null
 },
+"railhead": {
+"from": null
+},
+"ramenbench": {
+"from": null
+},
 "rapidatatexttoimagehumanfeedback": {
+"from": null
+},
+"ratinggenerationconsistency": {
 "from": null
 },
 "rcabench": {
@@ -4680,6 +5381,9 @@
 "repo": "RealCLI-Team/RealCLI-Benchmark-v1.0"
 },
 "realcontrolbench": {
+"from": null
+},
+"realitybench": {
 "from": null
 },
 "realkiefcc": {
@@ -4742,6 +5446,9 @@
 "regatta": {
 "from": null
 },
+"regobench": {
+"from": null
+},
 "regretbench": {
 "from": null
 },
@@ -4760,6 +5467,9 @@
 "replaybook": {
 "from": null
 },
+"replayrca": {
+"from": null
+},
 "replicationbench": {
 "from": null
 },
@@ -4773,6 +5483,9 @@
 "from": null
 },
 "repolaunchrepobuildtest": {
+"from": null
+},
+"repopremium": {
 "from": null
 },
 "repoqa": {
@@ -4817,6 +5530,9 @@
 "researchcodebench": {
 "from": null
 },
+"researchproofbench": {
+"from": null
+},
 "researchrubrics": {
 "from": null
 },
@@ -4829,7 +5545,16 @@
 "restorebench": {
 "from": null
 },
+"retailbridge": {
+"from": null
+},
 "reuf2f": {
+"from": null
+},
+"revbench": {
+"from": null
+},
+"reviewbenchpublic": {
 "from": null
 },
 "revleakbench": {
@@ -4841,11 +5566,20 @@
 "rewardbench2": {
 "from": null
 },
+"rewardhackbench": {
+"from": null
+},
+"rewardhackbenchcontrol": {
+"from": null
+},
 "rexbench": {
 "arxiv": "2506.22598",
 "from": "https://rexbench.com/"
 },
 "rgbttiny": {
+"from": null
+},
+"rhswebench": {
 "from": null
 },
 "rideway": {
@@ -4857,6 +5591,9 @@
 "roboarcade": {
 "from": null
 },
+"robocasamem": {
+"from": null
+},
 "robospatialhome": {
 "from": null
 },
@@ -4864,6 +5601,12 @@
 "from": null
 },
 "roboswe": {
+"from": null
+},
+"robotsevolvedguilessons1": {
+"from": null
+},
+"roboworld": {
 "from": null
 },
 "robustkbench": {
@@ -4881,6 +5624,9 @@
 "roroterminalrouteplanning": {
 "from": null
 },
+"routerworld": {
+"from": null
+},
 "rsebench": {
 "from": null
 },
@@ -4888,6 +5634,9 @@
 "from": null
 },
 "rsibenchscaleai": {
+"from": null
+},
+"rsienv": {
 "from": null
 },
 "rsiexam": {
@@ -4922,6 +5671,9 @@
 "from": null
 },
 "ruler": {
+"from": null
+},
+"runebench": {
 "from": null
 },
 "ruverbench": {
@@ -4993,6 +5745,9 @@
 "scholarquest": {
 "from": null
 },
+"sciagentexam": {
+"from": null
+},
 "sciarp": {
 "from": null
 },
@@ -5008,7 +5763,13 @@
 "scienceqavisual": {
 "from": null
 },
+"scienceslastexam": {
+"from": null
+},
 "sciencevision": {
+"from": null
+},
+"scientificcases": {
 "from": null
 },
 "scifigqualbench": {
@@ -5027,6 +5788,9 @@
 "from": null
 },
 "scipivot": {
+"from": null
+},
+"sciresearcheval": {
 "from": null
 },
 "sciskillbench": {
@@ -5069,6 +5833,9 @@
 "seal0": {
 "from": null
 },
+"searchdecision": {
+"from": null
+},
 "searchlight": {
 "from": null
 },
@@ -5091,10 +5858,19 @@
 "seecopevaluationsuite": {
 "from": null
 },
+"seedclawbench": {
+"from": null
+},
 "selfimprovebench": {
 "from": null
 },
+"semikongbench100": {
+"from": null
+},
 "semverbench": {
+"from": null
+},
+"seniorswebench202606": {
 "from": null
 },
 "sentinel3": {
@@ -5115,12 +5891,21 @@
 "serverbench": {
 "from": null
 },
+"setaenv": {
+"from": null
+},
 "setoka": {
+"from": null
+},
+"severus": {
 "from": null
 },
 "shadearena": {
 "arxiv": "2506.15740",
 "from": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring"
+},
+"shadowbenchmcp": {
+"from": null
 },
 "shapebenchmarkdata": {
 "from": null
@@ -5135,6 +5920,9 @@
 "from": null
 },
 "sib200": {
+"from": null
+},
+"sidetaskbench": {
 "from": null
 },
 "silentbench": {
@@ -5152,6 +5940,9 @@
 "simmer": {
 "from": null
 },
+"simplebench": {
+"from": null
+},
 "simpleqa": {
 "from": null
 },
@@ -5164,6 +5955,12 @@
 "simplewikisearch": {
 "from": null
 },
+"simreadybench": {
+"from": null
+},
+"simrepairbench": {
+"from": null
+},
 "simuleandes": {
 "from": null
 },
@@ -5173,7 +5970,16 @@
 "siris": {
 "from": null
 },
+"skill2env": {
+"from": null
+},
+"skill2envlite": {
+"from": null
+},
 "skillct": {
+"from": null
+},
+"skillextraction": {
 "from": null
 },
 "skilllifebench": {
@@ -5229,6 +6035,12 @@
 "smartsalesbench": {
 "from": null
 },
+"smbbench": {
+"from": null
+},
+"smddbench": {
+"from": null
+},
 "smoke24": {
 "from": null
 },
@@ -5247,6 +6059,9 @@
 "solexecbench": {
 "from": null
 },
+"sourcetestrepair": {
+"from": null
+},
 "sourdine": {
 "from": null
 },
@@ -5254,6 +6069,9 @@
 "from": null
 },
 "spatialtranscriptomicsalignment": {
+"from": null
+},
+"spatialvizbench": {
 "from": null
 },
 "specguardbench": {
@@ -5275,6 +6093,9 @@
 "repo": "spinbench/spinbench"
 },
 "spirebench": {
+"from": null
+},
+"spireclimb": {
 "from": null
 },
 "spreadsheetbench": {
@@ -5330,6 +6151,9 @@
 "startupbench": {
 "from": null
 },
+"statechangebench": {
+"from": null
+},
 "statmechbench0": {
 "from": null
 },
@@ -5352,6 +6176,9 @@
 "from": null
 },
 "storebench": {
+"from": null
+},
+"strategicworld": {
 "from": null
 },
 "streamarena": {
@@ -5378,6 +6205,12 @@
 "summscreenfd": {
 "from": null
 },
+"sunrgbd": {
+"from": null
+},
+"superchem": {
+"from": null
+},
 "superglue": {
 "from": null
 },
@@ -5385,6 +6218,12 @@
 "from": null
 },
 "supportagentadversarial": {
+"from": null
+},
+"surds": {
+"from": null
+},
+"surfaceevolverbench": {
 "from": null
 },
 "surgagentgym": {
@@ -5399,6 +6238,9 @@
 "sveltebench": {
 "from": null
 },
+"svgapresetrelease": {
+"from": null
+},
 "sweadv": {
 "from": null
 },
@@ -5406,10 +6248,25 @@
 "from": "https://labs.scale.com/leaderboard/sweatlas-qna",
 "repo": "scaleapi/SWE-Atlas"
 },
+"sweatlascodebaseqna": {
+"from": null
+},
+"sweatlasqna": {
+"from": null
+},
+"sweatlasrf": {
+"from": null
+},
 "sweatlastestwriting": {
 "from": null
 },
+"sweatlastw": {
+"from": null
+},
 "swebench": {
+"from": null
+},
+"swebenchifyhard": {
 "from": null
 },
 "swebenchlive": {
@@ -5446,6 +6303,9 @@
 "from": "https://www.swebench.com/",
 "repo": "swe-bench/SWE-bench"
 },
+"sweclar": {
+"from": null
+},
 "swedeceptionbench": {
 "from": null
 },
@@ -5473,6 +6333,21 @@
 "swegate": {
 "from": null
 },
+"swegencpp": {
+"from": null
+},
+"swegengo": {
+"from": null
+},
+"swegenjava": {
+"from": null
+},
+"swegenjs": {
+"from": null
+},
+"swegenrust": {
+"from": null
+},
 "swegym": {
 "arxiv": "2412.21139",
 "from": "https://huggingface.co/SWE-Gym",
@@ -5484,7 +6359,19 @@
 "swekernelbench": {
 "from": null
 },
+"swekokkosbench": {
+"from": null
+},
 "swelancer": {
+"from": null
+},
+"swelancerdiamondall": {
+"from": null
+},
+"swelancerdiamondic": {
+"from": null
+},
+"swelancerdiamondmanager": {
 "from": null
 },
 "swelancericdiamondsubset": {
@@ -5505,6 +6392,9 @@
 "sweopt": {
 "from": null
 },
+"swepair": {
+"from": null
+},
 "swepalletsx": {
 "from": null
 },
@@ -5520,11 +6410,17 @@
 "sweqa": {
 "from": null
 },
+"swerace": {
+"from": null
+},
 "swerebench": {
 "arxiv": "2505.20411",
 "from": "https://swe-rebench.com/"
 },
 "sweresidual": {
+"from": null
+},
+"swereview": {
 "from": null
 },
 "swerlenvs": {
@@ -5576,6 +6472,9 @@
 "talk2agent": {
 "from": null
 },
+"talktoact": {
+"from": null
+},
 "tamarinmodeling": {
 "from": null
 },
@@ -5583,6 +6482,213 @@
 "from": null
 },
 "tangle": {
+"from": null
+},
+"task131stockresearchbasketrolling": {
+"from": null
+},
+"taskaw": {
+"from": null
+},
+"tasktrovecodecontestsnoblock": {
+"from": null
+},
+"tasktroveexpflat25pseudocode2": {
+"from": null
+},
+"tasktroveexpflat25speedbonus2": {
+"from": null
+},
+"tasktroveexpflat25stackoverflow2": {
+"from": null
+},
+"tasktroveexprleadversarial": {
+"from": null
+},
+"tasktroveexprledetailed3": {
+"from": null
+},
+"tasktroveexprleerrorreport3": {
+"from": null
+},
+"tasktroveexprlegithubissue3": {
+"from": null
+},
+"tasktroveexprleheavypadding2": {
+"from": null
+},
+"tasktroveexprleminimalinstructions3": {
+"from": null
+},
+"tasktroveexprptcodenetpython2": {
+"from": null
+},
+"tasktroveexprptcrosscodeevalcsharp4": {
+"from": null
+},
+"tasktroveexprptcrosscodeevaljava": {
+"from": null
+},
+"tasktroveexprptcurriculumeasy": {
+"from": null
+},
+"tasktroveexprptcurriculumhard": {
+"from": null
+},
+"tasktroveexprptcurriculummedium": {
+"from": null
+},
+"tasktroveexprptdefects4j34": {
+"from": null
+},
+"tasktroveexprpte2egit2": {
+"from": null
+},
+"tasktroveexprpte2egitlarge": {
+"from": null
+},
+"tasktroveexprptexercismpython2": {
+"from": null
+},
+"tasktroveexprptghactions3": {
+"from": null
+},
+"tasktroveexprptissue": {
+"from": null
+},
+"tasktroveexprptmethods2testlarge2": {
+"from": null
+},
+"tasktroveexprptmethods2testlarge3": {
+"from": null
+},
+"tasktroveexprptmultifile": {
+"from": null
+},
+"tasktroveexprptnemotroncpp": {
+"from": null
+},
+"tasktroveexprptnemotronjunit": {
+"from": null
+},
+"tasktroveexprptpr": {
+"from": null
+},
+"tasktroveexprptpr2": {
+"from": null
+},
+"tasktroveexprptpymethods2test3": {
+"from": null
+},
+"tasktroveexprptpymethods2testlarge": {
+"from": null
+},
+"tasktroveexprptscaffold2": {
+"from": null
+},
+"tasktroveexprptstackbash3": {
+"from": null
+},
+"tasktroveexprptstackbashwithtests2": {
+"from": null
+},
+"tasktroveexprptstackbashwithtestsgpt5mini2": {
+"from": null
+},
+"tasktroveexprptstackcsharp5": {
+"from": null
+},
+"tasktroveexprptstackdockerfile2": {
+"from": null
+},
+"tasktroveexprptstackdockerfilegpt5mini3": {
+"from": null
+},
+"tasktroveexprptstackgo4": {
+"from": null
+},
+"tasktroveexprptstackjest2": {
+"from": null
+},
+"tasktroveexprptstackjestlarge": {
+"from": null
+},
+"tasktroveexprptstackjunit6": {
+"from": null
+},
+"tasktroveexprptstackphp26": {
+"from": null
+},
+"tasktroveexprptstackphplarge6": {
+"from": null
+},
+"tasktroveexprptstackpytest2": {
+"from": null
+},
+"tasktroveexprptstackpytestlarge": {
+"from": null
+},
+"tasktrovemixh8adversarialtests2": {
+"from": null
+},
+"tasktrovemixh8originaltests2": {
+"from": null
+},
+"tasktrovenemotroncodeoraclefiltered": {
+"from": null
+},
+"tasktrovenemotrongymagentcalendar": {
+"from": null
+},
+"tasktrovenemotrongymagentworkplace2": {
+"from": null
+},
+"tasktrovenemotrongymcompetitivecoding": {
+"from": null
+},
+"tasktrovenemotrongymidentityfollowing2": {
+"from": null
+},
+"tasktrovenemotrongyminstructionfollowing2": {
+"from": null
+},
+"tasktrovenemotrongyminstructionfollowingadversarial3": {
+"from": null
+},
+"tasktrovenemotrongyminstructionfollowingcalendar": {
+"from": null
+},
+"tasktrovenemotrongyminstructionfollowingstructured": {
+"from": null
+},
+"tasktrovenemotrongymknowledgewebsearchmcqa": {
+"from": null
+},
+"tasktrovenemotrongymmathadvancedcalculations3": {
+"from": null
+},
+"tasktrovenl2bashtaskscleanedoracle": {
+"from": null
+},
+"tasktroveopenswetaskspatched5oraclesuccess": {
+"from": null
+},
+"tasktrover2egympatchedfulloracle": {
+"from": null
+},
+"tasktroveselfinstructnaivesandboxes2verified": {
+"from": null
+},
+"tasktroveswegymtaskspatchedvalidated2": {
+"from": null
+},
+"tasktroveswerebench2patchedoracle": {
+"from": null
+},
+"tasktroveswerebenchpatchedoracle": {
+"from": null
+},
+"tasktroveswesmithoraclefiltered": {
 "from": null
 },
 "tau2airline": {
@@ -5606,6 +6712,12 @@
 "tau3banking": {
 "from": null
 },
+"tau3bankingdev": {
+"from": null
+},
+"tau3bankingtest": {
+"from": null
+},
 "tau3bench": {
 "from": null
 },
@@ -5627,6 +6739,21 @@
 "taurecbooks": {
 "from": null
 },
+"tb21datascience": {
+"from": null
+},
+"tb21filerecovery": {
+"from": null
+},
+"tb21systemssecurity": {
+"from": null
+},
+"tb3preview2": {
+"from": null
+},
+"tb4preview": {
+"from": null
+},
 "tcsalgbench": {
 "from": null
 },
@@ -5639,6 +6766,9 @@
 "teacharena": {
 "from": null
 },
+"teamgym": {
+"from": null
+},
 "telcogaia": {
 "from": null
 },
@@ -5646,6 +6776,12 @@
 "from": null
 },
 "tempcompass": {
+"from": null
+},
+"tenetbench": {
+"from": null
+},
+"termigenenvironments": {
 "from": null
 },
 "terminalbench": {
@@ -5660,6 +6796,21 @@
 "terminalbench3": {
 "from": null
 },
+"terminalbench3test": {
+"from": null
+},
+"terminalbench4noprebuild": {
+"from": null
+},
+"terminalbenchaai": {
+"from": null
+},
+"terminalbenchpro": {
+"from": null
+},
+"terminalbenchscience": {
+"from": null
+},
 "terminaldailybench": {
 "from": null
 },
@@ -5667,6 +6818,9 @@
 "from": null
 },
 "testweakening": {
+"from": null
+},
+"tetrisbench": {
 "from": null
 },
 "tetrisbenchmarkforservedagents": {
@@ -5719,6 +6873,9 @@
 "tlapsbench": {
 "from": null
 },
+"tmax15kharbor": {
+"from": null
+},
 "todoforaibenchmarks": {
 "from": null
 },
@@ -5753,6 +6910,9 @@
 "from": null
 },
 "toolturns": {
+"from": null
+},
+"tooluselaw": {
 "from": null
 },
 "torrent": {
@@ -5791,6 +6951,9 @@
 "treebench": {
 "from": null
 },
+"triad": {
+"from": null
+},
 "triphysbench": {
 "from": null
 },
@@ -5801,6 +6964,9 @@
 "from": null
 },
 "trojanhippobench": {
+"from": null
+},
+"trustboundary": {
 "from": null
 },
 "truthfulqa": {
@@ -5842,6 +7008,9 @@
 "unchorebrowserbench": {
 "from": null
 },
+"unfinishedbench": {
+"from": null
+},
 "unicode": {
 "from": null
 },
@@ -5852,6 +7021,9 @@
 "from": null
 },
 "unitybenchmini3d": {
+"from": null
+},
+"unsatz": {
 "from": null
 },
 "updateadherence": {
@@ -5867,6 +7039,9 @@
 "from": null
 },
 "usamo25": {
+"from": null
+},
+"userbench": {
 "from": null
 },
 "userproxybench": {
@@ -5914,6 +7089,12 @@
 "vdiffbench": {
 "from": null
 },
+"vectoreditgym": {
+"from": null
+},
+"veditbench": {
+"from": null
+},
 "vehiclearena": {
 "from": null
 },
@@ -5951,10 +7132,16 @@
 "vexbench": {
 "from": null
 },
+"vfsbench": {
+"from": null
+},
 "vgbench": {
 "from": null
 },
 "vhdlrepobench": {
+"from": null
+},
+"vibe": {
 "from": null
 },
 "vibecodebench": {
@@ -5996,6 +7183,9 @@
 "video2skill": {
 "from": "https://andyzworks.github.io/video2skill/",
 "repo": "francoischalifour/medium-zoom"
+},
+"videodci": {
+"from": null
 },
 "videofdb": {
 "from": null
@@ -6068,6 +7258,9 @@
 "visualinputtokencompression": {
 "from": null
 },
+"visualizationcollaborationtestbed": {
+"from": null
+},
 "visualwebbench": {
 "from": null
 },
@@ -6098,6 +7291,9 @@
 "from": null
 },
 "vpcontrol": {
+"from": null
+},
+"vpct": {
 "from": null
 },
 "vqarad": {
@@ -6163,6 +7359,9 @@
 "websearchforcodingagents": {
 "from": null
 },
+"websitebench": {
+"from": null
+},
 "webstep": {
 "from": null
 },
@@ -6173,6 +7372,12 @@
 "from": null
 },
 "weightbench": {
+"from": null
+},
+"weirdml": {
+"from": null
+},
+"weirdml3": {
 "from": null
 },
 "wemath": {
@@ -6211,6 +7416,9 @@
 "wordstoworld": {
 "from": null
 },
+"workbench": {
+"from": null
+},
 "workflowarena": {
 "from": null
 },
@@ -6229,6 +7437,12 @@
 "from": null
 },
 "worldlines": {
+"from": null
+},
+"worldmodelcontextretrieval": {
+"from": null
+},
+"worldprobe": {
 "from": null
 },
 "worldroambench": {
@@ -6289,6 +7503,9 @@
 "from": null
 },
 "zebralogic": {
+"from": null
+},
+"zenmlbench": {
 "from": null
 },
 "zerobench": {

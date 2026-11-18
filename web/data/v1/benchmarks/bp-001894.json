@@ -1,0 +1,118 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "pid": "bp-001894",
+ "name": "ABHBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001894",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "New agentic benchmark with public real-game tasks, executable scoring and validated solvability; no dimension is weak, so T2 applies.",
+  "risks": [
+   "No leaderboard or independent results; scores are author-run only.",
+   "Limited to six chapters of one commercial game."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "hf",
+    "id": "abhbench/ABHBench",
+    "url": "https://huggingface.co/datasets/abhbench/ABHBench",
+    "commit": "f1eab1824969fa6120e82f7ff4e2fd7b150a6e4d",
+    "license": "mit",
+    "files": 24544,
+    "pushed": null
+   },
+   {
+    "kind": "github",
+    "id": "sjtu-marl/ABHBench",
+    "url": "https://github.com/sjtu-marl/ABHBench",
+    "commit": "7498b10e99ea378c1282ae9b187a6abee9a3250d",
+    "license": "MIT",
+    "files": 226,
+    "pushed": "2026-11-13"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:abhbench/ABHBench",
+   "quote": "The offline evaluation dataset is on Hugging Face at [abhbench/ABHBench](https://huggingface.co/datasets/abhbench/ABHBench), with Croissant metadata. It holds the screenshots, dialogue, and choice graph collected from each chapter, so models can be evaluated without running the game.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": "MIT for author-produced annotations; game screenshots and transcribed dialogue are not MIT",
+   "redistribution_questions": [
+    "Can the game screenshots and transcribed dialogue be redistributed?",
+    "Does capture or use require a legitimate copy of the game?",
+    "Are non-commercial research use limits compatible with benchmark containers?"
+   ],
+   "quote": "The author-produced annotations (moral-dimension labels, rating rules, flow metadata) and the evaluation code are released under the MIT license. The screenshots and transcribed game dialogue are excerpted from *Detroit: Become Human* and remain the property of the game's rights holders. They fall outside the MIT license and are included solely for non-commercial research use. Capturing the game footage requires a legitimate copy of the game.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 84,
+   "unit": "decision point",
+   "manifest_path": null,
+   "splits": [],
+   "pilot": "dataset_flow_08",
+   "quote": "Six chapters, 30 human-android dilemmas. 84 decision points with 187 options, of which 63 options in 30 dilemmas carry moral ratings.",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "PYTHONPATH=. python scenes/DBH/deval/omni_scene.py",
+   "full_credit": "No pass/fail; reports six metrics from choice probability distributions.",
+   "quote": "Metrics are computed from choice probability distributions across chapters.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "Metrics are computed from choice probability distributions across chapters.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "Langfuse (optional)",
+    "ClearML (optional)",
+    "LLM API endpoint"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "LLM endpoint configured by base_url",
+    "Langfuse if enabled",
+    "ClearML if enabled"
+   ],
+   "credentials": [
+    "api_key for LLM entry",
+    "Langfuse/ClearML credentials if enabled"
+   ],
+   "exceptions": [
+    "Online evaluation needs a legitimate copy of Detroit: Become Human on Steam and a virtual gamepad",
+    "Text-only HARP test needs no dataset"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "Which chapters and decision points are in scope?",
+   "How to supply model API keys and disable optional services?",
+   "Can game screenshots and dialogue be redistributed?",
+   "What metric score counts as success?"
+  ],
+  "next_action": "Download dataset_flow_08 and run the offline eval with one configured model."
+ }
+}

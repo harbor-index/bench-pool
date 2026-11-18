@@ -1,0 +1,114 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "pid": "bp-000250",
+ "name": "KernelBench",
+ "aliases": [
+  "KernelBench Hard"
+ ],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000250",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Real-world workloads, executable verification, failure analysis, and strong citation attention support recommendation; GPU hosting and reward-hacking defenses need review.",
+  "risks": [
+   "Confirm full task release; the supplied paper includes an example but no task repository was read.",
+   "Provision suitable GPUs and establish reproducible timing inside Harbor.",
+   "Assess reward-hacking defenses; the paper does not explicitly address them."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "scalingintelligence/kernelbench",
+    "url": "https://github.com/scalingintelligence/kernelbench",
+    "commit": "423217d9fda91e0c2d67e4a43bf62f96f6d104f1",
+    "license": "NOASSERTION",
+    "files": 358,
+    "pushed": "2026-03-24"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:scalingintelligence/kernelbench",
+   "quote": "KernelBench/ # Benchmark dataset files",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does the HuggingFace dataset share the repository MIT license?",
+    "Can KernelBench dataset files be redistributed under MIT?"
+   ],
+   "quote": "MIT. Check `LICENSE.md` for more details.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 273,
+   "unit": "problem",
+   "manifest_path": "KernelBench/",
+   "splits": [
+    "Level 1",
+    "Level 2",
+    "Level 3",
+    "Level 4"
+   ],
+   "pilot": "level=2 problem_id=40",
+   "quote": "KernelBench (273)",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "src/kernelbench/eval.py",
+   "full_credit": "`fast_p`: fraction of tasks that are both correct and have a speedup greater than threshold `p`",
+   "quote": "To evaluate model-generated kernels, we need to check if they:\n- **are correct ✅**: check against reference torch operators `n_correctness` times on randomized inputs.\n- **are performant ⏱️**: compare against reference torch operators `n_trial` times to measure speedup between runtimes.",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "KernelBench/",
+   "command": "scripts/run_and_check.py",
+   "quote": "We provide a convenient script `scripts/run_and_check.py` to evaluate one single sample source code against a reference source code, check correctness and compute speedup.",
+   "evidence": "inspected",
+   "path_found": true
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "Modal"
+   ],
+   "gpu": "yes",
+   "network_or_api": [
+    "LLM provider APIs via litellm"
+   ],
+   "credentials": [
+    "API keys in .env",
+    "modal token"
+   ],
+   "exceptions": [
+    "AMD GPU needs ROCm>=7.1 and hip backend",
+    "ThunderKittens needs THUNDERKITTENS_ROOT and BF16 only"
+   ],
+   "quote": "Running and profiling kernels require a GPU.\nIf you don't have a GPU available locally, you can set up [Modal](https://modal.com/) for cloud serverless GPU evaluation. Set up your modal token after creating an account by running `modal token new`. Then, use the `generate_and_eval_single_sample_modal.py` script.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which task source is authoritative: local KernelBench files or HuggingFace dataset?",
+   "How should correctness and speedup map to Harbor scoring?",
+   "Which GPU backend and Modal credentials are required?",
+   "What license applies to the HuggingFace dataset?"
+  ],
+  "next_action": "Pin the local KernelBench task files and run scripts/run_and_check.py on the example problem."
+ }
+}

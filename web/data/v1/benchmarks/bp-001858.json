@@ -1,0 +1,123 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "pid": "bp-001858",
+ "name": "Multi-step SWE",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001858",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "All checks support recommendation: real expert-reviewed tasks, executable verifiers, strong difficulty, and container Harbor format; new flag waives attention.",
+  "risks": [
+   "Memorization from public projects cannot be fully ruled out",
+   "Some tasks may have ambiguous requirements or wrongly rejecting verifiers"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": {
+  "pct": 18.5,
+  "source": "paper",
+  "model": null,
+  "as_of": "2026-11-04",
+  "systems": null,
+  "url": null
+ },
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "Klavis-AI/Multi-step-SWE",
+    "url": "https://github.com/Klavis-AI/Multi-step-SWE",
+    "commit": "346719bbb9eb9afaf16ac1eda038cff87ca9f343",
+    "license": "MIT",
+    "files": 39238,
+    "pushed": "2026-11-04"
+   },
+   {
+    "kind": "github",
+    "id": "harbor-framework/harbor",
+    "url": "https://github.com/harbor-framework/harbor",
+    "commit": "ff42c832b81aeb48045d23ff873c27ccbf89f0a4",
+    "license": "Apache-2.0",
+    "files": 3770,
+    "pushed": "2026-11-17"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:Klavis-AI/Multi-step-SWE",
+   "quote": "git clone https://github.com/Klavis-AI/Multi-step-SWE.git",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Which bundled upstream code carries a non-MIT license, and are those terms compatible with redistribution?"
+   ],
+   "quote": "[MIT License](LICENSE). Bundled upstream code retains its original license.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 69,
+   "unit": "task",
+   "manifest_path": "tasks/<task>/task.toml",
+   "splits": [],
+   "pilot": "tasks/lua-vm-version-chain",
+   "quote": "Multi-step SWE contains **69 tasks, 574 steps, and 9 languages**.",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "steps/<name>/tests/Dockerfile",
+   "full_credit": "A task is solved only when every step receives full credit.",
+   "quote": "Requirements and verifiers share an existing source of truth. Every task passed two rounds of expert review, and steps are graded in separate verifier containers.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": null,
+   "command": null,
+   "quote": "Tasks follow [Harbor's multi-step format](https://github.com/harbor-framework/harbor/blob/main/docs-mintlify/tasks/multi-step.mdx), including environments, instructions, verifiers, and reference solutions.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "Docker",
+    "PostgreSQL (some tasks)"
+   ],
+   "gpu": "no",
+   "network_or_api": [
+    "Anthropic model API (api.anthropic.com)",
+    "public package registries (some tasks)"
+   ],
+   "credentials": [
+    "ANTHROPIC_API_KEY"
+   ],
+   "exceptions": [
+    "Some tasks need public network for package installs.",
+    "Some agent phases run with no network.",
+    "Some verifier settings require cpus >= 2.",
+    "Resource requirements and time budgets are specified in each task.toml."
+   ],
+   "quote": "You also need:\n\n- Docker running.\n- An Anthropic API key set as `ANTHROPIC_API_KEY` for the example below.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which exact task paths and commit should the adapter pin?",
+   "Which bundled upstream code licenses need separate redistribution review?",
+   "How should step rewards be aggregated so task solve rate uses all steps?",
+   "Which tasks need network, PostgreSQL, API keys, or special CPU/time budgets?"
+  ],
+  "next_action": "Install Harbor, clone the Multi-step SWE repo, inspect tasks/lua-vm-version-chain/task.toml, and run that task once with the documented example command."
+ }
+}

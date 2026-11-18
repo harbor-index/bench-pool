@@ -1,0 +1,1047 @@
+{
+ "schema_version": 1,
+ "build_id": "20261117T2350Z-a22ba0e1",
+ "generated_at": "2026-11-17T23:50:26Z",
+ "previous_build_id": "20261117T2242Z-9e275788",
+ "data_generated": "2026-11-17 23:50 UTC",
+ "counts": {
+  "benchmarks": 2694,
+  "events": 147
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261117T2350Z-a22ba0e1.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002451",
+   "name": "3DSceneBench mini",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002543",
+   "name": "LongTail-SWE easy",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002543",
+   "name": "LongTail-SWE easy",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002544",
+   "name": "Machine Trading",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001656",
+   "name": "DECE",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001647",
+   "name": "Skill Extraction Benchmark",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001640",
+   "name": "MOF Crystal QA",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001634",
+   "name": "Calibrated Reliance Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001631",
+   "name": "AndroidFlux",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001625",
+   "name": "RobotAgentBench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001624",
+   "name": "ResearchProofBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001616",
+   "name": "SCI-AGENT-EXAM",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001612",
+   "name": "PersonaScienceBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001609",
+   "name": "NTBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001605",
+   "name": "GEMS-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001599",
+   "name": "AOS-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001598",
+   "name": "ANT-A",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001596",
+   "name": "4DMemoryBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001595",
+   "name": "Video-DCI",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001592",
+   "name": "SWE-Clar",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001588",
+   "name": "ProductWebBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001584",
+   "name": "FavorBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001579",
+   "name": "Compact-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001675",
+   "name": "TenetBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001568",
+   "name": "PLE",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001549",
+   "name": "VEdit-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001539",
+   "name": "PACE-Bench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001539",
+   "name": "PACE-Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001503",
+   "name": "RouterWorld",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001497",
+   "name": "qa-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001496",
+   "name": "ProteinGeoBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001483",
+   "name": "FunCADBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001482",
+   "name": "FrontierRefactor",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001482",
+   "name": "FrontierRefactor",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001477",
+   "name": "CUA-Lite",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001469",
+   "name": "RetailBridge",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001466",
+   "name": "MAMath-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001465",
+   "name": "GroundedVDR",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002569",
+   "name": "Railhead",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001542",
+   "name": "RealityBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001571",
+   "name": "RegoBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002585",
+   "name": "skill2env",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002694",
+   "name": "ZenML Bench v0.1",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002463",
+   "name": "AutoResearchExam",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002460",
+   "name": "ARC CRM 6",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002573",
+   "name": "ReviewBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002577",
+   "name": "Robots Evolved GUI Lessons v1",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002409",
+   "name": "FrontierMath-Erdos",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002485",
+   "name": "DealBench 100 Suite",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002480",
+   "name": "CounselBench 100",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002600",
+   "name": "SWE-Kokkos-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002490",
+   "name": "ExtractBench Pro",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002565",
+   "name": "ORCA-bench Verified",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002564",
+   "name": "ORCA-bench Private",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002563",
+   "name": "ORCA-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002408",
+   "name": "LMCA",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002483",
+   "name": "Data Eng Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002527",
+   "name": "Enterprise Agent Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002521",
+   "name": "infra-bench-v1",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002541",
+   "name": "Long-Horizon Terminal-Bench 2.0",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002540",
+   "name": "Long-Horizon Terminal-Bench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002540",
+   "name": "Long-Horizon Terminal-Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002590",
+   "name": "svgap-reset-release",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002568",
+   "name": "Product Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002576",
+   "name": "Red Hat SWE-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002404",
+   "name": "MirrorCode",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002575",
+   "name": "reward-hack-bench-control",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002574",
+   "name": "reward-hack-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002475",
+   "name": "bun-server-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002455",
+   "name": "Abstention Act",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002589",
+   "name": "SMDD-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002476",
+   "name": "χ-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002399",
+   "name": "CL-bench Life",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002559",
+   "name": "o11y-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002593",
+   "name": "SWE-Atlas Test Writing",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002591",
+   "name": "SWE-Atlas Codebase QnA",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002587",
+   "name": "SlopCodeBench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002587",
+   "name": "SlopCodeBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002398",
+   "name": "CursorBench",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002546",
+   "name": "Mercury eval",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002687",
+   "name": "Terminal-Bench Science",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002687",
+   "name": "Terminal-Bench Science",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002681",
+   "name": "Terminal-Bench 4 Preview",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002681",
+   "name": "Terminal-Bench 4 Preview",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002684",
+   "name": "Terminal-Bench 4 No Prebuild",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002507",
+   "name": "hard12",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002493",
+   "name": "FinSearchComp Global T2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002395",
+   "name": "SpatialViz-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002554",
+   "name": "MiMo-V2.6-RL Webdev",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002553",
+   "name": "MiMo-V2.6-RL Terminal",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002552",
+   "name": "MiMo-V2.6-RL Music",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002551",
+   "name": "MiMo-V2.6-RL General",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002550",
+   "name": "MiMo-V2.6-RL Cyber",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002549",
+   "name": "MiMo-V2.6-RL Code",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002393",
+   "name": "ALE-Bench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002469",
+   "name": "BioML-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002392",
+   "name": "EnigmaEval",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002407",
+   "name": "DTBench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002386",
+   "name": "ForecastBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002522",
+   "name": "ITSMBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002518",
+   "name": "Horizon",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002692",
+   "name": "vector-edit-gym",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002691",
+   "name": "UserBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002690",
+   "name": "Tool Use Law Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002689",
+   "name": "TMax 15K",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002688",
+   "name": "TetrisBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002686",
+   "name": "Terminal-Bench Pro",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002683",
+   "name": "Terminal-Bench 3 Test",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002680",
+   "name": "Terminal-Bench 3 Preview v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002682",
+   "name": "termigen-environments",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002679",
+   "name": "TB21 Systems Security",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002677",
+   "name": "TB21 Data Science",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002676",
+   "name": "tau3 banking test",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002675",
+   "name": "tau3 banking dev",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002674",
+   "name": "TaskTrove SWE-smith",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002633",
+   "name": "TaskTrove nemotron-cpp",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002632",
+   "name": "TaskTrove multifile",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002629",
+   "name": "TaskTrove issue",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002628",
+   "name": "TaskTrove ghactions-v3",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002613",
+   "name": "TaskTrove exp rle detailed v3",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002612",
+   "name": "TaskTrove exp rle adversarial",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002611",
+   "name": "TaskTrove exp flat25 stackoverflow v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002610",
+   "name": "TaskTrove exp flat25 speed bonus v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002609",
+   "name": "TaskTrove exp flat25 pseudocode v2",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002608",
+   "name": "TaskTrove code-contests-noblock",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002653",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002652",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002651",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002650",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002649",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002648",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002647",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002646",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002645",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002644",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002643",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002642",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002641",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002640",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002639",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002638",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002637",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002636",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002635",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002634",
+   "name": "TaskTrove",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002606",
+   "name": "Task AW",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002607",
+   "name": "Task 1 v3.1 Stock Research Basket Rolling",
+   "before": null,
+   "after": "hold"
+  }
+ ]
+}

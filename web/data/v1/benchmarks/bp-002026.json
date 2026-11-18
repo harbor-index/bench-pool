@@ -1,0 +1,107 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "pid": "bp-002026",
+ "name": "Unfinished-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002026",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Containerized agentic benchmark with 582 rule-conflict tasks across 7 risk categories, code scoring, and authored realistic work scenarios; new status waives Difficult and Attention.",
+  "risks": [
+   "Full task environments may not be released; public docs list scenarios and rules.",
+   "No stated human review of scenario correctness.",
+   "Top model GLM 5.3 already at 1.0% violation rate, near compliance ceiling."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "NousResearch/hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "commit": "3f5a11f624c8c3c7d0e99ddd8b4b7da97fcb7940",
+    "license": "MIT",
+    "files": 26910,
+    "pushed": "2026-11-17"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:NousResearch/hermes-agent",
+   "quote": "=== github: NousResearch/hermes-agent (commit/revision 3f5a11f624c8c3c7d0e99ddd8b4b7da97fcb7940, licence field: MIT) ===",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "What license covers the benchmark task data?"
+   ],
+   "quote": "license = \"MIT\"\nlicense-files = [\"LICENSE\"]",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": null,
+   "unit": null,
+   "manifest_path": null,
+   "splits": [],
+   "pilot": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "verifier": {
+   "kind": "unknown",
+   "entry_point": null,
+   "full_credit": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "gateway",
+    "dashboard"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "Model endpoint (Nous Portal, OpenRouter, OpenAI, or own endpoint)",
+    "OpenAI-compatible API server"
+   ],
+   "credentials": [
+    "API_SERVER_KEY",
+    "TEAMS_CLIENT_ID",
+    "TEAMS_CLIENT_SECRET",
+    "TEAMS_TENANT_ID",
+    "TEAMS_ALLOWED_USERS"
+   ],
+   "exceptions": [
+    "`network_mode: host` (not supported on Docker Desktop for Windows)"
+   ],
+   "quote": "services:\n  gateway:\n    image: nousresearch/hermes-agent:latest\n    container_name: hermes\n    restart: unless-stopped\n    volumes:\n      - ${USERPROFILE}/.hermes:/opt/data\n    environment:\n      - HERMES_UID=10000\n      - HERMES_GID=10000\n    command: [\"gateway\", \"run\"]\n\n  dashboard:\n    image: nousresearch/hermes-agent:latest\n    container_name: hermes-dashboard\n    restart: unless-stopped",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Where are the tasks?",
+   "What license covers the data?",
+   "What command runs the verifier?",
+   "Which services and credentials are required?"
+  ],
+  "next_action": "Locate the Unfinished-Bench task repository and manifest."
+ }
+}

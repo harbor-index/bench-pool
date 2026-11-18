@@ -1,0 +1,62 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "pid": "bp-001888",
+ "name": "SEA",
+ "aliases": [
+  "SEABench"
+ ],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001888",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic simulated social-engineering benchmark with 320 expert-designed tasks, deterministic plus validated LLM scoring, and large frontier attack success.",
+  "risks": [
+   "Task data release is not stated; only code is announced.",
+   "D3/D5 LLM judge validated on only 100 conversations.",
+   "All attacks use one GPT-5.4 attacker model, limiting generality."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": null,
+  "prompt_version": 1,
+  "sources": [],
+  "no_release": true,
+  "release": {
+   "quote": null,
+   "evidence": "unknown",
+   "tasks_live_in": "unknown"
+  },
+  "rights": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "verifier": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "oracle": {
+   "quote": null,
+   "evidence": "unknown",
+   "level": "none"
+  },
+  "runtime": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "No public repository or dataset was found in the pool's links, Hugging Face's paper record or the paper's own links. Are the tasks released?"
+  ],
+  "next_action": "Ask the authors where the tasks, environment and grader are released."
+ }
+}

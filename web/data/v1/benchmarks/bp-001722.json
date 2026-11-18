@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "pid": "bp-001722",
+ "name": "ScarfBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001722",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "IBM/Kaggle agentic leaderboard with 204 migration tasks, executable behavior tests, best 75.2%, and strong attention meets T2.",
+  "risks": [
+   "Task data release is only partial; no repository or dataset link is shown.",
+   "Four tasks get zero behavioral credit from every system; verify they are not broken.",
+   "No repeated-run variance, error bars, or confidence intervals reported."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "eclipse-ee4j/jakartaee-examples",
+    "url": "https://github.com/eclipse-ee4j/jakartaee-examples",
+    "commit": "49408d950877a76d445ab0eacbbf70b32471d921",
+    "license": "NOASSERTION",
+    "files": 1950,
+    "pushed": "2024-09-26"
+   },
+   {
+    "kind": "github",
+    "id": "stargate/stargate",
+    "url": "https://github.com/stargate/stargate",
+    "commit": "daa67d2ae2b10c90747e58fdb3ff034c13278963",
+    "license": "Apache-2.0",
+    "files": 2002,
+    "pushed": "2026-11-12"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:eclipse-ee4j/jakartaee-examples | github:stargate/stargate",
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "rights": {
+   "code_license": "BSD-3-Clause (jakartaee-examples); Apache-2.0 (stargate)",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does NOASSERTION conflict with SPDX-License-Identifier: BSD-3-Clause?",
+    "Which license applies if both repos are packaged together?",
+    "Is there a separate data license for ScarfBench tasks?"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "count": 2,
+   "unit": "repository",
+   "manifest_path": null,
+   "splits": [],
+   "pilot": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "verifier": {
+   "kind": "unknown",
+   "entry_point": null,
+   "full_credit": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "cassandra",
+    "dse-server",
+    "coordinator",
+    "restapi",
+    "graphqlapi",
+    "docsapi"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [],
+   "credentials": [
+    "DS_LICENSE=accept",
+    "cassandra/cassandra"
+   ],
+   "exceptions": [
+    "DSE 6.8 uses platform: linux/amd64 and DS_LICENSE=accept",
+    "IPC_LOCK/memlock required"
+   ],
+   "quote": "FROM adoptopenjdk/openjdk8:jre8u352-b08 as base",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which GitHub repo is the ScarfBench task release?",
+   "Where is the task manifest and split list?",
+   "What exact command verifies a migration?",
+   "Does NOASSERTION override the BSD-3-Clause text?"
+  ],
+  "next_action": "Find the ScarfBench task manifest and verifier command before packaging anything."
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "pid": "bp-001539",
+ "name": "PACE-Bench",
+ "aliases": [
+  "PACE"
+ ],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001539",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic PRD-driven enterprise coding benchmark: Real and Solid strong, Diverse ok, Difficult strong (14% complete delivery); no blocking rule.",
+  "risks": [
+   "Only 1 of 43 tasks is public; repositories and patches withheld",
+   "Teams must supply agent runner, repository access and model service",
+   "Scoring needs a configured model service for semantic judging"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-17",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "TianqiLiu1/PACE-Bench",
+    "url": "https://github.com/TianqiLiu1/PACE-Bench",
+    "commit": "ac0f5d2943f98b2d0d482478f55fee5cfc70a772",
+    "license": null,
+    "files": 99,
+    "pushed": "2026-10-21"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:TianqiLiu1/PACE-Bench",
+   "quote": "github: TianqiLiu1/PACE-Bench",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "What licence covers code and data?",
+    "Can the anonymized PRD and contracts be redistributed?",
+    "Will original repositories and patches be supplied separate?"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "count": 43,
+   "unit": "task",
+   "manifest_path": "examples/anonymized/legacy_source_migration/manifest.json",
+   "splits": [],
+   "pilot": "examples/anonymized/legacy_source_migration",
+   "quote": "Paper suite | 43 incremental enterprise tasks; 750 expert-audited Code Points",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "mixed",
+   "entry_point": "pace.workflow:main",
+   "full_credit": "Case score ≥95/100 and zero Missing Code Points",
+   "quote": "Reference-grounded validation: frozen contracts guide structural checks, evidence localization, semantic judgment, and weighted scoring.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "The public case releases the PRD and acceptance contracts; original business repositories and patches are excluded.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "configured model service"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "configured model service"
+   ],
+   "credentials": [],
+   "exceptions": [
+    "Teams supply their own agent runner and repository access."
+   ],
+   "quote": "- No runtime dependencies; input preparation and sandbox export work offline\n- A configured model service for online construction and semantic judging",
+   "evidence": "reported"
+  },
+  "questions": [
+   "What licence covers code and data?",
+   "Where are the 42 non-public tasks?",
+   "Which model service and credentials are required?",
+   "Can excluded repositories and patches be supplied?"
+  ],
+  "next_action": "Run pace prepare on examples/anonymized/legacy_source_migration to inspect the one public case."
+ }
+}

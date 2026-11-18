@@ -1,0 +1,249 @@
+{
+ "schema_version": 1,
+ "build_id": "20261118T0001Z-30b23dda",
+ "generated_at": "2026-11-18T00:01:27Z",
+ "previous_build_id": "20261117T2350Z-a22ba0e1",
+ "data_generated": "2026-11-18 00:01 UTC",
+ "counts": {
+  "benchmarks": 2694,
+  "events": 33
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261118T0001Z-30b23dda.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002026",
+   "name": "Unfinished-Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002011",
+   "name": "QSim-Arena",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002004",
+   "name": "JoyFrontBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002543",
+   "name": "LongTail-SWE easy",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001894",
+   "name": "ABHBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001888",
+   "name": "SEA",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001858",
+   "name": "Multi-step SWE",
+   "before": "unverified",
+   "after": "real"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001858",
+   "name": "Multi-step SWE",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001848",
+   "name": "CASE-Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001539",
+   "name": "PACE-Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001482",
+   "name": "FrontierRefactor",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000867",
+   "name": "SWE-Bench Pro Verified",
+   "before": null,
+   "after": "reference_passes_reported"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000868",
+   "name": "SWE-Test",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000606",
+   "name": "SWE-RPG",
+   "before": null,
+   "after": "controls_reported"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000519",
+   "name": "GISAgentBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000522",
+   "name": "LoopsBench",
+   "before": null,
+   "after": "reference_passes_reported"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000491",
+   "name": "AgentHPOBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002540",
+   "name": "Long-Horizon Terminal-Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001840",
+   "name": "SWE-Opt",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001722",
+   "name": "ScarfBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002587",
+   "name": "SlopCodeBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002687",
+   "name": "Terminal-Bench Science",
+   "before": null,
+   "after": "controls_reported"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002681",
+   "name": "Terminal-Bench 4 Preview",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000352",
+   "name": "Toolathlon",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000352",
+   "name": "Toolathlon",
+   "before": null,
+   "after": "offline_answers"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002095",
+   "name": "CTF-Dojo",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002095",
+   "name": "CTF-Dojo",
+   "before": "noscore",
+   "after": null
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002095",
+   "name": "CTF-Dojo",
+   "before": null,
+   "after": "offline_answers"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000333",
+   "name": "MMAU-Pro",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002393",
+   "name": "ALE-Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000250",
+   "name": "KernelBench",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000137",
+   "name": "LiveCodeBench(01-09)",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000132",
+   "name": "locomo",
+   "before": null,
+   "after": "offline_answers"
+  }
+ ]
+}
