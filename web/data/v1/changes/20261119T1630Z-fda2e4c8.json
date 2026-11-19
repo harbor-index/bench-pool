@@ -1,0 +1,263 @@
+{
+ "schema_version": 1,
+ "build_id": "20261119T1630Z-fda2e4c8",
+ "generated_at": "2026-11-19T16:30:51Z",
+ "previous_build_id": "20261119T1617Z-c539785e",
+ "data_generated": "2026-11-19 16:30 UTC",
+ "counts": {
+  "benchmarks": 2509,
+  "events": 35
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261119T1630Z-fda2e4c8.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002744",
+   "name": "STEMBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002740",
+   "name": "MANGO Arena",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002737",
+   "name": "EnvBench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002737",
+   "name": "EnvBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002734",
+   "name": "Agent Recovery Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002733",
+   "name": "VideoACE",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002732",
+   "name": "User Simulator Evaluation",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002745",
+   "name": "StrideWorld",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002731",
+   "name": "RSIBench-Infra",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002730",
+   "name": "RoughCut-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002729",
+   "name": "RoboBuilder",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002728",
+   "name": "PlayerBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002727",
+   "name": "Openhagen Worlds",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002742",
+   "name": "Multi Agent Coordination Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002726",
+   "name": "HyGeoBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002738",
+   "name": "Finance Agent v2.1",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002725",
+   "name": "3D GameDev Arena",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002743",
+   "name": "SightLine",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002736",
+   "name": "Agentic Treatment Effects",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002736",
+   "name": "Agentic Treatment Effects",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002739",
+   "name": "FSI-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000561",
+   "name": "FrontierSWE",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002735",
+   "name": "AgentAbstain",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002746",
+   "name": "zkML Audit Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000401",
+   "name": "Harveylab(Legal Agent Benchmark)",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002741",
+   "name": "MARBLE",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000309",
+   "name": "Tau2-Bench",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000221",
+   "name": "BALROG",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000085",
+   "name": "C-Eval",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000066",
+   "name": "ScienceQA",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000059",
+   "name": "ChartQA",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000023",
+   "name": "HellaSwag",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002562",
+   "name": "OpenThoughts TBLite",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002496",
+   "name": "Frontier Memory",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002494",
+   "name": "Frontier Harness Eval",
+   "before": null,
+   "after": "hold"
+  }
+ ]
+}

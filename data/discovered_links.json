@@ -11,6 +11,9 @@
 "360cityarena": {
 "from": null
 },
+"3dgamedevarena": {
+"from": null
+},
 "3dscenebench": {
 "from": null
 },
@@ -114,6 +117,9 @@
 "from": null
 },
 "agbench": {
+"from": null
+},
+"agentabstain": {
 "from": null
 },
 "agentactionbench": {
@@ -254,6 +260,9 @@
 "agenticsurfacecatalysis": {
 "from": null
 },
+"agentictreatmenteffects": {
+"from": null
+},
 "agentjudgebench": {
 "from": null
 },
@@ -306,6 +315,9 @@
 "from": null
 },
 "agentprivarena": {
+"from": null
+},
+"agentrecoverybench": {
 "from": null
 },
 "agentretrievalbench": {
@@ -2127,6 +2139,9 @@
 "entiresearchbench": {
 "from": null
 },
+"envbench": {
+"from": null
+},
 "environmentduels": {
 "from": null
 },
@@ -2340,6 +2355,9 @@
 "from": null
 },
 "financeagent2": {
+"from": null
+},
+"financeagent21": {
 "from": null
 },
 "financedeepresearch": {
@@ -3068,6 +3086,9 @@
 "from": null
 },
 "hwebench": {
+"from": null
+},
+"hygeobench": {
 "from": null
 },
 "hymultiturn": {
@@ -3924,6 +3945,9 @@
 "managercoercion": {
 "from": null
 },
+"mangoarena": {
+"from": null
+},
 "maniladder": {
 "from": null
 },
@@ -3937,6 +3961,9 @@
 "from": null
 },
 "mapdc41causalablation": {
+"from": null
+},
+"marble": {
 "from": null
 },
 "mario": {
@@ -4508,6 +4535,9 @@
 "mulrobbench": {
 "from": null
 },
+"multiagentcoordinationbench": {
+"from": null
+},
 "multiagentinject": {
 "from": null
 },
@@ -4839,6 +4869,9 @@
 "from": null
 },
 "opengray": {
+"from": null
+},
+"openhagenworlds": {
 "from": null
 },
 "openmasgapp": {
@@ -5651,6 +5684,9 @@
 "roboarcade": {
 "from": null
 },
+"robobuilder": {
+"from": null
+},
 "robocasamem": {
 "from": null
 },
@@ -5697,6 +5733,9 @@
 "from": null
 },
 "rsibenchdata": {
+"from": null
+},
+"rsibenchinfra": {
 "from": null
 },
 "rsibenchscaleai": {
@@ -5994,6 +6033,9 @@
 "sidetaskbench": {
 "from": null
 },
+"sightline": {
+"from": null
+},
 "silentbench": {
 "from": null
 },
@@ -6242,6 +6284,9 @@
 "from": null
 },
 "stem": {
+"from": null
+},
+"stembench": {
 "from": null
 },
 "stepbench": {
@@ -7122,6 +7167,9 @@
 "userproxybench": {
 "from": null
 },
+"usersimulatorevaluation": {
+"from": null
+},
 "usertoolbench": {
 "from": null
 },
@@ -7258,6 +7306,9 @@
 "video2skill": {
 "from": "https://andyzworks.github.io/video2skill/",
 "repo": "francoischalifour/medium-zoom"
+},
+"videoace": {
+"from": null
 },
 "videodci": {
 "from": null
@@ -7584,6 +7635,9 @@
 "from": null
 },
 "zerobench": {
+"from": null
+},
+"zkmlaudit": {
 "from": null
 }
 }

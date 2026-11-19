@@ -1,0 +1,74 @@
+{
+ "schema_version": 1,
+ "build_id": "20261119T1617Z-c539785e",
+ "generated_at": "2026-11-19T16:17:04Z",
+ "previous_build_id": "20261119T1608Z-88fc5fcf",
+ "data_generated": "2026-11-19 16:17 UTC",
+ "counts": {
+  "benchmarks": 2509,
+  "events": 8
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261119T1617Z-c539785e.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "score_changed",
+   "pid": "bp-001890",
+   "name": "TB-MathModel",
+   "before": 64.6,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001851",
+   "name": "FrontierPhysics",
+   "before": 27.4,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001821",
+   "name": "AgenticFinBench",
+   "before": 89.2,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001798",
+   "name": "DistDebug-Bench",
+   "before": 72.6,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001668",
+   "name": "PROBE",
+   "before": 10.5,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001659",
+   "name": "EmbodiedLab",
+   "before": 43.3,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001655",
+   "name": "Co-Design Bench",
+   "before": 69.9,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001995",
+   "name": "SpreadsheetBench 2",
+   "before": 54.5,
+   "after": 34.8
+  }
+ ]
+}

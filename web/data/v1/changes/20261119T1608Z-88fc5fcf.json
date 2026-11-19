@@ -1,0 +1,1679 @@
+{
+ "schema_version": 1,
+ "build_id": "20261119T1608Z-88fc5fcf",
+ "generated_at": "2026-11-19T16:08:10Z",
+ "previous_build_id": "20261118T1722Z-ab714cd8",
+ "data_generated": "2026-11-19 16:08 UTC",
+ "counts": {
+  "benchmarks": 2509,
+  "events": 279
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261119T1608Z-88fc5fcf.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "discovered",
+   "pid": "bp-002744",
+   "name": "STEMBench",
+   "after": {
+    "name": "STEMBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002740",
+   "name": "MANGO Arena",
+   "after": {
+    "name": "MANGO Arena",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002737",
+   "name": "EnvBench",
+   "after": {
+    "name": "EnvBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002734",
+   "name": "Agent Recovery Bench",
+   "after": {
+    "name": "Agent Recovery Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002733",
+   "name": "VideoACE",
+   "after": {
+    "name": "VideoACE",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002732",
+   "name": "User Simulator Evaluation",
+   "after": {
+    "name": "User Simulator Evaluation",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002745",
+   "name": "StrideWorld",
+   "after": {
+    "name": "StrideWorld",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002731",
+   "name": "RSIBench-Infra",
+   "after": {
+    "name": "RSIBench-Infra",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002730",
+   "name": "RoughCut-Bench",
+   "after": {
+    "name": "RoughCut-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002729",
+   "name": "RoboBuilder",
+   "after": {
+    "name": "RoboBuilder",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002728",
+   "name": "PlayerBench",
+   "after": {
+    "name": "PlayerBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002727",
+   "name": "Openhagen Worlds",
+   "after": {
+    "name": "Openhagen Worlds",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002742",
+   "name": "Multi Agent Coordination Bench",
+   "after": {
+    "name": "Multi Agent Coordination Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002726",
+   "name": "HyGeoBench",
+   "after": {
+    "name": "HyGeoBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002738",
+   "name": "Finance Agent v2.1",
+   "after": {
+    "name": "Finance Agent v2.1",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002725",
+   "name": "3D GameDev Arena",
+   "after": {
+    "name": "3D GameDev Arena",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002743",
+   "name": "SightLine",
+   "after": {
+    "name": "SightLine",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-002461",
+   "name": "ATLAS-Finance",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002736",
+   "name": "Agentic Treatment Effects",
+   "after": {
+    "name": "Agentic Treatment Effects",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002739",
+   "name": "FSI-Bench",
+   "after": {
+    "name": "FSI-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-001926",
+   "name": "Accelerate Bench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-001913",
+   "name": "Longtail-SWE",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-001873",
+   "name": "WebsiteBench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-001125",
+   "name": "KlinikeBench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000828",
+   "name": "ERPBench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000831",
+   "name": "Harbor-Index",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000788",
+   "name": "HubBench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000739",
+   "name": "PAWBench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000742",
+   "name": "SalesBench-100",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000633",
+   "name": "HWE-bench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002735",
+   "name": "AgentAbstain",
+   "after": {
+    "name": "AgentAbstain",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000428",
+   "name": "ReactBench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000424",
+   "name": "swe-marathon",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002746",
+   "name": "zkML Audit Benchmark",
+   "after": {
+    "name": "zkML Audit Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000714",
+   "name": "PHMForge",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000391",
+   "name": "Android Bench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000380",
+   "name": "deepsearchqa",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000375",
+   "name": "OTelBench",
+   "before": "hub",
+   "after": "registry"
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000368",
+   "name": "NL2RepoBench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000347",
+   "name": "Unicode",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002741",
+   "name": "MARBLE",
+   "after": {
+    "name": "MARBLE",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000293",
+   "name": "Web Bench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-002349",
+   "name": "Tau2 Airline",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-002317",
+   "name": "OSWorld-Verified",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-002165",
+   "name": "BFCL",
+   "before": "hub",
+   "after": "registry"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002451",
+   "name": "3DSceneBench mini"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002543",
+   "name": "LongTail-SWE easy"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002544",
+   "name": "Machine Trading"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002569",
+   "name": "Railhead"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002585",
+   "name": "skill2env"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002694",
+   "name": "ZenML Bench v0.1"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002463",
+   "name": "AutoResearchExam"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002460",
+   "name": "ARC CRM 6"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002573",
+   "name": "ReviewBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002577",
+   "name": "Robots Evolved GUI Lessons v1"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002485",
+   "name": "DealBench 100 Suite"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002600",
+   "name": "SWE-Kokkos-Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002490",
+   "name": "ExtractBench Pro"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002565",
+   "name": "ORCA-bench Verified"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002564",
+   "name": "ORCA-bench Private"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002563",
+   "name": "ORCA-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002483",
+   "name": "Data Eng Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002527",
+   "name": "Enterprise Agent Benchmark"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002521",
+   "name": "infra-bench-v1"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002582",
+   "name": "SETA env"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002541",
+   "name": "Long-Horizon Terminal-Bench 2.0"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002540",
+   "name": "Long-Horizon Terminal-Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002590",
+   "name": "svgap-reset-release"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002568",
+   "name": "Product Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002576",
+   "name": "Red Hat SWE-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002575",
+   "name": "reward-hack-bench-control"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002574",
+   "name": "reward-hack-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002475",
+   "name": "bun-server-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002455",
+   "name": "Abstention Act"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002589",
+   "name": "SMDD-Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002476",
+   "name": "χ-Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002559",
+   "name": "o11y-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002587",
+   "name": "SlopCodeBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002546",
+   "name": "Mercury eval"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002681",
+   "name": "Terminal-Bench 4 Preview"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002684",
+   "name": "Terminal-Bench 4 No Prebuild"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002507",
+   "name": "hard12"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002695",
+   "name": "FactoryBench-100"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002493",
+   "name": "FinSearchComp Global T2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002554",
+   "name": "MiMo-V2.6-RL Webdev"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002553",
+   "name": "MiMo-V2.6-RL Terminal"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002552",
+   "name": "MiMo-V2.6-RL Music"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002551",
+   "name": "MiMo-V2.6-RL General"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002550",
+   "name": "MiMo-V2.6-RL Cyber"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002549",
+   "name": "MiMo-V2.6-RL Code"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002469",
+   "name": "BioML-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002673",
+   "name": "SWE-Gym"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002522",
+   "name": "ITSMBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002518",
+   "name": "Horizon"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002692",
+   "name": "vector-edit-gym"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002691",
+   "name": "UserBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002690",
+   "name": "Tool Use Law Benchmark"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002689",
+   "name": "TMax 15K"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002688",
+   "name": "TetrisBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002686",
+   "name": "Terminal-Bench Pro"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002683",
+   "name": "Terminal-Bench 3 Test"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002680",
+   "name": "Terminal-Bench 3 Preview v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002682",
+   "name": "termigen-environments"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002679",
+   "name": "TB21 Systems Security"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002678",
+   "name": "TB21 File Recovery"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002677",
+   "name": "TB21 Data Science"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002676",
+   "name": "tau3 banking test"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002675",
+   "name": "tau3 banking dev"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002674",
+   "name": "TaskTrove SWE-smith"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002633",
+   "name": "TaskTrove nemotron-cpp"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002632",
+   "name": "TaskTrove multifile"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002629",
+   "name": "TaskTrove issue"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002628",
+   "name": "TaskTrove ghactions-v3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002613",
+   "name": "TaskTrove exp rle detailed v3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002612",
+   "name": "TaskTrove exp rle adversarial"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002611",
+   "name": "TaskTrove exp flat25 stackoverflow v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002610",
+   "name": "TaskTrove exp flat25 speed bonus v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002609",
+   "name": "TaskTrove exp flat25 pseudocode v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002608",
+   "name": "TaskTrove code-contests-noblock"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002653",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002652",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002651",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002650",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002648",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002647",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002646",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002645",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002644",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002643",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002642",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002641",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002640",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002639",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002638",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002637",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002636",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002635",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002634",
+   "name": "TaskTrove"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002606",
+   "name": "Task AW"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002607",
+   "name": "Task 1 v3.1 Stock Research Basket Rolling"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002672",
+   "name": "SWE-rebench v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002671",
+   "name": "SWE-rebench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002605",
+   "name": "SWE-Race"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002604",
+   "name": "SWE-Pair"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002603",
+   "name": "SWE-Lancer Diamond Manager"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002602",
+   "name": "SWE-Lancer Diamond IC"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002601",
+   "name": "SWE-Lancer Diamond All"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002599",
+   "name": "SWE-Gen Rust"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002598",
+   "name": "SWE-Gen JS"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002597",
+   "name": "SWE-Gen Java"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002596",
+   "name": "SWE-Gen Go"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002595",
+   "name": "SWE-Gen C++"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002594",
+   "name": "SWE-benchify Hard"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002588",
+   "name": "SMB Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002586",
+   "name": "skill2env lite"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002584",
+   "name": "SimRepairBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002583",
+   "name": "SimReadyBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002581",
+   "name": "Senior SWE-Bench v2026.06"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002580",
+   "name": "SemiKongBench 100"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002670",
+   "name": "Self-Instruct Naive Sandboxes 2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002578",
+   "name": "RuneBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002617",
+   "name": "RLE minimal instructions v3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002616",
+   "name": "RLE heavy padding v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002615",
+   "name": "RLE GitHub issue v3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002614",
+   "name": "RLE error report v3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002572",
+   "name": "revbench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002571",
+   "name": "Rating Generation Consistency"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002570",
+   "name": "ramen-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002669",
+   "name": "R2E-Gym"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002567",
+   "name": "PhysicianBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002566",
+   "name": "PET/CT pilot"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002668",
+   "name": "OpenSWE"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002561",
+   "name": "OpenPoly Tg Case"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002560",
+   "name": "Open Design Benchmark"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002667",
+   "name": "NL2Bash"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002558",
+   "name": "nim-hard"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002557",
+   "name": "nim"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002666",
+   "name": "Nemotron-Gym Math Advanced Calculations v3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002665",
+   "name": "Nemotron-Gym Knowledge Web Search MCQA"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002664",
+   "name": "Nemotron-Gym Instruction Following v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002663",
+   "name": "Nemotron-Gym Instruction Following Structured"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002662",
+   "name": "Nemotron-Gym Instruction Following Calendar"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002661",
+   "name": "Nemotron-Gym Instruction Following Adversarial v3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002660",
+   "name": "Nemotron-Gym Identity Following v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002659",
+   "name": "Nemotron-Gym Competitive Coding"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002658",
+   "name": "Nemotron-Gym Agent Workplace v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002657",
+   "name": "Nemotron-Gym Agent Calendar"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002656",
+   "name": "Nemotron Code"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002556",
+   "name": "MultiMedia-TerminalBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002693",
+   "name": "Model Topography Workbench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002555",
+   "name": "Modal Port v1 Eval Patched"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002655",
+   "name": "Mix H8 Original Tests v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002654",
+   "name": "Mix H8 Adversarial Tests v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002631",
+   "name": "methods2test-large-v3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002630",
+   "name": "methods2test-large-v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002548",
+   "name": "Mesh2CAD Benchmark SCA"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002547",
+   "name": "Mesh2CAD Benchmark"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002545",
+   "name": "Maize Yield Case"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002542",
+   "name": "LongSWE-Bench 32k"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002539",
+   "name": "Litigation"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002538",
+   "name": "LibrAgent SWE Diverse 8"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002537",
+   "name": "LibrAgent Org Collab 7"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002536",
+   "name": "LibrAgent Media Desktop 10"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002535",
+   "name": "LibrAgent Knowledge Bridge 2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002534",
+   "name": "LibrAgent Diverse 9"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002533",
+   "name": "LibrAgent Compaction Fact Recall 1"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002532",
+   "name": "LibrAgent Browser Dual 12"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002531",
+   "name": "Legal Consent Sweep"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002530",
+   "name": "Legacy-Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002529",
+   "name": "LedgerBench 100"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002528",
+   "name": "LaminaBench v1"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002526",
+   "name": "kw-bench VAT Chain"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002525",
+   "name": "kw-bench SAP easy"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002524",
+   "name": "kw-bench SAP"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002523",
+   "name": "klyrune-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002520",
+   "name": "HV Terminal-Bench 2.1"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002519",
+   "name": "hpd-benchmark"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002517",
+   "name": "Horizon-1"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002516",
+   "name": "Historical Systems Bugs"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002515",
+   "name": "HiL-Bench SWE Ask-Human"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002514",
+   "name": "HiL-Bench SQL Ask-Human"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002513",
+   "name": "HiL-Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002511",
+   "name": "Harvey Redline Jubarte"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002510",
+   "name": "Harvey Redline"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002509",
+   "name": "Harvey Labs"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002512",
+   "name": "Harvey LAB Redline"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002508",
+   "name": "Harness Bench Fast"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002506",
+   "name": "Harbor Index 1.0"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002505",
+   "name": "haiku-hard"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002501",
+   "name": "GraphicDesignBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002504",
+   "name": "GeoWorld"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002502",
+   "name": "gemma4_gh_pr"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002500",
+   "name": "Gauntlet Planner"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002499",
+   "name": "Gauntlet"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002503",
+   "name": "Frontis Production Traces"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002498",
+   "name": "FrontierML"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002497",
+   "name": "FrontierBioML"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002495",
+   "name": "Frontier Harness Eval Lite"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002492",
+   "name": "FilingBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002491",
+   "name": "F-DATA Exit Case"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002627",
+   "name": "Exercism Python v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002489",
+   "name": "ERPBench 100 Suite"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002626",
+   "name": "e2egit-v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002625",
+   "name": "e2egit-large"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002488",
+   "name": "DrugTargetBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002487",
+   "name": "DomainBench 24"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002486",
+   "name": "DevOpsBench 100"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002624",
+   "name": "Defects4J v3-v4"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002484",
+   "name": "dbt-labs ADE-bench K8s"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002482",
+   "name": "cyberdefense-bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002623",
+   "name": "curriculum-medium"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002622",
+   "name": "curriculum-hard"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002621",
+   "name": "curriculum-easy"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002620",
+   "name": "CrossCodeEval Java"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002619",
+   "name": "CrossCodeEval C# v4"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002479",
+   "name": "Compute Bazaar Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002478",
+   "name": "CodeSkills Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002618",
+   "name": "CodeNet Python v2"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002477",
+   "name": "Clojure SWE-rebench V2 validated 51"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002474",
+   "name": "Browser Use LinkedIn"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002473",
+   "name": "BlenderBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002472",
+   "name": "BixBench CLI"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002471",
+   "name": "BIRD Mini-Dev"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002470",
+   "name": "BiopharmaBench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002468",
+   "name": "Binary Audit"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002467",
+   "name": "BigCodeBench-Hard"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002466",
+   "name": "BFCL Parity"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002465",
+   "name": "Beam-DD test-normal"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002464",
+   "name": "Beam-DD test-hard"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002579",
+   "name": "AutoDS Scientific Cases"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002462",
+   "name": "ATM-Bench-Hard SGM"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002459",
+   "name": "ARC-AGI-2 K8s"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002452",
+   "name": "Amazing Agent Race"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002458",
+   "name": "AlibabaCTF"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002457",
+   "name": "agent-search"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002456",
+   "name": "Agent Obs Core"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002454",
+   "name": "AbMaze v0.3"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002453",
+   "name": "AARRI-Bench"
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002685",
+   "name": "AAII Terminal-Bench Hard"
+  }
+ ]
+}

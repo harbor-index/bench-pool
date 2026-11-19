@@ -3235,6 +3235,17 @@
 "title": null,
 "why": "Paper only mentions Finance Agent v2 as existing Vals AI benchmark; introduces a different IPO benchmark."
 },
+"financeagent21": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-19",
+"name": "Finance Agent v2.1",
+"query": "Finance Agent v2.1",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "financedeepresearch": {
 "arxiv": null,
 "considered": [],
@@ -12108,5 +12119,16 @@
 "searched": "arXiv",
 "title": "ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models",
 "why": "Introduces ZeroBench, an impossible visual reasoning benchmark for LMMs."
+},
+"zkmlaudit": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-19",
+"name": "zkML Audit Benchmark",
+"query": "zkML Audit Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 }
 }

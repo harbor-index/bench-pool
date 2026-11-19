@@ -1,0 +1,111 @@
+{
+ "schema_version": 1,
+ "build_id": "20261119T1633Z-78aaba54",
+ "pid": "bp-002737",
+ "name": "EnvBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002737",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic benchmark of 54 real repositories with an executable rubric verifier; no dimension is weak, and the new flag waives the Difficult/Attention condition.",
+  "risks": [
+   "Some repositories need GPU hardware to build and run",
+   "No discussion of reward hacking or shortcutting of rubric checks",
+   "No repeated runs, error bars or confidence intervals reported"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-19",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "SWE-bench/SWE-smith",
+    "url": "https://github.com/SWE-bench/SWE-smith",
+    "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+    "license": "MIT",
+    "files": 344,
+    "pushed": "2026-11-16"
+   },
+   {
+    "kind": "github",
+    "id": "TensorBlock/forge",
+    "url": "https://github.com/TensorBlock/forge",
+    "commit": "db6c9f5f0ba681d48357845c906742e24780f765",
+    "license": "NOASSERTION",
+    "files": 201,
+    "pushed": "2026-05-16"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:SWE-bench/SWE-smith",
+   "quote": "* [52k Task Instances](https://huggingface.co/datasets/SWE-bench/SWE-smith)",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "No licence is stated anywhere in this material for the hosted task data (SWE-bench/SWE-smith, SWE-smith-trajectories) - can the task instances be bundled/redistributed?",
+    "TensorBlock/forge contradicts itself: the repo licence field is NOASSERTION, pyproject.toml says license = {text = \"MIT\"}, and LICENSE says \"TensorBlock Forge is licensed under the Apache License, Version 2.0. In addition to the standard terms of the Apache License 2.0, your use of TensorBlock Forge is subject to the following Supplemental Terms\" - which text governs if forge repos are used?",
+    "The forge supplemental terms restrict commercial use, enterprise deployment, public cloud services and hardware bundling - does that bar an adapter that builds/ships forge environments?",
+    "Bundled fixture licences under tests/test_logs/files (MIT, BSD 3-Clause, Apache 2.0) come from third-party projects - do those files travel with the release?"
+   ],
+   "quote": "MIT. Check `LICENSE` for more information.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 52000,
+   "unit": "task",
+   "manifest_path": null,
+   "splits": [
+    "train"
+   ],
+   "pilot": null,
+   "quote": "ds = load_dataset(\"SWE-bench/SWE-smith\", split=\"train\") # Loads all 52k task instances",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "swesmith/harness/eval.py",
+   "full_credit": "An instance is resolved when the graded test log from the container run shows the task's tests pass (f2p_only restricts grading to the failing-to-passing tests).",
+   "quote": "Purpose: Given predictions by SWE-agent, evaluate its performance (% resolved).",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": null,
+   "command": "python -m swesmith.harness.eval --dataset_path <path to dataset> --predictions_path <gold / path to predictions> --run_id <unique identifier for this run> --workers <number of workers to use>",
+   "quote": "--predictions_path <gold / path to predictions>",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [],
+   "credentials": [],
+   "exceptions": [
+    "No Windows/macOS support: \"We do *not* plan on supporting Windows or MacOS.\"",
+    "Ubuntu 22.04.4 LTS is the only tested platform."
+   ],
+   "quote": "SWE-smith requires Docker to create execution environments. SWE-smith was developed and tested on Ubuntu 22.04.4 LTS.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Do the 52k tasks come from the pinned repo commit or from the HF dataset revision",
+   "Where is the gold prediction file the harness expects for gold runs",
+   "Which licence text governs if second repo forge is also used",
+   "What one task id should the first adapter run start from"
+  ],
+  "next_action": "Pull one task from the SWE-bench/SWE-smith train split, run swesmith.harness.eval on it, and confirm the verifier reports a resolved/unresolved verdict."
+ }
+}

@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "build_id": "20261118T1722Z-ab714cd8",
+ "build_id": "20261119T1633Z-78aaba54",
  "pid": "bp-001926",
  "name": "Accelerate Bench",
  "aliases": [],
@@ -15,10 +15,8 @@
   ]
  },
  "harbor": {
-  "status": "hub",
-  "here": [
-   "hub: accelerate-bench/accelerate-bench"
-  ],
+  "status": null,
+  "here": [],
   "family": []
  },
  "best_score": {
