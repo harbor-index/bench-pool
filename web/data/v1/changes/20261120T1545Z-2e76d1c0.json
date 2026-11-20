@@ -1,0 +1,489 @@
+{
+ "schema_version": 1,
+ "build_id": "20261120T1545Z-2e76d1c0",
+ "generated_at": "2026-11-20T15:45:10Z",
+ "previous_build_id": "20261119T1633Z-78aaba54",
+ "data_generated": "2026-11-20 15:45 UTC",
+ "counts": {
+  "benchmarks": 2538,
+  "events": 33
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261120T1545Z-2e76d1c0.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "discovered",
+   "pid": "bp-002773",
+   "name": "TraceProbe",
+   "after": {
+    "name": "TraceProbe",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002768",
+   "name": "NextUnit-Bench",
+   "after": {
+    "name": "NextUnit-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002767",
+   "name": "MMedAgentBench",
+   "after": {
+    "name": "MMedAgentBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002766",
+   "name": "MACRO",
+   "after": {
+    "name": "MACRO",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002762",
+   "name": "DVBench",
+   "after": {
+    "name": "DVBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002761",
+   "name": "CrossAlpha",
+   "after": {
+    "name": "CrossAlpha",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002760",
+   "name": "ConformWeb",
+   "after": {
+    "name": "ConformWeb",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002759",
+   "name": "CoEmbod",
+   "after": {
+    "name": "CoEmbod",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002755",
+   "name": "VC-VQA",
+   "after": {
+    "name": "VC-VQA",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002754",
+   "name": "TwinLab-Bench",
+   "after": {
+    "name": "TwinLab-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002774",
+   "name": "TuringSpace",
+   "after": {
+    "name": "TuringSpace",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002752",
+   "name": "SWE-Recreation",
+   "after": {
+    "name": "SWE-Recreation",
+    "tier": null,
+    "covered": null,
+    "best": 22.9,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002770",
+   "name": "PipeMend",
+   "after": {
+    "name": "PipeMend",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002751",
+   "name": "Mind2Act World",
+   "after": {
+    "name": "Mind2Act World",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002750",
+   "name": "LINEAGE",
+   "after": {
+    "name": "LINEAGE",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002763",
+   "name": "Evidence Lab Retrieval Benchmark",
+   "after": {
+    "name": "Evidence Lab Retrieval Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002749",
+   "name": "ClosureBench",
+   "after": {
+    "name": "ClosureBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002758",
+   "name": "ClinDataBench",
+   "after": {
+    "name": "ClinDataBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002748",
+   "name": "AutoRAGBench",
+   "after": {
+    "name": "AutoRAGBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002747",
+   "name": "AppSci-Bench",
+   "after": {
+    "name": "AppSci-Bench",
+    "tier": null,
+    "covered": null,
+    "best": 59.1,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002757",
+   "name": "agentic-rag-benchmark",
+   "after": {
+    "name": "agentic-rag-benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002772",
+   "name": "Synthetic C-UAS Testbed",
+   "after": {
+    "name": "Synthetic C-UAS Testbed",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002765",
+   "name": "Inhabit",
+   "after": {
+    "name": "Inhabit",
+    "tier": null,
+    "covered": null,
+    "best": 98.7,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002771",
+   "name": "Removal-3D",
+   "after": {
+    "name": "Removal-3D",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002753",
+   "name": "TabBioMed",
+   "after": {
+    "name": "TabBioMed",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002769",
+   "name": "OWASP ASI01-ASI10 Benchmark",
+   "after": {
+    "name": "OWASP ASI01-ASI10 Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "renamed",
+   "pid": "bp-001579",
+   "name": "CompAct-Bench",
+   "before": "Compact-Bench",
+   "after": "CompAct-Bench"
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002756",
+   "name": "Agent^2 RL-Bench",
+   "after": {
+    "name": "Agent^2 RL-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002764",
+   "name": "Game Agent Coding League (GACL)",
+   "after": {
+    "name": "Game Agent Coding League (GACL)",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-002396",
+   "name": "Chess Puzzles",
+   "before": 79.0,
+   "after": 83.0
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002775",
+   "name": "TuRTLe",
+   "after": {
+    "name": "TuRTLe",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002471",
+   "name": "BIRD Mini-Dev",
+   "after": {
+    "name": "BIRD Mini-Dev",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": "hub",
+    "harbor_here": [
+     "hub: birdsql/bird-mini-dev"
+    ],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002709",
+   "name": "BLIP-Live"
+  }
+ ]
+}

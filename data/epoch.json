@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-19",
+ "as_of": "2026-11-20",
  "source": "https://epoch.ai/data/benchmark_data.zip",
  "licence": "CC BY 4.0, Epoch AI",
  "benchmarks": [
@@ -140,7 +140,7 @@
     }
    ],
    "velocity": 0.35,
-   "models": 341,
+   "models": 342,
    "page": {
     "slug": "gpqa-diamond",
     "checked": "2026-11-17",
@@ -405,7 +405,7 @@
     }
    ],
    "velocity": 3.28,
-   "models": 127,
+   "models": 128,
    "page": {
     "slug": "frontiermath-tiers-1-3-v2-private",
     "checked": "2026-11-17",
@@ -476,7 +476,7 @@
     }
    ],
    "velocity": 6.51,
-   "models": 83,
+   "models": 84,
    "page": {
     "slug": "frontiermath-tier-4-v2-private",
     "checked": "2026-11-17",
@@ -583,9 +583,9 @@
    "file": "otis_mock_aime_2024_2025.csv",
    "top": {
     "score": 1.0,
-    "model": "gemini-4-hydrogen_xhigh",
+    "model": "gemini-4-neon_xhigh",
     "org": "Google DeepMind",
-    "date": "2026-11-12"
+    "date": "2026-11-18"
    },
    "history": [
     {
@@ -695,7 +695,7 @@
     }
    ],
    "velocity": 0.72,
-   "models": 318,
+   "models": 319,
    "page": {
     "slug": "otis-mock-aime-2024-2025",
     "checked": "2026-11-17",
@@ -796,7 +796,7 @@
     }
    ],
    "velocity": 3.66,
-   "models": 105,
+   "models": 106,
    "page": {
     "slug": "simpleqa-verified",
     "checked": "2026-11-17",
@@ -817,10 +817,10 @@
    "in_index": true,
    "file": "chess_puzzles.csv",
    "top": {
-    "score": 0.79,
-    "model": "claude-fable-5-2_max",
-    "org": "Anthropic",
-    "date": "2026-11-09"
+    "score": 0.83,
+    "model": "gemini-4-neon_xhigh",
+    "org": "Google DeepMind",
+    "date": "2026-11-18"
    },
    "history": [
     {
@@ -877,10 +877,15 @@
      "date": "2026-11-09",
      "score": 0.79,
      "model": "claude-fable-5-2_max"
+    },
+    {
+     "date": "2026-11-18",
+     "score": 0.83,
+     "model": "gemini-4-neon_xhigh"
     }
    ],
-   "velocity": 2.59,
-   "models": 166,
+   "velocity": 2.92,
+   "models": 167,
    "page": {
     "slug": "chess-puzzles",
     "checked": "2026-11-17",
@@ -978,7 +983,7 @@
     }
    ],
    "velocity": 6.65,
-   "models": 33,
+   "models": 34,
    "page": {
     "slug": "ebr-bench",
     "checked": "2026-11-17",
@@ -1054,7 +1059,7 @@
     }
    ],
    "velocity": 5.5,
-   "models": 148,
+   "models": 149,
    "page": {
     "slug": "mystery-game-puzzles",
     "checked": "2026-11-17",
@@ -1130,7 +1135,7 @@
     }
    ],
    "velocity": 7.78,
-   "models": 47,
+   "models": 48,
    "page": {
     "slug": "mirrorcode",
     "checked": "2026-11-17",
@@ -1352,7 +1357,7 @@
     }
    ],
    "velocity": 1.96,
-   "models": 314,
+   "models": 324,
    "page": {
     "slug": "arc-agi",
     "checked": "2026-11-17",
@@ -2483,7 +2488,7 @@
     }
    ],
    "velocity": 1.54,
-   "models": 126,
+   "models": 131,
    "page": {
     "slug": "simplebench",
     "checked": "2026-11-17",
@@ -3043,7 +3048,7 @@
     }
    ],
    "velocity": 6.66,
-   "models": 66,
+   "models": 70,
    "page": {
     "slug": "apex-agents",
     "checked": "2026-11-17",
@@ -3061,10 +3066,10 @@
    "in_index": true,
    "file": "arc_agi_2_external.csv",
    "top": {
-    "score": 0.95,
-    "model": "GPT-6 Astra (Max)",
+    "score": 0.9583,
+    "model": "GPT-6.2 Astra (XHigh)",
     "org": "OpenAI",
-    "date": "2026-09-03"
+    "date": "2026-11-17"
    },
    "history": [
     {
@@ -3151,10 +3156,15 @@
      "date": "2026-09-03",
      "score": 0.95,
      "model": "GPT-6 Astra (Max)"
+    },
+    {
+     "date": "2026-11-17",
+     "score": 0.9583,
+     "model": "GPT-6.2 Astra (XHigh)"
     }
    ],
-   "velocity": 5.33,
-   "models": 297,
+   "velocity": 5.4,
+   "models": 307,
    "page": {
     "slug": "arc-agi-2",
     "checked": "2026-11-17",
@@ -3224,7 +3234,7 @@
      "model": "Fable 5.1 (Max)"
     }
    ],
-   "velocity": 2.96,
+   "velocity": 2.95,
    "models": 22,
    "page": {
     "slug": "posttrainbench",
@@ -3615,7 +3625,7 @@
      "model": "Claude Opus 5 (max)"
     }
    ],
-   "velocity": 2.45,
+   "velocity": 2.44,
    "models": 14,
    "page": {
     "slug": "osworld-2-0",
@@ -3943,7 +3953,7 @@
      "model": "Claude Opus 5.5"
     }
    ],
-   "velocity": 2.97,
+   "velocity": 2.96,
    "models": 46,
    "page": {
     "slug": "frontiercode",
@@ -4050,7 +4060,7 @@
     }
    ],
    "velocity": 2.23,
-   "models": 203,
+   "models": 206,
    "page": {
     "slug": "lmca",
     "checked": "2026-11-17",
@@ -4148,7 +4158,7 @@
     }
    ],
    "velocity": 0.71,
-   "models": 241,
+   "models": 244,
    "page": {
     "slug": "dtbench",
     "checked": "2026-11-17",
@@ -4365,8 +4375,8 @@
      "model": "claude-fable-5-2_max"
     }
    ],
-   "velocity": 5.21,
-   "models": 41,
+   "velocity": 5.2,
+   "models": 42,
    "page": {
     "slug": "furniture-assembly",
     "checked": "2026-11-17",
@@ -4436,7 +4446,7 @@
      "model": "Claude Fable 5.2"
     }
    ],
-   "velocity": 4.29,
+   "velocity": 4.27,
    "models": 25,
    "page": {
     "slug": "frontierswe",
@@ -4802,7 +4812,7 @@
      "model": "Claude Fable 5.2 (xhigh)"
     }
    ],
-   "velocity": 4.92,
+   "velocity": 4.9,
    "models": 27,
    "page": {
     "slug": "weirdml-v3",
@@ -4881,8 +4891,8 @@
      "model": "gpt-6.2-astra_max"
     }
    ],
-   "velocity": 15.15,
-   "models": 11,
+   "velocity": 14.97,
+   "models": 12,
    "page": {
     "slug": "spireclimb",
     "checked": "2026-11-17",

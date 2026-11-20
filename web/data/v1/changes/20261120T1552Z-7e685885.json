@@ -1,0 +1,109 @@
+{
+ "schema_version": 1,
+ "build_id": "20261120T1552Z-7e685885",
+ "generated_at": "2026-11-20T15:52:20Z",
+ "previous_build_id": "20261120T1545Z-2e76d1c0",
+ "data_generated": "2026-11-20 15:52 UTC",
+ "counts": {
+  "benchmarks": 2538,
+  "events": 13
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261120T1552Z-7e685885.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "score_changed",
+   "pid": "bp-001636",
+   "name": "Continual Learning Exam",
+   "before": 47.7,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001627",
+   "name": "SkillShift-Bench",
+   "before": 41.3,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001626",
+   "name": "SecPRBench",
+   "before": 78.1,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001618",
+   "name": "TraceTrial-Bench",
+   "before": 73.5,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001501",
+   "name": "ReuF2F",
+   "before": 42.4,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001435",
+   "name": "System1-Arena",
+   "before": 81.1,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001381",
+   "name": "Doc2Harness",
+   "before": 53.0,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001337",
+   "name": "EC2-Bench",
+   "before": 82.7,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001378",
+   "name": "CLASHarness",
+   "before": 28.7,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001325",
+   "name": "Autonomous Science Bench",
+   "before": 72.2,
+   "after": 67.0
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001689",
+   "name": "HealthAgentBench",
+   "before": 57.3,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001415",
+   "name": "Harness-Bench",
+   "before": 66.3,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-001522",
+   "name": "DORA",
+   "before": 61.4,
+   "after": null
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-19",
+ "as_of": "2026-11-20",
  "registry": [
   {
    "name": "aider-polyglot",
@@ -485,10 +485,10 @@
  "hub": [
   "LiteCoder/LiteCoder-rl",
   "aider/aider-polyglot",
-  "algotune/algotune",
   "arcus-labs/tau3-banking",
   "bencalvert04/programbench",
   "benchflow/skillsbench",
+  "birdsql/bird-mini-dev",
   "cais/swebenchpro",
   "datacurve/deep-swe",
   "datacurve/deep-swe-1-1",
@@ -527,13 +527,6 @@
   "aider/aider-polyglot": {
    "checked": "2026-11-17",
    "tasks": 225,
-   "version": "1.0.0",
-   "description": "A collection of evaluation tasks on Harbor.",
-   "links": []
-  },
-  "algotune/algotune": {
-   "checked": "2026-11-17",
-   "tasks": 154,
    "version": "1.0.0",
    "description": "A collection of evaluation tasks on Harbor.",
    "links": []
@@ -763,6 +756,13 @@
    "tasks": 63,
    "version": "2.0.0",
    "description": "The CPU-only subset of Terminal-Bench, using the same task revisions and release tag as the full dataset.",
+   "links": []
+  },
+  "birdsql/bird-mini-dev": {
+   "checked": "2026-11-20",
+   "tasks": 1500,
+   "version": "2.0.2",
+   "description": "BIRD Mini-Dev: 500 aligned questions across SQLite, MySQL and PostgreSQL (1,500 dialect-specific tasks).",
    "links": []
   }
  }

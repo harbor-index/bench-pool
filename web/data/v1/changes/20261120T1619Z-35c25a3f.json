@@ -1,0 +1,144 @@
+{
+ "schema_version": 1,
+ "build_id": "20261120T1619Z-35c25a3f",
+ "generated_at": "2026-11-20T16:19:09Z",
+ "previous_build_id": "20261120T1610Z-aca858f3",
+ "data_generated": "2026-11-20 16:19 UTC",
+ "counts": {
+  "benchmarks": 2538,
+  "events": 18
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261120T1619Z-35c25a3f.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002768",
+   "name": "NextUnit-Bench",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002754",
+   "name": "TwinLab-Bench",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002754",
+   "name": "TwinLab-Bench",
+   "before": "noscore",
+   "after": null
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002754",
+   "name": "TwinLab-Bench",
+   "before": null,
+   "after": "offline_answers"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002751",
+   "name": "Mind2Act World",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001851",
+   "name": "FrontierPhysics",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001995",
+   "name": "SpreadsheetBench 2",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001995",
+   "name": "SpreadsheetBench 2",
+   "before": "unverified",
+   "after": null
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001995",
+   "name": "SpreadsheetBench 2",
+   "before": null,
+   "after": "offline_answers"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000345",
+   "name": "BIRD-Interact",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000219",
+   "name": "OpenRCA",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000219",
+   "name": "OpenRCA",
+   "before": "noscore",
+   "after": null
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000219",
+   "name": "OpenRCA",
+   "before": null,
+   "after": "offline_answers"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000210",
+   "name": "MLE-Bench",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000210",
+   "name": "MLE-Bench",
+   "before": "unverified",
+   "after": null
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000210",
+   "name": "MLE-Bench",
+   "before": null,
+   "after": "offline_answers"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000108",
+   "name": "swe-bench-multimodal",
+   "before": "unverified",
+   "after": "real"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000108",
+   "name": "swe-bench-multimodal",
+   "before": null,
+   "after": "reference_solution"
+  }
+ ]
+}

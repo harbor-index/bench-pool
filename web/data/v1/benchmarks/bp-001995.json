@@ -1,0 +1,121 @@
+{
+ "schema_version": 1,
+ "build_id": "20261120T1619Z-35c25a3f",
+ "pid": "bp-001995",
+ "name": "SpreadsheetBench 2",
+ "aliases": [
+  "SpreadSheetBench-v1",
+  "SpreadsheetBench"
+ ],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001995",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now 34.8% (LLM Stats, 2026-08-17), recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "Full dataset not yet released; only a sample subset is public",
+   "VLM judge on visualization tasks may add evaluation noise",
+   "No error bars or confidence intervals for reported scores"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": [
+   "pool: SpreadsheetBench (adapter)",
+   "registry: spreadsheetbench-verified 1.0"
+  ]
+ },
+ "best_score": {
+  "pct": 34.8,
+  "source": "LLM Stats",
+  "model": "Kimi K3",
+  "as_of": "2026-08-17",
+  "systems": 1,
+  "url": "https://llm-stats.com/benchmarks/spreadsheetbench-2"
+ },
+ "readiness": {
+  "date": "2026-11-20",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "RUCKBReasoning/SpreadsheetBench-2",
+    "url": "https://github.com/RUCKBReasoning/SpreadsheetBench-2",
+    "commit": "a7bdc2d358e052d35a94768e1f487c0d9e9c0011",
+    "license": null,
+    "files": 193,
+    "pushed": "2026-10-21"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:KAKA22/SpreadsheetBench-v2",
+   "quote": "https://huggingface.co/datasets/KAKA22/SpreadsheetBench-v2",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [],
+   "quote": "licence field: None",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": null,
+   "unit": "task",
+   "manifest_path": "data/spreadsheetbench-v2/<Category>/dataset.json",
+   "splits": [
+    "Debugging",
+    "Financial_Model",
+    "Template",
+    "Visualization"
+   ],
+   "pilot": null,
+   "quote": "Each category folder should contain a `dataset.json` file and the corresponding spreadsheet files under `spreadsheet/`.",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "mixed",
+   "entry_point": "evaluation/evaluation.py; evaluation/run_visual_vlm_checklist_eval.py",
+   "full_credit": "For Debugging/Financial_Model/Template: cell values match golden response; for Visualization: VLM checklist ACC threshold (default 0.7).",
+   "quote": "For `Visualization` tasks, use the VLM checklist evaluator with `glm-4.6v`.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": "golden_response_path",
+   "command": null,
+   "quote": "`golden_response_path`: The folder path that stores the answer file.",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [
+    "agent model API (e.g. openrouter/z-ai/glm-5)",
+    "VLM API (glm-4.6v via bigmodel)"
+   ],
+   "credentials": [
+    "agent.model.api_key",
+    "VLM_API_KEY",
+    "--api-key"
+   ],
+   "exceptions": [
+    "Visualization tasks require Windows and Excel/WPS COM interface"
+   ],
+   "quote": "Each worker starts an independent Docker environment.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Dataset download and layout",
+   "Category selection and splits",
+   "Agent and VLM API keys",
+   "Windows COM for visualization"
+  ],
+  "next_action": "Clone RUCKBReasoning/SpreadsheetBench-2 and download KAKA22/SpreadsheetBench-v2 dataset into data/."
+ }
+}

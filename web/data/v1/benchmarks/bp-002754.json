@@ -1,0 +1,108 @@
+{
+ "schema_version": 1,
+ "build_id": "20261120T1619Z-35c25a3f",
+ "pid": "bp-002754",
+ "name": "TwinLab-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002754",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now unknown, recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "The environment is a language-model TwinLab agent plus per-task calculators, not a frozen container",
+   "The main verifier is a vision-language judge; human agreement is reported only for decision points",
+   "The actor agent may search the live web during a run, even with the source record blocked"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-20",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "ZJUSCL/TwinLab-Bench",
+    "url": "https://github.com/ZJUSCL/TwinLab-Bench",
+    "commit": "d0ba160891c3a7e8643a2ff7c02de47dd87105e3",
+    "license": null,
+    "files": 54,
+    "pushed": "2026-11-20"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:ZJUSCL/TwinLab-Bench",
+   "quote": "hf download ZJUSCL/TwinLab-Bench --repo-type dataset --local-dir TwinLab-Bench",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "Which licence applies to the harness code, since the github licence field is empty?",
+    "Do the source lab notebooks, raw data and papers permit redistribution inside the benchmark?",
+    "Must each task's source records and papers be cited when a task is used or re-hosted?"
+   ],
+   "quote": "Every task uses its source records under the terms of their licenses. The task table in the appendix of our paper lists the source records and papers of every task, and the bibliography of the paper gives their full references. If you use a task, please also cite its sources from this bibliography.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 52,
+   "unit": "task",
+   "manifest_path": "cases/*/case.yaml",
+   "splits": [],
+   "pilot": "cases/029-die-attach-release-01/case.yaml",
+   "quote": "TwinLab-Bench contains **52** tasks from laboratories in the physical sciences (20 tasks), the life sciences (20 tasks), and engineering (12 tasks).",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "mixed",
+   "entry_point": "twinlab/judge.py",
+   "full_credit": "A submitted report that matches the hidden answer taken from what the laboratory later found, as scored by the judge rubric.",
+   "quote": "The report is scored by comparison with a hidden answer taken from what the laboratory later found.",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": null,
+   "command": null,
+   "quote": "5. judge (judge.py)          rubric, traps, environment audit, contamination audit, score -> result.json",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "no",
+   "services": [
+    "TwinLab lab environment served over MCP (mcp_server.py)",
+    "optional local LiteLLM proxy (scripts/llm_proxy.py)"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "DeepSeek Anthropic-format API at https://api.deepseek.com/anthropic",
+    "optional OpenAI-format DeepSeek endpoint set via DEEPSEEK_BASE_URL_OPENAI",
+    "Claude Code (for Claude actors)",
+    "Codex (for GPT actors)"
+   ],
+   "credentials": [
+    "DEEPSEEK_API_KEY",
+    "Claude Code sign-in when a Claude model is the actor"
+   ],
+   "exceptions": [],
+   "quote": "You need Linux with [bubblewrap](https://github.com/containers/bubblewrap), Python 3.11 or later, Claude Code, and a DeepSeek API key. Claude Code needs to be signed in only when a Claude model is the actor. Codex is needed only for GPT actors.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which licence covers the harness code and the lab records, and may they be redistributed?",
+   "The cases are not in the GitHub tree, so where does the adapter fetch them from and pin them?",
+   "Can a Docker image replace the required Linux-with-bubblewrap sandbox the harness expects?",
+   "Which credentials and model endpoints (DeepSeek key, env and judge models) must be provisioned?"
+  ],
+  "next_action": "Download the Hugging Face dataset ZJUSCL/TwinLab-Bench and run one case (cases/029-die-attach-release-01/case.yaml) with the documented scripts/run_case.py command to see a scored run."
+ }
+}

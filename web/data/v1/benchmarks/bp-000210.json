@@ -1,0 +1,123 @@
+{
+ "schema_version": 1,
+ "build_id": "20261120T1619Z-35c25a3f",
+ "pid": "bp-000210",
+ "name": "MLE-Bench",
+ "aliases": [
+  "MLE-Bench Lite"
+ ],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000210",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now 64.4% (own leaderboard, 2026-11-11), recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "Task data needs Kaggle credentials and a long prepare step",
+   "Several competitions leak test labels, making scores trivial",
+   "Leaderboard closed for fairness review; v2 fixes pending"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": {
+  "pct": 64.4,
+  "source": "own leaderboard",
+  "model": "Famou-Agent 2.0",
+  "as_of": "2026-11-11",
+  "systems": 28,
+  "url": "https://github.com/openai/mle-bench"
+ },
+ "readiness": {
+  "date": "2026-11-20",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "openai/mle-bench",
+    "url": "https://github.com/openai/mle-bench",
+    "commit": "507f92e1138bb6e40dac5c6ee7a6758e6424bf97",
+    "license": "NOASSERTION",
+    "files": 1015,
+    "pushed": "2026-04-24"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:openai/mle-bench",
+   "quote": "Code for the paper [\"MLE-Bench: Evaluating Machine Learning Agents on Machine Learning Engineering\"](https://arxiv.org/abs/2410.07095). We have released the code used to construct the dataset, the evaluation logic, as well as the agents we evaluated for this benchmark.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "The external Kaggle competition datasets and files downloaded while using this package are not covered by the repository licence, so their terms and redistribution rights must be checked separately.",
+    "Kaggle credentials (kaggle.json) are needed to download the raw datasets, so use of the data is bound by the Kaggle API/account terms.",
+    "Some MLE-bench competition data is stored using Git-LFS (git lfs fetch --all; git lfs pull)."
+   ],
+   "quote": "NOTE: This license applies to the code in this repository, but not the external datasets and files that may be downloaded while using this package.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 75,
+   "unit": "competition",
+   "manifest_path": "experiments/splits",
+   "splits": [
+    "low",
+    "medium",
+    "high",
+    "split75"
+   ],
+   "pilot": "spaceship-titanic",
+   "quote": "The MLE-bench dataset is a collection of 75 Kaggle competitions which we use to evaluate the ML engineering capabilities of AI systems.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "mlebench grade",
+   "full_credit": "A CSV submission graded above the medal threshold for that competition, scored as the any_medal_percentage metric.",
+   "quote": "Given a JSONL file, where each line corresponds with a submission for one competition, `mlebench grade` will produce a grading report for each competition.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": "competition.answers (answers loaded by mlebench/grade.py via load_answers)",
+   "command": "uv run python experiments/aggregate_grading_reports.py --experiment-id <exp_id> --split low",
+   "quote": "For each competition, we also provide grading scripts that can be used to evaluate the score of a submission.",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "grading server (Flask) inside mlebench-env",
+    "Kaggle API for dataset download"
+   ],
+   "gpu": "yes",
+   "network_or_api": [
+    "Kaggle API (dataset download and credentials)",
+    "openai>=1.10.0 model endpoint dependency"
+   ],
+   "credentials": [
+    "kaggle.json placed in ~/.kaggle/"
+   ],
+   "exceptions": [
+    "Some MLE-bench competition data is stored using Git-LFS",
+    "sysbox-runc container runtime variant (extract_from_container_sysbox)"
+   ],
+   "quote": "Agent resources - not a strict requirement of the benchmark but please report if you stray from these defaults! Runtime: 24 hours; Compute: 36 vCPUs with 440GB RAM and one 24GB A10 GPU",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which split is the target: the 22-competition Low/Lite set or the full 75-competition set?",
+   "How will Kaggle credentials and dataset downloads be handled inside the container without network surprises?",
+   "Where do the held-out answers and grading server live so agents cannot see them?",
+   "How are agent runs launched (run_agent.py plus agent start.sh) and how long and how much GPU may they use?"
+  ],
+  "next_action": "Install the package, run `mlebench prepare --lite`, and grade one sample submission with `mlebench grade-sample <PATH_TO_SUBMISSION> spaceship-titanic` to confirm the verifier works."
+ }
+}
