@@ -1,16 +1,16 @@
 {
  "schema_version": 1,
- "build_id": "20261120T1619Z-35c25a3f",
- "generated_at": "2026-11-20T16:19:09Z",
- "previous_build_id": "20261120T1610Z-aca858f3",
- "data_generated": "2026-11-20 16:19 UTC",
+ "build_id": "20261121T1529Z-4d798c23",
+ "generated_at": "2026-11-21T15:29:18Z",
+ "previous_build_id": "20261121T1523Z-fc657b8d",
+ "data_generated": "2026-11-21 15:29 UTC",
  "counts": {
-  "benchmarks": 2538,
-  "events": 18
+  "benchmarks": 2549,
+  "events": 6
  },
  "files": {
   "benchmarks": "data/benchmarks.json",
-  "changes": "data/v1/changes/20261120T1619Z-35c25a3f.json",
+  "changes": "data/v1/changes/20261121T1529Z-4d798c23.json",
   "index": "data/v1/changes/index.json"
  }
 }

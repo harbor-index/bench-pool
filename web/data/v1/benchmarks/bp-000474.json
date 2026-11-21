@@ -1,0 +1,121 @@
+{
+ "schema_version": 1,
+ "build_id": "20261121T1529Z-4d798c23",
+ "pid": "bp-000474",
+ "name": "GameWorld",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000474",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic benchmark with public browser-game tasks, executable verifier, strong diversity and real artifacts; best score 55.29% leaves room.",
+  "risks": [
+   "Reward hacking not addressed in the pages",
+   "Top models evaluated with only one run per task",
+   "No human review of task construction is stated"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": {
+  "pct": 31.2,
+  "source": "LLM Stats",
+  "model": "Seed 2.1 Pro",
+  "as_of": "2026-08-17",
+  "systems": 2,
+  "url": "https://llm-stats.com/benchmarks/gameworld"
+ },
+ "readiness": {
+  "date": "2026-11-21",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "gameworld-project/GameWorld",
+    "url": "https://github.com/gameworld-project/GameWorld",
+    "commit": "84f624bd1e120d30aeebf2eb42a39410e24d3bd4",
+    "license": null,
+    "files": 427,
+    "pushed": "2026-11-07"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:gameworld-project/GameWorld",
+   "quote": "**GameWorld** benchmarks multimodal game agents across 34 games and 170 tasks in a browser-based environment, using outcome-based, state-verifiable evaluation.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "The licence field is None for the benchmark repo, so it is unknown whether the code may be redistributed.",
+    "The 34 games are cloned from a separate repo (gameworld-project/GameWorld-Games) whose licence is not stated, so game asset redistribution is unsettled.",
+    "The trajectory dataset on Hugging Face (yyyang/gameworld-benchmark-trajectories) has no stated licence."
+   ],
+   "quote": "licence field: None",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 170,
+   "unit": "task",
+   "manifest_path": "benchmark/experiments/quick-start.yaml",
+   "splits": [],
+   "pilot": "10_doodle-jump",
+   "quote": "Each model was evaluated on 170 tasks with a 400-step limit per run.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "runtime/evaluator.py",
+   "full_credit": "Task success is scored from game-state snapshots by the task evaluator; SR is the success rate.",
+   "quote": "class Evaluator:\n    \"\"\"Task evaluator that consumes game-state snapshots.\"\"\"",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "using outcome-based, state-verifiable evaluation.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "local browser runtime (Playwright Chromium)",
+    "game server on a base port (default 8101)",
+    "dashboard monitor server (tools.monitor.server)",
+    "optional local model server via vLLM"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "GOOGLE_API_KEY (google-genai)",
+    "OPENAI_API_KEY (openai)",
+    "ANTHROPIC_API_KEY (anthropic)",
+    "vLLM local model endpoint, e.g. vllm serve Qwen/Qwen3.5-122B-A10B --port 8088"
+   ],
+   "credentials": [
+    "GOOGLE_API_KEY",
+    "OPENAI_API_KEY",
+    "ANTHROPIC_API_KEY"
+   ],
+   "exceptions": [
+    "The game library is not in this repo and must be cloned separately: git clone https://github.com/gameworld-project/GameWorld-Games.git games/gameworld-games",
+    "The recommended Fine-Control Protocol lives on branch fine-control-400-steps-202608"
+   ],
+   "quote": "conda create -n gameworld python=3.12\nconda activate gameworld\npip install -r requirements.txt\nplaywright install chromium",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Where do the 34 games come from, and is the separate GameWorld-Games clone required before anything runs?",
+   "What licence covers the benchmark code, the game library, and the trajectory dataset?",
+   "How is a single task identified for a container run, given presets like 10_doodle-jump+10_01+gpt-5.2?",
+   "Which state snapshot and evaluation.json fields does the container verifier read to score a task?"
+  ],
+  "next_action": "Clone both GameWorld and GameWorld-Games, install the Python/browser deps, and run 'python human_play.py --game 10_doodle-jump' to confirm the browser runtime before wiring the verifier."
+ }
+}

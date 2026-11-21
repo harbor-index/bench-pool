@@ -1,0 +1,135 @@
+{
+ "schema_version": 1,
+ "build_id": "20261121T1529Z-4d798c23",
+ "pid": "bp-000456",
+ "name": "RSIBench-Data",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000456",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic benchmark with real tasks, programmatic verifiers, and strong attention; no blocking rule fires.",
+  "risks": [
+   "Variance: one representative run per setting, no repeated trials.",
+   "Benchmark-specific task subsets and trajectories not explicitly released.",
+   "Scores are paper-only; no leaderboard."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-21",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "evolvent-ai/RSIBench-Data",
+    "url": "https://github.com/evolvent-ai/RSIBench-Data",
+    "commit": "4c807610243e7b481d382c5ed360c71c79a22f61",
+    "license": null,
+    "files": 3760,
+    "pushed": "2026-08-25"
+   },
+   {
+    "kind": "github",
+    "id": "thinking-machines-lab/tinker",
+    "url": "https://github.com/thinking-machines-lab/tinker",
+    "commit": "62c4e8cde2298f8be8f2b5ab1ee301ed1b3a1d19",
+    "license": "Apache-2.0",
+    "files": 344,
+    "pushed": "2026-11-18"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:evolvent-ai/RSIBench-Data",
+   "quote": "`TARGET_BENCHMARK` is resolved through `benchmarks/*/spec.json`. Each profile defines its own data-agent prompt, Harbor configuration, official evaluation shape, and seed-factory allowlist.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "The repository's licence field is None and the README only shows a `[![License][license-image]][license-url]` badge - under what terms may the code and benchmark artifacts be redistributed?",
+    "May Harbor eval artifacts be reused in an adapter given \"They must not copy, transform, filter, distill, or otherwise derive training records from benchmark tasks or artifacts.\"?",
+    "Do the SWE-bench Verified / Multilingual / Pro local subsets carry upstream licences that must be passed through?",
+    "Does the Apache-2.0 `thinking-machines-lab/tinker` SDK have to be bundled or can it stay a runtime dependency?"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "count": 100,
+   "unit": "task",
+   "manifest_path": "benchmarks/*/spec.json",
+   "splits": [
+    "swe-bench-verified",
+    "swe-bench-multilingual",
+    "swe-bench-pro",
+    "terminal-bench-2",
+    "gpqa-diamond",
+    "aime"
+   ],
+   "pilot": "benchmarks/aime/datasets/full_30_2026/aime2026_1/task.toml",
+   "quote": null,
+   "evidence": "unknown",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "unknown",
+   "entry_point": null,
+   "full_credit": null,
+   "quote": "[verifier]\ntimeout_sec = 3000.0\n\n[agent]\ntimeout_sec = 3000.0",
+   "evidence": "reported"
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "It contains the raw Qwen3.5-35B-A3B-Base 100-task Harbor run, including per-task results, mini-swe-agent trajectories, verifier reports, and Tinker usage and cost logs.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "no",
+   "services": [
+    "Tinker",
+    "E2B cloud sandboxes",
+    "Harbor"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "Tinker API for training and sampling",
+    "E2B API for evaluation sandboxes",
+    "ANTHROPIC_BASE_URL for Claude Code harness",
+    "CODEX_BASE_URL for Codex harness",
+    "KIMI_MODEL_BASE_URL for Kimi Code harness",
+    "DATA_AGENT_ROLL_BASE_URL for generated rollout/API calls"
+   ],
+   "credentials": [
+    "TINKER_API_KEY",
+    "E2B_API_KEY",
+    "ANTHROPIC_API_KEY or ANTHROPIC_AUTH_TOKEN",
+    "CODEX_API_KEY",
+    "KIMI_MODEL_API_KEY",
+    "DATA_AGENT_ROLL_API_KEY"
+   ],
+   "exceptions": [
+    "swe-bench-multilingual needs its local subset built first with `python tools/create_swe_multilingual_local_dataset.py --seed 23 --n-tasks 100`",
+    "swe-bench-verified treats `benchmarks/swe_bench_verified/runs/qwen35base_seed23_random100/` as read-only evaluation-set artifacts",
+    "Optional Docker isolation runs the whole session inside `docker/rsibench-runtime.Dockerfile` with the repo mounted at `/data/RSIBench-Data`"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "Which TARGET_BENCHMARK profile does the adapter ship as the default, and how many tasks does it run?",
+   "What verifier runs inside each task container, and what output counts as a pass?",
+   "Which licence covers the repo, the benchmark artifacts, and each upstream SWE-bench subset?",
+   "Which API keys and endpoints (Tinker, E2B, agent CLI) must the container receive?"
+  ],
+  "next_action": "Clone evolvent-ai/RSIBench-Data at 4c80761, read benchmarks/*/spec.json for the target profile, then run `bash tools/check_environment.sh` with TINKER_API_KEY and E2B_API_KEY set."
+ }
+}

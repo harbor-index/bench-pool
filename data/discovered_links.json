@@ -1067,6 +1067,9 @@
 "browsecompzh": {
 "from": null
 },
+"browseragent": {
+"from": null
+},
 "browseragents": {
 "from": null
 },
@@ -1413,6 +1416,9 @@
 "codingagentbenchmark": {
 "from": null
 },
+"codingagentmemory": {
+"from": null
+},
 "codingagentsecurity": {
 "from": null
 },
@@ -1427,6 +1433,10 @@
 },
 "colabench": {
 "from": null
+},
+"collabmem": {
+"from": "https://underline.io/lecture/164935-collabmem-a-diagnostic-benchmark-for-collaborative-memory-operations-in-multi-agent-llm-systems",
+"repo": "YuanchenBei/Mem-Gallery."
 },
 "colleague": {
 "from": null
@@ -1741,6 +1751,9 @@
 "cybersecurityctfs": {
 "from": null
 },
+"cyberthreatagentbench": {
+"from": null
+},
 "cypherturn": {
 "from": null
 },
@@ -2028,6 +2041,9 @@
 "from": null
 },
 "dynamath": {
+"from": null
+},
+"dynamicmcpbench": {
 "from": null
 },
 "dynarev": {
@@ -2886,6 +2902,10 @@
 "guardianbench": {
 "from": null
 },
+"gui360": {
+"from": "https://underline.io/lecture/166897-gui-360degree-a-comprehensive-dataset-and-benchmark-for-desktop-productivity-computer-using-agents",
+"repo": "2020-qqtcg/GUI-360"
+},
 "guirewardbench": {
 "from": null
 },
@@ -3648,6 +3668,9 @@
 "lattice": {
 "from": null
 },
+"launchingagentsaspersons": {
+"from": null
+},
 "launderbench": {
 "from": null
 },
@@ -3761,6 +3784,9 @@
 "from": null
 },
 "litmus": {
+"from": null
+},
+"litmusreagent": {
 "from": null
 },
 "livebench": {
@@ -5407,6 +5433,9 @@
 "ptcbench": {
 "from": null
 },
+"publicopinionmultiagent": {
+"from": null
+},
 "purposeshift": {
 "from": null
 },
@@ -6251,6 +6280,9 @@
 "from": null
 },
 "speechgym": {
+"from": null
+},
+"speechrole": {
 "from": null
 },
 "spider": {
@@ -7569,6 +7601,9 @@
 "from": null
 },
 "weightbench": {
+"from": null
+},
+"weightspaceprogramming": {
 "from": null
 },
 "weirdml": {

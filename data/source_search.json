@@ -1589,6 +1589,19 @@
 "title": "BrowseComp-ZH: Benchmarking Web Browsing Ability of Large Language Models in Chinese",
 "why": "Introduces BrowseComp-ZH, a Chinese web-browsing benchmark matching the entry's description."
 },
+"browseragent": {
+"arxiv": null,
+"considered": [
+"WebForge: Breaking the Realism-Reproducibility-Scalability Trilemma in Browser Agent Benchmark"
+],
+"date": "2026-11-21",
+"name": "Browser Agent Benchmark",
+"query": "Browser Agent Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper introduces WebForge, not a benchmark named Browser Agent Benchmark."
+},
 "browseruselinkedin": {
 "arxiv": null,
 "considered": [],
@@ -2052,6 +2065,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"codingagentmemory": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-21",
+"name": "Coding Agent Memory Benchmark",
+"query": "Coding Agent Memory Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "codingagentsecurity": {
 "arxiv": null,
 "considered": [],
@@ -2069,6 +2093,17 @@
 "date": "2026-11-20",
 "name": "CoEmbod",
 "query": "CoEmbod",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"collabmem": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-21",
+"name": "COLLABMEM",
+"query": "COLLABMEM",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -2905,6 +2940,20 @@
 "searched": "arXiv",
 "title": "DynaMath: A Dynamic Visual Benchmark for Evaluating Mathematical Reasoning Robustness of Vision Language Models",
 "why": "The paper introduces DynaMath, a dynamic visual benchmark for evaluating VLM mathematical reasoning robustness."
+},
+"dynamicmcpbench": {
+"arxiv": "2607.20531",
+"considered": [
+"DynamicMCPBench: A Trace-Grounded, Effect-Scored Benchmark for LLM Agents over Live MCP Servers"
+],
+"date": "2026-11-21",
+"name": "DynamicMCPBench",
+"published": "2026-07-10",
+"query": "DynamicMCPBench",
+"repo": null,
+"searched": "arXiv",
+"title": "DynamicMCPBench: A Trace-Grounded, Effect-Scored Benchmark for LLM Agents over Live MCP Servers",
+"why": "Paper introduces DynamicMCPBench, a trace-grounded benchmark for LLM agents over live MCP servers."
 },
 "ebrbench": {
 "arxiv": null,
@@ -5309,6 +5358,17 @@
 "title": null,
 "why": "None introduces a benchmark named Latency Budget for agent tool deadlines; papers only discuss latency concepts."
 },
+"launchingagentsaspersons": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-21",
+"name": "Launching Agents as Persons",
+"query": "Launching Agents as Persons",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "ledgerbench100": {
 "arxiv": null,
 "considered": [],
@@ -5509,6 +5569,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "None introduces a benchmark named Litigation; papers study litigation analysis, not tool-call legal assignments."
+},
+"litmusreagent": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-21",
+"name": "Litmus (Re)Agent",
+"query": "Litmus  Agent",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "livebench20241125": {
 "arxiv": null,
@@ -9547,6 +9618,20 @@
 "searched": "arXiv",
 "title": null,
 "why": "no arXiv paper mentions this name"
+},
+"speechrole": {
+"arxiv": "2508.02013",
+"considered": [
+"SpeechRole: A Large-Scale Dataset and Benchmark for Evaluating Speech Role-Playing Agents"
+],
+"date": "2026-11-21",
+"name": "SpeechRole",
+"published": "2025-08-04",
+"query": "SpeechRole",
+"repo": "yuhui1038/SpeechRole",
+"searched": "arXiv",
+"title": "SpeechRole: A Large-Scale Dataset and Benchmark for Evaluating Speech Role-Playing Agents",
+"why": "Introduces SpeechRole dataset and benchmark for evaluating speech role-playing agents."
 },
 "spider": {
 "arxiv": null,

@@ -1,0 +1,60 @@
+{
+ "schema_version": 1,
+ "build_id": "20261121T1529Z-4d798c23",
+ "generated_at": "2026-11-21T15:29:18Z",
+ "previous_build_id": "20261121T1523Z-fc657b8d",
+ "data_generated": "2026-11-21 15:29 UTC",
+ "counts": {
+  "benchmarks": 2549,
+  "events": 6
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261121T1529Z-4d798c23.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001230",
+   "name": "RSIGym",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001849",
+   "name": "Embodied Agent Arena",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000751",
+   "name": "LoopArena",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000456",
+   "name": "RSIBench-Data",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000474",
+   "name": "GameWorld",
+   "before": "unverified",
+   "after": "real"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000474",
+   "name": "GameWorld",
+   "before": null,
+   "after": "none"
+  }
+ ]
+}

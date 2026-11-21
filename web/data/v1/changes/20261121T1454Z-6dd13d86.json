@@ -1,0 +1,183 @@
+{
+ "schema_version": 1,
+ "build_id": "20261121T1454Z-6dd13d86",
+ "generated_at": "2026-11-21T14:54:41Z",
+ "previous_build_id": "20261120T1619Z-35c25a3f",
+ "data_generated": "2026-11-21 14:54 UTC",
+ "counts": {
+  "benchmarks": 2549,
+  "events": 11
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261121T1454Z-6dd13d86.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "discovered",
+   "pid": "bp-002778",
+   "name": "Coding Agent Memory Benchmark",
+   "after": {
+    "name": "Coding Agent Memory Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002786",
+   "name": "SpeechRole",
+   "after": {
+    "name": "SpeechRole",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002784",
+   "name": "Litmus (Re)Agent",
+   "after": {
+    "name": "Litmus (Re)Agent",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002783",
+   "name": "Launching Agents as Persons",
+   "after": {
+    "name": "Launching Agents as Persons",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002782",
+   "name": "GUI-360°",
+   "after": {
+    "name": "GUI-360°",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002781",
+   "name": "DynamicMCPBench",
+   "after": {
+    "name": "DynamicMCPBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002780",
+   "name": "CyberThreatAgent-Bench",
+   "after": {
+    "name": "CyberThreatAgent-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002779",
+   "name": "COLLABMEM",
+   "after": {
+    "name": "COLLABMEM",
+    "tier": null,
+    "covered": null,
+    "best": 69.6,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002776",
+   "name": "Weight-Space Programming Benchmark",
+   "after": {
+    "name": "Weight-Space Programming Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002785",
+   "name": "Public Opinion Multiagent Benchmark",
+   "after": {
+    "name": "Public Opinion Multiagent Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002777",
+   "name": "Browser Agent Benchmark",
+   "after": {
+    "name": "Browser Agent Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  }
+ ]
+}

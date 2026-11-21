@@ -1,0 +1,193 @@
+{
+ "schema_version": 1,
+ "build_id": "20261121T1523Z-fc657b8d",
+ "generated_at": "2026-11-21T15:23:54Z",
+ "previous_build_id": "20261121T1501Z-ca25b3f7",
+ "data_generated": "2026-11-21 15:23 UTC",
+ "counts": {
+  "benchmarks": 2549,
+  "events": 25
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261121T1523Z-fc657b8d.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002778",
+   "name": "Coding Agent Memory Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002786",
+   "name": "SpeechRole",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002784",
+   "name": "Litmus (Re)Agent",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002783",
+   "name": "Launching Agents as Persons",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002782",
+   "name": "GUI-360°",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002781",
+   "name": "DynamicMCPBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002780",
+   "name": "CyberThreatAgent-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002779",
+   "name": "COLLABMEM",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002776",
+   "name": "Weight-Space Programming Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002785",
+   "name": "Public Opinion Multiagent Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001693",
+   "name": "InteractiveWorld",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001230",
+   "name": "RSIGym",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001230",
+   "name": "RSIGym",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001849",
+   "name": "Embodied Agent Arena",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001849",
+   "name": "Embodied Agent Arena",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000751",
+   "name": "LoopArena",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000751",
+   "name": "LoopArena",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000456",
+   "name": "RSIBench-Data",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000456",
+   "name": "RSIBench-Data",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002777",
+   "name": "Browser Agent Benchmark",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000474",
+   "name": "GameWorld",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000474",
+   "name": "GameWorld",
+   "before": null,
+   "after": "unverified"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000383",
+   "name": "Jax Bench",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000882",
+   "name": "Deep Research Bench II",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000315",
+   "name": "LiveTradeBench",
+   "before": "hold",
+   "after": "no"
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "build_id": "20261121T1529Z-4d798c23",
+ "pid": "bp-000751",
+ "name": "LoopArena",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000751",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic, real repository tasks, executable scoring with 36.25% best; no blocking rule fires and Real, Solid and Difficult are strong.",
+  "risks": [
+   "Release is partial: upstream task data and images must be fetched externally",
+   "Top controllers cluster within 2.5 points on full tasks, limiting top-end resolution"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-21",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "AMAP-ML/LoopArena",
+    "url": "https://github.com/AMAP-ML/LoopArena",
+    "commit": "a51c3fa889a9e9a8f130b4bb8ba3bf8821963775",
+    "license": "Apache-2.0",
+    "files": 1186,
+    "pushed": "2026-10-15"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:AMAP-ML/LoopArena",
+   "quote": "**October 14, 2026:** We expanded LoopArena from 90 to **160 Type I questions** and from 27 to **80 paired Type II/III coding tasks**. The coding tasks span SCBench, BeyondSWE, and LoopsBench.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": null,
+   "redistribution_questions": [
+    "Third-party task material retains its own terms; which terms apply per source (SCBench, BeyondSWE, LoopsBench) is not stated here.",
+    "Large upstream repositories and container images are obtained from their original sources, so redistribution of pinned task data and images is not addressed."
+   ],
+   "quote": "LoopArena code and documentation are licensed under [Apache-2.0](LICENSE).\nThird-party task material retains its own terms; see\n[third-party notices](THIRD_PARTY_NOTICES.md).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 80,
+   "unit": "task",
+   "manifest_path": "benchmarks/type3/cases/<case>/evaluator_plans/task.json",
+   "splits": [
+    "Type I",
+    "Type II",
+    "Type III"
+   ],
+   "pilot": "benchmarks/type3/cases/tri80-loopsbench-task_frama_c",
+   "quote": "Type II and III are paired across **21 SCBench**, **29 BeyondSWE**, and\n**30 LoopsBench** tasks.",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "src/looparena/commands/evaluate.py",
+   "full_credit": "Source-native terminal evaluation must pass: LoopsBench all source unit tests pass (\"pass_policy\": \"all-source-unit-tests-pass\"), BeyondSWE reward equals one, and SCBench primary Core checks pass with protocol and budget validity required.",
+   "quote": "The coding settings retain Controller–Worker interaction and\nuse source-native terminal evaluation. For SCBench, the primary success\ncriterion is Core checks; protocol and budget validity are required for every\nsource.",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "No-control and fixed-control policies are reported as references;\nthey are not included in the Controller-model ranking.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "Docker runtimes for Type II/III tasks"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "OpenAI-compatible model endpoint for the Controller (OPENAI_BASE_URL)",
+    "model-gateway dependency installed via .[gateway]",
+    "task container networks declared per case as \"network\": \"bridge\" or \"network\": \"host\""
+   ],
+   "credentials": [
+    "OPENAI_API_KEY"
+   ],
+   "exceptions": [
+    "BeyondSWE formal evaluation must run in the live solve container after model access ends; a sealed workspace alone does not retain container runtime state",
+    "Type II/III require the pinned upstream task data, starting workspaces, and Docker runtimes, with large upstream repositories and container images obtained from their original sources"
+   ],
+   "quote": "Type II/III require the pinned upstream task data, starting workspaces, and\nDocker runtimes. Follow [data preparation and execution](docs/setup.md) for\nsource revisions, local paths, preparation commands, and single-case or panel\nruns. Large upstream repositories and container images are obtained from their\noriginal sources.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Does the adapter cover only the coding settings Type II/III, or also Type I?",
+   "How are the pinned upstream task data and starting workspaces obtained?",
+   "How is the sealed solve workspace and solve_manifest.json produced first?",
+   "Which statuses and reasons count as valid attempts versus infrastructure failures?"
+  ],
+  "next_action": "Clone AMAP-ML/LoopArena at a51c3fa889a9e9a8f130b4bb8ba3bf8821963775 and run the LoopsBench pilot case's evaluator plan to see the expected adapter contract."
+ }
+}

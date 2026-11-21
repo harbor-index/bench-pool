@@ -1,0 +1,4 @@
+{"connector":"github","date":"2026-11-21","evidence_items":[
+{"source":"GitHub search","title":"rivet-dev/code-mode-language-benchmark","url":"https://github.com/rivet-dev/code-mode-language-benchmark","summary":"Benchmarks of embeddable scripting runtimes and separate processes for LLM code mode","published_at":"2026-11-19T20:43:35Z","authors":[],"organizations":["rivet-dev"],"artifact_urls":[],"metrics":{"stars":13},"categories":["benchmark"],"source_tags":[],"event_kind":"released"},
+{"source":"GitHub search","title":"Tencent/GroupAssistBench","url":"https://github.com/Tencent/GroupAssistBench","summary":"One Assistant, Many Memories: Benchmarking Real-World Group Assistance When Recall Is Not Enough","published_at":"2026-11-04T11:47:25Z","authors":[],"organizations":["Tencent"],"artifact_urls":[],"metrics":{"stars":11},"categories":["benchmark"],"source_tags":[],"event_kind":"released"}
+]}
