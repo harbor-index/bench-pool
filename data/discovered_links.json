@@ -408,6 +408,9 @@
 "aiagent": {
 "from": null
 },
+"aidecathlon": {
+"from": null
+},
 "aider": {
 "from": null
 },
@@ -2954,6 +2957,9 @@
 "harnessoptbench": {
 "from": null
 },
+"harnessreadiness": {
+"from": null
+},
 "harnessrisk": {
 "from": null
 },
@@ -3003,6 +3009,9 @@
 "from": null
 },
 "healthcareescalation": {
+"from": null
+},
+"healthcareescalationbench": {
 "from": null
 },
 "healthjevlongitudinal": {
@@ -3417,6 +3426,9 @@
 "from": "https://inferencebench.ai/",
 "repo": "aisa-group/InferenceBench"
 },
+"inferencerouting": {
+"from": null
+},
 "infinitebenchenmc": {
 "from": null
 },
@@ -3721,6 +3733,9 @@
 "from": null
 },
 "lexagenthallu": {
+"from": null
+},
+"lexdyedefinition": {
 "from": null
 },
 "liberodisturb": {
@@ -4615,6 +4630,9 @@
 "from": null
 },
 "multiagentmemoryinconsistency": {
+"from": null
+},
+"multiagentvesselnavigation": {
 "from": null
 },
 "multichallenge": {
@@ -5724,6 +5742,9 @@
 "from": null
 },
 "retailbridge": {
+"from": null
+},
+"retailtariffcompliance": {
 "from": null
 },
 "reuf2f": {

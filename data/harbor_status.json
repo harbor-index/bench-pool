@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-21",
+ "as_of": "2026-11-22",
  "registry": [
   {
    "name": "aider-polyglot",
@@ -497,7 +497,6 @@
   "harbor/hello-world",
   "harveyai/lab",
   "ibragim-badertdinov/swe-rebench-07-2026",
-  "last-secure-code-benchmark/last-secure-code-benchmark",
   "letta-ai/frontier-memory",
   "mercor/apex-agents-1-1",
   "openthoughts/openthoughts-tblite",
@@ -506,6 +505,7 @@
   "scale-ai/swe-atlas-tw",
   "scale-ai/swe-bench-pro",
   "sierra-research/tau3-bench",
+  "skill2env/skill2env",
   "swe-bench/swe-bench-verified",
   "swe-rebench/swe-rebench-leaderboard",
   "terminal-bench-science/terminal-bench-science",
@@ -614,15 +614,6 @@
    "description": "111 hard SWE-rebench leaderboard tasks from the July 2026 snapshot across Go, Java, Python, Rust, and TypeScript",
    "links": [
     "https://arxiv.org/abs/2505.20411"
-   ]
-  },
-  "last-secure-code-benchmark/last-secure-code-benchmark": {
-   "checked": "2026-11-17",
-   "tasks": 450,
-   "version": "3.0.1",
-   "description": "Last Secure Code Benchmark (LSCBench): 450 secure code generation tasks from 150 vulnerability scenarios, each at function, file, and repository granularity, in seven la…",
-   "links": [
-    "https://arxiv.org/abs/2610.14766"
    ]
   },
   "letta-ai/frontier-memory": {
@@ -764,6 +755,15 @@
    "version": "2.0.2",
    "description": "BIRD Mini-Dev: 500 aligned questions across SQLite, MySQL and PostgreSQL (1,500 dialect-specific tasks).",
    "links": []
+  },
+  "skill2env/skill2env": {
+   "checked": "2026-11-22",
+   "tasks": 7496,
+   "version": "1.0.1",
+   "description": "Terminal Agent dataset converted from OSS Agent Skills and given back to the public.",
+   "links": [
+    "https://github.com/NVlabs/Skill2Env"
+   ]
   }
  }
 }

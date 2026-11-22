@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-21",
+ "as_of": "2026-11-22",
  "source": "https://epoch.ai/data/benchmark_data.zip",
  "licence": "CC BY 4.0, Epoch AI",
  "benchmarks": [
@@ -905,10 +905,10 @@
    "in_index": true,
    "file": "ebr_bench.csv",
    "top": {
-    "score": 0.9238,
-    "model": "gpt-6.2-astra_max",
-    "org": "OpenAI",
-    "date": "2026-11-17"
+    "score": 0.981,
+    "model": "gemini-4-neon_xhigh",
+    "org": "Google DeepMind",
+    "date": "2026-11-18"
    },
    "history": [
     {
@@ -980,10 +980,15 @@
      "date": "2026-11-17",
      "score": 0.9238,
      "model": "gpt-6.2-astra_max"
+    },
+    {
+     "date": "2026-11-18",
+     "score": 0.981,
+     "model": "gemini-4-neon_xhigh"
     }
    ],
-   "velocity": 6.65,
-   "models": 34,
+   "velocity": 7.12,
+   "models": 35,
    "page": {
     "slug": "ebr-bench",
     "checked": "2026-11-17",
@@ -3234,7 +3239,7 @@
      "model": "Fable 5.1 (Max)"
     }
    ],
-   "velocity": 2.94,
+   "velocity": 2.93,
    "models": 22,
    "page": {
     "slug": "posttrainbench",
@@ -3625,7 +3630,7 @@
      "model": "Claude Opus 5 (max)"
     }
    ],
-   "velocity": 2.43,
+   "velocity": 2.42,
    "models": 14,
    "page": {
     "slug": "osworld-2-0",
@@ -3953,7 +3958,7 @@
      "model": "Claude Opus 5.5"
     }
    ],
-   "velocity": 2.95,
+   "velocity": 2.94,
    "models": 46,
    "page": {
     "slug": "frontiercode",
@@ -4375,7 +4380,7 @@
      "model": "claude-fable-5-2_max"
     }
    ],
-   "velocity": 5.19,
+   "velocity": 5.17,
    "models": 42,
    "page": {
     "slug": "furniture-assembly",
@@ -4446,7 +4451,7 @@
      "model": "Claude Fable 5.2"
     }
    ],
-   "velocity": 4.24,
+   "velocity": 4.21,
    "models": 25,
    "page": {
     "slug": "frontierswe",
@@ -4812,7 +4817,7 @@
      "model": "Claude Fable 5.2 (xhigh)"
     }
    ],
-   "velocity": 4.89,
+   "velocity": 4.88,
    "models": 27,
    "page": {
     "slug": "weirdml-v3",
@@ -4891,7 +4896,7 @@
      "model": "gpt-6.2-astra_max"
     }
    ],
-   "velocity": 14.78,
+   "velocity": 14.6,
    "models": 12,
    "page": {
     "slug": "spireclimb",

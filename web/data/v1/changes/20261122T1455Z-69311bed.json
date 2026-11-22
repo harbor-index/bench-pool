@@ -1,0 +1,81 @@
+{
+ "schema_version": 1,
+ "build_id": "20261122T1455Z-69311bed",
+ "generated_at": "2026-11-22T14:55:32Z",
+ "previous_build_id": "20261122T1450Z-0daec5ee",
+ "data_generated": "2026-11-22 14:55 UTC",
+ "counts": {
+  "benchmarks": 2557,
+  "events": 9
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261122T1455Z-69311bed.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "score_changed",
+   "pid": "bp-001014",
+   "name": "OmniEchoBench",
+   "before": 43.9,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000925",
+   "name": "BVB",
+   "before": 76.4,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000903",
+   "name": "MindTopo",
+   "before": 59.5,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000736",
+   "name": "DuMateBench",
+   "before": 81.5,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000718",
+   "name": "small-ow-agent-bench",
+   "before": 83.8,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000703",
+   "name": "MobilePA-Bench",
+   "before": 77.0,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000676",
+   "name": "SWE-bench Science",
+   "before": 50.4,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000728",
+   "name": "MineExplorer",
+   "before": 41.1,
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000882",
+   "name": "Deep Research Bench II",
+   "before": 64.4,
+   "after": null
+  }
+ ]
+}

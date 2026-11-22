@@ -1,0 +1,109 @@
+{
+ "schema_version": 1,
+ "build_id": "20261122T1607Z-6f93d0a3",
+ "pid": "bp-001250",
+ "name": "RobotWorld",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001250",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic simulation benchmark run through Docker with executable state checkers; tasks come from 20 real robotics sources, top score is only 19%, so Real and Solid are strong and it is unsolved.",
+  "risks": [
+   "Simulator images and assets need authorisation or licences",
+   "63 of 84 tasks were never solved by any model; reference coverage incomplete",
+   "One episode per model-task pair, so no run-to-run variance"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-22",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "robotworldai/robotworld",
+    "url": "https://github.com/robotworldai/robotworld",
+    "commit": "9e39068f49b5486fa39993982da2591a27a85f78",
+    "license": null,
+    "files": 37081,
+    "pushed": "2026-10-29"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:robotworldai/robotworld",
+   "quote": "This source snapshot registers **84 tasks across 20 benchmark integrations**.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "Which licence applies, given that a top-level licence for RobotWorld-owned code has not yet been selected?",
+    "Can prebuilt images be redistributed, given that access currently requires authorisation and some legacy profiles need additional images?",
+    "Can third-party code, assets and simulator images be redistributed, given that they retain their own licences and BEHAVIOR assets and decryption keys are not redistributed?"
+   ],
+   "quote": "Third-party code and assets retain their own licences. BEHAVIOR assets and decryption keys are not redistributed. **A top-level licence for RobotWorld-owned code has not yet been selected.**",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 84,
+   "unit": "task",
+   "manifest_path": "environment/evaluation/suites.json",
+   "splits": [],
+   "pilot": "CloseDrawer",
+   "quote": "Start with one RoboCasa task before provisioning the full suite. You need a Linux/NVIDIA host, Docker with NVIDIA Container Toolkit, Python 3.11+, and the pinned build dependencies.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "python -m environment.evaluation.rollouts",
+   "full_credit": "The task evaluator's independent assessment of the resulting trajectory: a valid task failure is `false`, infrastructure or indeterminate outcomes are unscored (`null`).",
+   "quote": "Task evaluators assess the resulting trajectories independently of the agent's completion claims.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "Historical trajectories are not a fresh validation of this source release; validate your chosen environment before scaling.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "yes",
+   "network_or_api": [
+    "a reachable streaming Responses API endpoint with image and function-call support",
+    "pinned simulator images and assets downloads"
+   ],
+   "credentials": [
+    "Hugging Face account for asset access (`hf auth login`)",
+    "Model API key read into `WORLD_MODEL_API_KEY`",
+    "authorisation for prebuilt images"
+   ],
+   "exceptions": [
+    "RTX 5090 has historical partial-task validation with experimental Isaac Sim 6.0.1 profiles",
+    "A100/H100 are not supported by Isaac Sim although they can host a separate model inference service",
+    "some legacy profiles need additional images",
+    "BEHAVIOR assets and decryption keys are not redistributed"
+   ],
+   "quote": "You need a Linux/NVIDIA host, Docker with NVIDIA Container Toolkit, Python 3.11+, and the pinned build dependencies. **L40S 48GB is the current host reference, not an all-task compatibility guarantee.**",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Who selects the licence, given no top-level licence is chosen?",
+   "How does an adapter obtain authorisation for prebuilt images and pinned simulator assets?",
+   "Which GPU, driver and image combination is actually verified, since only L40S is a host reference?",
+   "Where does the verifier live per task and how does scoring profile or native scoring apply?"
+  ],
+  "next_action": "Run the single RoboCasa smoke task (`bash scripts/run_robocasa.sh run --tasks CloseDrawer --rollouts 1`) after restoring pinned sources and assets."
+ }
+}

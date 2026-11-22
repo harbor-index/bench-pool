@@ -1,0 +1,123 @@
+{
+ "schema_version": 1,
+ "build_id": "20261122T1550Z-0304266d",
+ "generated_at": "2026-11-22T15:50:44Z",
+ "previous_build_id": "20261122T1455Z-69311bed",
+ "data_generated": "2026-11-22 15:50 UTC",
+ "counts": {
+  "benchmarks": 2557,
+  "events": 15
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261122T1550Z-0304266d.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002788",
+   "name": "Harness Readiness Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002793",
+   "name": "Retail-Tariff Compliance Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002792",
+   "name": "Multi-Agent Vessel Navigation Benchmark",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002791",
+   "name": "LexDye Definition Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002790",
+   "name": "Inference Routing Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002789",
+   "name": "healthcare-escalation-bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002787",
+   "name": "AI Decathlon",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001300",
+   "name": "cwe-bench-v1",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001250",
+   "name": "RobotWorld",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001250",
+   "name": "RobotWorld",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001522",
+   "name": "DORA",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001522",
+   "name": "DORA",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000799",
+   "name": "AutoMat",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000799",
+   "name": "AutoMat",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000385",
+   "name": "SWE-Bench Mobile",
+   "before": "hold",
+   "after": "no"
+  }
+ ]
+}

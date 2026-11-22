@@ -4263,6 +4263,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"harnessreadiness": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-22",
+"name": "Harness Readiness Benchmark",
+"query": "Harness Readiness Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "harveylabs": {
 "arxiv": null,
 "considered": [
@@ -4384,6 +4395,17 @@
 "date": "2026-11-15",
 "name": "Healthcare Action Authorization Benchmark",
 "query": "Healthcare Action Authorization Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"healthcareescalationbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-22",
+"name": "healthcare-escalation-bench",
+"query": "healthcare-escalation-bench",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -5095,6 +5117,17 @@
 "title": "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
 "why": "Introduces INCLUDE, a multilingual regional-knowledge evaluation suite benchmark."
 },
+"inferencerouting": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-22",
+"name": "Inference Routing Benchmark",
+"query": "Inference Routing Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "infinitebenchenmc": {
 "arxiv": null,
 "considered": [],
@@ -5432,6 +5465,17 @@
 "date": "2026-11-16",
 "name": "LEMMA Long-Horizon Rewrite Benchmark",
 "query": "LEMMA Long-Horizon Rewrite Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"lexdyedefinition": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-22",
+"name": "LexDye Definition Benchmark",
+"query": "LexDye Definition Benchmark",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -7242,6 +7286,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"multiagentvesselnavigation": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-22",
+"name": "Multi-Agent Vessel Navigation Benchmark",
+"query": "Multi-Agent Vessel Navigation Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "multichallenge": {
 "arxiv": null,
 "considered": [
@@ -8939,6 +8994,17 @@
 "date": "2026-11-17",
 "name": "Responsible Agent Workflow Evaluation",
 "query": "Responsible Agent Workflow Evaluation",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"retailtariffcompliance": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-22",
+"name": "Retail-Tariff Compliance Benchmark",
+"query": "Retail-Tariff Compliance Benchmark",
 "repo": null,
 "searched": "arXiv",
 "title": null,

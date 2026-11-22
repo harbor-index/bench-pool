@@ -1,0 +1,122 @@
+{
+ "schema_version": 1,
+ "build_id": "20261122T1607Z-6f93d0a3",
+ "pid": "bp-000799",
+ "name": "AutoMat",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000799",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic benchmark of expert-curated tasks with a validated LLM judge and best success rate 53%; no dimension weak, Real and Solid strong.",
+  "risks": [
+   "HPC-scale compute needed: 72-hour jobs, Slurm, GPU, heavy simulation toolchains",
+   "Claims not independently re-reproduced; many source papers involve co-authors",
+   "Narrow coverage: a single scientific domain, 85 claims"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-22",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "JHU-CLSP/AutoMat",
+    "url": "https://github.com/JHU-CLSP/AutoMat",
+    "commit": "c16a60b0a65ef065ba4715a4e8146baf95327c92",
+    "license": "MIT",
+    "files": 36,
+    "pushed": "2026-06-16"
+   },
+   {
+    "kind": "github",
+    "id": "OpenHands/OpenHands-CLI",
+    "url": "https://github.com/OpenHands/OpenHands-CLI",
+    "commit": "283c6ac3610f4299f405f7389f65766dcb83e12a",
+    "license": "MIT",
+    "files": 415,
+    "pushed": "2026-10-22"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:jhu-clsp/AutoMat",
+   "quote": "The benchmark claims are **not bundled with this code**. They are distributed\nas a gated Hugging Face dataset: [`jhu-clsp/AutoMat`](https://huggingface.co/datasets/jhu-clsp/AutoMat).",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Is the gated Hugging Face claim data licensed for redistribution inside a container image?",
+    "Source paper PDFs are deliberately not redistributed; how does the adapter obtain them for each claim?",
+    "Does gated access approval cover mirroring the claims into a benchmark runtime?"
+   ],
+   "quote": "To respect publisher copyright, the\nbenchmark does **not** redistribute paywalled paper PDFs — you are expected to\nobtain each paper yourself through your institutional subscription (or the\npublisher's site / an open-access copy).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 74,
+   "unit": "claim",
+   "manifest_path": "manifest.parquet",
+   "splits": [],
+   "pilot": "claims/AUTOMAT-0007",
+   "quote": "The 74 published claims come from 7 papers (several claims per paper).",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "llm_judge",
+   "entry_point": "harness/evaluators/llm_repro_evaluator.py",
+   "full_credit": "An LLM evaluator judges the run as reproducing the claim from the trace log, artifact contents and analysis report; no rubric file or numeric threshold is given.",
+   "quote": "`automat.py` runs a holistic LLM-based reproducibility evaluation\n(`harness/evaluators/llm_repro_evaluator.py`) that scores the agent's run from\nthe trace log, artifact contents, and analysis report — no per-claim rubric\nfile is required.",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "claims/<CLAIM_DIR>/reference/impl/src/ (with reference/reproduction.txt)",
+   "command": null,
+   "quote": "reference/\n      reproduction.txt\n      impl/\n        src/",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "Optional shared Docling PDF parsing service (scripts/pdf_parse_service.py)"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "Anthropic/OpenAI/Gemini model endpoints via the Claude Agent SDK",
+    "Kimi Anthropic-compatible backend for Claude Code",
+    "Gated Hugging Face dataset download (hf download)"
+   ],
+   "credentials": [
+    "ANTHROPIC_API_KEY",
+    "OPENAI_API_KEY",
+    "GOOGLE_API_KEY",
+    "Hugging Face dataset access approval and `hf auth login`",
+    "AUTOMAT_PDF_PARSE_SERVICE_TOKEN (optional bearer token)"
+   ],
+   "exceptions": [
+    "Molecular-dynamics claims may need Python 3.11 instead of 3.12",
+    "PDF parsing can be GPU-backed via the shared Docling parser service"
+   ],
+   "quote": "If not passed via CLI, `automat.py` resolves keys from env vars:\n- `anthropic` -> `ANTHROPIC_API_KEY`\n- `openai` -> `OPENAI_API_KEY`\n- `gemini` -> `GOOGLE_API_KEY`",
+   "evidence": "reported"
+  },
+  "questions": [
+   "How does the container get the gated Hugging Face claims at build or run time?",
+   "Where does each agent get the source paper PDF that is not redistributed?",
+   "Is a GPU or the shared Docling PDF parser service needed for the agent's ParsePDF tool?",
+   "Which provider keys and evaluator model must be set for the LLM reproducibility evaluator?"
+  ],
+  "next_action": "Download the gated `claims/AUTOMAT-0007` directory from hf:jhu-clsp/AutoMat, drop the source paper PDF into its `agent_view/paper/`, then run `python automat.py --claim-path claims/AUTOMAT-0007 --agen"
+ }
+}
