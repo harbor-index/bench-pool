@@ -1,0 +1,198 @@
+{
+ "schema_version": 1,
+ "build_id": "20261123T1844Z-fa27a206",
+ "generated_at": "2026-11-23T18:44:21Z",
+ "previous_build_id": "20261122T1607Z-6f93d0a3",
+ "data_generated": "2026-11-23 18:44 UTC",
+ "counts": {
+  "benchmarks": 2569,
+  "events": 12
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261123T1844Z-fa27a206.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "discovered",
+   "pid": "bp-002804",
+   "name": "UAV Agent Mixed120",
+   "after": {
+    "name": "UAV Agent Mixed120",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002796",
+   "name": "DialFork-Audio Challenge 2026",
+   "after": {
+    "name": "DialFork-Audio Challenge 2026",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002799",
+   "name": "LongAgent-ReConBench-mini",
+   "after": {
+    "name": "LongAgent-ReConBench-mini",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002801",
+   "name": "NoPeBench",
+   "after": {
+    "name": "NoPeBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002800",
+   "name": "Mem-X",
+   "after": {
+    "name": "Mem-X",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002795",
+   "name": "CodeReviewBench",
+   "after": {
+    "name": "CodeReviewBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002794",
+   "name": "AutoOntologyBench",
+   "after": {
+    "name": "AutoOntologyBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002798",
+   "name": "epistemic-guard",
+   "after": {
+    "name": "epistemic-guard",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002797",
+   "name": "DynamisBench-Soccer",
+   "after": {
+    "name": "DynamisBench-Soccer",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002802",
+   "name": "ReasonText",
+   "after": {
+    "name": "ReasonText",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002803",
+   "name": "S3-Bench",
+   "after": {
+    "name": "S3-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002805",
+   "name": "VideoTemp-Bench",
+   "after": {
+    "name": "VideoTemp-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  }
+ ]
+}

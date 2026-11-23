@@ -768,6 +768,9 @@
 "autonomoussciencebench": {
 "from": null
 },
+"autoontologybench": {
+"from": null
+},
 "autoragbench": {
 "from": null
 },
@@ -1413,6 +1416,9 @@
 "codepde": {
 "from": null
 },
+"codereviewbench": {
+"from": null
+},
 "codeskillsbench": {
 "from": null
 },
@@ -1916,6 +1922,9 @@
 "diagrammmu": {
 "from": null
 },
+"dialforkaudiochallenge2026": {
+"from": null
+},
 "dibbench": {
 "from": null
 },
@@ -2047,6 +2056,9 @@
 "from": null
 },
 "dynamicmcpbench": {
+"from": null
+},
+"dynamisbenchsoccer": {
 "from": null
 },
 "dynarev": {
@@ -2205,6 +2217,9 @@
 "from": null
 },
 "episembench": {
+"from": null
+},
+"epistemicguard": {
 "from": null
 },
 "eqbench": {
@@ -3280,6 +3295,9 @@
 "id:arxiv-2611-22971": {
 "from": null
 },
+"id:arxiv-2611-27166": {
+"from": null
+},
 "id:r-0d426f76fc": {
 "from": null
 },
@@ -3904,6 +3922,9 @@
 "from": null
 },
 "logloc": {
+"from": null
+},
+"longagentreconbenchmini": {
 "from": null
 },
 "longbench2": {
@@ -5890,6 +5911,9 @@
 "ruverbench": {
 "from": null
 },
+"s3bench": {
+"from": null
+},
 "s3gym": {
 "from": null
 },
@@ -7234,6 +7258,9 @@
 "tydiqa": {
 "from": null
 },
+"uavagentmixed120": {
+"from": null
+},
 "uavdualcog": {
 "from": null
 },
@@ -7468,6 +7495,9 @@
 "from": null
 },
 "videosimpleqa": {
+"from": null
+},
+"videotempbench": {
 "from": null
 },
 "vidhalloc": {

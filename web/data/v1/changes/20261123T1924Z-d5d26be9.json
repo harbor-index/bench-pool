@@ -1,0 +1,207 @@
+{
+ "schema_version": 1,
+ "build_id": "20261123T1924Z-d5d26be9",
+ "generated_at": "2026-11-23T19:24:15Z",
+ "previous_build_id": "20261123T1855Z-23467003",
+ "data_generated": "2026-11-23 19:24 UTC",
+ "counts": {
+  "benchmarks": 2569,
+  "events": 27
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261123T1924Z-d5d26be9.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002804",
+   "name": "UAV Agent Mixed120",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002796",
+   "name": "DialFork-Audio Challenge 2026",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002799",
+   "name": "LongAgent-ReConBench-mini",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002801",
+   "name": "NoPeBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002800",
+   "name": "Mem-X",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002800",
+   "name": "Mem-X",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002795",
+   "name": "CodeReviewBench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002794",
+   "name": "AutoOntologyBench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002794",
+   "name": "AutoOntologyBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002798",
+   "name": "epistemic-guard",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002797",
+   "name": "DynamisBench-Soccer",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002802",
+   "name": "ReasonText",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001782",
+   "name": "Switch-SWE",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001782",
+   "name": "Switch-SWE",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001659",
+   "name": "EmbodiedLab",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001659",
+   "name": "EmbodiedLab",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001505",
+   "name": "SpatialScout",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001505",
+   "name": "SpatialScout",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001610",
+   "name": "OpenDS-World",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001313",
+   "name": "SoftwareGym-Bench",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000938",
+   "name": "Blindspot",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000531",
+   "name": "DiagChain",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000531",
+   "name": "DiagChain",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000451",
+   "name": "HANDBOOK.md",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000451",
+   "name": "HANDBOOK.md",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002803",
+   "name": "S3-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002805",
+   "name": "VideoTemp-Bench",
+   "before": null,
+   "after": "hold"
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-22",
+ "as_of": "2026-11-23",
  "source": "https://epoch.ai/data/benchmark_data.zip",
  "licence": "CC BY 4.0, Epoch AI",
  "benchmarks": [
@@ -140,7 +140,7 @@
     }
    ],
    "velocity": 0.35,
-   "models": 342,
+   "models": 343,
    "page": {
     "slug": "gpqa-diamond",
     "checked": "2026-11-17",
@@ -583,9 +583,9 @@
    "file": "otis_mock_aime_2024_2025.csv",
    "top": {
     "score": 1.0,
-    "model": "gemini-4-neon_xhigh",
-    "org": "Google DeepMind",
-    "date": "2026-11-18"
+    "model": "qwen4-max_xhigh",
+    "org": "Alibaba",
+    "date": "2026-11-16"
    },
    "history": [
     {
@@ -695,7 +695,7 @@
     }
    ],
    "velocity": 0.72,
-   "models": 319,
+   "models": 321,
    "page": {
     "slug": "otis-mock-aime-2024-2025",
     "checked": "2026-11-17",
@@ -796,7 +796,7 @@
     }
    ],
    "velocity": 3.66,
-   "models": 106,
+   "models": 107,
    "page": {
     "slug": "simpleqa-verified",
     "checked": "2026-11-17",
@@ -885,7 +885,7 @@
     }
    ],
    "velocity": 2.92,
-   "models": 167,
+   "models": 169,
    "page": {
     "slug": "chess-puzzles",
     "checked": "2026-11-17",
@@ -988,7 +988,7 @@
     }
    ],
    "velocity": 7.12,
-   "models": 35,
+   "models": 37,
    "page": {
     "slug": "ebr-bench",
     "checked": "2026-11-17",
@@ -1064,7 +1064,7 @@
     }
    ],
    "velocity": 5.5,
-   "models": 149,
+   "models": 151,
    "page": {
     "slug": "mystery-game-puzzles",
     "checked": "2026-11-17",
@@ -3239,7 +3239,7 @@
      "model": "Fable 5.1 (Max)"
     }
    ],
-   "velocity": 2.93,
+   "velocity": 2.92,
    "models": 22,
    "page": {
     "slug": "posttrainbench",
@@ -3630,7 +3630,7 @@
      "model": "Claude Opus 5 (max)"
     }
    ],
-   "velocity": 2.42,
+   "velocity": 2.41,
    "models": 14,
    "page": {
     "slug": "osworld-2-0",
@@ -3958,7 +3958,7 @@
      "model": "Claude Opus 5.5"
     }
    ],
-   "velocity": 2.94,
+   "velocity": 2.93,
    "models": 46,
    "page": {
     "slug": "frontiercode",
@@ -4380,8 +4380,8 @@
      "model": "claude-fable-5-2_max"
     }
    ],
-   "velocity": 5.17,
-   "models": 42,
+   "velocity": 5.16,
+   "models": 44,
    "page": {
     "slug": "furniture-assembly",
     "checked": "2026-11-17",
@@ -4451,7 +4451,7 @@
      "model": "Claude Fable 5.2"
     }
    ],
-   "velocity": 4.21,
+   "velocity": 4.19,
    "models": 25,
    "page": {
     "slug": "frontierswe",
@@ -4817,7 +4817,7 @@
      "model": "Claude Fable 5.2 (xhigh)"
     }
    ],
-   "velocity": 4.88,
+   "velocity": 4.86,
    "models": 27,
    "page": {
     "slug": "weirdml-v3",
@@ -4896,8 +4896,8 @@
      "model": "gpt-6.2-astra_max"
     }
    ],
-   "velocity": 14.6,
-   "models": 12,
+   "velocity": 14.42,
+   "models": 15,
    "page": {
     "slug": "spireclimb",
     "checked": "2026-11-17",

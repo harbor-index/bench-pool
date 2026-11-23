@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "build_id": "20261122T1607Z-6f93d0a3",
+ "build_id": "20261123T1931Z-ae2ce6bd",
  "pid": "bp-000210",
  "name": "MLE-Bench",
  "aliases": [
@@ -22,12 +22,12 @@
   "family": []
  },
  "best_score": {
-  "pct": 64.4,
-  "source": "own leaderboard",
-  "model": "Famou-Agent 2.0",
-  "as_of": "2026-11-11",
-  "systems": 28,
-  "url": "https://github.com/openai/mle-bench"
+  "pct": 63.9,
+  "source": "LLM Stats",
+  "model": "Gemini 3.6 Flash",
+  "as_of": "2026-08-17",
+  "systems": 2,
+  "url": "https://llm-stats.com/benchmarks/mle-bench"
  },
  "readiness": {
   "date": "2026-11-20",

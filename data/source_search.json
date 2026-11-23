@@ -2792,6 +2792,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"dialforkaudiochallenge2026": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-23",
+"name": "DialFork-Audio Challenge 2026",
+"query": "DialFork-Audio Challenge 2026",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "docvqa": {
 "arxiv": "2007.00398",
 "considered": [
@@ -5793,6 +5804,17 @@
 "searched": "arXiv",
 "title": "LOCA-bench: Benchmarking Language Agents Under Controllable and Extreme Context Growth",
 "why": "Introduces LOCA-bench, the long-context agent benchmark; 256k is its context setting."
+},
+"longagentreconbenchmini": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-23",
+"name": "LongAgent-ReConBench-mini",
+"query": "LongAgent-ReConBench-mini",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "longbench2": {
 "arxiv": "2412.15204",
@@ -11555,6 +11577,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "All listed papers only use or mention TyDiQA; none introduces the benchmark."
+},
+"uavagentmixed120": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-23",
+"name": "UAV Agent Mixed120",
+"query": "UAV Agent Mixed120",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "uavvisloc": {
 "arxiv": "2405.11936",

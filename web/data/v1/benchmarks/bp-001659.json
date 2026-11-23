@@ -1,0 +1,106 @@
+{
+ "schema_version": 1,
+ "build_id": "20261123T1931Z-ae2ce6bd",
+ "pid": "bp-001659",
+ "name": "EmbodiedLab",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001659",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now unknown, recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "Hosting needs a 24GB NVIDIA GPU and NGC account for Isaac Sim",
+   "T1 additionally needs SAM3 and cuRobo services and Hugging Face access"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-23",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "HexaFuture/EmbodiedLab",
+    "url": "https://github.com/HexaFuture/EmbodiedLab",
+    "commit": "953201ade6f10f439b36daa269de2f82df085906",
+    "license": "Apache-2.0",
+    "files": 442,
+    "pushed": "2026-11-20"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:HexaFuture/EmbodiedLab",
+   "quote": "=== github: HexaFuture/EmbodiedLab (commit/revision 953201ade6f10f439b36daa269de2f82df085906, licence field: Apache-2.0) ===",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does the Apache-2.0 licence cover the assets, scenes, docs images and the experiment task cards, or only the code?",
+    "Can the NVIDIA Isaac Sim base image and the SAM3 / cuRobo sources built at pinned commits be redistributed in an adapter image?",
+    "Do the hidden parameters, sealed episodes and prewarmed optimum values count as data that can be shipped or cached externally?"
+   ],
+   "quote": "[![License](https://img.shields.io/badge/License-Apache_2.0-2e8b57?labelColor=152645)](LICENSE)",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 35,
+   "unit": "experiment",
+   "manifest_path": "experiments/<id>/task_card.md",
+   "splits": [],
+   "pilot": null,
+   "quote": "- 🔬 **35 experiments in five disciplines.** Mechanics, circuits, optics, thermal physics and chemistry, built on 19 apparatus platforms (14 for the determination experiments, 5 for the optimization experiments). 30 are determination experiments, which ask for a quantity the goal names (18 basic, 12 advanced); 5 are optimization experiments, which ask for the best result the apparatus allows.",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "benchmark/evaluation/evaluate.py",
+   "full_credit": "task_completed = G and e <= 1: all declared gates pass (result within the instrument tolerance, result grounded in readings recorded during the episode, bench left in the state the task requires) and the normalized error is at or under threshold",
+   "quote": "Gates run first (all declared gates, in spec order; valid_submission is always\nassessed first because the other gates read submission fields), then scoring:\n    e_rel = primary relative error (max over targets for max_rel_error; none for composite scores)\n    e     = e_rel / threshold, or for composite scores the largest error / its own threshold\n    reward = G * max(0, 1 - e);  task_completed = G and e <= 1 (G includes the tidy-up gates the card asks for)",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": "sealed episode + instance store (<store>/<instance_id>.json); offline scorer benchmark/evaluation/evaluate.py",
+   "command": "python -m benchmark.evaluation.evaluate --sealed <dir> --instance <store>/<instance_id>.json [--out evaluation.json]",
+   "quote": "Offline evaluation service (layer 6): sealed episode + submission + truth -> evaluation.json.",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "Isaac Sim 6.0.1 physics-based laboratory (lab image)",
+    "environment daemon embodiedlab-envd on 127.0.0.1:8765 (lab container entrypoint)",
+    "SAM3 segmentation (host process, one CUDA GPU)",
+    "cuRobo motion planning (host process, one CUDA GPU)"
+   ],
+   "gpu": "yes",
+   "network_or_api": [],
+   "credentials": [],
+   "exceptions": [
+    "T2 (the diagnostic level that adds a library of manipulation skills) is not part of this release",
+    "the filter optimum search fixes its floating-point path (single-threaded BLAS, one fixed kernel, no AVX-512) and needs an x86-64 machine with AVX2 and FMA3; it takes about half an hour on 48 cores to prewarm",
+    "optimization optima may be prewarmed with python -m benchmark.evaluation.truss prewarm <instance.json> (also absorber and filter)"
+   ],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "Which single experiment should the adapter run first, and at interface level T0 or T1?",
+   "How does the lab image get built and the controller, workers and env daemon get wired to the agent loop?",
+   "Is a CUDA GPU with Isaac Sim 6.0.1 available, and can SAM3 and cuRobo be installed from source here?",
+   "Where does the adapter read the submission format, the gates and the resulting evaluation.json?"
+  ],
+  "next_action": "Build the lab image, then run one basic determination experiment end to end and inspect the evaluation.json gates and error."
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "schema_version": 1,
+ "build_id": "20261123T1931Z-ae2ce6bd",
+ "pid": "bp-001782",
+ "name": "Switch-SWE",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001782",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Real issue/PR-derived tasks, 200 tasks over 19 repos, executable F2P/P2P verifiers, best switched score 43%, shipped as Harbor tasks.",
+  "risks": [
+   "No repeated runs or error bars; each condition run once",
+   "Tasks reused from public SWE-bench family; contamination not discussed"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-23",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "Miraclecsc/Switch-SWE",
+    "url": "https://github.com/Miraclecsc/Switch-SWE",
+    "commit": "1d9a9ab0b8bf5fec9b730dfc810cfdbe159233ec",
+    "license": "MIT",
+    "files": 9201,
+    "pushed": "2026-11-04"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:Miraclecsc/Switch-SWE",
+   "quote": "=== github: Miraclecsc/Switch-SWE (commit/revision 1d9a9ab0b8bf5fec9b730dfc810cfdbe159233ec, licence field: MIT) ===",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Do the included upstream sources' own license notices allow redistribution inside the container images?",
+    "Which license covers the task data itself (prompts, tests, reference solutions)?"
+   ],
+   "quote": "Original code: [MIT](LICENSE). Included upstream source retains its original license notices.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 200,
+   "unit": "task",
+   "manifest_path": "harbor.yaml",
+   "splits": [
+    "near",
+    "far"
+   ],
+   "pilot": "tasks/far/sf076",
+   "quote": "This release contains **200 switched sessions from 19 Python repositories**: **100 near** and **100 far**.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "executable_tests",
+   "entry_point": "tasks/<split>/<task-id>/task.toml ([steps.verifier], environment_mode = \"separate\")",
+   "full_credit": "The final focus-task step's F2P/P2P test result; only the final focus-task changes are scored.",
+   "quote": "Harbor builds the environments, executes the steps, transfers the final focus checkout, and runs the F2P/P2P tests in a separate verifier. Results are written to `jobs/`.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "tasks/<split>/<task-id>/ (final step)",
+   "command": "harbor run -c harbor.yaml -a opencode -m <provider/model> --resume-trajectory",
+   "quote": "Each task contains `task.toml`, an `environment/` build, ordered `steps/` with the original prompts, and final-step tests and a reference solution.",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "no",
+   "network_or_api": [
+    "model provider endpoint selected via -m <provider/model>",
+    "public package sources used to rebuild pinned dependencies"
+   ],
+   "credentials": [
+    "model provider's API key"
+   ],
+   "exceptions": [],
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "Does the data carry an explicit license?",
+   "Where exactly does the reference solution live?",
+   "How are F2P and P2P tests split?",
+   "Is a GPU ever needed?"
+  ],
+  "next_action": "Run the pinned Harbor on one pilot task, tasks/far/sf076, and inspect its verifier output."
+ }
+}

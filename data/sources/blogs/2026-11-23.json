@@ -1,0 +1,4 @@
+{"connector":"blogs","date":"2026-11-23","evidence_items":[
+{"source":"Blog: Hugging Face","title":"How to build and maintain an agentic evaluation","url":"https://huggingface.co/blog/agentic-evals","summary":"","published_at":"2026-11-23","authors":[],"organizations":["Hugging Face"],"artifact_urls":[],"metrics":{},"categories":["benchmark","agentic"],"source_tags":[],"event_kind":"released"},
+{"source":"Blog: Ai2","title":"RoboTrack: Point tracking for real-world robotic manipulation","url":"https://allenai.org/blog/robotrack","summary":"RoboTrack introduces a new benchmark, synthetic training dataset, and two models that improve how robots track objects during real-world manipulation tasks.","published_at":"2026-11-23","authors":[],"organizations":["Ai2"],"artifact_urls":[],"metrics":{},"categories":["benchmark"],"source_tags":[],"event_kind":"released"}
+]}

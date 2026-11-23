@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "build_id": "20261122T1607Z-6f93d0a3",
+ "build_id": "20261123T1931Z-ae2ce6bd",
  "pid": "bp-000447",
  "name": "SWE-rebench",
  "aliases": [],
@@ -23,14 +23,7 @@
    "hub: ibragim-badertdinov/swe-rebench-07-2026"
   ]
  },
- "best_score": {
-  "pct": 64.5,
-  "source": "own leaderboard",
-  "model": "Fable 5 [high]",
-  "as_of": "2026-11-11",
-  "systems": null,
-  "url": "https://swe-rebench.com/leaderboard"
- },
+ "best_score": null,
  "readiness": {
   "date": "2026-11-17",
   "model": "deepseek-v4.1-flash",
