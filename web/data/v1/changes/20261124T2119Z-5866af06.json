@@ -1,0 +1,81 @@
+{
+ "schema_version": 1,
+ "build_id": "20261124T2119Z-5866af06",
+ "generated_at": "2026-11-24T21:19:35Z",
+ "previous_build_id": "20261124T2100Z-1467b369",
+ "data_generated": "2026-11-24 21:19 UTC",
+ "counts": {
+  "benchmarks": 2608,
+  "events": 9
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261124T2119Z-5866af06.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002843",
+   "name": "WARD",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002840",
+   "name": "S2Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000972",
+   "name": "CADWorld",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000669",
+   "name": "StartupBench",
+   "before": "unverified",
+   "after": "real"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000669",
+   "name": "StartupBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000583",
+   "name": "AndroidReality",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000541",
+   "name": "Active-SWE",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001828",
+   "name": "MedCUA-Bench",
+   "before": "unverified",
+   "after": "real"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001828",
+   "name": "MedCUA-Bench",
+   "before": null,
+   "after": "none"
+  }
+ ]
+}

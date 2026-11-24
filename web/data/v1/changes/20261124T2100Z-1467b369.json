@@ -1,0 +1,326 @@
+{
+ "schema_version": 1,
+ "build_id": "20261124T2100Z-1467b369",
+ "generated_at": "2026-11-24T21:00:31Z",
+ "previous_build_id": "20261124T1822Z-f063eb11",
+ "data_generated": "2026-11-24 21:00 UTC",
+ "counts": {
+  "benchmarks": 2608,
+  "events": 44
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261124T2100Z-1467b369.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002844",
+   "name": "WingBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002843",
+   "name": "WARD",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002843",
+   "name": "WARD",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002840",
+   "name": "S2Bench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002840",
+   "name": "S2Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002839",
+   "name": "RoboInF",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002838",
+   "name": "PyraFault",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002834",
+   "name": "Memphis",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002833",
+   "name": "MASSys",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002832",
+   "name": "MA-Bench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002830",
+   "name": "IBBD Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002829",
+   "name": "Hypothesis-Driven Experiment Planning",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002826",
+   "name": "GameAnything-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002825",
+   "name": "ESM-Bench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002823",
+   "name": "DiscernBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002820",
+   "name": "AWAIT",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002842",
+   "name": "UUBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002815",
+   "name": "Tea Leaves",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002812",
+   "name": "RepoClean",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002811",
+   "name": "qlaybench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002810",
+   "name": "OWE-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002809",
+   "name": "HWRE-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002808",
+   "name": "GameDojo",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002824",
+   "name": "DivDynBench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002807",
+   "name": "CocoonBench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002806",
+   "name": "AxE Bench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002831",
+   "name": "KernelShift",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002831",
+   "name": "KernelShift",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002827",
+   "name": "HEP-Ex-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002818",
+   "name": "AFK-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001638",
+   "name": "LOLPlay",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000972",
+   "name": "CADWorld",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000972",
+   "name": "CADWorld",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000701",
+   "name": "K-Bench 01",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000669",
+   "name": "StartupBench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000669",
+   "name": "StartupBench",
+   "before": null,
+   "after": "unverified"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000583",
+   "name": "AndroidReality",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000583",
+   "name": "AndroidReality",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000541",
+   "name": "Active-SWE",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000541",
+   "name": "Active-SWE",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000695",
+   "name": "CallScreenBench",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001828",
+   "name": "MedCUA-Bench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001828",
+   "name": "MedCUA-Bench",
+   "before": null,
+   "after": "unverified"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001013",
+   "name": "IDRBench",
+   "before": "hold",
+   "after": "no"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "schema_version": 1,
+ "build_id": "20261124T2119Z-5866af06",
+ "pid": "bp-001828",
+ "name": "MedCUA-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001828",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic clinical GUI benchmark with 216 base tasks across 10 domains, 54.2% best score, deterministic checker and human pilot; no blocking rule.",
+  "risks": [
+   "Single run per task; no run-to-run variability",
+   "Safety checker has limited signal; zero critical violations is a floor",
+   "Human solvability evidence is a small single-operator pilot"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": {
+  "pct": 54.2,
+  "source": "paper",
+  "model": "best closed-source model",
+  "as_of": "2026-06-02",
+  "systems": null,
+  "url": null
+ },
+ "readiness": {
+  "date": "2026-11-24",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "Jia7878/MedCUA-BenchMark",
+    "url": "https://github.com/Jia7878/MedCUA-BenchMark",
+    "commit": "159c7681cbc84d446ceafa8046bd498036809b70",
+    "license": "Apache-2.0",
+    "files": 54,
+    "pushed": "2026-08-25"
+   },
+   {
+    "kind": "github",
+    "id": "openemr/openemr",
+    "url": "https://github.com/openemr/openemr",
+    "commit": "881e50a72e04a43c0a5e1f304c319a0b67f56bf4",
+    "license": "GPL-3.0",
+    "files": 10584,
+    "pushed": "2026-11-24"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:Jia7878/MedCUA-BenchMark",
+   "quote": "git clone https://github.com/Jia7878/MedCUA-BenchMark.git",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does Apache-2.0 cover the scenario HTML and checker content, or only code?",
+    "How does the OpenEMR GPL-3.0 backend interact with the benchmark license?",
+    "Are the synthetic patient seeds redistributable?",
+    "Is the upstream OHIF Viewer fetched rather than redistributed?"
+   ],
+   "quote": "Apache-2.0 — see [LICENSE](LICENSE).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 432,
+   "unit": "registered gymnasium environments",
+   "manifest_path": "src/browsergym/medgym/__init__.py",
+   "splits": [],
+   "pilot": "medgym.emergency_triage.login.intent",
+   "quote": "216 base tasks × 2 goal settings = **432 registered gymnasium environments**",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "src/browsergym/medgym/scenarios/<scenario>.py",
+   "full_credit": "Complete the clinical GUI task under the safety-aware checker; safety violations reduce reward below inaction.",
+   "quote": "All tasks are graded with a safety-aware scoring system",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "It does **not** ship model weights, agent implementations, run logs or result tables.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "OpenEMR (Docker, port 8300)",
+    "MySQL/MariaDB backend",
+    "OHIF Viewer (port 3001)",
+    "QIDO proxy",
+    "public DICOMweb endpoint"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "public DICOMweb endpoint",
+    "OHIF Viewer fetched from upstream GitHub",
+    "PyPI browsergym-core"
+   ],
+   "credentials": [
+    "admin / pass",
+    "MYSQL_ROOT_PASSWORD: root",
+    "MYSQL_USER: openemr",
+    "MYSQL_PASSWORD: openemr"
+   ],
+   "exceptions": [
+    "openemr requires Docker",
+    "pacs_radiology and pathology_viewer require Node.js plus OHIF Viewer and QIDO proxy",
+    "15 self-contained HTML scenarios need no server"
+   ],
+   "quote": "### OpenEMR (`openemr` scenario — requires Docker)",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which license covers scenario data versus OpenEMR and OHIF?",
+   "How are the 432 task IDs and per-task checkers invoked?",
+   "Should intent and step be separate tasks or settings?",
+   "How are Docker, OHIF, QIDO, and reset steps run?"
+  ],
+  "next_action": "Clone the repo, install browsergym-medgym and Chromium, then verify ALL_MEDGYM_TASK_IDS has 432 entries."
+ }
+}

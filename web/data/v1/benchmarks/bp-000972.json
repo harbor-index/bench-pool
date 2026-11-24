@@ -1,0 +1,104 @@
+{
+ "schema_version": 1,
+ "build_id": "20261124T2119Z-5866af06",
+ "pid": "bp-000972",
+ "name": "CADWorld",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000972",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "CADWorld is agentic with 200 expert-authored CAD tasks and executable artifact checks; the top agent scores 17.5%, and all five core dimensions are strong, so T2 applies.",
+  "risks": [
+   "Whether task data is publicly released is not stated",
+   "No repeated runs or variance reported"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-24",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "Zdong104/Computer-Use-Agent_Collector",
+    "url": "https://github.com/Zdong104/Computer-Use-Agent_Collector",
+    "commit": "11d157c7d384eca8469e0ac00a57d4c690e69cee",
+    "license": null,
+    "files": 45,
+    "pushed": "2026-07-25"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "unknown",
+   "quote": "Open-source infrastructure for collecting, labeling, and replaying computer-use agent trajectories across desktops and multimodal models.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Research and non-commercial use are free. For commercial use, contact: puma122707@gmail.com.",
+   "data_license": null,
+   "redistribution_questions": [
+    "Does the non-commercial permission cover recorded trajectories and screenshots?",
+    "What commercial terms apply to redistributing code, data, or models?"
+   ],
+   "quote": "Research and non-commercial use are free.\n\nFor commercial use, contact: puma122707@gmail.com.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": null,
+   "unit": "task",
+   "manifest_path": null,
+   "splits": [],
+   "pilot": null,
+   "quote": "Choose a task, optionally select a labeled reference, set trajectory memory and step budget, then start an agent run.",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "unknown",
+   "entry_point": null,
+   "full_credit": null,
+   "quote": "- `expected`: what should visibly happen after the action.",
+   "evidence": "reported"
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "Choose a task, optionally select a labeled reference, set trajectory memory and step budget, then start an agent run.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "local web control panel at http://127.0.0.1:8300",
+    "collector local control API at http://127.0.0.1:8321",
+    "OpenAI-compatible vision model endpoint"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "OpenAI-compatible vision endpoint"
+   ],
+   "credentials": [
+    "API_KEY"
+   ],
+   "exceptions": [
+    "Ubuntu Wayland/GNOME requires the native PipeWire + libevdev capture engine and one logout/login after setup.",
+    "macOS requires Screen Recording and Accessibility permissions."
+   ],
+   "quote": "**🔌 Bring your own model.** You are no longer limited to Codex or Claude. Point the collector at any OpenAI-compatible vision endpoint — a hosted API, a local server, or your own gateway — right from the web panel. Add your `BASE_URL`, `MODEL`, and `API_KEY`, save, and switch between providers from a dropdown.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Where are CADWorld tasks?",
+   "How many tasks and splits?",
+   "What verifier earns full credit?",
+   "What license covers data?"
+  ],
+  "next_action": "Ask the release owner for the CADWorld task manifest and verifier; the material only documents a collector."
+ }
+}

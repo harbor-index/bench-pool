@@ -4341,3 +4341,279 @@
 {"key": "dynamisbenchsoccer", "date": "2026-11-23", "tried": ["github"], "github": {"repo": "Litju/DynamisBench-Soccer", "stars": 0, "forks": 0, "created": "2026-11-14", "pushed": "2026-11-23", "archived": false}}
 {"key": "epistemicguard", "date": "2026-11-23", "tried": ["hf", "s2"], "hf": {"dataset": "RollSolo/epistemic-guard-benchmarks", "likes": 0, "downloads": 205, "gated": false, "private": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-20", "venue": null, "arxiv": "2611.27095"}}
 {"key": "reasontext", "date": "2026-11-23", "tried": ["github", "s2"], "github": {"repo": "jasonleex1995/TAISR_needs_Reasoning", "stars": 4, "forks": 0, "created": "2026-08-12", "pushed": "2026-11-21", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-11", "venue": null, "arxiv": "2611.15449"}}
+{"key": "infrathon", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "InfrathonX/Infrathon", "stars": 48, "forks": 1, "created": "2026-10-24", "pushed": "2026-11-23", "archived": false}}
+{"key": "vendster", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-28", "venue": null, "arxiv": "2610.38292"}}
+{"key": "scarfbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-05-07", "venue": "arXiv.org", "arxiv": "2605.06754"}}
+{"key": "chartact", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "wulin-wulin/OSWorld_Chart", "stars": 14, "forks": 0, "created": "2026-01-31", "pushed": "2026-10-24", "archived": false}, "s2": {"citations": 2, "influential": 0, "published": "2026-05-26", "venue": "arXiv.org", "arxiv": "2605.26994"}}
+{"key": "automotiveenv", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2025-09-25", "venue": null, "arxiv": "2509.21143"}}
+{"key": "octave", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17681"}}
+{"key": "memoryconflict", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 14, "influential": 1, "published": "2026-05-20", "venue": "arXiv.org", "arxiv": "2605.20926"}}
+{"key": "powersystemsagent", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 4, "influential": 0, "published": "2026-06-18", "venue": "arXiv.org", "arxiv": "2606.20950"}}
+{"key": "towermind", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "tb6147877/TowerMind", "stars": 14, "forks": 2, "created": "2026-01-09", "pushed": "2026-08-31", "archived": false}, "s2": {"citations": 6, "influential": 0, "published": "2026-01-09", "venue": "AAAI Conference on Artificial Intelligence", "arxiv": "2601.05899"}}
+{"key": "racebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 2, "influential": 0, "published": "2026-03-27", "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering", "arxiv": "2603.26337"}}
+{"key": "assemblygrid", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-09-13", "venue": "arXiv.org", "arxiv": "2609.16075"}}
+{"key": "miroeval", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 6, "influential": 0, "published": "2026-03-30", "venue": "arXiv.org", "arxiv": "2603.28407"}}
+{"key": "longhorizonterminalbenchlhtb", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 45, "influential": 5, "published": "2026-07-09", "venue": "arXiv.org", "arxiv": "2607.08964"}}
+{"key": "paraguibench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-07-17", "venue": "arXiv.org", "arxiv": "2607.22689"}}
+{"key": "locabench256k", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 26, "influential": 5, "published": "2026-02-08", "venue": "arXiv.org", "arxiv": "2602.07962"}}
+{"key": "cybergym", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 124, "influential": 19, "published": "2025-06-03", "venue": "International Conference on Learning Representations", "arxiv": "2506.02548"}}
+{"key": "vendingbench2", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 97, "influential": 12, "published": "2025-02-20", "venue": "arXiv.org", "arxiv": "2502.15840"}}
+{"key": "clbenchlife", "date": "2026-11-24", "tried": ["hf", "s2"], "hf": {"dataset": "tencent/CL-bench-Life", "likes": 7, "downloads": 247, "gated": false, "private": false}, "s2": {"citations": 14, "influential": 0, "published": "2026-04-29", "venue": "arXiv.org", "arxiv": "2604.27043"}}
+{"key": "browsecompvl", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 145, "influential": 23, "published": "2025-08-07", "venue": "International Conference on Learning Representations", "arxiv": "2508.05748"}}
+{"key": "swebenchpro", "date": "2026-11-24", "tried": ["hf", "s2"], "hf": {"dataset": "Devansh144/SWE-bench_Pro", "likes": 1, "downloads": 104, "gated": false, "private": false}, "s2": {"citations": 397, "influential": 85, "published": "2025-09-21", "venue": "arXiv.org", "arxiv": "2509.16941"}}
+{"key": "macbench", "date": "2026-11-24", "tried": ["github", "hf"], "github": {"repo": "bespokelabsai/multi-agent-coordination-bench", "stars": 19, "forks": 0, "created": "2026-11-18", "pushed": "2026-11-20", "archived": false}, "hf": {"dataset": "sihuichuibuqi/MAC-Bench", "likes": 1, "downloads": 2170, "gated": false, "private": false}}
+{"key": "collaborativeintelligence", "date": "2026-11-24", "tried": ["hf"], "hf": {"dataset": "HuggingFaceSwarms/collaborative-intelligence-benchmark", "likes": 0, "downloads": 19, "gated": false, "private": false}}
+{"key": "agenticrelationshipharm", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-06-02", "venue": "Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society", "arxiv": "2606.03271"}}
+{"key": "id:r-2253810745", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "Krueske/ANT-OR", "stars": 0, "forks": 0, "created": "2026-05-24", "pushed": "2026-10-26", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": "Conference on Empirical Methods in Natural Language Processing", "arxiv": "2610.32415"}}
+{"key": "mcpsecuritybenchmark", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "dongsenzhang/MSB", "stars": 57, "forks": 8, "created": "2025-11-27", "pushed": "2026-03-24", "archived": false}, "s2": {"citations": 60, "influential": 8, "published": "2025-10-14", "venue": "International Conference on Learning Representations", "arxiv": "2510.15994"}}
+{"key": "id:r-c256e884ba", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-09-09", "venue": null, "arxiv": "2609.10092"}}
+{"key": "id:r-fc3bf218ef", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 62, "influential": 3, "published": "2023-07-25", "venue": "arXiv.org", "arxiv": "2307.13692"}}
+{"key": "memleak", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-06-29", "venue": "arXiv.org", "arxiv": "2606.29788"}}
+{"key": "swelancer", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "openai/SWELancer-Benchmark", "stars": 1430, "forks": 134, "created": "2025-02-18", "pushed": "2025-07-18", "archived": true}, "s2": {"citations": 144, "influential": 8, "published": "2025-02-17", "venue": "International Conference on Machine Learning", "arxiv": "2502.12115"}}
+{"key": "swebenchverified", "date": "2026-11-24", "tried": ["hf"], "hf": {"dataset": "davidowen-epoch/SWE-bench_Verified_epoch", "likes": 0, "downloads": 39, "gated": false, "private": false}}
+{"key": "seal0", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 90, "influential": 19, "published": "2025-06-01", "venue": "International Conference on Learning Representations", "arxiv": "2506.01062"}}
+{"key": "nolima", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "adobe-research/NoLiMa", "stars": 210, "forks": 21, "created": "2025-02-19", "pushed": "2025-07-17", "archived": false}, "s2": {"citations": 167, "influential": 13, "published": "2025-02-07", "venue": "International Conference on Machine Learning", "arxiv": "2502.05167"}}
+{"key": "longfact", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 198, "influential": 22, "published": "2024-03-27", "venue": "Neural Information Processing Systems", "arxiv": "2403.18802"}}
+{"key": "livecodebench0109", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 2713, "influential": 412, "published": "2024-03-12", "venue": "International Conference on Learning Representations", "arxiv": "2403.07974"}}
+{"key": "exploitbench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "exploitbench/exploitbench", "stars": 452, "forks": 49, "created": "2026-05-14", "pushed": "2026-07-04", "archived": false}}
+{"key": "hipho", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 24, "influential": 1, "published": "2025-09-09", "venue": "arXiv.org", "arxiv": "2509.07894"}}
+{"key": "countqa", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 34, "influential": 7, "published": "2025-08-08", "venue": "arXiv.org", "arxiv": "2508.06585"}}
+{"key": "corpusqa", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 8, "influential": 1, "published": "2026-01-21", "venue": "arXiv.org", "arxiv": "2601.14952"}}
+{"key": "cmtbenchmark", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 8, "influential": 1, "published": "2025-10-06", "venue": "International Conference on Learning Representations", "arxiv": "2510.05228"}}
+{"key": "chartmuseum", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 36, "influential": 4, "published": "2025-05-19", "venue": "Neural Information Processing Systems", "arxiv": "2505.13444"}}
+{"key": "wandr", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "perplexityai/wandr", "stars": 299, "forks": 38, "created": "2026-07-14", "pushed": "2026-10-15", "archived": false}, "s2": {"citations": 1, "influential": 0, "published": "2026-08-14", "venue": "arXiv.org", "arxiv": "2608.14747"}}
+{"key": "vibecodebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 17, "influential": 2, "published": "2026-03-04", "venue": "CAIS", "arxiv": "2603.04601"}}
+{"key": "parametriccadbench3gnucleus", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-11-02", "venue": null, "arxiv": "2611.02659"}}
+{"key": "repozero", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 16, "influential": 0, "published": "2026-05-08", "venue": "arXiv.org", "arxiv": "2605.07122"}}
+{"key": "olmocrbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 60, "influential": 13, "published": "2025-10-22", "venue": "arXiv.org", "arxiv": "2510.19817"}}
+{"key": "mbabench2", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-22", "venue": null, "arxiv": "2610.31711"}}
+{"key": "humanevalpack", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "bigcode-project/octopack", "stars": 481, "forks": 30, "created": "2023-03-25", "pushed": "2025-02-05", "archived": false}, "s2": {"citations": 249, "influential": 27, "published": "2023-08-14", "venue": "International Conference on Learning Representations", "arxiv": "2308.07124"}}
+{"key": "cotcontrol", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 40, "influential": 2, "published": "2026-03-05", "venue": "arXiv.org", "arxiv": "2603.05706"}}
+{"key": "bountybench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 64, "influential": 6, "published": "2025-05-21", "venue": "Neural Information Processing Systems", "arxiv": "2505.15216"}}
+{"key": "aaomniscience", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 23, "influential": 2, "published": "2025-11-17", "venue": "arXiv.org", "arxiv": "2511.13029"}}
+{"key": "alignmentfaking", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 419, "influential": 39, "published": "2024-12-18", "venue": "arXiv.org", "arxiv": "2412.14093"}}
+{"key": "algotune", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 35, "influential": 4, "published": "2025-07-19", "venue": "Neural Information Processing Systems", "arxiv": "2507.15887"}}
+{"key": "amabench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 67, "influential": 8, "published": "2026-02-26", "venue": "arXiv.org", "arxiv": "2602.22769"}}
+{"key": "evalitallm", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 9, "influential": 0, "published": "2025-02-04", "venue": "arXiv.org", "arxiv": "2502.02289"}}
+{"key": "uavvisloc", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 74, "influential": 5, "published": "2024-05-20", "venue": "arXiv.org", "arxiv": "2405.11936"}}
+{"key": "ftcircuitbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 16, "influential": 2, "published": "2026-01-06", "venue": "ACM Transactions on Quantum Computing", "arxiv": "2601.03185"}}
+{"key": "hakaribench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-06-22", "venue": "arXiv.org", "arxiv": "2606.22778"}}
+{"key": "turingsyntheticradardataset", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 3, "influential": 0, "published": "2026-01-23", "venue": "International Radar Symposium", "arxiv": "2602.03856"}}
+{"key": "openuniversalarabicasr", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 11, "influential": 3, "published": "2024-12-18", "venue": "Interspeech", "arxiv": "2412.13788"}}
+{"key": "openasr", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 47, "influential": 4, "published": "2025-10-08", "venue": "Interspeech", "arxiv": "2510.06961"}}
+{"key": "cyberbingym", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-07", "venue": null, "arxiv": "2611.10723"}}
+{"key": "agenticpay", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 17, "influential": 3, "published": "2026-02-05", "venue": null, "arxiv": "2602.06008"}}
+{"key": "ctfdojo", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 16, "influential": 0, "published": "2025-08-25", "venue": "arXiv.org", "arxiv": "2508.18370"}}
+{"key": "underwateriqa", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18429"}}
+{"key": "id:arxiv-2611-18338", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18338"}}
+{"key": "id:r-0f9f62695d", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 71, "influential": 9, "published": "2025-06-17", "venue": "arXiv.org", "arxiv": "2506.14074"}}
+{"key": "weightbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 3, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18553"}}
+{"key": "privacypr", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18293"}}
+{"key": "webarenapro", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "McGill-NLP/webarena-pro", "stars": 15, "forks": 0, "created": "2026-11-11", "pushed": "2026-11-24", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17955"}}
+{"key": "ascendgym", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17621"}}
+{"key": "continualarc", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "unifyai/continual-arc", "stars": 39, "forks": 5, "created": "2026-10-17", "pushed": "2026-11-24", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.14505"}}
+{"key": "agentbenchmarkbatteries", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "BPSAI/agent-benchmark-batteries", "stars": 1, "forks": 0, "created": "2026-07-26", "pushed": "2026-11-17", "archived": false}}
+{"key": "respacebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.21485"}}
+{"key": "caebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.21273"}}
+{"key": "openmasgapp", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20997"}}
+{"key": "navitalgym", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20924"}}
+{"key": "acceleratebench", "date": "2026-11-24", "tried": ["github", "hf", "s2"], "github": {"repo": "AdAstraAbyssoque/accelerate-bench", "stars": 6, "forks": 0, "created": "2026-11-07", "pushed": "2026-11-23", "archived": false}, "hf": {"dataset": "AdAstraAbyssoque/accelerate-bench", "likes": 2, "downloads": 286, "gated": true, "private": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20882"}}
+{"key": "detourbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20844"}}
+{"key": "tamarinmodeling", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20671"}}
+{"key": "pixelbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20628"}}
+{"key": "vahbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20535"}}
+{"key": "evident", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20488"}}
+{"key": "swecowork", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "TokenWave-AI/swe-cowork-bench", "stars": 16, "forks": 1, "created": "2026-10-19", "pushed": "2026-11-19", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-15", "venue": null, "arxiv": "2611.20218"}}
+{"key": "heams", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-11-15", "venue": null, "arxiv": "2611.20144"}}
+{"key": "stalebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-15", "venue": null, "arxiv": "2611.19752"}}
+{"key": "logguidedcodelocalization", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-14", "venue": null, "arxiv": "2611.19554"}}
+{"key": "rtabench1", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 1, "published": "2026-11-14", "venue": null, "arxiv": "2611.19530"}}
+{"key": "hospitalbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-14", "venue": null, "arxiv": "2611.19274"}}
+{"key": "omniworkspace", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-14", "venue": null, "arxiv": "2611.19202"}}
+{"key": "synthdcb", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "X-LANCE/SynthDCB", "stars": 13, "forks": 0, "created": "2026-10-14", "pushed": "2026-11-23", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-10-14", "venue": null, "arxiv": "2611.18639"}}
+{"key": "econsafebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-09-07", "venue": null, "arxiv": "2611.18612"}}
+{"key": "kbrowsecomp", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 4, "influential": 3, "published": "2026-06-01", "venue": "Conference on Empirical Methods in Natural Language Processing", "arxiv": "2606.02404"}}
+{"key": "pdeagentbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 13, "influential": 0, "published": "2026-05-10", "venue": "arXiv.org", "arxiv": "2605.09636"}}
+{"key": "piearena", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-02-05", "venue": null, "arxiv": "2602.05302"}}
+{"key": "esgintelligence", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-01-13", "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing", "arxiv": "2601.08676"}}
+{"key": "mhrcbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 2, "influential": 0, "published": "2026-01-07", "venue": "arXiv.org", "arxiv": "2601.03708"}}
+{"key": "verusagebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 26, "influential": 5, "published": "2025-12-20", "venue": null, "arxiv": "2512.18436"}}
+{"key": "shapebenchmarkdata", "date": "2026-11-24", "tried": ["hf"], "hf": {"dataset": "SHAPE-agent/benchmark-data", "likes": 0, "downloads": 647, "gated": false, "private": false}}
+{"key": "xaihealthbench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "Amna-Raheeba/xai-health-bench", "stars": 0, "forks": 0, "created": "2026-11-16", "pushed": "2026-11-17", "archived": false}}
+{"key": "inclusionmed", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "panuvi/inclusionmed", "stars": 74, "forks": 0, "created": "2026-10-17", "pushed": "2026-11-22", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.21218"}}
+{"key": "cantrajbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "WangYuHang-cmd/GPS--CAN", "stars": 0, "forks": 0, "created": "2026-10-25", "pushed": "2026-11-09", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18442"}}
+{"key": "rsienv", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-01", "venue": null, "arxiv": "2611.01736"}}
+{"key": "unsatz", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-31", "venue": null, "arxiv": "2611.03713"}}
+{"key": "dramavqa", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-31", "venue": null, "arxiv": "2611.00769"}}
+{"key": "parallact", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-10-30", "venue": null, "arxiv": "2611.00314"}}
+{"key": "memubench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "ZJU-REAL/MemU-Bench", "stars": 10, "forks": 0, "created": "2026-10-27", "pushed": "2026-11-13", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-10-30", "venue": null, "arxiv": "2611.00191"}}
+{"key": "panovideobench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 1, "published": "2026-10-30", "venue": null, "arxiv": "2610.42082"}}
+{"key": "privacytrace", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-30", "venue": null, "arxiv": "2610.41885"}}
+{"key": "blindtochange", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-30", "venue": null, "arxiv": "2610.41435"}}
+{"key": "id:arxiv-2610-41272", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-30", "venue": null, "arxiv": "2610.41272"}}
+{"key": "searchdecision", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-30", "venue": null, "arxiv": "2610.41124"}}
+{"key": "aifaultbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-30", "venue": null, "arxiv": "2610.41094"}}
+{"key": "sidetaskbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2611.14548"}}
+{"key": "bababench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2610.41076"}}
+{"key": "replayrca", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2610.41025"}}
+{"key": "fabench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2610.40940"}}
+{"key": "sciresearcheval", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.21541"}}
+{"key": "alivebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.20956"}}
+{"key": "cursebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20821"}}
+{"key": "repopremium", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-16", "venue": null, "arxiv": "2611.20455"}}
+{"key": "logloc", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-14", "venue": null, "arxiv": "2611.19448"}}
+{"key": "3dscenebench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "PranaLabs/3DSceneBench", "stars": 40, "forks": 2, "created": "2026-11-13", "pushed": "2026-11-17", "archived": false}}
+{"key": "jfinbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "SakanaAI/JFinBench", "stars": 6, "forks": 0, "created": "2026-10-17", "pushed": "2026-11-16", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.18130"}}
+{"key": "gcgeceval", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17966"}}
+{"key": "outfitterbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "adminblackjack/OutfitterBench", "stars": 5, "forks": 1, "created": "2026-11-12", "pushed": "2026-11-16", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17933"}}
+{"key": "mineralexp", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17931"}}
+{"key": "gdpxlsx", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-13", "venue": null, "arxiv": "2611.17766"}}
+{"key": "clrbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2610.40758"}}
+{"key": "roboworld", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 3, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2610.40565"}}
+{"key": "burger", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2610.40532"}}
+{"key": "worldprobe", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 2, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2610.39721"}}
+{"key": "agentheal", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-29", "venue": null, "arxiv": "2610.39234"}}
+{"key": "scienceslastexam", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "Gen-Verse/Science-Last-Exam", "stars": 26, "forks": 2, "created": "2026-10-28", "pushed": "2026-11-17", "archived": false}}
+{"key": "worldmodelcontextretrieval", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-28", "venue": null, "arxiv": "2610.38980"}}
+{"key": "primacons", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "67L1/PrimaCons-CRPR", "stars": 3, "forks": 0, "created": "2026-10-27", "pushed": "2026-11-23", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-10-28", "venue": null, "arxiv": "2610.38623"}}
+{"key": "filingloop", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-27", "venue": null, "arxiv": "2610.37905"}}
+{"key": "icallbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-27", "venue": null, "arxiv": "2610.37871"}}
+{"key": "teamgym", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-27", "venue": null, "arxiv": "2610.37571"}}
+{"key": "gymanythingrt", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 6, "influential": 0, "published": "2026-10-27", "venue": null, "arxiv": "2610.37567"}}
+{"key": "codecapbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "kevin236-max/CodeCap-Bench", "stars": 3, "forks": 0, "created": "2026-11-04", "pushed": "2026-11-04", "archived": false}, "s2": {"citations": 1, "influential": 0, "published": "2026-10-27", "venue": null, "arxiv": "2610.37341"}}
+{"key": "megabike", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-27", "venue": null, "arxiv": "2610.36989"}}
+{"key": "talktoact", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-12", "venue": null, "arxiv": "2611.17549"}}
+{"key": "unfinishedbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-12", "venue": null, "arxiv": "2611.17460"}}
+{"key": "parsebench2", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-12", "venue": null, "arxiv": "2611.17400"}}
+{"key": "maniladder", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-12", "venue": null, "arxiv": "2611.16374"}}
+{"key": "qsimarena", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-11", "venue": null, "arxiv": "2611.15000"}}
+{"key": "joyfrontbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-11", "venue": null, "arxiv": "2611.14952"}}
+{"key": "roborisk", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "zhuqinfeng1999/LEASH", "stars": 7, "forks": 0, "created": "2026-11-10", "pushed": "2026-11-17", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.14115"}}
+{"key": "camgii", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-11-10", "venue": null, "arxiv": "2611.14009"}}
+{"key": "triad", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.12364"}}
+{"key": "embodiedfirstexam", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "mll-lab-nu/embodied-first-exam", "stars": 318, "forks": 19, "created": "2026-09-18", "pushed": "2026-11-24", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.12177"}}
+{"key": "shadowbenchmcp", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-09", "venue": null, "arxiv": "2611.11720"}}
+{"key": "onetable", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "limix-ldm-ai/OTBench", "stars": 3, "forks": 0, "created": "2026-10-27", "pushed": "2026-11-24", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-08", "venue": null, "arxiv": "2611.13001"}}
+{"key": "iclayoutbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-11-08", "venue": null, "arxiv": "2611.12982"}}
+{"key": "mhcad", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-11-08", "venue": null, "arxiv": "2611.11470"}}
+{"key": "fairuniverseweaklensingmluncertaintychallenge", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-06", "venue": null, "arxiv": "2611.10228"}}
+{"key": "deepresearchrewardbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-06", "venue": "Conference on Empirical Methods in Natural Language Processing", "arxiv": "2611.10156"}}
+{"key": "abhbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-06", "venue": null, "arxiv": "2611.09326"}}
+{"key": "mongobench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-06", "venue": null, "arxiv": "2611.09065"}}
+{"key": "phantombench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-06", "venue": null, "arxiv": "2611.08971"}}
+{"key": "draftbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-06", "venue": null, "arxiv": "2611.08933"}}
+{"key": "agenticrlbench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "eigent-ai/agenticrl-bench", "stars": 26, "forks": 0, "created": "2026-11-05", "pushed": "2026-11-14", "archived": false}}
+{"key": "id:arxiv-2611-10037", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-05", "venue": null, "arxiv": "2611.10037"}}
+{"key": "websitebench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "TIGER-AI-Lab/WebsiteBench", "stars": 718, "forks": 50, "created": "2026-11-04", "pushed": "2026-11-17", "archived": false}}
+{"key": "strategicworld", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-04", "venue": null, "arxiv": "2611.10011"}}
+{"key": "chesspuzzles", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "epoch-research/chess-puzzles-mirror", "stars": 0, "forks": 0, "created": "2026-10-09", "pushed": "2026-11-05", "archived": false}}
+{"key": "spatialvizbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 11, "influential": 1, "published": "2025-07-10", "venue": null, "arxiv": "2507.07610"}}
+{"key": "alebench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "SakanaAI/ALE-Bench", "stars": 237, "forks": 34, "created": "2025-05-15", "pushed": "2026-11-20", "archived": false}, "s2": {"citations": 56, "influential": 7, "published": "2025-06-10", "venue": "Neural Information Processing Systems", "arxiv": "2506.09050"}}
+{"key": "lechmazurwriting", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "lechmazur/writing", "stars": 476, "forks": 12, "created": "2025-01-05", "pushed": "2026-11-17", "archived": false}}
+{"key": "vpct", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "camelCase12/vpct-runner", "stars": 10, "forks": 1, "created": "2025-05-24", "pushed": "2026-10-25", "archived": false}}
+{"key": "forecastbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 148, "influential": 29, "published": "2024-09-30", "venue": "International Conference on Learning Representations", "arxiv": "2409.19839"}}
+{"key": "severus", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-04", "venue": null, "arxiv": "2611.07194"}}
+{"key": "multistepswe", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-04", "venue": null, "arxiv": "2611.07166"}}
+{"key": "visualizationcollaborationtestbed", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-04", "venue": null, "arxiv": "2611.06487"}}
+{"key": "robocasamem", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-04", "venue": null, "arxiv": "2611.06475"}}
+{"key": "casebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-04", "venue": null, "arxiv": "2611.06294"}}
+{"key": "groupassistbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-03", "venue": null, "arxiv": "2611.04867"}}
+{"key": "agentmoneybench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "BlockRunAI/agent-money-bench", "stars": 157, "forks": 29, "created": "2026-11-02", "pushed": "2026-11-19", "archived": false}}
+{"key": "sourcetestrepair", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-02", "venue": null, "arxiv": "2611.03197"}}
+{"key": "klasktron", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-07-13", "venue": "Robotics", "arxiv": "2611.03138"}}
+{"key": "m3wmebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-02", "venue": null, "arxiv": "2611.02988"}}
+{"key": "statechangebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-11-02", "venue": null, "arxiv": "2611.02912"}}
+{"key": "dexarena", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-02", "venue": null, "arxiv": "2611.02629"}}
+{"key": "trustboundary", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-01", "venue": null, "arxiv": "2611.03724"}}
+{"key": "finlocomo", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-01", "venue": null, "arxiv": "2611.02001"}}
+{"key": "embodiedqaevidenceaudit", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 1, "published": "2026-11-01", "venue": null, "arxiv": "2611.01958"}}
+{"key": "groundedvdr", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-18", "venue": null, "arxiv": "2610.25493"}}
+{"key": "retailbridge", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-18", "venue": null, "arxiv": "2610.25096"}}
+{"key": "realitybench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-09", "venue": null, "arxiv": "2610.14397"}}
+{"key": "frontiermatherdos", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "epoch-research/LeanOpenProblems", "stars": 20, "forks": 4, "created": "2026-06-01", "pushed": "2026-11-13", "archived": false}, "s2": {"citations": 1, "influential": 0, "published": "2026-09-06", "venue": null, "arxiv": "2609.25050"}}
+{"key": "lmca", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 1, "published": "2026-07-29", "venue": "arXiv.org", "arxiv": "2607.27499"}}
+{"key": "dtbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "casparoe/newcomblike_questions_dataset", "stars": 10, "forks": 0, "created": "2024-11-13", "pushed": "2025-05-15", "archived": false}, "s2": {"citations": 4, "influential": 1, "published": "2024-11-15", "venue": "arXiv.org", "arxiv": "2411.10588"}}
+{"key": "mirrorcode", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "epoch-research/MirrorCode", "stars": 83, "forks": 19, "created": "2026-06-17", "pushed": "2026-09-15", "archived": false}, "s2": {"citations": 6, "influential": 0, "published": "2026-06-29", "venue": "arXiv.org", "arxiv": "2606.30182"}}
+{"key": "so101bench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "5hadytru/so101_bench", "stars": 49, "forks": 2, "created": "2026-05-13", "pushed": "2026-11-04", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-10-27", "venue": null, "arxiv": "2610.36420"}}
+{"key": "kwbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-26", "venue": null, "arxiv": "2610.36405"}}
+{"key": "id:arxiv-2610-36384", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "amathislab/soma", "stars": 0, "forks": 0, "created": "2026-10-26", "pushed": "2026-10-30", "archived": false}, "s2": {"citations": 1, "influential": 0, "published": "2026-10-26", "venue": null, "arxiv": "2610.36384"}}
+{"key": "id:arxiv-2610-35773", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-26", "venue": null, "arxiv": "2610.35773"}}
+{"key": "decoycount", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-26", "venue": null, "arxiv": "2610.34855"}}
+{"key": "robotagentbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "AetherLabsAI/RobotAgentBench", "stars": 246, "forks": 4, "created": "2026-10-24", "pushed": "2026-11-19", "archived": false}, "s2": {"citations": 1, "influential": 0, "published": "2026-10-26", "venue": null, "arxiv": "2610.34649"}}
+{"key": "mofcrystalqa", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-25", "venue": null, "arxiv": "2610.34549"}}
+{"key": "androidflux", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 1, "published": "2026-10-25", "venue": null, "arxiv": "2610.34384"}}
+{"key": "skillextraction", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-25", "venue": null, "arxiv": "2610.34365"}}
+{"key": "calibratedreliance", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-25", "venue": null, "arxiv": "2610.34107"}}
+{"key": "researchproofbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-24", "venue": null, "arxiv": "2610.33690"}}
+{"key": "aosbench", "date": "2026-11-24", "tried": ["hf", "s2"], "hf": {"dataset": "AOS-Bench/AOS-Bench-Trajectories-v2", "likes": 0, "downloads": 297, "gated": false, "private": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": null, "arxiv": "2610.33178"}}
+{"key": "gemsbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": null, "arxiv": "2610.33158"}}
+{"key": "pacebench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "TianqiLiu1/PACE-Bench", "stars": 26, "forks": 0, "created": "2026-10-20", "pushed": "2026-10-21", "archived": false}}
+{"key": "vfsbench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "agentvfs/vfs-bench", "stars": 18, "forks": 6, "created": "2026-10-20", "pushed": "2026-11-24", "archived": false}}
+{"key": "veditbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-10-20", "venue": null, "arxiv": "2610.28346"}}
+{"key": "qabench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "momentic-ai/qa-bench", "stars": 18, "forks": 2, "created": "2026-10-19", "pushed": "2026-11-23", "archived": false}}
+{"key": "funcadbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-10-19", "venue": null, "arxiv": "2610.26861"}}
+{"key": "proteingeobench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-19", "venue": null, "arxiv": "2610.26829"}}
+{"key": "routerworld", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-19", "venue": null, "arxiv": "2610.26511"}}
+{"key": "cualite", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "frontierrefactor", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-19", "venue": null, "arxiv": "2610.25834"}}
+{"key": "ntbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": null, "arxiv": "2610.32531"}}
+{"key": "sciagentexam", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": null, "arxiv": "2610.32441"}}
+{"key": "id:arxiv-2610-32415", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": "Conference on Empirical Methods in Natural Language Processing", "arxiv": "2610.32415"}}
+{"key": "4dmemorybench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": null, "arxiv": "2610.32332"}}
+{"key": "personasciencebench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-23", "venue": null, "arxiv": "2610.32106"}}
+{"key": "videodci", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-22", "venue": null, "arxiv": "2611.09951"}}
+{"key": "favorbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-22", "venue": null, "arxiv": "2610.31985"}}
+{"key": "sweclar", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-22", "venue": null, "arxiv": "2610.31854"}}
+{"key": "compactbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-11-19", "venue": null, "arxiv": "2611.25673"}}
+{"key": "productwebbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 0, "published": "2026-10-22", "venue": null, "arxiv": "2610.31118"}}
+{"key": "doubletakebench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "liulx25xx/DoubleTakeBench", "stars": 13, "forks": 0, "created": "2026-10-21", "pushed": "2026-10-21", "archived": false}}
+{"key": "id:arxiv-2610-30537", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 1, "influential": 1, "published": "2026-10-21", "venue": null, "arxiv": "2610.30537"}}
+{"key": "tenetbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-21", "venue": null, "arxiv": "2610.29477"}}
+{"key": "regobench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-07", "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering", "arxiv": "2610.29456"}}
+{"key": "mamathbench", "date": "2026-11-24", "tried": ["s2"], "s2": {"citations": 0, "influential": 0, "published": "2026-10-18", "venue": null, "arxiv": "2610.26943"}}
+{"key": "terminalbenchscience", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "harbor-framework/terminal-bench-science", "stars": 964, "forks": 593, "created": "2026-01-25", "pushed": "2026-11-22", "archived": false}}
+{"key": "skill2env", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "NVlabs/Skill2Env", "stars": 214, "forks": 23, "created": "2026-09-16", "pushed": "2026-11-14", "archived": false}}
+{"key": "sweatlastw", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "scaleapi/SWE-Atlas", "stars": 96, "forks": 16, "created": "2026-03-27", "pushed": "2026-11-07", "archived": false}}
+{"key": "sweatlasqna", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "scaleapi/SWE-Atlas", "stars": 96, "forks": 16, "created": "2026-03-27", "pushed": "2026-11-07", "archived": false}}
+{"key": "frontiermemory", "date": "2026-11-24", "tried": ["github"]}
+{"key": "roboteam", "date": "2026-11-24", "tried": ["hf"], "hf": {"dataset": "RoboTeam-Bench/RoboTeam-Videos", "likes": 0, "downloads": 0, "gated": false, "private": false}}
+{"key": "autoontologybench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "VinyehShaw/AutoOntologyBench", "stars": 18, "forks": 0, "created": "2026-11-08", "pushed": "2026-11-24", "archived": false}}
+{"key": "hivebench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "KolaKivy/HIVE-Bench", "stars": 13, "forks": 0, "created": "2026-09-30", "pushed": "2026-11-21", "archived": false}}
+{"key": "gamedojo", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "THUSI-Lab/GameDojo", "stars": 12, "forks": 0, "created": "2026-11-22", "pushed": "2026-11-24", "archived": false}}
+{"key": "cocoonbench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "sweepbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "Damin3927/SWEEP-Bench", "stars": 2, "forks": 0, "created": "2026-11-23", "pushed": "2026-11-24", "archived": false}}
+{"key": "sudol7", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "hwrebench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "repoclean", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "veriworld", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "uubench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "tealeaves", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "axebench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "qlaybench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "owebench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "divdynbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "OpenDCAI/GameFactory-3A", "stars": 1377, "forks": 149, "created": "2026-07-06", "pushed": "2026-11-24", "archived": false}}
+{"key": "kernelshift", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "cmu-l3/kernel-shift", "stars": 4, "forks": 0, "created": "2026-11-17", "pushed": "2026-11-24", "archived": false}}
+{"key": "polytropos", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "afkbench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "hepexbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "hep-ex-bench/hep-ex-bench", "stars": 2, "forks": 0, "created": "2026-11-19", "pushed": "2026-11-20", "archived": false}}
+{"key": "multisteprobotplanning", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "Kevin-thu/ViDecide", "stars": 10, "forks": 0, "created": "2026-11-19", "pushed": "2026-11-21", "archived": false}, "s2": {"citations": 0, "influential": 0, "published": "2026-11-19", "venue": null, "arxiv": "2611.26389"}}
+{"key": "c2abench", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "c2a-bench/c2a-bench", "stars": 10, "forks": 0, "created": "2026-11-17", "pushed": "2026-11-24", "archived": false}}
+{"key": "mabench", "date": "2026-11-24", "tried": ["hf", "s2"], "hf": {"dataset": "EmbodiedCity/MA-Bench", "likes": 0, "downloads": 5, "gated": false, "private": false}}
+{"key": "id:r-892825be56", "date": "2026-11-24", "tried": ["github"], "github": {"repo": "hustcsking/ibbd-benchmark", "stars": 34, "forks": 10, "created": "2026-11-24", "pushed": "2026-11-24", "archived": false}}
+{"key": "chiprogrambench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "roboinf", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "minipsychagent", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "memphis", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "await", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "hypothesisdrivenexperimentplanning", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "adaptivevpi", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "id:arxiv-2611-29243", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "gameanythingbench", "date": "2026-11-24", "tried": ["github", "s2"], "github": {"repo": "AetherLabsAI/GameAnything", "stars": 18, "forks": 1, "created": "2026-11-23", "pushed": "2026-11-24", "archived": false}}
+{"key": "pyrafault", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "studiobench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "discernbench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "massys", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "agentmoney", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "esmbench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "wingbench", "date": "2026-11-24", "tried": ["s2"]}
+{"key": "s2bench", "date": "2026-11-24", "tried": ["s2"]}

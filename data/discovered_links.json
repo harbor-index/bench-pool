@@ -94,6 +94,9 @@
 "adaptiveadversaries": {
 "from": null
 },
+"adaptivevpi": {
+"from": null
+},
 "adebench": {
 "from": "https://www.getdbt.com/resources/webinars/analytics-data-engineer-bench",
 "repo": "dbt-labs/dbt-core"
@@ -114,6 +117,9 @@
 "from": null
 },
 "aethercode": {
+"from": null
+},
+"afkbench": {
 "from": null
 },
 "agbench": {
@@ -294,6 +300,9 @@
 "from": null
 },
 "agentmeter": {
+"from": null
+},
+"agentmoney": {
 "from": null
 },
 "agentmoneybench": {
@@ -789,6 +798,12 @@
 "avfable": {
 "from": null
 },
+"await": {
+"from": null
+},
+"axebench": {
+"from": null
+},
 "axionlimitbench": {
 "from": null
 },
@@ -1115,6 +1130,9 @@
 "bypassgym": {
 "from": null
 },
+"c2abench": {
+"from": null
+},
 "cabra": {
 "from": null
 },
@@ -1287,6 +1305,9 @@
 "chexpertcxr": {
 "from": null
 },
+"chiprogrambench": {
+"from": null
+},
 "chronocooked": {
 "from": null
 },
@@ -1393,6 +1414,9 @@
 "from": null
 },
 "cnmo2024": {
+"from": null
+},
+"cocoonbench": {
 "from": null
 },
 "codearena": {
@@ -1931,6 +1955,9 @@
 "diffcoopcivic": {
 "from": null
 },
+"discernbench": {
+"from": null
+},
 "discoverphysics": {
 "arxiv": "2605.26087",
 "from": "https://sampsonml.github.io/DiscoverPhysicsLeaderboard/",
@@ -2247,6 +2274,9 @@
 "from": null
 },
 "esgintelligence": {
+"from": null
+},
+"esmbench": {
 "from": null
 },
 "esrpbench": {
@@ -3169,6 +3199,9 @@
 "hwebench": {
 "from": null
 },
+"hwrebench": {
+"from": null
+},
 "hygeobench": {
 "from": null
 },
@@ -3179,6 +3212,9 @@
 "from": null
 },
 "hypersim": {
+"from": null
+},
+"hypothesisdrivenexperimentplanning": {
 "from": null
 },
 "i2o2inav": {
@@ -3298,6 +3334,9 @@
 "id:arxiv-2611-27166": {
 "from": null
 },
+"id:arxiv-2611-29243": {
+"from": null
+},
 "id:r-0d426f76fc": {
 "from": null
 },
@@ -3347,6 +3386,9 @@
 "from": null
 },
 "id:r-83e226a0b5": {
+"from": null
+},
+"id:r-892825be56": {
 "from": null
 },
 "id:r-936b15e1aa": {
@@ -4002,6 +4044,9 @@
 "m4bench": {
 "from": null
 },
+"mabench": {
+"from": null
+},
 "macbench": {
 "from": null
 },
@@ -4082,6 +4127,9 @@
 "from": null
 },
 "mask": {
+"from": null
+},
+"massys": {
 "from": null
 },
 "math": {
@@ -4283,6 +4331,9 @@
 "mempabench": {
 "from": null
 },
+"memphis": {
+"from": null
+},
 "memsecbench": {
 "from": null
 },
@@ -4390,6 +4441,9 @@
 "from": null
 },
 "miniagentruntimebench": {
+"from": null
+},
+"minipsychagent": {
 "from": null
 },
 "miroeval": {
@@ -5076,6 +5130,9 @@
 "owaspasiagenticsecurity": {
 "from": null
 },
+"owebench": {
+"from": null
+},
 "p2npcbench": {
 "from": null
 },
@@ -5316,6 +5373,9 @@
 "polymath": {
 "from": null
 },
+"polytropos": {
+"from": null
+},
 "pope": {
 "from": null
 },
@@ -5484,6 +5544,9 @@
 "pwsdecisions": {
 "from": null
 },
+"pyrafault": {
+"from": null
+},
 "pyrite": {
 "from": null
 },
@@ -5497,6 +5560,9 @@
 "from": null
 },
 "qcircuitbench": {
+"from": null
+},
+"qlaybench": {
 "from": null
 },
 "qmsum": {
@@ -5693,6 +5759,9 @@
 "repobench": {
 "from": null
 },
+"repoclean": {
+"from": null
+},
 "repoenv": {
 "from": null
 },
@@ -5817,6 +5886,9 @@
 "robocasamem": {
 "from": null
 },
+"roboinf": {
+"from": null
+},
 "robospatialhome": {
 "from": null
 },
@@ -5909,6 +5981,9 @@
 "from": null
 },
 "ruverbench": {
+"from": null
+},
+"s2bench": {
 "from": null
 },
 "s3bench": {
@@ -6449,10 +6524,16 @@
 "structuredfileauditscflatbookpro": {
 "from": null
 },
+"studiobench": {
+"from": null
+},
 "subtlememory": {
 "from": null
 },
 "subversionbench": {
+"from": null
+},
+"sudol7": {
 "from": null
 },
 "summscreenfd": {
@@ -7025,6 +7106,9 @@
 "teacharena": {
 "from": null
 },
+"tealeaves": {
+"from": null
+},
 "teamgym": {
 "from": null
 },
@@ -7324,6 +7408,9 @@
 "usmlemedqa": {
 "from": null
 },
+"uubench": {
+"from": null
+},
 "v": {
 "from": null
 },
@@ -7392,6 +7479,9 @@
 "from": null
 },
 "veriharmbench": {
+"from": null
+},
+"veriworld": {
 "from": null
 },
 "versioncontrolbench": {
@@ -7679,6 +7769,9 @@
 "from": null
 },
 "wildclawbench": {
+"from": null
+},
+"wingbench": {
 "from": null
 },
 "winogrande": {

@@ -1,0 +1,603 @@
+{
+ "schema_version": 1,
+ "build_id": "20261124T1822Z-f063eb11",
+ "generated_at": "2026-11-24T18:22:00Z",
+ "previous_build_id": "20261123T1931Z-ae2ce6bd",
+ "data_generated": "2026-11-24 18:22 UTC",
+ "counts": {
+  "benchmarks": 2608,
+  "events": 39
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261124T1822Z-f063eb11.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "discovered",
+   "pid": "bp-002844",
+   "name": "WingBench",
+   "after": {
+    "name": "WingBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002843",
+   "name": "WARD",
+   "after": {
+    "name": "WARD",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002841",
+   "name": "StudioBench",
+   "after": {
+    "name": "StudioBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002840",
+   "name": "S2Bench",
+   "after": {
+    "name": "S2Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002839",
+   "name": "RoboInF",
+   "after": {
+    "name": "RoboInF",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002838",
+   "name": "PyraFault",
+   "after": {
+    "name": "PyraFault",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002835",
+   "name": "mini-psych-agent",
+   "after": {
+    "name": "mini-psych-agent",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002834",
+   "name": "Memphis",
+   "after": {
+    "name": "Memphis",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002833",
+   "name": "MASSys",
+   "after": {
+    "name": "MASSys",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002832",
+   "name": "MA-Bench",
+   "after": {
+    "name": "MA-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002830",
+   "name": "IBBD Benchmark",
+   "after": {
+    "name": "IBBD Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002829",
+   "name": "Hypothesis-Driven Experiment Planning",
+   "after": {
+    "name": "Hypothesis-Driven Experiment Planning",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002826",
+   "name": "GameAnything-Bench",
+   "after": {
+    "name": "GameAnything-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002825",
+   "name": "ESM-Bench",
+   "after": {
+    "name": "ESM-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002823",
+   "name": "DiscernBench",
+   "after": {
+    "name": "DiscernBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002822",
+   "name": "ChiProgramBench",
+   "after": {
+    "name": "ChiProgramBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002820",
+   "name": "AWAIT",
+   "after": {
+    "name": "AWAIT",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002819",
+   "name": "Agent Money Benchmark",
+   "after": {
+    "name": "Agent Money Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002817",
+   "name": "AdaptiveVPI",
+   "after": {
+    "name": "AdaptiveVPI",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002816",
+   "name": "VeriWorld",
+   "after": {
+    "name": "VeriWorld",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002842",
+   "name": "UUBench",
+   "after": {
+    "name": "UUBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002815",
+   "name": "Tea Leaves",
+   "after": {
+    "name": "Tea Leaves",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002814",
+   "name": "SWEEP-Bench",
+   "after": {
+    "name": "SWEEP-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002813",
+   "name": "sudo L7",
+   "after": {
+    "name": "sudo L7",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002812",
+   "name": "RepoClean",
+   "after": {
+    "name": "RepoClean",
+    "tier": null,
+    "covered": null,
+    "best": 23.0,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002811",
+   "name": "qlaybench",
+   "after": {
+    "name": "qlaybench",
+    "tier": null,
+    "covered": null,
+    "best": 81.5,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002810",
+   "name": "OWE-Bench",
+   "after": {
+    "name": "OWE-Bench",
+    "tier": null,
+    "covered": null,
+    "best": 54.6,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002809",
+   "name": "HWRE-Bench",
+   "after": {
+    "name": "HWRE-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002828",
+   "name": "HIVE-Bench",
+   "after": {
+    "name": "HIVE-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002808",
+   "name": "GameDojo",
+   "after": {
+    "name": "GameDojo",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002824",
+   "name": "DivDynBench",
+   "after": {
+    "name": "DivDynBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002807",
+   "name": "CocoonBench",
+   "after": {
+    "name": "CocoonBench",
+    "tier": null,
+    "covered": null,
+    "best": 69.7,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002806",
+   "name": "AxE Bench",
+   "after": {
+    "name": "AxE Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002837",
+   "name": "Polytropos",
+   "after": {
+    "name": "Polytropos",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002831",
+   "name": "KernelShift",
+   "after": {
+    "name": "KernelShift",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002827",
+   "name": "HEP-Ex-Bench",
+   "after": {
+    "name": "HEP-Ex-Bench",
+    "tier": null,
+    "covered": null,
+    "best": 60.0,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002818",
+   "name": "AFK-Bench",
+   "after": {
+    "name": "AFK-Bench",
+    "tier": null,
+    "covered": null,
+    "best": 68.6,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002836",
+   "name": "Multi-step Robot Planning",
+   "after": {
+    "name": "Multi-step Robot Planning",
+    "tier": null,
+    "covered": null,
+    "best": 83.8,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002821",
+   "name": "c2a-bench",
+   "after": {
+    "name": "c2a-bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  }
+ ]
+}
