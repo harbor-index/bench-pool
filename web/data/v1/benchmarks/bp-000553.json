@@ -1,0 +1,113 @@
+{
+ "schema_version": 1,
+ "build_id": "20261125T1918Z-d18ec6e6",
+ "pid": "bp-000553",
+ "name": "WeClawArena",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000553",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic Docker benchmark, 124 tasks in six domains, validated ASR judge, ~50% top score; Real, Diverse, Difficult, Valuable and Solid all strong.",
+  "risks": [
+   "Full attack payloads are redacted, so attack variants are only partly reproducible.",
+   "Judge agreement validated only on a 200-row author-annotated pilot."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-25",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "kingofspace0wzz/WeClawArena",
+    "url": "https://github.com/kingofspace0wzz/WeClawArena",
+    "commit": "c2d6d50f04e4af9042e3fd960b611f4903d9ae74",
+    "license": "Apache-2.0",
+    "files": 6236,
+    "pushed": "2026-10-13"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:kingofspace0wzz/WeClawArena",
+   "quote": "git clone https://github.com/kingofspace0wzz/WeClawArena.git",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": "CC BY-NC 4.0",
+   "redistribution_questions": [
+    "Can the CC BY-NC 4.0 dataset be redistributed with the adapter?",
+    "Do the TravelBench, SWE-bench, and upstream software-project terms add restrictions?"
+   ],
+   "quote": "Source code is licensed under [Apache License 2.0](LICENSE). The six-domain dataset and README paper figures are licensed under [CC BY-NC 4.0](DATASET_LICENSE). See [third-party notices](THIRD_PARTY_NOTICES.md) for TravelBench, SWE-bench, and upstream software-project terms.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 124,
+   "unit": "task",
+   "manifest_path": "benchmark/scenarios/v2.0.0/manifest.json",
+   "splits": [
+    "no_attacker",
+    "collaboration",
+    "security",
+    "privacy",
+    "governance"
+   ],
+   "pilot": "CM-C-marble_bidding__t0",
+   "quote": "**6 domains** | **124 base tasks** | **620 matched variants** | **5 conditions per task**",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "scenario.gt.json",
+   "full_credit": "Task success when the required collaborative task reaches its tool-backed or final-state predicate; attack success is scored separately.",
+   "quote": "- **Task success rate (TSR):** whether the required collaborative task reached its tool-backed or final-state predicate.\n- **Attack success rate (ASR):** whether the attack caused the specified final harm, assessed from bounded run evidence.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "gateway",
+    "agent"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "OpenAI API",
+    "model provider APIs"
+   ],
+   "credentials": [
+    "provider credentials",
+    "OpenAI key"
+   ],
+   "exceptions": [
+    "deterministic mock rows without model credentials or Docker",
+    "replay rows never touch the network"
+   ],
+   "quote": "Container-backed model evaluation requires provider credentials and a running Docker daemon.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which is canonical: GitHub bundles or Hugging Face dataset?",
+   "Can the CC BY-NC dataset be redistributed?",
+   "How should the five attack conditions be selected per run?",
+   "Which evaluator or verifier entry point should be called?"
+  ],
+  "next_action": "Clone kingofspace0wzz/WeClawArena at c2d6d50 and run scripts/validate_public_release.py."
+ }
+}

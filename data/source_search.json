@@ -1939,6 +1939,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"clinicalhealthcarefhirdiagnostictriageagent": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-25",
+"name": "Clinical Healthcare FHIR & Diagnostic Triage Agent Benchmark",
+"query": "Clinical Healthcare FHIR   Diagnostic Triage Agent Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "clojureswerebench2validated51": {
 "arxiv": null,
 "considered": [],
@@ -2658,6 +2669,17 @@
 "date": "2026-11-16",
 "name": "DAMA-DMBOK Data Quality Benchmark",
 "query": "DAMA-DMBOK Data Quality Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"datapointadvoiceoverbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-25",
+"name": "Datapoint Ad Voiceover Bench",
+"query": "Datapoint Ad Voiceover Bench",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -5779,6 +5801,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "None introduces LiveSQLBench; papers only use or reference it as an existing benchmark."
+},
+"llmseo": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-25",
+"name": "LLM SEO Benchmark",
+"query": "LLM SEO Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "llmtradingagent": {
 "arxiv": null,
@@ -9073,6 +9106,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"robosimready": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-25",
+"name": "RoboSimReady",
+"query": "RoboSimReady",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "robospatialhome": {
 "arxiv": null,
 "considered": [],
@@ -9674,6 +9718,17 @@
 "date": "2026-11-17",
 "name": "Smoke24",
 "query": "Smoke24",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"socialalpha": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-25",
+"name": "Social Alpha Benchmark",
+"query": "Social Alpha Benchmark",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -12223,6 +12278,17 @@
 "date": "2026-11-14",
 "name": "We-Math",
 "query": "We-Math",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"whaleyingbenchmarklab": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-25",
+"name": "WhaleYing Benchmark Lab",
+"query": "WhaleYing Benchmark Lab",
 "repo": null,
 "searched": "arXiv",
 "title": null,

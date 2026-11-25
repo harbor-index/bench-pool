@@ -97,6 +97,9 @@
 "adaptivevpi": {
 "from": null
 },
+"adcreationbench": {
+"from": null
+},
 "adebench": {
 "from": "https://www.getdbt.com/resources/webinars/analytics-data-engineer-bench",
 "repo": "dbt-labs/dbt-core"
@@ -415,6 +418,9 @@
 "from": null
 },
 "aiagent": {
+"from": null
+},
+"aichipbench": {
 "from": null
 },
 "aidecathlon": {
@@ -1001,6 +1007,9 @@
 "biopharmabench": {
 "from": null
 },
+"biotasklens": {
+"from": null
+},
 "bioxarenapro": {
 "from": null
 },
@@ -1371,6 +1380,9 @@
 "clindatabench": {
 "from": null
 },
+"clinicalhealthcarefhirdiagnostictriageagent": {
+"from": null
+},
 "clinicarebench": {
 "from": null
 },
@@ -1719,6 +1731,9 @@
 "cuarecovery": {
 "from": null
 },
+"cuasee": {
+"from": null
+},
 "curatedterminalbenchmark": {
 "from": null
 },
@@ -1817,6 +1832,9 @@
 "from": null
 },
 "dataengbench": {
+"from": null
+},
+"datapointadvoiceoverbench": {
 "from": null
 },
 "dataspace": {
@@ -2197,6 +2215,9 @@
 "embodiedskillbench": {
 "from": null
 },
+"embodisafety": {
+"from": null
+},
 "embspatialbench": {
 "from": null
 },
@@ -2422,6 +2443,9 @@
 "from": null
 },
 "fiduciabench": {
+"from": null
+},
+"figmaeval": {
 "from": null
 },
 "figmaslideediting": {
@@ -2852,6 +2876,9 @@
 "gnncb": {
 "from": null
 },
+"goldibench": {
+"from": null
+},
 "gorillabenchmarkapibench": {
 "from": null
 },
@@ -3244,6 +3271,9 @@
 "id:arxiv-2605-11633": {
 "from": null
 },
+"id:arxiv-2606-08340": {
+"from": null
+},
 "id:arxiv-2606-29771": {
 "from": null
 },
@@ -3493,6 +3523,9 @@
 "from": null
 },
 "infinitebenchenqa": {
+"from": null
+},
+"infocon": {
 "from": null
 },
 "infographicsqa": {
@@ -3749,6 +3782,10 @@
 "lawbench": {
 "from": null
 },
+"leadbench": {
+"from": "https://huggingface.co/papers/2611.30149",
+"repo": "louiszengCN/LeadVLA_CODE"
+},
 "leakbench": {
 "from": null
 },
@@ -3939,6 +3976,9 @@
 "llmpomdpagenteval": {
 "from": null
 },
+"llmseo": {
+"from": null
+},
 "llmsrbench": {
 "from": null
 },
@@ -4024,6 +4064,9 @@
 "from": null
 },
 "loopsbench": {
+"from": null
+},
+"lostoncampus": {
 "from": null
 },
 "lowagent": {
@@ -4118,6 +4161,9 @@
 "from": null
 },
 "mario": {
+"from": null
+},
+"marketingbench": {
 "from": null
 },
 "marlbattlegrounds": {
@@ -4254,6 +4300,9 @@
 "from": null
 },
 "medmcpcalc": {
+"from": null
+},
+"meduigym": {
 "from": null
 },
 "medxpertqa": {
@@ -4657,6 +4706,9 @@
 "from": null
 },
 "motiongraphicsbench": {
+"from": null
+},
+"mrbench": {
 "from": null
 },
 "mrcr": {
@@ -5273,6 +5325,9 @@
 "phyrd": {
 "from": null
 },
+"physcapbench": {
+"from": null
+},
 "physcodebench": {
 "from": null
 },
@@ -5663,6 +5718,9 @@
 "realcontrolbench": {
 "from": null
 },
+"realicu": {
+"from": null
+},
 "realitybench": {
 "from": null
 },
@@ -5700,6 +5758,9 @@
 "from": null
 },
 "recreationbench": {
+"from": null
+},
+"recurscibench": {
 "from": null
 },
 "redcode": {
@@ -5763,6 +5824,9 @@
 "from": null
 },
 "repoenv": {
+"from": null
+},
+"repoeviqa": {
 "from": null
 },
 "repofixmini": {
@@ -5877,6 +5941,9 @@
 "rlpenalties": {
 "from": null
 },
+"roambench": {
+"from": null
+},
 "roboarcade": {
 "from": null
 },
@@ -5887,6 +5954,12 @@
 "from": null
 },
 "roboinf": {
+"from": null
+},
+"roboprobe": {
+"from": null
+},
+"robosimready": {
 "from": null
 },
 "robospatialhome": {
@@ -5905,6 +5978,9 @@
 "from": null
 },
 "robotsevolvedguilessons1": {
+"from": null
+},
+"robouniverseverified": {
 "from": null
 },
 "roboworld": {
@@ -6159,6 +6235,9 @@
 "seccodebench": {
 "from": null
 },
+"secondchance": {
+"from": null
+},
 "secopsesbenchmark": {
 "from": null
 },
@@ -6218,6 +6297,9 @@
 "from": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring"
 },
 "shadowbenchmcp": {
+"from": null
+},
+"shadownet": {
 "from": null
 },
 "shapebenchmarkdata": {
@@ -6364,6 +6446,9 @@
 "from": null
 },
 "snykvulnbench": {
+"from": null
+},
+"socialalpha": {
 "from": null
 },
 "socialgym": {
@@ -6809,6 +6894,9 @@
 "tacprocure": {
 "from": null
 },
+"tactbench": {
+"from": null
+},
 "talk2agent": {
 "from": null
 },
@@ -7073,6 +7161,9 @@
 "taubenchretail": {
 "from": null
 },
+"taucbench": {
+"from": null
+},
 "taumultilingual": {
 "from": null
 },
@@ -7298,6 +7389,9 @@
 "from": null
 },
 "triad": {
+"from": null
+},
+"trialagentbench": {
 "from": null
 },
 "triphysbench": {
@@ -7757,6 +7851,9 @@
 "from": null
 },
 "werewolfbeliefshift": {
+"from": null
+},
+"whaleyingbenchmarklab": {
 "from": null
 },
 "whowhenpro": {

@@ -1,0 +1,104 @@
+{
+ "schema_version": 1,
+ "build_id": "20261125T1918Z-d18ec6e6",
+ "pid": "bp-002863",
+ "name": "SpecEngineeringBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-002863",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic benchmark of real repository defects with executable, containerized verification; 100 tasks across 16 categories and a best defect-localization score of 49.04%.",
+  "risks": [
+   "Repository and dataset access may be permission-gated.",
+   "No explicit human review of task validity is reported.",
+   "No repeated-run variance or confidence intervals are reported."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-25",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "TokenWave-AI/SpecEngineeringBench",
+    "url": "https://github.com/TokenWave-AI/SpecEngineeringBench",
+    "commit": "ab16fd09c1ff2e1119105d3ab8d6b12e9a77b9d9",
+    "license": null,
+    "files": 9,
+    "pushed": "2026-11-25"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:Tokenwave-AI/SpecEngineeringBench",
+   "quote": "hf auth login\nspecbench download ./dataset",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "What license covers the code, dataset, and Harbor task packages?",
+    "Do GitHub and Hugging Face access permissions limit redistribution?"
+   ],
+   "quote": "licence field: None",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 200,
+   "unit": "task",
+   "manifest_path": "portable/manifest.json",
+   "splits": [],
+   "pilot": "pallets_flask/episode-0001/task1",
+   "quote": "Each instance has two Harbor task packages, `<repository>/<episode>/task1` and `.../task2`.",
+   "evidence": "reported",
+   "manifest_path_found": false
+  },
+  "verifier": {
+   "kind": "mixed",
+   "entry_point": "specbench score runs.jsonl --catalog dataset/portable/manifest.json --require-complete",
+   "full_credit": "Task 1: registered tests pass on the repaired snapshot and fail on the defective snapshot; Task 2: defects localized at file, function, and hunk granularity.",
+   "quote": "F2P counts tests that fail on the defective snapshot and pass on the repaired snapshot.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "controls_reported",
+   "path": null,
+   "command": null,
+   "quote": "F2P counts tests that fail on the defective snapshot and pass on the repaired snapshot.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [
+    "internet access during image build",
+    "model API host for Codex/Claude Code harnesses"
+   ],
+   "credentials": [
+    "Hugging Face access permissions / `hf auth login`",
+    "model API credentials for Codex/Claude Code harnesses as required"
+   ],
+   "exceptions": [
+    "Codex and Claude Code harnesses need `--allow-agent-host <api host>`."
+   ],
+   "quote": "Run them with Harbor 0.23.0 on Linux x86-64 with Docker Engine, Compose v2 and BuildKit. Every task builds its agent image and a separate verifier image from source, so both need internet access during the build.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "What license covers the code, dataset, and Harbor task packages?",
+   "Where should the HF dataset archive and `portable/manifest.json` be downloaded from?",
+   "Which model API host and credentials will Codex or Claude Code use?",
+   "Should the adapter run both task1 and task2 for every episode?"
+  ],
+  "next_action": "Download the HF dataset archive and inspect `portable/manifest.json` with one pilot task package."
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "schema_version": 1,
+ "build_id": "20261125T1918Z-d18ec6e6",
+ "pid": "bp-001137",
+ "name": "Argo-Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001137",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "All core dimensions strong; agentic, container-hosted, executable grading, best score 59.5 below saturation.",
+  "risks": [
+   "Answer keys and graders are held out; scoring needs external service.",
+   "Official leaderboard uses a private warehouse world, not the released one.",
+   "Version updates make scores incomparable across v1.1 and v1.5."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-25",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "TextQLLabs/Argo-Bench",
+    "url": "https://github.com/TextQLLabs/Argo-Bench",
+    "commit": "c7bacfae83f525e55554bf105d5f4a36d2c9c1b2",
+    "license": "Apache-2.0",
+    "files": 65,
+    "pushed": "2026-11-23"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:TextQLLabs/Argo-Bench",
+   "quote": "This repository is the minimum needed to reproduce the paper's runs: the questions, the reference agent on [Inspect AI](https://inspect.aisi.org.uk), its two tool servers, the sandboxes `run_python` executes in, and the model configurations.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": "CC BY 4.0",
+   "redistribution_questions": [],
+   "quote": "Code: Apache-2.0 (`LICENSE`). Data (question cards, the warehouse release): CC BY 4.0 (`DATA_LICENSE.md`).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 209,
+   "unit": "question",
+   "manifest_path": "tasks/final.jsonl",
+   "splits": [
+    "final",
+    "smoke"
+   ],
+   "pilot": "smoke",
+   "quote": "This is version 1.5: 209 questions on a rebuilt release of the warehouse, graded by the grading service against that release's answer keys (see *Versions*).",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "argo_bench/remote.py@remote_grade",
+   "full_credit": "The grading service returns the question's reward after checking the run's filings against the held-out v1.5 answer key.",
+   "quote": "Runs are scored by the Argo-Bench grading service (`https://grade.argo-bench.com`), which holds the keys and runs the benchmark's grader: send it a run's filings with an API key (from the Argo-Bench team) and it returns the question's reward.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "reference/",
+   "command": ".venv/bin/inspect eval argo_bench/task.py -T solver=reference -T questions=reference --model mockllm/model",
+   "quote": "`reference/` holds reference solutions for 16 of the questions: the four that the paper and its website walk through (`col-10-refund-partnerships`, `ds-22-margin-monthly-per-order`, `fc-12-true-ups-may`, `mer-71-silent-takeovers`) and twelve more.",
+   "evidence": "inspected",
+   "path_found": true
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "warehouse MCP server",
+    "python MCP server",
+    "Argo-Bench grading service"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "model provider API via Inspect",
+    "Argo-Bench grading service at https://grade.argo-bench.com",
+    "BigQuery if using the BigQuery path"
+   ],
+   "credentials": [
+    "model provider keys in .env",
+    "ARGO_GRADER_KEY",
+    "ARGO_WAREHOUSE_* read-only credentials",
+    "BigQuery credentials if using BigQuery"
+   ],
+   "exceptions": [
+    "BigQuery path requires the optional `bigquery` extra and dataset setup scripts.",
+    "Docker sandbox requires building `argo-sandbox`; k8s requires cluster setup with gVisor and NetworkPolicy.",
+    "`food_delivery_9` is a schema of views over `food_delivery` that ends on 30 September 2024 for questions with a data cutoff before December."
+   ],
+   "quote": "| sandbox | the Docker image's pinned libraries, in a gVisor pod with no network (`k8s/`) |",
+   "evidence": "reported"
+  },
+  "questions": [
+   "How to obtain and load the separate 73 GiB v1.5 warehouse into DuckDB or BigQuery.",
+   "How to implement the Mission Control filing API so actions become graded state.",
+   "How to supply the Argo-Bench grading API key and handle held-out answer keys.",
+   "Which sandbox and credential isolation mode to use: local, Docker, or Kubernetes."
+  ],
+  "next_action": "Run the smoke question first to validate the Inspect task, MCP tools, and Mission Control filing path without needing warehouse data."
+ }
+}

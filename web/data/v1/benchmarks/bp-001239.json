@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "build_id": "20261125T1918Z-d18ec6e6",
+ "pid": "bp-001239",
+ "name": "UndoBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001239",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic benchmark has public tasks, executable oracles, solvability evidence, and a 53.49% best CRSR, so T2 is met despite weak attention.",
+  "risks": [
+   "One TEST workflow had zero nominal control success, so it may be unsolvable.",
+   "Small held-out TEST suite (12 tasks) limits statistical power.",
+   "Hosted API runs are not bitwise reproducible."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-25",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "tradertanmay/undobench",
+    "url": "https://github.com/tradertanmay/undobench",
+    "commit": "4a25c4fa0f12bb6c79dc6e0e3a8f31deeb6af21e",
+    "license": "NOASSERTION",
+    "files": 206,
+    "pushed": "2026-10-07"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:tradertanmay/undobench",
+   "quote": "* **Canonical Frozen Raw Dataset**: `results/rb3c_test_raw.jsonl`",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "Apache-2.0",
+   "data_license": "CC BY 4.0",
+   "redistribution_questions": [
+    "The repository licence field reads NOASSERTION; is Apache 2.0 code plus CC BY 4.0 data the intended combined grant?",
+    "What attribution must an adapter carry when it redistributes task scenarios, objectives, prompts, or evaluation specifications under CC BY 4.0?",
+    "Can the frozen raw dataset in results/ and the benchmark manifests be mirrored outside the repo?"
+   ],
+   "quote": "*Task Code Scope (`recoverbench/tasks/`)*: The Python task wrapper code is executable under Apache 2.0, while the underlying task scenarios, objectives, prompts, and evaluation specifications are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 36,
+   "unit": "workflow",
+   "manifest_path": "benchmark/manifests/TEST_MANIFEST_V1_0_1.json",
+   "splits": [
+    "DEV",
+    "VAL",
+    "TEST"
+   ],
+   "pilot": null,
+   "quote": "* **36 Multi-Turn Workflows Across 8 Enterprise Domains**:",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "recoverbench/oracle/state_oracle.py",
+   "full_credit": "Intended semantic effect occurs exactly once, all goal invariants hold, zero duplicate or missing semantic effects.",
+   "quote": "* **Wire-Level Effect-History & State Oracles**: Evaluates not just the final sandbox state, but inspects every committed mutation at the wire level to detect silent duplicate mutations and orphaned transactions.",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [
+    "recoverbench",
+    "ollama"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "OpenAI-compatible model endpoint (OPENAI_BASE_URL)",
+    "Ollama endpoint at http://ollama:11434/v1",
+    "Hugging Face dataset TanmaySah/undobench"
+   ],
+   "credentials": [
+    "OPENAI_API_KEY"
+   ],
+   "exceptions": [
+    "Frozen TEST tasks are quarantined: recovery methods cannot be evaluated on them without explicit authorization"
+   ],
+   "quote": "      - OLLAMA_BASE_URL=http://ollama:11434/v1\n      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-}\n      - OPENAI_API_KEY=${OPENAI_API_KEY:-}",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which task ids are public enough to ship in an adapter, and which TEST tasks stay quarantined?",
+   "Does the verifier run inside a container per task, or against recorded wire-effect logs?",
+   "Are model endpoints required for every task, or only for the baseline agent wrappers?",
+   "How should CC BY 4.0 attribution be carried when task specs are repackaged?"
+  ],
+  "next_action": "Run `undobench smoke` (or the Dockerfile smoke preflight) to confirm the sandbox, fault injector, and state oracles work before wiring any real task."
+ }
+}

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-24",
+ "as_of": "2026-11-25",
  "source": "https://epoch.ai/data/benchmark_data.zip",
  "licence": "CC BY 4.0, Epoch AI",
  "benchmarks": [
@@ -987,7 +987,7 @@
      "model": "gemini-4-neon_xhigh"
     }
    ],
-   "velocity": 7.12,
+   "velocity": 6.99,
    "models": 37,
    "page": {
     "slug": "ebr-bench",
@@ -1140,7 +1140,7 @@
     }
    ],
    "velocity": 7.78,
-   "models": 48,
+   "models": 49,
    "page": {
     "slug": "mirrorcode",
     "checked": "2026-11-17",
@@ -1361,7 +1361,7 @@
      "model": "Claude Fable 5 (XHigh)"
     }
    ],
-   "velocity": 1.96,
+   "velocity": 1.54,
    "models": 324,
    "page": {
     "slug": "arc-agi",
@@ -1688,7 +1688,7 @@
      "model": "claude-opus-4-6_unknown"
     }
    ],
-   "velocity": 2.75,
+   "velocity": 0.92,
    "models": 22,
    "page": {
     "slug": "cybench",
@@ -1759,7 +1759,7 @@
      "model": "claude-opus-4-6_high"
     }
    ],
-   "velocity": 0.23,
+   "velocity": 0.04,
    "models": 41,
    "page": {
     "slug": "deepresearch-bench",
@@ -2003,7 +2003,7 @@
      "model": "claude-fable-5-1_unknown"
     }
    ],
-   "velocity": 5.81,
+   "velocity": 5.15,
    "models": 42,
    "page": {
     "slug": "gso-bench",
@@ -2307,7 +2307,7 @@
      "model": "claude-sonnet-4-6"
     }
    ],
-   "velocity": 0.77,
+   "velocity": 0.48,
    "models": 10,
    "page": {
     "slug": "osworld",
@@ -3168,7 +3168,7 @@
      "model": "GPT-6.2 Astra (XHigh)"
     }
    ],
-   "velocity": 5.4,
+   "velocity": 4.85,
    "models": 307,
    "page": {
     "slug": "arc-agi-2",
@@ -3239,7 +3239,7 @@
      "model": "Fable 5.1 (Max)"
     }
    ],
-   "velocity": 2.91,
+   "velocity": 2.9,
    "models": 22,
    "page": {
     "slug": "posttrainbench",
@@ -3436,7 +3436,7 @@
      "model": "Fable 5.2"
     }
    ],
-   "velocity": 3.27,
+   "velocity": 3.13,
    "models": 20,
    "page": {
     "slug": "remote-labor-index",
@@ -3486,7 +3486,7 @@
      "model": "GPT-5.2"
     }
    ],
-   "velocity": 0.51,
+   "velocity": 0.35,
    "models": 11,
    "page": {
     "slug": "gdpval",
@@ -3630,7 +3630,7 @@
      "model": "Claude Opus 5 (max)"
     }
    ],
-   "velocity": 2.41,
+   "velocity": 2.4,
    "models": 14,
    "page": {
     "slug": "osworld-2-0",
@@ -3796,7 +3796,7 @@
      "model": "claude-mythos-preview-early"
     }
    ],
-   "velocity": 1.19,
+   "velocity": 0.85,
    "models": 46,
    "page": {
     "slug": "metr-time-horizons",
@@ -3897,7 +3897,7 @@
      "model": "anthropic/claude-fable-5-1"
     }
    ],
-   "velocity": 6.67,
+   "velocity": 5.34,
    "models": 85,
    "page": {
     "slug": "proofbench",
@@ -3958,7 +3958,7 @@
      "model": "Claude Opus 5.5"
     }
    ],
-   "velocity": 2.92,
+   "velocity": 2.91,
    "models": 46,
    "page": {
     "slug": "frontiercode",
@@ -4064,7 +4064,7 @@
      "model": "Claude Fable 5.2 (xhigh)"
     }
    ],
-   "velocity": 2.23,
+   "velocity": 2.18,
    "models": 206,
    "page": {
     "slug": "lmca",
@@ -4451,7 +4451,7 @@
      "model": "Claude Fable 5.2"
     }
    ],
-   "velocity": 4.16,
+   "velocity": 4.14,
    "models": 25,
    "page": {
     "slug": "frontierswe",
@@ -4874,10 +4874,10 @@
    "in_index": true,
    "file": "spireclimb.csv",
    "top": {
-    "score": 0.4133,
-    "model": "gpt-6.2-astra_max",
-    "org": "OpenAI",
-    "date": "2026-11-17"
+    "score": 0.5117,
+    "model": "gemini-4-neon_xhigh",
+    "org": "Google DeepMind",
+    "date": "2026-11-18"
    },
    "history": [
     {
@@ -4894,10 +4894,15 @@
      "date": "2026-11-17",
      "score": 0.4133,
      "model": "gpt-6.2-astra_max"
+    },
+    {
+     "date": "2026-11-18",
+     "score": 0.5117,
+     "model": "gemini-4-neon_xhigh"
     }
    ],
-   "velocity": 14.25,
-   "models": 16,
+   "velocity": 17.61,
+   "models": 17,
    "page": {
     "slug": "spireclimb",
     "checked": "2026-11-17",

@@ -1,0 +1,109 @@
+{
+ "schema_version": 1,
+ "build_id": "20261125T1918Z-d18ec6e6",
+ "pid": "bp-001336",
+ "name": "DRNOISE",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001336",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now unknown, recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "Task data release not confirmed",
+   "No leaderboard; scores are author-run only"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-25",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "junnie00/drnoise-benchmark",
+    "url": "https://github.com/junnie00/drnoise-benchmark",
+    "commit": "ff71eff9343da24a6a75741153b616e292f42645",
+    "license": null,
+    "files": 2384,
+    "pushed": "2026-10-11"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:junnie00/drnoise-benchmark",
+   "quote": "This is the official repository for **DRNOISE: Benchmarking Deep Research Agents in Misleading Evidence Environments**.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "What license covers the code and task data?",
+    "Can the 1,750 task documents be redistributed?",
+    "Does the BrowseComp-Plus background corpus impose separate terms?"
+   ],
+   "quote": "licence field: None",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 100,
+   "unit": "task",
+   "manifest_path": "benchmark/tasks/index.json",
+   "splits": [
+    "clean",
+    "noisy"
+   ],
+   "pilot": "supplier_select_0",
+   "quote": "DRNOISE contains **100 tasks across 10 reasoning families**, with 10 tasks per family.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "exact_match",
+   "entry_point": "benchmark/grade_varied9.py",
+   "full_credit": "The committed answer matches the task's gold answer under the grader; noncompleted runs count as incorrect.",
+   "quote": "The summarizer checks that every expected clean/noisy output exists, grades each repetition, and reports means and population standard deviations. Noncompleted runs count as incorrect.",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": "benchmark/tasks/<task_id>/answer.json",
+   "command": null,
+   "quote": "`answer.json` | Gold answer, designated false answer, and task metadata",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "shared Lucene store",
+    "dense retrieval index",
+    "query encoder",
+    "evaluated model provider API"
+   ],
+   "gpu": "yes",
+   "network_or_api": [
+    "evaluated model provider API"
+   ],
+   "credentials": [
+    "provider credentials"
+   ],
+   "exceptions": [],
+   "quote": "Building dense indexes requires CUDA and the Qwen3-Embedding-8B checkpoint; evaluating API models requires your own provider credentials.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "What license covers the code and task data?",
+   "How will the task documents and background corpus be packaged?",
+   "How will dense indexes and model credentials be provisioned?",
+   "How should clean and noisy conditions be scored?"
+  ],
+  "next_action": "Confirm redistribution rights, then inspect benchmark/tasks/index.json and run the supplier_select_0 single-task check."
+ }
+}

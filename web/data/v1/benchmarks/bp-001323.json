@@ -1,0 +1,101 @@
+{
+ "schema_version": 1,
+ "build_id": "20261125T1918Z-d18ec6e6",
+ "pid": "bp-001323",
+ "name": "ANCHOR",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001323",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic coding benchmark with real repository tasks, 358 tasks across 10 categories, Docker harness, validated hybrid judge, and only 19% strict compliance.",
+  "risks": [
+   "indirect solution leakage from gold patch during constraint construction",
+   "LLM judge less reliable on THEN and PRIORITY relations",
+   "human audit covers only 50 instances, not the full benchmark"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-25",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "hf",
+    "id": "Yone-01/ANCHOR",
+    "url": "https://huggingface.co/datasets/Yone-01/ANCHOR",
+    "commit": "f9a3abd6c5b98c48495ac540f25893b7e41c9a9b",
+    "license": "apache-2.0",
+    "files": 3,
+    "pushed": null
+   },
+   {
+    "kind": "github",
+    "id": "bupterlxp/ANCHOR",
+    "url": "https://github.com/bupterlxp/ANCHOR",
+    "commit": "106bb78172fed991769e937444c55e8efd795fe4",
+    "license": null,
+    "files": 8,
+    "pushed": "2026-07-15"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:Yone-01/ANCHOR",
+   "quote": "📊 **Dataset**: <https://huggingface.co/datasets/Yone-01/ANCHOR>",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": "apache-2.0",
+   "redistribution_questions": [],
+   "quote": "license: apache-2.0",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 358,
+   "unit": "task",
+   "manifest_path": null,
+   "splits": [],
+   "pilot": "microsoft__kiota-6170",
+   "quote": "358 (23 repositories, 8 programming languages)",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "mixed",
+   "entry_point": null,
+   "full_credit": "fraction of tasks with *every* item passed",
+   "quote": "Judges | rule-based templates + LLM judge (κ = 0.78 vs. human consensus)",
+   "evidence": "reported"
+  },
+  "oracle": {
+   "level": "reference_solution",
+   "path": "dataset `patch` field",
+   "command": null,
+   "quote": "A reference patch that resolves the underlying engineering problem (note: this patch does not guarantee full constraint compliance)",
+   "evidence": "reported",
+   "path_found": false
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [],
+   "credentials": [],
+   "exceptions": [],
+   "quote": "Tasks are drawn from real GitHub issues with executable test environments.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Where is the harness?",
+   "How are judges run?",
+   "Which files are tasks?",
+   "What judge credentials are needed?"
+  ],
+  "next_action": "Download the HF dataset and inspect the example checklist."
+ }
+}
