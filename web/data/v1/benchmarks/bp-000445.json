@@ -1,0 +1,60 @@
+{
+ "schema_version": 1,
+ "build_id": "20261126T1749Z-88a54482",
+ "pid": "bp-000445",
+ "name": "MissionBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000445",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic simulator benchmark with expert-written tasks, 120 missions across five environments, best model 34.8%, validated judge and human-solvability evidence.",
+  "risks": [
+   "Task data and harness release not stated",
+   "Reward hacking and shortcuts not discussed",
+   "Simulator hosting and public infrastructure unclear"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-26",
+  "model": null,
+  "prompt_version": 1,
+  "sources": [],
+  "no_release": true,
+  "release": {
+   "quote": null,
+   "evidence": "unknown",
+   "tasks_live_in": "unknown"
+  },
+  "rights": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "verifier": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "oracle": {
+   "quote": null,
+   "evidence": "unknown",
+   "level": "none"
+  },
+  "runtime": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "No public repository or dataset was found in the pool's links, Hugging Face's paper record or the paper's own links. Are the tasks released?"
+  ],
+  "next_action": "Ask the authors where the tasks, environment and grader are released."
+ }
+}

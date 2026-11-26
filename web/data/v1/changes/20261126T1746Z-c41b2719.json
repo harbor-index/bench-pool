@@ -1,0 +1,333 @@
+{
+ "schema_version": 1,
+ "build_id": "20261126T1746Z-c41b2719",
+ "generated_at": "2026-11-26T17:46:05Z",
+ "previous_build_id": "20261126T1720Z-20d68d99",
+ "data_generated": "2026-11-26 17:46 UTC",
+ "counts": {
+  "benchmarks": 2679,
+  "events": 45
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261126T1746Z-c41b2719.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002914",
+   "name": "Repo Lighthouse",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002914",
+   "name": "Repo Lighthouse",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002904",
+   "name": "Google Ads AI Agent Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002898",
+   "name": "AutoAuditBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002897",
+   "name": "ADC Agent Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002896",
+   "name": "WildRegistry",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002895",
+   "name": "Visual Cognitive Collusion",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002915",
+   "name": "SWE-Validation-120",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002894",
+   "name": "REE",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002913",
+   "name": "Rapidata Robot Manipulation Benchmark",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002912",
+   "name": "RailInject",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002893",
+   "name": "OS-Omni",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002893",
+   "name": "OS-Omni",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002907",
+   "name": "malha",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002892",
+   "name": "LUDIUS",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002905",
+   "name": "IRTIQA",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002903",
+   "name": "GlassGround",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002891",
+   "name": "EvoLink-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002890",
+   "name": "EgoUseBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002889",
+   "name": "EgoManeuver",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002888",
+   "name": "EBU-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002887",
+   "name": "DRBench Pro",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002886",
+   "name": "Asset4D-Bench",
+   "before": null,
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002886",
+   "name": "Asset4D-Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002885",
+   "name": "AIRIS",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002901",
+   "name": "DeepBinary",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002900",
+   "name": "CypherMAS",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002910",
+   "name": "Original-30",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002906",
+   "name": "keel-arena",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001217",
+   "name": "MedicalHarnessBench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001217",
+   "name": "MedicalHarnessBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000943",
+   "name": "VLoc Bench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000943",
+   "name": "VLoc Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002909",
+   "name": "MultiNet v2.0-Gridworld",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000730",
+   "name": "SpeechGym",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000730",
+   "name": "SpeechGym",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000625",
+   "name": "InfraBench",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000445",
+   "name": "MissionBench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000445",
+   "name": "MissionBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000777",
+   "name": "WorldCupArena",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000777",
+   "name": "WorldCupArena",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002899",
+   "name": "CRAFTER-XAI-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002908",
+   "name": "ML-Tool-Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002902",
+   "name": "GDS Agent Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002911",
+   "name": "PLAICraft",
+   "before": null,
+   "after": "hold"
+  }
+ ]
+}

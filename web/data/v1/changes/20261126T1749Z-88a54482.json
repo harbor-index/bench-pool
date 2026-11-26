@@ -1,0 +1,102 @@
+{
+ "schema_version": 1,
+ "build_id": "20261126T1749Z-88a54482",
+ "generated_at": "2026-11-26T17:49:08Z",
+ "previous_build_id": "20261126T1746Z-c41b2719",
+ "data_generated": "2026-11-26 17:49 UTC",
+ "counts": {
+  "benchmarks": 2679,
+  "events": 12
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261126T1749Z-88a54482.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002914",
+   "name": "Repo Lighthouse",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-002914",
+   "name": "Repo Lighthouse",
+   "before": "noscore",
+   "after": null
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002914",
+   "name": "Repo Lighthouse",
+   "before": null,
+   "after": "offline_answers"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002893",
+   "name": "OS-Omni",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-002886",
+   "name": "Asset4D-Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001217",
+   "name": "MedicalHarnessBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000943",
+   "name": "VLoc Bench",
+   "before": null,
+   "after": "reference_solution"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000730",
+   "name": "SpeechGym",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000445",
+   "name": "MissionBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000777",
+   "name": "WorldCupArena",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000777",
+   "name": "WorldCupArena",
+   "before": "noscore",
+   "after": null
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000777",
+   "name": "WorldCupArena",
+   "before": null,
+   "after": "offline_answers"
+  }
+ ]
+}

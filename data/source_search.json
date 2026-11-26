@@ -927,6 +927,17 @@
 "title": "Unveiling Safety Vulnerabilities of Large Language Models",
 "why": "Introduces AttaQ, a dataset of adversarial questions designed to provoke harmful model responses."
 },
+"autoauditbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-26",
+"name": "AutoAuditBench",
+"query": "AutoAuditBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "autoflow6universal": {
 "arxiv": null,
 "considered": [],
@@ -6040,6 +6051,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"malha": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-26",
+"name": "malha",
+"query": "malha",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "mapdc41causalablation": {
 "arxiv": null,
 "considered": [],
@@ -8059,6 +8081,19 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"original30": {
+"arxiv": null,
+"considered": [
+"Operational Memory Architecture for Kubernetes: Evidence Horizon Taxonomy and Extended Causal Pattern Preservation"
+],
+"date": "2026-11-26",
+"name": "Original-30",
+"query": "Original-30",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Kubernetes operations paper; no Cangjie code repair benchmark or Original-30 dataset."
+},
 "osworldextended": {
 "arxiv": null,
 "considered": [],
@@ -8809,12 +8844,34 @@
 "title": null,
 "why": "Paper introduces a guardrail remediation pipeline, not a benchmark named RAIL Guard Benchmark."
 },
+"railinject": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-26",
+"name": "RailInject",
+"query": "RailInject",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "ramenbench": {
 "arxiv": null,
 "considered": [],
 "date": "2026-11-18",
 "name": "ramen-bench",
 "query": "ramen-bench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"rapidatarobotmanipulation": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-26",
+"name": "Rapidata Robot Manipulation Benchmark",
+"query": "Rapidata Robot Manipulation Benchmark",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -10280,6 +10337,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "No paper introduces a benchmark named SWE Tasks; they use or introduce different SWE benchmarks/pipelines."
+},
+"swevalidation120": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-26",
+"name": "SWE-Validation-120",
+"query": "SWE-Validation-120",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "task131stockresearchbasketrolling": {
 "arxiv": null,

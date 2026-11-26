@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-25",
+ "as_of": "2026-11-26",
  "source": "https://epoch.ai/data/benchmark_data.zip",
  "licence": "CC BY 4.0, Epoch AI",
  "benchmarks": [
@@ -140,7 +140,7 @@
     }
    ],
    "velocity": 0.35,
-   "models": 343,
+   "models": 344,
    "page": {
     "slug": "gpqa-diamond",
     "checked": "2026-11-17",
@@ -695,7 +695,7 @@
     }
    ],
    "velocity": 0.72,
-   "models": 321,
+   "models": 322,
    "page": {
     "slug": "otis-mock-aime-2024-2025",
     "checked": "2026-11-17",
@@ -796,7 +796,7 @@
     }
    ],
    "velocity": 3.66,
-   "models": 107,
+   "models": 108,
    "page": {
     "slug": "simpleqa-verified",
     "checked": "2026-11-17",
@@ -885,7 +885,7 @@
     }
    ],
    "velocity": 2.92,
-   "models": 169,
+   "models": 170,
    "page": {
     "slug": "chess-puzzles",
     "checked": "2026-11-17",
@@ -1140,7 +1140,7 @@
     }
    ],
    "velocity": 7.78,
-   "models": 49,
+   "models": 51,
    "page": {
     "slug": "mirrorcode",
     "checked": "2026-11-17",
@@ -1362,7 +1362,7 @@
     }
    ],
    "velocity": 1.54,
-   "models": 324,
+   "models": 331,
    "page": {
     "slug": "arc-agi",
     "checked": "2026-11-17",
@@ -3169,7 +3169,7 @@
     }
    ],
    "velocity": 4.85,
-   "models": 307,
+   "models": 314,
    "page": {
     "slug": "arc-agi-2",
     "checked": "2026-11-17",
@@ -3239,8 +3239,8 @@
      "model": "Fable 5.1 (Max)"
     }
    ],
-   "velocity": 2.9,
-   "models": 22,
+   "velocity": 2.89,
+   "models": 24,
    "page": {
     "slug": "posttrainbench",
     "checked": "2026-11-17",
@@ -3437,7 +3437,7 @@
     }
    ],
    "velocity": 3.13,
-   "models": 20,
+   "models": 21,
    "page": {
     "slug": "remote-labor-index",
     "checked": "2026-11-17",
@@ -3630,7 +3630,7 @@
      "model": "Claude Opus 5 (max)"
     }
    ],
-   "velocity": 2.4,
+   "velocity": 2.39,
    "models": 14,
    "page": {
     "slug": "osworld-2-0",
@@ -3958,7 +3958,7 @@
      "model": "Claude Opus 5.5"
     }
    ],
-   "velocity": 2.91,
+   "velocity": 2.9,
    "models": 46,
    "page": {
     "slug": "frontiercode",
@@ -4065,7 +4065,7 @@
     }
    ],
    "velocity": 2.18,
-   "models": 206,
+   "models": 220,
    "page": {
     "slug": "lmca",
     "checked": "2026-11-17",
@@ -4163,7 +4163,7 @@
     }
    ],
    "velocity": 0.71,
-   "models": 244,
+   "models": 258,
    "page": {
     "slug": "dtbench",
     "checked": "2026-11-17",
@@ -4451,8 +4451,8 @@
      "model": "Claude Fable 5.2"
     }
    ],
-   "velocity": 4.14,
-   "models": 25,
+   "velocity": 4.11,
+   "models": 27,
    "page": {
     "slug": "frontierswe",
     "checked": "2026-11-17",
@@ -4901,7 +4901,7 @@
      "model": "gemini-4-neon_xhigh"
     }
    ],
-   "velocity": 17.61,
+   "velocity": 17.4,
    "models": 17,
    "page": {
     "slug": "spireclimb",

@@ -1,0 +1,531 @@
+{
+ "schema_version": 1,
+ "build_id": "20261126T1720Z-20d68d99",
+ "generated_at": "2026-11-26T17:20:44Z",
+ "previous_build_id": "20261125T1918Z-d18ec6e6",
+ "data_generated": "2026-11-26 17:20 UTC",
+ "counts": {
+  "benchmarks": 2679,
+  "events": 37
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261126T1720Z-20d68d99.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "discovered",
+   "pid": "bp-002914",
+   "name": "Repo Lighthouse",
+   "after": {
+    "name": "Repo Lighthouse",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002904",
+   "name": "Google Ads AI Agent Benchmark",
+   "after": {
+    "name": "Google Ads AI Agent Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002898",
+   "name": "AutoAuditBench",
+   "after": {
+    "name": "AutoAuditBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002897",
+   "name": "ADC Agent Benchmark",
+   "after": {
+    "name": "ADC Agent Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002896",
+   "name": "WildRegistry",
+   "after": {
+    "name": "WildRegistry",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002895",
+   "name": "Visual Cognitive Collusion",
+   "after": {
+    "name": "Visual Cognitive Collusion",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002915",
+   "name": "SWE-Validation-120",
+   "after": {
+    "name": "SWE-Validation-120",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002894",
+   "name": "REE",
+   "after": {
+    "name": "REE",
+    "tier": null,
+    "covered": null,
+    "best": 86.0,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002913",
+   "name": "Rapidata Robot Manipulation Benchmark",
+   "after": {
+    "name": "Rapidata Robot Manipulation Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002912",
+   "name": "RailInject",
+   "after": {
+    "name": "RailInject",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002893",
+   "name": "OS-Omni",
+   "after": {
+    "name": "OS-Omni",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002907",
+   "name": "malha",
+   "after": {
+    "name": "malha",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002892",
+   "name": "LUDIUS",
+   "after": {
+    "name": "LUDIUS",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002905",
+   "name": "IRTIQA",
+   "after": {
+    "name": "IRTIQA",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002903",
+   "name": "GlassGround",
+   "after": {
+    "name": "GlassGround",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002490",
+   "name": "ExtractBench Pro",
+   "after": {
+    "name": "ExtractBench Pro",
+    "tier": "hold",
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002891",
+   "name": "EvoLink-Bench",
+   "after": {
+    "name": "EvoLink-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002890",
+   "name": "EgoUseBench",
+   "after": {
+    "name": "EgoUseBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002889",
+   "name": "EgoManeuver",
+   "after": {
+    "name": "EgoManeuver",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002888",
+   "name": "EBU-Bench",
+   "after": {
+    "name": "EBU-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002887",
+   "name": "DRBench Pro",
+   "after": {
+    "name": "DRBench Pro",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002886",
+   "name": "Asset4D-Bench",
+   "after": {
+    "name": "Asset4D-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002885",
+   "name": "AIRIS",
+   "after": {
+    "name": "AIRIS",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002901",
+   "name": "DeepBinary",
+   "after": {
+    "name": "DeepBinary",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002900",
+   "name": "CypherMAS",
+   "after": {
+    "name": "CypherMAS",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002910",
+   "name": "Original-30",
+   "after": {
+    "name": "Original-30",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002906",
+   "name": "keel-arena",
+   "after": {
+    "name": "keel-arena",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "renamed",
+   "pid": "bp-002074",
+   "name": "Agent tool-policy benchmark",
+   "before": "Agent Tool-Policy Benchmark",
+   "after": "Agent tool-policy benchmark"
+  },
+  {
+   "kind": "renamed",
+   "pid": "bp-001056",
+   "name": "μ-Bench",
+   "before": "mu-bench",
+   "after": "μ-Bench"
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002909",
+   "name": "MultiNet v2.0-Gridworld",
+   "after": {
+    "name": "MultiNet v2.0-Gridworld",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002899",
+   "name": "CRAFTER-XAI-Bench",
+   "after": {
+    "name": "CRAFTER-XAI-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "harbor_changed",
+   "pid": "bp-000409",
+   "name": "ProgramBench",
+   "before": "hub",
+   "after": null
+  },
+  {
+   "kind": "score_changed",
+   "pid": "bp-000729",
+   "name": "ShellBench",
+   "before": null,
+   "after": 62.5
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002908",
+   "name": "ML-Tool-Bench",
+   "after": {
+    "name": "ML-Tool-Bench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002902",
+   "name": "GDS Agent Benchmark",
+   "after": {
+    "name": "GDS Agent Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002911",
+   "name": "PLAICraft",
+   "after": {
+    "name": "PLAICraft",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "removed",
+   "pid": "bp-002852",
+   "name": "EmbodiSafety"
+  }
+ ]
+}

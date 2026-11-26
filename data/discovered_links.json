@@ -97,6 +97,9 @@
 "adaptivevpi": {
 "from": null
 },
+"adcagent": {
+"from": null
+},
 "adcreationbench": {
 "from": null
 },
@@ -692,6 +695,9 @@
 "assemblygrid": {
 "from": null
 },
+"asset4dbench": {
+"from": null
+},
 "assetopsbench": {
 "from": null
 },
@@ -744,6 +750,9 @@
 "from": null
 },
 "authorizationbench": {
+"from": null
+},
+"autoauditbench": {
 "from": null
 },
 "autobench": {
@@ -1632,6 +1641,9 @@
 "cpumcptoolcalling": {
 "from": null
 },
+"crafterxaibench": {
+"from": null
+},
 "crag": {
 "from": null
 },
@@ -1802,6 +1814,9 @@
 "cyberthreatagentbench": {
 "from": null
 },
+"cyphermas": {
+"from": null
+},
 "cypherturn": {
 "from": null
 },
@@ -1871,6 +1886,9 @@
 "from": null
 },
 "decoycount": {
+"from": null
+},
+"deepbinary": {
 "from": null
 },
 "deepplanning": {
@@ -2026,6 +2044,9 @@
 "drawaibench": {
 "from": null
 },
+"drbenchpro": {
+"from": null
+},
 "drcik": {
 "from": null
 },
@@ -2118,6 +2139,9 @@
 "ebrbench": {
 "from": null
 },
+"ebubench": {
+"from": null
+},
 "ecdsafail": {
 "from": null
 },
@@ -2155,6 +2179,9 @@
 "from": null
 },
 "egobench": {
+"from": null
+},
+"egomaneuver": {
 "from": null
 },
 "egomemreason": {
@@ -2341,6 +2368,9 @@
 "from": null
 },
 "evoharnessbench": {
+"from": null
+},
+"evolinkbench": {
 "from": null
 },
 "evoriskbench": {
@@ -2794,6 +2824,9 @@
 "gdpxlsx": {
 "from": null
 },
+"gdsagent": {
+"from": null
+},
 "gemma4ghpr": {
 "from": null
 },
@@ -2858,6 +2891,9 @@
 "gkb1000": {
 "from": null
 },
+"glassground": {
+"from": null
+},
 "globalmmlu": {
 "from": null
 },
@@ -2877,6 +2913,9 @@
 "from": null
 },
 "goldibench": {
+"from": null
+},
+"googleadsaiagent": {
 "from": null
 },
 "gorillabenchmarkapibench": {
@@ -3367,6 +3406,9 @@
 "id:arxiv-2611-29243": {
 "from": null
 },
+"id:arxiv-2611-34646": {
+"from": null
+},
 "id:r-0d426f76fc": {
 "from": null
 },
@@ -3606,6 +3648,9 @@
 "iprefbench": {
 "from": null
 },
+"irtiqa": {
+"from": null
+},
 "itbenchaa": {
 "from": null
 },
@@ -3663,6 +3708,9 @@
 "from": null
 },
 "kcbench": {
+"from": null
+},
+"keelarena": {
 "from": null
 },
 "kernelbench": {
@@ -4075,6 +4123,9 @@
 "lsat": {
 "from": null
 },
+"ludius": {
+"from": null
+},
 "lvbench": {
 "from": null
 },
@@ -4128,6 +4179,9 @@
 "from": null
 },
 "malab": {
+"from": null
+},
+"malha": {
 "from": null
 },
 "maliciousagentskillsbench": {
@@ -4538,6 +4592,9 @@
 "mlsbenchlite": {
 "from": null
 },
+"mltoolbench": {
+"from": null
+},
 "mlvu": {
 "from": null
 },
@@ -4784,6 +4841,9 @@
 "from": null
 },
 "multimodalsea": {
+"from": null
+},
+"multinet2gridworld": {
 "from": null
 },
 "multiple": {
@@ -5128,10 +5188,16 @@
 "orchbench": {
 "from": null
 },
+"original30": {
+"from": null
+},
 "osbench": {
 "from": null
 },
 "osguard": {
+"from": null
+},
+"osomni": {
 "from": null
 },
 "osworld": {
@@ -5378,6 +5444,9 @@
 "from": null
 },
 "pixiu": {
+"from": null
+},
+"plaicraft": {
 "from": null
 },
 "planbench": {
@@ -5680,7 +5749,13 @@
 "railhead": {
 "from": null
 },
+"railinject": {
+"from": null
+},
 "ramenbench": {
+"from": null
+},
+"rapidatarobotmanipulation": {
 "from": null
 },
 "rapidatatexttoimagehumanfeedback": {
@@ -5833,6 +5908,9 @@
 "from": null
 },
 "repolaunchrepobuildtest": {
+"from": null
+},
+"repolighthouse": {
 "from": null
 },
 "repopremium": {
@@ -6869,6 +6947,9 @@
 "swetime": {
 "from": null
 },
+"swevalidation120": {
+"from": null
+},
 "swipebench": {
 "from": null
 },
@@ -7716,6 +7797,9 @@
 "visualcipherbench": {
 "from": null
 },
+"visualcognitivecollusion": {
+"from": null
+},
 "visualcommissionbench": {
 "from": null
 },
@@ -7866,6 +7950,9 @@
 "from": null
 },
 "wildclawbench": {
+"from": null
+},
+"wildregistry": {
 "from": null
 },
 "wingbench": {

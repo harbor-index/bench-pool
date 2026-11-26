@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-25",
+ "as_of": "2026-11-26",
  "registry": [
   {
    "name": "aider-polyglot",
@@ -484,9 +484,9 @@
  ],
  "hub": [
   "LiteCoder/LiteCoder-rl",
+  "adyen/dabstep",
   "aider/aider-polyglot",
   "arcus-labs/tau3-banking",
-  "bencalvert04/programbench",
   "benchflow/skillsbench",
   "birdsql/bird-mini-dev",
   "cais/swebenchpro",
@@ -537,15 +537,6 @@
    "version": "1.0.0",
    "description": "Sierra v1.0.1 banking; full97; unchanged split-v2 membership.",
    "links": []
-  },
-  "bencalvert04/programbench": {
-   "checked": "2026-11-17",
-   "tasks": 200,
-   "version": "1.0.1",
-   "description": "ProgramBench cleanroom reconstruction tasks: reimplementing real-world CLI tools from popular open-source repos.",
-   "links": [
-    "https://github.com/facebookresearch/ProgramBench"
-   ]
   },
   "benchflow/skillsbench": {
    "checked": "2026-11-17",
@@ -764,6 +755,13 @@
    "links": [
     "https://github.com/NVlabs/Skill2Env"
    ]
+  },
+  "adyen/dabstep": {
+   "checked": "2026-11-26",
+   "tasks": 450,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
   }
  }
 }
