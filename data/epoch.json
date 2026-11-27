@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-26",
+ "as_of": "2026-11-27",
  "source": "https://epoch.ai/data/benchmark_data.zip",
  "licence": "CC BY 4.0, Epoch AI",
  "benchmarks": [
@@ -885,7 +885,7 @@
     }
    ],
    "velocity": 2.92,
-   "models": 170,
+   "models": 171,
    "page": {
     "slug": "chess-puzzles",
     "checked": "2026-11-17",
@@ -3239,7 +3239,7 @@
      "model": "Fable 5.1 (Max)"
     }
    ],
-   "velocity": 2.89,
+   "velocity": 2.88,
    "models": 24,
    "page": {
     "slug": "posttrainbench",
@@ -3630,7 +3630,7 @@
      "model": "Claude Opus 5 (max)"
     }
    ],
-   "velocity": 2.39,
+   "velocity": 2.38,
    "models": 14,
    "page": {
     "slug": "osworld-2-0",
@@ -3958,7 +3958,7 @@
      "model": "Claude Opus 5.5"
     }
    ],
-   "velocity": 2.9,
+   "velocity": 2.89,
    "models": 46,
    "page": {
     "slug": "frontiercode",
@@ -4451,7 +4451,7 @@
      "model": "Claude Fable 5.2"
     }
    ],
-   "velocity": 4.11,
+   "velocity": 4.09,
    "models": 27,
    "page": {
     "slug": "frontierswe",
@@ -4901,7 +4901,7 @@
      "model": "gemini-4-neon_xhigh"
     }
    ],
-   "velocity": 17.4,
+   "velocity": 17.2,
    "models": 17,
    "page": {
     "slug": "spireclimb",

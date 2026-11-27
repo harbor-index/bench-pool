@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "build_id": "20261127T1728Z-0b760453",
+ "pid": "bp-001501",
+ "name": "ReuF2F",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001501",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic Lean-proof benchmark with 244 expert-formalized open problems, executable kernel verification, 42% best score, and containerized tasks; T2 applies.",
+  "risks": [
+   "Some tasks may be independent or unprovable under the protocol.",
+   "Solutions could leak if benchmark problems are later solved and published.",
+   "Formalizations may subtly differ from the intended conjectures."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-27",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "cmu-l3/reuF2F",
+    "url": "https://github.com/cmu-l3/reuF2F",
+    "commit": "230023d821dff5f58d18446ce6dab0b588205c9f",
+    "license": "NOASSERTION",
+    "files": 318,
+    "pushed": "2026-10-25"
+   },
+   {
+    "kind": "github",
+    "id": "cmu-l3/Leanimum-agent",
+    "url": "https://github.com/cmu-l3/Leanimum-agent",
+    "commit": "d12ddf31cfc9beb714fdf8e035aa051ea48a4617",
+    "license": "NOASSERTION",
+    "files": 199,
+    "pushed": "2026-10-25"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:cmu-l3/reuF2F",
+   "quote": "To access reuF2F, copy and run the following code from the repository root:",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [
+    "Are the source articles and bundled third-party research materials that back the 244 formalized problems redistributable?",
+    "Do the third-party components (SWE-bench, Lean/Mathlib, Comparator, landrun, nanoda_lib) impose terms on the shipped Docker image?",
+    "Does the repository's NOASSERTION licence field conflict with the MIT claim in README/pyproject?"
+   ],
+   "quote": "The MIT License above applies to original project code and modifications.\nThird-party components retain the licenses below. Source articles and bundled\nthird-party research materials are not relicensed by this notice.",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 244,
+   "unit": "problem",
+   "manifest_path": "test.jsonl",
+   "splits": [
+    "test"
+   ],
+   "pilot": "abebe2019conjectural",
+   "quote": "The benchmark has 244 problems. Each one is a conjecture or an expressly open\nproblem stated in a paper or report from an undergraduate research program.",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "reuf2f eval test.jsonl -p <path_to_predictions> --run-id <run_id> -j <num_workers>",
+   "full_credit": "A submitted patch that proves the Lean theorem, or proves its full negation, is accepted by the Comparator check.",
+   "quote": "Given a *Lean file* with an open *problem*, a model is tasked with generating a *patch* that either proves the theorem or proves its full negation.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "The test evaluates a one-problem dataset whose submitted refutation must be accepted.\nIt is skipped, not passed, when Docker or the image is unavailable.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "yes",
+   "services": [],
+   "gpu": "unclear",
+   "network_or_api": [
+    "model endpoints for the Leanimum-agent prediction generator (litellm/openrouter/portkey)"
+   ],
+   "credentials": [
+    "model provider API keys for prediction generation (evaluation itself should run without credentials)"
+   ],
+   "exceptions": [
+    "shared image is linux/amd64 and runs under emulation on ARM/M-series hosts",
+    "about 15GB image; keep at least 60GB free",
+    "two Comparator processes per worker, so -j must match available CPUs/memory"
+   ],
+   "quote": "ReuF2F evaluation runs untrusted Lean code and can be resource intensive.\n> Use a disposable host without credentials or sensitive data.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Where does the per-problem Lean workspace and gold target live so a patch can be checked offline?",
+   "Is test.jsonl the only split, or must validation.jsonl be run too?",
+   "Can the ~15GB shared image be rebuilt locally, or must it be pulled from zeyuzhenghub?",
+   "What is the patch format accepted by `reuf2f eval` predictions input?"
+  ],
+  "next_action": "Pull the shared image, then run `reuf2f eval test.jsonl -p <preds> -i abebe2019conjectural` on the single pilot instance."
+ }
+}

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-26",
+ "as_of": "2026-11-27",
  "registry": [
   {
    "name": "aider-polyglot",
@@ -487,12 +487,12 @@
   "adyen/dabstep",
   "aider/aider-polyglot",
   "arcus-labs/tau3-banking",
-  "benchflow/skillsbench",
   "birdsql/bird-mini-dev",
   "cais/swebenchpro",
   "datacurve/deep-swe",
   "datacurve/deep-swe-1-1",
   "frontier-harness-eval/frontier-harness-eval",
+  "gaia/gaia",
   "gnucleus-ai/cad-bench",
   "harbor/hello-world",
   "harveyai/lab",
@@ -536,13 +536,6 @@
    "tasks": 97,
    "version": "1.0.0",
    "description": "Sierra v1.0.1 banking; full97; unchanged split-v2 membership.",
-   "links": []
-  },
-  "benchflow/skillsbench": {
-   "checked": "2026-11-17",
-   "tasks": 87,
-   "version": "2.0.1",
-   "description": "SkillsBench v1.1 — 87-task benchmark snapshot",
    "links": []
   },
   "cais/swebenchpro": {
@@ -759,6 +752,13 @@
   "adyen/dabstep": {
    "checked": "2026-11-26",
    "tasks": 450,
+   "version": "1.0.0",
+   "description": "A collection of evaluation tasks on Harbor.",
+   "links": []
+  },
+  "gaia/gaia": {
+   "checked": "2026-11-27",
+   "tasks": 165,
    "version": "1.0.0",
    "description": "A collection of evaluation tasks on Harbor.",
    "links": []

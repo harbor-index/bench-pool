@@ -1,0 +1,168 @@
+{
+ "schema_version": 1,
+ "build_id": "20261127T1656Z-a1d3100c",
+ "generated_at": "2026-11-27T16:56:57Z",
+ "previous_build_id": "20261126T1749Z-88a54482",
+ "data_generated": "2026-11-27 16:56 UTC",
+ "counts": {
+  "benchmarks": 2689,
+  "events": 10
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261127T1656Z-a1d3100c.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "discovered",
+   "pid": "bp-002921",
+   "name": "Pinned Email Injection Benchmark",
+   "after": {
+    "name": "Pinned Email Injection Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002919",
+   "name": "Healthcare Agent Authorization Benchmark",
+   "after": {
+    "name": "Healthcare Agent Authorization Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002918",
+   "name": "GPU Kernel Benchmark",
+   "after": {
+    "name": "GPU Kernel Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002924",
+   "name": "VTS",
+   "after": {
+    "name": "VTS",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002923",
+   "name": "TwinAgentBench",
+   "after": {
+    "name": "TwinAgentBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002920",
+   "name": "IoEV-MARL",
+   "after": {
+    "name": "IoEV-MARL",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002917",
+   "name": "Descriptor-Tier Benchmark",
+   "after": {
+    "name": "Descriptor-Tier Benchmark",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002925",
+   "name": "WorldBridge",
+   "after": {
+    "name": "WorldBridge",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002922",
+   "name": "ProxyGenBench",
+   "after": {
+    "name": "ProxyGenBench",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  },
+  {
+   "kind": "discovered",
+   "pid": "bp-002916",
+   "name": "PoVi",
+   "after": {
+    "name": "PoVi",
+    "tier": null,
+    "covered": null,
+    "best": null,
+    "band": null,
+    "harbor": null,
+    "harbor_here": [],
+    "oracle": null
+   }
+  }
+ ]
+}

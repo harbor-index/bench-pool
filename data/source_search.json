@@ -2789,6 +2789,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"descriptortier": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-27",
+"name": "Descriptor-Tier Benchmark",
+"query": "Descriptor-Tier Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "design2code": {
 "arxiv": "2403.03163",
 "considered": [
@@ -4082,6 +4093,19 @@
 "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
 "why": "Introduces GPQA, a graduate-level Google-proof science Q&A benchmark."
 },
+"gpukernel": {
+"arxiv": null,
+"considered": [
+"Measuring the Checker: Mutation Analysis for GPU-Kernel Benchmark Oracles"
+],
+"date": "2026-11-27",
+"name": "GPU Kernel Benchmark",
+"query": "GPU Kernel Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "Paper analyzes benchmark oracles and uses KernelBench; it does not introduce a GPU Kernel Benchmark."
+},
 "graphivbenchmarks": {
 "arxiv": null,
 "considered": [],
@@ -4439,6 +4463,17 @@
 "date": "2026-11-15",
 "name": "Healthcare Action Authorization Benchmark",
 "query": "Healthcare Action Authorization Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"healthcareagentauthorization": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-27",
+"name": "Healthcare Agent Authorization Benchmark",
+"query": "Healthcare Agent Authorization Benchmark",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -4894,6 +4929,23 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"id:r-3dab19d35a": {
+"arxiv": null,
+"considered": [
+"SVOM/VT: On-ground processing of VT-VHF data",
+"VTS-Guided AI Interaction Workflow for Business Insights",
+"Bs mixing observables and Vtd/Vts from sum rules",
+"SVOM/VT: Preliminary Calibration Analysis",
+"COVID-VTS: Fact Extraction and Verification on Short Video Platforms"
+],
+"date": "2026-11-27",
+"name": "VTS",
+"query": "VTS",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "No listed paper introduces a VTS benchmark involving OpenSees or scientific agent workflows."
+},
 "id:r-43742d5c25": {
 "arxiv": null,
 "considered": [],
@@ -5251,6 +5303,17 @@
 "date": "2026-11-15",
 "name": "Instruct HumanEval",
 "query": "Instruct HumanEval",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"ioevmarl": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-27",
+"name": "IoEV-MARL",
+"query": "IoEV-MARL",
 "repo": null,
 "searched": "arXiv",
 "title": null,
@@ -8357,6 +8420,17 @@
 "searched": "arXiv",
 "title": null,
 "why": "None of the papers presents or introduces PinchBench."
+},
+"pinnedemailinjection": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-27",
+"name": "Pinned Email Injection Benchmark",
+"query": "Pinned Email Injection Benchmark",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
 },
 "pipemend": {
 "arxiv": null,
@@ -11667,6 +11741,17 @@
 "date": "2026-11-14",
 "name": "TVBench",
 "query": "TVBench",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"twinagentbench": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-27",
+"name": "TwinAgentBench",
+"query": "TwinAgentBench",
 "repo": null,
 "searched": "arXiv",
 "title": null,

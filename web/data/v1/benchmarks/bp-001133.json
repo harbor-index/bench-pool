@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "build_id": "20261127T1728Z-0b760453",
+ "pid": "bp-001133",
+ "name": "WorldAuditBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001133",
+ "recommendation": {
+  "tier": "hold",
+  "reason": "With the best comparable score now unknown, recommend needs both Real and Solid to be strong.",
+  "risks": [
+   "Unreal tasks need Linux hosts with an NVIDIA GPU",
+   "Fab asset licences may restrict environment release",
+   "No leaderboard; scores exist only in the paper"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-27",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "UCSB-NLP-Chang/WorldAuditBench",
+    "url": "https://github.com/UCSB-NLP-Chang/WorldAuditBench",
+    "commit": "c58fc1c83e2cea8b4d4f2721c930985915c070a8",
+    "license": null,
+    "files": 121,
+    "pushed": "2026-10-04"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:ziyjiang/WorldAuditBench",
+   "quote": "[Hugging Face](https://huggingface.co/datasets/ziyjiang/WorldAuditBench) hosts the\n213-task table, shared in-context examples and compiled environments.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "Can code be redistributed with no stated licence?",
+    "Can Hugging Face task data and compiled environments be redistributed?",
+    "Do model-client terms restrict benchmark use?"
+   ],
+   "quote": "licence field: None",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 213,
+   "unit": "task",
+   "manifest_path": "data/benchmark/paper-tasks.json",
+   "splits": [
+    "data/benchmark/splits/unreal.txt"
+   ],
+   "pilot": "S01",
+   "quote": "**213 tasks · 13 environments · 5 anomaly families · 2 auditing paradigms**",
+   "evidence": "inspected",
+   "manifest_path_found": true
+  },
+  "verifier": {
+   "kind": "llm_judge",
+   "entry_point": "python -m judge.judge",
+   "full_credit": "Judge returns score 1.",
+   "quote": "The judge loads the task rubric and returns `score` (0 or 1) and `reason`.\nIt uses GPT-6 Astra with medium reasoning through an authenticated Codex CLI.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "offline_answers",
+   "path": null,
+   "command": null,
+   "quote": "It includes reset, stop and full-screen controls; anomaly\nanswers are collapsed until you choose to reveal them.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "Unreal environment server",
+    "Three.js browser environment",
+    "model client CLI",
+    "authenticated Codex CLI judge"
+   ],
+   "gpu": "yes",
+   "network_or_api": [
+    "Hugging Face downloads",
+    "model client CLIs",
+    "authenticated Codex CLI",
+    "Unreal Pixel Streaming/WebRTC"
+   ],
+   "credentials": [
+    "model client authentication",
+    "authenticated Codex CLI for judge"
+   ],
+   "exceptions": [
+    "Unreal tasks require Linux and an NVIDIA GPU",
+    "Unreal viewer requires UE 5.6 Pixel Streaming player, Node.js 22+ and npm",
+    "VLA exploration uses Open-P2P"
+   ],
+   "quote": "Python 3.11+. Unreal environments require Linux and an NVIDIA GPU.\nThree.js environments run in Chromium on Linux or macOS.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which licences apply",
+   "How to provision Unreal GPU",
+   "How to authenticate judge",
+   "Where task answers live"
+  ],
+  "next_action": "Fetch the Hugging Face task table and dry-run S01."
+ }
+}

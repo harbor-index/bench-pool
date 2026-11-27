@@ -1,0 +1,207 @@
+{
+ "schema_version": 1,
+ "build_id": "20261127T1725Z-803269b8",
+ "generated_at": "2026-11-27T17:25:49Z",
+ "previous_build_id": "20261127T1656Z-a1d3100c",
+ "data_generated": "2026-11-27 17:25 UTC",
+ "counts": {
+  "benchmarks": 2689,
+  "events": 27
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261127T1725Z-803269b8.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002921",
+   "name": "Pinned Email Injection Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002919",
+   "name": "Healthcare Agent Authorization Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002918",
+   "name": "GPU Kernel Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002924",
+   "name": "VTS",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002923",
+   "name": "TwinAgentBench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002920",
+   "name": "IoEV-MARL",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002917",
+   "name": "Descriptor-Tier Benchmark",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002925",
+   "name": "WorldBridge",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002922",
+   "name": "ProxyGenBench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002916",
+   "name": "PoVi",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001946",
+   "name": "ScrapeBench",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001535",
+   "name": "MemDev-Bench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001535",
+   "name": "MemDev-Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001501",
+   "name": "ReuF2F",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001501",
+   "name": "ReuF2F",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001481",
+   "name": "FinHopper",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001425",
+   "name": "OmicsBench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001425",
+   "name": "OmicsBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001257",
+   "name": "AgenticBBO-Bench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001257",
+   "name": "AgenticBBO-Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001133",
+   "name": "WorldAuditBench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001133",
+   "name": "WorldAuditBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001115",
+   "name": "AgentTell",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001115",
+   "name": "AgentTell",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000633",
+   "name": "HWE-bench",
+   "before": "no",
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000301",
+   "name": "GitGoodBench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000301",
+   "name": "GitGoodBench",
+   "before": null,
+   "after": "noscore"
+  }
+ ]
+}

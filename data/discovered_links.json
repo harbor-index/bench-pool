@@ -1940,6 +1940,9 @@
 "dermmcqa": {
 "from": null
 },
+"descriptortier": {
+"from": null
+},
 "design2code": {
 "from": null
 },
@@ -2938,6 +2941,9 @@
 "gpsbench": {
 "from": null
 },
+"gpukernel": {
+"from": null
+},
 "gpuphysbench": {
 "from": null
 },
@@ -3117,6 +3123,9 @@
 "from": null
 },
 "healthcareactionauthorization": {
+"from": null
+},
+"healthcareagentauthorization": {
 "from": null
 },
 "healthcareescalation": {
@@ -3409,6 +3418,9 @@
 "id:arxiv-2611-34646": {
 "from": null
 },
+"id:arxiv-2611-34690": {
+"from": null
+},
 "id:r-0d426f76fc": {
 "from": null
 },
@@ -3434,6 +3446,9 @@
 "from": null
 },
 "id:r-3526786399": {
+"from": null
+},
+"id:r-3dab19d35a": {
 "from": null
 },
 "id:r-43742d5c25": {
@@ -3640,6 +3655,9 @@
 "from": null
 },
 "investmentresearchagent": {
+"from": null
+},
+"ioevmarl": {
 "from": null
 },
 "ipitasktampering": {
@@ -5426,6 +5444,9 @@
 "from": null
 },
 "pinchbench": {
+"from": null
+},
+"pinnedemailinjection": {
 "from": null
 },
 "pipemend": {
@@ -7511,6 +7532,9 @@
 "tvbench": {
 "from": null
 },
+"twinagentbench": {
+"from": null
+},
 "twine": {
 "from": null
 },
@@ -7992,6 +8016,10 @@
 },
 "worldbench": {
 "from": null
+},
+"worldbridge": {
+"from": "https://davidyan2001.github.io/WorldBridge/?v=duke",
+"repo": "eliahuhorwitz/Academic-project-page-template"
 },
 "worldcuparena": {
 "from": null
