@@ -1,0 +1,172 @@
+{
+ "schema_version": 1,
+ "build_id": "20261128T1621Z-d926b9da",
+ "generated_at": "2026-11-28T16:21:03Z",
+ "previous_build_id": "20261128T1548Z-713873db",
+ "data_generated": "2026-11-28 16:21 UTC",
+ "counts": {
+  "benchmarks": 2698,
+  "events": 22
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261128T1621Z-d926b9da.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002932",
+   "name": "ORBIT V8.2.1",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002929",
+   "name": "Faultline",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002927",
+   "name": "CommitBench",
+   "before": null,
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002934",
+   "name": "Solver Agent Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002930",
+   "name": "Holmes-SQL",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002928",
+   "name": "Context Clash",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002926",
+   "name": "BaZi Solar-Term Boundary Benchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002933",
+   "name": "ROGUE-AI Bench",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001178",
+   "name": "XiangqiBench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001178",
+   "name": "XiangqiBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001172",
+   "name": "OpenGameEval",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001172",
+   "name": "OpenGameEval",
+   "before": null,
+   "after": "unverified"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000940",
+   "name": "Emergence World",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000935",
+   "name": "WebCraftBench",
+   "before": "hold",
+   "after": "no"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000933",
+   "name": "V-ICAL Bench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000933",
+   "name": "V-ICAL Bench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-002931",
+   "name": "LocalAgentBenchmark",
+   "before": null,
+   "after": "hold"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000827",
+   "name": "ElderBench",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000827",
+   "name": "ElderBench",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000687",
+   "name": "DreamBench-SWE",
+   "before": "hold",
+   "after": "recommend"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000687",
+   "name": "DreamBench-SWE",
+   "before": null,
+   "after": "noscore"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-001290",
+   "name": "ftl_bench",
+   "before": "hold",
+   "after": "no"
+  }
+ ]
+}

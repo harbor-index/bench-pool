@@ -1,0 +1,60 @@
+{
+ "schema_version": 1,
+ "build_id": "20261128T1622Z-9287bff1",
+ "pid": "bp-000827",
+ "name": "ElderBench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000827",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic GUI benchmark from real elderly instructions, 249 tasks over 20 apps, best 49.8% with validated judge; no blocking rule and no weak core dimension.",
+  "risks": [
+   "Task data and harness not stated as publicly released",
+   "Online tasks need live apps and account state that cannot be frozen",
+   "Reward hacking and contamination are not discussed"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-28",
+  "model": null,
+  "prompt_version": 1,
+  "sources": [],
+  "no_release": true,
+  "release": {
+   "quote": null,
+   "evidence": "unknown",
+   "tasks_live_in": "unknown"
+  },
+  "rights": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "tasks": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "verifier": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "oracle": {
+   "quote": null,
+   "evidence": "unknown",
+   "level": "none"
+  },
+  "runtime": {
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "questions": [
+   "No public repository or dataset was found in the pool's links, Hugging Face's paper record or the paper's own links. Are the tasks released?"
+  ],
+  "next_action": "Ask the authors where the tasks, environment and grader are released."
+ }
+}

@@ -872,6 +872,9 @@
 "bazaarbench": {
 "from": null
 },
+"bazisolartermboundary": {
+"from": null
+},
 "bbh": {
 "from": null
 },
@@ -1507,6 +1510,9 @@
 "commit0": {
 "from": null
 },
+"commitbench": {
+"from": null
+},
 "commonsenseqa": {
 "from": null
 },
@@ -1543,6 +1549,9 @@
 "repo": "deep-diver/ConformWeb."
 },
 "congopeatpollenevaltask": {
+"from": null
+},
+"contextclash": {
 "from": null
 },
 "contextecho": {
@@ -2445,6 +2454,9 @@
 "faultbench": {
 "from": null
 },
+"faultline": {
+"from": null
+},
 "faultrepair": {
 "from": null
 },
@@ -3201,6 +3213,9 @@
 "from": null
 },
 "holdemagentbench": {
+"from": null
+},
+"holmessql": {
 "from": null
 },
 "homesafebench": {
@@ -4055,6 +4070,9 @@
 "from": null
 },
 "locabench256k": {
+"from": null
+},
+"localagentbenchmark": {
 "from": null
 },
 "localagenticcoding128gb": {
@@ -5203,6 +5221,9 @@
 "orbench": {
 "from": null
 },
+"orbit821": {
+"from": null
+},
 "orchbench": {
 "from": null
 },
@@ -6091,6 +6112,9 @@
 "robustreview": {
 "from": null
 },
+"rogueaibench": {
+"from": null
+},
 "rolebreak": {
 "from": null
 },
@@ -6560,6 +6584,9 @@
 "from": null
 },
 "solexecbench": {
+"from": null
+},
+"solveragent": {
 "from": null
 },
 "sopbench": {

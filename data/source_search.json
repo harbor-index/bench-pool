@@ -2229,6 +2229,17 @@
 "title": null,
 "why": "no arXiv paper mentions this name"
 },
+"contextclash": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-28",
+"name": "Context Clash",
+"query": "Context Clash",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
 "contphy": {
 "arxiv": null,
 "considered": [],
@@ -4655,6 +4666,17 @@
 "date": "2026-11-13",
 "name": "HMMT Feb 26",
 "query": "HMMT Feb 26",
+"repo": null,
+"searched": "arXiv",
+"title": null,
+"why": "no arXiv paper mentions this name"
+},
+"holmessql": {
+"arxiv": null,
+"considered": [],
+"date": "2026-11-28",
+"name": "Holmes-SQL",
+"query": "Holmes-SQL",
 "repo": null,
 "searched": "arXiv",
 "title": null,

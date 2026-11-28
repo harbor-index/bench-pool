@@ -1,0 +1,74 @@
+{
+ "schema_version": 1,
+ "build_id": "20261128T1622Z-9287bff1",
+ "generated_at": "2026-11-28T16:22:48Z",
+ "previous_build_id": "20261128T1621Z-d926b9da",
+ "data_generated": "2026-11-28 16:22 UTC",
+ "counts": {
+  "benchmarks": 2698,
+  "events": 8
+ },
+ "files": {
+  "benchmarks": "data/benchmarks.json",
+  "changes": "data/v1/changes/20261128T1622Z-9287bff1.json",
+  "index": "data/v1/changes/index.json"
+ },
+ "events": [
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001178",
+   "name": "XiangqiBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-001172",
+   "name": "OpenGameEval",
+   "before": "unverified",
+   "after": "real"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-001172",
+   "name": "OpenGameEval",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000933",
+   "name": "V-ICAL Bench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000827",
+   "name": "ElderBench",
+   "before": null,
+   "after": "none"
+  },
+  {
+   "kind": "tier_changed",
+   "pid": "bp-000687",
+   "name": "DreamBench-SWE",
+   "before": "recommend",
+   "after": "hold"
+  },
+  {
+   "kind": "band_changed",
+   "pid": "bp-000687",
+   "name": "DreamBench-SWE",
+   "before": "noscore",
+   "after": null
+  },
+  {
+   "kind": "readiness_changed",
+   "pid": "bp-000687",
+   "name": "DreamBench-SWE",
+   "before": null,
+   "after": "offline_answers"
+  }
+ ]
+}

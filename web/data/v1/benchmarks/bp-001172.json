@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "build_id": "20261128T1622Z-9287bff1",
+ "pid": "bp-001172",
+ "name": "OpenGameEval",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-001172",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic game-engine benchmark with executable checks, expert-written tasks, public suite, and best score below 60%; Real and Solid are strong.",
+  "risks": [
+   "Hosted Roblox Studio runtime is not open source",
+   "System prompt cannot be released",
+   "Public release creates contamination risk"
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": {
+  "pct": 51.7,
+  "source": "paper",
+  "model": "best model",
+  "as_of": "2026-10-01",
+  "systems": null,
+  "url": null
+ },
+ "readiness": {
+  "date": "2026-11-28",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "Roblox/open-game-eval",
+    "url": "https://github.com/Roblox/open-game-eval",
+    "commit": "8001cac2fa733aad1e743f00aa701e1f4e426541",
+    "license": "MIT",
+    "files": 150,
+    "pushed": "2026-10-05"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "github:Roblox/open-game-eval",
+   "quote": "This repository contains open-sourced evaluation scripts and tools for running automated assessments in the Roblox Studio environment.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": "MIT",
+   "data_license": null,
+   "redistribution_questions": [],
+   "quote": "MIT License\n\nCopyright 2025 Roblox Corporation",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": 84,
+   "unit": "task",
+   "manifest_path": null,
+   "splits": [],
+   "pilot": "Evals/001_make_cars_faster.lua",
+   "quote": "The paper reports pass rates and exploration behavior for 13 frontier models on 84 human-curated core tasks, with 16 attempts per task.",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "invoke_eval.py",
+   "full_credit": "The eval is considered as a pass only if all checks are passed.",
+   "quote": "It runs language models as agents in reproducible, stateful Roblox Studio sessions and scores each run with executable checks, both on the edited scene and in a simulated play session.",
+   "evidence": "inspected",
+   "entry_point_found": true
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": "Expected behavior implementation. They are intentionally left blank in this set for the purpose of evaluation.",
+   "evidence": "reported"
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "Roblox Studio environment",
+    "OpenGameEval API",
+    "LLM provider API"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "Roblox OpenCloud API",
+    "OpenGameEval API",
+    "LLM provider API"
+   ],
+   "credentials": [
+    "Roblox account",
+    "OpenCloud API key with `studio-evaluations` access and `create` operation",
+    "LLM API key"
+   ],
+   "exceptions": [
+    "Evaluations have a 10-minute timeout.",
+    "Exceeding these limits will result in an `429 Too Many Requests status` code.",
+    "Currently only supports Roblox templates."
+   ],
+   "quote": "You'll need a Roblox account. If you don't have one, create a free account at [roblox.com](https://www.roblox.com).\n\n### 2. OpenCloud API Key\nTo interact with the OpenGameEval API, you need to create an OpenCloud API key:",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Which eval files are the 84 core tasks?",
+   "What license covers Places and Evals data?",
+   "Can the tasks run without a live Roblox OpenCloud API?",
+   "How are the eight tools exposed to the agent?"
+  ],
+  "next_action": "Clone Roblox/open-game-eval and run Evals/001_make_cars_faster.lua with a Roblox OpenCloud key and an LLM key."
+ }
+}

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-27",
+ "as_of": "2026-11-28",
  "source": "https://epoch.ai/data/benchmark_data.zip",
  "licence": "CC BY 4.0, Epoch AI",
  "benchmarks": [
@@ -1362,7 +1362,7 @@
     }
    ],
    "velocity": 1.54,
-   "models": 331,
+   "models": 332,
    "page": {
     "slug": "arc-agi",
     "checked": "2026-11-17",
@@ -3053,7 +3053,7 @@
     }
    ],
    "velocity": 6.66,
-   "models": 70,
+   "models": 72,
    "page": {
     "slug": "apex-agents",
     "checked": "2026-11-17",
@@ -3169,7 +3169,7 @@
     }
    ],
    "velocity": 4.85,
-   "models": 314,
+   "models": 315,
    "page": {
     "slug": "arc-agi-2",
     "checked": "2026-11-17",
@@ -3239,8 +3239,8 @@
      "model": "Fable 5.1 (Max)"
     }
    ],
-   "velocity": 2.88,
-   "models": 24,
+   "velocity": 2.86,
+   "models": 25,
    "page": {
     "slug": "posttrainbench",
     "checked": "2026-11-17",
@@ -3630,7 +3630,7 @@
      "model": "Claude Opus 5 (max)"
     }
    ],
-   "velocity": 2.38,
+   "velocity": 2.37,
    "models": 14,
    "page": {
     "slug": "osworld-2-0",
@@ -3958,7 +3958,7 @@
      "model": "Claude Opus 5.5"
     }
    ],
-   "velocity": 2.89,
+   "velocity": 2.88,
    "models": 46,
    "page": {
     "slug": "frontiercode",
@@ -4451,7 +4451,7 @@
      "model": "Claude Fable 5.2"
     }
    ],
-   "velocity": 4.09,
+   "velocity": 4.07,
    "models": 27,
    "page": {
     "slug": "frontierswe",
@@ -4901,7 +4901,7 @@
      "model": "gemini-4-neon_xhigh"
     }
    ],
-   "velocity": 17.2,
+   "velocity": 17.01,
    "models": 17,
    "page": {
     "slug": "spireclimb",

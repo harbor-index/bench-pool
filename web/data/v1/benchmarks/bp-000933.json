@@ -1,0 +1,111 @@
+{
+ "schema_version": 1,
+ "build_id": "20261128T1622Z-9287bff1",
+ "pid": "bp-000933",
+ "name": "V-ICAL Bench",
+ "aliases": [],
+ "site": "https://harbor-index.github.io/bench-pool/#/b/bp-000933",
+ "recommendation": {
+  "tier": "recommend",
+  "reason": "Agentic benchmark with expert-curated tasks, 342 tasks across 37 environments, executable scoring, and best score 54.4; no blocking rule fires.",
+  "risks": [
+   "Reward hacking and shortcutting are not explicitly addressed."
+  ]
+ },
+ "harbor": {
+  "status": null,
+  "here": [],
+  "family": []
+ },
+ "best_score": null,
+ "readiness": {
+  "date": "2026-11-28",
+  "model": "deepseek-v4.1-flash",
+  "prompt_version": 1,
+  "sources": [
+   {
+    "kind": "github",
+    "id": "VisionXLab/V-ICAL",
+    "url": "https://github.com/VisionXLab/V-ICAL",
+    "commit": "f5032574c98211621eda7495d29ea44b256fd6e9",
+    "license": null,
+    "files": 1450,
+    "pushed": "2026-09-15"
+   }
+  ],
+  "release": {
+   "tasks_live_in": "hf:VisionXLab/V-ICAL-ai-configs",
+   "quote": "The GitHub repository does not contain the visual demonstrations and per-task AI configurations.",
+   "evidence": "reported"
+  },
+  "rights": {
+   "code_license": null,
+   "data_license": null,
+   "redistribution_questions": [
+    "What license covers the GitHub code?",
+    "Can the private Hugging Face ai_configs and demonstrations be redistributed?",
+    "Do users need their own model API keys?"
+   ],
+   "quote": "licence field: None",
+   "evidence": "reported"
+  },
+  "tasks": {
+   "count": null,
+   "unit": "task",
+   "manifest_path": null,
+   "splits": [],
+   "pilot": "ai_configs/Acrobot-v1/s0/config.json",
+   "quote": "After downloading, verify that paths such as `ai_configs/Acrobot-v1/s0/config.json` exist.",
+   "evidence": "reported"
+  },
+  "verifier": {
+   "kind": "programmatic_state",
+   "entry_point": "python vcl.py eval-batch batch_results/<run_id> --format json --out batch_results/<run_id>/eval_result.json",
+   "full_credit": "Task pass (`last_info[\"pass\"]`) after replaying any preload sequence and the recorded model actions.",
+   "quote": "`eval-batch` reloads the corresponding AI configuration, replays any configured preload action sequence, executes the recorded model actions, and applies the current unified pass and score logic.",
+   "evidence": "reported",
+   "entry_point_found": false
+  },
+  "oracle": {
+   "level": "none",
+   "path": null,
+   "command": null,
+   "quote": null,
+   "evidence": "unknown"
+  },
+  "runtime": {
+   "docker": "unclear",
+   "services": [
+    "web UI/API server via `vcl.py serve`",
+    "viewer server via `vcl.py viewer`",
+    "OpenAI-compatible, OpenRouter, and Gemini native model APIs",
+    "Hugging Face dataset download"
+   ],
+   "gpu": "unclear",
+   "network_or_api": [
+    "OpenAI-compatible model endpoint",
+    "OpenRouter",
+    "Gemini native API",
+    "Hugging Face dataset host"
+   ],
+   "credentials": [
+    "Hugging Face authentication",
+    "API keys for the selected model backend"
+   ],
+   "exceptions": [
+    "Procgen native C++ extension build with compiler, CMake, and Qt",
+    "Private `ai_configs` download before evaluation",
+    "Windows build needs Visual Studio 2022 Build Tools and Qt 5"
+   ],
+   "quote": "Procgen includes a native C++ extension, so its installation is more fragile than ordinary Python packages.",
+   "evidence": "reported"
+  },
+  "questions": [
+   "Can we get private HF access?",
+   "What are the exact task IDs and splits?",
+   "What licenses cover code and data?",
+   "Which model APIs and keys are required?"
+  ],
+  "next_action": "Download ai_configs from Hugging Face and open ai_configs/Acrobot-v1/s0/config.json to inspect one task."
+ }
+}
